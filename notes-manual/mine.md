@@ -1,0 +1,24 @@
+== Fixes ==
+
+* https://github.com/microsoft/TypeScript/pull/36543 - a refactor retains a modifier it was deleting by mistake.
+* https://github.com/microsoft/TypeScript/pull/35937 - a refactor retains comments it was deleting by mistake.
+
+  Notes:
+  - Comments are quite tricky to get right.
+  - Some good lines from the review:
+  ```ts
+  // Check if it is semi-colon
+  // I feel like there has to be a way using SyntaxKind.SemicolonToken
+  return lastChar === ";";
+  ```
+  - This is almost certainly wrong, because this is tricky to get right.
+  - The main task is to politely say "Your PR is wrong, and this is really hard."
+
+== Features ==
+
+* https://github.com/microsoft/TypeScript/pull/28250 - convert function to arrow expr and back.
+  Notes:
+  - Written by a couple of students for their bachelor's thesis.
+  - Justification for the issue is "Jetbrains has it".
+  - Andy already reviewed it, so the code should be basically OK.
+  - The main task is to decide whether "Jetbrains has it" is good enough reason for us to have it.
