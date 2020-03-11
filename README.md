@@ -16,8 +16,8 @@ Think about how to enter and store data for rest
 * Send Sheetal's digest
 
 * Nathan: 18 + 4 + 3
-* Ron: 15 + 3 + 3
-* Anders: 10 + 1
+- Ron: 15 + 3 + 3
+- Anders: 10 + 1
 - Wesley: 8 + 5 + 2
 - Orta: 4 + 2
 - Andrew (Branch): 4 + 1
@@ -25,7 +25,7 @@ Think about how to enter and store data for rest
 - Sheetal: 4
 - Ryan: 1 + 4
 
-* Andrew (Casey): 1
+- Andrew (Casey): 1
 * Daniel:
 
 - Mine's team: 3
