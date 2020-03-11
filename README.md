@@ -3,6 +3,8 @@ Notes and tools for PR triage
 
 # TODO #
 * Close aged-out PRs
+* Send Sheetal's digest
+* Write the other digests
 * Push on "Needs Merge" PRs
 * Assign a few to Andrew
 
@@ -20,8 +22,10 @@ Think about how to enter and store data for rest
 * Orta: 5 + 2
 * Andrew (Branch): 4 + 1
 * Eli: 3
-* Sheetal: 3
+* Sheetal: 4
 * Ryan: 1 + 4
+
 * Andrew (Casey): 1
+* Daniel:
 
 * Mine's team: 3
