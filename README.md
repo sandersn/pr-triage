@@ -34,3 +34,10 @@ Think about how to enter and store data for rest
 1. survey JS usage of @link @see to see how people might 'intuitively' expect it to work
 2. talk with Andrew about how to (1) parse as expression (2) surface to the language service
 3. write up our conclusions as a proposal and try to get upvoters to comment
+
+
+
+These two are for Anders but I think I could review them myself:
+
+* https://github.com/microsoft/TypeScript/pull/33139 - higher order inference: `this` parameters similar to functions and constructors
+* https://github.com/microsoft/TypeScript/pull/35863 - non-null assertion applied to control-flow type `never` now errors
