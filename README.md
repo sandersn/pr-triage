@@ -18,7 +18,7 @@ Think about how to enter and store data for rest
 * Nathan: 18 + 4 + 3
 * Ron: 15 + 3 + 3
 * Anders: 10 + 1
-* Wesley: 8 + 5 + 2
+- Wesley: 8 + 5 + 2
 - Orta: 4 + 2
 - Andrew (Branch): 4 + 1
 - Eli: 3
@@ -29,3 +29,8 @@ Think about how to enter and store data for rest
 * Daniel:
 
 - Mine's team: 3
+
+
+1. survey JS usage of @link @see to see how people might 'intuitively' expect it to work
+2. talk with Andrew about how to (1) parse as expression (2) surface to the language service
+3. write up our conclusions as a proposal and try to get upvoters to comment
