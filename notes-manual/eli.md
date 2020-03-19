@@ -10,6 +10,7 @@
 
 == Features ==
 
+* https://github.com/microsoft/TypeScript/pull/36654 - did-you-mean error+codefix for non-Promise returning async functions
 * https://github.com/microsoft/TypeScript/pull/33069 - improve error checking with multiple spread arguments
 
   Notes:

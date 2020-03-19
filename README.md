@@ -2,9 +2,7 @@
 Notes and tools for PR triage
 
 # TODO #
-* Write the other digests
-* Push on "Needs Merge" PRs
-* Assign a few to Andrew
+* Re-send digests to top poeople
 
 Think about how to enter and store data for rest
 
@@ -14,6 +12,9 @@ Think about how to enter and store data for rest
 * Create github repo for storing data and scripts
 * Close aged-out PRs
 * Send Sheetal's digest
+* Write the other digests
+* Push on "Needs Merge" PRs
+* Assign a few to Andrew
 
 * Nathan: 18 + 4 + 3
 - Ron: 15 + 3 + 3

@@ -1,4 +1,5 @@
 == Fixes ==
+
 * https://github.com/microsoft/TypeScript/pull/28168 - don't count `require()` as making a TS file a module
 
   Notes:
@@ -19,6 +20,9 @@
   - Remember to request changes to transition this to Waiting on Author.
 * https://github.com/microsoft/TypeScript/pull/29010 - add getSupportedCodeFixes to language service interface
 
+== Waiting on Author ==
+
+* https://github.com/microsoft/TypeScript/pull/37228 - fix crash during module resolution
 
 == Instructions ==
 

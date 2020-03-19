@@ -13,17 +13,17 @@
   Notes:
   - I put both you and Ron on this PR, but it's really module-centric, so I think you're the right person for it.
 
+* https://github.com/microsoft/TypeScript/pull/35741 - a type relation for conditional types
+
+  Notes:
+  - I assume jablko's idea is similar to yours?
+
 * https://github.com/microsoft/TypeScript/pull/32702 - improve error message for JSX component w/bad return type
 * https://github.com/microsoft/TypeScript/pull/33434 - unify if/switch logic in typeof narrowing
 * https://github.com/microsoft/TypeScript/pull/35438 - make never rest type top-like
 
   Notes:
   - Jack marked this is speculative, but you seemed to like it, so we should decide whether to merge or close it.
-
-* https://github.com/microsoft/TypeScript/pull/35741 - a type relation for conditional types
-
-  Notes:
-  - I assume jablko's idea is similar to yours?
 
 == Waiting on Author ==
 
