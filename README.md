@@ -4,6 +4,8 @@ Notes and tools for PR triage
 # TODO #
 * Push on "Needs Merge" PRs
 * Figure out how to generate the markdowns for next time
+* Re-send digests to top poeople
+* Think about how to enter and store data for rest
 
 # DONE #
 * Triage 'Not started' category
@@ -14,6 +16,9 @@ Notes and tools for PR triage
 * Create github repo for storing data and scripts
 * Close aged-out PRs
 * Send Sheetal's digest
+* Write the other digests
+* Push on "Needs Merge" PRs
+* Assign a few to Andrew
 
 - Ron: 15,3,3,0 -> 18,1,3,3
 * Nathan: 18,4,3,0 -> 17,0,4,9

@@ -3,6 +3,8 @@
 * https://github.com/microsoft/TypeScript/pull/28708 - fix block-scoped capturing by class expressions inside iteration
 * https://github.com/microsoft/TypeScript/pull/35494 - capture thisArg of optional chaining when parenthesized
 * https://github.com/microsoft/TypeScript/pull/35877 - fix receiver on calls of imported/exported functions
+* https://github.com/microsoft/TypeScript/pull/37013 - __extends should use Object.prototype.hasOwnProperty.call
+* https://github.com/microsoft/TypeScript/pull/36723 - AsyncIterable[Iterator] adds type parameters for TReturn, TNext
 
   Notes:
   - Re-adds recursion depth to inference -- but in a way that's more like assignability?
