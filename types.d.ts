@@ -1,6 +1,6 @@
 type Pulls = { [s: string]: Pull }
 type Pull = {
-    reviewer: "ahejlsberg" | "amcasey" | "andrewbranch" | "elibarzilay" | "weswigham" | "RyanCavanaugh" | "shkamat" | "sandersn" | "orta"
+    reviewer: "anders" | "andrew-branch" | "andrew-casey" | "eli" | "mine" | "orta" | "ron" | "ryan" | "sheetal" | "wesley"
     /** 1-line description */
     description: string
     /**
