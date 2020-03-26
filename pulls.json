@@ -1,0 +1,10 @@
+{
+    "31633": {
+        "reviewer": "ahejlsberg", 
+        "description": "allow inference to explore multiple instances of the same symbol",
+        "notes": ["Re-adds recursion depth to inference -- but in a way that's more like assignability?"],
+        "state": "review",
+        "label": "milestone",
+        "flags": "fix"
+    }
+}
