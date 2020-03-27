@@ -19,25 +19,9 @@
                       },
                       "title": "No error on indirect calls",
                       "assignees": {
-                        "nodes": []
-                      }
-                    }
-                  },
-                  {
-                    "content": {
-                      "number": 37212,
-                      "labels": {
                         "nodes": [
                           {
-                            "name": "For Uncommitted Bug"
-                          }
-                        ]
-                      },
-                      "title": "feat(37092): Improve error when default-importing from a module that `export *`s from a module with a default export",
-                      "assignees": {
-                        "nodes": [
-                          {
-                            "name": "Daniel Rosenwasser"
+                            "name": "Nathan Shively-Sanders"
                           }
                         ]
                       }
@@ -1182,9 +1166,6 @@
                       "assignees": {
                         "nodes": [
                           {
-                            "name": "Daniel Rosenwasser"
-                          },
-                          {
                             "name": "Ryan Cavanaugh"
                           }
                         ]
@@ -1258,7 +1239,11 @@
                     "content": {
                       "number": 37183,
                       "labels": {
-                        "nodes": []
+                        "nodes": [
+                          {
+                            "name": "For Backlog Bug"
+                          }
+                        ]
                       },
                       "title": "fix(37150): private field should not conflict with string index type",
                       "assignees": {
@@ -1277,15 +1262,15 @@
                         "nodes": [
                           {
                             "name": "Author: Team"
+                          },
+                          {
+                            "name": "For Backlog Bug"
                           }
                         ]
                       },
                       "title": "Merge diagnosticsProducing and nonDiagnosticsProducing checkers into a single checker supporting lazy diagnostics",
                       "assignees": {
                         "nodes": [
-                          {
-                            "name": "Wesley Wigham"
-                          },
                           {
                             "name": "Sheetal Nandi"
                           }
@@ -1297,7 +1282,11 @@
                     "content": {
                       "number": 37029,
                       "labels": {
-                        "nodes": []
+                        "nodes": [
+                          {
+                            "name": "For Milestone Bug"
+                          }
+                        ]
                       },
                       "title": "Add ToggleLineComment and ToggleMultilineComment service",
                       "assignees": {
@@ -1513,7 +1502,11 @@
                     "content": {
                       "number": 37424,
                       "labels": {
-                        "nodes": []
+                        "nodes": [
+                          {
+                            "name": "For Backlog Bug"
+                          }
+                        ]
                       },
                       "title": "Support top level \"for await of\"",
                       "assignees": {
@@ -1529,7 +1522,11 @@
                     "content": {
                       "number": 37392,
                       "labels": {
-                        "nodes": []
+                        "nodes": [
+                          {
+                            "name": "For Backlog Bug"
+                          }
+                        ]
                       },
                       "title": "Enable excess property checking on spread assignment",
                       "assignees": {
@@ -1543,31 +1540,14 @@
                   },
                   {
                     "content": {
-                      "number": 36925,
-                      "labels": {
-                        "nodes": [
-                          {
-                            "name": "For Milestone Bug"
-                          }
-                        ]
-                      },
-                      "title": "fix(36909): wrong error message when trying to named-import an export",
-                      "assignees": {
-                        "nodes": [
-                          {
-                            "name": "Daniel Rosenwasser"
-                          }
-                        ]
-                      }
-                    }
-                  },
-                  {
-                    "content": {
                       "number": 37298,
                       "labels": {
                         "nodes": [
                           {
                             "name": "Author: Team"
+                          },
+                          {
+                            "name": "For Milestone Bug"
                           }
                         ]
                       },
@@ -1923,9 +1903,6 @@
                       "assignees": {
                         "nodes": [
                           {
-                            "name": "Ryan Cavanaugh"
-                          },
-                          {
                             "name": "Sheetal Nandi"
                           }
                         ]
@@ -1968,9 +1945,6 @@
                       "title": "feat: add util {is,create,update}DynamicImport",
                       "assignees": {
                         "nodes": [
-                          {
-                            "name": "Orta"
-                          },
                           {
                             "name": "Ron Buckton"
                           }
@@ -2069,6 +2043,46 @@
                         "nodes": [
                           {
                             "name": "Eli Barzilay"
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "content": {
+                      "number": 36925,
+                      "labels": {
+                        "nodes": [
+                          {
+                            "name": "For Milestone Bug"
+                          }
+                        ]
+                      },
+                      "title": "fix(36909): wrong error message when trying to named-import an export",
+                      "assignees": {
+                        "nodes": [
+                          {
+                            "name": "Daniel Rosenwasser"
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "content": {
+                      "number": 37212,
+                      "labels": {
+                        "nodes": [
+                          {
+                            "name": "For Uncommitted Bug"
+                          }
+                        ]
+                      },
+                      "title": "feat(37092): Improve error when default-importing from a module that `export *`s from a module with a default export",
+                      "assignees": {
+                        "nodes": [
+                          {
+                            "name": "Daniel Rosenwasser"
                           }
                         ]
                       }

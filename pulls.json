@@ -30,17 +30,25 @@
   "28023": {
     "description": "reword error message when comparing non-comparable types",
     "reviewer": "ryan",
-    "state": "waiting",
+    "state": "review",
     "label": "backlog",
     "flags": "feature",
     "notes": [
       "  - Just changes the message text; no other changes."
     ]
   },
+  "28162": {
+    "description": "Improved 'nameless' JSDoc typedef support.",
+    "reviewer": "nathan",
+    "notes": [],
+    "flags": "FIXME",
+    "state": "waiting",
+    "label": "backlog"
+  },
   "28250": {
     "description": "convert function to arrow expr and back.",
     "reviewer": "mine",
-    "status": "review",
+    "state": "review",
     "label": "backlog",
     "flags": "feature",
     "notes": [
@@ -53,17 +61,25 @@
   "28708": {
     "description": "fix block-scoped capturing by class expressions inside iteration",
     "reviewer": "ron",
-    "status": "review",
+    "state": "review",
     "label": "milestone",
     "flags": "fix",
     "notes": []
   },
+  "28916": {
+    "description": "Add ReadonlyArray overload to Array.isArray",
+    "reviewer": "nathan",
+    "notes": [],
+    "flags": "FIXME",
+    "state": "waiting",
+    "label": "backlog"
+  },
   "29228": {
     "description": "give more mapped type properties a syntheticOrigin link",
     "reviewer": "anders",
-    "status": "review",
+    "state": "review",
     "label": "backlog",
-    "flag": "feature",
+    "flags": "feature",
     "notes": [
       "  - The idea is that it works for properties of non-homomorphic mapped types, but this doesn't make sense."
     ]
@@ -71,33 +87,33 @@
   "29374": {
     "description": "allow non-this, non-super before super in constructors",
     "reviewer": "ron",
-    "status": "review",
+    "state": "review",
     "label": "backlog",
-    "flag": "feature",
+    "flags": "feature",
     "notes": []
   },
   "29468": {
     "description": "instantiate `this` in non-super access expressions",
     "reviewer": "anders",
-    "status": "review",
+    "state": "review",
     "label": "milestone",
-    "flag": "fix",
+    "flags": "fix",
     "notes": []
   },
   "29539": {
     "description": "",
     "reviewer": "nathan",
-    "status": "review",
-    "label": "uncommitted",
-    "flag": "feature",
+    "state": "review",
+    "label": "bonus",
+    "flags": "feature",
     "notes": []
   },
   "30161": {
     "description": "instanceof narrowing of generics: copy type parameter from original",
     "reviewer": "anders",
-    "status": "review",
+    "state": "review",
     "label": "backlog",
-    "flag": "feature",
+    "flags": "feature",
     "notes": [
       "  - The idea is that it works for properties of non-homomorphic mapped types, but this doesn't make sense."
     ]
@@ -105,16 +121,16 @@
   "30593": {
     "description": "narrow non-declared unions by discriminant",
     "reviewer": "anders",
-    "status": "review",
+    "state": "review",
     "label": "backlog",
-    "flag": "fix",
+    "flags": "fix",
     "notes": []
   },
   "30639": {
     "description": "another type relation for conditional types",
-    "status": "waiting",
+    "state": "waiting",
     "label": "milestone",
-    "flag": "feature",
+    "flags": "feature",
     "reviewer": "wesley",
     "notes": []
   },
@@ -123,7 +139,7 @@
     "reviewer": "anders",
     "state": "review",
     "label": "milestone",
-    "flag": "fix",
+    "flags": "fix",
     "notes": []
   },
   "31029": {
@@ -131,7 +147,7 @@
     "reviewer": "anders",
     "state": "waiting",
     "label": "milestone",
-    "flag": "fix",
+    "flags": "fix",
     "notes": [
       "  - waiting to decide whether this should be under strictFunctionTypes or other strict flag."
     ]
@@ -141,7 +157,7 @@
     "reviewer": "wesley",
     "state": "waiting",
     "label": "milestone",
-    "flag": "feature",
+    "flags": "feature",
     "notes": [
       "  - This is Jack William's PR, and is kind of blocked by 30639."
     ]
@@ -151,7 +167,7 @@
     "reviewer": "anders",
     "state": "review",
     "label": "backlog",
-    "flag": "fix",
+    "flags": "fix",
     "notes": []
   },
   "31455": {
@@ -159,7 +175,7 @@
     "reviewer": "anders",
     "state": "review",
     "label": "milestone",
-    "flag": "fix",
+    "flags": "fix",
     "notes": []
   },
   "31633": {
@@ -167,7 +183,7 @@
     "reviewer": "anders",
     "state": "review",
     "label": "milestone",
-    "flag": "fix",
+    "flags": "fix",
     "notes": [
       "  - Re-adds recursion depth to inference -- but in a way that's more like assignability?"
     ]
@@ -177,7 +193,7 @@
     "reviewer": "ryan",
     "state": "waiting",
     "label": "milestone",
-    "flag": "feature",
+    "flags": "feature",
     "notes": []
   },
   "32702": {
@@ -185,7 +201,7 @@
     "reviewer": "wesley",
     "state": "review",
     "label": "backlog",
-    "flag": "feature",
+    "flags": "feature",
     "notes": []
   },
   "33055": {
@@ -193,7 +209,7 @@
     "reviewer": "ron",
     "state": "review",
     "label": "backlog",
-    "flag": "feature",
+    "flags": "feature",
     "notes": []
   },
   "33069": {
@@ -201,21 +217,27 @@
     "reviewer": "eli",
     "notes": [
       "  - This is a fix for the bug I asked you to look at recently."
-    ]
+    ],
+    "flags": "feature",
+    "state": "review",
+    "label": "backlog"
   },
   "33071": {
     "description": "narrow unit-unit inequality tests using comparability",
     "reviewer": "wesley",
     "notes": [
       "  - Is Jack Williams' assessment of the problem in the bug correct?"
-    ]
+    ],
+    "state": "review",
+    "label": "backlog",
+    "flags": "fix"
   },
   "33074": {
     "description": "better typings for Promise.resolve",
     "reviewer": "ron",
     "state": "review",
     "label": "backlog",
-    "flag": "feature",
+    "flags": "feature",
     "notes": []
   },
   "33089": {
@@ -223,7 +245,7 @@
     "reviewer": "wesley",
     "state": "review",
     "label": "backlog",
-    "flag": "fix",
+    "flags": "fix",
     "notes": []
   },
   "33103": {
@@ -231,7 +253,7 @@
     "reviewer": "ron",
     "state": "review",
     "label": "backlog",
-    "flag": "feature",
+    "flags": "feature",
     "notes": []
   },
   "33139": {
@@ -239,25 +261,41 @@
     "reviewer": "anders",
     "state": "review",
     "label": "backlog",
-    "flag": "feature",
+    "flags": "feature",
     "notes": []
+  },
+  "33248": {
+    "description": "Add use-before-def error for uninitialized property",
+    "reviewer": "ron",
+    "notes": [],
+    "flags": "FIXME",
+    "state": "merge",
+    "label": "milestone"
   },
   "33320": {
     "description": "unused type parameter in JSDoc gives the correct error",
     "reviewer": "andrew-branch",
     "state": "review",
     "label": "backlog",
-    "flag": "fix",
+    "flags": "fix",
     "notes": [
       "  - This change looks suspiciously simple. It should at least use getEffectiveTypeParameters, right?"
     ]
+  },
+  "33337": {
+    "description": "Corrected ES5 for-in destructuring binding emit",
+    "reviewer": "ron",
+    "notes": [],
+    "flags": "FIXME",
+    "state": "review",
+    "label": "backlog"
   },
   "33363": {
     "description": "cache repeated prototype sets in a variable",
     "reviewer": "ron",
     "state": "review",
     "label": "backlog",
-    "flag": "feature",
+    "flags": "feature",
     "notes": []
   },
   "33434": {
@@ -265,7 +303,7 @@
     "reviewer": "wesley",
     "state": "review",
     "label": "backlog",
-    "flag": "feature",
+    "flags": "feature",
     "notes": []
   },
   "33441": {
@@ -273,15 +311,23 @@
     "reviewer": "orta",
     "state": "review",
     "label": "backlog",
-    "flag": "feature",
+    "flags": "feature",
     "notes": []
+  },
+  "33497": {
+    "description": "Change default for TNext in Iterator/AsyncIterator",
+    "reviewer": "ron",
+    "notes": [],
+    "flags": "FIXME",
+    "state": "merge",
+    "label": "backlog"
   },
   "33544": {
     "description": "add `this` type for Reflect.defineProperty",
     "reviewer": "nathan",
     "state": "review",
     "label": "backlog",
-    "flag": "feature",
+    "flags": "feature",
     "notes": []
   },
   "33570": {
@@ -289,7 +335,7 @@
     "reviewer": "wesley",
     "state": "waiting",
     "label": "milestone",
-    "flag": "feature",
+    "flags": "feature",
     "notes": [
       "  - This is hanging out here until TS 4.0, but needs an error message added before then."
     ]
@@ -299,7 +345,7 @@
     "reviewer": "nathan",
     "state": "review",
     "label": "backlog",
-    "flag": "feature",
+    "flags": "feature",
     "notes": [
       "  - This is hanging out here until TS 4.0, but needs an error message added before then."
     ]
@@ -309,7 +355,7 @@
     "reviewer": "andrew-branch",
     "state": "review",
     "label": "backlog",
-    "flag": "feature",
+    "flags": "feature",
     "notes": []
   },
   "33673": {
@@ -317,7 +363,7 @@
     "reviewer": "ron",
     "state": "review",
     "label": "backlog",
-    "flag": "feature",
+    "flags": "feature",
     "notes": []
   },
   "33707": {
@@ -325,7 +371,7 @@
     "reviewer": "ron",
     "state": "review",
     "label": "backlog",
-    "flag": "feature",
+    "flags": "feature",
     "notes": [
       "  - The following 3 PRs are all included in this one, I think."
     ]
@@ -335,7 +381,7 @@
     "reviewer": "nathan",
     "state": "review",
     "label": "backlog",
-    "flag": "feature",
+    "flags": "feature",
     "notes": []
   },
   "33863": {
@@ -343,7 +389,7 @@
     "reviewer": "ron",
     "state": "waiting",
     "label": "milestone",
-    "flag": "feature",
+    "flags": "feature",
     "notes": [
       "  - Sounds like this one is required by a feature that's currently on hold."
     ]
@@ -353,7 +399,7 @@
     "reviewer": "orta",
     "state": "review",
     "label": "backlog",
-    "flag": "feature",
+    "flags": "feature",
     "notes": [
       "  - Seems fine, we just need to decide whether it would be useful long-term."
     ]
@@ -363,7 +409,7 @@
     "reviewer": "ron",
     "state": "review",
     "label": "backlog",
-    "flag": "feature",
+    "flags": "feature",
     "notes": []
   },
   "34655": {
@@ -371,7 +417,7 @@
     "reviewer": "eli",
     "state": "review",
     "label": "backlog",
-    "flag": "fix",
+    "flags": "fix",
     "notes": []
   },
   "34686": {
@@ -379,7 +425,7 @@
     "reviewer": "sheetal",
     "state": "review",
     "label": "backlog",
-    "flag": "fix",
+    "flags": "fix",
     "notes": [
       "  - This links to a closed bug, and does way more than asked for.",
       "  - The main task is probably talking to the contributor and convincing them to close or scale back the PR."
@@ -390,7 +436,7 @@
     "reviewer": "sheetal",
     "state": "waiting",
     "label": "milestone",
-    "flag": "feature",
+    "flags": "feature",
     "notes": []
   },
   "34868": {
@@ -398,7 +444,7 @@
     "reviewer": "nathan",
     "state": "review",
     "label": "backlog",
-    "flag": "feature",
+    "flags": "feature",
     "notes": []
   },
   "34932": {
@@ -406,7 +452,7 @@
     "reviewer": "orta",
     "state": "review",
     "label": "backlog",
-    "flag": "fix",
+    "flags": "fix",
     "notes": []
   },
   "34941": {
@@ -414,7 +460,7 @@
     "reviewer": "nathan",
     "state": "review",
     "label": "backlog",
-    "flag": "fix",
+    "flags": "fix",
     "notes": [
       "  - bug filed by ljharb so :eyeroll:"
     ]
@@ -424,7 +470,7 @@
     "reviewer": "wesley",
     "state": "review",
     "label": "milestone",
-    "flag": "feature",
+    "flags": "feature",
     "notes": [
       "  - I put both you and Ron on this PR, but it's really module-centric, so I think you're the right person for it."
     ]
@@ -434,14 +480,14 @@
     "reviewer": "eli",
     "state": "review",
     "label": "backlog",
-    "flag": "feature",
+    "flags": "feature",
     "notes": []
   },
   "35219": {
     "description": "convert function to ES6 class understands `x.prototype = {}`",
     "state": "review",
     "label": "backlog",
-    "flag": "feature",
+    "flags": "feature",
     "reviewer": "andrew-branch",
     "notes": []
   },
@@ -450,7 +496,7 @@
     "reviewer": "ron",
     "state": "review",
     "label": "backlog",
-    "flag": "feature",
+    "flags": "feature",
     "notes": [
       "  - This initially sounds like an attempt to do `awaited`, except wrong.",
       "  - Probably the hard part will be closing this PR in a polite way."
@@ -461,7 +507,7 @@
     "reviewer": "wesley",
     "state": "review",
     "label": "bonus",
-    "flag": "feature",
+    "flags": "feature",
     "notes": [
       "  - Jack marked this is speculative, but you seemed to like it, so we should decide whether to merge or close it."
     ]
@@ -471,25 +517,49 @@
     "reviewer": "ron",
     "state": "review",
     "label": "milestone",
-    "flag": "fix",
+    "flags": "fix",
     "notes": []
+  },
+  "35594": {
+    "description": "fix(lib/es2015): Fix definition of `ProxyHandler`",
+    "reviewer": "nathan",
+    "notes": [],
+    "flags": "FIXME",
+    "state": "review",
+    "label": "backlog"
+  },
+  "35608": {
+    "description": "feat(lib/es2015): Add typed overloads to `Reflect`",
+    "reviewer": "nathan",
+    "notes": [],
+    "flags": "FIXME",
+    "state": "review",
+    "label": "backlog"
   },
   "35741": {
     "description": "a type relation for conditional types",
     "reviewer": "wesley",
     "state": "review",
     "label": "milestone",
-    "flag": "feature",
+    "flags": "feature",
     "notes": [
       "  - I assume jablko's idea is similar to yours?"
     ]
+  },
+  "35862": {
+    "description": "Fixed issue with unreported error on missing method call in if test.",
+    "reviewer": "nathan",
+    "notes": [],
+    "flags": "FIXME",
+    "state": "review",
+    "label": "backlog"
   },
   "35863": {
     "description": "non-null assertion applied to control-flow type `never` now errors",
     "reviewer": "anders",
     "state": "review",
     "label": "backlog",
-    "flag": "fix",
+    "flags": "fix",
     "notes": []
   },
   "35877": {
@@ -497,15 +567,31 @@
     "reviewer": "ron",
     "state": "review",
     "label": "milestone",
-    "flag": "fix",
+    "flags": "fix",
     "notes": []
+  },
+  "35878": {
+    "description": "No error on indirect calls",
+    "reviewer": "nathan",
+    "notes": [],
+    "flags": "FIXME",
+    "state": "not-started",
+    "label": "bonus"
+  },
+  "35885": {
+    "description": "Added quick-fix to rewrite index access as call to get/set method.",
+    "reviewer": "andrew-casey",
+    "notes": [],
+    "flags": "FIXME",
+    "state": "waiting",
+    "label": "backlog"
   },
   "35937": {
     "description": "a refactor retains comments it was deleting by mistake.",
     "reviewer": "mine",
     "state": "review",
     "label": "backlog",
-    "flag": "fix",
+    "flags": "fix",
     "notes": [
       "  - Comments are quite tricky to get right.",
       "  - Some good lines from the review:",
@@ -518,57 +604,260 @@
       "  - The main task is to politely say \"Your PR is wrong, and this is really hard.\""
     ]
   },
+  "36015": {
+    "description": "Prefer a likely literal over anonymous type in --noImplicitAny codefixes",
+    "reviewer": "nathan",
+    "notes": [],
+    "flags": "FIXME",
+    "state": "review",
+    "label": "backlog"
+  },
+  "36131": {
+    "description": "Fix parsing nested parameter types of `@callback` JSDoc tag",
+    "reviewer": "nathan",
+    "notes": [],
+    "flags": "FIXME",
+    "state": "waiting",
+    "label": "backlog"
+  },
+  "36143": {
+    "description": "Fix handling of templates in preProcessFile",
+    "reviewer": "wesley",
+    "notes": [],
+    "flags": "FIXME",
+    "state": "review",
+    "label": "backlog"
+  },
+  "36152": {
+    "description": "Bug 33021",
+    "reviewer": "andrew-branch",
+    "notes": [],
+    "flags": "FIXME",
+    "state": "review",
+    "label": "backlog"
+  },
   "36408": {
     "description": "remove Reflect.decorate since it's non-standard",
     "reviewer": "ron",
-    "notes": []
+    "notes": [],
+    "state": "review",
+    "label": "backlog",
+    "flags": "feature"
   },
   "36543": {
     "description": "a refactor retains a modifier it was deleting by mistake.",
     "reviewer": "mine",
     "state": "review",
     "label": "backlog",
-    "flag": "fix",
+    "flags": "fix",
     "notes": []
+  },
+  "36546": {
+    "description": "fix: imports/exports/require with template literal tokens",
+    "reviewer": "sheetal",
+    "notes": [],
+    "flags": "FIXME",
+    "state": "review",
+    "label": "backlog"
+  },
+  "36599": {
+    "description": "Fix missing `undefined` checks",
+    "reviewer": "ron",
+    "notes": [],
+    "flags": "FIXME",
+    "state": "review",
+    "label": "backlog"
   },
   "36654": {
     "description": "did-you-mean error+codefix for non-Promise returning async functions",
     "reviewer": "eli",
     "state": "review",
     "label": "milestone",
-    "flag": "feature",
+    "flags": "feature",
     "notes": []
+  },
+  "36673": {
+    "description": "Do not parse template arguments in JavaScript files.",
+    "reviewer": "andrew-branch",
+    "notes": [],
+    "flags": "FIXME",
+    "state": "review",
+    "label": "backlog"
   },
   "36723": {
     "description": "AsyncIterable[Iterator] adds type parameters for TReturn, TNext",
     "reviewer": "ron",
     "state": "review",
     "label": "milestone",
-    "flag": "fix",
+    "flags": "fix",
     "notes": []
+  },
+  "36739": {
+    "description": "fix(33054): noUnusedLocals not working with array destructuring assignment in for-loop",
+    "reviewer": "sheetal",
+    "notes": [],
+    "flags": "FIXME",
+    "state": "review",
+    "label": "backlog"
+  },
+  "36746": {
+    "description": "Hide function type missing props if return and target type same.",
+    "reviewer": "andrew-casey",
+    "notes": [],
+    "flags": "FIXME",
+    "state": "waiting",
+    "label": "backlog"
+  },
+  "36747": {
+    "description": "Merge diagnosticsProducing and nonDiagnosticsProducing checkers into a single checker supporting lazy diagnostics",
+    "reviewer": "sheetal",
+    "notes": [],
+    "flags": "FIXME",
+    "state": "review",
+    "label": "backlog"
   },
   "36844": {
     "description": "add SourceFile and PrivateIdentifier constructors",
     "state": "review",
     "label": "backlog",
-    "flag": "fix",
+    "flags": "fix",
     "reviewer": "ron",
     "notes": []
+  },
+  "36925": {
+    "description": "fix(36909): wrong error message when trying to named-import an export",
+    "reviewer": "daniel",
+    "notes": [],
+    "flags": "FIXME",
+    "state": "merge",
+    "label": "milestone"
   },
   "37013": {
     "description": "__extends should use Object.prototype.hasOwnProperty.call",
     "state": "review",
     "label": "milestone",
-    "flag": "fix",
+    "flags": "fix",
     "reviewer": "ron",
     "notes": []
+  },
+  "37029": {
+    "description": "Add ToggleLineComment and ToggleMultilineComment service",
+    "reviewer": "andrew-casey",
+    "notes": [],
+    "flags": "FIXME",
+    "state": "review",
+    "label": "milestone"
+  },
+  "37035": {
+    "description": "Revert \"Revert \"Support declaration emit for late bound element acces…",
+    "reviewer": "wesley",
+    "notes": [],
+    "flags": "FIXME",
+    "state": "waiting",
+    "label": "milestone"
+  },
+  "37106": {
+    "description": "fix(37039): Support 'in' type guard of intersections",
+    "reviewer": "wesley",
+    "notes": [],
+    "flags": "FIXME",
+    "state": "review",
+    "label": "backlog"
+  },
+  "37183": {
+    "description": "fix(37150): private field should not conflict with string index type",
+    "reviewer": "eli",
+    "notes": [],
+    "flags": "FIXME",
+    "state": "review",
+    "label": "backlog"
+  },
+  "37205": {
+    "description": "Fix contextual types for maybe-async callbacks",
+    "reviewer": "wesley",
+    "notes": [],
+    "flags": "FIXME",
+    "state": "merge",
+    "label": "milestone"
+  },
+  "37212": {
+    "description": "feat(37092): Improve error when default-importing from a module that `export *`s from a module with a default export",
+    "reviewer": "daniel",
+    "notes": [],
+    "flags": "FIXME",
+    "state": "merge",
+    "label": "bonus"
   },
   "37228": {
     "description": "fix crash during module resolution",
     "reviewer": "sheetal",
     "state": "waiting",
     "label": "milestone",
-    "flag": "fix",
+    "flags": "fix",
     "notes": []
+  },
+  "37236": {
+    "description": "Update __exportStar helper to skip default and __esModule members",
+    "reviewer": "wesley",
+    "notes": [],
+    "flags": "FIXME",
+    "state": "waiting",
+    "label": "milestone"
+  },
+  "37283": {
+    "description": "Added runtime TypeError for non-function, non-null __extends",
+    "reviewer": "ron",
+    "notes": [],
+    "flags": "FIXME",
+    "state": "review",
+    "label": "backlog"
+  },
+  "37297": {
+    "description": "Fix handling of string enums on LHS of `+=`",
+    "reviewer": "eli",
+    "notes": [],
+    "flags": "FIXME",
+    "state": "not-started",
+    "label": "milestone"
+  },
+  "37298": {
+    "description": "Allow Source Mapping inside destructuring assignment",
+    "reviewer": "sheetal",
+    "notes": [],
+    "flags": "FIXME",
+    "state": "review",
+    "label": "milestone"
+  },
+  "37367": {
+    "description": "fix(37364): No completions in string literal index on mapped type",
+    "reviewer": "eli",
+    "notes": [],
+    "flags": "FIXME",
+    "state": "merge",
+    "label": "milestone"
+  },
+  "37376": {
+    "description": "feat: add util {is,create,update}DynamicImport",
+    "reviewer": "ron",
+    "notes": [],
+    "flags": "FIXME",
+    "state": "waiting",
+    "label": "bonus"
+  },
+  "37392": {
+    "description": "Enable excess property checking on spread assignment",
+    "reviewer": "nathan",
+    "notes": [],
+    "flags": "FIXME",
+    "state": "review",
+    "label": "backlog"
+  },
+  "37424": {
+    "description": "Support top level \"for await of\"",
+    "reviewer": "ron",
+    "notes": [],
+    "flags": "FIXME",
+    "state": "review",
+    "label": "backlog"
   }
 }
