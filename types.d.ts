@@ -10,7 +10,7 @@ type Pull = {
     notes: string[]
     state: "not-started" | "review" | "waiting" | "merge" | "done"
     label: "milestone" | "backlog" | "bonus" | "housekeeping" | "experiment"
-    flags?: "fix" | "feature" | "bonus"
+    flags?: "fix" | "feature" | "bonus" | "FIXME"
 }
 
 type Board = {

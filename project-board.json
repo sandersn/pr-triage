@@ -1745,26 +1745,6 @@
                   },
                   {
                     "content": {
-                      "number": 36746,
-                      "labels": {
-                        "nodes": [
-                          {
-                            "name": "For Backlog Bug"
-                          }
-                        ]
-                      },
-                      "title": "Hide function type missing props if return and target type same.",
-                      "assignees": {
-                        "nodes": [
-                          {
-                            "name": "Andrew Casey"
-                          }
-                        ]
-                      }
-                    }
-                  },
-                  {
-                    "content": {
                       "number": 27591,
                       "labels": {
                         "nodes": [
@@ -1774,26 +1754,6 @@
                         ]
                       },
                       "title": "Assignability should check an index signature or rest type of the source against optional properties of the target.",
-                      "assignees": {
-                        "nodes": [
-                          {
-                            "name": "Nathan Shively-Sanders"
-                          }
-                        ]
-                      }
-                    }
-                  },
-                  {
-                    "content": {
-                      "number": 28162,
-                      "labels": {
-                        "nodes": [
-                          {
-                            "name": "For Backlog Bug"
-                          }
-                        ]
-                      },
-                      "title": "Improved 'nameless' JSDoc typedef support.",
                       "assignees": {
                         "nodes": [
                           {

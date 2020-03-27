@@ -4,18 +4,20 @@ const { assert } = require('console')
 /** convert graphql output to denormalised output */
 function updateFromGraphql() {
   /** @type {Board} */
-  var boards = JSON.parse(fs.readFileSync('project-board.json', 'utf8'))
+  const boards = JSON.parse(fs.readFileSync('project-board.json', 'utf8'))
   /** @type {Pulls} */
-  var pulls = JSON.parse(fs.readFileSync('pulls.json', 'utf8'))
+  const pulls = JSON.parse(fs.readFileSync('pulls.json', 'utf8'))
+  const seen = new Set()
 
   for (const column of boards.data.repository.project.columns.nodes) {
     for (const cardp of column.cards.nodes) {
       const card = cardp.content
+      seen.add(card.number+"")
       assert(card.assignees.nodes.length === 1, "Should only have 1 assignee", card.number)
 
       const existing = pulls[card.number]
       if (existing) {
-        // These might have changed, and it's a good idea for sanity sake
+        // These might have changed, and it's a good idea for sanity checking to diff the output
         // Don't override the description, though; assume that it might be manually updated
         existing.reviewer = fromAssignee(card.assignees.nodes[0].name)
         existing.state = fromColumn(column.name)
@@ -26,11 +28,16 @@ function updateFromGraphql() {
           description: card.title,
           reviewer: fromAssignee(card.assignees.nodes[0].name),
           notes: [],
-          flags: /** @type {*} */("FIXME"),
+          flags: "FIXME",
           state: fromColumn(column.name),
           label: fromLabels(card.labels.nodes)
         }
       }
+    }
+  }
+  for (const number in pulls) {
+    if (!seen.has(number)) {
+      delete pulls[number]
     }
   }
   return pulls
@@ -88,9 +95,9 @@ function emitPulls(pulls, name) {
  * @param {string} number
  */
 function emitPull(pull, number) {
-  let line = ` * https://github.com/microsoft/TypeScript/pull/${number} - ${pull.description}\n`
+  let line = `* https://github.com/microsoft/TypeScript/pull/${number} - ${pull.description}\n`
   if (pull.notes.length) {
-    line += "\n   Notes:\n" + pull.notes.join('\n') + "\n"
+    line += "\n  Notes:\n" + pull.notes.join('\n') + "\n"
   }
   return line
 }

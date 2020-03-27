@@ -37,14 +37,6 @@
       "  - Just changes the message text; no other changes."
     ]
   },
-  "28162": {
-    "description": "Improved 'nameless' JSDoc typedef support.",
-    "reviewer": "nathan",
-    "notes": [],
-    "flags": "FIXME",
-    "state": "waiting",
-    "label": "backlog"
-  },
   "28250": {
     "description": "convert function to arrow expr and back.",
     "reviewer": "mine",
@@ -70,7 +62,7 @@
     "description": "Add ReadonlyArray overload to Array.isArray",
     "reviewer": "nathan",
     "notes": [],
-    "flags": "FIXME",
+    "flags": "feature",
     "state": "waiting",
     "label": "backlog"
   },
@@ -268,7 +260,7 @@
     "description": "Add use-before-def error for uninitialized property",
     "reviewer": "ron",
     "notes": [],
-    "flags": "FIXME",
+    "flags": "feature",
     "state": "merge",
     "label": "milestone"
   },
@@ -286,7 +278,7 @@
     "description": "Corrected ES5 for-in destructuring binding emit",
     "reviewer": "ron",
     "notes": [],
-    "flags": "FIXME",
+    "flags": "fix",
     "state": "review",
     "label": "backlog"
   },
@@ -318,7 +310,7 @@
     "description": "Change default for TNext in Iterator/AsyncIterator",
     "reviewer": "ron",
     "notes": [],
-    "flags": "FIXME",
+    "flags": "feature",
     "state": "merge",
     "label": "backlog"
   },
@@ -524,7 +516,7 @@
     "description": "fix(lib/es2015): Fix definition of `ProxyHandler`",
     "reviewer": "nathan",
     "notes": [],
-    "flags": "FIXME",
+    "flags": "feature",
     "state": "review",
     "label": "backlog"
   },
@@ -532,7 +524,7 @@
     "description": "feat(lib/es2015): Add typed overloads to `Reflect`",
     "reviewer": "nathan",
     "notes": [],
-    "flags": "FIXME",
+    "flags": "feature",
     "state": "review",
     "label": "backlog"
   },
@@ -550,7 +542,7 @@
     "description": "Fixed issue with unreported error on missing method call in if test.",
     "reviewer": "nathan",
     "notes": [],
-    "flags": "FIXME",
+    "flags": "fix",
     "state": "review",
     "label": "backlog"
   },
@@ -574,7 +566,7 @@
     "description": "No error on indirect calls",
     "reviewer": "nathan",
     "notes": [],
-    "flags": "FIXME",
+    "flags": "fix",
     "state": "not-started",
     "label": "bonus"
   },
@@ -582,7 +574,7 @@
     "description": "Added quick-fix to rewrite index access as call to get/set method.",
     "reviewer": "andrew-casey",
     "notes": [],
-    "flags": "FIXME",
+    "flags": "feature",
     "state": "waiting",
     "label": "backlog"
   },
@@ -608,7 +600,7 @@
     "description": "Prefer a likely literal over anonymous type in --noImplicitAny codefixes",
     "reviewer": "nathan",
     "notes": [],
-    "flags": "FIXME",
+    "flags": "feature",
     "state": "review",
     "label": "backlog"
   },
@@ -616,7 +608,7 @@
     "description": "Fix parsing nested parameter types of `@callback` JSDoc tag",
     "reviewer": "nathan",
     "notes": [],
-    "flags": "FIXME",
+    "flags": "fix",
     "state": "waiting",
     "label": "backlog"
   },
@@ -624,15 +616,15 @@
     "description": "Fix handling of templates in preProcessFile",
     "reviewer": "wesley",
     "notes": [],
-    "flags": "FIXME",
+    "flags": "fix",
     "state": "review",
     "label": "backlog"
   },
   "36152": {
-    "description": "Bug 33021",
+    "description": "Unused-variable codefix now updates @param",
     "reviewer": "andrew-branch",
     "notes": [],
-    "flags": "FIXME",
+    "flags": "feature",
     "state": "review",
     "label": "backlog"
   },
@@ -656,7 +648,7 @@
     "description": "fix: imports/exports/require with template literal tokens",
     "reviewer": "sheetal",
     "notes": [],
-    "flags": "FIXME",
+    "flags": "fix",
     "state": "review",
     "label": "backlog"
   },
@@ -664,7 +656,7 @@
     "description": "Fix missing `undefined` checks",
     "reviewer": "ron",
     "notes": [],
-    "flags": "FIXME",
+    "flags": "fix",
     "state": "review",
     "label": "backlog"
   },
@@ -680,7 +672,7 @@
     "description": "Do not parse template arguments in JavaScript files.",
     "reviewer": "andrew-branch",
     "notes": [],
-    "flags": "FIXME",
+    "flags": "fix",
     "state": "review",
     "label": "backlog"
   },
@@ -696,23 +688,15 @@
     "description": "fix(33054): noUnusedLocals not working with array destructuring assignment in for-loop",
     "reviewer": "sheetal",
     "notes": [],
-    "flags": "FIXME",
+    "flags": "fix",
     "state": "review",
-    "label": "backlog"
-  },
-  "36746": {
-    "description": "Hide function type missing props if return and target type same.",
-    "reviewer": "andrew-casey",
-    "notes": [],
-    "flags": "FIXME",
-    "state": "waiting",
     "label": "backlog"
   },
   "36747": {
     "description": "Merge diagnosticsProducing and nonDiagnosticsProducing checkers into a single checker supporting lazy diagnostics",
     "reviewer": "sheetal",
     "notes": [],
-    "flags": "FIXME",
+    "flags": "feature",
     "state": "review",
     "label": "backlog"
   },
@@ -728,7 +712,7 @@
     "description": "fix(36909): wrong error message when trying to named-import an export",
     "reviewer": "daniel",
     "notes": [],
-    "flags": "FIXME",
+    "flags": "fix",
     "state": "merge",
     "label": "milestone"
   },
@@ -744,7 +728,7 @@
     "description": "Add ToggleLineComment and ToggleMultilineComment service",
     "reviewer": "andrew-casey",
     "notes": [],
-    "flags": "FIXME",
+    "flags": "feature",
     "state": "review",
     "label": "milestone"
   },
@@ -752,7 +736,7 @@
     "description": "Revert \"Revert \"Support declaration emit for late bound element acces…",
     "reviewer": "wesley",
     "notes": [],
-    "flags": "FIXME",
+    "flags": "feature",
     "state": "waiting",
     "label": "milestone"
   },
@@ -760,7 +744,7 @@
     "description": "fix(37039): Support 'in' type guard of intersections",
     "reviewer": "wesley",
     "notes": [],
-    "flags": "FIXME",
+    "flags": "fix",
     "state": "review",
     "label": "backlog"
   },
@@ -768,7 +752,7 @@
     "description": "fix(37150): private field should not conflict with string index type",
     "reviewer": "eli",
     "notes": [],
-    "flags": "FIXME",
+    "flags": "fix",
     "state": "review",
     "label": "backlog"
   },
@@ -776,7 +760,7 @@
     "description": "Fix contextual types for maybe-async callbacks",
     "reviewer": "wesley",
     "notes": [],
-    "flags": "FIXME",
+    "flags": "fix",
     "state": "merge",
     "label": "milestone"
   },
@@ -784,7 +768,7 @@
     "description": "feat(37092): Improve error when default-importing from a module that `export *`s from a module with a default export",
     "reviewer": "daniel",
     "notes": [],
-    "flags": "FIXME",
+    "flags": "feature",
     "state": "merge",
     "label": "bonus"
   },
@@ -800,7 +784,7 @@
     "description": "Update __exportStar helper to skip default and __esModule members",
     "reviewer": "wesley",
     "notes": [],
-    "flags": "FIXME",
+    "flags": "fix",
     "state": "waiting",
     "label": "milestone"
   },
@@ -808,7 +792,7 @@
     "description": "Added runtime TypeError for non-function, non-null __extends",
     "reviewer": "ron",
     "notes": [],
-    "flags": "FIXME",
+    "flags": "feature",
     "state": "review",
     "label": "backlog"
   },
@@ -816,7 +800,7 @@
     "description": "Fix handling of string enums on LHS of `+=`",
     "reviewer": "eli",
     "notes": [],
-    "flags": "FIXME",
+    "flags": "fix",
     "state": "not-started",
     "label": "milestone"
   },
@@ -824,7 +808,7 @@
     "description": "Allow Source Mapping inside destructuring assignment",
     "reviewer": "sheetal",
     "notes": [],
-    "flags": "FIXME",
+    "flags": "fix",
     "state": "review",
     "label": "milestone"
   },
@@ -832,7 +816,7 @@
     "description": "fix(37364): No completions in string literal index on mapped type",
     "reviewer": "eli",
     "notes": [],
-    "flags": "FIXME",
+    "flags": "fix",
     "state": "merge",
     "label": "milestone"
   },
@@ -840,7 +824,7 @@
     "description": "feat: add util {is,create,update}DynamicImport",
     "reviewer": "ron",
     "notes": [],
-    "flags": "FIXME",
+    "flags": "feature",
     "state": "waiting",
     "label": "bonus"
   },
@@ -848,7 +832,7 @@
     "description": "Enable excess property checking on spread assignment",
     "reviewer": "nathan",
     "notes": [],
-    "flags": "FIXME",
+    "flags": "feature",
     "state": "review",
     "label": "backlog"
   },
@@ -856,7 +840,7 @@
     "description": "Support top level \"for await of\"",
     "reviewer": "ron",
     "notes": [],
-    "flags": "FIXME",
+    "flags": "feature",
     "state": "review",
     "label": "backlog"
   }
