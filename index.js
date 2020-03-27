@@ -53,21 +53,27 @@ function emitPulls(pulls, name) {
     fix: [],
     feature: [],
     bonus: [],
+    merge: [],
+    waiting: [],
     FIXME: [],
   }
   const flagNames = {
     fix: "Fixes",
     feature: "Features",
     bonus: "Uncommitted",
+    merge: "Ready to Merge",
+    waiting: "Waiting on Author",
     FIXME: "UNTRIAGED",
   }
-  const waiting = []
   // 1. filter by name
   for (const key in pulls) {
     if (pulls[key].reviewer === name) {
       const pull = emitPull(pulls[key], key);
-      if (pulls[key].state === 'waiting') {
-        waiting.push(pull)
+      if (pulls[key].state === 'merge') {
+        flags.merge.push(pull)
+      }
+      else if (pulls[key].state === 'waiting') {
+        flags.waiting.push(pull)
       }
       else {
         assert(pulls[key].flags in flags, "bad flag:", pulls[key].flags, key)
