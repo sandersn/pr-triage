@@ -1,0 +1,754 @@
+{
+  "26434": {
+    "description": "code fix for functions lacking return expressions",
+    "reviewer": "andrew-casey",
+    "state": "merge",
+    "label": "backlog",
+    "flags": "feature",
+    "notes": []
+  },
+  "27227": {
+    "description": "improve error message for `==` of two different types",
+    "reviewer": "eli",
+    "state": "review",
+    "label": "backlog",
+    "flags": "fix",
+    "notes": [
+      "  - This is so old that it may be obsolete. First thing is to check what errors we currently give."
+    ]
+  },
+  "28023": {
+    "description": "reword error message when comparing non-comparable types",
+    "reviewer": "ryan",
+    "state": "review",
+    "label": "backlog",
+    "flags": "feature",
+    "notes": [
+      "  - Just changes the message text; no other changes."
+    ]
+  },
+  "28250": {
+    "description": "convert function to arrow expr and back.",
+    "reviewer": "mine",
+    "state": "review",
+    "label": "backlog",
+    "flags": "feature",
+    "notes": [
+      "  - Written by a couple of students for their bachelor's thesis.",
+      "  - Justification for the issue is \"Jetbrains has it\".",
+      "  - Andy already reviewed it, so the code should be basically OK.",
+      "  - The main task is to decide whether \"Jetbrains has it\" is good enough reason for us to have it."
+    ]
+  },
+  "28708": {
+    "description": "fix block-scoped capturing by class expressions inside iteration",
+    "reviewer": "ron",
+    "state": "review",
+    "label": "milestone",
+    "flags": "fix",
+    "notes": []
+  },
+  "29228": {
+    "description": "give more mapped type properties a syntheticOrigin link",
+    "reviewer": "anders",
+    "state": "review",
+    "label": "backlog",
+    "flags": "feature",
+    "notes": [
+      "  - The idea is that it works for properties of non-homomorphic mapped types, but this doesn't make sense."
+    ]
+  },
+  "29374": {
+    "description": "allow non-this, non-super before super in constructors",
+    "reviewer": "ron",
+    "state": "review",
+    "label": "backlog",
+    "flags": "feature",
+    "notes": []
+  },
+  "29468": {
+    "description": "instantiate `this` in non-super access expressions",
+    "reviewer": "anders",
+    "state": "review",
+    "label": "milestone",
+    "flags": "fix",
+    "notes": []
+  },
+  "29539": {
+    "description": "",
+    "reviewer": "nathan",
+    "state": "review",
+    "label": "bonus",
+    "flags": "feature",
+    "notes": []
+  },
+  "30161": {
+    "description": "instanceof narrowing of generics: copy type parameter from original",
+    "reviewer": "anders",
+    "state": "review",
+    "label": "backlog",
+    "flags": "feature",
+    "notes": [
+      "  - The idea is that it works for properties of non-homomorphic mapped types, but this doesn't make sense."
+    ]
+  },
+  "30593": {
+    "description": "narrow non-declared unions by discriminant",
+    "reviewer": "anders",
+    "state": "review",
+    "label": "backlog",
+    "flags": "fix",
+    "notes": []
+  },
+  "30639": {
+    "description": "another type relation for conditional types",
+    "state": "merge",
+    "label": "milestone",
+    "flags": "feature",
+    "reviewer": "wesley",
+    "notes": []
+  },
+  "31023": {
+    "description": "Allow identical type parameter lists to merge in union signatures",
+    "reviewer": "anders",
+    "state": "review",
+    "label": "milestone",
+    "flags": "fix",
+    "notes": []
+  },
+  "31029": {
+    "description": "fix relations for instantations of same generic signature",
+    "reviewer": "anders",
+    "state": "waiting",
+    "label": "milestone",
+    "flags": "fix",
+    "notes": [
+      "  - waiting to decide whether this should be under strictFunctionTypes or other strict flag."
+    ]
+  },
+  "31277": {
+    "description": "don't measure variance for conditional type extendsType",
+    "reviewer": "wesley",
+    "state": "waiting",
+    "label": "milestone",
+    "flags": "feature",
+    "notes": [
+      "  - This is Jack William's PR, and is kind of blocked by 30639."
+    ]
+  },
+  "31345": {
+    "description": "inference: break down target unions before source unions",
+    "reviewer": "anders",
+    "state": "review",
+    "label": "backlog",
+    "flags": "fix",
+    "notes": []
+  },
+  "31455": {
+    "description": "fix type parameter leak in conditional types",
+    "reviewer": "anders",
+    "state": "review",
+    "label": "milestone",
+    "flags": "fix",
+    "notes": []
+  },
+  "31633": {
+    "description": "allow inference to explore multiple instances of the same symbol",
+    "reviewer": "anders",
+    "state": "review",
+    "label": "milestone",
+    "flags": "fix",
+    "notes": [
+      "  - Re-adds recursion depth to inference -- but in a way that's more like assignability?"
+    ]
+  },
+  "32131": {
+    "description": "improved Array.flat declaration in es2019.array.d.ts",
+    "reviewer": "ryan",
+    "state": "review",
+    "label": "milestone",
+    "flags": "feature",
+    "notes": []
+  },
+  "33055": {
+    "description": "better typings for Promise.all",
+    "reviewer": "ron",
+    "state": "review",
+    "label": "backlog",
+    "flags": "feature",
+    "notes": []
+  },
+  "33069": {
+    "description": "improve error checking with multiple spread arguments",
+    "reviewer": "eli",
+    "notes": [
+      "  - This is a fix for the bug I asked you to look at recently."
+    ],
+    "flags": "feature",
+    "state": "review",
+    "label": "backlog"
+  },
+  "33074": {
+    "description": "better typings for Promise.resolve",
+    "reviewer": "ron",
+    "state": "review",
+    "label": "backlog",
+    "flags": "feature",
+    "notes": []
+  },
+  "33089": {
+    "description": "only apply indexed access write simplifications to types that arise from mutations",
+    "reviewer": "wesley",
+    "state": "merge",
+    "label": "backlog",
+    "flags": "fix",
+    "notes": []
+  },
+  "33103": {
+    "description": "better typings for Promise.then",
+    "reviewer": "ron",
+    "state": "review",
+    "label": "backlog",
+    "flags": "feature",
+    "notes": []
+  },
+  "33139": {
+    "description": "higher order inference: `this` parameters similar to functions and constructors",
+    "reviewer": "anders",
+    "state": "review",
+    "label": "backlog",
+    "flags": "feature",
+    "notes": []
+  },
+  "33248": {
+    "description": "Add use-before-def error for uninitialized property",
+    "reviewer": "ron",
+    "notes": [],
+    "flags": "feature",
+    "state": "merge",
+    "label": "milestone"
+  },
+  "33337": {
+    "description": "Corrected ES5 for-in destructuring binding emit",
+    "reviewer": "ron",
+    "notes": [],
+    "flags": "fix",
+    "state": "review",
+    "label": "backlog"
+  },
+  "33363": {
+    "description": "cache repeated prototype sets in a variable",
+    "reviewer": "ron",
+    "state": "review",
+    "label": "backlog",
+    "flags": "feature",
+    "notes": []
+  },
+  "33434": {
+    "description": "unify if/switch logic in typeof narrowing",
+    "reviewer": "wesley",
+    "state": "merge",
+    "label": "backlog",
+    "flags": "feature",
+    "notes": []
+  },
+  "33441": {
+    "description": "improve class/function merge error",
+    "reviewer": "orta",
+    "state": "review",
+    "label": "backlog",
+    "flags": "feature",
+    "notes": []
+  },
+  "33497": {
+    "description": "Change default for TNext in Iterator/AsyncIterator",
+    "reviewer": "ron",
+    "notes": [],
+    "flags": "feature",
+    "state": "merge",
+    "label": "backlog"
+  },
+  "33544": {
+    "description": "add `this` type for Reflect.defineProperty",
+    "reviewer": "nathan",
+    "state": "review",
+    "label": "backlog",
+    "flags": "feature",
+    "notes": []
+  },
+  "33570": {
+    "description": "disallow assignment of {} to unconstrained type parameters",
+    "reviewer": "wesley",
+    "state": "waiting",
+    "label": "milestone",
+    "flags": "feature",
+    "notes": [
+      "  - This is hanging out here until TS 4.0, but needs an error message added before then."
+    ]
+  },
+  "33645": {
+    "description": "better typings for Array.concat() etc",
+    "reviewer": "nathan",
+    "state": "review",
+    "label": "backlog",
+    "flags": "feature",
+    "notes": [
+      "  - This is hanging out here until TS 4.0, but needs an error message added before then."
+    ]
+  },
+  "33652": {
+    "description": "goto implementation suggests all subtypes",
+    "reviewer": "andrew-branch",
+    "state": "merge",
+    "label": "backlog",
+    "flags": "feature",
+    "notes": []
+  },
+  "33673": {
+    "description": "emit fewer duplicate trivia on initialisers added by a transformer",
+    "reviewer": "ron",
+    "state": "review",
+    "label": "backlog",
+    "flags": "feature",
+    "notes": []
+  },
+  "33707": {
+    "description": "better typings for Promise",
+    "reviewer": "ron",
+    "state": "review",
+    "label": "backlog",
+    "flags": "feature",
+    "notes": [
+      "  - The following 3 PRs are all included in this one, I think."
+    ]
+  },
+  "33767": {
+    "description": "Add an overload to Object.freeze that preserves literal types",
+    "reviewer": "nathan",
+    "state": "review",
+    "label": "backlog",
+    "flags": "feature",
+    "notes": []
+  },
+  "33863": {
+    "description": "add shim for ES promise",
+    "reviewer": "ron",
+    "state": "waiting",
+    "label": "milestone",
+    "flags": "feature",
+    "notes": [
+      "  - Sounds like this one is required by a feature that's currently on hold."
+    ]
+  },
+  "33876": {
+    "description": "make get[Non]OptionalType part of the public API",
+    "reviewer": "orta",
+    "state": "review",
+    "label": "backlog",
+    "flags": "feature",
+    "notes": [
+      "  - Seems fine, we just need to decide whether it would be useful long-term."
+    ]
+  },
+  "34518": {
+    "description": "cache global tagged template objects",
+    "reviewer": "ron",
+    "state": "review",
+    "label": "backlog",
+    "flags": "feature",
+    "notes": []
+  },
+  "34655": {
+    "description": "add error when enum member references itself in its initialiser",
+    "reviewer": "eli",
+    "state": "review",
+    "label": "backlog",
+    "flags": "fix",
+    "notes": []
+  },
+  "34868": {
+    "description": "sort union emit",
+    "reviewer": "nathan",
+    "state": "review",
+    "label": "backlog",
+    "flags": "feature",
+    "notes": []
+  },
+  "34941": {
+    "description": "fix String.prototype.replace.call overload selection",
+    "reviewer": "nathan",
+    "state": "review",
+    "label": "backlog",
+    "flags": "fix",
+    "notes": [
+      "  - bug filed by ljharb so :eyeroll:"
+    ]
+  },
+  "35155": {
+    "description": "disallow exponentational operator on bigint for targets <ES2016",
+    "reviewer": "eli",
+    "state": "review",
+    "label": "backlog",
+    "flags": "feature",
+    "notes": []
+  },
+  "35219": {
+    "description": "convert function to ES6 class understands `x.prototype = {}`",
+    "state": "waiting",
+    "label": "backlog",
+    "flags": "feature",
+    "reviewer": "andrew-branch",
+    "notes": []
+  },
+  "35284": {
+    "description": "defer generic awaited types",
+    "reviewer": "ron",
+    "state": "review",
+    "label": "backlog",
+    "flags": "feature",
+    "notes": [
+      "  - This initially sounds like an attempt to do `awaited`, except wrong.",
+      "  - Probably the hard part will be closing this PR in a polite way."
+    ]
+  },
+  "35494": {
+    "description": "capture thisArg of optional chaining when parenthesized",
+    "reviewer": "ron",
+    "state": "review",
+    "label": "milestone",
+    "flags": "fix",
+    "notes": []
+  },
+  "35594": {
+    "description": "fix(lib/es2015): Fix definition of `ProxyHandler`",
+    "reviewer": "nathan",
+    "notes": [],
+    "flags": "feature",
+    "state": "review",
+    "label": "backlog"
+  },
+  "35608": {
+    "description": "feat(lib/es2015): Add typed overloads to `Reflect`",
+    "reviewer": "nathan",
+    "notes": [],
+    "flags": "feature",
+    "state": "review",
+    "label": "backlog"
+  },
+  "35741": {
+    "description": "a type relation for conditional types",
+    "reviewer": "wesley",
+    "state": "review",
+    "label": "milestone",
+    "flags": "feature",
+    "notes": [
+      "  - I assume jablko's idea is similar to yours?"
+    ]
+  },
+  "35863": {
+    "description": "non-null assertion applied to control-flow type `never` now errors",
+    "reviewer": "anders",
+    "state": "review",
+    "label": "backlog",
+    "flags": "fix",
+    "notes": []
+  },
+  "35877": {
+    "description": "fix receiver on calls of imported/exported functions",
+    "reviewer": "ron",
+    "state": "review",
+    "label": "milestone",
+    "flags": "fix",
+    "notes": []
+  },
+  "35878": {
+    "description": "No error on indirect calls",
+    "reviewer": "nathan",
+    "notes": [],
+    "flags": "fix",
+    "state": "not-started",
+    "label": "bonus"
+  },
+  "35885": {
+    "description": "Added quick-fix to rewrite index access as call to get/set method.",
+    "reviewer": "andrew-casey",
+    "notes": [],
+    "flags": "feature",
+    "state": "waiting",
+    "label": "backlog"
+  },
+  "35937": {
+    "description": "a refactor retains comments it was deleting by mistake.",
+    "reviewer": "jesse",
+    "state": "review",
+    "label": "backlog",
+    "flags": "fix",
+    "notes": [
+      "  - Comments are quite tricky to get right.",
+      "  - Some good lines from the review:",
+      "  ```ts",
+      "  // Check if it is semi-colon",
+      "  // I feel like there has to be a way using SyntaxKind.SemicolonToken",
+      "  return lastChar === \";\";",
+      "  ```",
+      "  - This is almost certainly wrong, because this is tricky to get right.",
+      "  - The main task is to politely say \"Your PR is wrong, and this is really hard.\""
+    ]
+  },
+  "36015": {
+    "description": "Prefer a likely literal over anonymous type in --noImplicitAny codefixes",
+    "reviewer": "nathan",
+    "notes": [],
+    "flags": "feature",
+    "state": "review",
+    "label": "backlog"
+  },
+  "36143": {
+    "description": "Fix handling of templates in preProcessFile",
+    "reviewer": "wesley",
+    "notes": [],
+    "flags": "fix",
+    "state": "review",
+    "label": "backlog"
+  },
+  "36152": {
+    "description": "Unused-variable codefix now updates @param",
+    "reviewer": "andrew-branch",
+    "notes": [],
+    "flags": "feature",
+    "state": "waiting",
+    "label": "backlog"
+  },
+  "36408": {
+    "description": "remove Reflect.decorate since it's non-standard",
+    "reviewer": "ron",
+    "notes": [],
+    "state": "review",
+    "label": "backlog",
+    "flags": "feature"
+  },
+  "36543": {
+    "description": "a refactor retains a modifier it was deleting by mistake.",
+    "reviewer": "mine",
+    "state": "review",
+    "label": "backlog",
+    "flags": "fix",
+    "notes": []
+  },
+  "36599": {
+    "description": "Fix missing `undefined` checks",
+    "reviewer": "ron",
+    "notes": [],
+    "flags": "fix",
+    "state": "review",
+    "label": "backlog"
+  },
+  "36654": {
+    "description": "did-you-mean error+codefix for non-Promise returning async functions",
+    "reviewer": "eli",
+    "state": "review",
+    "label": "milestone",
+    "flags": "feature",
+    "notes": []
+  },
+  "36673": {
+    "description": "Do not parse template arguments in JavaScript files.",
+    "reviewer": "andrew-branch",
+    "notes": [],
+    "flags": "fix",
+    "state": "review",
+    "label": "backlog"
+  },
+  "36723": {
+    "description": "AsyncIterable[Iterator] adds type parameters for TReturn, TNext",
+    "reviewer": "ron",
+    "state": "review",
+    "label": "milestone",
+    "flags": "fix",
+    "notes": []
+  },
+  "36747": {
+    "description": "Merge diagnosticsProducing and nonDiagnosticsProducing checkers into a single checker supporting lazy diagnostics",
+    "reviewer": "sheetal",
+    "notes": [],
+    "flags": "feature",
+    "state": "review",
+    "label": "backlog"
+  },
+  "36844": {
+    "description": "add SourceFile and PrivateIdentifier constructors",
+    "state": "review",
+    "label": "backlog",
+    "flags": "fix",
+    "reviewer": "ron",
+    "notes": []
+  },
+  "37013": {
+    "description": "__extends should use Object.prototype.hasOwnProperty.call",
+    "state": "review",
+    "label": "milestone",
+    "flags": "fix",
+    "reviewer": "ron",
+    "notes": []
+  },
+  "37029": {
+    "description": "Add ToggleLineComment and ToggleMultilineComment service",
+    "reviewer": "andrew-casey",
+    "notes": [],
+    "flags": "feature",
+    "state": "waiting",
+    "label": "milestone"
+  },
+  "37183": {
+    "description": "fix(37150): private field should not conflict with string index type",
+    "reviewer": "eli",
+    "notes": [],
+    "flags": "fix",
+    "state": "review",
+    "label": "backlog"
+  },
+  "37228": {
+    "description": "fix crash during module resolution",
+    "reviewer": "sheetal",
+    "state": "waiting",
+    "label": "milestone",
+    "flags": "fix",
+    "notes": []
+  },
+  "37236": {
+    "description": "Update __exportStar helper to skip default and __esModule members",
+    "reviewer": "wesley",
+    "notes": [],
+    "flags": "fix",
+    "state": "waiting",
+    "label": "milestone"
+  },
+  "37283": {
+    "description": "Added runtime TypeError for non-function, non-null __extends",
+    "reviewer": "ron",
+    "notes": [],
+    "flags": "feature",
+    "state": "review",
+    "label": "backlog"
+  },
+  "37297": {
+    "description": "Fix handling of string enums on LHS of `+=`",
+    "reviewer": "eli",
+    "notes": [],
+    "flags": "fix",
+    "state": "not-started",
+    "label": "milestone"
+  },
+  "37298": {
+    "description": "Allow Source Mapping inside destructuring assignment",
+    "reviewer": "sheetal",
+    "notes": [],
+    "flags": "fix",
+    "state": "review",
+    "label": "milestone"
+  },
+  "37367": {
+    "description": "fix(37364): No completions in string literal index on mapped type",
+    "reviewer": "eli",
+    "notes": [],
+    "flags": "fix",
+    "state": "merge",
+    "label": "milestone"
+  },
+  "37376": {
+    "description": "feat: add util {is,create,update}DynamicImport",
+    "reviewer": "ron",
+    "notes": [],
+    "flags": "feature",
+    "state": "waiting",
+    "label": "bonus"
+  },
+  "37392": {
+    "description": "Enable excess property checking on spread assignment",
+    "reviewer": "nathan",
+    "notes": [],
+    "flags": "feature",
+    "state": "review",
+    "label": "backlog"
+  },
+  "37421": {
+    "description": "Support xml namespace prefix for JSX elements and attributes",
+    "reviewer": "andrew-branch",
+    "notes": [],
+    "flags": "FIXME",
+    "state": "review",
+    "label": "bonus"
+  },
+  "37423": {
+    "description": "Defer simplification of conditionals on deferred type references",
+    "reviewer": "anders",
+    "notes": [],
+    "flags": "FIXME",
+    "state": "review",
+    "label": "milestone"
+  },
+  "37424": {
+    "description": "Support top level \"for await of\"",
+    "reviewer": "ron",
+    "notes": [],
+    "flags": "feature",
+    "state": "review",
+    "label": "backlog"
+  },
+  "37444": {
+    "description": "Reuse input type nodes when serializing signature parameter and return types",
+    "reviewer": "wesley",
+    "notes": [],
+    "flags": "FIXME",
+    "state": "merge",
+    "label": "milestone"
+  },
+  "37451": {
+    "description": "Add support of contextual quick info",
+    "reviewer": "nathan",
+    "notes": [],
+    "flags": "FIXME",
+    "state": "merge",
+    "label": "backlog"
+  },
+  "37484": {
+    "description": "Fix emit variable",
+    "reviewer": "ron",
+    "notes": [],
+    "flags": "FIXME",
+    "state": "review",
+    "label": "milestone"
+  },
+  "37490": {
+    "description": "Add replacement span for string literal",
+    "reviewer": "daniel",
+    "notes": [],
+    "flags": "FIXME",
+    "state": "merge",
+    "label": "backlog"
+  },
+  "37497": {
+    "description": "Token hints for missing closing braces: classes, enums, jsx, modules, types",
+    "reviewer": "andrew-branch",
+    "notes": [],
+    "flags": "FIXME",
+    "state": "review",
+    "label": "backlog"
+  },
+  "37504": {
+    "description": "fix(37431): Formatter no longer normalizes spaces in method signature",
+    "reviewer": "orta",
+    "notes": [],
+    "flags": "FIXME",
+    "state": "review",
+    "label": "backlog"
+  },
+  "37546": {
+    "description": "fix broken regex on \"src/services/completions.ts#getCompletionData\"",
+    "reviewer": "nathan",
+    "notes": [],
+    "flags": "FIXME",
+    "state": "review",
+    "label": "bonus"
+  }
+}

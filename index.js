@@ -129,7 +129,8 @@ const team = {
   "Sheetal Nandi": "sheetal",
   "Wesley Wigham": "wesley",
   "Nathan Shively-Sanders": "nathan",
-  "Daniel Rosenwasser": "daniel"
+  "Daniel Rosenwasser": "daniel",
+  "Jesse Trinity": "jesse"
 }
 const columns = {
   "Not started": "not-started",
