@@ -4,8 +4,8 @@
 
   Notes:
   - bug filed by ljharb so :eyeroll:
-* https://github.com/microsoft/TypeScript/pull/35862 - Fixed issue with unreported error on missing method call in if test.
 * https://github.com/microsoft/TypeScript/pull/35878 - No error on indirect calls
+* https://github.com/microsoft/TypeScript/pull/37546 - fix broken regex on "src/services/completions.ts#getCompletionData"
 
 == Features ==
 
@@ -22,14 +22,9 @@
 * https://github.com/microsoft/TypeScript/pull/36015 - Prefer a likely literal over anonymous type in --noImplicitAny codefixes
 * https://github.com/microsoft/TypeScript/pull/37392 - Enable excess property checking on spread assignment
 
-== Waiting on Author ==
+== Ready to Merge ==
 
-* https://github.com/microsoft/TypeScript/pull/27591 - stricter assignability from an index signature to optional properties
-
-  Notes:
-  - Pretty breaky and doesn't find [m]any good bugs.
-* https://github.com/microsoft/TypeScript/pull/28916 - Add ReadonlyArray overload to Array.isArray
-* https://github.com/microsoft/TypeScript/pull/36131 - Fix parsing nested parameter types of `@callback` JSDoc tag
+* https://github.com/microsoft/TypeScript/pull/37451 - Add support of contextual quick info
 
 == Instructions ==
 

@@ -4,9 +4,6 @@
 
   Notes:
   - Just changes the message text; no other changes.
-
-== Waiting on Author ==
-
 * https://github.com/microsoft/TypeScript/pull/32131 - improved Array.flat declaration in es2019.array.d.ts
 
 == Instructions ==

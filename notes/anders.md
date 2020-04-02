@@ -22,6 +22,7 @@
   Notes:
   - The idea is that it works for properties of non-homomorphic mapped types, but this doesn't make sense.
 * https://github.com/microsoft/TypeScript/pull/33139 - higher order inference: `this` parameters similar to functions and constructors
+* https://github.com/microsoft/TypeScript/pull/37423 - Defer simplification of conditionals on deferred type references
 
 == Waiting on Author ==
 

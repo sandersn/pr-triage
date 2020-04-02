@@ -1,6 +1,6 @@
 == Fixes ==
 
-* https://github.com/microsoft/TypeScript/pull/34932 - fix Number.is* to accept unknown again
+* https://github.com/microsoft/TypeScript/pull/37504 - fix(37431): Formatter no longer normalizes spaces in method signature
 
 == Features ==
 

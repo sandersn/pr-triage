@@ -8,6 +8,7 @@
 * https://github.com/microsoft/TypeScript/pull/36723 - AsyncIterable[Iterator] adds type parameters for TReturn, TNext
 * https://github.com/microsoft/TypeScript/pull/36844 - add SourceFile and PrivateIdentifier constructors
 * https://github.com/microsoft/TypeScript/pull/37013 - __extends should use Object.prototype.hasOwnProperty.call
+* https://github.com/microsoft/TypeScript/pull/37484 - Fix emit variable
 
 == Features ==
 

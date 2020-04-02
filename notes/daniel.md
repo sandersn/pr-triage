@@ -1,7 +1,6 @@
 == Ready to Merge ==
 
-* https://github.com/microsoft/TypeScript/pull/36925 - fix(36909): wrong error message when trying to named-import an export
-* https://github.com/microsoft/TypeScript/pull/37212 - feat(37092): Improve error when default-importing from a module that `export *`s from a module with a default export
+* https://github.com/microsoft/TypeScript/pull/37490 - Add replacement span for string literal
 
 == Instructions ==
 

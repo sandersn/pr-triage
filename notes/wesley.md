@@ -1,25 +1,9 @@
 == Fixes ==
 
-* https://github.com/microsoft/TypeScript/pull/33071 - narrow unit-unit inequality tests using comparability
-
-  Notes:
-  - Is Jack Williams' assessment of the problem in the bug correct?
-* https://github.com/microsoft/TypeScript/pull/33089 - only apply indexed access write simplifications to types that arise from mutations
 * https://github.com/microsoft/TypeScript/pull/36143 - Fix handling of templates in preProcessFile
-* https://github.com/microsoft/TypeScript/pull/37106 - fix(37039): Support 'in' type guard of intersections
 
 == Features ==
 
-* https://github.com/microsoft/TypeScript/pull/32702 - improve error message for JSX component w/bad return type
-* https://github.com/microsoft/TypeScript/pull/33434 - unify if/switch logic in typeof narrowing
-* https://github.com/microsoft/TypeScript/pull/35148 - new compiler options to support deno/browser style import
-
-  Notes:
-  - I put both you and Ron on this PR, but it's really module-centric, so I think you're the right person for it.
-* https://github.com/microsoft/TypeScript/pull/35438 - make never rest type top-like
-
-  Notes:
-  - Jack marked this is speculative, but you seemed to like it, so we should decide whether to merge or close it.
 * https://github.com/microsoft/TypeScript/pull/35741 - a type relation for conditional types
 
   Notes:
@@ -27,11 +11,13 @@
 
 == Ready to Merge ==
 
-* https://github.com/microsoft/TypeScript/pull/37205 - Fix contextual types for maybe-async callbacks
+* https://github.com/microsoft/TypeScript/pull/30639 - another type relation for conditional types
+* https://github.com/microsoft/TypeScript/pull/33089 - only apply indexed access write simplifications to types that arise from mutations
+* https://github.com/microsoft/TypeScript/pull/33434 - unify if/switch logic in typeof narrowing
+* https://github.com/microsoft/TypeScript/pull/37444 - Reuse input type nodes when serializing signature parameter and return types
 
 == Waiting on Author ==
 
-* https://github.com/microsoft/TypeScript/pull/30639 - another type relation for conditional types
 * https://github.com/microsoft/TypeScript/pull/31277 - don't measure variance for conditional type extendsType
 
   Notes:
@@ -40,7 +26,6 @@
 
   Notes:
   - This is hanging out here until TS 4.0, but needs an error message added before then.
-* https://github.com/microsoft/TypeScript/pull/37035 - Revert "Revert "Support declaration emit for late bound element acces…
 * https://github.com/microsoft/TypeScript/pull/37236 - Update __exportStar helper to skip default and __esModule members
 
 == Instructions ==
