@@ -49,6 +49,26 @@
                         ]
                       }
                     }
+                  },
+                  {
+                    "content": {
+                      "number": 37815,
+                      "labels": {
+                        "nodes": [
+                          {
+                            "name": "For Uncommitted Bug"
+                          }
+                        ]
+                      },
+                      "title": "Remove redundant intersections from unions",
+                      "assignees": {
+                        "nodes": [
+                          {
+                            "name": "Anders Hejlsberg"
+                          }
+                        ]
+                      }
+                    }
                   }
                 ]
               },
@@ -674,26 +694,6 @@
                   },
                   {
                     "content": {
-                      "number": 34655,
-                      "labels": {
-                        "nodes": [
-                          {
-                            "name": "For Backlog Bug"
-                          }
-                        ]
-                      },
-                      "title": "Added error when Enum member initaliser references itself",
-                      "assignees": {
-                        "nodes": [
-                          {
-                            "name": "Eli Barzilay"
-                          }
-                        ]
-                      }
-                    }
-                  },
-                  {
-                    "content": {
                       "number": 34868,
                       "labels": {
                         "nodes": [
@@ -834,46 +834,6 @@
                   },
                   {
                     "content": {
-                      "number": 35937,
-                      "labels": {
-                        "nodes": [
-                          {
-                            "name": "For Backlog Bug"
-                          }
-                        ]
-                      },
-                      "title": "fix(refactor): keep comments after refactor",
-                      "assignees": {
-                        "nodes": [
-                          {
-                            "name": "Jesse Trinity"
-                          }
-                        ]
-                      }
-                    }
-                  },
-                  {
-                    "content": {
-                      "number": 36015,
-                      "labels": {
-                        "nodes": [
-                          {
-                            "name": "For Backlog Bug"
-                          }
-                        ]
-                      },
-                      "title": "Prefer a likely literal over anonymous type in --noImplicitAny codefixes",
-                      "assignees": {
-                        "nodes": [
-                          {
-                            "name": "Nathan Shively-Sanders"
-                          }
-                        ]
-                      }
-                    }
-                  },
-                  {
-                    "content": {
                       "number": 36408,
                       "labels": {
                         "nodes": [
@@ -970,26 +930,6 @@
                         "nodes": [
                           {
                             "name": "Ron Buckton"
-                          }
-                        ]
-                      }
-                    }
-                  },
-                  {
-                    "content": {
-                      "number": 37183,
-                      "labels": {
-                        "nodes": [
-                          {
-                            "name": "For Backlog Bug"
-                          }
-                        ]
-                      },
-                      "title": "fix(37150): private field should not conflict with string index type",
-                      "assignees": {
-                        "nodes": [
-                          {
-                            "name": "Eli Barzilay"
                           }
                         ]
                       }
@@ -1203,29 +1143,6 @@
                   },
                   {
                     "content": {
-                      "number": 37298,
-                      "labels": {
-                        "nodes": [
-                          {
-                            "name": "Author: Team"
-                          },
-                          {
-                            "name": "For Milestone Bug"
-                          }
-                        ]
-                      },
-                      "title": "Allow Source Mapping inside destructuring assignment",
-                      "assignees": {
-                        "nodes": [
-                          {
-                            "name": "Sheetal Nandi"
-                          }
-                        ]
-                      }
-                    }
-                  },
-                  {
-                    "content": {
                       "number": 37546,
                       "labels": {
                         "nodes": [
@@ -1246,46 +1163,6 @@
                   },
                   {
                     "content": {
-                      "number": 32131,
-                      "labels": {
-                        "nodes": [
-                          {
-                            "name": "For Milestone Bug"
-                          }
-                        ]
-                      },
-                      "title": "Accurate Array.prototype.flat definition",
-                      "assignees": {
-                        "nodes": [
-                          {
-                            "name": "Ryan Cavanaugh"
-                          }
-                        ]
-                      }
-                    }
-                  },
-                  {
-                    "content": {
-                      "number": 37504,
-                      "labels": {
-                        "nodes": [
-                          {
-                            "name": "For Backlog Bug"
-                          }
-                        ]
-                      },
-                      "title": "fix(37431): Formatter no longer normalizes spaces in method signature",
-                      "assignees": {
-                        "nodes": [
-                          {
-                            "name": "Orta"
-                          }
-                        ]
-                      }
-                    }
-                  },
-                  {
-                    "content": {
                       "number": 37421,
                       "labels": {
                         "nodes": [
@@ -1299,26 +1176,6 @@
                         "nodes": [
                           {
                             "name": "Andrew Branch"
-                          }
-                        ]
-                      }
-                    }
-                  },
-                  {
-                    "content": {
-                      "number": 37484,
-                      "labels": {
-                        "nodes": [
-                          {
-                            "name": "For Milestone Bug"
-                          }
-                        ]
-                      },
-                      "title": "Fix emit variable",
-                      "assignees": {
-                        "nodes": [
-                          {
-                            "name": "Ron Buckton"
                           }
                         ]
                       }
@@ -1362,6 +1219,235 @@
                         "nodes": [
                           {
                             "name": "Anders Hejlsberg"
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "content": {
+                      "number": 37721,
+                      "labels": {
+                        "nodes": [
+                          {
+                            "name": "For Backlog Bug"
+                          }
+                        ]
+                      },
+                      "title": "Add support for NumberFormatOptions notation",
+                      "assignees": {
+                        "nodes": [
+                          {
+                            "name": "Nathan Shively-Sanders"
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "content": {
+                      "number": 37806,
+                      "labels": {
+                        "nodes": [
+                          {
+                            "name": "For Uncommitted Bug"
+                          }
+                        ]
+                      },
+                      "title": "feat(37782): 'declare method' quick fix for adding a private method",
+                      "assignees": {
+                        "nodes": [
+                          {
+                            "name": "Andrew Branch"
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "content": {
+                      "number": 37797,
+                      "labels": {
+                        "nodes": [
+                          {
+                            "name": "For Backlog Bug"
+                          }
+                        ]
+                      },
+                      "title": "Add static index signature",
+                      "assignees": {
+                        "nodes": [
+                          {
+                            "name": "Eli Barzilay"
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "content": {
+                      "number": 37784,
+                      "labels": {
+                        "nodes": [
+                          {
+                            "name": "Author: Team"
+                          }
+                        ]
+                      },
+                      "title": "this: undefined in modules",
+                      "assignees": {
+                        "nodes": [
+                          {
+                            "name": "Andrew Branch"
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "content": {
+                      "number": 37790,
+                      "labels": {
+                        "nodes": [
+                          {
+                            "name": "For Backlog Bug"
+                          }
+                        ]
+                      },
+                      "title": "Improve error message for computed enums",
+                      "assignees": {
+                        "nodes": [
+                          {
+                            "name": "Orta"
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "content": {
+                      "number": 37786,
+                      "labels": {
+                        "nodes": [
+                          {
+                            "name": "For Backlog Bug"
+                          }
+                        ]
+                      },
+                      "title": "fix(36055): `prop in dict` does not report error if `prop` is union type such as `MyClass | string`",
+                      "assignees": {
+                        "nodes": [
+                          {
+                            "name": "Eli Barzilay"
+                          },
+                          {
+                            "name": "Sheetal Nandi"
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "content": {
+                      "number": 37788,
+                      "labels": {
+                        "nodes": [
+                          {
+                            "name": "Housekeeping"
+                          }
+                        ]
+                      },
+                      "title": "Updating dependencies",
+                      "assignees": {
+                        "nodes": [
+                          {
+                            "name": "Wesley Wigham"
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "content": {
+                      "number": 37727,
+                      "labels": {
+                        "nodes": [
+                          {
+                            "name": "For Milestone Bug"
+                          }
+                        ]
+                      },
+                      "title": "Add logical assignment operator",
+                      "assignees": {
+                        "nodes": [
+                          {
+                            "name": "Ron Buckton"
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "content": {
+                      "number": 37702,
+                      "labels": {
+                        "nodes": [
+                          {
+                            "name": "For Backlog Bug"
+                          }
+                        ]
+                      },
+                      "title": "Re-order reduce overloads",
+                      "assignees": {
+                        "nodes": [
+                          {
+                            "name": "Nathan Shively-Sanders"
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "content": {
+                      "number": 37615,
+                      "labels": {
+                        "nodes": [
+                          {
+                            "name": "Author: Team"
+                          },
+                          {
+                            "name": "For Milestone Bug"
+                          }
+                        ]
+                      },
+                      "title": "Add 'T | PromiseLike<T>' inference from awaited types",
+                      "assignees": {
+                        "nodes": [
+                          {
+                            "name": "Anders Hejlsberg"
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "content": {
+                      "number": 37588,
+                      "labels": {
+                        "nodes": [
+                          {
+                            "name": "Author: Team"
+                          },
+                          {
+                            "name": "For Milestone Bug"
+                          }
+                        ]
+                      },
+                      "title": "convertToAsyncFunction: Fix two-argument then",
+                      "assignees": {
+                        "nodes": [
+                          {
+                            "name": "Ron Buckton"
                           }
                         ]
                       }
@@ -1505,29 +1591,6 @@
                   },
                   {
                     "content": {
-                      "number": 37236,
-                      "labels": {
-                        "nodes": [
-                          {
-                            "name": "Author: Team"
-                          },
-                          {
-                            "name": "For Milestone Bug"
-                          }
-                        ]
-                      },
-                      "title": "Update __exportStar helper to skip default and __esModule members",
-                      "assignees": {
-                        "nodes": [
-                          {
-                            "name": "Wesley Wigham"
-                          }
-                        ]
-                      }
-                    }
-                  },
-                  {
-                    "content": {
                       "number": 37376,
                       "labels": {
                         "nodes": [
@@ -1568,26 +1631,6 @@
                   },
                   {
                     "content": {
-                      "number": 35219,
-                      "labels": {
-                        "nodes": [
-                          {
-                            "name": "For Backlog Bug"
-                          }
-                        ]
-                      },
-                      "title": "Fix: convertFunctionToEs6Class cannot recognize `x.prototype = {}` pattern",
-                      "assignees": {
-                        "nodes": [
-                          {
-                            "name": "Andrew Branch"
-                          }
-                        ]
-                      }
-                    }
-                  },
-                  {
-                    "content": {
                       "number": 36152,
                       "labels": {
                         "nodes": [
@@ -1601,6 +1644,141 @@
                         "nodes": [
                           {
                             "name": "Andrew Branch"
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "content": {
+                      "number": 36015,
+                      "labels": {
+                        "nodes": [
+                          {
+                            "name": "For Backlog Bug"
+                          }
+                        ]
+                      },
+                      "title": "Prefer a likely literal over anonymous type in --noImplicitAny codefixes",
+                      "assignees": {
+                        "nodes": [
+                          {
+                            "name": "Nathan Shively-Sanders"
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "content": {
+                      "number": 36131,
+                      "labels": {
+                        "nodes": [
+                          {
+                            "name": "For Backlog Bug"
+                          }
+                        ]
+                      },
+                      "title": "Fix parsing nested parameter types of `@callback` JSDoc tag",
+                      "assignees": {
+                        "nodes": [
+                          {
+                            "name": "Nathan Shively-Sanders"
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "content": {
+                      "number": 35937,
+                      "labels": {
+                        "nodes": [
+                          {
+                            "name": "For Backlog Bug"
+                          }
+                        ]
+                      },
+                      "title": "fix(refactor): keep comments after refactor",
+                      "assignees": {
+                        "nodes": [
+                          {
+                            "name": "Jesse Trinity"
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "content": {
+                      "number": 37683,
+                      "labels": {
+                        "nodes": [
+                          {
+                            "name": "For Uncommitted Bug"
+                          }
+                        ]
+                      },
+                      "title": "Typo at Uint8Array[Symbol.toStringTag]",
+                      "assignees": {
+                        "nodes": [
+                          {
+                            "name": "Nathan Shively-Sanders"
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "content": {
+                      "number": 37581,
+                      "labels": {
+                        "nodes": [
+                          {
+                            "name": "lib update"
+                          }
+                        ]
+                      },
+                      "title": "Add: about missing types in RegExp",
+                      "assignees": {
+                        "nodes": [
+                          {
+                            "name": "Nathan Shively-Sanders"
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "content": {
+                      "number": 37800,
+                      "labels": {
+                        "nodes": []
+                      },
+                      "title": "Better error message for accidental calls to get-accessors",
+                      "assignees": {
+                        "nodes": []
+                      }
+                    }
+                  },
+                  {
+                    "content": {
+                      "number": 37608,
+                      "labels": {
+                        "nodes": [
+                          {
+                            "name": "Author: Team"
+                          },
+                          {
+                            "name": "For Milestone Bug"
+                          }
+                        ]
+                      },
+                      "title": "New definition for omit that should ensure the name Omit is preserved…",
+                      "assignees": {
+                        "nodes": [
+                          {
+                            "name": "Wesley Wigham"
                           }
                         ]
                       }
@@ -1661,26 +1839,6 @@
                   },
                   {
                     "content": {
-                      "number": 37367,
-                      "labels": {
-                        "nodes": [
-                          {
-                            "name": "For Milestone Bug"
-                          }
-                        ]
-                      },
-                      "title": "fix(37364): No completions in string literal index on mapped type",
-                      "assignees": {
-                        "nodes": [
-                          {
-                            "name": "Eli Barzilay"
-                          }
-                        ]
-                      }
-                    }
-                  },
-                  {
-                    "content": {
                       "number": 33434,
                       "labels": {
                         "nodes": [
@@ -1721,49 +1879,6 @@
                   },
                   {
                     "content": {
-                      "number": 33652,
-                      "labels": {
-                        "nodes": [
-                          {
-                            "name": "For Backlog Bug"
-                          }
-                        ]
-                      },
-                      "title": "Fix goto implementation does not suggest all subtypes",
-                      "assignees": {
-                        "nodes": [
-                          {
-                            "name": "Andrew Branch"
-                          }
-                        ]
-                      }
-                    }
-                  },
-                  {
-                    "content": {
-                      "number": 26434,
-                      "labels": {
-                        "nodes": [
-                          {
-                            "name": "For Backlog Bug"
-                          },
-                          {
-                            "name": "lib update"
-                          }
-                        ]
-                      },
-                      "title": "Quick fix for functions lacking return expressions",
-                      "assignees": {
-                        "nodes": [
-                          {
-                            "name": "Andrew Casey"
-                          }
-                        ]
-                      }
-                    }
-                  },
-                  {
-                    "content": {
                       "number": 30639,
                       "labels": {
                         "nodes": [
@@ -1780,26 +1895,6 @@
                         "nodes": [
                           {
                             "name": "Wesley Wigham"
-                          }
-                        ]
-                      }
-                    }
-                  },
-                  {
-                    "content": {
-                      "number": 37490,
-                      "labels": {
-                        "nodes": [
-                          {
-                            "name": "For Backlog Bug"
-                          }
-                        ]
-                      },
-                      "title": "Add replacement span for string literal",
-                      "assignees": {
-                        "nodes": [
-                          {
-                            "name": "Daniel Rosenwasser"
                           }
                         ]
                       }
@@ -1827,22 +1922,19 @@
                   },
                   {
                     "content": {
-                      "number": 37444,
+                      "number": 35219,
                       "labels": {
                         "nodes": [
                           {
-                            "name": "Author: Team"
-                          },
-                          {
-                            "name": "For Milestone Bug"
+                            "name": "For Backlog Bug"
                           }
                         ]
                       },
-                      "title": "Reuse input type nodes when serializing signature parameter and return types",
+                      "title": "Fix: convertFunctionToEs6Class cannot recognize `x.prototype = {}` pattern",
                       "assignees": {
                         "nodes": [
                           {
-                            "name": "Wesley Wigham"
+                            "name": "Andrew Branch"
                           }
                         ]
                       }
