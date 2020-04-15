@@ -1,25 +1,6 @@
 # pr-triage
 Notes and tools for PR triage
 
-# TODO #
-* Push on "Needs Merge" PRs
-* Figure out how to generate the markdowns for next time
-* Re-send digests to top poeople
-* Think about how to enter and store data for rest
-
-# DONE #
-* Triage 'Not started' category
-* Assign a few to Andrew
-* Write the other digests
-* Send test mail to Mine
-* Count how many are assigned to each
-* Create github repo for storing data and scripts
-* Close aged-out PRs
-* Send Sheetal's digest
-* Write the other digests
-* Push on "Needs Merge" PRs
-* Assign a few to Andrew
-
 - Ron: 15,3,3,0 -> 18,1,3,3
 * Nathan: 18,4,3,0 -> 17,0,4,9
 - Anders: 10,0,1,0 -> 10,0,1,2
@@ -35,8 +16,9 @@ Notes and tools for PR triage
 
 - Mine's team: 3,0,0 -> 3,0,0
 
+# Workflow
 
-Here is the graphql query for https://developer.github.com/v4/explorer/
+1. Run graphql query at https://developer.github.com/v4/explorer/
 
 ``` graphql
 {
@@ -71,6 +53,15 @@ Here is the graphql query for https://developer.github.com/v4/explorer/
   }
 }
 ```
+
+2. Paste results into project-board.json.
+3. Run index.js.
+   - Fix any assertions on github, then re-run graphql query + paste into project-board.json.
+4. Compare pulls.json (old) to output.json (new).
+5. Copy output.json over pulls.json.
+6. Edit FIXME entries to read either 'feature' or 'fix'.
+7. Re-run index.js.
+8. Check in all changed files, delete output.json.
 
 Doesn't include notes or flags
 

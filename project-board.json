@@ -1291,6 +1291,9 @@
                         "nodes": [
                           {
                             "name": "Author: Team"
+                          },
+                          {
+                            "name": "For Milestone Bug"
                           }
                         ]
                       },
@@ -1338,30 +1341,7 @@
                       "assignees": {
                         "nodes": [
                           {
-                            "name": "Eli Barzilay"
-                          },
-                          {
                             "name": "Sheetal Nandi"
-                          }
-                        ]
-                      }
-                    }
-                  },
-                  {
-                    "content": {
-                      "number": 37788,
-                      "labels": {
-                        "nodes": [
-                          {
-                            "name": "Housekeeping"
-                          }
-                        ]
-                      },
-                      "title": "Updating dependencies",
-                      "assignees": {
-                        "nodes": [
-                          {
-                            "name": "Wesley Wigham"
                           }
                         ]
                       }
@@ -1691,26 +1671,6 @@
                   },
                   {
                     "content": {
-                      "number": 35937,
-                      "labels": {
-                        "nodes": [
-                          {
-                            "name": "For Backlog Bug"
-                          }
-                        ]
-                      },
-                      "title": "fix(refactor): keep comments after refactor",
-                      "assignees": {
-                        "nodes": [
-                          {
-                            "name": "Jesse Trinity"
-                          }
-                        ]
-                      }
-                    }
-                  },
-                  {
-                    "content": {
                       "number": 37683,
                       "labels": {
                         "nodes": [
@@ -1735,6 +1695,9 @@
                       "labels": {
                         "nodes": [
                           {
+                            "name": "For Uncommitted Bug"
+                          },
+                          {
                             "name": "lib update"
                           }
                         ]
@@ -1753,11 +1716,19 @@
                     "content": {
                       "number": 37800,
                       "labels": {
-                        "nodes": []
+                        "nodes": [
+                          {
+                            "name": "For Backlog Bug"
+                          }
+                        ]
                       },
                       "title": "Better error message for accidental calls to get-accessors",
                       "assignees": {
-                        "nodes": []
+                        "nodes": [
+                          {
+                            "name": "Nathan Shively-Sanders"
+                          }
+                        ]
                       }
                     }
                   },
@@ -1935,6 +1906,46 @@
                         "nodes": [
                           {
                             "name": "Andrew Branch"
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "content": {
+                      "number": 37788,
+                      "labels": {
+                        "nodes": [
+                          {
+                            "name": "Housekeeping"
+                          }
+                        ]
+                      },
+                      "title": "Updating dependencies",
+                      "assignees": {
+                        "nodes": [
+                          {
+                            "name": "Wesley Wigham"
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "content": {
+                      "number": 35937,
+                      "labels": {
+                        "nodes": [
+                          {
+                            "name": "For Backlog Bug"
+                          }
+                        ]
+                      },
+                      "title": "fix(refactor): keep comments after refactor",
+                      "assignees": {
+                        "nodes": [
+                          {
+                            "name": "Jesse Trinity"
                           }
                         ]
                       }

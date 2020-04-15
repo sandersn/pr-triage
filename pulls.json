@@ -1,12 +1,4 @@
 {
-  "26434": {
-    "description": "code fix for functions lacking return expressions",
-    "reviewer": "andrew-casey",
-    "state": "merge",
-    "label": "backlog",
-    "flags": "feature",
-    "notes": []
-  },
   "27227": {
     "description": "improve error message for `==` of two different types",
     "reviewer": "eli",
@@ -162,14 +154,6 @@
       "  - Re-adds recursion depth to inference -- but in a way that's more like assignability?"
     ]
   },
-  "32131": {
-    "description": "improved Array.flat declaration in es2019.array.d.ts",
-    "reviewer": "ryan",
-    "state": "review",
-    "label": "milestone",
-    "flags": "feature",
-    "notes": []
-  },
   "33055": {
     "description": "better typings for Promise.all",
     "reviewer": "ron",
@@ -296,14 +280,6 @@
       "  - This is hanging out here until TS 4.0, but needs an error message added before then."
     ]
   },
-  "33652": {
-    "description": "goto implementation suggests all subtypes",
-    "reviewer": "andrew-branch",
-    "state": "merge",
-    "label": "backlog",
-    "flags": "feature",
-    "notes": []
-  },
   "33673": {
     "description": "emit fewer duplicate trivia on initialisers added by a transformer",
     "reviewer": "ron",
@@ -358,14 +334,6 @@
     "flags": "feature",
     "notes": []
   },
-  "34655": {
-    "description": "add error when enum member references itself in its initialiser",
-    "reviewer": "eli",
-    "state": "review",
-    "label": "backlog",
-    "flags": "fix",
-    "notes": []
-  },
   "34868": {
     "description": "sort union emit",
     "reviewer": "nathan",
@@ -394,7 +362,7 @@
   },
   "35219": {
     "description": "convert function to ES6 class understands `x.prototype = {}`",
-    "state": "waiting",
+    "state": "merge",
     "label": "backlog",
     "flags": "feature",
     "reviewer": "andrew-branch",
@@ -480,7 +448,7 @@
   "35937": {
     "description": "a refactor retains comments it was deleting by mistake.",
     "reviewer": "jesse",
-    "state": "review",
+    "state": "merge",
     "label": "backlog",
     "flags": "fix",
     "notes": [
@@ -500,7 +468,15 @@
     "reviewer": "nathan",
     "notes": [],
     "flags": "feature",
-    "state": "review",
+    "state": "waiting",
+    "label": "backlog"
+  },
+  "36131": {
+    "description": "Fix parsing nested parameter types of `@callback` JSDoc tag",
+    "reviewer": "nathan",
+    "notes": [],
+    "flags": "fix",
+    "state": "waiting",
     "label": "backlog"
   },
   "36143": {
@@ -599,14 +575,6 @@
     "state": "waiting",
     "label": "milestone"
   },
-  "37183": {
-    "description": "fix(37150): private field should not conflict with string index type",
-    "reviewer": "eli",
-    "notes": [],
-    "flags": "fix",
-    "state": "review",
-    "label": "backlog"
-  },
   "37228": {
     "description": "fix crash during module resolution",
     "reviewer": "sheetal",
@@ -614,14 +582,6 @@
     "label": "milestone",
     "flags": "fix",
     "notes": []
-  },
-  "37236": {
-    "description": "Update __exportStar helper to skip default and __esModule members",
-    "reviewer": "wesley",
-    "notes": [],
-    "flags": "fix",
-    "state": "waiting",
-    "label": "milestone"
   },
   "37283": {
     "description": "Added runtime TypeError for non-function, non-null __extends",
@@ -637,22 +597,6 @@
     "notes": [],
     "flags": "fix",
     "state": "not-started",
-    "label": "milestone"
-  },
-  "37298": {
-    "description": "Allow Source Mapping inside destructuring assignment",
-    "reviewer": "sheetal",
-    "notes": [],
-    "flags": "fix",
-    "state": "review",
-    "label": "milestone"
-  },
-  "37367": {
-    "description": "fix(37364): No completions in string literal index on mapped type",
-    "reviewer": "eli",
-    "notes": [],
-    "flags": "fix",
-    "state": "merge",
     "label": "milestone"
   },
   "37376": {
@@ -695,33 +639,9 @@
     "state": "review",
     "label": "backlog"
   },
-  "37444": {
-    "description": "Reuse input type nodes when serializing signature parameter and return types",
-    "reviewer": "wesley",
-    "notes": [],
-    "flags": "fix",
-    "state": "merge",
-    "label": "milestone"
-  },
   "37451": {
     "description": "Add support of contextual quick info",
     "reviewer": "nathan",
-    "notes": [],
-    "flags": "feature",
-    "state": "merge",
-    "label": "backlog"
-  },
-  "37484": {
-    "description": "Fix emit variable",
-    "reviewer": "ron",
-    "notes": [],
-    "flags": "fix",
-    "state": "review",
-    "label": "milestone"
-  },
-  "37490": {
-    "description": "Add replacement span for string literal",
-    "reviewer": "daniel",
     "notes": [],
     "flags": "feature",
     "state": "merge",
@@ -735,20 +655,140 @@
     "state": "review",
     "label": "backlog"
   },
-  "37504": {
-    "description": "fix(37431): Formatter no longer normalizes spaces in method signature",
-    "reviewer": "orta",
-    "notes": [],
-    "flags": "fix",
-    "state": "review",
-    "label": "backlog"
-  },
   "37546": {
     "description": "fix broken regex on \"src/services/completions.ts#getCompletionData\"",
     "reviewer": "nathan",
     "notes": [],
     "flags": "fix",
     "state": "review",
+    "label": "bonus"
+  },
+  "37581": {
+    "description": "Add: about missing types in RegExp",
+    "reviewer": "nathan",
+    "notes": [],
+    "flags": "feature",
+    "state": "waiting",
+    "label": "bonus"
+  },
+  "37588": {
+    "description": "convertToAsyncFunction: Fix two-argument then",
+    "reviewer": "ron",
+    "notes": [],
+    "flags": "fix",
+    "state": "review",
+    "label": "milestone"
+  },
+  "37608": {
+    "description": "New definition for omit that should ensure the name Omit is preserved…",
+    "reviewer": "wesley",
+    "notes": [],
+    "flags": "feature",
+    "state": "waiting",
+    "label": "milestone"
+  },
+  "37615": {
+    "description": "Add 'T | PromiseLike<T>' inference from awaited types",
+    "reviewer": "anders",
+    "notes": [],
+    "flags": "fix",
+    "state": "review",
+    "label": "milestone"
+  },
+  "37683": {
+    "description": "Typo at Uint8Array[Symbol.toStringTag]",
+    "reviewer": "nathan",
+    "notes": [],
+    "flags": "fix",
+    "state": "waiting",
+    "label": "bonus"
+  },
+  "37702": {
+    "description": "Re-order reduce overloads",
+    "reviewer": "nathan",
+    "notes": [],
+    "flags": "fix",
+    "state": "review",
+    "label": "backlog"
+  },
+  "37721": {
+    "description": "Add support for NumberFormatOptions notation",
+    "reviewer": "nathan",
+    "notes": [],
+    "flags": "fix",
+    "state": "review",
+    "label": "backlog"
+  },
+  "37727": {
+    "description": "Add logical assignment operator",
+    "reviewer": "ron",
+    "notes": [],
+    "flags": "feature",
+    "state": "review",
+    "label": "milestone"
+  },
+  "37784": {
+    "description": "this: undefined in modules",
+    "reviewer": "andrew-branch",
+    "notes": [],
+    "flags": "fix",
+    "state": "review",
+    "label": "milestone"
+  },
+  "37786": {
+    "description": "fix(36055): `prop in dict` does not report error if `prop` is union type such as `MyClass | string`",
+    "reviewer": "sheetal",
+    "notes": [],
+    "flags": "fix",
+    "state": "review",
+    "label": "backlog"
+  },
+  "37788": {
+    "description": "Updating dependencies",
+    "reviewer": "wesley",
+    "notes": [],
+    "flags": "fix",
+    "state": "merge",
+    "label": "housekeeping"
+  },
+  "37790": {
+    "description": "Improve error message for computed enums",
+    "reviewer": "orta",
+    "notes": [],
+    "flags": "fix",
+    "state": "review",
+    "label": "backlog"
+  },
+  "37797": {
+    "description": "Add static index signature",
+    "reviewer": "eli",
+    "notes": [],
+    "flags": "feature",
+    "state": "review",
+    "label": "backlog"
+  },
+  "37800": {
+    "description": "Better error message for accidental calls to get-accessors",
+    "reviewer": "nathan",
+    "notes": [],
+    "flags": "feature",
+    "state": "waiting",
+    "label": "backlog"
+  },
+  "37806": {
+    "description": "feat(37782): 'declare method' quick fix for adding a private method",
+    "reviewer": "andrew-branch",
+    "notes": [],
+    "flags": "feature",
+    "state": "review",
+    "label": "bonus"
+  },
+  "37815": {
+    "description": "Remove redundant intersections from unions",
+    "reviewer": "anders",
+    "notes": [],
+    "flags": "fix",
+    "state": "not-started",
     "label": "bonus"
   }
 }
