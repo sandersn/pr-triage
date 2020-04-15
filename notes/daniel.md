@@ -1,7 +1,3 @@
-== Ready to Merge ==
-
-* https://github.com/microsoft/TypeScript/pull/37490 - Add replacement span for string literal
-
 == Instructions ==
 
 * Review PRs from team members the way you normally would.

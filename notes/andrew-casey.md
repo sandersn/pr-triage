@@ -1,7 +1,3 @@
-== Ready to Merge ==
-
-* https://github.com/microsoft/TypeScript/pull/26434 - code fix for functions lacking return expressions
-
 == Waiting on Author ==
 
 * https://github.com/microsoft/TypeScript/pull/35885 - Added quick-fix to rewrite index access as call to get/set method.

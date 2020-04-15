@@ -1,19 +1,20 @@
 == Fixes ==
 
 * https://github.com/microsoft/TypeScript/pull/36673 - Do not parse template arguments in JavaScript files.
+* https://github.com/microsoft/TypeScript/pull/37784 - this: undefined in modules
 
 == Features ==
 
 * https://github.com/microsoft/TypeScript/pull/37421 - Support xml namespace prefix for JSX elements and attributes
 * https://github.com/microsoft/TypeScript/pull/37497 - Token hints for missing closing braces: classes, enums, jsx, modules, types
+* https://github.com/microsoft/TypeScript/pull/37806 - feat(37782): 'declare method' quick fix for adding a private method
 
 == Ready to Merge ==
 
-* https://github.com/microsoft/TypeScript/pull/33652 - goto implementation suggests all subtypes
+* https://github.com/microsoft/TypeScript/pull/35219 - convert function to ES6 class understands `x.prototype = {}`
 
 == Waiting on Author ==
 
-* https://github.com/microsoft/TypeScript/pull/35219 - convert function to ES6 class understands `x.prototype = {}`
 * https://github.com/microsoft/TypeScript/pull/36152 - Unused-variable codefix now updates @param
 
 == Instructions ==

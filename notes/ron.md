@@ -8,7 +8,7 @@
 * https://github.com/microsoft/TypeScript/pull/36723 - AsyncIterable[Iterator] adds type parameters for TReturn, TNext
 * https://github.com/microsoft/TypeScript/pull/36844 - add SourceFile and PrivateIdentifier constructors
 * https://github.com/microsoft/TypeScript/pull/37013 - __extends should use Object.prototype.hasOwnProperty.call
-* https://github.com/microsoft/TypeScript/pull/37484 - Fix emit variable
+* https://github.com/microsoft/TypeScript/pull/37588 - convertToAsyncFunction: Fix two-argument then
 
 == Features ==
 
@@ -31,6 +31,7 @@
 * https://github.com/microsoft/TypeScript/pull/36408 - remove Reflect.decorate since it's non-standard
 * https://github.com/microsoft/TypeScript/pull/37283 - Added runtime TypeError for non-function, non-null __extends
 * https://github.com/microsoft/TypeScript/pull/37424 - Support top level "for await of"
+* https://github.com/microsoft/TypeScript/pull/37727 - Add logical assignment operator
 
 == Ready to Merge ==
 

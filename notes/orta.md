@@ -1,6 +1,6 @@
 == Fixes ==
 
-* https://github.com/microsoft/TypeScript/pull/37504 - fix(37431): Formatter no longer normalizes spaces in method signature
+* https://github.com/microsoft/TypeScript/pull/37790 - Improve error message for computed enums
 
 == Features ==
 

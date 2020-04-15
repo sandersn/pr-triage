@@ -1,4 +1,4 @@
-== Fixes ==
+== Ready to Merge ==
 
 * https://github.com/microsoft/TypeScript/pull/35937 - a refactor retains comments it was deleting by mistake.
 

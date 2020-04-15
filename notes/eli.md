@@ -4,8 +4,6 @@
 
   Notes:
   - This is so old that it may be obsolete. First thing is to check what errors we currently give.
-* https://github.com/microsoft/TypeScript/pull/34655 - add error when enum member references itself in its initialiser
-* https://github.com/microsoft/TypeScript/pull/37183 - fix(37150): private field should not conflict with string index type
 * https://github.com/microsoft/TypeScript/pull/37297 - Fix handling of string enums on LHS of `+=`
 
 == Features ==
@@ -16,10 +14,7 @@
   - This is a fix for the bug I asked you to look at recently.
 * https://github.com/microsoft/TypeScript/pull/35155 - disallow exponentational operator on bigint for targets <ES2016
 * https://github.com/microsoft/TypeScript/pull/36654 - did-you-mean error+codefix for non-Promise returning async functions
-
-== Ready to Merge ==
-
-* https://github.com/microsoft/TypeScript/pull/37367 - fix(37364): No completions in string literal index on mapped type
+* https://github.com/microsoft/TypeScript/pull/37797 - Add static index signature
 
 == Instructions ==
 

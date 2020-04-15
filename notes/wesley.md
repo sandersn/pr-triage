@@ -14,7 +14,7 @@
 * https://github.com/microsoft/TypeScript/pull/30639 - another type relation for conditional types
 * https://github.com/microsoft/TypeScript/pull/33089 - only apply indexed access write simplifications to types that arise from mutations
 * https://github.com/microsoft/TypeScript/pull/33434 - unify if/switch logic in typeof narrowing
-* https://github.com/microsoft/TypeScript/pull/37444 - Reuse input type nodes when serializing signature parameter and return types
+* https://github.com/microsoft/TypeScript/pull/37788 - Updating dependencies
 
 == Waiting on Author ==
 
@@ -26,7 +26,7 @@
 
   Notes:
   - This is hanging out here until TS 4.0, but needs an error message added before then.
-* https://github.com/microsoft/TypeScript/pull/37236 - Update __exportStar helper to skip default and __esModule members
+* https://github.com/microsoft/TypeScript/pull/37608 - New definition for omit that should ensure the name Omit is preserved…
 
 == Instructions ==
 

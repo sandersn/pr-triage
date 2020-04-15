@@ -1,6 +1,6 @@
 == Fixes ==
 
-* https://github.com/microsoft/TypeScript/pull/37298 - Allow Source Mapping inside destructuring assignment
+* https://github.com/microsoft/TypeScript/pull/37786 - fix(36055): `prop in dict` does not report error if `prop` is union type such as `MyClass | string`
 
 == Features ==
 
