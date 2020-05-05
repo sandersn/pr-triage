@@ -5,13 +5,15 @@
   Notes:
   - bug filed by ljharb so :eyeroll:
 * https://github.com/microsoft/TypeScript/pull/35878 - No error on indirect calls
-* https://github.com/microsoft/TypeScript/pull/37546 - fix broken regex on "src/services/completions.ts#getCompletionData"
 * https://github.com/microsoft/TypeScript/pull/37702 - Re-order reduce overloads
 * https://github.com/microsoft/TypeScript/pull/37721 - Add support for NumberFormatOptions notation
+* https://github.com/microsoft/TypeScript/pull/37962 - Fix instantiated check for imports
+* https://github.com/microsoft/TypeScript/pull/38036 - allow consecutive newlines in jsdoc tag comments
+* https://github.com/microsoft/TypeScript/pull/38153 - Make Iterable Map constructor argument optional
+* https://github.com/microsoft/TypeScript/pull/38200 - Add a type-guard overload of Array.every
 
 == Features ==
 
-* https://github.com/microsoft/TypeScript/pull/29539 - 
 * https://github.com/microsoft/TypeScript/pull/33544 - add `this` type for Reflect.defineProperty
 * https://github.com/microsoft/TypeScript/pull/33645 - better typings for Array.concat() etc
 
@@ -22,18 +24,20 @@
 * https://github.com/microsoft/TypeScript/pull/35594 - fix(lib/es2015): Fix definition of `ProxyHandler`
 * https://github.com/microsoft/TypeScript/pull/35608 - feat(lib/es2015): Add typed overloads to `Reflect`
 * https://github.com/microsoft/TypeScript/pull/37392 - Enable excess property checking on spread assignment
+* https://github.com/microsoft/TypeScript/pull/38013 - Adds [unit] and [unitDisplay] to NumberFormatOptions
 
 == Ready to Merge ==
 
+* https://github.com/microsoft/TypeScript/pull/29539 - 
 * https://github.com/microsoft/TypeScript/pull/37451 - Add support of contextual quick info
 
 == Waiting on Author ==
 
-* https://github.com/microsoft/TypeScript/pull/36015 - Prefer a likely literal over anonymous type in --noImplicitAny codefixes
 * https://github.com/microsoft/TypeScript/pull/36131 - Fix parsing nested parameter types of `@callback` JSDoc tag
+* https://github.com/microsoft/TypeScript/pull/37546 - fix broken regex on "src/services/completions.ts#getCompletionData"
 * https://github.com/microsoft/TypeScript/pull/37581 - Add: about missing types in RegExp
-* https://github.com/microsoft/TypeScript/pull/37683 - Typo at Uint8Array[Symbol.toStringTag]
 * https://github.com/microsoft/TypeScript/pull/37800 - Better error message for accidental calls to get-accessors
+* https://github.com/microsoft/TypeScript/pull/37839 - add `toString` definitions for base types that have them
 
 == Instructions ==
 

@@ -69,6 +69,29 @@
                         ]
                       }
                     }
+                  },
+                  {
+                    "content": {
+                      "number": 37962,
+                      "labels": {
+                        "nodes": [
+                          {
+                            "name": "Author: Team"
+                          },
+                          {
+                            "name": "For Milestone Bug"
+                          }
+                        ]
+                      },
+                      "title": "Fix instantiated check for imports",
+                      "assignees": {
+                        "nodes": [
+                          {
+                            "name": "Nathan Shively-Sanders"
+                          }
+                        ]
+                      }
+                    }
                   }
                 ]
               },
@@ -99,6 +122,66 @@
                   },
                   {
                     "content": {
+                      "number": 38200,
+                      "labels": {
+                        "nodes": [
+                          {
+                            "name": "For Backlog Bug"
+                          }
+                        ]
+                      },
+                      "title": "Add a type-guard overload of Array.every",
+                      "assignees": {
+                        "nodes": [
+                          {
+                            "name": "Nathan Shively-Sanders"
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "content": {
+                      "number": 38107,
+                      "labels": {
+                        "nodes": [
+                          {
+                            "name": "For Backlog Bug"
+                          }
+                        ]
+                      },
+                      "title": "fix(38073): Extract to function refactoring generates invalid code for arrow function that references `this`",
+                      "assignees": {
+                        "nodes": [
+                          {
+                            "name": "Mine Starks"
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "content": {
+                      "number": 38045,
+                      "labels": {
+                        "nodes": [
+                          {
+                            "name": "For Backlog Bug"
+                          }
+                        ]
+                      },
+                      "title": "fix(23871): convertFunctionToEs6Class: Avoid insertNodeAfter",
+                      "assignees": {
+                        "nodes": [
+                          {
+                            "name": "Orta"
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "content": {
                       "number": 36844,
                       "labels": {
                         "nodes": [
@@ -112,6 +195,46 @@
                         "nodes": [
                           {
                             "name": "Ron Buckton"
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "content": {
+                      "number": 38135,
+                      "labels": {
+                        "nodes": [
+                          {
+                            "name": "For Milestone Bug"
+                          }
+                        ]
+                      },
+                      "title": "fix(37791): Using object destructuring with ECMAScript's private field as computed property name leads to runtime error",
+                      "assignees": {
+                        "nodes": [
+                          {
+                            "name": "Ron Buckton"
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "content": {
+                      "number": 38153,
+                      "labels": {
+                        "nodes": [
+                          {
+                            "name": "For Backlog Bug"
+                          }
+                        ]
+                      },
+                      "title": "Make Iterable Map constructor argument optional",
+                      "assignees": {
+                        "nodes": [
+                          {
+                            "name": "Nathan Shively-Sanders"
                           }
                         ]
                       }
@@ -280,7 +403,7 @@
                       "assignees": {
                         "nodes": [
                           {
-                            "name": "Mine Starks"
+                            "name": "Jesse Trinity"
                           }
                         ]
                       }
@@ -337,46 +460,6 @@
                         ]
                       },
                       "title": "narrow by instanceof: infer type parameters from original type",
-                      "assignees": {
-                        "nodes": [
-                          {
-                            "name": "Anders Hejlsberg"
-                          }
-                        ]
-                      }
-                    }
-                  },
-                  {
-                    "content": {
-                      "number": 29539,
-                      "labels": {
-                        "nodes": [
-                          {
-                            "name": "For Uncommitted Bug"
-                          }
-                        ]
-                      },
-                      "title": "expose jsdoc factory",
-                      "assignees": {
-                        "nodes": [
-                          {
-                            "name": "Nathan Shively-Sanders"
-                          }
-                        ]
-                      }
-                    }
-                  },
-                  {
-                    "content": {
-                      "number": 30593,
-                      "labels": {
-                        "nodes": [
-                          {
-                            "name": "For Backlog Bug"
-                          }
-                        ]
-                      },
-                      "title": "Fix #30557 Narrow non-declared unions by discriminant",
                       "assignees": {
                         "nodes": [
                           {
@@ -734,26 +817,6 @@
                   },
                   {
                     "content": {
-                      "number": 35155,
-                      "labels": {
-                        "nodes": [
-                          {
-                            "name": "For Backlog Bug"
-                          }
-                        ]
-                      },
-                      "title": "disallows exponential operator with BigInt for targets lower than ES2016",
-                      "assignees": {
-                        "nodes": [
-                          {
-                            "name": "Eli Barzilay"
-                          }
-                        ]
-                      }
-                    }
-                  },
-                  {
-                    "content": {
                       "number": 35284,
                       "labels": {
                         "nodes": [
@@ -866,7 +929,7 @@
                       "assignees": {
                         "nodes": [
                           {
-                            "name": "Mine Starks"
+                            "name": "Jesse Trinity"
                           }
                         ]
                       }
@@ -980,26 +1043,6 @@
                   },
                   {
                     "content": {
-                      "number": 36143,
-                      "labels": {
-                        "nodes": [
-                          {
-                            "name": "For Backlog Bug"
-                          }
-                        ]
-                      },
-                      "title": "Fix handling of templates in preProcessFile",
-                      "assignees": {
-                        "nodes": [
-                          {
-                            "name": "Wesley Wigham"
-                          }
-                        ]
-                      }
-                    }
-                  },
-                  {
-                    "content": {
                       "number": 36599,
                       "labels": {
                         "nodes": [
@@ -1063,46 +1106,6 @@
                   },
                   {
                     "content": {
-                      "number": 33069,
-                      "labels": {
-                        "nodes": [
-                          {
-                            "name": "For Backlog Bug"
-                          }
-                        ]
-                      },
-                      "title": "Fix the error when use spread arguments twice",
-                      "assignees": {
-                        "nodes": [
-                          {
-                            "name": "Eli Barzilay"
-                          }
-                        ]
-                      }
-                    }
-                  },
-                  {
-                    "content": {
-                      "number": 36654,
-                      "labels": {
-                        "nodes": [
-                          {
-                            "name": "For Milestone Bug"
-                          }
-                        ]
-                      },
-                      "title": "feat(36266): async function needs Promise<T> return type quick fix",
-                      "assignees": {
-                        "nodes": [
-                          {
-                            "name": "Eli Barzilay"
-                          }
-                        ]
-                      }
-                    }
-                  },
-                  {
-                    "content": {
                       "number": 37424,
                       "labels": {
                         "nodes": [
@@ -1132,26 +1135,6 @@
                         ]
                       },
                       "title": "Enable excess property checking on spread assignment",
-                      "assignees": {
-                        "nodes": [
-                          {
-                            "name": "Nathan Shively-Sanders"
-                          }
-                        ]
-                      }
-                    }
-                  },
-                  {
-                    "content": {
-                      "number": 37546,
-                      "labels": {
-                        "nodes": [
-                          {
-                            "name": "For Uncommitted Bug"
-                          }
-                        ]
-                      },
-                      "title": "fix broken regex on \"src/services/completions.ts#getCompletionData\"",
                       "assignees": {
                         "nodes": [
                           {
@@ -1203,29 +1186,6 @@
                   },
                   {
                     "content": {
-                      "number": 37423,
-                      "labels": {
-                        "nodes": [
-                          {
-                            "name": "Author: Team"
-                          },
-                          {
-                            "name": "For Milestone Bug"
-                          }
-                        ]
-                      },
-                      "title": "Defer simplification of conditionals on deferred type references",
-                      "assignees": {
-                        "nodes": [
-                          {
-                            "name": "Anders Hejlsberg"
-                          }
-                        ]
-                      }
-                    }
-                  },
-                  {
-                    "content": {
                       "number": 37721,
                       "labels": {
                         "nodes": [
@@ -1239,129 +1199,6 @@
                         "nodes": [
                           {
                             "name": "Nathan Shively-Sanders"
-                          }
-                        ]
-                      }
-                    }
-                  },
-                  {
-                    "content": {
-                      "number": 37806,
-                      "labels": {
-                        "nodes": [
-                          {
-                            "name": "For Uncommitted Bug"
-                          }
-                        ]
-                      },
-                      "title": "feat(37782): 'declare method' quick fix for adding a private method",
-                      "assignees": {
-                        "nodes": [
-                          {
-                            "name": "Andrew Branch"
-                          }
-                        ]
-                      }
-                    }
-                  },
-                  {
-                    "content": {
-                      "number": 37797,
-                      "labels": {
-                        "nodes": [
-                          {
-                            "name": "For Backlog Bug"
-                          }
-                        ]
-                      },
-                      "title": "Add static index signature",
-                      "assignees": {
-                        "nodes": [
-                          {
-                            "name": "Eli Barzilay"
-                          }
-                        ]
-                      }
-                    }
-                  },
-                  {
-                    "content": {
-                      "number": 37784,
-                      "labels": {
-                        "nodes": [
-                          {
-                            "name": "Author: Team"
-                          },
-                          {
-                            "name": "For Milestone Bug"
-                          }
-                        ]
-                      },
-                      "title": "this: undefined in modules",
-                      "assignees": {
-                        "nodes": [
-                          {
-                            "name": "Andrew Branch"
-                          }
-                        ]
-                      }
-                    }
-                  },
-                  {
-                    "content": {
-                      "number": 37790,
-                      "labels": {
-                        "nodes": [
-                          {
-                            "name": "For Backlog Bug"
-                          }
-                        ]
-                      },
-                      "title": "Improve error message for computed enums",
-                      "assignees": {
-                        "nodes": [
-                          {
-                            "name": "Orta"
-                          }
-                        ]
-                      }
-                    }
-                  },
-                  {
-                    "content": {
-                      "number": 37786,
-                      "labels": {
-                        "nodes": [
-                          {
-                            "name": "For Backlog Bug"
-                          }
-                        ]
-                      },
-                      "title": "fix(36055): `prop in dict` does not report error if `prop` is union type such as `MyClass | string`",
-                      "assignees": {
-                        "nodes": [
-                          {
-                            "name": "Sheetal Nandi"
-                          }
-                        ]
-                      }
-                    }
-                  },
-                  {
-                    "content": {
-                      "number": 37727,
-                      "labels": {
-                        "nodes": [
-                          {
-                            "name": "For Milestone Bug"
-                          }
-                        ]
-                      },
-                      "title": "Add logical assignment operator",
-                      "assignees": {
-                        "nodes": [
-                          {
-                            "name": "Ron Buckton"
                           }
                         ]
                       }
@@ -1412,7 +1249,27 @@
                   },
                   {
                     "content": {
-                      "number": 37588,
+                      "number": 37376,
+                      "labels": {
+                        "nodes": [
+                          {
+                            "name": "For Uncommitted Bug"
+                          }
+                        ]
+                      },
+                      "title": "feat: add util {is,create,update}DynamicImport",
+                      "assignees": {
+                        "nodes": [
+                          {
+                            "name": "Ron Buckton"
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "content": {
+                      "number": 30639,
                       "labels": {
                         "nodes": [
                           {
@@ -1423,11 +1280,280 @@
                           }
                         ]
                       },
-                      "title": "convertToAsyncFunction: Fix two-argument then",
+                      "title": "Add missing relationship allowing a type to be assignable to a conditional when assignable to both branches",
                       "assignees": {
                         "nodes": [
                           {
-                            "name": "Ron Buckton"
+                            "name": "Wesley Wigham"
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "content": {
+                      "number": 37913,
+                      "labels": {
+                        "nodes": [
+                          {
+                            "name": "For Uncommitted Bug"
+                          }
+                        ]
+                      },
+                      "title": "feat: add code fix for ts1064 and 1055",
+                      "assignees": {
+                        "nodes": [
+                          {
+                            "name": "Andrew Branch"
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "content": {
+                      "number": 37912,
+                      "labels": {
+                        "nodes": [
+                          {
+                            "name": "For Uncommitted Bug"
+                          }
+                        ]
+                      },
+                      "title": "fix: extract const in jsx",
+                      "assignees": {
+                        "nodes": [
+                          {
+                            "name": "Andrew Branch"
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "content": {
+                      "number": 38088,
+                      "labels": {
+                        "nodes": [
+                          {
+                            "name": "For Backlog Bug"
+                          }
+                        ]
+                      },
+                      "title": "Fix missing narrow with assignment",
+                      "assignees": {
+                        "nodes": [
+                          {
+                            "name": "Wesley Wigham"
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "content": {
+                      "number": 37910,
+                      "labels": {
+                        "nodes": [
+                          {
+                            "name": "For Uncommitted Bug"
+                          }
+                        ]
+                      },
+                      "title": "Cache complex union and intersection relations",
+                      "assignees": {
+                        "nodes": [
+                          {
+                            "name": "Wesley Wigham"
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "content": {
+                      "number": 37907,
+                      "labels": {
+                        "nodes": [
+                          {
+                            "name": "For Uncommitted Bug"
+                          }
+                        ]
+                      },
+                      "title": "feat: add a codefix to fix class to className in react",
+                      "assignees": {
+                        "nodes": [
+                          {
+                            "name": "Orta"
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "content": {
+                      "number": 37891,
+                      "labels": {
+                        "nodes": [
+                          {
+                            "name": "For Backlog Bug"
+                          }
+                        ]
+                      },
+                      "title": "Fix indentation preservation in JSDoc (#37717)",
+                      "assignees": {
+                        "nodes": [
+                          {
+                            "name": "Andrew Branch"
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "content": {
+                      "number": 37902,
+                      "labels": {
+                        "nodes": [
+                          {
+                            "name": "For Backlog Bug"
+                          }
+                        ]
+                      },
+                      "title": "Infer extracted local variable name from property name",
+                      "assignees": {
+                        "nodes": [
+                          {
+                            "name": "Mine Starks"
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "content": {
+                      "number": 37881,
+                      "labels": {
+                        "nodes": [
+                          {
+                            "name": "Breaking Change"
+                          },
+                          {
+                            "name": "For Backlog Bug"
+                          },
+                          {
+                            "name": "lib update"
+                          }
+                        ]
+                      },
+                      "title": "Make `Symbol#valueDeclaration` optional in public API",
+                      "assignees": {
+                        "nodes": [
+                          {
+                            "name": "Wesley Wigham"
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "content": {
+                      "number": 38036,
+                      "labels": {
+                        "nodes": [
+                          {
+                            "name": "For Milestone Bug"
+                          }
+                        ]
+                      },
+                      "title": "allow consecutive newlines in jsdoc tag comments",
+                      "assignees": {
+                        "nodes": [
+                          {
+                            "name": "Nathan Shively-Sanders"
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "content": {
+                      "number": 38013,
+                      "labels": {
+                        "nodes": [
+                          {
+                            "name": "For Backlog Bug"
+                          }
+                        ]
+                      },
+                      "title": "Adds [unit] and [unitDisplay] to NumberFormatOptions",
+                      "assignees": {
+                        "nodes": [
+                          {
+                            "name": "Nathan Shively-Sanders"
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "content": {
+                      "number": 37980,
+                      "labels": {
+                        "nodes": [
+                          {
+                            "name": "For Uncommitted Bug"
+                          }
+                        ]
+                      },
+                      "title": "Feat#Provide a quickfix for non-exported types",
+                      "assignees": {
+                        "nodes": [
+                          {
+                            "name": "Daniel Rosenwasser"
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "content": {
+                      "number": 38011,
+                      "labels": {
+                        "nodes": [
+                          {
+                            "name": "Author: Team"
+                          },
+                          {
+                            "name": "For Milestone Bug"
+                          }
+                        ]
+                      },
+                      "title": "Handle recursive type references up to a certain level of expansion in inference",
+                      "assignees": {
+                        "nodes": [
+                          {
+                            "name": "Anders Hejlsberg"
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "content": {
+                      "number": 37727,
+                      "labels": {
+                        "nodes": [
+                          {
+                            "name": "For Milestone Bug"
+                          }
+                        ]
+                      },
+                      "title": "Add logical assignment operator",
+                      "assignees": {
+                        "nodes": [
+                          {
+                            "name": "Eli Barzilay"
                           }
                         ]
                       }
@@ -1571,26 +1697,6 @@
                   },
                   {
                     "content": {
-                      "number": 37376,
-                      "labels": {
-                        "nodes": [
-                          {
-                            "name": "For Uncommitted Bug"
-                          }
-                        ]
-                      },
-                      "title": "feat: add util {is,create,update}DynamicImport",
-                      "assignees": {
-                        "nodes": [
-                          {
-                            "name": "Ron Buckton"
-                          }
-                        ]
-                      }
-                    }
-                  },
-                  {
-                    "content": {
                       "number": 37029,
                       "labels": {
                         "nodes": [
@@ -1611,46 +1717,6 @@
                   },
                   {
                     "content": {
-                      "number": 36152,
-                      "labels": {
-                        "nodes": [
-                          {
-                            "name": "For Backlog Bug"
-                          }
-                        ]
-                      },
-                      "title": "Bug 33021",
-                      "assignees": {
-                        "nodes": [
-                          {
-                            "name": "Andrew Branch"
-                          }
-                        ]
-                      }
-                    }
-                  },
-                  {
-                    "content": {
-                      "number": 36015,
-                      "labels": {
-                        "nodes": [
-                          {
-                            "name": "For Backlog Bug"
-                          }
-                        ]
-                      },
-                      "title": "Prefer a likely literal over anonymous type in --noImplicitAny codefixes",
-                      "assignees": {
-                        "nodes": [
-                          {
-                            "name": "Nathan Shively-Sanders"
-                          }
-                        ]
-                      }
-                    }
-                  },
-                  {
-                    "content": {
                       "number": 36131,
                       "labels": {
                         "nodes": [
@@ -1660,26 +1726,6 @@
                         ]
                       },
                       "title": "Fix parsing nested parameter types of `@callback` JSDoc tag",
-                      "assignees": {
-                        "nodes": [
-                          {
-                            "name": "Nathan Shively-Sanders"
-                          }
-                        ]
-                      }
-                    }
-                  },
-                  {
-                    "content": {
-                      "number": 37683,
-                      "labels": {
-                        "nodes": [
-                          {
-                            "name": "For Uncommitted Bug"
-                          }
-                        ]
-                      },
-                      "title": "Typo at Uint8Array[Symbol.toStringTag]",
                       "assignees": {
                         "nodes": [
                           {
@@ -1714,6 +1760,112 @@
                   },
                   {
                     "content": {
+                      "number": 37608,
+                      "labels": {
+                        "nodes": [
+                          {
+                            "name": "Author: Team"
+                          },
+                          {
+                            "name": "For Milestone Bug"
+                          }
+                        ]
+                      },
+                      "title": "New definition for omit that should ensure the name Omit is preserved…",
+                      "assignees": {
+                        "nodes": [
+                          {
+                            "name": "Wesley Wigham"
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "content": {
+                      "number": 36143,
+                      "labels": {
+                        "nodes": [
+                          {
+                            "name": "For Backlog Bug"
+                          }
+                        ]
+                      },
+                      "title": "Fix handling of templates in preProcessFile",
+                      "assignees": {
+                        "nodes": [
+                          {
+                            "name": "Wesley Wigham"
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "content": {
+                      "number": 37887,
+                      "labels": {
+                        "nodes": [
+                          {
+                            "name": "For Backlog Bug"
+                          }
+                        ]
+                      },
+                      "title": "fix(35779): Comments at the end of an array, when the last item ends with a comma, are not compiled",
+                      "assignees": {
+                        "nodes": [
+                          {
+                            "name": "Wesley Wigham"
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "content": {
+                      "number": 33069,
+                      "labels": {
+                        "nodes": [
+                          {
+                            "name": "For Backlog Bug"
+                          }
+                        ]
+                      },
+                      "title": "Fix the error when use spread arguments twice",
+                      "assignees": {
+                        "nodes": [
+                          {
+                            "name": "Eli Barzilay"
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "content": {
+                      "number": 37894,
+                      "labels": {
+                        "nodes": [
+                          {
+                            "name": "Author: Team"
+                          },
+                          {
+                            "name": "For Milestone Bug"
+                          }
+                        ]
+                      },
+                      "title": "Always error on property override accessor",
+                      "assignees": {
+                        "nodes": [
+                          {
+                            "name": "Andrew Branch"
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "content": {
                       "number": 37800,
                       "labels": {
                         "nodes": [
@@ -1734,7 +1886,167 @@
                   },
                   {
                     "content": {
-                      "number": 37608,
+                      "number": 37546,
+                      "labels": {
+                        "nodes": [
+                          {
+                            "name": "For Uncommitted Bug"
+                          }
+                        ]
+                      },
+                      "title": "fix broken regex on \"src/services/completions.ts#getCompletionData\"",
+                      "assignees": {
+                        "nodes": [
+                          {
+                            "name": "Nathan Shively-Sanders"
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "content": {
+                      "number": 37797,
+                      "labels": {
+                        "nodes": [
+                          {
+                            "name": "For Backlog Bug"
+                          }
+                        ]
+                      },
+                      "title": "Add static index signature",
+                      "assignees": {
+                        "nodes": [
+                          {
+                            "name": "Eli Barzilay"
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "content": {
+                      "number": 38105,
+                      "labels": {
+                        "nodes": [
+                          {
+                            "name": "For Milestone Bug"
+                          }
+                        ]
+                      },
+                      "title": "Issue35876: Give better error message when Classic Module Resolution with incorrect path",
+                      "assignees": {
+                        "nodes": [
+                          {
+                            "name": "Orta"
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "content": {
+                      "number": 37917,
+                      "labels": {
+                        "nodes": [
+                          {
+                            "name": "For Uncommitted Bug"
+                          }
+                        ]
+                      },
+                      "title": "Improve error range for ts2657 (jsx expr must have parent element), add code fix for it",
+                      "assignees": {
+                        "nodes": [
+                          {
+                            "name": "Andrew Branch"
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "content": {
+                      "number": 37839,
+                      "labels": {
+                        "nodes": [
+                          {
+                            "name": "For Uncommitted Bug"
+                          }
+                        ]
+                      },
+                      "title": "add `toString` definitions for base types that have them",
+                      "assignees": {
+                        "nodes": [
+                          {
+                            "name": "Nathan Shively-Sanders"
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "content": {
+                      "number": 38049,
+                      "labels": {
+                        "nodes": [
+                          {
+                            "name": "For Backlog Bug"
+                          }
+                        ]
+                      },
+                      "title": "Report primitive type in literal-to-primitive relation complaints",
+                      "assignees": {
+                        "nodes": [
+                          {
+                            "name": "Daniel Rosenwasser"
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "content": {
+                      "number": 38228,
+                      "labels": {
+                        "nodes": [
+                          {
+                            "name": "For Milestone Bug"
+                          }
+                        ]
+                      },
+                      "title": "Allowed comment directives to be multiline",
+                      "assignees": {
+                        "nodes": [
+                          {
+                            "name": "Sheetal Nandi"
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "content": {
+                      "number": 37903,
+                      "labels": {
+                        "nodes": [
+                          {
+                            "name": "For Backlog Bug"
+                          }
+                        ]
+                      },
+                      "title": "Add index signature for anonymous object literal type",
+                      "assignees": {
+                        "nodes": [
+                          {
+                            "name": "Wesley Wigham"
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "content": {
+                      "number": 37964,
                       "labels": {
                         "nodes": [
                           {
@@ -1745,7 +2057,7 @@
                           }
                         ]
                       },
-                      "title": "New definition for omit that should ensure the name Omit is preserved…",
+                      "title": "Dont look for properties of Object and Function type when looking to resolve named import from module with `export=`",
                       "assignees": {
                         "nodes": [
                           {
@@ -1850,29 +2162,6 @@
                   },
                   {
                     "content": {
-                      "number": 30639,
-                      "labels": {
-                        "nodes": [
-                          {
-                            "name": "Author: Team"
-                          },
-                          {
-                            "name": "For Milestone Bug"
-                          }
-                        ]
-                      },
-                      "title": "Add missing relationship allowing a type to be assignable to a conditional when assignable to both branches",
-                      "assignees": {
-                        "nodes": [
-                          {
-                            "name": "Wesley Wigham"
-                          }
-                        ]
-                      }
-                    }
-                  },
-                  {
-                    "content": {
                       "number": 37451,
                       "labels": {
                         "nodes": [
@@ -1886,26 +2175,6 @@
                         "nodes": [
                           {
                             "name": "Nathan Shively-Sanders"
-                          }
-                        ]
-                      }
-                    }
-                  },
-                  {
-                    "content": {
-                      "number": 35219,
-                      "labels": {
-                        "nodes": [
-                          {
-                            "name": "For Backlog Bug"
-                          }
-                        ]
-                      },
-                      "title": "Fix: convertFunctionToEs6Class cannot recognize `x.prototype = {}` pattern",
-                      "assignees": {
-                        "nodes": [
-                          {
-                            "name": "Andrew Branch"
                           }
                         ]
                       }
@@ -1933,7 +2202,27 @@
                   },
                   {
                     "content": {
-                      "number": 35937,
+                      "number": 29539,
+                      "labels": {
+                        "nodes": [
+                          {
+                            "name": "For Uncommitted Bug"
+                          }
+                        ]
+                      },
+                      "title": "expose jsdoc factory",
+                      "assignees": {
+                        "nodes": [
+                          {
+                            "name": "Nathan Shively-Sanders"
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "content": {
+                      "number": 37786,
                       "labels": {
                         "nodes": [
                           {
@@ -1941,11 +2230,31 @@
                           }
                         ]
                       },
-                      "title": "fix(refactor): keep comments after refactor",
+                      "title": "fix(36055): `prop in dict` does not report error if `prop` is union type such as `MyClass | string`",
                       "assignees": {
                         "nodes": [
                           {
-                            "name": "Jesse Trinity"
+                            "name": "Sheetal Nandi"
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "content": {
+                      "number": 37806,
+                      "labels": {
+                        "nodes": [
+                          {
+                            "name": "For Uncommitted Bug"
+                          }
+                        ]
+                      },
+                      "title": "feat(37782): 'declare method' quick fix for adding a private method",
+                      "assignees": {
+                        "nodes": [
+                          {
+                            "name": "Andrew Branch"
                           }
                         ]
                       }

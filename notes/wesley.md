@@ -1,9 +1,12 @@
 == Fixes ==
 
-* https://github.com/microsoft/TypeScript/pull/36143 - Fix handling of templates in preProcessFile
+* https://github.com/microsoft/TypeScript/pull/37881 - Make `Symbol#valueDeclaration` optional in public API
+* https://github.com/microsoft/TypeScript/pull/37910 - Cache complex union and intersection relations
+* https://github.com/microsoft/TypeScript/pull/38088 - Fix missing narrow with assignment
 
 == Features ==
 
+* https://github.com/microsoft/TypeScript/pull/30639 - another type relation for conditional types
 * https://github.com/microsoft/TypeScript/pull/35741 - a type relation for conditional types
 
   Notes:
@@ -11,7 +14,6 @@
 
 == Ready to Merge ==
 
-* https://github.com/microsoft/TypeScript/pull/30639 - another type relation for conditional types
 * https://github.com/microsoft/TypeScript/pull/33089 - only apply indexed access write simplifications to types that arise from mutations
 * https://github.com/microsoft/TypeScript/pull/33434 - unify if/switch logic in typeof narrowing
 * https://github.com/microsoft/TypeScript/pull/37788 - Updating dependencies
@@ -26,7 +28,11 @@
 
   Notes:
   - This is hanging out here until TS 4.0, but needs an error message added before then.
+* https://github.com/microsoft/TypeScript/pull/36143 - Fix handling of templates in preProcessFile
 * https://github.com/microsoft/TypeScript/pull/37608 - New definition for omit that should ensure the name Omit is preserved…
+* https://github.com/microsoft/TypeScript/pull/37887 - fix(35779): Comments at the end of an array, when the last item ends with a comma, are not compiled
+* https://github.com/microsoft/TypeScript/pull/37903 - Add index signature for anonymous object literal type
+* https://github.com/microsoft/TypeScript/pull/37964 - Dont look for properties of Object and Function type when looking to resolve named import from module with `export=`
 
 == Instructions ==
 

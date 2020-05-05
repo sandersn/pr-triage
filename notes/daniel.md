@@ -1,3 +1,11 @@
+== Features ==
+
+* https://github.com/microsoft/TypeScript/pull/37980 - Feat#Provide a quickfix for non-exported types
+
+== Waiting on Author ==
+
+* https://github.com/microsoft/TypeScript/pull/38049 - Report primitive type in literal-to-primitive relation complaints
+
 == Instructions ==
 
 * Review PRs from team members the way you normally would.

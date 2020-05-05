@@ -1,16 +1,10 @@
 == Fixes ==
 
-* https://github.com/microsoft/TypeScript/pull/36543 - a refactor retains a modifier it was deleting by mistake.
+* https://github.com/microsoft/TypeScript/pull/38107 - fix(38073): Extract to function refactoring generates invalid code for arrow function that references `this`
 
 == Features ==
 
-* https://github.com/microsoft/TypeScript/pull/28250 - convert function to arrow expr and back.
-
-  Notes:
-  - Written by a couple of students for their bachelor's thesis.
-  - Justification for the issue is "Jetbrains has it".
-  - Andy already reviewed it, so the code should be basically OK.
-  - The main task is to decide whether "Jetbrains has it" is good enough reason for us to have it.
+* https://github.com/microsoft/TypeScript/pull/37902 - Infer extracted local variable name from property name
 
 == Instructions ==
 

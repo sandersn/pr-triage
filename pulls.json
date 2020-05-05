@@ -21,7 +21,7 @@
   },
   "28250": {
     "description": "convert function to arrow expr and back.",
-    "reviewer": "mine",
+    "reviewer": "jesse",
     "state": "review",
     "label": "backlog",
     "flags": "feature",
@@ -69,7 +69,7 @@
   "29539": {
     "description": "",
     "reviewer": "nathan",
-    "state": "review",
+    "state": "merge",
     "label": "bonus",
     "flags": "feature",
     "notes": []
@@ -84,17 +84,9 @@
       "  - The idea is that it works for properties of non-homomorphic mapped types, but this doesn't make sense."
     ]
   },
-  "30593": {
-    "description": "narrow non-declared unions by discriminant",
-    "reviewer": "anders",
-    "state": "review",
-    "label": "backlog",
-    "flags": "fix",
-    "notes": []
-  },
   "30639": {
     "description": "another type relation for conditional types",
-    "state": "merge",
+    "state": "review",
     "label": "milestone",
     "flags": "feature",
     "reviewer": "wesley",
@@ -169,7 +161,7 @@
       "  - This is a fix for the bug I asked you to look at recently."
     ],
     "flags": "feature",
-    "state": "review",
+    "state": "waiting",
     "label": "backlog"
   },
   "33074": {
@@ -352,22 +344,6 @@
       "  - bug filed by ljharb so :eyeroll:"
     ]
   },
-  "35155": {
-    "description": "disallow exponentational operator on bigint for targets <ES2016",
-    "reviewer": "eli",
-    "state": "review",
-    "label": "backlog",
-    "flags": "feature",
-    "notes": []
-  },
-  "35219": {
-    "description": "convert function to ES6 class understands `x.prototype = {}`",
-    "state": "merge",
-    "label": "backlog",
-    "flags": "feature",
-    "reviewer": "andrew-branch",
-    "notes": []
-  },
   "35284": {
     "description": "defer generic awaited types",
     "reviewer": "ron",
@@ -445,32 +421,6 @@
     "state": "waiting",
     "label": "backlog"
   },
-  "35937": {
-    "description": "a refactor retains comments it was deleting by mistake.",
-    "reviewer": "jesse",
-    "state": "merge",
-    "label": "backlog",
-    "flags": "fix",
-    "notes": [
-      "  - Comments are quite tricky to get right.",
-      "  - Some good lines from the review:",
-      "  ```ts",
-      "  // Check if it is semi-colon",
-      "  // I feel like there has to be a way using SyntaxKind.SemicolonToken",
-      "  return lastChar === \";\";",
-      "  ```",
-      "  - This is almost certainly wrong, because this is tricky to get right.",
-      "  - The main task is to politely say \"Your PR is wrong, and this is really hard.\""
-    ]
-  },
-  "36015": {
-    "description": "Prefer a likely literal over anonymous type in --noImplicitAny codefixes",
-    "reviewer": "nathan",
-    "notes": [],
-    "flags": "feature",
-    "state": "waiting",
-    "label": "backlog"
-  },
   "36131": {
     "description": "Fix parsing nested parameter types of `@callback` JSDoc tag",
     "reviewer": "nathan",
@@ -484,14 +434,6 @@
     "reviewer": "wesley",
     "notes": [],
     "flags": "fix",
-    "state": "review",
-    "label": "backlog"
-  },
-  "36152": {
-    "description": "Unused-variable codefix now updates @param",
-    "reviewer": "andrew-branch",
-    "notes": [],
-    "flags": "feature",
     "state": "waiting",
     "label": "backlog"
   },
@@ -505,7 +447,7 @@
   },
   "36543": {
     "description": "a refactor retains a modifier it was deleting by mistake.",
-    "reviewer": "mine",
+    "reviewer": "jesse",
     "state": "review",
     "label": "backlog",
     "flags": "fix",
@@ -518,14 +460,6 @@
     "flags": "fix",
     "state": "review",
     "label": "backlog"
-  },
-  "36654": {
-    "description": "did-you-mean error+codefix for non-Promise returning async functions",
-    "reviewer": "eli",
-    "state": "review",
-    "label": "milestone",
-    "flags": "feature",
-    "notes": []
   },
   "36673": {
     "description": "Do not parse template arguments in JavaScript files.",
@@ -604,7 +538,7 @@
     "reviewer": "ron",
     "notes": [],
     "flags": "feature",
-    "state": "waiting",
+    "state": "review",
     "label": "bonus"
   },
   "37392": {
@@ -622,14 +556,6 @@
     "flags": "feature",
     "state": "review",
     "label": "bonus"
-  },
-  "37423": {
-    "description": "Defer simplification of conditionals on deferred type references",
-    "reviewer": "anders",
-    "notes": [],
-    "flags": "feature",
-    "state": "review",
-    "label": "milestone"
   },
   "37424": {
     "description": "Support top level \"for await of\"",
@@ -660,7 +586,7 @@
     "reviewer": "nathan",
     "notes": [],
     "flags": "fix",
-    "state": "review",
+    "state": "waiting",
     "label": "bonus"
   },
   "37581": {
@@ -670,14 +596,6 @@
     "flags": "feature",
     "state": "waiting",
     "label": "bonus"
-  },
-  "37588": {
-    "description": "convertToAsyncFunction: Fix two-argument then",
-    "reviewer": "ron",
-    "notes": [],
-    "flags": "fix",
-    "state": "review",
-    "label": "milestone"
   },
   "37608": {
     "description": "New definition for omit that should ensure the name Omit is preserved…",
@@ -694,14 +612,6 @@
     "flags": "fix",
     "state": "review",
     "label": "milestone"
-  },
-  "37683": {
-    "description": "Typo at Uint8Array[Symbol.toStringTag]",
-    "reviewer": "nathan",
-    "notes": [],
-    "flags": "fix",
-    "state": "waiting",
-    "label": "bonus"
   },
   "37702": {
     "description": "Re-order reduce overloads",
@@ -721,17 +631,9 @@
   },
   "37727": {
     "description": "Add logical assignment operator",
-    "reviewer": "ron",
+    "reviewer": "eli",
     "notes": [],
     "flags": "feature",
-    "state": "review",
-    "label": "milestone"
-  },
-  "37784": {
-    "description": "this: undefined in modules",
-    "reviewer": "andrew-branch",
-    "notes": [],
-    "flags": "fix",
     "state": "review",
     "label": "milestone"
   },
@@ -740,7 +642,7 @@
     "reviewer": "sheetal",
     "notes": [],
     "flags": "fix",
-    "state": "review",
+    "state": "merge",
     "label": "backlog"
   },
   "37788": {
@@ -751,20 +653,12 @@
     "state": "merge",
     "label": "housekeeping"
   },
-  "37790": {
-    "description": "Improve error message for computed enums",
-    "reviewer": "orta",
-    "notes": [],
-    "flags": "fix",
-    "state": "review",
-    "label": "backlog"
-  },
   "37797": {
     "description": "Add static index signature",
     "reviewer": "eli",
     "notes": [],
     "flags": "feature",
-    "state": "review",
+    "state": "waiting",
     "label": "backlog"
   },
   "37800": {
@@ -780,7 +674,7 @@
     "reviewer": "andrew-branch",
     "notes": [],
     "flags": "feature",
-    "state": "review",
+    "state": "merge",
     "label": "bonus"
   },
   "37815": {
@@ -790,5 +684,221 @@
     "flags": "fix",
     "state": "not-started",
     "label": "bonus"
+  },
+  "37839": {
+    "description": "add `toString` definitions for base types that have them",
+    "reviewer": "nathan",
+    "notes": [],
+    "flags": "fix",
+    "state": "waiting",
+    "label": "bonus"
+  },
+  "37881": {
+    "description": "Make `Symbol#valueDeclaration` optional in public API",
+    "reviewer": "wesley",
+    "notes": [],
+    "flags": "fix",
+    "state": "review",
+    "label": "backlog"
+  },
+  "37887": {
+    "description": "fix(35779): Comments at the end of an array, when the last item ends with a comma, are not compiled",
+    "reviewer": "wesley",
+    "notes": [],
+    "flags": "feature",
+    "state": "waiting",
+    "label": "backlog"
+  },
+  "37891": {
+    "description": "Fix indentation preservation in JSDoc (#37717)",
+    "reviewer": "andrew-branch",
+    "notes": [],
+    "flags": "fix",
+    "state": "review",
+    "label": "backlog"
+  },
+  "37894": {
+    "description": "Always error on property override accessor",
+    "reviewer": "andrew-branch",
+    "notes": [],
+    "flags": "feature",
+    "state": "waiting",
+    "label": "milestone"
+  },
+  "37902": {
+    "description": "Infer extracted local variable name from property name",
+    "reviewer": "mine",
+    "notes": [],
+    "flags": "feature",
+    "state": "review",
+    "label": "backlog"
+  },
+  "37903": {
+    "description": "Add index signature for anonymous object literal type",
+    "reviewer": "wesley",
+    "notes": [],
+    "flags": "fix",
+    "state": "waiting",
+    "label": "backlog"
+  },
+  "37907": {
+    "description": "feat: add a codefix to fix class to className in react",
+    "reviewer": "orta",
+    "notes": [],
+    "flags": "feature",
+    "state": "review",
+    "label": "bonus"
+  },
+  "37910": {
+    "description": "Cache complex union and intersection relations",
+    "reviewer": "wesley",
+    "notes": [],
+    "flags": "fix",
+    "state": "review",
+    "label": "bonus"
+  },
+  "37912": {
+    "description": "fix: extract const in jsx",
+    "reviewer": "andrew-branch",
+    "notes": [],
+    "flags": "fix",
+    "state": "review",
+    "label": "bonus"
+  },
+  "37913": {
+    "description": "feat: add code fix for ts1064 and 1055",
+    "reviewer": "andrew-branch",
+    "notes": [],
+    "flags": "feature",
+    "state": "review",
+    "label": "bonus"
+  },
+  "37917": {
+    "description": "Improve error range for ts2657 (jsx expr must have parent element), add code fix for it",
+    "reviewer": "andrew-branch",
+    "notes": [],
+    "flags": "feature",
+    "state": "waiting",
+    "label": "bonus"
+  },
+  "37962": {
+    "description": "Fix instantiated check for imports",
+    "reviewer": "nathan",
+    "notes": [],
+    "flags": "fix",
+    "state": "not-started",
+    "label": "milestone"
+  },
+  "37964": {
+    "description": "Dont look for properties of Object and Function type when looking to resolve named import from module with `export=`",
+    "reviewer": "wesley",
+    "notes": [],
+    "flags": "fix",
+    "state": "waiting",
+    "label": "milestone"
+  },
+  "37980": {
+    "description": "Feat#Provide a quickfix for non-exported types",
+    "reviewer": "daniel",
+    "notes": [],
+    "flags": "feature",
+    "state": "review",
+    "label": "bonus"
+  },
+  "38011": {
+    "description": "Handle recursive type references up to a certain level of expansion in inference",
+    "reviewer": "anders",
+    "notes": [],
+    "flags": "fix",
+    "state": "review",
+    "label": "milestone"
+  },
+  "38013": {
+    "description": "Adds [unit] and [unitDisplay] to NumberFormatOptions",
+    "reviewer": "nathan",
+    "notes": [],
+    "flags": "feature",
+    "state": "review",
+    "label": "backlog"
+  },
+  "38036": {
+    "description": "allow consecutive newlines in jsdoc tag comments",
+    "reviewer": "nathan",
+    "notes": [],
+    "flags": "fix",
+    "state": "review",
+    "label": "milestone"
+  },
+  "38045": {
+    "description": "fix(23871): convertFunctionToEs6Class: Avoid insertNodeAfter",
+    "reviewer": "orta",
+    "notes": [],
+    "flags": "fix",
+    "state": "review",
+    "label": "backlog"
+  },
+  "38049": {
+    "description": "Report primitive type in literal-to-primitive relation complaints",
+    "reviewer": "daniel",
+    "notes": [],
+    "flags": "feature",
+    "state": "waiting",
+    "label": "backlog"
+  },
+  "38088": {
+    "description": "Fix missing narrow with assignment",
+    "reviewer": "wesley",
+    "notes": [],
+    "flags": "fix",
+    "state": "review",
+    "label": "backlog"
+  },
+  "38105": {
+    "description": "Issue35876: Give better error message when Classic Module Resolution with incorrect path",
+    "reviewer": "orta",
+    "notes": [],
+    "flags": "fix",
+    "state": "waiting",
+    "label": "milestone"
+  },
+  "38107": {
+    "description": "fix(38073): Extract to function refactoring generates invalid code for arrow function that references `this`",
+    "reviewer": "mine",
+    "notes": [],
+    "flags": "fix",
+    "state": "review",
+    "label": "backlog"
+  },
+  "38135": {
+    "description": "fix(37791): Using object destructuring with ECMAScript's private field as computed property name leads to runtime error",
+    "reviewer": "ron",
+    "notes": [],
+    "flags": "fix",
+    "state": "review",
+    "label": "milestone"
+  },
+  "38153": {
+    "description": "Make Iterable Map constructor argument optional",
+    "reviewer": "nathan",
+    "notes": [],
+    "flags": "fix",
+    "state": "review",
+    "label": "backlog"
+  },
+  "38200": {
+    "description": "Add a type-guard overload of Array.every",
+    "reviewer": "nathan",
+    "notes": [],
+    "flags": "fix",
+    "state": "review",
+    "label": "backlog"
+  },
+  "38228": {
+    "description": "Allowed comment directives to be multiline",
+    "reviewer": "sheetal",
+    "notes": [],
+    "flags": "feature",
+    "state": "waiting",
+    "label": "milestone"
   }
 }

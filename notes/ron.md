@@ -8,7 +8,7 @@
 * https://github.com/microsoft/TypeScript/pull/36723 - AsyncIterable[Iterator] adds type parameters for TReturn, TNext
 * https://github.com/microsoft/TypeScript/pull/36844 - add SourceFile and PrivateIdentifier constructors
 * https://github.com/microsoft/TypeScript/pull/37013 - __extends should use Object.prototype.hasOwnProperty.call
-* https://github.com/microsoft/TypeScript/pull/37588 - convertToAsyncFunction: Fix two-argument then
+* https://github.com/microsoft/TypeScript/pull/38135 - fix(37791): Using object destructuring with ECMAScript's private field as computed property name leads to runtime error
 
 == Features ==
 
@@ -30,8 +30,8 @@
   - Probably the hard part will be closing this PR in a polite way.
 * https://github.com/microsoft/TypeScript/pull/36408 - remove Reflect.decorate since it's non-standard
 * https://github.com/microsoft/TypeScript/pull/37283 - Added runtime TypeError for non-function, non-null __extends
+* https://github.com/microsoft/TypeScript/pull/37376 - feat: add util {is,create,update}DynamicImport
 * https://github.com/microsoft/TypeScript/pull/37424 - Support top level "for await of"
-* https://github.com/microsoft/TypeScript/pull/37727 - Add logical assignment operator
 
 == Ready to Merge ==
 
@@ -44,7 +44,6 @@
 
   Notes:
   - Sounds like this one is required by a feature that's currently on hold.
-* https://github.com/microsoft/TypeScript/pull/37376 - feat: add util {is,create,update}DynamicImport
 
 == Instructions ==
 

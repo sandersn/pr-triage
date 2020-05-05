@@ -1,14 +1,15 @@
-== Fixes ==
-
-* https://github.com/microsoft/TypeScript/pull/37786 - fix(36055): `prop in dict` does not report error if `prop` is union type such as `MyClass | string`
-
 == Features ==
 
 * https://github.com/microsoft/TypeScript/pull/36747 - Merge diagnosticsProducing and nonDiagnosticsProducing checkers into a single checker supporting lazy diagnostics
 
+== Ready to Merge ==
+
+* https://github.com/microsoft/TypeScript/pull/37786 - fix(36055): `prop in dict` does not report error if `prop` is union type such as `MyClass | string`
+
 == Waiting on Author ==
 
 * https://github.com/microsoft/TypeScript/pull/37228 - fix crash during module resolution
+* https://github.com/microsoft/TypeScript/pull/38228 - Allowed comment directives to be multiline
 
 == Instructions ==
 

@@ -1,7 +1,6 @@
 == Fixes ==
 
 * https://github.com/microsoft/TypeScript/pull/29468 - instantiate `this` in non-super access expressions
-* https://github.com/microsoft/TypeScript/pull/30593 - narrow non-declared unions by discriminant
 * https://github.com/microsoft/TypeScript/pull/31023 - Allow identical type parameter lists to merge in union signatures
 * https://github.com/microsoft/TypeScript/pull/31345 - inference: break down target unions before source unions
 * https://github.com/microsoft/TypeScript/pull/31455 - fix type parameter leak in conditional types
@@ -12,6 +11,7 @@
 * https://github.com/microsoft/TypeScript/pull/35863 - non-null assertion applied to control-flow type `never` now errors
 * https://github.com/microsoft/TypeScript/pull/37615 - Add 'T | PromiseLike<T>' inference from awaited types
 * https://github.com/microsoft/TypeScript/pull/37815 - Remove redundant intersections from unions
+* https://github.com/microsoft/TypeScript/pull/38011 - Handle recursive type references up to a certain level of expansion in inference
 
 == Features ==
 
@@ -24,7 +24,6 @@
   Notes:
   - The idea is that it works for properties of non-homomorphic mapped types, but this doesn't make sense.
 * https://github.com/microsoft/TypeScript/pull/33139 - higher order inference: `this` parameters similar to functions and constructors
-* https://github.com/microsoft/TypeScript/pull/37423 - Defer simplification of conditionals on deferred type references
 
 == Waiting on Author ==
 
