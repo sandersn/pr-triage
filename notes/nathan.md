@@ -25,19 +25,19 @@
 * https://github.com/microsoft/TypeScript/pull/35608 - feat(lib/es2015): Add typed overloads to `Reflect`
 * https://github.com/microsoft/TypeScript/pull/37392 - Enable excess property checking on spread assignment
 * https://github.com/microsoft/TypeScript/pull/38013 - Adds [unit] and [unitDisplay] to NumberFormatOptions
-
-== Ready to Merge ==
-
-* https://github.com/microsoft/TypeScript/pull/29539 - 
-* https://github.com/microsoft/TypeScript/pull/37451 - Add support of contextual quick info
+* https://github.com/microsoft/TypeScript/pull/38523 - [Expirement] [WIP] Add deprecated related feature
 
 == Waiting on Author ==
 
 * https://github.com/microsoft/TypeScript/pull/36131 - Fix parsing nested parameter types of `@callback` JSDoc tag
-* https://github.com/microsoft/TypeScript/pull/37546 - fix broken regex on "src/services/completions.ts#getCompletionData"
 * https://github.com/microsoft/TypeScript/pull/37581 - Add: about missing types in RegExp
 * https://github.com/microsoft/TypeScript/pull/37800 - Better error message for accidental calls to get-accessors
 * https://github.com/microsoft/TypeScript/pull/37839 - add `toString` definitions for base types that have them
+* https://github.com/microsoft/TypeScript/pull/38124 - Remove duplicate comments on refactors
+* https://github.com/microsoft/TypeScript/pull/38216 - Revert "Revert #37106"
+* https://github.com/microsoft/TypeScript/pull/38436 - Report overall time
+* https://github.com/microsoft/TypeScript/pull/38526 - Update bigint declaration file
+* https://github.com/microsoft/TypeScript/pull/38631 - fix(33286): Code folding fail for arrow function when param list has no parentheses
 
 == Instructions ==
 

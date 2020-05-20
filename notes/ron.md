@@ -4,11 +4,11 @@
 * https://github.com/microsoft/TypeScript/pull/33337 - Corrected ES5 for-in destructuring binding emit
 * https://github.com/microsoft/TypeScript/pull/35494 - capture thisArg of optional chaining when parenthesized
 * https://github.com/microsoft/TypeScript/pull/35877 - fix receiver on calls of imported/exported functions
-* https://github.com/microsoft/TypeScript/pull/36599 - Fix missing `undefined` checks
 * https://github.com/microsoft/TypeScript/pull/36723 - AsyncIterable[Iterator] adds type parameters for TReturn, TNext
 * https://github.com/microsoft/TypeScript/pull/36844 - add SourceFile and PrivateIdentifier constructors
 * https://github.com/microsoft/TypeScript/pull/37013 - __extends should use Object.prototype.hasOwnProperty.call
 * https://github.com/microsoft/TypeScript/pull/38135 - fix(37791): Using object destructuring with ECMAScript's private field as computed property name leads to runtime error
+* https://github.com/microsoft/TypeScript/pull/38518 - Fix top-level await parsing (#38483)
 
 == Features ==
 
@@ -32,6 +32,7 @@
 * https://github.com/microsoft/TypeScript/pull/37283 - Added runtime TypeError for non-function, non-null __extends
 * https://github.com/microsoft/TypeScript/pull/37376 - feat: add util {is,create,update}DynamicImport
 * https://github.com/microsoft/TypeScript/pull/37424 - Support top level "for await of"
+* https://github.com/microsoft/TypeScript/pull/38602 - Introduces new flag for optimization hints
 
 == Ready to Merge ==
 
@@ -44,6 +45,7 @@
 
   Notes:
   - Sounds like this one is required by a feature that's currently on hold.
+* https://github.com/microsoft/TypeScript/pull/38566 - fix wrapping classes when targeting ESNext
 
 == Instructions ==
 

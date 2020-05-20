@@ -1,10 +1,12 @@
-== Features ==
+== Fixes ==
 
-* https://github.com/microsoft/TypeScript/pull/37980 - Feat#Provide a quickfix for non-exported types
+* https://github.com/microsoft/TypeScript/pull/38481 - fix(38463): No indexed access completions after Record<...>
 
 == Waiting on Author ==
 
+* https://github.com/microsoft/TypeScript/pull/37980 - Feat#Provide a quickfix for non-exported types
 * https://github.com/microsoft/TypeScript/pull/38049 - Report primitive type in literal-to-primitive relation complaints
+* https://github.com/microsoft/TypeScript/pull/38522 - Detailed Intl.DateTimeFormatOptions types
 
 == Instructions ==
 

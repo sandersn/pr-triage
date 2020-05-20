@@ -1,7 +1,3 @@
-== Fixes ==
-
-* https://github.com/microsoft/TypeScript/pull/38107 - fix(38073): Extract to function refactoring generates invalid code for arrow function that references `this`
-
 == Features ==
 
 * https://github.com/microsoft/TypeScript/pull/37902 - Infer extracted local variable name from property name

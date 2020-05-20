@@ -3,6 +3,7 @@
 * https://github.com/microsoft/TypeScript/pull/37881 - Make `Symbol#valueDeclaration` optional in public API
 * https://github.com/microsoft/TypeScript/pull/37910 - Cache complex union and intersection relations
 * https://github.com/microsoft/TypeScript/pull/38088 - Fix missing narrow with assignment
+* https://github.com/microsoft/TypeScript/pull/38099 - Don't narrow against unions of constructor functions with instanceof
 
 == Features ==
 
@@ -11,12 +12,7 @@
 
   Notes:
   - I assume jablko's idea is similar to yours?
-
-== Ready to Merge ==
-
-* https://github.com/microsoft/TypeScript/pull/33089 - only apply indexed access write simplifications to types that arise from mutations
-* https://github.com/microsoft/TypeScript/pull/33434 - unify if/switch logic in typeof narrowing
-* https://github.com/microsoft/TypeScript/pull/37788 - Updating dependencies
+* https://github.com/microsoft/TypeScript/pull/38515 - Remove resolveUntypedCall from checkJsxSelfClosingElementDeferred
 
 == Waiting on Author ==
 
@@ -33,6 +29,7 @@
 * https://github.com/microsoft/TypeScript/pull/37887 - fix(35779): Comments at the end of an array, when the last item ends with a comma, are not compiled
 * https://github.com/microsoft/TypeScript/pull/37903 - Add index signature for anonymous object literal type
 * https://github.com/microsoft/TypeScript/pull/37964 - Dont look for properties of Object and Function type when looking to resolve named import from module with `export=`
+* https://github.com/microsoft/TypeScript/pull/38610 - Fix #38608
 
 == Instructions ==
 

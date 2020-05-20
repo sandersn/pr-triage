@@ -1,3 +1,7 @@
+== Fixes ==
+
+* https://github.com/microsoft/TypeScript/pull/38574 - Fix return type for JSON.stringify()
+
 == Features ==
 
 * https://github.com/microsoft/TypeScript/pull/28023 - reword error message when comparing non-comparable types

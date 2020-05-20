@@ -1,7 +1,3 @@
-== Fixes ==
-
-* https://github.com/microsoft/TypeScript/pull/36543 - a refactor retains a modifier it was deleting by mistake.
-
 == Features ==
 
 * https://github.com/microsoft/TypeScript/pull/28250 - convert function to arrow expr and back.

@@ -66,14 +66,6 @@
     "flags": "fix",
     "notes": []
   },
-  "29539": {
-    "description": "",
-    "reviewer": "nathan",
-    "state": "merge",
-    "label": "bonus",
-    "flags": "feature",
-    "notes": []
-  },
   "30161": {
     "description": "instanceof narrowing of generics: copy type parameter from original",
     "reviewer": "anders",
@@ -174,8 +166,8 @@
   },
   "33089": {
     "description": "only apply indexed access write simplifications to types that arise from mutations",
-    "reviewer": "wesley",
-    "state": "merge",
+    "reviewer": "anders",
+    "state": "review",
     "label": "backlog",
     "flags": "fix",
     "notes": []
@@ -216,14 +208,6 @@
     "description": "cache repeated prototype sets in a variable",
     "reviewer": "ron",
     "state": "review",
-    "label": "backlog",
-    "flags": "feature",
-    "notes": []
-  },
-  "33434": {
-    "description": "unify if/switch logic in typeof narrowing",
-    "reviewer": "wesley",
-    "state": "merge",
     "label": "backlog",
     "flags": "feature",
     "notes": []
@@ -445,22 +429,6 @@
     "label": "backlog",
     "flags": "feature"
   },
-  "36543": {
-    "description": "a refactor retains a modifier it was deleting by mistake.",
-    "reviewer": "jesse",
-    "state": "review",
-    "label": "backlog",
-    "flags": "fix",
-    "notes": []
-  },
-  "36599": {
-    "description": "Fix missing `undefined` checks",
-    "reviewer": "ron",
-    "notes": [],
-    "flags": "fix",
-    "state": "review",
-    "label": "backlog"
-  },
   "36673": {
     "description": "Do not parse template arguments in JavaScript files.",
     "reviewer": "andrew-branch",
@@ -565,29 +533,13 @@
     "state": "review",
     "label": "backlog"
   },
-  "37451": {
-    "description": "Add support of contextual quick info",
-    "reviewer": "nathan",
-    "notes": [],
-    "flags": "feature",
-    "state": "merge",
-    "label": "backlog"
-  },
   "37497": {
     "description": "Token hints for missing closing braces: classes, enums, jsx, modules, types",
     "reviewer": "andrew-branch",
     "notes": [],
     "flags": "feature",
-    "state": "review",
-    "label": "backlog"
-  },
-  "37546": {
-    "description": "fix broken regex on \"src/services/completions.ts#getCompletionData\"",
-    "reviewer": "nathan",
-    "notes": [],
-    "flags": "fix",
     "state": "waiting",
-    "label": "bonus"
+    "label": "backlog"
   },
   "37581": {
     "description": "Add: about missing types in RegExp",
@@ -634,24 +586,8 @@
     "reviewer": "eli",
     "notes": [],
     "flags": "feature",
-    "state": "review",
+    "state": "waiting",
     "label": "milestone"
-  },
-  "37786": {
-    "description": "fix(36055): `prop in dict` does not report error if `prop` is union type such as `MyClass | string`",
-    "reviewer": "sheetal",
-    "notes": [],
-    "flags": "fix",
-    "state": "merge",
-    "label": "backlog"
-  },
-  "37788": {
-    "description": "Updating dependencies",
-    "reviewer": "wesley",
-    "notes": [],
-    "flags": "fix",
-    "state": "merge",
-    "label": "housekeeping"
   },
   "37797": {
     "description": "Add static index signature",
@@ -668,14 +604,6 @@
     "flags": "feature",
     "state": "waiting",
     "label": "backlog"
-  },
-  "37806": {
-    "description": "feat(37782): 'declare method' quick fix for adding a private method",
-    "reviewer": "andrew-branch",
-    "notes": [],
-    "flags": "feature",
-    "state": "merge",
-    "label": "bonus"
   },
   "37815": {
     "description": "Remove redundant intersections from unions",
@@ -746,7 +674,7 @@
     "reviewer": "orta",
     "notes": [],
     "flags": "feature",
-    "state": "review",
+    "state": "waiting",
     "label": "bonus"
   },
   "37910": {
@@ -754,22 +682,6 @@
     "reviewer": "wesley",
     "notes": [],
     "flags": "fix",
-    "state": "review",
-    "label": "bonus"
-  },
-  "37912": {
-    "description": "fix: extract const in jsx",
-    "reviewer": "andrew-branch",
-    "notes": [],
-    "flags": "fix",
-    "state": "review",
-    "label": "bonus"
-  },
-  "37913": {
-    "description": "feat: add code fix for ts1064 and 1055",
-    "reviewer": "andrew-branch",
-    "notes": [],
-    "flags": "feature",
     "state": "review",
     "label": "bonus"
   },
@@ -802,7 +714,7 @@
     "reviewer": "daniel",
     "notes": [],
     "flags": "feature",
-    "state": "review",
+    "state": "waiting",
     "label": "bonus"
   },
   "38011": {
@@ -853,6 +765,14 @@
     "state": "review",
     "label": "backlog"
   },
+  "38099": {
+    "description": "Don't narrow against unions of constructor functions with instanceof",
+    "reviewer": "wesley",
+    "notes": [],
+    "flags": "fix",
+    "state": "review",
+    "label": "milestone"
+  },
   "38105": {
     "description": "Issue35876: Give better error message when Classic Module Resolution with incorrect path",
     "reviewer": "orta",
@@ -861,13 +781,13 @@
     "state": "waiting",
     "label": "milestone"
   },
-  "38107": {
-    "description": "fix(38073): Extract to function refactoring generates invalid code for arrow function that references `this`",
-    "reviewer": "mine",
+  "38124": {
+    "description": "Remove duplicate comments on refactors",
+    "reviewer": "nathan",
     "notes": [],
     "flags": "fix",
-    "state": "review",
-    "label": "backlog"
+    "state": "waiting",
+    "label": "milestone"
   },
   "38135": {
     "description": "fix(37791): Using object destructuring with ECMAScript's private field as computed property name leads to runtime error",
@@ -893,12 +813,140 @@
     "state": "review",
     "label": "backlog"
   },
-  "38228": {
-    "description": "Allowed comment directives to be multiline",
-    "reviewer": "sheetal",
+  "38216": {
+    "description": "Revert \"Revert #37106\"",
+    "reviewer": "nathan",
     "notes": [],
     "flags": "feature",
     "state": "waiting",
     "label": "milestone"
+  },
+  "38232": {
+    "description": "Add definitions for WeakRef and FinalizationRegistry",
+    "reviewer": "orta",
+    "notes": [],
+    "flags": "feature",
+    "state": "waiting",
+    "label": "backlog"
+  },
+  "38436": {
+    "description": "Report overall time",
+    "reviewer": "nathan",
+    "notes": [],
+    "flags": "feature",
+    "state": "waiting",
+    "label": "housekeeping"
+  },
+  "38449": {
+    "description": "Updates Uint8ArrayConstructor to match MDN documentation.",
+    "reviewer": "orta",
+    "notes": [],
+    "flags": "fix",
+    "state": "review",
+    "label": "backlog"
+  },
+  "38462": {
+    "description": "fix rename cause import change wrongly",
+    "reviewer": "sheetal",
+    "notes": [],
+    "flags": "fix",
+    "state": "review",
+    "label": "backlog"
+  },
+  "38481": {
+    "description": "fix(38463): No indexed access completions after Record<...>",
+    "reviewer": "daniel",
+    "notes": [],
+    "flags": "fix",
+    "state": "review",
+    "label": "milestone"
+  },
+  "38515": {
+    "description": "Remove resolveUntypedCall from checkJsxSelfClosingElementDeferred",
+    "reviewer": "wesley",
+    "notes": [],
+    "flags": "feature",
+    "state": "not-started",
+    "label": "experiment"
+  },
+  "38518": {
+    "description": "Fix top-level await parsing (#38483)",
+    "reviewer": "ron",
+    "notes": [],
+    "flags": "fix",
+    "state": "review",
+    "label": "milestone"
+  },
+  "38522": {
+    "description": "Detailed Intl.DateTimeFormatOptions types",
+    "reviewer": "daniel",
+    "notes": [],
+    "flags": "feature",
+    "state": "waiting",
+    "label": "bonus"
+  },
+  "38523": {
+    "description": "[Expirement] [WIP] Add deprecated related feature",
+    "reviewer": "nathan",
+    "notes": [],
+    "flags": "feature",
+    "state": "review",
+    "label": "experiment"
+  },
+  "38526": {
+    "description": "Update bigint declaration file",
+    "reviewer": "nathan",
+    "notes": [],
+    "flags": "feature",
+    "state": "waiting",
+    "label": "backlog"
+  },
+  "38541": {
+    "description": "fix(32341): Renaming class name switches up order in object literal shorthand",
+    "reviewer": "andrew-branch",
+    "notes": [],
+    "flags": "fix",
+    "state": "review",
+    "label": "milestone"
+  },
+  "38566": {
+    "description": "fix wrapping classes when targeting ESNext",
+    "reviewer": "ron",
+    "notes": [],
+    "flags": "fix",
+    "state": "waiting",
+    "label": "milestone"
+  },
+  "38574": {
+    "description": "Fix return type for JSON.stringify()",
+    "reviewer": "ryan",
+    "notes": [],
+    "flags": "fix",
+    "state": "review",
+    "label": "backlog"
+  },
+  "38602": {
+    "description": "Introduces new flag for optimization hints",
+    "reviewer": "ron",
+    "notes": [],
+    "flags": "feature",
+    "state": "not-started",
+    "label": "experiment"
+  },
+  "38610": {
+    "description": "Fix #38608",
+    "reviewer": "wesley",
+    "notes": [],
+    "flags": "fix",
+    "state": "waiting",
+    "label": "bonus"
+  },
+  "38631": {
+    "description": "fix(33286): Code folding fail for arrow function when param list has no parentheses",
+    "reviewer": "nathan",
+    "notes": [],
+    "flags": "fix",
+    "state": "waiting",
+    "label": "backlog"
   }
 }

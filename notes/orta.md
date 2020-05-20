@@ -1,6 +1,7 @@
 == Fixes ==
 
 * https://github.com/microsoft/TypeScript/pull/38045 - fix(23871): convertFunctionToEs6Class: Avoid insertNodeAfter
+* https://github.com/microsoft/TypeScript/pull/38449 - Updates Uint8ArrayConstructor to match MDN documentation.
 
 == Features ==
 
@@ -9,11 +10,12 @@
 
   Notes:
   - Seems fine, we just need to decide whether it would be useful long-term.
-* https://github.com/microsoft/TypeScript/pull/37907 - feat: add a codefix to fix class to className in react
 
 == Waiting on Author ==
 
+* https://github.com/microsoft/TypeScript/pull/37907 - feat: add a codefix to fix class to className in react
 * https://github.com/microsoft/TypeScript/pull/38105 - Issue35876: Give better error message when Classic Module Resolution with incorrect path
+* https://github.com/microsoft/TypeScript/pull/38232 - Add definitions for WeakRef and FinalizationRegistry
 
 == Instructions ==
 

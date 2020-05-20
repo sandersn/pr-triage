@@ -8,6 +8,7 @@
 
   Notes:
   - Re-adds recursion depth to inference -- but in a way that's more like assignability?
+* https://github.com/microsoft/TypeScript/pull/33089 - only apply indexed access write simplifications to types that arise from mutations
 * https://github.com/microsoft/TypeScript/pull/35863 - non-null assertion applied to control-flow type `never` now errors
 * https://github.com/microsoft/TypeScript/pull/37615 - Add 'T | PromiseLike<T>' inference from awaited types
 * https://github.com/microsoft/TypeScript/pull/37815 - Remove redundant intersections from unions
