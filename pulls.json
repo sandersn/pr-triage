@@ -146,16 +146,6 @@
     "flags": "feature",
     "notes": []
   },
-  "33069": {
-    "description": "improve error checking with multiple spread arguments",
-    "reviewer": "eli",
-    "notes": [
-      "  - This is a fix for the bug I asked you to look at recently."
-    ],
-    "flags": "feature",
-    "state": "waiting",
-    "label": "backlog"
-  },
   "33074": {
     "description": "better typings for Promise.resolve",
     "reviewer": "ron",
@@ -413,14 +403,6 @@
     "state": "waiting",
     "label": "backlog"
   },
-  "36143": {
-    "description": "Fix handling of templates in preProcessFile",
-    "reviewer": "wesley",
-    "notes": [],
-    "flags": "fix",
-    "state": "waiting",
-    "label": "backlog"
-  },
   "36408": {
     "description": "remove Reflect.decorate since it's non-standard",
     "reviewer": "ron",
@@ -476,14 +458,6 @@
     "flags": "feature",
     "state": "waiting",
     "label": "milestone"
-  },
-  "37228": {
-    "description": "fix crash during module resolution",
-    "reviewer": "sheetal",
-    "state": "waiting",
-    "label": "milestone",
-    "flags": "fix",
-    "notes": []
   },
   "37283": {
     "description": "Added runtime TypeError for non-function, non-null __extends",
@@ -597,28 +571,12 @@
     "state": "waiting",
     "label": "backlog"
   },
-  "37800": {
-    "description": "Better error message for accidental calls to get-accessors",
-    "reviewer": "nathan",
-    "notes": [],
-    "flags": "feature",
-    "state": "waiting",
-    "label": "backlog"
-  },
   "37815": {
     "description": "Remove redundant intersections from unions",
     "reviewer": "anders",
     "notes": [],
     "flags": "fix",
     "state": "not-started",
-    "label": "bonus"
-  },
-  "37839": {
-    "description": "add `toString` definitions for base types that have them",
-    "reviewer": "nathan",
-    "notes": [],
-    "flags": "fix",
-    "state": "waiting",
     "label": "bonus"
   },
   "37881": {
@@ -634,7 +592,7 @@
     "reviewer": "wesley",
     "notes": [],
     "flags": "feature",
-    "state": "waiting",
+    "state": "review",
     "label": "backlog"
   },
   "37891": {
@@ -690,7 +648,7 @@
     "reviewer": "andrew-branch",
     "notes": [],
     "flags": "feature",
-    "state": "waiting",
+    "state": "review",
     "label": "bonus"
   },
   "37962": {
@@ -850,7 +808,7 @@
     "reviewer": "sheetal",
     "notes": [],
     "flags": "fix",
-    "state": "review",
+    "state": "waiting",
     "label": "backlog"
   },
   "38481": {
@@ -940,13 +898,5 @@
     "flags": "fix",
     "state": "waiting",
     "label": "bonus"
-  },
-  "38631": {
-    "description": "fix(33286): Code folding fail for arrow function when param list has no parentheses",
-    "reviewer": "nathan",
-    "notes": [],
-    "flags": "fix",
-    "state": "waiting",
-    "label": "backlog"
   }
 }

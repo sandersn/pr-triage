@@ -1,14 +1,10 @@
-== Fixes ==
-
-* https://github.com/microsoft/TypeScript/pull/38462 - fix rename cause import change wrongly
-
 == Features ==
 
 * https://github.com/microsoft/TypeScript/pull/36747 - Merge diagnosticsProducing and nonDiagnosticsProducing checkers into a single checker supporting lazy diagnostics
 
 == Waiting on Author ==
 
-* https://github.com/microsoft/TypeScript/pull/37228 - fix crash during module resolution
+* https://github.com/microsoft/TypeScript/pull/38462 - fix rename cause import change wrongly
 
 == Instructions ==
 

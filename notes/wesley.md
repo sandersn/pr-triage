@@ -12,6 +12,7 @@
 
   Notes:
   - I assume jablko's idea is similar to yours?
+* https://github.com/microsoft/TypeScript/pull/37887 - fix(35779): Comments at the end of an array, when the last item ends with a comma, are not compiled
 * https://github.com/microsoft/TypeScript/pull/38515 - Remove resolveUntypedCall from checkJsxSelfClosingElementDeferred
 
 == Waiting on Author ==
@@ -24,9 +25,7 @@
 
   Notes:
   - This is hanging out here until TS 4.0, but needs an error message added before then.
-* https://github.com/microsoft/TypeScript/pull/36143 - Fix handling of templates in preProcessFile
 * https://github.com/microsoft/TypeScript/pull/37608 - New definition for omit that should ensure the name Omit is preserved…
-* https://github.com/microsoft/TypeScript/pull/37887 - fix(35779): Comments at the end of an array, when the last item ends with a comma, are not compiled
 * https://github.com/microsoft/TypeScript/pull/37903 - Add index signature for anonymous object literal type
 * https://github.com/microsoft/TypeScript/pull/37964 - Dont look for properties of Object and Function type when looking to resolve named import from module with `export=`
 * https://github.com/microsoft/TypeScript/pull/38610 - Fix #38608

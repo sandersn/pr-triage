@@ -1556,26 +1556,6 @@
                   },
                   {
                     "content": {
-                      "number": 38462,
-                      "labels": {
-                        "nodes": [
-                          {
-                            "name": "For Backlog Bug"
-                          }
-                        ]
-                      },
-                      "title": "fix rename cause import change wrongly",
-                      "assignees": {
-                        "nodes": [
-                          {
-                            "name": "Sheetal Nandi"
-                          }
-                        ]
-                      }
-                    }
-                  },
-                  {
-                    "content": {
                       "number": 38481,
                       "labels": {
                         "nodes": [
@@ -1609,6 +1589,46 @@
                         "nodes": [
                           {
                             "name": "Orta"
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "content": {
+                      "number": 37887,
+                      "labels": {
+                        "nodes": [
+                          {
+                            "name": "For Backlog Bug"
+                          }
+                        ]
+                      },
+                      "title": "fix(35779): Comments at the end of an array, when the last item ends with a comma, are not compiled",
+                      "assignees": {
+                        "nodes": [
+                          {
+                            "name": "Wesley Wigham"
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "content": {
+                      "number": 37917,
+                      "labels": {
+                        "nodes": [
+                          {
+                            "name": "For Uncommitted Bug"
+                          }
+                        ]
+                      },
+                      "title": "Improve error range for ts2657 (jsx expr must have parent element), add code fix for it",
+                      "assignees": {
+                        "nodes": [
+                          {
+                            "name": "Andrew Branch"
                           }
                         ]
                       }
@@ -1732,26 +1752,6 @@
                   },
                   {
                     "content": {
-                      "number": 37228,
-                      "labels": {
-                        "nodes": [
-                          {
-                            "name": "For Milestone Bug"
-                          }
-                        ]
-                      },
-                      "title": "fix(37165): Cannot read property 'flags' of undefined",
-                      "assignees": {
-                        "nodes": [
-                          {
-                            "name": "Sheetal Nandi"
-                          }
-                        ]
-                      }
-                    }
-                  },
-                  {
-                    "content": {
                       "number": 37029,
                       "labels": {
                         "nodes": [
@@ -1792,29 +1792,6 @@
                   },
                   {
                     "content": {
-                      "number": 37581,
-                      "labels": {
-                        "nodes": [
-                          {
-                            "name": "For Uncommitted Bug"
-                          },
-                          {
-                            "name": "lib update"
-                          }
-                        ]
-                      },
-                      "title": "Add: about missing types in RegExp",
-                      "assignees": {
-                        "nodes": [
-                          {
-                            "name": "Nathan Shively-Sanders"
-                          }
-                        ]
-                      }
-                    }
-                  },
-                  {
-                    "content": {
                       "number": 37608,
                       "labels": {
                         "nodes": [
@@ -1831,66 +1808,6 @@
                         "nodes": [
                           {
                             "name": "Wesley Wigham"
-                          }
-                        ]
-                      }
-                    }
-                  },
-                  {
-                    "content": {
-                      "number": 36143,
-                      "labels": {
-                        "nodes": [
-                          {
-                            "name": "For Backlog Bug"
-                          }
-                        ]
-                      },
-                      "title": "Fix handling of templates in preProcessFile",
-                      "assignees": {
-                        "nodes": [
-                          {
-                            "name": "Wesley Wigham"
-                          }
-                        ]
-                      }
-                    }
-                  },
-                  {
-                    "content": {
-                      "number": 37887,
-                      "labels": {
-                        "nodes": [
-                          {
-                            "name": "For Backlog Bug"
-                          }
-                        ]
-                      },
-                      "title": "fix(35779): Comments at the end of an array, when the last item ends with a comma, are not compiled",
-                      "assignees": {
-                        "nodes": [
-                          {
-                            "name": "Wesley Wigham"
-                          }
-                        ]
-                      }
-                    }
-                  },
-                  {
-                    "content": {
-                      "number": 33069,
-                      "labels": {
-                        "nodes": [
-                          {
-                            "name": "For Backlog Bug"
-                          }
-                        ]
-                      },
-                      "title": "Fix the error when use spread arguments twice",
-                      "assignees": {
-                        "nodes": [
-                          {
-                            "name": "Eli Barzilay"
                           }
                         ]
                       }
@@ -1921,26 +1838,6 @@
                   },
                   {
                     "content": {
-                      "number": 37800,
-                      "labels": {
-                        "nodes": [
-                          {
-                            "name": "For Backlog Bug"
-                          }
-                        ]
-                      },
-                      "title": "Better error message for accidental calls to get-accessors",
-                      "assignees": {
-                        "nodes": [
-                          {
-                            "name": "Nathan Shively-Sanders"
-                          }
-                        ]
-                      }
-                    }
-                  },
-                  {
-                    "content": {
                       "number": 38105,
                       "labels": {
                         "nodes": [
@@ -1954,46 +1851,6 @@
                         "nodes": [
                           {
                             "name": "Orta"
-                          }
-                        ]
-                      }
-                    }
-                  },
-                  {
-                    "content": {
-                      "number": 37917,
-                      "labels": {
-                        "nodes": [
-                          {
-                            "name": "For Uncommitted Bug"
-                          }
-                        ]
-                      },
-                      "title": "Improve error range for ts2657 (jsx expr must have parent element), add code fix for it",
-                      "assignees": {
-                        "nodes": [
-                          {
-                            "name": "Andrew Branch"
-                          }
-                        ]
-                      }
-                    }
-                  },
-                  {
-                    "content": {
-                      "number": 37839,
-                      "labels": {
-                        "nodes": [
-                          {
-                            "name": "For Uncommitted Bug"
-                          }
-                        ]
-                      },
-                      "title": "add `toString` definitions for base types that have them",
-                      "assignees": {
-                        "nodes": [
-                          {
-                            "name": "Nathan Shively-Sanders"
                           }
                         ]
                       }
@@ -2057,26 +1914,6 @@
                         "nodes": [
                           {
                             "name": "Wesley Wigham"
-                          }
-                        ]
-                      }
-                    }
-                  },
-                  {
-                    "content": {
-                      "number": 37980,
-                      "labels": {
-                        "nodes": [
-                          {
-                            "name": "For Uncommitted Bug"
-                          }
-                        ]
-                      },
-                      "title": "Feat#Provide a quickfix for non-exported types",
-                      "assignees": {
-                        "nodes": [
-                          {
-                            "name": "Daniel Rosenwasser"
                           }
                         ]
                       }
@@ -2160,26 +1997,6 @@
                         "nodes": [
                           {
                             "name": "Andrew Branch"
-                          }
-                        ]
-                      }
-                    }
-                  },
-                  {
-                    "content": {
-                      "number": 38631,
-                      "labels": {
-                        "nodes": [
-                          {
-                            "name": "For Backlog Bug"
-                          }
-                        ]
-                      },
-                      "title": "fix(33286): Code folding fail for arrow function when param list has no parentheses",
-                      "assignees": {
-                        "nodes": [
-                          {
-                            "name": "Nathan Shively-Sanders"
                           }
                         ]
                       }
@@ -2343,6 +2160,69 @@
                         "nodes": [
                           {
                             "name": "Orta"
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "content": {
+                      "number": 37581,
+                      "labels": {
+                        "nodes": [
+                          {
+                            "name": "For Uncommitted Bug"
+                          },
+                          {
+                            "name": "lib update"
+                          }
+                        ]
+                      },
+                      "title": "Add: about missing types in RegExp",
+                      "assignees": {
+                        "nodes": [
+                          {
+                            "name": "Nathan Shively-Sanders"
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "content": {
+                      "number": 38462,
+                      "labels": {
+                        "nodes": [
+                          {
+                            "name": "For Backlog Bug"
+                          }
+                        ]
+                      },
+                      "title": "fix rename cause import change wrongly",
+                      "assignees": {
+                        "nodes": [
+                          {
+                            "name": "Sheetal Nandi"
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "content": {
+                      "number": 37980,
+                      "labels": {
+                        "nodes": [
+                          {
+                            "name": "For Uncommitted Bug"
+                          }
+                        ]
+                      },
+                      "title": "Feat#Provide a quickfix for non-exported types",
+                      "assignees": {
+                        "nodes": [
+                          {
+                            "name": "Daniel Rosenwasser"
                           }
                         ]
                       }

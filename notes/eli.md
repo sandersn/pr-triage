@@ -8,10 +8,6 @@
 
 == Waiting on Author ==
 
-* https://github.com/microsoft/TypeScript/pull/33069 - improve error checking with multiple spread arguments
-
-  Notes:
-  - This is a fix for the bug I asked you to look at recently.
 * https://github.com/microsoft/TypeScript/pull/37727 - Add logical assignment operator
 * https://github.com/microsoft/TypeScript/pull/37797 - Add static index signature
 

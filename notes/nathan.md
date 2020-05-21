@@ -31,13 +31,10 @@
 
 * https://github.com/microsoft/TypeScript/pull/36131 - Fix parsing nested parameter types of `@callback` JSDoc tag
 * https://github.com/microsoft/TypeScript/pull/37581 - Add: about missing types in RegExp
-* https://github.com/microsoft/TypeScript/pull/37800 - Better error message for accidental calls to get-accessors
-* https://github.com/microsoft/TypeScript/pull/37839 - add `toString` definitions for base types that have them
 * https://github.com/microsoft/TypeScript/pull/38124 - Remove duplicate comments on refactors
 * https://github.com/microsoft/TypeScript/pull/38216 - Revert "Revert #37106"
 * https://github.com/microsoft/TypeScript/pull/38436 - Report overall time
 * https://github.com/microsoft/TypeScript/pull/38526 - Update bigint declaration file
-* https://github.com/microsoft/TypeScript/pull/38631 - fix(33286): Code folding fail for arrow function when param list has no parentheses
 
 == Instructions ==
 

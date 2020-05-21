@@ -7,12 +7,12 @@
 == Features ==
 
 * https://github.com/microsoft/TypeScript/pull/37421 - Support xml namespace prefix for JSX elements and attributes
+* https://github.com/microsoft/TypeScript/pull/37917 - Improve error range for ts2657 (jsx expr must have parent element), add code fix for it
 
 == Waiting on Author ==
 
 * https://github.com/microsoft/TypeScript/pull/37497 - Token hints for missing closing braces: classes, enums, jsx, modules, types
 * https://github.com/microsoft/TypeScript/pull/37894 - Always error on property override accessor
-* https://github.com/microsoft/TypeScript/pull/37917 - Improve error range for ts2657 (jsx expr must have parent element), add code fix for it
 
 == Instructions ==
 
