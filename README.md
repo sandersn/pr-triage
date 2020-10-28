@@ -18,50 +18,18 @@ Notes and tools for PR triage
 
 # Workflow
 
-1. Run graphql query at https://developer.github.com/v4/explorer/
+1. Set the environment variable GH_API_TOKEN to a token with public_repo access.
 
-``` graphql
-{
-  repository(name: "TypeScript", owner: "microsoft") {
-    project(number: 13) {
-      columns(first: 4) {
-        nodes {
-          cards(first: 100) {
-            nodes {
-              content {
-                ... on PullRequest {
-                  number
-                  labels(first: 10) {
-                    nodes {
-                      name
-                    }
-                  }
-                  title
-                  assignees(first: 5) {
-                    nodes {
-                      name
-                    }
-                  }
-                }
-              }
-            }
-          }
-          name
-        }
-      }
-    }
-  }
-}
-```
 
-2. Paste results into project-board.json.
 3. Run index.js.
-   - Fix any assertions on github, then re-run graphql query + paste into project-board.json.
+   - Fix any assertions on github, then re-run.
 4. Compare pulls.json (old) to output.json (new).
 5. Copy output.json over pulls.json.
 6. Edit FIXME entries to read either 'feature' or 'fix'.
 7. Re-run index.js.
 8. Check in all changed files, delete output.json.
+
+
 
 Doesn't include notes or flags
 

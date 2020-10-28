@@ -1,32 +1,43 @@
 const fs = require('fs')
 const { assert } = require('console')
+const { graphql } = require('@octokit/graphql')
 
-/** convert graphql output to denormalised output */
-function updateFromGraphql() {
-  /** @type {Board} */
-  const boards = JSON.parse(fs.readFileSync('project-board.json', 'utf8'))
+/**
+ * convert graphql output to denormalised output
+ * @param {Board} board
+ */
+function updateFromGraphql(board) {
   /** @type {Pulls} */
   const pulls = JSON.parse(fs.readFileSync('pulls.json', 'utf8'))
+  const wrongAssigneeCount = []
   const seen = new Set()
 
-  for (const column of boards.data.repository.project.columns.nodes) {
+  for (const column of board.repository.project.columns.nodes) {
     for (const cardp of column.cards.nodes) {
       const card = cardp.content
       seen.add(card.number+"")
-      assert(card.assignees.nodes.length === 1, "Should only have 1 assignee", card.number)
+      const reviewers = card.assignees.nodes.map(fromAssignee)
+      if (card.assignees.nodes.length !== 1 && reviewers.filter(r => r !== fromAssignee(card.author)).length !== 1) {
+        // TODO: Exempt self-assignees before this check (or just check and continue with the self-assignee, then categorise it later)
+        console.log("Should only have 1 assignee", card.number, 'but has', reviewers.length, ":", reviewers.join(", "), "::", JSON.stringify(card.assignees.nodes))
+        wrongAssigneeCount.push(card)
+      }
 
       const existing = pulls[card.number]
       if (existing) {
         // These might have changed, and it's a good idea for sanity checking to diff the output
         // Don't override the description, though; assume that it might be manually updated
-        existing.reviewer = fromAssignee(card.assignees.nodes[0].name)
+        existing.reviewers = reviewers
         existing.state = fromColumn(column.name)
         existing.label = fromLabels(card.labels.nodes)
+        if (!existing.author)
+          existing.author = card.author
       }
       else {
         pulls[card.number] = {
           description: card.title,
-          reviewer: fromAssignee(card.assignees.nodes[0].name),
+          author: card.author,
+          reviewers,
           notes: [],
           flags: "FIXME",
           state: fromColumn(column.name),
@@ -40,12 +51,12 @@ function updateFromGraphql() {
       delete pulls[number]
     }
   }
-  return pulls
+  return /** @type {[Pulls, Card[]]} */([pulls, wrongAssigneeCount])
 }
 
 /**
  * @param {Pulls} pulls
- * @param {string} name
+ * @param {Reviewer} name
  */
 function emitPulls(pulls, name) {
   let emit = ""
@@ -54,6 +65,7 @@ function emitPulls(pulls, name) {
     feature: [],
     bonus: [],
     merge: [],
+    yours: [],
     waiting: [],
     FIXME: [],
   }
@@ -63,13 +75,17 @@ function emitPulls(pulls, name) {
     bonus: "Uncommitted",
     merge: "Ready to Merge",
     waiting: "Waiting on Author",
+    yours: "Your PRs",
     FIXME: "UNTRIAGED",
   }
   // 1. filter by name
   for (const key in pulls) {
-    if (pulls[key].reviewer === name) {
+    if (pulls[key].reviewers.indexOf(name) > -1) {
       const pull = emitPull(pulls[key], key);
-      if (pulls[key].state === 'merge') {
+      if (name === fromAssignee(pulls[key].author, /*assertMissing*/ false)) {
+        flags.yours.push(pull)
+      }
+      else if (pulls[key].state === 'merge') {
         flags.merge.push(pull)
       }
       else if (pulls[key].state === 'waiting') {
@@ -85,15 +101,7 @@ function emitPulls(pulls, name) {
     if (flags[flagName].length)
       emit += `== ${flagNames[flagName]} ==\n\n` + flags[flagName].join('') + "\n"
   }
-  return emit + `== Instructions ==
-
-* Review PRs from team members the way you normally would.
-* For community contributions, you may need to teach the contributor about the compiler codebase. This will probably be more work than writing the code yourself. Decide whether it's worthwhile on a case-by-case basis, but BE POLITE either way.
-* For community contributions you will have to invoke typescript-bot yourself since it only responds to team members.
-* For PRs with the label "For Backlog Bug", ask contributors to analyse typescript-bot runs and merge from master.
-* For PRs with the label "For Milestone Bug", you should analyse typescript-bot runs and merge from master yourself if the contributor doesn't do it.
-* For PRs with the label "For Uncommitted Bug", you should check whether the PR is a good idea. Usually you should have the author create an issue for discussion.
-`
+  return emit
 }
 
 /**
@@ -101,6 +109,7 @@ function emitPulls(pulls, name) {
  * @param {string} number
  */
 function emitPull(pull, number) {
+  // TODO: Mark self-review specially (and/or put in a different list)
   let line = `* https://github.com/microsoft/TypeScript/pull/${number} - ${pull.description}\n`
   if (pull.notes.length) {
     line += "\n  Notes:\n" + pull.notes.join('\n') + "\n"
@@ -108,11 +117,64 @@ function emitPull(pull, number) {
   return line
 }
 
-function main() {
-  const pulls = updateFromGraphql()
+async function main() {
+  // Use the REPL at https://developer.github.com/v4/explorer/ to update this query
+  /** @type {Board} */
+  const board = await graphql(`
+{
+  repository(name: "TypeScript", owner: "microsoft") {
+    project(number: 13) {
+      columns(first: 4) {
+        nodes {
+          cards(first: 100) {
+            nodes {
+              content {
+                ... on PullRequest {
+                  number
+                  labels(first: 10) {
+                    nodes {
+                      name
+                    }
+                  }
+                  title
+                  assignees(first: 5) {
+                    nodes {
+                      name
+                    }
+                  }
+                  author {
+                    ... on User {
+                      name
+                    }
+                  }
+                }
+              }
+            }
+          }
+          name
+        }
+      }
+    }
+  }
+}
+`, {
+    headers: {
+      authorization: "token " + process.env.GH_API_TOKEN
+    }
+  })
+  const [pulls, noAssignees] = updateFromGraphql(board)
+  if (noAssignees.length) {
+    for (const e of noAssignees) {
+      if (e.assignees.nodes.length === 1 && e.author.name === e.assignees.nodes[0].name)
+        continue
+      console.log('Should have at least 1 assignee:', "https://github.com/microsoft/TypeScript/pull/"+e.number, e.author.name, "|||", e.assignees.nodes.map(n => n.name).join(", "))
+    }
+    console.log('Errors found, not writing output.json')
+    return
+  }
   fs.writeFileSync('output.json', JSON.stringify(pulls, undefined, 2))
   for (const name of Object.values(team)) {
-    fs.writeFileSync(`notes/${name}.md`, emitPulls(pulls, name))
+    fs.writeFileSync(`notes/${name}.md`, emitPulls(pulls, /** @type {Reviewer} */(name)))
   }
 }
 
@@ -124,6 +186,7 @@ const team = {
   "Eli Barzilay": "eli",
   "Mine Starks": "mine",
   "Orta": "orta",
+  "Orta Therox": "orta",
   "Ron Buckton": "ron",
   "Ryan Cavanaugh": "ryan",
   "Sheetal Nandi": "sheetal",
@@ -144,15 +207,17 @@ const labels = {
   "For Backlog Bug": "backlog",
   "For Uncommitted Bug": "bonus",
   "Housekeeping": "housekeeping",
-  "Experiment": "experiment"
+  "Experiment": "experiment",
+  "Author: Team": "OTHER"
 }
 /**
- * @param {string} assignee
- * @return {Pull["reviewer"]}
+ * @param {{ name: string }} assignee
+ * @return {Pull["reviewers"][number]}
  */
-function fromAssignee(assignee) {
-  const r = team[assignee]
-  assert(r, "Reviewer not found for assignee named:", assignee)
+function fromAssignee(assignee, assertMissing = true) {
+  const r = team[assignee.name]
+  if (assertMissing)
+    assert(r, "Reviewer not found for assignee named:", assignee.name)
   return r
 }
 /**
@@ -178,4 +243,4 @@ function fromLabels(names) {
   return l
 }
 
-main()
+main().catch(e => { console.log(e); process.exit(1) })
