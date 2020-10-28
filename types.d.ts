@@ -13,7 +13,6 @@ type Pull = {
   notes: string[]
   state: "not-started" | "review" | "waiting" | "merge" | "done"
   label: "milestone" | "backlog" | "bonus" | "housekeeping" | "experiment" | "OTHER"
-  flags?: "fix" | "feature" | "bonus" | "FIXME"
 }
 
 type Card = {

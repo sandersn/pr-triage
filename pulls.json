@@ -1,14 +1,4 @@
 {
-  "27227": {
-    "description": "improve error message for `==` of two different types",
-    "reviewer": "eli",
-    "state": "review",
-    "label": "backlog",
-    "flags": "fix",
-    "notes": [
-      "  - This is so old that it may be obsolete. First thing is to check what errors we currently give."
-    ]
-  },
   "28023": {
     "description": "reword error message when comparing non-comparable types",
     "reviewer": "ryan",
@@ -17,28 +7,27 @@
     "flags": "feature",
     "notes": [
       "  - Just changes the message text; no other changes."
-    ]
-  },
-  "28250": {
-    "description": "convert function to arrow expr and back.",
-    "reviewer": "jesse",
-    "state": "review",
-    "label": "backlog",
-    "flags": "feature",
-    "notes": [
-      "  - Written by a couple of students for their bachelor's thesis.",
-      "  - Justification for the issue is \"Jetbrains has it\".",
-      "  - Andy already reviewed it, so the code should be basically OK.",
-      "  - The main task is to decide whether \"Jetbrains has it\" is good enough reason for us to have it."
-    ]
+    ],
+    "reviewers": [
+      "ryan"
+    ],
+    "author": {
+      "name": "Tony Ho"
+    }
   },
   "28708": {
     "description": "fix block-scoped capturing by class expressions inside iteration",
     "reviewer": "ron",
-    "state": "review",
-    "label": "milestone",
+    "state": "waiting",
+    "label": "backlog",
     "flags": "fix",
-    "notes": []
+    "notes": [],
+    "reviewers": [
+      "ron"
+    ],
+    "author": {
+      "name": "Joey Watts"
+    }
   },
   "29228": {
     "description": "give more mapped type properties a syntheticOrigin link",
@@ -48,7 +37,13 @@
     "flags": "feature",
     "notes": [
       "  - The idea is that it works for properties of non-homomorphic mapped types, but this doesn't make sense."
-    ]
+    ],
+    "reviewers": [
+      "anders"
+    ],
+    "author": {
+      "name": "Wenlu Wang"
+    }
   },
   "29374": {
     "description": "allow non-this, non-super before super in constructors",
@@ -56,7 +51,13 @@
     "state": "review",
     "label": "backlog",
     "flags": "feature",
-    "notes": []
+    "notes": [],
+    "reviewers": [
+      "ron"
+    ],
+    "author": {
+      "name": "Josh Goldberg"
+    }
   },
   "29468": {
     "description": "instantiate `this` in non-super access expressions",
@@ -64,7 +65,13 @@
     "state": "review",
     "label": "milestone",
     "flags": "fix",
-    "notes": []
+    "notes": [],
+    "reviewers": [
+      "anders"
+    ],
+    "author": {
+      "name": "Wesley Wigham"
+    }
   },
   "30161": {
     "description": "instanceof narrowing of generics: copy type parameter from original",
@@ -74,7 +81,13 @@
     "flags": "feature",
     "notes": [
       "  - The idea is that it works for properties of non-homomorphic mapped types, but this doesn't make sense."
-    ]
+    ],
+    "reviewers": [
+      "anders"
+    ],
+    "author": {
+      "name": "Nathan Fenner"
+    }
   },
   "30639": {
     "description": "another type relation for conditional types",
@@ -82,15 +95,27 @@
     "label": "milestone",
     "flags": "feature",
     "reviewer": "wesley",
-    "notes": []
+    "notes": [],
+    "reviewers": [
+      "wesley"
+    ],
+    "author": {
+      "name": "Wesley Wigham"
+    }
   },
   "31023": {
     "description": "Allow identical type parameter lists to merge in union signatures",
     "reviewer": "anders",
-    "state": "review",
+    "state": "merge",
     "label": "milestone",
     "flags": "fix",
-    "notes": []
+    "notes": [],
+    "reviewers": [
+      "anders"
+    ],
+    "author": {
+      "name": "Wesley Wigham"
+    }
   },
   "31029": {
     "description": "fix relations for instantations of same generic signature",
@@ -100,7 +125,13 @@
     "flags": "fix",
     "notes": [
       "  - waiting to decide whether this should be under strictFunctionTypes or other strict flag."
-    ]
+    ],
+    "reviewers": [
+      "anders"
+    ],
+    "author": {
+      "name": "Anders Hejlsberg"
+    }
   },
   "31277": {
     "description": "don't measure variance for conditional type extendsType",
@@ -110,7 +141,13 @@
     "flags": "feature",
     "notes": [
       "  - This is Jack William's PR, and is kind of blocked by 30639."
-    ]
+    ],
+    "reviewers": [
+      "wesley"
+    ],
+    "author": {
+      "name": "Jack Williams"
+    }
   },
   "31345": {
     "description": "inference: break down target unions before source unions",
@@ -118,7 +155,13 @@
     "state": "review",
     "label": "backlog",
     "flags": "fix",
-    "notes": []
+    "notes": [],
+    "reviewers": [
+      "anders"
+    ],
+    "author": {
+      "name": "Wesley Wigham"
+    }
   },
   "31455": {
     "description": "fix type parameter leak in conditional types",
@@ -126,7 +169,13 @@
     "state": "review",
     "label": "milestone",
     "flags": "fix",
-    "notes": []
+    "notes": [],
+    "reviewers": [
+      "anders"
+    ],
+    "author": {
+      "name": "Wesley Wigham"
+    }
   },
   "31633": {
     "description": "allow inference to explore multiple instances of the same symbol",
@@ -136,7 +185,13 @@
     "flags": "fix",
     "notes": [
       "  - Re-adds recursion depth to inference -- but in a way that's more like assignability?"
-    ]
+    ],
+    "reviewers": [
+      "anders"
+    ],
+    "author": {
+      "name": "Wesley Wigham"
+    }
   },
   "33055": {
     "description": "better typings for Promise.all",
@@ -144,7 +199,13 @@
     "state": "review",
     "label": "backlog",
     "flags": "feature",
-    "notes": []
+    "notes": [],
+    "reviewers": [
+      "ron"
+    ],
+    "author": {
+      "name": "Jack Bates"
+    }
   },
   "33074": {
     "description": "better typings for Promise.resolve",
@@ -152,7 +213,13 @@
     "state": "review",
     "label": "backlog",
     "flags": "feature",
-    "notes": []
+    "notes": [],
+    "reviewers": [
+      "ron"
+    ],
+    "author": {
+      "name": "Jack Bates"
+    }
   },
   "33089": {
     "description": "only apply indexed access write simplifications to types that arise from mutations",
@@ -160,7 +227,13 @@
     "state": "review",
     "label": "backlog",
     "flags": "fix",
-    "notes": []
+    "notes": [],
+    "reviewers": [
+      "anders"
+    ],
+    "author": {
+      "name": "Jack Williams"
+    }
   },
   "33103": {
     "description": "better typings for Promise.then",
@@ -168,7 +241,13 @@
     "state": "review",
     "label": "backlog",
     "flags": "feature",
-    "notes": []
+    "notes": [],
+    "reviewers": [
+      "ron"
+    ],
+    "author": {
+      "name": "Jack Bates"
+    }
   },
   "33139": {
     "description": "higher order inference: `this` parameters similar to functions and constructors",
@@ -176,7 +255,13 @@
     "state": "review",
     "label": "backlog",
     "flags": "feature",
-    "notes": []
+    "notes": [],
+    "reviewers": [
+      "anders"
+    ],
+    "author": {
+      "name": "Jack Bates"
+    }
   },
   "33248": {
     "description": "Add use-before-def error for uninitialized property",
@@ -184,7 +269,13 @@
     "notes": [],
     "flags": "feature",
     "state": "merge",
-    "label": "milestone"
+    "label": "milestone",
+    "reviewers": [
+      "ron"
+    ],
+    "author": {
+      "name": "Ron Buckton"
+    }
   },
   "33337": {
     "description": "Corrected ES5 for-in destructuring binding emit",
@@ -192,7 +283,13 @@
     "notes": [],
     "flags": "fix",
     "state": "review",
-    "label": "backlog"
+    "label": "backlog",
+    "reviewers": [
+      "ron"
+    ],
+    "author": {
+      "name": "Josh Goldberg"
+    }
   },
   "33363": {
     "description": "cache repeated prototype sets in a variable",
@@ -200,7 +297,13 @@
     "state": "review",
     "label": "backlog",
     "flags": "feature",
-    "notes": []
+    "notes": [],
+    "reviewers": [
+      "ron"
+    ],
+    "author": {
+      "name": "Josh Goldberg"
+    }
   },
   "33441": {
     "description": "improve class/function merge error",
@@ -208,7 +311,13 @@
     "state": "review",
     "label": "backlog",
     "flags": "feature",
-    "notes": []
+    "notes": [],
+    "reviewers": [
+      "orta"
+    ],
+    "author": {
+      "name": "Austin Cummings"
+    }
   },
   "33497": {
     "description": "Change default for TNext in Iterator/AsyncIterator",
@@ -216,7 +325,13 @@
     "notes": [],
     "flags": "feature",
     "state": "merge",
-    "label": "backlog"
+    "label": "backlog",
+    "reviewers": [
+      "ron"
+    ],
+    "author": {
+      "name": "Ron Buckton"
+    }
   },
   "33544": {
     "description": "add `this` type for Reflect.defineProperty",
@@ -224,7 +339,13 @@
     "state": "review",
     "label": "backlog",
     "flags": "feature",
-    "notes": []
+    "notes": [],
+    "reviewers": [
+      "nathan"
+    ],
+    "author": {
+      "name": "PaulHan"
+    }
   },
   "33570": {
     "description": "disallow assignment of {} to unconstrained type parameters",
@@ -234,7 +355,13 @@
     "flags": "feature",
     "notes": [
       "  - This is hanging out here until TS 4.0, but needs an error message added before then."
-    ]
+    ],
+    "reviewers": [
+      "wesley"
+    ],
+    "author": {
+      "name": "Wesley Wigham"
+    }
   },
   "33645": {
     "description": "better typings for Array.concat() etc",
@@ -244,7 +371,13 @@
     "flags": "feature",
     "notes": [
       "  - This is hanging out here until TS 4.0, but needs an error message added before then."
-    ]
+    ],
+    "reviewers": [
+      "nathan"
+    ],
+    "author": {
+      "name": "Jack Bates"
+    }
   },
   "33673": {
     "description": "emit fewer duplicate trivia on initialisers added by a transformer",
@@ -252,7 +385,13 @@
     "state": "review",
     "label": "backlog",
     "flags": "feature",
-    "notes": []
+    "notes": [],
+    "reviewers": [
+      "ron"
+    ],
+    "author": {
+      "name": "Matts966"
+    }
   },
   "33707": {
     "description": "better typings for Promise",
@@ -262,7 +401,13 @@
     "flags": "feature",
     "notes": [
       "  - The following 3 PRs are all included in this one, I think."
-    ]
+    ],
+    "reviewers": [
+      "ron"
+    ],
+    "author": {
+      "name": "Jack Bates"
+    }
   },
   "33767": {
     "description": "Add an overload to Object.freeze that preserves literal types",
@@ -270,27 +415,29 @@
     "state": "review",
     "label": "backlog",
     "flags": "feature",
-    "notes": []
-  },
-  "33863": {
-    "description": "add shim for ES promise",
-    "reviewer": "ron",
-    "state": "waiting",
-    "label": "milestone",
-    "flags": "feature",
-    "notes": [
-      "  - Sounds like this one is required by a feature that's currently on hold."
-    ]
+    "notes": [],
+    "reviewers": [
+      "nathan"
+    ],
+    "author": {
+      "name": "Wesley Wigham"
+    }
   },
   "33876": {
     "description": "make get[Non]OptionalType part of the public API",
     "reviewer": "orta",
     "state": "review",
-    "label": "backlog",
+    "label": "uncommitted",
     "flags": "feature",
     "notes": [
       "  - Seems fine, we just need to decide whether it would be useful long-term."
-    ]
+    ],
+    "reviewers": [
+      "orta"
+    ],
+    "author": {
+      "name": "Klaus Meinhardt"
+    }
   },
   "34518": {
     "description": "cache global tagged template objects",
@@ -298,15 +445,27 @@
     "state": "review",
     "label": "backlog",
     "flags": "feature",
-    "notes": []
+    "notes": [],
+    "reviewers": [
+      "ron"
+    ],
+    "author": {
+      "name": "Daniel Rosenwasser"
+    }
   },
   "34868": {
     "description": "sort union emit",
     "reviewer": "nathan",
-    "state": "review",
+    "state": "waiting",
     "label": "backlog",
     "flags": "feature",
-    "notes": []
+    "notes": [],
+    "reviewers": [
+      "nathan"
+    ],
+    "author": {
+      "name": "krk"
+    }
   },
   "34941": {
     "description": "fix String.prototype.replace.call overload selection",
@@ -316,7 +475,13 @@
     "flags": "fix",
     "notes": [
       "  - bug filed by ljharb so :eyeroll:"
-    ]
+    ],
+    "reviewers": [
+      "nathan"
+    ],
+    "author": {
+      "name": "Marcin Serwin"
+    }
   },
   "35284": {
     "description": "defer generic awaited types",
@@ -327,7 +492,13 @@
     "notes": [
       "  - This initially sounds like an attempt to do `awaited`, except wrong.",
       "  - Probably the hard part will be closing this PR in a polite way."
-    ]
+    ],
+    "reviewers": [
+      "ron"
+    ],
+    "author": {
+      "name": "Jack Bates"
+    }
   },
   "35494": {
     "description": "capture thisArg of optional chaining when parenthesized",
@@ -335,7 +506,13 @@
     "state": "review",
     "label": "milestone",
     "flags": "fix",
-    "notes": []
+    "notes": [],
+    "reviewers": [
+      "ron"
+    ],
+    "author": {
+      "name": "Klaus Meinhardt"
+    }
   },
   "35594": {
     "description": "fix(lib/es2015): Fix definition of `ProxyHandler`",
@@ -343,7 +520,13 @@
     "notes": [],
     "flags": "feature",
     "state": "review",
-    "label": "backlog"
+    "label": "backlog",
+    "reviewers": [
+      "nathan"
+    ],
+    "author": {
+      "name": "ExE Boss"
+    }
   },
   "35608": {
     "description": "feat(lib/es2015): Add typed overloads to `Reflect`",
@@ -351,7 +534,13 @@
     "notes": [],
     "flags": "feature",
     "state": "review",
-    "label": "backlog"
+    "label": "uncommitted",
+    "reviewers": [
+      "nathan"
+    ],
+    "author": {
+      "name": "ExE Boss"
+    }
   },
   "35741": {
     "description": "a type relation for conditional types",
@@ -361,7 +550,13 @@
     "flags": "feature",
     "notes": [
       "  - I assume jablko's idea is similar to yours?"
-    ]
+    ],
+    "reviewers": [
+      "wesley"
+    ],
+    "author": {
+      "name": "Jack Bates"
+    }
   },
   "35863": {
     "description": "non-null assertion applied to control-flow type `never` now errors",
@@ -369,23 +564,41 @@
     "state": "review",
     "label": "backlog",
     "flags": "fix",
-    "notes": []
+    "notes": [],
+    "reviewers": [
+      "anders"
+    ],
+    "author": {
+      "name": "Titian Cernicova-Dragomir"
+    }
   },
   "35877": {
     "description": "fix receiver on calls of imported/exported functions",
     "reviewer": "ron",
-    "state": "review",
+    "state": "waiting",
     "label": "milestone",
     "flags": "fix",
-    "notes": []
+    "notes": [],
+    "reviewers": [
+      "ron"
+    ],
+    "author": {
+      "name": "Klaus Meinhardt"
+    }
   },
   "35878": {
     "description": "No error on indirect calls",
     "reviewer": "nathan",
     "notes": [],
     "flags": "fix",
-    "state": "not-started",
-    "label": "bonus"
+    "state": "review",
+    "label": "uncommitted",
+    "reviewers": [
+      "nathan"
+    ],
+    "author": {
+      "name": "Klaus Meinhardt"
+    }
   },
   "35885": {
     "description": "Added quick-fix to rewrite index access as call to get/set method.",
@@ -393,7 +606,13 @@
     "notes": [],
     "flags": "feature",
     "state": "waiting",
-    "label": "backlog"
+    "label": "backlog",
+    "reviewers": [
+      "andrew-casey"
+    ],
+    "author": {
+      "name": "Titian Cernicova-Dragomir"
+    }
   },
   "36131": {
     "description": "Fix parsing nested parameter types of `@callback` JSDoc tag",
@@ -401,7 +620,13 @@
     "notes": [],
     "flags": "fix",
     "state": "waiting",
-    "label": "backlog"
+    "label": "backlog",
+    "reviewers": [
+      "nathan"
+    ],
+    "author": {
+      "name": "Matej Gagyi"
+    }
   },
   "36408": {
     "description": "remove Reflect.decorate since it's non-standard",
@@ -409,7 +634,13 @@
     "notes": [],
     "state": "review",
     "label": "backlog",
-    "flags": "feature"
+    "flags": "feature",
+    "reviewers": [
+      "ron"
+    ],
+    "author": {
+      "name": "Jake Champion"
+    }
   },
   "36673": {
     "description": "Do not parse template arguments in JavaScript files.",
@@ -417,7 +648,13 @@
     "notes": [],
     "flags": "fix",
     "state": "review",
-    "label": "backlog"
+    "label": "backlog",
+    "reviewers": [
+      "andrew-branch"
+    ],
+    "author": {
+      "name": "Martin Probst"
+    }
   },
   "36723": {
     "description": "AsyncIterable[Iterator] adds type parameters for TReturn, TNext",
@@ -425,7 +662,13 @@
     "state": "review",
     "label": "milestone",
     "flags": "fix",
-    "notes": []
+    "notes": [],
+    "reviewers": [
+      "ron"
+    ],
+    "author": {
+      "name": "Brian Terlson"
+    }
   },
   "36747": {
     "description": "Merge diagnosticsProducing and nonDiagnosticsProducing checkers into a single checker supporting lazy diagnostics",
@@ -433,31 +676,27 @@
     "notes": [],
     "flags": "feature",
     "state": "review",
-    "label": "backlog"
+    "label": "backlog",
+    "reviewers": [
+      "sheetal"
+    ],
+    "author": {
+      "name": "Wesley Wigham"
+    }
   },
   "36844": {
     "description": "add SourceFile and PrivateIdentifier constructors",
     "state": "review",
-    "label": "backlog",
+    "label": "uncommitted",
     "flags": "fix",
     "reviewer": "ron",
-    "notes": []
-  },
-  "37013": {
-    "description": "__extends should use Object.prototype.hasOwnProperty.call",
-    "state": "review",
-    "label": "milestone",
-    "flags": "fix",
-    "reviewer": "ron",
-    "notes": []
-  },
-  "37029": {
-    "description": "Add ToggleLineComment and ToggleMultilineComment service",
-    "reviewer": "andrew-casey",
     "notes": [],
-    "flags": "feature",
-    "state": "waiting",
-    "label": "milestone"
+    "reviewers": [
+      "ron"
+    ],
+    "author": {
+      "name": "Arpad Borsos"
+    }
   },
   "37283": {
     "description": "Added runtime TypeError for non-function, non-null __extends",
@@ -465,15 +704,27 @@
     "notes": [],
     "flags": "feature",
     "state": "review",
-    "label": "backlog"
+    "label": "backlog",
+    "reviewers": [
+      "ron"
+    ],
+    "author": {
+      "name": "Josh Goldberg"
+    }
   },
   "37297": {
     "description": "Fix handling of string enums on LHS of `+=`",
     "reviewer": "eli",
     "notes": [],
     "flags": "fix",
-    "state": "not-started",
-    "label": "milestone"
+    "state": "waiting",
+    "label": "milestone",
+    "reviewers": [
+      "wesley"
+    ],
+    "author": {
+      "name": "Eli Barzilay"
+    }
   },
   "37376": {
     "description": "feat: add util {is,create,update}DynamicImport",
@@ -481,31 +732,41 @@
     "notes": [],
     "flags": "feature",
     "state": "review",
-    "label": "bonus"
-  },
-  "37392": {
-    "description": "Enable excess property checking on spread assignment",
-    "reviewer": "nathan",
-    "notes": [],
-    "flags": "feature",
-    "state": "review",
-    "label": "backlog"
+    "label": "uncommitted",
+    "reviewers": [
+      "ron"
+    ],
+    "author": {
+      "name": "Jack Works"
+    }
   },
   "37421": {
     "description": "Support xml namespace prefix for JSX elements and attributes",
     "reviewer": "andrew-branch",
     "notes": [],
     "flags": "feature",
-    "state": "review",
-    "label": "bonus"
+    "state": "merge",
+    "label": "uncommitted",
+    "reviewers": [
+      "andrew-branch"
+    ],
+    "author": {
+      "name": "Thomas Williamson"
+    }
   },
   "37424": {
     "description": "Support top level \"for await of\"",
     "reviewer": "ron",
     "notes": [],
     "flags": "feature",
-    "state": "review",
-    "label": "backlog"
+    "state": "waiting",
+    "label": "backlog",
+    "reviewers": [
+      "ron"
+    ],
+    "author": {
+      "name": "M.Yoshimura"
+    }
   },
   "37497": {
     "description": "Token hints for missing closing braces: classes, enums, jsx, modules, types",
@@ -513,7 +774,13 @@
     "notes": [],
     "flags": "feature",
     "state": "waiting",
-    "label": "backlog"
+    "label": "backlog",
+    "reviewers": [
+      "andrew-branch"
+    ],
+    "author": {
+      "name": "hafiz"
+    }
   },
   "37581": {
     "description": "Add: about missing types in RegExp",
@@ -521,7 +788,13 @@
     "notes": [],
     "flags": "feature",
     "state": "waiting",
-    "label": "bonus"
+    "label": "uncommitted",
+    "reviewers": [
+      "nathan"
+    ],
+    "author": {
+      "name": "Noel"
+    }
   },
   "37608": {
     "description": "New definition for omit that should ensure the name Omit is preserved…",
@@ -529,7 +802,13 @@
     "notes": [],
     "flags": "feature",
     "state": "waiting",
-    "label": "milestone"
+    "label": "milestone",
+    "reviewers": [
+      "wesley"
+    ],
+    "author": {
+      "name": "Wesley Wigham"
+    }
   },
   "37615": {
     "description": "Add 'T | PromiseLike<T>' inference from awaited types",
@@ -537,7 +816,13 @@
     "notes": [],
     "flags": "fix",
     "state": "review",
-    "label": "milestone"
+    "label": "milestone",
+    "reviewers": [
+      "anders"
+    ],
+    "author": {
+      "name": "Ron Buckton"
+    }
   },
   "37702": {
     "description": "Re-order reduce overloads",
@@ -545,23 +830,13 @@
     "notes": [],
     "flags": "fix",
     "state": "review",
-    "label": "backlog"
-  },
-  "37721": {
-    "description": "Add support for NumberFormatOptions notation",
-    "reviewer": "nathan",
-    "notes": [],
-    "flags": "fix",
-    "state": "review",
-    "label": "backlog"
-  },
-  "37727": {
-    "description": "Add logical assignment operator",
-    "reviewer": "eli",
-    "notes": [],
-    "flags": "feature",
-    "state": "waiting",
-    "label": "milestone"
+    "label": "backlog",
+    "reviewers": [
+      "nathan"
+    ],
+    "author": {
+      "name": "okmttdhr"
+    }
   },
   "37797": {
     "description": "Add static index signature",
@@ -569,47 +844,41 @@
     "notes": [],
     "flags": "feature",
     "state": "waiting",
-    "label": "backlog"
-  },
-  "37815": {
-    "description": "Remove redundant intersections from unions",
-    "reviewer": "anders",
-    "notes": [],
-    "flags": "fix",
-    "state": "not-started",
-    "label": "bonus"
+    "label": "backlog",
+    "reviewers": [
+      "eli"
+    ],
+    "author": {
+      "name": "Wenlu Wang"
+    }
   },
   "37881": {
     "description": "Make `Symbol#valueDeclaration` optional in public API",
     "reviewer": "wesley",
     "notes": [],
     "flags": "fix",
-    "state": "review",
-    "label": "backlog"
+    "state": "waiting",
+    "label": "backlog",
+    "reviewers": [
+      "wesley"
+    ],
+    "author": {
+      "name": "hafiz"
+    }
   },
   "37887": {
     "description": "fix(35779): Comments at the end of an array, when the last item ends with a comma, are not compiled",
     "reviewer": "wesley",
     "notes": [],
     "flags": "feature",
-    "state": "review",
-    "label": "backlog"
-  },
-  "37891": {
-    "description": "Fix indentation preservation in JSDoc (#37717)",
-    "reviewer": "andrew-branch",
-    "notes": [],
-    "flags": "fix",
-    "state": "review",
-    "label": "backlog"
-  },
-  "37894": {
-    "description": "Always error on property override accessor",
-    "reviewer": "andrew-branch",
-    "notes": [],
-    "flags": "feature",
-    "state": "waiting",
-    "label": "milestone"
+    "state": "merge",
+    "label": "backlog",
+    "reviewers": [
+      "ron"
+    ],
+    "author": {
+      "name": "Oleksandr T."
+    }
   },
   "37902": {
     "description": "Infer extracted local variable name from property name",
@@ -617,55 +886,69 @@
     "notes": [],
     "flags": "feature",
     "state": "review",
-    "label": "backlog"
+    "label": "backlog",
+    "reviewers": [
+      "mine"
+    ],
+    "author": {
+      "name": "Thai Pangsakulyanont"
+    }
   },
   "37903": {
     "description": "Add index signature for anonymous object literal type",
     "reviewer": "wesley",
     "notes": [],
     "flags": "fix",
-    "state": "waiting",
-    "label": "backlog"
-  },
-  "37907": {
-    "description": "feat: add a codefix to fix class to className in react",
-    "reviewer": "orta",
-    "notes": [],
-    "flags": "feature",
-    "state": "waiting",
-    "label": "bonus"
+    "state": "merge",
+    "label": "uncommitted",
+    "reviewers": [
+      "wesley"
+    ],
+    "author": {
+      "name": "okmttdhr"
+    }
   },
   "37910": {
     "description": "Cache complex union and intersection relations",
     "reviewer": "wesley",
     "notes": [],
     "flags": "fix",
-    "state": "review",
-    "label": "bonus"
-  },
-  "37917": {
-    "description": "Improve error range for ts2657 (jsx expr must have parent element), add code fix for it",
-    "reviewer": "andrew-branch",
-    "notes": [],
-    "flags": "feature",
-    "state": "review",
-    "label": "bonus"
+    "state": "merge",
+    "label": "uncommitted",
+    "reviewers": [
+      "wesley"
+    ],
+    "author": {
+      "name": "Anders Hejlsberg"
+    }
   },
   "37962": {
     "description": "Fix instantiated check for imports",
     "reviewer": "nathan",
     "notes": [],
     "flags": "fix",
-    "state": "not-started",
-    "label": "milestone"
+    "state": "waiting",
+    "label": "milestone",
+    "reviewers": [
+      "nathan"
+    ],
+    "author": {
+      "name": "Nathan Shively-Sanders"
+    }
   },
   "37964": {
     "description": "Dont look for properties of Object and Function type when looking to resolve named import from module with `export=`",
     "reviewer": "wesley",
     "notes": [],
     "flags": "fix",
-    "state": "waiting",
-    "label": "milestone"
+    "state": "merge",
+    "label": "milestone",
+    "reviewers": [
+      "wesley"
+    ],
+    "author": {
+      "name": "Sheetal Nandi"
+    }
   },
   "37980": {
     "description": "Feat#Provide a quickfix for non-exported types",
@@ -673,79 +956,27 @@
     "notes": [],
     "flags": "feature",
     "state": "waiting",
-    "label": "bonus"
-  },
-  "38011": {
-    "description": "Handle recursive type references up to a certain level of expansion in inference",
-    "reviewer": "anders",
-    "notes": [],
-    "flags": "fix",
-    "state": "review",
-    "label": "milestone"
-  },
-  "38013": {
-    "description": "Adds [unit] and [unitDisplay] to NumberFormatOptions",
-    "reviewer": "nathan",
-    "notes": [],
-    "flags": "feature",
-    "state": "review",
-    "label": "backlog"
-  },
-  "38036": {
-    "description": "allow consecutive newlines in jsdoc tag comments",
-    "reviewer": "nathan",
-    "notes": [],
-    "flags": "fix",
-    "state": "review",
-    "label": "milestone"
-  },
-  "38045": {
-    "description": "fix(23871): convertFunctionToEs6Class: Avoid insertNodeAfter",
-    "reviewer": "orta",
-    "notes": [],
-    "flags": "fix",
-    "state": "review",
-    "label": "backlog"
-  },
-  "38049": {
-    "description": "Report primitive type in literal-to-primitive relation complaints",
-    "reviewer": "daniel",
-    "notes": [],
-    "flags": "feature",
-    "state": "waiting",
-    "label": "backlog"
+    "label": "uncommitted",
+    "reviewers": [
+      "daniel"
+    ],
+    "author": {
+      "name": "Chunlin"
+    }
   },
   "38088": {
     "description": "Fix missing narrow with assignment",
     "reviewer": "wesley",
     "notes": [],
     "flags": "fix",
-    "state": "review",
-    "label": "backlog"
-  },
-  "38099": {
-    "description": "Don't narrow against unions of constructor functions with instanceof",
-    "reviewer": "wesley",
-    "notes": [],
-    "flags": "fix",
-    "state": "review",
-    "label": "milestone"
-  },
-  "38105": {
-    "description": "Issue35876: Give better error message when Classic Module Resolution with incorrect path",
-    "reviewer": "orta",
-    "notes": [],
-    "flags": "fix",
-    "state": "waiting",
-    "label": "milestone"
-  },
-  "38124": {
-    "description": "Remove duplicate comments on refactors",
-    "reviewer": "nathan",
-    "notes": [],
-    "flags": "fix",
-    "state": "waiting",
-    "label": "milestone"
+    "state": "merge",
+    "label": "backlog",
+    "reviewers": [
+      "wesley"
+    ],
+    "author": {
+      "name": "Wenlu Wang"
+    }
   },
   "38135": {
     "description": "fix(37791): Using object destructuring with ECMAScript's private field as computed property name leads to runtime error",
@@ -753,79 +984,53 @@
     "notes": [],
     "flags": "fix",
     "state": "review",
-    "label": "milestone"
+    "label": "milestone",
+    "reviewers": [
+      "ron"
+    ],
+    "author": {
+      "name": "Oleksandr T."
+    }
   },
   "38153": {
     "description": "Make Iterable Map constructor argument optional",
     "reviewer": "nathan",
     "notes": [],
     "flags": "fix",
-    "state": "review",
-    "label": "backlog"
-  },
-  "38200": {
-    "description": "Add a type-guard overload of Array.every",
-    "reviewer": "nathan",
-    "notes": [],
-    "flags": "fix",
-    "state": "review",
-    "label": "backlog"
-  },
-  "38216": {
-    "description": "Revert \"Revert #37106\"",
-    "reviewer": "nathan",
-    "notes": [],
-    "flags": "feature",
     "state": "waiting",
-    "label": "milestone"
+    "label": "backlog",
+    "reviewers": [
+      "nathan"
+    ],
+    "author": {
+      "name": "Jared Neil"
+    }
   },
-  "38232": {
-    "description": "Add definitions for WeakRef and FinalizationRegistry",
-    "reviewer": "orta",
+  "38410": {
+    "description": "Address false positive cases for return value codefix",
+    "author": {
+      "name": "Ron Buckton"
+    },
+    "reviewers": [
+      "ron"
+    ],
     "notes": [],
-    "flags": "feature",
+    "flags": "FIXME",
+    "state": "merge",
+    "label": "OTHER"
+  },
+  "38421": {
+    "description": "fix: string.replace `any[]` => `(string | number)[]`",
+    "author": {
+      "name": "bluelovers"
+    },
+    "reviewers": [
+      "nathan"
+    ],
+    "notes": [],
+    "flags": "FIXME",
     "state": "waiting",
-    "label": "backlog"
-  },
-  "38436": {
-    "description": "Report overall time",
-    "reviewer": "nathan",
-    "notes": [],
-    "flags": "feature",
-    "state": "waiting",
-    "label": "housekeeping"
-  },
-  "38449": {
-    "description": "Updates Uint8ArrayConstructor to match MDN documentation.",
-    "reviewer": "orta",
-    "notes": [],
-    "flags": "fix",
-    "state": "review",
-    "label": "backlog"
-  },
-  "38462": {
-    "description": "fix rename cause import change wrongly",
-    "reviewer": "sheetal",
-    "notes": [],
-    "flags": "fix",
-    "state": "waiting",
-    "label": "backlog"
-  },
-  "38481": {
-    "description": "fix(38463): No indexed access completions after Record<...>",
-    "reviewer": "daniel",
-    "notes": [],
-    "flags": "fix",
-    "state": "review",
-    "label": "milestone"
-  },
-  "38515": {
-    "description": "Remove resolveUntypedCall from checkJsxSelfClosingElementDeferred",
-    "reviewer": "wesley",
-    "notes": [],
-    "flags": "feature",
-    "state": "not-started",
-    "label": "experiment"
+    "label": "uncommitted"
   },
   "38518": {
     "description": "Fix top-level await parsing (#38483)",
@@ -833,7 +1038,13 @@
     "notes": [],
     "flags": "fix",
     "state": "review",
-    "label": "milestone"
+    "label": "milestone",
+    "reviewers": [
+      "ron"
+    ],
+    "author": {
+      "name": "Lissein"
+    }
   },
   "38522": {
     "description": "Detailed Intl.DateTimeFormatOptions types",
@@ -841,39 +1052,13 @@
     "notes": [],
     "flags": "feature",
     "state": "waiting",
-    "label": "bonus"
-  },
-  "38523": {
-    "description": "[Expirement] [WIP] Add deprecated related feature",
-    "reviewer": "nathan",
-    "notes": [],
-    "flags": "feature",
-    "state": "review",
-    "label": "experiment"
-  },
-  "38526": {
-    "description": "Update bigint declaration file",
-    "reviewer": "nathan",
-    "notes": [],
-    "flags": "feature",
-    "state": "waiting",
-    "label": "backlog"
-  },
-  "38541": {
-    "description": "fix(32341): Renaming class name switches up order in object literal shorthand",
-    "reviewer": "andrew-branch",
-    "notes": [],
-    "flags": "fix",
-    "state": "review",
-    "label": "milestone"
-  },
-  "38566": {
-    "description": "fix wrapping classes when targeting ESNext",
-    "reviewer": "ron",
-    "notes": [],
-    "flags": "fix",
-    "state": "waiting",
-    "label": "milestone"
+    "label": "uncommitted",
+    "reviewers": [
+      "daniel"
+    ],
+    "author": {
+      "name": "Johan Sundström"
+    }
   },
   "38574": {
     "description": "Fix return type for JSON.stringify()",
@@ -881,15 +1066,13 @@
     "notes": [],
     "flags": "fix",
     "state": "review",
-    "label": "backlog"
-  },
-  "38602": {
-    "description": "Introduces new flag for optimization hints",
-    "reviewer": "ron",
-    "notes": [],
-    "flags": "feature",
-    "state": "not-started",
-    "label": "experiment"
+    "label": "backlog",
+    "reviewers": [
+      "ryan"
+    ],
+    "author": {
+      "name": "Pieter Raubenheimer"
+    }
   },
   "38610": {
     "description": "Fix #38608",
@@ -897,6 +1080,1162 @@
     "notes": [],
     "flags": "fix",
     "state": "waiting",
-    "label": "bonus"
+    "label": "uncommitted",
+    "reviewers": [
+      "wesley"
+    ],
+    "author": {
+      "name": "Jack Williams"
+    }
+  },
+  "38726": {
+    "description": "fix(37578): Deprecate variable name AllowQualifedNameInPlaceOfIdentifier",
+    "author": {
+      "name": "Chakib Ljazouli"
+    },
+    "reviewers": [
+      "nathan"
+    ],
+    "notes": [],
+    "flags": "FIXME",
+    "state": "merge",
+    "label": "uncommitted"
+  },
+  "38766": {
+    "description": "feat: suppress error 1208 (All files must be modules) when the file is empty",
+    "author": {
+      "name": "Jack Works"
+    },
+    "reviewers": [
+      "sheetal"
+    ],
+    "notes": [],
+    "flags": "FIXME",
+    "state": "review",
+    "label": "uncommitted"
+  },
+  "38839": {
+    "description": "Type guard by deep property",
+    "author": {
+      "name": "Song Gao"
+    },
+    "reviewers": [
+      "andrew-branch"
+    ],
+    "notes": [],
+    "flags": "FIXME",
+    "state": "review",
+    "label": "backlog"
+  },
+  "38878": {
+    "description": "Emit AND instead of ternary for optional chains in expression statements",
+    "author": {
+      "name": "Luke Bennett"
+    },
+    "reviewers": [
+      "ron"
+    ],
+    "notes": [],
+    "flags": "FIXME",
+    "state": "waiting",
+    "label": "backlog"
+  },
+  "38995": {
+    "description": "BigInt constructor should not accept any type",
+    "author": {
+      "name": "龙腾道"
+    },
+    "reviewers": [
+      "daniel"
+    ],
+    "notes": [],
+    "flags": "FIXME",
+    "state": "waiting",
+    "label": "backlog"
+  },
+  "39014": {
+    "description": "Allow arrow function parameter parsing to bail out during speculation",
+    "author": {
+      "name": "Wesley Wigham"
+    },
+    "reviewers": [
+      "orta"
+    ],
+    "notes": [],
+    "flags": "FIXME",
+    "state": "review",
+    "label": "milestone"
+  },
+  "39016": {
+    "description": "Adjust TypeFact calculation for intersections to omit negative typeof facts when an equivalent positive fact is present",
+    "author": {
+      "name": "Wesley Wigham"
+    },
+    "reviewers": [
+      "nathan"
+    ],
+    "notes": [],
+    "flags": "FIXME",
+    "state": "waiting",
+    "label": "milestone"
+  },
+  "39060": {
+    "description": "Spelling correction fixes should not be case-agnostic for two equally weighed options",
+    "author": {
+      "name": "Zen"
+    },
+    "reviewers": [
+      "nathan"
+    ],
+    "notes": [],
+    "flags": "FIXME",
+    "state": "waiting",
+    "label": "uncommitted"
+  },
+  "39175": {
+    "description": "Error on forget to use await on Promise in if condition",
+    "author": {
+      "name": "Jack Works"
+    },
+    "reviewers": [
+      "eli"
+    ],
+    "notes": [],
+    "flags": "FIXME",
+    "state": "review",
+    "label": "uncommitted"
+  },
+  "39188": {
+    "description": "Reduce rest parameter if not referenced",
+    "author": {
+      "name": "Wenlu Wang"
+    },
+    "reviewers": [
+      "ron"
+    ],
+    "notes": [],
+    "flags": "FIXME",
+    "state": "review",
+    "label": "uncommitted"
+  },
+  "39217": {
+    "description": "Erase type parameters to a type which behaves as never in a union and unknown in an intersection or any otherwise",
+    "author": {
+      "name": "Wesley Wigham"
+    },
+    "reviewers": [
+      "wesley",
+      "anders"
+    ],
+    "notes": [],
+    "flags": "FIXME",
+    "state": "review",
+    "label": "milestone"
+  },
+  "39232": {
+    "description": "Use a single relation stack for nested dependent variance calculations",
+    "author": {
+      "name": "Wesley Wigham"
+    },
+    "reviewers": [
+      "anders"
+    ],
+    "notes": [],
+    "flags": "FIXME",
+    "state": "review",
+    "label": "milestone"
+  },
+  "39243": {
+    "description": "Add way to exclude files and directories to watch",
+    "author": {
+      "name": "Sheetal Nandi"
+    },
+    "reviewers": [
+      "sheetal",
+      "andrew-casey"
+    ],
+    "notes": [],
+    "flags": "FIXME",
+    "state": "waiting",
+    "label": "OTHER"
+  },
+  "39298": {
+    "description": "String literal rename support",
+    "author": {
+      "name": "Wenlu Wang"
+    },
+    "reviewers": [
+      "andrew-branch"
+    ],
+    "notes": [],
+    "flags": "FIXME",
+    "state": "merge",
+    "label": "backlog"
+  },
+  "39362": {
+    "description": "Enable \"useDefineForClassFields\" in tsc --init",
+    "author": {
+      "name": "Rob Palmer"
+    },
+    "reviewers": [
+      "nathan"
+    ],
+    "notes": [],
+    "flags": "FIXME",
+    "state": "waiting",
+    "label": "uncommitted"
+  },
+  "39390": {
+    "description": "#24210: Updated handling of undefined values in Enum types",
+    "author": {
+      "name": "Grzegorz Gajos"
+    },
+    "reviewers": [
+      "nathan"
+    ],
+    "notes": [],
+    "flags": "FIXME",
+    "state": "review",
+    "label": "backlog"
+  },
+  "39577": {
+    "description": "Reintroduce definitelyAssignableRelation and use with conditional types",
+    "author": {
+      "name": "Anders Hejlsberg"
+    },
+    "reviewers": [
+      "wesley",
+      "anders"
+    ],
+    "notes": [],
+    "flags": "FIXME",
+    "state": "waiting",
+    "label": "uncommitted"
+  },
+  "39661": {
+    "description": "fix: fix RelativeTimeFormat type definition",
+    "author": {
+      "name": "Long Ho"
+    },
+    "reviewers": [
+      "orta"
+    ],
+    "notes": [],
+    "flags": "FIXME",
+    "state": "waiting",
+    "label": "backlog"
+  },
+  "39662": {
+    "description": "fix: add es2016.intl.d.ts",
+    "author": {
+      "name": "Long Ho"
+    },
+    "reviewers": [
+      "orta"
+    ],
+    "notes": [],
+    "flags": "FIXME",
+    "state": "review",
+    "label": "uncommitted"
+  },
+  "39664": {
+    "description": "Add Intl.locale types",
+    "author": {
+      "name": "Daniel Gooß"
+    },
+    "reviewers": [
+      "orta"
+    ],
+    "notes": [],
+    "flags": "FIXME",
+    "state": "review",
+    "label": "uncommitted"
+  },
+  "39669": {
+    "description": "--noImplicitOverride",
+    "author": {
+      "name": "Wenlu Wang"
+    },
+    "reviewers": [
+      "andrew-branch"
+    ],
+    "notes": [],
+    "flags": "FIXME",
+    "state": "review",
+    "label": "uncommitted"
+  },
+  "39699": {
+    "description": "Fix 4628: add compiler option for non-check static member in inheritance",
+    "author": {
+      "name": "Song Gao"
+    },
+    "reviewers": [
+      "daniel"
+    ],
+    "notes": [],
+    "flags": "FIXME",
+    "state": "review",
+    "label": "backlog"
+  },
+  "39716": {
+    "description": "fix 38503.",
+    "author": {
+      "name": "Song Gao"
+    },
+    "reviewers": [
+      "ron"
+    ],
+    "notes": [],
+    "flags": "FIXME",
+    "state": "review",
+    "label": "milestone"
+  },
+  "39720": {
+    "description": "Split line and node counts by file extension",
+    "author": {
+      "name": "Andrew Casey"
+    },
+    "reviewers": [
+      "sheetal"
+    ],
+    "notes": [],
+    "flags": "FIXME",
+    "state": "review",
+    "label": "uncommitted"
+  },
+  "39746": {
+    "description": "Fix 21732: \"in\" operator could widden type",
+    "author": {
+      "name": "Song Gao"
+    },
+    "reviewers": [
+      "wesley"
+    ],
+    "notes": [],
+    "flags": "FIXME",
+    "state": "waiting",
+    "label": "backlog"
+  },
+  "39764": {
+    "description": "Hoist import declarations when transforming to commonjs/amd/umd module",
+    "author": {
+      "name": "uhyo"
+    },
+    "reviewers": [
+      "ron"
+    ],
+    "notes": [],
+    "flags": "FIXME",
+    "state": "review",
+    "label": "backlog"
+  },
+  "39808": {
+    "description": "Fix 39749: specialize jsx error for missing properties.",
+    "author": {
+      "name": "Song Gao"
+    },
+    "reviewers": [
+      "wesley"
+    ],
+    "notes": [],
+    "flags": "FIXME",
+    "state": "review",
+    "label": "milestone"
+  },
+  "39816": {
+    "description": "Make direct assignments to cjs exports considered literal contexts",
+    "author": {
+      "name": "Wesley Wigham"
+    },
+    "reviewers": [
+      "wesley",
+      "sheetal"
+    ],
+    "notes": [],
+    "flags": "FIXME",
+    "state": "waiting",
+    "label": "backlog"
+  },
+  "39827": {
+    "description": "Updated error message for TS2539",
+    "author": {
+      "name": "Hai Lin Zhang"
+    },
+    "reviewers": [
+      "nathan"
+    ],
+    "notes": [],
+    "flags": "FIXME",
+    "state": "waiting",
+    "label": "uncommitted"
+  },
+  "39832": {
+    "description": "Convert destruction",
+    "author": {
+      "name": "Wenlu Wang"
+    },
+    "reviewers": [
+      "jesse"
+    ],
+    "notes": [],
+    "flags": "FIXME",
+    "state": "review",
+    "label": "uncommitted"
+  },
+  "39898": {
+    "description": "Add an action to update baselines/fix lints",
+    "author": {
+      "name": "Daniel Rosenwasser"
+    },
+    "reviewers": [
+      "daniel",
+      "sheetal"
+    ],
+    "notes": [],
+    "flags": "FIXME",
+    "state": "waiting",
+    "label": "milestone"
+  },
+  "40011": {
+    "description": "Keep track of why files are in the program",
+    "author": {
+      "name": "Sheetal Nandi"
+    },
+    "reviewers": [
+      "sheetal"
+    ],
+    "notes": [],
+    "flags": "FIXME",
+    "state": "review",
+    "label": "uncommitted"
+  },
+  "40014": {
+    "description": "QuickInfo of element access expression could shows correct type when it is narrowed.",
+    "author": {
+      "name": "Song Gao"
+    },
+    "reviewers": [
+      "daniel"
+    ],
+    "notes": [],
+    "flags": "FIXME",
+    "state": "review",
+    "label": "backlog"
+  },
+  "40050": {
+    "description": "fix(40042): Convert to async function with decorator",
+    "author": {
+      "name": "Oleksandr T."
+    },
+    "reviewers": [
+      "nathan"
+    ],
+    "notes": [],
+    "flags": "FIXME",
+    "state": "waiting",
+    "label": "backlog"
+  },
+  "40070": {
+    "description": "Specified diagnostic for iterating known array type without --downlevelIteration",
+    "author": {
+      "name": "Josh Goldberg"
+    },
+    "reviewers": [
+      "nathan"
+    ],
+    "notes": [],
+    "flags": "FIXME",
+    "state": "merge",
+    "label": "backlog"
+  },
+  "40091": {
+    "description": "Add support for enum completions",
+    "author": {
+      "name": "Wenlu Wang"
+    },
+    "reviewers": [
+      "eli"
+    ],
+    "notes": [],
+    "flags": "FIXME",
+    "state": "review",
+    "label": "uncommitted"
+  },
+  "40154": {
+    "description": "fix(39858): \"Convert to async function\" refactor generates invalid code with imported functions",
+    "author": {
+      "name": "Oleksandr T."
+    },
+    "reviewers": [
+      "nathan"
+    ],
+    "notes": [],
+    "flags": "FIXME",
+    "state": "waiting",
+    "label": "backlog"
+  },
+  "40171": {
+    "description": "Add support for pedantic property access",
+    "author": {
+      "name": "Wenlu Wang"
+    },
+    "reviewers": [
+      "nathan"
+    ],
+    "notes": [],
+    "flags": "FIXME",
+    "state": "waiting",
+    "label": "uncommitted"
+  },
+  "40178": {
+    "description": "Pedantic safe any",
+    "author": {
+      "name": "Wenlu Wang"
+    },
+    "reviewers": [
+      "daniel"
+    ],
+    "notes": [],
+    "flags": "FIXME",
+    "state": "review",
+    "label": "uncommitted"
+  },
+  "40232": {
+    "description": "Better best effort type alias preservation",
+    "author": {
+      "name": "Wesley Wigham"
+    },
+    "reviewers": [
+      "anders"
+    ],
+    "notes": [],
+    "flags": "FIXME",
+    "state": "review",
+    "label": "milestone"
+  },
+  "40238": {
+    "description": "Parameter to property refactor",
+    "author": {
+      "name": "Wenlu Wang"
+    },
+    "reviewers": [
+      "jesse"
+    ],
+    "notes": [],
+    "flags": "FIXME",
+    "state": "waiting",
+    "label": "uncommitted"
+  },
+  "40241": {
+    "description": "Add support for Encapsulate return value",
+    "author": {
+      "name": "Wenlu Wang"
+    },
+    "reviewers": [
+      "jesse"
+    ],
+    "notes": [],
+    "flags": "FIXME",
+    "state": "review",
+    "label": "uncommitted"
+  },
+  "40265": {
+    "description": "fix(40257): Remove type parameters quick fix forgets the trailing > ",
+    "author": {
+      "name": "Oleksandr T."
+    },
+    "reviewers": [
+      "nathan"
+    ],
+    "notes": [],
+    "flags": "FIXME",
+    "state": "waiting",
+    "label": "milestone"
+  },
+  "40267": {
+    "description": "Add @ts-ignore-enable @ts-ignore-disable",
+    "author": {
+      "name": "Song Gao"
+    },
+    "reviewers": [
+      "daniel"
+    ],
+    "notes": [],
+    "flags": "FIXME",
+    "state": "waiting",
+    "label": "uncommitted"
+  },
+  "40278": {
+    "description": "Remove incorrect assert that triggers crash on completions of globalThis",
+    "author": {
+      "name": "Ryan Cavanaugh"
+    },
+    "reviewers": [
+      "ryan"
+    ],
+    "notes": [],
+    "flags": "FIXME",
+    "state": "merge",
+    "label": "uncommitted"
+  },
+  "40288": {
+    "description": "Emit error when trying to iterate a value with union type with non-iterable constituent when --downlevelIterator",
+    "author": {
+      "name": "uhyo"
+    },
+    "reviewers": [
+      "eli"
+    ],
+    "notes": [],
+    "flags": "FIXME",
+    "state": "review",
+    "label": "backlog"
+  },
+  "40294": {
+    "description": "Unify the codepaths for determining if something is generic and showing type help",
+    "author": {
+      "name": "Ryan Cavanaugh"
+    },
+    "reviewers": [
+      "andrew-branch"
+    ],
+    "notes": [],
+    "flags": "FIXME",
+    "state": "review",
+    "label": "milestone"
+  },
+  "40297": {
+    "description": "Don't crash when renaming a JS property declared via module.exports",
+    "author": {
+      "name": "Ryan Cavanaugh"
+    },
+    "reviewers": [
+      "ryan"
+    ],
+    "notes": [],
+    "flags": "FIXME",
+    "state": "merge",
+    "label": "uncommitted"
+  },
+  "40311": {
+    "description": "Don't widen inferred return types when a contextual signature is available",
+    "author": {
+      "name": "Daniel Rosenwasser"
+    },
+    "reviewers": [
+      "wesley"
+    ],
+    "notes": [],
+    "flags": "FIXME",
+    "state": "merge",
+    "label": "backlog"
+  },
+  "40358": {
+    "description": "Mark comparisons of union constituents involving markers as being unreliable sources of variance",
+    "author": {
+      "name": "Wesley Wigham"
+    },
+    "reviewers": [
+      "wesley",
+      "anders"
+    ],
+    "notes": [],
+    "flags": "FIXME",
+    "state": "review",
+    "label": "uncommitted"
+  },
+  "40374": {
+    "description": "fix(40218): Adds codefix to remove an unused declaration but keep the body",
+    "author": {
+      "name": "Kevin Mark"
+    },
+    "reviewers": [
+      "nathan"
+    ],
+    "notes": [],
+    "flags": "FIXME",
+    "state": "waiting",
+    "label": "backlog"
+  },
+  "40379": {
+    "description": "Fix missing func modifier",
+    "author": {
+      "name": "Wenlu Wang"
+    },
+    "reviewers": [
+      "nathan"
+    ],
+    "notes": [],
+    "flags": "FIXME",
+    "state": "review",
+    "label": "backlog"
+  },
+  "40476": {
+    "description": "fix(40469): \"Convert to named function\" refactoring is not suggested for non-arrow function expressions",
+    "author": {
+      "name": "Oleksandr T."
+    },
+    "reviewers": [
+      "jesse"
+    ],
+    "notes": [],
+    "flags": "FIXME",
+    "state": "review",
+    "label": "backlog"
+  },
+  "40536": {
+    "description": "Fix top level logical assignment leak",
+    "author": {
+      "name": "Wenlu Wang"
+    },
+    "reviewers": [
+      "anders"
+    ],
+    "notes": [],
+    "flags": "FIXME",
+    "state": "review",
+    "label": "backlog"
+  },
+  "40544": {
+    "description": "Enforce that compiler option names match the value set by the commandline parser",
+    "author": {
+      "name": "Ryan Cavanaugh"
+    },
+    "reviewers": [
+      "ryan"
+    ],
+    "notes": [],
+    "flags": "FIXME",
+    "state": "review",
+    "label": "uncommitted"
+  },
+  "40607": {
+    "description": "Deprecated as warning",
+    "author": {
+      "name": "Wenlu Wang"
+    },
+    "reviewers": [
+      "nathan"
+    ],
+    "notes": [],
+    "flags": "FIXME",
+    "state": "waiting",
+    "label": "uncommitted"
+  },
+  "40637": {
+    "description": "Proposal: importModuleSpecifierPreference: project-relative",
+    "author": {
+      "name": "Andrew Branch"
+    },
+    "reviewers": [
+      "andrew-branch"
+    ],
+    "notes": [],
+    "flags": "FIXME",
+    "state": "waiting",
+    "label": "uncommitted"
+  },
+  "40653": {
+    "description": "fix(40610): \"Convert to template string\" result unnecessarily complicated if one part was already a template string",
+    "author": {
+      "name": "Oleksandr T."
+    },
+    "reviewers": [
+      "jesse"
+    ],
+    "notes": [],
+    "flags": "FIXME",
+    "state": "waiting",
+    "label": "uncommitted"
+  },
+  "40697": {
+    "description": "Add item method",
+    "author": {
+      "name": "Wenlu Wang"
+    },
+    "reviewers": [
+      "ron"
+    ],
+    "notes": [],
+    "flags": "FIXME",
+    "state": "review",
+    "label": "milestone"
+  },
+  "40698": {
+    "description": "Import assertion",
+    "author": {
+      "name": "Wenlu Wang"
+    },
+    "reviewers": [
+      "ron"
+    ],
+    "notes": [],
+    "flags": "FIXME",
+    "state": "review",
+    "label": "milestone"
+  },
+  "40699": {
+    "description": "fix(40632): Don't emit abstract members",
+    "author": {
+      "name": "Oleksandr T."
+    },
+    "reviewers": [
+      "nathan"
+    ],
+    "notes": [],
+    "flags": "FIXME",
+    "state": "review",
+    "label": "milestone"
+  },
+  "40708": {
+    "description": "Parse quoted names in qualified names",
+    "author": {
+      "name": "Wesley Wigham"
+    },
+    "reviewers": [
+      "wesley"
+    ],
+    "notes": [],
+    "flags": "FIXME",
+    "state": "review",
+    "label": "uncommitted"
+  },
+  "40823": {
+    "description": "Treat void-typed properties as optional",
+    "author": {
+      "name": "Ron Buckton"
+    },
+    "reviewers": [
+      "ron"
+    ],
+    "notes": [],
+    "flags": "FIXME",
+    "state": "waiting",
+    "label": "milestone"
+  },
+  "40884": {
+    "description": "Adding Diagnostic message for missing ']' and ')' in Array literal and conditional statements",
+    "author": {
+      "name": null
+    },
+    "reviewers": [
+      "orta"
+    ],
+    "notes": [],
+    "flags": "FIXME",
+    "state": "waiting",
+    "label": "backlog"
+  },
+  "40906": {
+    "description": "chore: add dateStyle to DateTimeFormatOptions",
+    "author": {
+      "name": "Matt Hooper"
+    },
+    "reviewers": [
+      "orta"
+    ],
+    "notes": [],
+    "flags": "FIXME",
+    "state": "waiting",
+    "label": "backlog"
+  },
+  "40909": {
+    "description": "Fix object.assign first param constraint",
+    "author": {
+      "name": "Nathan Shively-Sanders"
+    },
+    "reviewers": [
+      "nathan"
+    ],
+    "notes": [],
+    "flags": "FIXME",
+    "state": "review",
+    "label": "milestone"
+  },
+  "40912": {
+    "description": "fix(40901): Variable arguments generated from JS although not applicable",
+    "author": {
+      "name": "Oleksandr T."
+    },
+    "reviewers": [
+      "ryan"
+    ],
+    "notes": [],
+    "flags": "FIXME",
+    "state": "merge",
+    "label": "backlog"
+  },
+  "40942": {
+    "description": "fix(40671): Enable \"Convert to template string\" on expressions that don't start with a string",
+    "author": {
+      "name": "Oleksandr T."
+    },
+    "reviewers": [
+      "jesse"
+    ],
+    "notes": [],
+    "flags": "FIXME",
+    "state": "review",
+    "label": "milestone"
+  },
+  "40949": {
+    "description": "Use the faster implmentation of the 2020 syntaxtical classifications",
+    "author": {
+      "name": "Orta Therox"
+    },
+    "reviewers": [
+      "orta"
+    ],
+    "notes": [],
+    "flags": "FIXME",
+    "state": "review",
+    "label": "milestone"
+  },
+  "40973": {
+    "description": "Fixes #35735: Avoids listing missing properties for types with only call/construct signatures",
+    "author": {
+      "name": null
+    },
+    "reviewers": [
+      "daniel"
+    ],
+    "notes": [],
+    "flags": "FIXME",
+    "state": "review",
+    "label": "backlog"
+  },
+  "40985": {
+    "description": "Adjust typeof import name lookup to better match type query lookup",
+    "author": {
+      "name": "Wesley Wigham"
+    },
+    "reviewers": [
+      "wesley"
+    ],
+    "notes": [],
+    "flags": "FIXME",
+    "state": "waiting",
+    "label": "milestone"
+  },
+  "41000": {
+    "description": "Rename 'compat' to 'deprecatedCompat'.",
+    "author": {
+      "name": "Daniel Rosenwasser"
+    },
+    "reviewers": [
+      "nathan"
+    ],
+    "notes": [],
+    "flags": "FIXME",
+    "state": "merge",
+    "label": "uncommitted"
+  },
+  "41014": {
+    "description": "Fix transformation of nested return statements in \"convert to async function\" quick fix",
+    "author": {
+      "name": "uhyo"
+    },
+    "reviewers": [
+      "andrew-branch"
+    ],
+    "notes": [],
+    "flags": "FIXME",
+    "state": "review",
+    "label": "backlog"
+  },
+  "41030": {
+    "description": "Remove errors for invalid escape sequences in tagged template literals",
+    "author": {
+      "name": "uhyo"
+    },
+    "reviewers": [
+      "eli"
+    ],
+    "notes": [],
+    "flags": "FIXME",
+    "state": "review",
+    "label": "backlog"
+  },
+  "41042": {
+    "description": "Remove `undefined` from source type of renaming destructuring assignment with default",
+    "author": {
+      "name": "uhyo"
+    },
+    "reviewers": [
+      "ron"
+    ],
+    "notes": [],
+    "flags": "FIXME",
+    "state": "review",
+    "label": "backlog"
+  },
+  "41044": {
+    "description": "Forbid property renaming in destructuring binding in function types",
+    "author": {
+      "name": "uhyo"
+    },
+    "reviewers": [
+      "ron"
+    ],
+    "notes": [],
+    "flags": "FIXME",
+    "state": "review",
+    "label": "backlog"
+  },
+  "41052": {
+    "description": "feat(40750): Refactoring to add inferred return type annotation to a function",
+    "author": {
+      "name": "Oleksandr T."
+    },
+    "reviewers": [
+      "nathan"
+    ],
+    "notes": [],
+    "flags": "FIXME",
+    "state": "merge",
+    "label": "uncommitted"
+  },
+  "41067": {
+    "description": "Use the wildcard type for signature erasure",
+    "author": {
+      "name": "Wesley Wigham"
+    },
+    "reviewers": [
+      "wesley"
+    ],
+    "notes": [],
+    "flags": "FIXME",
+    "state": "review",
+    "label": "uncommitted"
+  },
+  "41089": {
+    "description": "fix(41078): Convert to ES6 Class Refactoring removes methods named with quoted properties",
+    "author": {
+      "name": "Oleksandr T."
+    },
+    "reviewers": [
+      "nathan"
+    ],
+    "notes": [],
+    "flags": "FIXME",
+    "state": "waiting",
+    "label": "backlog"
+  },
+  "41094": {
+    "description": "Fix destructuring evaluation order for initializers",
+    "author": {
+      "name": "Ron Buckton"
+    },
+    "reviewers": [
+      "ron"
+    ],
+    "notes": [],
+    "flags": "FIXME",
+    "state": "waiting",
+    "label": "milestone"
+  },
+  "41100": {
+    "description": "Narrow spreaded object types",
+    "author": {
+      "name": "uhyo"
+    },
+    "reviewers": [
+      "wesley"
+    ],
+    "notes": [],
+    "flags": "FIXME",
+    "state": "review",
+    "label": "backlog"
+  },
+  "41103": {
+    "description": "fix(41027): recursive private static gets missed in --noUnusedLocals",
+    "author": {
+      "name": "Oleksandr T."
+    },
+    "reviewers": [
+      "eli"
+    ],
+    "notes": [],
+    "flags": "FIXME",
+    "state": "review",
+    "label": "backlog"
+  },
+  "41105": {
+    "description": "Separate delete-all-imports from other delete-all",
+    "author": {
+      "name": "Nathan Shively-Sanders"
+    },
+    "reviewers": [
+      "nathan"
+    ],
+    "notes": [],
+    "flags": "FIXME",
+    "state": "merge",
+    "label": "uncommitted"
+  },
+  "41115": {
+    "description": "Error if assignment after block",
+    "author": {
+      "name": "Wenlu Wang"
+    },
+    "reviewers": [
+      "daniel"
+    ],
+    "notes": [],
+    "flags": "FIXME",
+    "state": "waiting",
+    "label": "backlog"
+  },
+  "41127": {
+    "description": "fix(38283): Incorrect parse on static property followed by method",
+    "author": {
+      "name": "Oleksandr T."
+    },
+    "reviewers": [
+      "ron"
+    ],
+    "notes": [],
+    "flags": "FIXME",
+    "state": "merge",
+    "label": "milestone"
+  },
+  "41156": {
+    "description": "fix(39022): If exported variable is renamed, tsc will generate code with a syntax error",
+    "author": {
+      "name": "Oleksandr T."
+    },
+    "reviewers": [
+      "ron"
+    ],
+    "notes": [],
+    "flags": "FIXME",
+    "state": "review",
+    "label": "milestone"
+  },
+  "41168": {
+    "description": "Remove-unused-identifiers codefix skips assigned identifiers",
+    "author": {
+      "name": "Nathan Shively-Sanders"
+    },
+    "reviewers": [
+      "nathan"
+    ],
+    "notes": [],
+    "flags": "FIXME",
+    "state": "merge",
+    "label": "uncommitted"
+  },
+  "41169": {
+    "description": "Be more specific when normalizing intersections containing tuples as tuple elements",
+    "author": {
+      "name": "Andrew Branch"
+    },
+    "reviewers": [
+      "andrew-branch"
+    ],
+    "notes": [],
+    "flags": "FIXME",
+    "state": "review",
+    "label": "backlog"
   }
 }

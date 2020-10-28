@@ -16,9 +16,8 @@ function updateFromGraphql(board) {
     for (const cardp of column.cards.nodes) {
       const card = cardp.content
       seen.add(card.number+"")
-      const reviewers = card.assignees.nodes.map(fromAssignee)
+      const reviewers = card.assignees.nodes.map(x => fromAssignee(x))
       if (card.assignees.nodes.length !== 1 && reviewers.filter(r => r !== fromAssignee(card.author)).length !== 1) {
-        // TODO: Exempt self-assignees before this check (or just check and continue with the self-assignee, then categorise it later)
         console.log("Should only have 1 assignee", card.number, 'but has', reviewers.length, ":", reviewers.join(", "), "::", JSON.stringify(card.assignees.nodes))
         wrongAssigneeCount.push(card)
       }
@@ -39,7 +38,6 @@ function updateFromGraphql(board) {
           author: card.author,
           reviewers,
           notes: [],
-          flags: "FIXME",
           state: fromColumn(column.name),
           label: fromLabels(card.labels.nodes)
         }
@@ -61,18 +59,18 @@ function updateFromGraphql(board) {
 function emitPulls(pulls, name) {
   let emit = ""
   const flags = {
-    fix: [],
-    feature: [],
-    bonus: [],
+    milestone: [],
+    backlog: [],
+    uncommitted: [],
     merge: [],
     yours: [],
     waiting: [],
     FIXME: [],
   }
   const flagNames = {
-    fix: "Fixes",
-    feature: "Features",
-    bonus: "Uncommitted",
+    milestone: "For Milestone",
+    backlog: "From Backlog",
+    uncommitted: "Uncommitted",
     merge: "Ready to Merge",
     waiting: "Waiting on Author",
     yours: "Your PRs",
@@ -81,19 +79,21 @@ function emitPulls(pulls, name) {
   // 1. filter by name
   for (const key in pulls) {
     if (pulls[key].reviewers.indexOf(name) > -1) {
-      const pull = emitPull(pulls[key], key);
-      if (name === fromAssignee(pulls[key].author, /*assertMissing*/ false)) {
-        flags.yours.push(pull)
+      const pull = pulls[key]
+      const line = emitPull(pull, key);
+      if (name === fromAssignee(pull.author, /*assertMissing*/ false)) {
+        flags.yours.push(line)
       }
-      else if (pulls[key].state === 'merge') {
-        flags.merge.push(pull)
+      else if (pull.state === 'merge') {
+        flags.merge.push(line)
       }
-      else if (pulls[key].state === 'waiting') {
-        flags.waiting.push(pull)
+      else if (pull.state === 'waiting') {
+        flags.waiting.push(line)
       }
       else {
-        assert(pulls[key].flags in flags, "bad flag:", pulls[key].flags, key)
-        flags[pulls[key].flags].push(pull)
+        assert(Object.values(labels).indexOf(pull.label) > -1, "bad label:", pull.label, key)
+        if (pull.label === "OTHER") console.log(name, key, pull.label)
+        flags[pull.label].push(line)
       }
     }
   }
@@ -109,8 +109,7 @@ function emitPulls(pulls, name) {
  * @param {string} number
  */
 function emitPull(pull, number) {
-  // TODO: Mark self-review specially (and/or put in a different list)
-  let line = `* https://github.com/microsoft/TypeScript/pull/${number} - ${pull.description}\n`
+  let line = `* https://github.com/microsoft/TypeScript/pull/${number} - ${pull.description} (${pull.author.name})\n`
   if (pull.notes.length) {
     line += "\n  Notes:\n" + pull.notes.join('\n') + "\n"
   }
@@ -205,7 +204,7 @@ const columns = {
 const labels = {
   "For Milestone Bug": "milestone",
   "For Backlog Bug": "backlog",
-  "For Uncommitted Bug": "bonus",
+  "For Uncommitted Bug": "uncommitted",
   "Housekeeping": "housekeeping",
   "Experiment": "experiment",
   "Author: Team": "OTHER"
@@ -237,7 +236,7 @@ function fromLabels(names) {
   let l
   for (const n of names.map(ns => ns.name)) {
     l = labels[n]
-    if (l) break
+    if (l && l !== "OTHER") break
   }
   assert(l, "Label not found for labels:", names.map(ns => ns.name).join(';'))
   return l

@@ -25,10 +25,7 @@ Notes and tools for PR triage
    - Fix any assertions on github, then re-run.
 4. Compare pulls.json (old) to output.json (new).
 5. Copy output.json over pulls.json.
-6. Edit FIXME entries to read either 'feature' or 'fix'.
-7. Re-run index.js.
 8. Check in all changed files, delete output.json.
-
 
 
 Doesn't include notes or flags
