@@ -1,0 +1,26 @@
+{
+  repository(name: "typescript", owner: "microsoft") {
+    pullRequests(first: 10, orderBy: {field: UPDATED_AT, direction: DESC}) {
+      nodes {
+        closed
+        reviews(first: 20) {
+          edges {
+            node {
+              id
+              author {
+                url
+              }
+            }
+          }
+        }
+        number
+        mergedAt
+        closedAt
+        author {
+          url
+        }
+      }
+    }
+  }
+}
+
