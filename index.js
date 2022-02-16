@@ -118,8 +118,10 @@ function emitPull(pull, number) {
 
 async function main() {
   // Use the REPL at https://developer.github.com/v4/explorer/ to update this query
+  // TODO: issue a last: 100 and a first: 100 query, then de-dupe (and only for second column)
   /** @type {Board} */
   const board = await graphql(`
+query
 {
   repository(name: "TypeScript", owner: "microsoft") {
     project(number: 13) {
@@ -182,21 +184,27 @@ const team = {
   "Anders Hejlsberg": "anders",
   "Andrew Branch": "andrew-branch",
   "Andrew Casey": "andrew-casey",
-  "Eli Barzilay": "eli",
+  "Eli Barzilay": "eli", // TODO: remove and see what breaks
   "Mine Starks": "mine",
-  "Orta": "orta",
-  "Orta Therox": "orta",
+  "Orta": "orta", // TODO: remove and see what breaks
+  "Orta Therox": "orta", // TODO: remove and see what breaks
   "Ron Buckton": "ron",
   "Ryan Cavanaugh": "ryan",
   "Sheetal Nandi": "sheetal",
   "Wesley Wigham": "wesley",
   "Nathan Shively-Sanders": "nathan",
   "Daniel Rosenwasser": "daniel",
-  "Jesse Trinity": "jesse"
+  "Jesse Trinity": "jesse", // TODO: remove and see what breaks
+  "Tobias Koppers": "sokra", // TODO: no
+  "Gabriela Araujo Britto": "gabritto",
+  "Jake Bailey": "jakebailey",
+  "Armando Aguirre": "armanio123",
+  "Oleksandr T.": "a-tarasyuk", // TODO: not really
+  "Rafael Sofi-zada": "rafasofizada", // TODO: uh oh
 }
 const columns = {
   "Not started": "not-started",
-  "Needs review": "review",
+  "Waiting on reviewers": "review",
   "Waiting on author": "waiting",
   "Needs merge": "merge",
   "Done": "done"
