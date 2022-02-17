@@ -5,8 +5,9 @@ const { graphql } = require('@octokit/graphql')
 /**
  * convert graphql output to denormalised output
  * @param {Board} board
+ * @param {Board} back - the bottom half of the board
  */
-function updateFromGraphql(board) {
+function updateFromGraphql(board, back) {
   /** @type {Pulls} */
   const pulls = JSON.parse(fs.readFileSync('pulls.json', 'utf8'))
   const wrongAssigneeCount = []
@@ -16,33 +17,17 @@ function updateFromGraphql(board) {
     for (const cardp of column.cards.nodes) {
       const card = cardp.content
       seen.add(card.number+"")
-      const reviewers = card.assignees.nodes.map(x => fromAssignee(x))
-      if (card.assignees.nodes.length !== 1 && reviewers.filter(r => r !== fromAssignee(card.author)).length !== 1) {
-        console.log("Should only have 1 assignee", card.number, 'but has', reviewers.length, ":", reviewers.join(", "), "::", JSON.stringify(card.assignees.nodes))
-        wrongAssigneeCount.push(card)
-      }
-
-      const existing = pulls[card.number]
-      if (existing) {
-        // These might have changed, and it's a good idea for sanity checking to diff the output
-        // Don't override the description, though; assume that it might be manually updated
-        existing.reviewers = reviewers
-        existing.state = fromColumn(column.name)
-        existing.label = fromLabels(card.labels.nodes)
-        if (!existing.author)
-          existing.author = card.author
-      }
-      else {
-        pulls[card.number] = {
-          description: card.title,
-          author: card.author,
-          reviewers,
-          notes: [],
-          state: fromColumn(column.name),
-          label: fromLabels(card.labels.nodes)
-        }
-      }
+      updateCard(card, wrongAssigneeCount, pulls, column.name)
     }
+  }
+  const col2 = back.repository.project.columns.nodes[1]
+  for (const cardp of col2.cards.nodes) {
+    const card = cardp.content
+    if (!seen.has(card.number+"")) {
+      seen.add(card.number+"")
+      updateCard(card, wrongAssigneeCount, pulls, "Waiting on reviewers")
+    }
+
   }
   for (const number in pulls) {
     if (!seen.has(number)) {
@@ -50,6 +35,43 @@ function updateFromGraphql(board) {
     }
   }
   return /** @type {[Pulls, Card[]]} */([pulls, wrongAssigneeCount])
+}
+
+/**
+ * @param {Card} card
+ * @param {Card[]} wrongAssigneeCount
+ * @param {Pulls} pulls
+ * @param {string} name
+ */
+function updateCard(card, wrongAssigneeCount, pulls, name) {
+  const reviewers = card.assignees.nodes.map(x => fromAssignee(x))
+  if (card.assignees.nodes.length !== 1 && reviewers.filter(r => r !== fromAssignee(card.author)).length !== 1) {
+    console.log("Should only have 1 assignee", card.number, 'but has', reviewers.length, ":", reviewers.join(", "), "::", JSON.stringify(card.assignees.nodes))
+    // TODO: Correctly handles multiple reviewers in Waiting for Reviewers
+    // and zero reviewers in Uncommitted/Waiting on Author
+    wrongAssigneeCount.push(card)
+  }
+
+  const existing = pulls[card.number]
+  if (existing) {
+    // These might have changed, and it's a good idea for sanity checking to diff the output
+    // Don't override the description, though; assume that it might be manually updated
+    existing.reviewers = reviewers
+    existing.state = fromColumn(name)
+    existing.label = fromLabels(card.labels.nodes)
+    if (!existing.author)
+      existing.author = card.author
+  }
+  else {
+    pulls[card.number] = {
+      description: card.title,
+      author: card.author,
+      reviewers,
+      notes: [],
+      state: fromColumn(name),
+      label: fromLabels(card.labels.nodes)
+    }
+  }
 }
 
 /**
@@ -163,7 +185,51 @@ query
       authorization: "token " + process.env.GH_API_TOKEN
     }
   })
-  const [pulls, noAssignees] = updateFromGraphql(board)
+  /** @type {Board} */
+  const boardback = await graphql(`
+query
+{
+  repository(name: "TypeScript", owner: "microsoft") {
+    project(number: 13) {
+      columns(first: 4) {
+        nodes {
+          cards(last: 100) {
+            nodes {
+              content {
+                ... on PullRequest {
+                  number
+                  labels(first: 10) {
+                    nodes {
+                      name
+                    }
+                  }
+                  title
+                  assignees(first: 5) {
+                    nodes {
+                      name
+                    }
+                  }
+                  author {
+                    ... on User {
+                      name
+                    }
+                  }
+                }
+              }
+            }
+          }
+          name
+        }
+      }
+    }
+  }
+}
+`, {
+    headers: {
+      authorization: "token " + process.env.GH_API_TOKEN
+    }
+  })
+  const [pulls, noAssignees] = updateFromGraphql(board, boardback)
   if (noAssignees.length) {
     for (const e of noAssignees) {
       if (e.assignees.nodes.length === 1 && e.author.name === e.assignees.nodes[0].name)
