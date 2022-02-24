@@ -10,14 +10,14 @@ const { graphql } = require('@octokit/graphql')
 function updateFromGraphql(board, back) {
   /** @type {Pulls} */
   const pulls = JSON.parse(fs.readFileSync('pulls.json', 'utf8'))
-  const wrongAssigneeCount = []
+  const noAssignees = []
   const seen = new Set()
 
   for (const column of board.repository.project.columns.nodes) {
     for (const cardp of column.cards.nodes) {
       const card = cardp.content
       seen.add(card.number+"")
-      updateCard(card, wrongAssigneeCount, pulls, column.name)
+      updateCard(card, noAssignees, pulls, column.name)
     }
   }
   const col2 = back.repository.project.columns.nodes[1]
@@ -25,7 +25,7 @@ function updateFromGraphql(board, back) {
     const card = cardp.content
     if (!seen.has(card.number+"")) {
       seen.add(card.number+"")
-      updateCard(card, wrongAssigneeCount, pulls, "Waiting on reviewers")
+      updateCard(card, noAssignees, pulls, "Waiting on reviewers")
     }
 
   }
@@ -34,25 +34,24 @@ function updateFromGraphql(board, back) {
       delete pulls[number]
     }
   }
-  return /** @type {[Pulls, Card[]]} */([pulls, wrongAssigneeCount])
+  return /** @type {[Pulls, Card[]]} */([pulls, noAssignees])
 }
 
 /**
  * @param {Card} card
- * @param {Card[]} wrongAssigneeCount
+ * @param {Card[]} noAssignees
  * @param {Pulls} pulls
  * @param {string} name
  */
-function updateCard(card, wrongAssigneeCount, pulls, name) {
+function updateCard(card, noAssignees, pulls, name) {
   const reviewers = card.assignees.nodes.map(x => fromAssignee(x))
-  if (card.assignees.nodes.length !== 1 && reviewers.filter(r => r !== fromAssignee(card.author)).length !== 1) {
+  if (card.assignees.nodes.length !== 1 && reviewers.filter(r => r !== fromAssignee(card.author)).length < 1) {
     console.log("Should only have 1 assignee", card.number, 'but has', reviewers.length, ":", reviewers.join(", "), "::", JSON.stringify(card.assignees.nodes))
-    // TODO: Correctly handles multiple reviewers in Waiting for Reviewers
-    // and zero reviewers in Uncommitted/Waiting on Author
-    wrongAssigneeCount.push(card)
+    noAssignees.push(card)
   }
 
   const existing = pulls[card.number]
+  assert(card.labels.nodes.length, "No labels for", card.number)
   if (existing) {
     // These might have changed, and it's a good idea for sanity checking to diff the output
     // Don't override the description, though; assume that it might be manually updated
@@ -87,6 +86,8 @@ function emitPulls(pulls, name) {
     merge: [],
     yours: [],
     waiting: [],
+    experiment: [],
+    housekeeping: [],
     FIXME: [],
   }
   const flagNames = {
@@ -115,6 +116,7 @@ function emitPulls(pulls, name) {
       else {
         assert(Object.values(labels).indexOf(pull.label) > -1, "bad label:", pull.label, key)
         if (pull.label === "OTHER") console.log(name, key, pull.label)
+        assert(flags[pull.label], pull.label)
         flags[pull.label].push(line)
       }
     }
@@ -312,7 +314,7 @@ function fromLabels(names) {
     l = labels[n]
     if (l && l !== "OTHER") break
   }
-  assert(l, "Label not found for labels:", names.map(ns => ns.name).join(';'))
+  assert(l, `Label not found for labels:'${names.map(ns => ns.name).join(';')}' (${names.length})`)
   return l
 }
 
