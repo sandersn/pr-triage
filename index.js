@@ -1,4 +1,5 @@
 const fs = require('fs')
+const { team, fromAssignee } = require('./core')
 const { assert } = require('console')
 const { graphql } = require('@octokit/graphql')
 
@@ -248,28 +249,6 @@ query
 }
 
 
-const team = {
-  "Anders Hejlsberg": "anders",
-  "Andrew Branch": "andrew-branch",
-  "Andrew Casey": "andrew-casey",
-  "Eli Barzilay": "eli", // TODO: remove and see what breaks
-  "Mine Starks": "mine",
-  "Orta": "orta", // TODO: remove and see what breaks
-  "Orta Therox": "orta", // TODO: remove and see what breaks
-  "Ron Buckton": "ron",
-  "Ryan Cavanaugh": "ryan",
-  "Sheetal Nandi": "sheetal",
-  "Wesley Wigham": "wesley",
-  "Nathan Shively-Sanders": "nathan",
-  "Daniel Rosenwasser": "daniel",
-  "Jesse Trinity": "jesse", // TODO: remove and see what breaks
-  "Tobias Koppers": "sokra", // TODO: no
-  "Gabriela Araujo Britto": "gabritto",
-  "Jake Bailey": "jakebailey",
-  "Armando Aguirre": "armanio123",
-  "Oleksandr T.": "a-tarasyuk", // TODO: not really
-  "Rafael Sofi-zada": "rafasofizada", // TODO: uh oh
-}
 const columns = {
   "Not started": "not-started",
   "Waiting on reviewers": "review",
@@ -284,16 +263,6 @@ const labels = {
   "Housekeeping": "housekeeping",
   "Experiment": "experiment",
   "Author: Team": "OTHER"
-}
-/**
- * @param {{ name: string }} assignee
- * @return {Pull["reviewers"][number]}
- */
-function fromAssignee(assignee, assertMissing = true) {
-  const r = team[assignee.name]
-  if (assertMissing)
-    assert(r, "Reviewer not found for assignee named:", assignee.name)
-  return r
 }
 /**
  * @param {string} name

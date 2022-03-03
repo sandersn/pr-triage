@@ -3349,21 +3349,7 @@
             "author": {
               "url": "https://github.com/weswigham"
             }
-          }
-        ]
-      }
-    }
-  }
-}{
-  "data": {
-    "repository": {
-      "pullRequests": {
-        "pageInfo": {
-          "startCursor": "Y3Vyc29yOnYyOpK5MjAyMS0xMC0xMlQxNzowOTo1My0wNzowMM4nl_z3",
-          "endCursor": "Y3Vyc29yOnYyOpK5MjAyMS0wOS0yN1QxNjowNzozNi0wNzowMM4sU3Ab",
-          "hasNextPage": true
-        },
-        "nodes": [
+          },
           {
             "id": "MDExOlB1bGxSZXF1ZXN0NjY0MjcyMTE5",
             "closed": true,
@@ -6760,21 +6746,7 @@
             "author": {
               "url": "https://github.com/csigs"
             }
-          }
-        ]
-      }
-    }
-  }
-}{
-  "data": {
-    "repository": {
-      "pullRequests": {
-        "pageInfo": {
-          "startCursor": "Y3Vyc29yOnYyOpK5MjAyMS0wOS0yN1QxNjowNzoyNy0wNzowMM4sU22X",
-          "endCursor": "Y3Vyc29yOnYyOpK5MjAyMS0wOS0wOVQxMDoxMzo1Ni0wNzowMM4rjtsB",
-          "hasNextPage": true
-        },
-        "nodes": [
+          },
           {
             "id": "PR_kwDOAT9aAc4sU22X",
             "closed": true,
@@ -9602,21 +9574,7 @@
             "author": {
               "url": "https://github.com/csigs"
             }
-          }
-        ]
-      }
-    }
-  }
-}{
-  "data": {
-    "repository": {
-      "pullRequests": {
-        "pageInfo": {
-          "startCursor": "Y3Vyc29yOnYyOpK5MjAyMS0wOS0wOVQwOToyMDo0NS0wNzowMM4q6KkW",
-          "endCursor": "Y3Vyc29yOnYyOpK5MjAyMS0wOC0xN1QxOTozMjo1OS0wNzowMM4pIF6i",
-          "hasNextPage": true
-        },
-        "nodes": [
+          },
           {
             "id": "MDExOlB1bGxSZXF1ZXN0NzE5ODkwNzEw",
             "closed": true,
@@ -13191,21 +13149,7 @@
             "author": {
               "url": "https://github.com/ahejlsberg"
             }
-          }
-        ]
-      }
-    }
-  }
-}{
-  "data": {
-    "repository": {
-      "pullRequests": {
-        "pageInfo": {
-          "startCursor": "Y3Vyc29yOnYyOpK5MjAyMS0wOC0xN1QxMzowODoyOC0wNzowMM4pBvA-",
-          "endCursor": "Y3Vyc29yOnYyOpK5MjAyMS0wNy0yNlQxNDoyNTowOC0wNzowMM4pjuHc",
-          "hasNextPage": true
-        },
-        "nodes": [
+          },
           {
             "id": "MDExOlB1bGxSZXF1ZXN0Njg4MzIwNTc0",
             "closed": false,
@@ -16745,21 +16689,7 @@
             "author": {
               "url": "https://github.com/andrewbranch"
             }
-          }
-        ]
-      }
-    }
-  }
-}{
-  "data": {
-    "repository": {
-      "pullRequests": {
-        "pageInfo": {
-          "startCursor": "Y3Vyc29yOnYyOpK5MjAyMS0wNy0yNlQxMTo1OToxNS0wNzowMM4pUv7-",
-          "endCursor": "Y3Vyc29yOnYyOpK5MjAyMS0wNi0yN1QxNjoxMzoxNi0wNzowMM4oco1d",
-          "hasNextPage": true
-        },
-        "nodes": [
+          },
           {
             "id": "MDExOlB1bGxSZXF1ZXN0NjkzMzA1MDg2",
             "closed": true,
@@ -20328,21 +20258,7 @@
             "author": {
               "url": "https://github.com/csigs"
             }
-          }
-        ]
-      }
-    }
-  }
-}{
-  "data": {
-    "repository": {
-      "pullRequests": {
-        "pageInfo": {
-          "startCursor": "Y3Vyc29yOnYyOpK5MjAyMS0wNi0yN1QxMzowNDoyMi0wNzowMM4ocjOX",
-          "endCursor": "Y3Vyc29yOnYyOpK5MjAyMS0wNi0xMFQxMDoyNjozNi0wNzowMM4mo4DC",
-          "hasNextPage": true
-        },
-        "nodes": [
+          },
           {
             "id": "MDExOlB1bGxSZXF1ZXN0Njc4NTcyOTUx",
             "closed": true,
@@ -23886,21 +23802,7 @@
             "author": {
               "url": "https://github.com/andrewbranch"
             }
-          }
-        ]
-      }
-    }
-  }
-}{
-  "data": {
-    "repository": {
-      "pullRequests": {
-        "pageInfo": {
-          "startCursor": "Y3Vyc29yOnYyOpK5MjAyMS0wNi0xMFQxMDowMToyNS0wNzowMM4npeTD",
-          "endCursor": "Y3Vyc29yOnYyOpK5MjAyMS0wNS0zMVQwMjo0Mzo1MC0wNzowMM4fEXzf",
-          "hasNextPage": true
-        },
-        "nodes": [
+          },
           {
             "id": "MDExOlB1bGxSZXF1ZXN0NjY1MTgzNDI3",
             "closed": true,
@@ -26764,21 +26666,7 @@
             "author": {
               "url": "https://github.com/d-fischer"
             }
-          }
-        ]
-      }
-    }
-  }
-}{
-  "data": {
-    "repository": {
-      "pullRequests": {
-        "pageInfo": {
-          "startCursor": "Y3Vyc29yOnYyOpK5MjAyMS0wNS0yOFQyMTowNzo0MC0wNzowMM4mgpPC",
-          "endCursor": "Y3Vyc29yOnYyOpK5MjAyMS0wNS0wNlQxMzoxMjo0MC0wNzowMM4lpvol",
-          "hasNextPage": true
-        },
-        "nodes": [
+          },
           {
             "id": "MDExOlB1bGxSZXF1ZXN0NjQ2MDkxNzE0",
             "closed": true,
@@ -30737,21 +30625,7 @@
             "author": {
               "url": "https://github.com/sandersn"
             }
-          }
-        ]
-      }
-    }
-  }
-}{
-  "data": {
-    "repository": {
-      "pullRequests": {
-        "pageInfo": {
-          "startCursor": "Y3Vyc29yOnYyOpK5MjAyMS0wNS0wNlQxMjowMzo0OS0wNzowMM4lmyqY",
-          "endCursor": "Y3Vyc29yOnYyOpK5MjAyMS0wNC0wNlQxNzowNzo0OC0wNzowMM4iEHQR",
-          "hasNextPage": true
-        },
-        "nodes": [
+          },
           {
             "id": "MDExOlB1bGxSZXF1ZXN0NjMwOTI1OTc2",
             "closed": true,

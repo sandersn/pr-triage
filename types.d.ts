@@ -1,4 +1,4 @@
-type Reviewer = "anders" | "andrew-branch" | "andrew-casey" | "eli" | "mine" | "orta" | "ron" | "ryan" | "sheetal" | "wesley" | "nathan" | "daniel"
+type Reviewer = "anders" | "andrew-branch" | "andrew-casey" | "mine" | "orta" | "ron" | "ryan" | "sheetal" | "wesley" | "nathan" | "daniel" | "sokra" | "gabriela" | "jake" | "armando"
 
 type Pulls = { [s: string]: Pull }
 type Pull = {
