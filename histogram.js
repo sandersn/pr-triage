@@ -7,6 +7,7 @@ const reviewers = new Map()
 const authors = new Map()
 const opens = new Map()
 for (const pr of Object.values(prs)) {
+  if (pr.state === 'done') continue
   const tsMember = fromAssignee(pr.author, /*assert*/ false)
   if (tsMember && pr.reviewers.some(r => r === tsMember)) {
     opens.set(tsMember, (opens.get(tsMember) ?? 0) + 1)
@@ -24,6 +25,7 @@ function sortt(m) {
 console.log("Name | Need to review | Need to be reviewed")
 console.log("-----|-------------|---")
 for (const [name,count] of reviewers) {
+  // TODO: print real name of reviewer here
   console.log(name, "|", count, "|", opens.get(name) ?? 0)
 }
 console.log("Name | Need to get review")

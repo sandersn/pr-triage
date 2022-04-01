@@ -19,7 +19,12 @@ Notes and tools for PR triage
 # Workflow
 
 1. Set the environment variable GH_API_TOKEN to a token with public_repo access.
+2. Run index.js
+   - Fix any assertions on github, then re-run.
+3. Run histogram.js
 
+
+## OLD
 
 3. Run index.js.
    - Fix any assertions on github, then re-run.

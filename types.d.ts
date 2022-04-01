@@ -13,6 +13,7 @@ type Pull = {
   notes: string[]
   state: "not-started" | "review" | "waiting" | "merge" | "done"
   label: "milestone" | "backlog" | "bonus" | "housekeeping" | "experiment" | "OTHER"
+  id: string
 }
 
 type Card = {
@@ -34,7 +35,7 @@ type Board = {
         nodes: Array<{
           name: string,
           cards: {
-            nodes: Array<{ content: Card }>
+            nodes: Array<{ url: string, content: Card }>
           },
         }>
       }
