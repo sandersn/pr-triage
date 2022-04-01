@@ -22,11 +22,16 @@ for (const pr of Object.values(prs)) {
 function sortt(m) {
   return Array.from(m.entries()).sort(([k1,v1], [k2,v2]) => v1 > v2 ? -1 : 1)
 }
+function fromAlias(alias) {
+  for (const name in team)
+    if (team[name] === alias)
+      return name
+}
 console.log("Name | Need to review | Need to be reviewed")
 console.log("-----|-------------|---")
-for (const [name,count] of reviewers) {
+for (const [alias,count] of reviewers) {
   // TODO: print real name of reviewer here
-  console.log(name, "|", count, "|", opens.get(name) ?? 0)
+  console.log(fromAlias(alias), "|", count, "|", opens.get(alias) ?? 0)
 }
 console.log("Name | Need to get review")
 console.log("-----|----")
