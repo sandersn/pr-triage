@@ -17,15 +17,15 @@ type Pull = {
 }
 
 type Card = {
-  number: string,
-  title: string,
+  number: string
+  title: string
   labels: {
     nodes: Array<{ name: string }>
-  },
+  }
   assignees: {
     nodes: Array<{ name: string }>
-  },
-  author: { name: string },
+  }
+  author: { name: string }
 }
 
 type Board = {
@@ -36,7 +36,7 @@ type Board = {
           name: string,
           cards: {
             nodes: Array<{ url: string, content: Card }>
-          },
+          }
         }>
       }
     }

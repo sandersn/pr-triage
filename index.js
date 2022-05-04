@@ -35,10 +35,10 @@ function updateFromGraphql(board, back) {
  * @param {string} name
  */
 function updateCard(card, url, noAssignees, pulls, name) {
-  const reviewers = card.assignees.nodes.map(x => fromAssignee(x, /*assertMissing*/fromColumn(name) !== 'done'))
+  const reviewers = card.assignees.nodes.map(x => fromAssignee(x, /*assertMissing*/ fromColumn(name) !== 'done'))
   assert(!reviewers.includes(undefined), "Reviewer not found for", card.number, card.assignees, reviewers)
 
-  if (card.assignees.nodes.length !== 1 && reviewers.filter(r => r !== fromAssignee(card.author)).length < 1 && fromColumn(name) !== 'done') {
+  if (card.assignees.nodes.length !== 1 && reviewers.filter(r => r !== fromAssignee(card.author, /*assertMissing*/ false, /*debug*/ card.number)).length < 1 && fromColumn(name) !== 'not-started') {
     console.log("Should only have 1 assignee", card.number, 'but has', reviewers.length, ":", reviewers.join(", "), "::", JSON.stringify(card.assignees.nodes))
     noAssignees.push(card)
   }
@@ -115,51 +115,51 @@ query
       authorization: "token " + process.env.GH_API_TOKEN
     }
   })
-//   /** @type {Board} */
-//   const boardback = await graphql(`
-// query
-// {
-//   repository(name: "TypeScript", owner: "microsoft") {
-//     project(number: 13) {
-//       columns(first: 4) {
-//         nodes {
-//           cards(last: 100) {
-//             nodes {
-//               content {
-//                 ... on PullRequest {
-//                   number
-//                   labels(first: 10) {
-//                     nodes {
-//                       name
-//                     }
-//                   }
-//                   title
-//                   assignees(first: 5) {
-//                     nodes {
-//                       name
-//                     }
-//                   }
-//                   author {
-//                     ... on User {
-//                       name
-//                     }
-//                   }
-//                 }
-//               }
-//               url
-//             }
-//           }
-//           name
-//         }
-//       }
-//     }
-//   }
-// }
-// `, {
-//     headers: {
-//       authorization: "token " + process.env.GH_API_TOKEN
-//     }
-//   })
+  /** @type {Board} */
+  const boardback = await graphql(`
+query
+{
+  repository(name: "TypeScript", owner: "microsoft") {
+    project(number: 13) {
+      columns(first: 4) {
+        nodes {
+          cards(last: 100) {
+            nodes {
+              content {
+                ... on PullRequest {
+                  number
+                  labels(first: 10) {
+                    nodes {
+                      name
+                    }
+                  }
+                  title
+                  assignees(first: 5) {
+                    nodes {
+                      name
+                    }
+                  }
+                  author {
+                    ... on User {
+                      name
+                    }
+                  }
+                }
+              }
+              url
+            }
+          }
+          name
+        }
+      }
+    }
+  }
+}
+`, {
+    headers: {
+      authorization: "token " + process.env.GH_API_TOKEN
+    }
+  })
   const [pulls, noAssignees] = updateFromGraphql(board)
   if (noAssignees.length) {
     for (const e of noAssignees) {

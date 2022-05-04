@@ -21,7 +21,7 @@
       "anders"
     ],
     "notes": [],
-    "state": "merge",
+    "state": "review",
     "label": "milestone",
     "id": "33152355"
   },
@@ -102,19 +102,6 @@
     "state": "review",
     "label": "backlog",
     "id": "34321195"
-  },
-  "33497": {
-    "description": "Change default for TNext in Iterator/AsyncIterator",
-    "author": {
-      "name": "Ron Buckton"
-    },
-    "reviewers": [
-      "ron"
-    ],
-    "notes": [],
-    "state": "done",
-    "label": "backlog",
-    "id": "34322687"
   },
   "33673": {
     "description": "Emit comments and newlines only once even with initializers added by the transformer",
@@ -561,19 +548,6 @@
     "label": "milestone",
     "id": "51992658"
   },
-  "41992": {
-    "description": "preserve this when extracting functions",
-    "author": {
-      "name": "Zzzen"
-    },
-    "reviewers": [
-      "jake"
-    ],
-    "notes": [],
-    "state": "waiting",
-    "label": "backlog",
-    "id": "51992652"
-  },
   "41994": {
     "description": "Allow accessors to override non-class or abstract properties ",
     "author": {
@@ -593,7 +567,7 @@
       "name": "Zzzen"
     },
     "reviewers": [
-      "andrew-branch"
+      "wesley"
     ],
     "notes": [],
     "state": "waiting",
@@ -638,32 +612,6 @@
     "state": "review",
     "label": "milestone",
     "id": "53157403"
-  },
-  "42359": {
-    "description": "feat: support __proto__ in object literal (type-check only)",
-    "author": {
-      "name": "Jack Works"
-    },
-    "reviewers": [
-      "ron"
-    ],
-    "notes": [],
-    "state": "review",
-    "label": "uncommitted",
-    "id": "53522501"
-  },
-  "42382": {
-    "description": "[P in keyof T]: T[P] not accepting inferred base type via extends",
-    "author": {
-      "name": "Jonas Hübotter"
-    },
-    "reviewers": [
-      "wesley"
-    ],
-    "notes": [],
-    "state": "done",
-    "label": "backlog",
-    "id": "53522431"
   },
   "42414": {
     "description": "Avoid using variance results when relating `any` type arguments for positions originating in intersections",
@@ -716,19 +664,6 @@
     "state": "review",
     "label": "uncommitted",
     "id": "54494442"
-  },
-  "42602": {
-    "description": "Indexing tuple intersection type beyond length produces unexpected type",
-    "author": {
-      "name": "Jonas Hübotter"
-    },
-    "reviewers": [
-      "wesley"
-    ],
-    "notes": [],
-    "state": "done",
-    "label": "backlog",
-    "id": "55062309"
   },
   "42634": {
     "description": "Don’t resolve an index-less module specifier if another file has the same name as the directory",
@@ -797,19 +732,6 @@
     "label": "milestone",
     "id": "56192087"
   },
-  "43097": {
-    "description": "Uncalled function checks don't work with negation",
-    "author": {
-      "name": "Jonas Hübotter"
-    },
-    "reviewers": [
-      "gabriela"
-    ],
-    "notes": [],
-    "state": "done",
-    "label": "uncommitted",
-    "id": "57039721"
-  },
   "43102": {
     "description": "make \"es2017 lib\" error message casing consistent",
     "author": {
@@ -845,7 +767,7 @@
       "anders"
     ],
     "notes": [],
-    "state": "merge",
+    "state": "waiting",
     "label": "uncommitted",
     "id": "59721767"
   },
@@ -902,32 +824,6 @@
     "label": "backlog",
     "id": "63417980"
   },
-  "44554": {
-    "description": "fix: clone redirected `SourceFile`'s prototype",
-    "author": {
-      "name": "Kristoffer K."
-    },
-    "reviewers": [
-      "ron"
-    ],
-    "notes": [],
-    "state": "review",
-    "label": "milestone",
-    "id": "63632658"
-  },
-  "44912": {
-    "description": "feat(5326): Combining destructuring with parameter properties",
-    "author": {
-      "name": "Oleksandr T."
-    },
-    "reviewers": [
-      "ron"
-    ],
-    "notes": [],
-    "state": "review",
-    "label": "uncommitted",
-    "id": "65063569"
-  },
   "45205": {
     "description": "Negative cases of getNarrowedType that match the exact type should be filtered out, even when generic",
     "author": {
@@ -963,7 +859,7 @@
       "andrew-branch"
     ],
     "notes": [],
-    "state": "merge",
+    "state": "review",
     "label": "backlog",
     "id": "69251471"
   },
@@ -1080,7 +976,7 @@
       "nathan"
     ],
     "notes": [],
-    "state": "waiting",
+    "state": "review",
     "label": "backlog",
     "id": "71164093"
   },
@@ -1119,7 +1015,7 @@
       "daniel"
     ],
     "notes": [],
-    "state": "waiting",
+    "state": "review",
     "label": "backlog",
     "id": "72235042"
   },
@@ -1149,19 +1045,6 @@
     "label": "uncommitted",
     "id": "73022367"
   },
-  "46681": {
-    "description": "Add empty inline completions command support",
-    "author": {
-      "name": "Wenlu Wang"
-    },
-    "reviewers": [
-      "nathan"
-    ],
-    "notes": [],
-    "state": "done",
-    "label": "uncommitted",
-    "id": "73022411"
-  },
   "46719": {
     "description": "Add JSDoc's @inheritDoc Support for Static Class Members for TypeScript",
     "author": {
@@ -1171,96 +1054,9 @@
       "nathan"
     ],
     "notes": [],
-    "state": "waiting",
+    "state": "merge",
     "label": "backlog",
     "id": "73022295"
-  },
-  "46792": {
-    "description": "use default type parameter rather than `unknown` when show quick help",
-    "author": {
-      "name": "Song Gao"
-    },
-    "reviewers": [],
-    "notes": [],
-    "state": "done",
-    "label": "backlog",
-    "id": "74312112"
-  },
-  "46797": {
-    "description": "fix(44693): Overriden properties in jsdoc annotation are not picked up in declaration file",
-    "author": {
-      "name": "Oleksandr T."
-    },
-    "reviewers": [
-      "wesley"
-    ],
-    "notes": [],
-    "state": "done",
-    "label": "backlog",
-    "id": "74312102"
-  },
-  "46798": {
-    "description": "Describe jsxFragmentFactory option default value",
-    "author": {
-      "name": "Jack Bates"
-    },
-    "reviewers": [
-      "wesley"
-    ],
-    "notes": [],
-    "state": "done",
-    "label": "housekeeping",
-    "id": "74312097"
-  },
-  "46801": {
-    "description": "Fix JsDocTags inheritage and setter/getter quickInfo",
-    "author": {
-      "name": "Song Gao"
-    },
-    "reviewers": [
-      "nathan"
-    ],
-    "notes": [],
-    "state": "done",
-    "label": "backlog",
-    "id": "74312093"
-  },
-  "46812": {
-    "description": "Don't eagerly simplify reducible generic union index types",
-    "author": {
-      "name": "Wesley Wigham"
-    },
-    "reviewers": [
-      "wesley"
-    ],
-    "notes": [],
-    "state": "done",
-    "label": "milestone",
-    "id": "74312089"
-  },
-  "46821": {
-    "description": "Fix confusing file name in generated diagnostics file",
-    "author": {
-      "name": "Alvin Ramskogler"
-    },
-    "reviewers": [],
-    "notes": [],
-    "state": "done",
-    "label": "housekeeping",
-    "id": "74312084"
-  },
-  "46826": {
-    "description": "TemplateStringsArray could contain undefined and should always have index 0",
-    "author": {
-      "name": "龙腾道"
-    },
-    "reviewers": [
-      "nathan"
-    ],
-    "notes": [],
-    "state": "done",
-    "label": "uncommitted",
-    "id": "74311407"
   },
   "46827": {
     "description": "feat(7481): Operator to ensure an expression is contextually typed by, and satisfies, some type",
@@ -1275,156 +1071,6 @@
     "label": "milestone",
     "id": "79339090"
   },
-  "46832": {
-    "description": "Gabritto/semicolons",
-    "author": {
-      "name": "Gabriela Araujo Britto"
-    },
-    "reviewers": [
-      "gabriela"
-    ],
-    "notes": [],
-    "state": "done",
-    "label": "uncommitted",
-    "id": "74311388"
-  },
-  "46843": {
-    "description": "fix: do not use `ts.NodeArray` in factory inputs",
-    "author": {
-      "name": "David Sherret"
-    },
-    "reviewers": [],
-    "notes": [],
-    "state": "done",
-    "label": "uncommitted",
-    "id": "74311381"
-  },
-  "46849": {
-    "description": "fix(46845): Add missing \"locale\" field to Intl.DisplayNamesOptions",
-    "author": {
-      "name": null
-    },
-    "reviewers": [
-      "orta"
-    ],
-    "notes": [],
-    "state": "done",
-    "label": "backlog",
-    "id": "74311379"
-  },
-  "46871": {
-    "description": "fix issue where duplicate default exports aren't detected",
-    "author": {
-      "name": null
-    },
-    "reviewers": [],
-    "notes": [],
-    "state": "done",
-    "label": "backlog",
-    "id": "74311376"
-  },
-  "46877": {
-    "description": "Ignore bad typings properties in package.json files",
-    "author": {
-      "name": "Andrew Casey"
-    },
-    "reviewers": [
-      "andrew-casey"
-    ],
-    "notes": [],
-    "state": "done",
-    "label": "uncommitted",
-    "id": "74311367"
-  },
-  "46886": {
-    "description": "feat(27601): Copy JSDoc from type when destructing arguments",
-    "author": {
-      "name": "Oleksandr T."
-    },
-    "reviewers": [],
-    "notes": [],
-    "state": "done",
-    "label": "backlog",
-    "id": "74311345"
-  },
-  "46908": {
-    "description": "Discourage typo fixes in PR template",
-    "author": {
-      "name": null
-    },
-    "reviewers": [
-      "daniel"
-    ],
-    "notes": [],
-    "state": "done",
-    "label": "uncommitted",
-    "id": "74311337"
-  },
-  "46913": {
-    "description": "fix(46406): Template literal types with decorator crashes in emit",
-    "author": {
-      "name": "Oleksandr T."
-    },
-    "reviewers": [
-      "ron"
-    ],
-    "notes": [],
-    "state": "done",
-    "label": "milestone",
-    "id": "74311323"
-  },
-  "46970": {
-    "description": "fix(45917): String literal completions missing when last argument of a call is followed by a comma",
-    "author": {
-      "name": "Oleksandr T."
-    },
-    "reviewers": [
-      "daniel"
-    ],
-    "notes": [],
-    "state": "done",
-    "label": "backlog",
-    "id": "74932380"
-  },
-  "46981": {
-    "description": "Bail on 0- and 1-length lists in `removeSubtypes` to avoid spurious circularity problems",
-    "author": {
-      "name": "Ryan Cavanaugh"
-    },
-    "reviewers": [
-      "ryan"
-    ],
-    "notes": [],
-    "state": "done",
-    "label": "uncommitted",
-    "id": "74932307"
-  },
-  "47020": {
-    "description": "Add `Error.prototype.cause`",
-    "author": {
-      "name": "Kagami Sascha Rosylight"
-    },
-    "reviewers": [
-      "orta"
-    ],
-    "notes": [],
-    "state": "done",
-    "label": "backlog",
-    "id": "74929161"
-  },
-  "47049": {
-    "description": "Bind RHS of comma expressions too",
-    "author": {
-      "name": "Jake Bailey"
-    },
-    "reviewers": [
-      "jake"
-    ],
-    "notes": [],
-    "state": "done",
-    "label": "milestone",
-    "id": "74927664"
-  },
   "47050": {
     "description": "Allow nongeneric string mapping types to exist",
     "author": {
@@ -1437,80 +1083,6 @@
     "state": "review",
     "label": "uncommitted",
     "id": "74927636"
-  },
-  "47054": {
-    "description": "fix(47004): arguments detection for jsdoc / javascript has a false positive",
-    "author": {
-      "name": "Oleksandr T."
-    },
-    "reviewers": [
-      "daniel"
-    ],
-    "notes": [],
-    "state": "done",
-    "label": "backlog",
-    "id": "74927332"
-  },
-  "47057": {
-    "description": "fix(47056): Only the first did-you-mean-colon error in an object literal is reported",
-    "author": {
-      "name": "Oleksandr T."
-    },
-    "reviewers": [],
-    "notes": [],
-    "state": "done",
-    "label": "backlog",
-    "id": "74927073"
-  },
-  "47069": {
-    "description": "Ensure subtype relation ordering for readonly properties",
-    "author": {
-      "name": "Wesley Wigham"
-    },
-    "reviewers": [
-      "wesley"
-    ],
-    "notes": [],
-    "state": "done",
-    "label": "milestone",
-    "id": "74927037"
-  },
-  "47085": {
-    "description": "support quickinfo and go-to-definition on `typeof this`",
-    "author": {
-      "name": "Zzzen"
-    },
-    "reviewers": [],
-    "notes": [],
-    "state": "done",
-    "label": "backlog",
-    "id": "76098503"
-  },
-  "47087": {
-    "description": "fix(47076):Fix error term of declaration in modules",
-    "author": {
-      "name": null
-    },
-    "reviewers": [
-      "nathan"
-    ],
-    "notes": [],
-    "state": "done",
-    "label": "backlog",
-    "id": "76972934"
-  },
-  "47088": {
-    "description": "Prevent merged class/namespace from overlapping with `Record<string, unknown>`",
-    "author": {
-      "name": "Jake Bailey"
-    },
-    "reviewers": [
-      "jake"
-    ],
-    "notes": [],
-    "state": "done",
-    "label": "milestone",
-    "id": "75691699"
   },
   "47091": {
     "description": "Ensure distributive constraints of restrictive instantiations of type parameters don't exist",
@@ -1525,82 +1097,6 @@
     "label": "milestone",
     "id": "76972888"
   },
-  "47095": {
-    "description": "Transform param patterns/initializers after object rest",
-    "author": {
-      "name": "Ron Buckton"
-    },
-    "reviewers": [
-      "ron"
-    ],
-    "notes": [],
-    "state": "done",
-    "label": "milestone",
-    "id": "76972815"
-  },
-  "47098": {
-    "description": "fix(44179): resolve target symbol before substituting",
-    "author": {
-      "name": "LowR"
-    },
-    "reviewers": [
-      "wesley"
-    ],
-    "notes": [],
-    "state": "waiting",
-    "label": "backlog",
-    "id": "76972668"
-  },
-  "47104": {
-    "description": "fix(47081): Autocomplete breaks in overloaded generic function",
-    "author": {
-      "name": "Oleksandr T."
-    },
-    "reviewers": [
-      "nathan"
-    ],
-    "notes": [],
-    "state": "done",
-    "label": "backlog",
-    "id": "76972966"
-  },
-  "47117": {
-    "description": "fix(47024):fix type of DateTimeFormat and NumberFormat",
-    "author": {
-      "name": null
-    },
-    "reviewers": [],
-    "notes": [],
-    "state": "done",
-    "label": "backlog",
-    "id": "76972650"
-  },
-  "47129": {
-    "description": "Standardized aka.ms links for tsc and tsconfig",
-    "author": {
-      "name": "Josh Goldberg"
-    },
-    "reviewers": [
-      "ryan"
-    ],
-    "notes": [],
-    "state": "done",
-    "label": "milestone",
-    "id": "76963317"
-  },
-  "47156": {
-    "description": "Correctly check computed property names in type-space get/set accessors",
-    "author": {
-      "name": "Ryan Cavanaugh"
-    },
-    "reviewers": [
-      "ryan"
-    ],
-    "notes": [],
-    "state": "done",
-    "label": "milestone",
-    "id": "76963251"
-  },
   "47160": {
     "description": "Detect usage of block-scoped variables from earlier case blocks",
     "author": {
@@ -1613,19 +1109,6 @@
     "state": "review",
     "label": "backlog",
     "id": "76963227"
-  },
-  "47162": {
-    "description": "Fix #38482",
-    "author": {
-      "name": null
-    },
-    "reviewers": [
-      "wesley"
-    ],
-    "notes": [],
-    "state": "done",
-    "label": "backlog",
-    "id": "76963211"
   },
   "47172": {
     "description": "fix(46909):Fix typePredicate in UnionType",
@@ -1640,58 +1123,6 @@
     "label": "backlog",
     "id": "76963189"
   },
-  "47176": {
-    "description": "fix(43400): Nested object rest in destructuring results in code with a syntax error",
-    "author": {
-      "name": "Oleksandr T."
-    },
-    "reviewers": [
-      "ron"
-    ],
-    "notes": [],
-    "state": "done",
-    "label": "milestone",
-    "id": "76963019"
-  },
-  "47192": {
-    "description": "Update terminal.integrated.shell.linux config in devcontainer.json",
-    "author": {
-      "name": "Mohsen Azimi"
-    },
-    "reviewers": [
-      "wesley"
-    ],
-    "notes": [],
-    "state": "done",
-    "label": "housekeeping",
-    "id": "76864102"
-  },
-  "47198": {
-    "description": "Remove unused errors/branches in checkGrammarModifiers",
-    "author": {
-      "name": "rom"
-    },
-    "reviewers": [
-      "nathan"
-    ],
-    "notes": [],
-    "state": "done",
-    "label": "housekeeping",
-    "id": "76863985"
-  },
-  "47212": {
-    "description": "feat(27615): fixAddMissingMember should work for type literal",
-    "author": {
-      "name": "Oleksandr T."
-    },
-    "reviewers": [
-      "gabriela"
-    ],
-    "notes": [],
-    "state": "done",
-    "label": "backlog",
-    "id": "76962998"
-  },
   "47216": {
     "description": "fix(22682): Fail on class declaration in statement position for ES2015 or higher",
     "author": {
@@ -1704,45 +1135,6 @@
     "state": "waiting",
     "label": "backlog",
     "id": "76962977"
-  },
-  "47247": {
-    "description": "fix(46803): unused React import doesn't get removed running organize imports with new react jsx transform",
-    "author": {
-      "name": "Oleksandr T."
-    },
-    "reviewers": [
-      "andrew-branch"
-    ],
-    "notes": [],
-    "state": "done",
-    "label": "backlog",
-    "id": "76972657"
-  },
-  "47254": {
-    "description": "feat(46907): Add `Intl.ListFormat` type declarations",
-    "author": {
-      "name": "Leonard Ginters"
-    },
-    "reviewers": [
-      "nathan"
-    ],
-    "notes": [],
-    "state": "waiting",
-    "label": "backlog",
-    "id": "76973048"
-  },
-  "47257": {
-    "description": "feat(11378): Check @param names in JSDoc method documentation",
-    "author": {
-      "name": "Oleksandr T."
-    },
-    "reviewers": [
-      "nathan"
-    ],
-    "notes": [],
-    "state": "done",
-    "label": "backlog",
-    "id": "76123643"
   },
   "47278": {
     "description": "feat(lib): define TypedArray interface",
@@ -1757,104 +1149,6 @@
     "label": "milestone",
     "id": "76059803"
   },
-  "47282": {
-    "description": "more precise type facts for intersection",
-    "author": {
-      "name": "Gabriela Araujo Britto"
-    },
-    "reviewers": [
-      "gabriela"
-    ],
-    "notes": [],
-    "state": "done",
-    "label": "milestone",
-    "id": "76059738"
-  },
-  "47287": {
-    "description": "fix: enum self reference",
-    "author": {
-      "name": "magic-akari"
-    },
-    "reviewers": [],
-    "notes": [],
-    "state": "done",
-    "label": "backlog",
-    "id": "76059728"
-  },
-  "47293": {
-    "description": "feat(42684): Override JSDoc for re-exported types / enum / classes / interfaces",
-    "author": {
-      "name": "Oleksandr T."
-    },
-    "reviewers": [],
-    "notes": [],
-    "state": "done",
-    "label": "backlog",
-    "id": "76056305"
-  },
-  "47306": {
-    "description": "Consistently avoid pulling on the source return type when the target return type is any",
-    "author": {
-      "name": "Wesley Wigham"
-    },
-    "reviewers": [
-      "wesley"
-    ],
-    "notes": [],
-    "state": "done",
-    "label": "uncommitted",
-    "id": "76973060"
-  },
-  "47307": {
-    "description": "fix(47296): Folding for multi-line statements when wrapped in parenthesis",
-    "author": {
-      "name": "Oleksandr T."
-    },
-    "reviewers": [
-      "gabriela"
-    ],
-    "notes": [],
-    "state": "done",
-    "label": "uncommitted",
-    "id": "76973085"
-  },
-  "47308": {
-    "description": "feat(47281): Implementing an interface suggests any as type",
-    "author": {
-      "name": "Oleksandr T."
-    },
-    "reviewers": [
-      "nathan"
-    ],
-    "notes": [],
-    "state": "done",
-    "label": "backlog",
-    "id": "76973096"
-  },
-  "47317": {
-    "description": "feat(47223): Autocomplete not working for template types",
-    "author": {
-      "name": "Oleksandr T."
-    },
-    "reviewers": [],
-    "notes": [],
-    "state": "done",
-    "label": "backlog",
-    "id": "76973150"
-  },
-  "47337": {
-    "description": "Fix destructuring and narrowing interaction",
-    "author": {
-      "name": "Gabriela Araujo Britto"
-    },
-    "reviewers": [
-      "gabriela"
-    ],
-    "notes": [],
-    "state": "done",
-    "label": "milestone",
-    "id": "76973111"
-  },
   "47356": {
     "description": "feat(7411): JSX namespaced attribute syntax not supported",
     "author": {
@@ -1864,20 +1158,9 @@
       "wesley"
     ],
     "notes": [],
-    "state": "waiting",
+    "state": "review",
     "label": "backlog",
     "id": "76973745"
-  },
-  "47400": {
-    "description": "fix(47256): @deprecated does not work on index signatures",
-    "author": {
-      "name": "Oleksandr T."
-    },
-    "reviewers": [],
-    "notes": [],
-    "state": "done",
-    "label": "backlog",
-    "id": "76973761"
   },
   "47401": {
     "description": "TSServer Web Allow Opening in Semantic Mode",
@@ -1889,98 +1172,9 @@
       "daniel"
     ],
     "notes": [],
-    "state": "merge",
+    "state": "review",
     "label": "uncommitted",
     "id": "76973784"
-  },
-  "47403": {
-    "description": "fix(47261): TS error when JSDoc @see tag starts with an inline @linkcode tag",
-    "author": {
-      "name": "Oleksandr T."
-    },
-    "reviewers": [],
-    "notes": [],
-    "state": "done",
-    "label": "backlog",
-    "id": "76973809"
-  },
-  "47407": {
-    "description": "fix(47158): Removes comments when line variable declaration",
-    "author": {
-      "name": null
-    },
-    "reviewers": [
-      "jake"
-    ],
-    "notes": [],
-    "state": "done",
-    "label": "backlog",
-    "id": "76974132"
-  },
-  "47412": {
-    "description": "Rewrite logic for JSX attribute completion detection",
-    "author": {
-      "name": "Jake Bailey"
-    },
-    "reviewers": [
-      "jake"
-    ],
-    "notes": [],
-    "state": "done",
-    "label": "milestone",
-    "id": "75993108"
-  },
-  "47413": {
-    "description": "Rewrite logic for JSX attribute completion detection [4.5 cherry pick]",
-    "author": {
-      "name": "Jake Bailey"
-    },
-    "reviewers": [
-      "jake"
-    ],
-    "notes": [],
-    "state": "done",
-    "label": "uncommitted",
-    "id": "75993110"
-  },
-  "47414": {
-    "description": "Deprecate ScriptElementKind.jsxAttribute",
-    "author": {
-      "name": "Jake Bailey"
-    },
-    "reviewers": [
-      "jake"
-    ],
-    "notes": [],
-    "state": "done",
-    "label": "uncommitted",
-    "id": "76104187"
-  },
-  "47427": {
-    "description": "Delay \"File change detected\" reporting until createProgram",
-    "author": {
-      "name": "Jake Bailey"
-    },
-    "reviewers": [
-      "jake"
-    ],
-    "notes": [],
-    "state": "done",
-    "label": "milestone",
-    "id": "76049547"
-  },
-  "47442": {
-    "description": "fix(47383): Destructuring of unknown catch variable is not an error",
-    "author": {
-      "name": "Oleksandr T."
-    },
-    "reviewers": [
-      "jake"
-    ],
-    "notes": [],
-    "state": "done",
-    "label": "milestone",
-    "id": "76974151"
   },
   "47461": {
     "description": "fix(25083): check for `ElementAccessExpression` when returning an expression from a `ComputedPropertyName`",
@@ -1991,22 +1185,9 @@
       "nathan"
     ],
     "notes": [],
-    "state": "review",
+    "state": "waiting",
     "label": "backlog",
     "id": "76974467"
-  },
-  "47464": {
-    "description": "Fix bug in ensureProjectStructuresUpToDate that [maybe?] can lead to poisoned cache",
-    "author": {
-      "name": "Marc Celani"
-    },
-    "reviewers": [
-      "andrew-branch"
-    ],
-    "notes": [],
-    "state": "done",
-    "label": "milestone",
-    "id": "76974471"
   },
   "47482": {
     "description": "Fix dropped watches",
@@ -2020,19 +1201,6 @@
     "state": "waiting",
     "label": "backlog",
     "id": "76973035"
-  },
-  "47495": {
-    "description": "Add moduleDetection compiler flag to allow for changing how modules are parsed",
-    "author": {
-      "name": "Wesley Wigham"
-    },
-    "reviewers": [
-      "wesley"
-    ],
-    "notes": [],
-    "state": "done",
-    "label": "milestone",
-    "id": "76974507"
   },
   "47503": {
     "description": "Correct and simplify core typed array typings",
@@ -2060,56 +1228,6 @@
     "label": "uncommitted",
     "id": "76973142"
   },
-  "47516": {
-    "description": "Avoid auto-importing from barrel re-exporting index files that are likely to make an import cycle",
-    "author": {
-      "name": "Andrew Branch"
-    },
-    "reviewers": [
-      "andrew-branch"
-    ],
-    "notes": [],
-    "state": "done",
-    "label": "milestone",
-    "id": "76975342"
-  },
-  "47550": {
-    "description": "Don't treat a colon in a conditional expression branch as part of an arrow function",
-    "author": {
-      "name": "Jake Bailey"
-    },
-    "reviewers": [
-      "jake"
-    ],
-    "notes": [],
-    "state": "done",
-    "label": "milestone",
-    "id": "76973017"
-  },
-  "47567": {
-    "description": "fix(32941): Template tag constraints not displayed in vscode intellisense",
-    "author": {
-      "name": "Oleksandr T."
-    },
-    "reviewers": [
-      "nathan"
-    ],
-    "notes": [],
-    "state": "done",
-    "label": "uncommitted",
-    "id": "76975575"
-  },
-  "47575": {
-    "description": "fix(47391): JSDoc/TSDoc @link with custom display text incorrectly shows vertical bar",
-    "author": {
-      "name": "Oleksandr T."
-    },
-    "reviewers": [],
-    "notes": [],
-    "state": "done",
-    "label": "backlog",
-    "id": "77315274"
-  },
   "47591": {
     "description": "Improve parameter decorator inference",
     "author": {
@@ -2122,58 +1240,6 @@
     "state": "review",
     "label": "backlog",
     "id": "77315171"
-  },
-  "47607": {
-    "description": "Instantiation expressions",
-    "author": {
-      "name": "Anders Hejlsberg"
-    },
-    "reviewers": [
-      "anders"
-    ],
-    "notes": [],
-    "state": "done",
-    "label": "uncommitted",
-    "id": "77315128"
-  },
-  "47624": {
-    "description": "feat(47619): Extract jsx string to constant",
-    "author": {
-      "name": "Oleksandr T."
-    },
-    "reviewers": [
-      "jake"
-    ],
-    "notes": [],
-    "state": "done",
-    "label": "backlog",
-    "id": "77315055"
-  },
-  "47657": {
-    "description": "fix(47597): preProcessFile incorrectly identifies imports in comments after a template literal type",
-    "author": {
-      "name": "Oleksandr T."
-    },
-    "reviewers": [
-      "andrew-branch"
-    ],
-    "notes": [],
-    "state": "done",
-    "label": "milestone",
-    "id": "77315022"
-  },
-  "47674": {
-    "description": "Compute writeType from set accessors for union and intersection properties",
-    "author": {
-      "name": "Andrew Branch"
-    },
-    "reviewers": [
-      "andrew-branch"
-    ],
-    "notes": [],
-    "state": "done",
-    "label": "milestone",
-    "id": "77314994"
   },
   "47683": {
     "description": "Fixed contextual async return type with unions in context that contain a mix of promise and non-promise types",
@@ -2188,110 +1254,6 @@
     "label": "milestone",
     "id": "77539775"
   },
-  "47684": {
-    "description": "Fix inlay hint crash for jsdoc function type syntax",
-    "author": {
-      "name": "Nathan Shively-Sanders"
-    },
-    "reviewers": [
-      "nathan"
-    ],
-    "notes": [],
-    "state": "done",
-    "label": "milestone",
-    "id": "77019502"
-  },
-  "47719": {
-    "description": "feat(47698): Detect uncalled function statements",
-    "author": {
-      "name": "Oleksandr T."
-    },
-    "reviewers": [
-      "daniel"
-    ],
-    "notes": [],
-    "state": "done",
-    "label": "uncommitted",
-    "id": "77772550"
-  },
-  "47748": {
-    "description": "fix(47733): JSDoc comment template incorrectly returned for element that already has JSDoc comment",
-    "author": {
-      "name": "Oleksandr T."
-    },
-    "reviewers": [
-      "gabriela"
-    ],
-    "notes": [],
-    "state": "done",
-    "label": "backlog",
-    "id": "77767418"
-  },
-  "47750": {
-    "description": "Fix inference for generic-typed constructor parameter when no explicit constructor is present",
-    "author": {
-      "name": "jihndai"
-    },
-    "reviewers": [
-      "gabriela"
-    ],
-    "notes": [],
-    "state": "done",
-    "label": "backlog",
-    "id": "77767333"
-  },
-  "47777": {
-    "description": "feat(44956): jsdoc comments - remove hyphen separator",
-    "author": {
-      "name": "Oleksandr T."
-    },
-    "reviewers": [
-      "nathan"
-    ],
-    "notes": [],
-    "state": "done",
-    "label": "backlog",
-    "id": "77951068"
-  },
-  "47807": {
-    "description": "Add import assertions to type only imports and import types to force the resolution mode of the specifier",
-    "author": {
-      "name": "Wesley Wigham"
-    },
-    "reviewers": [
-      "wesley"
-    ],
-    "notes": [],
-    "state": "done",
-    "label": "milestone",
-    "id": "78225494"
-  },
-  "47811": {
-    "description": "Add `Intl.Locale` parameter type to `toLocale[X]String` signatures.",
-    "author": {
-      "name": "jihndai"
-    },
-    "reviewers": [
-      "nathan"
-    ],
-    "notes": [],
-    "state": "done",
-    "label": "backlog",
-    "id": "78226387"
-  },
-  "47817": {
-    "description": "preserveValueImports + isolatedModules -> type-only ambient const enums",
-    "author": {
-      "name": "Jack Bates"
-    },
-    "reviewers": [
-      "andrew-branch"
-    ],
-    "notes": [],
-    "state": "done",
-    "label": "uncommitted",
-    "id": "78225483"
-  },
   "47822": {
     "description": "[Experiment] feat(47558): Warning 6133 ignores @link tags",
     "author": {
@@ -2305,19 +1267,6 @@
     "label": "backlog",
     "id": "78225159"
   },
-  "47824": {
-    "description": "Fix #47753 - Organize imports removes type imports that are only referenced in @link (jsdoc)",
-    "author": {
-      "name": "Felipe Armoni"
-    },
-    "reviewers": [
-      "nathan"
-    ],
-    "notes": [],
-    "state": "review",
-    "label": "backlog",
-    "id": "78224177"
-  },
   "47829": {
     "description": "fix(47821): Assertion failure on \"convert to default export\" in module augmentation",
     "author": {
@@ -2327,48 +1276,9 @@
       "andrew-casey"
     ],
     "notes": [],
-    "state": "waiting",
+    "state": "review",
     "label": "backlog",
     "id": "78610793"
-  },
-  "47837": {
-    "description": "fix(47794): Fix incorrect substitution on index access on generic mapped type with key remapping",
-    "author": {
-      "name": "Gabrielle Langer"
-    },
-    "reviewers": [
-      "anders"
-    ],
-    "notes": [],
-    "state": "done",
-    "label": "milestone",
-    "id": "78222450"
-  },
-  "47889": {
-    "description": "Exclude mapped types with 'as' clauses from certain checks",
-    "author": {
-      "name": "Anders Hejlsberg"
-    },
-    "reviewers": [
-      "anders"
-    ],
-    "notes": [],
-    "state": "done",
-    "label": "milestone",
-    "id": "78222297"
-  },
-  "47916": {
-    "description": "fix(47858): 'Any' on anonymous function argument response in generic",
-    "author": {
-      "name": "Hayden"
-    },
-    "reviewers": [
-      "wesley"
-    ],
-    "notes": [],
-    "state": "waiting",
-    "label": "backlog",
-    "id": "78220817"
   },
   "47924": {
     "description": "Emit source positions for open/close braces",
@@ -2409,82 +1319,6 @@
     "label": "housekeeping",
     "id": "78277161"
   },
-  "47938": {
-    "description": "Clean up FAR and NavTo aggregation",
-    "author": {
-      "name": "Andrew Casey"
-    },
-    "reviewers": [
-      "andrew-casey"
-    ],
-    "notes": [],
-    "state": "review",
-    "label": "uncommitted",
-    "id": "78276595"
-  },
-  "47951": {
-    "description": "fix(47946): Literal types cannot be used in JSDoc export default { } syntax",
-    "author": {
-      "name": "Oleksandr T."
-    },
-    "reviewers": [
-      "nathan"
-    ],
-    "notes": [],
-    "state": "done",
-    "label": "backlog",
-    "id": "78376361"
-  },
-  "47959": {
-    "description": "Only suggest `@param` codefixes in TS",
-    "author": {
-      "name": "Nathan Shively-Sanders"
-    },
-    "reviewers": [
-      "nathan"
-    ],
-    "notes": [],
-    "state": "done",
-    "label": "uncommitted",
-    "id": "77952026"
-  },
-  "47978": {
-    "description": "Add a test for emit of a computed property based on an aliased symbol",
-    "author": {
-      "name": "Mateusz Burzyński"
-    },
-    "reviewers": [
-      "wesley"
-    ],
-    "notes": [],
-    "state": "done",
-    "label": "housekeeping",
-    "id": "78376481"
-  },
-  "47990": {
-    "description": "Fix const enum comments",
-    "author": {
-      "name": "magic-akari"
-    },
-    "reviewers": [],
-    "notes": [],
-    "state": "done",
-    "label": "backlog",
-    "id": "78556249"
-  },
-  "47991": {
-    "description": "Fix crash when `this` is typed as a generic `T` with no type constraints",
-    "author": {
-      "name": "jihndai"
-    },
-    "reviewers": [
-      "nathan"
-    ],
-    "notes": [],
-    "state": "done",
-    "label": "backlog",
-    "id": "78556246"
-  },
   "47994": {
     "description": "fix(7410): Support JSX Element as JSX Attribute Value",
     "author": {
@@ -2498,59 +1332,6 @@
     "label": "backlog",
     "id": "78555824"
   },
-  "48015": {
-    "description": "Add extra test for call expression in removeComments=false mode",
-    "author": {
-      "name": "Jake Bailey"
-    },
-    "reviewers": [
-      "ron",
-      "jake"
-    ],
-    "notes": [],
-    "state": "done",
-    "label": "milestone",
-    "id": "78555870"
-  },
-  "48019": {
-    "description": "Require `tag` parameter and allow `Locale` object as argument to `Intl.Locale()` constructor",
-    "author": {
-      "name": "jihndai"
-    },
-    "reviewers": [
-      "nathan"
-    ],
-    "notes": [],
-    "state": "done",
-    "label": "backlog",
-    "id": "78610000"
-  },
-  "48025": {
-    "description": "fix(48024) Scanner optimizations based on character frecuency",
-    "author": {
-      "name": "Elian Cordoba"
-    },
-    "reviewers": [
-      "andrew-casey"
-    ],
-    "notes": [],
-    "state": "done",
-    "label": "uncommitted",
-    "id": "78609873"
-  },
-  "48028": {
-    "description": "Prevent crash on code fixes on default keyword ",
-    "author": {
-      "name": "Jake Bailey"
-    },
-    "reviewers": [
-      "jake"
-    ],
-    "notes": [],
-    "state": "done",
-    "label": "milestone",
-    "id": "78609663"
-  },
   "48030": {
     "description": "Use related spans for \"implement abstract class\" errors",
     "author": {
@@ -2563,59 +1344,6 @@
     "state": "review",
     "label": "backlog",
     "id": "78240139"
-  },
-  "48044": {
-    "description": "fix(48034): Get a literal string of type intersection in a template literal type",
-    "author": {
-      "name": null
-    },
-    "reviewers": [
-      "jake"
-    ],
-    "notes": [],
-    "state": "done",
-    "label": "backlog",
-    "id": "78739315"
-  },
-  "48050": {
-    "description": "fix(48031): No circularity error for self referential get accessor annotations",
-    "author": {
-      "name": "Oleksandr T."
-    },
-    "reviewers": [
-      "gabriela"
-    ],
-    "notes": [],
-    "state": "done",
-    "label": "backlog",
-    "id": "78738783"
-  },
-  "48072": {
-    "description": "fix(48053) Description of tsBuildInfoFile is misleading in generated tsconfig.json",
-    "author": {
-      "name": "Pablo Sabater Jiménez"
-    },
-    "reviewers": [
-      "gabriela"
-    ],
-    "notes": [],
-    "state": "done",
-    "label": "backlog",
-    "id": "78853296"
-  },
-  "48080": {
-    "description": "Always fully compute variance structurally",
-    "author": {
-      "name": "Anders Hejlsberg"
-    },
-    "reviewers": [
-      "andrew-branch",
-      "anders"
-    ],
-    "notes": [],
-    "state": "done",
-    "label": "milestone",
-    "id": "78852480"
   },
   "48092": {
     "description": "Don't erase signature type parameters in signaturesRelatedTo",
@@ -2642,58 +1370,6 @@
     "state": "waiting",
     "label": "uncommitted",
     "id": "78927729"
-  },
-  "48110": {
-    "description": "Fix/dependent parameters obj methods",
-    "author": {
-      "name": "Mateusz Burzyński"
-    },
-    "reviewers": [
-      "anders"
-    ],
-    "notes": [],
-    "state": "done",
-    "label": "backlog",
-    "id": "78989769"
-  },
-  "48111": {
-    "description": "Properly reduce intersections to never in identity relation",
-    "author": {
-      "name": "Anders Hejlsberg"
-    },
-    "reviewers": [
-      "anders"
-    ],
-    "notes": [],
-    "state": "done",
-    "label": "milestone",
-    "id": "78989586"
-  },
-  "48112": {
-    "description": "Add 'extends' clause to 'infer' type",
-    "author": {
-      "name": "Ron Buckton"
-    },
-    "reviewers": [
-      "ron"
-    ],
-    "notes": [],
-    "state": "merge",
-    "label": "uncommitted",
-    "id": "78989172"
-  },
-  "48117": {
-    "description": "Add `boolean` to supported literals within `Object.freeze`",
-    "author": {
-      "name": "Mateusz Burzyński"
-    },
-    "reviewers": [
-      "wesley"
-    ],
-    "notes": [],
-    "state": "done",
-    "label": "uncommitted",
-    "id": "79101108"
   },
   "48123": {
     "description": "Use strict variance checks for strict subtype checks unconditionally",
@@ -2734,19 +1410,6 @@
     "label": "uncommitted",
     "id": "79160347"
   },
-  "48168": {
-    "description": "Enable method signature completion for object literals",
-    "author": {
-      "name": "Gabriela Araujo Britto"
-    },
-    "reviewers": [
-      "gabriela"
-    ],
-    "notes": [],
-    "state": "done",
-    "label": "milestone",
-    "id": "79160382"
-  },
   "48172": {
     "description": "`arguments` should not be allowed in class static block",
     "author": {
@@ -2759,19 +1422,6 @@
     "state": "review",
     "label": "backlog",
     "id": "79226583"
-  },
-  "48189": {
-    "description": "Add a new compiler option `moduleSuffixes` to expand the node module resolver's search algorithm",
-    "author": {
-      "name": "Adam Foxman"
-    },
-    "reviewers": [
-      "andrew-branch"
-    ],
-    "notes": [],
-    "state": "done",
-    "label": "uncommitted",
-    "id": "79287468"
   },
   "48190": {
     "description": "resolve from outDir",
@@ -2799,58 +1449,6 @@
     "label": "milestone",
     "id": "79432895"
   },
-  "48240": {
-    "description": "Optional variance annotations",
-    "author": {
-      "name": "Anders Hejlsberg"
-    },
-    "reviewers": [
-      "anders"
-    ],
-    "notes": [],
-    "state": "done",
-    "label": "uncommitted",
-    "id": "79432867"
-  },
-  "48259": {
-    "description": "fix(48258): export default anonymous function works with prefixText and suffixText when disabled",
-    "author": {
-      "name": "Jm"
-    },
-    "reviewers": [
-      "andrew-branch"
-    ],
-    "notes": [],
-    "state": "done",
-    "label": "backlog",
-    "id": "79500264"
-  },
-  "48262": {
-    "description": "fix(48218): Split Intl.DisplayNames options",
-    "author": {
-      "name": null
-    },
-    "reviewers": [
-      "nathan"
-    ],
-    "notes": [],
-    "state": "done",
-    "label": "backlog",
-    "id": "79500128"
-  },
-  "48264": {
-    "description": "Go To Source Definition",
-    "author": {
-      "name": "Andrew Branch"
-    },
-    "reviewers": [
-      "andrew-branch"
-    ],
-    "notes": [],
-    "state": "review",
-    "label": "milestone",
-    "id": "79927968"
-  },
   "48294": {
     "description": "Measure the variance of outer type parameters for type aliases if present",
     "author": {
@@ -2863,32 +1461,6 @@
     "state": "review",
     "label": "uncommitted",
     "id": "79678712"
-  },
-  "48323": {
-    "description": "Fix export default expression comment",
-    "author": {
-      "name": "ZHAO Jinxiang"
-    },
-    "reviewers": [
-      "ron"
-    ],
-    "notes": [],
-    "state": "review",
-    "label": "backlog",
-    "id": "79780604"
-  },
-  "48330": {
-    "description": "[Feature] - Automatically create sort groups based on newlines",
-    "author": {
-      "name": "Minh Quy"
-    },
-    "reviewers": [
-      "jake"
-    ],
-    "notes": [],
-    "state": "waiting",
-    "label": "backlog",
-    "id": "79781100"
   },
   "48386": {
     "description": "Follow `paths` in triple-slash types references",
@@ -2903,19 +1475,6 @@
     "label": "uncommitted",
     "id": "79974851"
   },
-  "48387": {
-    "description": "make Object.freeze work right when pass readonly array in",
-    "author": {
-      "name": "龙腾道"
-    },
-    "reviewers": [
-      "nathan"
-    ],
-    "notes": [],
-    "state": "done",
-    "label": "uncommitted",
-    "id": "79974857"
-  },
   "48388": {
     "description": "Reuse type reference resolutions between programs when possible",
     "author": {
@@ -2928,5 +1487,254 @@
     "state": "review",
     "label": "uncommitted",
     "id": "79974817"
+  },
+  "48433": {
+    "description": "bugfix: homomorphic mapped types when T is non-generic, solves 27995",
+    "author": {
+      "name": "Michael Arnaldi"
+    },
+    "reviewers": [
+      "wesley"
+    ],
+    "notes": [],
+    "state": "review",
+    "label": "backlog",
+    "id": "80152453"
+  },
+  "48482": {
+    "description": "fix(47923): Delete unused JSDoc quick fix changes formatting on rest of JSDoc comment",
+    "author": {
+      "name": "Minh Quy"
+    },
+    "reviewers": [
+      "ron"
+    ],
+    "notes": [],
+    "state": "waiting",
+    "label": "backlog",
+    "id": "80387363"
+  },
+  "48497": {
+    "description": "tsserver support for a virtual filesystem",
+    "author": {
+      "name": "Nathan Shively-Sanders"
+    },
+    "reviewers": [
+      "nathan"
+    ],
+    "notes": [],
+    "state": "waiting",
+    "label": "milestone",
+    "id": "80387364"
+  },
+  "48528": {
+    "description": "feat(48107) - Support convert string except in top level import to template string",
+    "author": {
+      "name": "Minh Quy"
+    },
+    "reviewers": [
+      "nathan",
+      "gabriela"
+    ],
+    "notes": [],
+    "state": "waiting",
+    "label": "uncommitted",
+    "id": "80964740"
+  },
+  "48529": {
+    "description": "fix(47562): Add option to suppress type hint if variable name matches type name",
+    "author": {
+      "name": "Huy"
+    },
+    "reviewers": [
+      "gabriela"
+    ],
+    "notes": [],
+    "state": "waiting",
+    "label": "backlog",
+    "id": "80964748"
+  },
+  "48563": {
+    "description": "Allow exports map entries to point at `.ts` source files",
+    "author": {
+      "name": "Wesley Wigham"
+    },
+    "reviewers": [
+      "wesley"
+    ],
+    "notes": [],
+    "state": "waiting",
+    "label": "uncommitted",
+    "id": "80964760"
+  },
+  "48609": {
+    "description": "chore: disallows unicode escape sequence",
+    "author": {
+      "name": "Jack Works"
+    },
+    "reviewers": [
+      "ryan"
+    ],
+    "notes": [],
+    "state": "review",
+    "label": "backlog",
+    "id": "80964763"
+  },
+  "48619": {
+    "description": "Clean up FAR aggregation",
+    "author": {
+      "name": "Andrew Casey"
+    },
+    "reviewers": [
+      "andrew-casey"
+    ],
+    "notes": [],
+    "state": "review",
+    "label": "uncommitted",
+    "id": "80964736"
+  },
+  "48640": {
+    "description": "allow PrivateIdentifier in QualifiedName",
+    "author": {
+      "name": "Oleksandr T."
+    },
+    "reviewers": [
+      "jake"
+    ],
+    "notes": [],
+    "state": "review",
+    "label": "uncommitted",
+    "id": "80964750"
+  },
+  "48648": {
+    "description": "When calculating inferred infer type constraints, replace conditionals…",
+    "author": {
+      "name": "Wesley Wigham"
+    },
+    "reviewers": [
+      "wesley"
+    ],
+    "notes": [],
+    "state": "review",
+    "label": "milestone",
+    "id": "80964730"
+  },
+  "48656": {
+    "description": "fix(48653): Missing syntax error for new A?.b()",
+    "author": {
+      "name": "Oleksandr T."
+    },
+    "reviewers": [
+      "gabriela"
+    ],
+    "notes": [],
+    "state": "review",
+    "label": "backlog",
+    "id": "80964758"
+  },
+  "48668": {
+    "description": "Fixed an issue with contextual type for intersection properties",
+    "author": {
+      "name": "Mateusz Burzyński"
+    },
+    "reviewers": [
+      "wesley",
+      "anders"
+    ],
+    "notes": [],
+    "state": "merge",
+    "label": "backlog",
+    "id": "80964732"
+  },
+  "48669": {
+    "description": "Move legacy decorators into separate transform",
+    "author": {
+      "name": "Ron Buckton"
+    },
+    "reviewers": [
+      "ron"
+    ],
+    "notes": [],
+    "state": "review",
+    "label": "uncommitted",
+    "id": "80964729"
+  },
+  "48744": {
+    "description": "Implementation for Inlay Hints for Tuple Labels",
+    "author": {
+      "name": "Bryan Dela Cruz"
+    },
+    "reviewers": [
+      "sheetal"
+    ],
+    "notes": [],
+    "state": "review",
+    "label": "backlog",
+    "id": "81219054"
+  },
+  "48754": {
+    "description": "Add missing source property to Intl formatRangeToParts methods",
+    "author": {
+      "name": "Devon Govett"
+    },
+    "reviewers": [
+      "nathan"
+    ],
+    "notes": [],
+    "state": "merge",
+    "label": "backlog",
+    "id": "81219061"
+  },
+  "48763": {
+    "description": "fix `typeof import(\"path\").Foo.#private`",
+    "author": {
+      "name": "magic-akari"
+    },
+    "reviewers": [
+      "jake"
+    ],
+    "notes": [],
+    "state": "waiting",
+    "label": "backlog",
+    "id": "81219052"
+  },
+  "48788": {
+    "description": "Allow return type in conditional if body is followed by a colon",
+    "author": {
+      "name": "Jake Bailey"
+    },
+    "reviewers": [
+      "jake"
+    ],
+    "notes": [],
+    "state": "review",
+    "label": "milestone",
+    "id": "81484270"
+  },
+  "48813": {
+    "description": "fix(48673): Find all reference doesn't work on access modifier for constructor",
+    "author": {
+      "name": "Oleksandr T."
+    },
+    "reviewers": [
+      "nathan"
+    ],
+    "notes": [],
+    "state": "waiting",
+    "label": "backlog",
+    "id": "81484266"
+  },
+  "48816": {
+    "description": "Support __proto__ in object literal (type-check only)",
+    "author": {
+      "name": "Jack Works"
+    },
+    "reviewers": [
+      "daniel"
+    ],
+    "notes": [],
+    "state": "waiting",
+    "label": "uncommitted",
+    "id": "81484264"
   }
 }
