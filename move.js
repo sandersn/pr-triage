@@ -1,5 +1,6 @@
 const { Octokit } = require('@octokit/rest')
 const fs = require('fs')
+const { fromAssignee } = require('./core')
 
 async function main() {
   if (process.argv.length < 3) {
@@ -7,8 +8,8 @@ async function main() {
     return
   }
   const pull = process.argv[2]
-  const reviewers = process.argv.slice(3)
-  console.log(reviewers)
+  const targets = process.argv.slice(3)
+  console.log(targets)
   /** @type {Pulls} */
   const pulls = JSON.parse(fs.readFileSync('./output.json', 'utf8'))
   var gh = new Octokit({
@@ -21,13 +22,16 @@ async function main() {
     position: "bottom",
     column_id: waitingOnReviewers
   })
-  if (reviewers.length) {
+  if (targets.length) {
     gh.issues.addAssignees({
       owner: "microsoft",
       repo: "typescript",
       issue_number: +process.argv[2],
-      assignees: [reviewers[0]],
+      assignees: [targets[0]],
     })
+  }
+  const reviewers = targets.filter(r => r !== fromAssignee(pulls[pull].author, /*assertMissing*/ false))
+  if (reviewers.length) {
     gh.pulls.requestReviewers({
       owner: "microsoft",
       repo: "typescript",

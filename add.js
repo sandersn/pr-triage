@@ -13,12 +13,12 @@ async function main() {
     userAgent: "typescript",
   })
   const lastWeek = new Date(Date.now() - (1000 * 86400 * 7)).toISOString().slice(0, 10)
-  const l = await gh.search.issuesAndPullRequests({
-    q: `repo:microsoft/typescript is:open is:pr -author:"typescript-bot" -is:draft created:<${lastWeek} -label:experiment`
-  })
+  const q = `repo:microsoft/typescript is:open is:pr -author:"typescript-bot" -is:draft created:<${lastWeek} -label:experiment`
+  const l = await gh.search.issuesAndPullRequests({ q })
   const newPrs = l.data.items.filter(it => !known.has(''+it.number)).map(it => it.id)
+  const newNumbers = l.data.items.filter(it => !known.has(''+it.number)).map(it => it.number)
   const notStarted = 7855130
-  console.log(newPrs)
+  console.log(newNumbers)
   for (const pr of newPrs) {
     gh.projects.createCard({
       repo: 'microsoft/typescript',

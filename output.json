@@ -5,7 +5,7 @@
       "name": "Tony Ho"
     },
     "reviewers": [
-      "ryan"
+      "RyanCavanaugh"
     ],
     "notes": [],
     "state": "review",
@@ -18,7 +18,7 @@
       "name": "Wesley Wigham"
     },
     "reviewers": [
-      "anders"
+      "ahejlsberg"
     ],
     "notes": [],
     "state": "review",
@@ -31,7 +31,7 @@
       "name": "Nathan Fenner"
     },
     "reviewers": [
-      "anders"
+      "ahejlsberg"
     ],
     "notes": [],
     "state": "review",
@@ -44,7 +44,7 @@
       "name": "Wesley Wigham"
     },
     "reviewers": [
-      "anders"
+      "ahejlsberg"
     ],
     "notes": [],
     "state": "review",
@@ -57,7 +57,7 @@
       "name": "Wesley Wigham"
     },
     "reviewers": [
-      "anders"
+      "ahejlsberg"
     ],
     "notes": [],
     "state": "review",
@@ -70,7 +70,7 @@
       "name": "Jack Bates"
     },
     "reviewers": [
-      "ron"
+      "rbuckton"
     ],
     "notes": [],
     "state": "review",
@@ -83,7 +83,7 @@
       "name": "Jack Williams"
     },
     "reviewers": [
-      "anders"
+      "ahejlsberg"
     ],
     "notes": [],
     "state": "review",
@@ -96,7 +96,7 @@
       "name": "Jack Bates"
     },
     "reviewers": [
-      "anders"
+      "ahejlsberg"
     ],
     "notes": [],
     "state": "review",
@@ -109,7 +109,7 @@
       "name": "Matts966"
     },
     "reviewers": [
-      "ron"
+      "rbuckton"
     ],
     "notes": [],
     "state": "review",
@@ -122,7 +122,7 @@
       "name": "Daniel Rosenwasser"
     },
     "reviewers": [
-      "ron"
+      "rbuckton"
     ],
     "notes": [],
     "state": "review",
@@ -135,10 +135,10 @@
       "name": "ExE Boss"
     },
     "reviewers": [
-      "nathan"
+      "sandersn"
     ],
     "notes": [],
-    "state": "review",
+    "state": "merge",
     "label": "uncommitted",
     "id": "34326012"
   },
@@ -148,25 +148,12 @@
       "name": "Jack Bates"
     },
     "reviewers": [
-      "wesley"
+      "weswigham"
     ],
     "notes": [],
     "state": "review",
     "label": "milestone",
     "id": "34098920"
-  },
-  "35878": {
-    "description": "No error on indirect calls",
-    "author": {
-      "name": "Klaus Meinhardt"
-    },
-    "reviewers": [
-      "nathan"
-    ],
-    "notes": [],
-    "state": "merge",
-    "label": "backlog",
-    "id": "34498620"
   },
   "35885": {
     "description": "Added quick-fix to rewrite index access as call to get/set method.",
@@ -174,7 +161,7 @@
       "name": "Titian Cernicova-Dragomir"
     },
     "reviewers": [
-      "andrew-casey"
+      "amcasey"
     ],
     "notes": [],
     "state": "review",
@@ -187,7 +174,7 @@
       "name": "Jake Champion"
     },
     "reviewers": [
-      "ron"
+      "rbuckton"
     ],
     "notes": [],
     "state": "review",
@@ -200,7 +187,7 @@
       "name": "Brian Terlson"
     },
     "reviewers": [
-      "ron"
+      "rbuckton"
     ],
     "notes": [],
     "state": "review",
@@ -213,7 +200,7 @@
       "name": "Jack Works"
     },
     "reviewers": [
-      "ron"
+      "rbuckton"
     ],
     "notes": [],
     "state": "review",
@@ -226,7 +213,7 @@
       "name": "Ron Buckton"
     },
     "reviewers": [
-      "anders"
+      "ahejlsberg"
     ],
     "notes": [],
     "state": "review",
@@ -239,7 +226,7 @@
       "name": "Pieter Raubenheimer"
     },
     "reviewers": [
-      "ryan"
+      "RyanCavanaugh"
     ],
     "notes": [],
     "state": "review",
@@ -252,7 +239,7 @@
       "name": "Song Gao"
     },
     "reviewers": [
-      "andrew-branch"
+      "andrewbranch"
     ],
     "notes": [],
     "state": "review",
@@ -265,7 +252,7 @@
       "name": "Luke Bennett"
     },
     "reviewers": [
-      "ron"
+      "rbuckton"
     ],
     "notes": [],
     "state": "review",
@@ -278,7 +265,7 @@
       "name": "Wesley Wigham"
     },
     "reviewers": [
-      "ryan"
+      "RyanCavanaugh"
     ],
     "notes": [],
     "state": "review",
@@ -291,7 +278,7 @@
       "name": "Wenlu Wang"
     },
     "reviewers": [
-      "ron"
+      "rbuckton"
     ],
     "notes": [],
     "state": "review",
@@ -304,8 +291,8 @@
       "name": "Wesley Wigham"
     },
     "reviewers": [
-      "wesley",
-      "anders"
+      "weswigham",
+      "ahejlsberg"
     ],
     "notes": [],
     "state": "review",
@@ -318,7 +305,7 @@
       "name": "Wesley Wigham"
     },
     "reviewers": [
-      "anders"
+      "ahejlsberg"
     ],
     "notes": [],
     "state": "review",
@@ -331,10 +318,10 @@
       "name": "Grzegorz Gajos"
     },
     "reviewers": [
-      "nathan"
+      "sandersn"
     ],
     "notes": [],
-    "state": "review",
+    "state": "waiting",
     "label": "backlog",
     "id": "44694624"
   },
@@ -344,7 +331,7 @@
       "name": "Song Gao"
     },
     "reviewers": [
-      "daniel"
+      "DanielRosenwasser"
     ],
     "notes": [],
     "state": "review",
@@ -357,7 +344,7 @@
       "name": "uhyo"
     },
     "reviewers": [
-      "ron"
+      "rbuckton"
     ],
     "notes": [],
     "state": "review",
@@ -370,7 +357,7 @@
       "name": "Song Gao"
     },
     "reviewers": [
-      "daniel"
+      "DanielRosenwasser"
     ],
     "notes": [],
     "state": "review",
@@ -383,7 +370,7 @@
       "name": "Song Gao"
     },
     "reviewers": [
-      "daniel"
+      "DanielRosenwasser"
     ],
     "notes": [],
     "state": "review",
@@ -396,7 +383,7 @@
       "name": "Wenlu Wang"
     },
     "reviewers": [
-      "daniel"
+      "DanielRosenwasser"
     ],
     "notes": [],
     "state": "review",
@@ -409,7 +396,7 @@
       "name": "Wesley Wigham"
     },
     "reviewers": [
-      "anders"
+      "ahejlsberg"
     ],
     "notes": [],
     "state": "review",
@@ -422,8 +409,8 @@
       "name": "Wesley Wigham"
     },
     "reviewers": [
-      "wesley",
-      "anders"
+      "weswigham",
+      "ahejlsberg"
     ],
     "notes": [],
     "state": "review",
@@ -436,7 +423,7 @@
       "name": "Wesley Wigham"
     },
     "reviewers": [
-      "wesley"
+      "weswigham"
     ],
     "notes": [],
     "state": "review",
@@ -449,7 +436,7 @@
       "name": "uhyo"
     },
     "reviewers": [
-      "ron"
+      "rbuckton"
     ],
     "notes": [],
     "state": "review",
@@ -462,7 +449,7 @@
       "name": "uhyo"
     },
     "reviewers": [
-      "ron"
+      "rbuckton"
     ],
     "notes": [],
     "state": "review",
@@ -475,7 +462,7 @@
       "name": "Jack Williams"
     },
     "reviewers": [
-      "wesley"
+      "weswigham"
     ],
     "notes": [],
     "state": "review",
@@ -488,7 +475,7 @@
       "name": "Orta Therox"
     },
     "reviewers": [
-      "wesley"
+      "weswigham"
     ],
     "notes": [],
     "state": "review",
@@ -501,7 +488,7 @@
       "name": "Daniel Fischer"
     },
     "reviewers": [
-      "ron"
+      "rbuckton"
     ],
     "notes": [],
     "state": "review",
@@ -514,8 +501,8 @@
       "name": "Anders Hejlsberg"
     },
     "reviewers": [
-      "daniel",
-      "anders"
+      "DanielRosenwasser",
+      "ahejlsberg"
     ],
     "notes": [],
     "state": "review",
@@ -528,7 +515,7 @@
       "name": "Amin Pakseresht"
     },
     "reviewers": [
-      "gabriela"
+      "gabritto"
     ],
     "notes": [],
     "state": "review",
@@ -541,7 +528,7 @@
       "name": "Wesley Wigham"
     },
     "reviewers": [
-      "wesley"
+      "weswigham"
     ],
     "notes": [],
     "state": "review",
@@ -554,7 +541,7 @@
       "name": "Nathan Shively-Sanders"
     },
     "reviewers": [
-      "nathan"
+      "sandersn"
     ],
     "notes": [],
     "state": "review",
@@ -567,7 +554,7 @@
       "name": "Zzzen"
     },
     "reviewers": [
-      "wesley"
+      "weswigham"
     ],
     "notes": [],
     "state": "waiting",
@@ -580,7 +567,7 @@
       "name": "Song Gao"
     },
     "reviewers": [
-      "ron"
+      "rbuckton"
     ],
     "notes": [],
     "state": "review",
@@ -593,7 +580,7 @@
       "name": "Wesley Wigham"
     },
     "reviewers": [
-      "wesley"
+      "weswigham"
     ],
     "notes": [],
     "state": "review",
@@ -606,7 +593,7 @@
       "name": "Wesley Wigham"
     },
     "reviewers": [
-      "wesley"
+      "weswigham"
     ],
     "notes": [],
     "state": "review",
@@ -619,7 +606,7 @@
       "name": "Wesley Wigham"
     },
     "reviewers": [
-      "wesley"
+      "weswigham"
     ],
     "notes": [],
     "state": "review",
@@ -632,7 +619,7 @@
       "name": "Pavel Grafkin"
     },
     "reviewers": [
-      "ron"
+      "rbuckton"
     ],
     "notes": [],
     "state": "review",
@@ -645,7 +632,7 @@
       "name": "Wesley Wigham"
     },
     "reviewers": [
-      "wesley"
+      "weswigham"
     ],
     "notes": [],
     "state": "review",
@@ -658,7 +645,7 @@
       "name": "ExE Boss"
     },
     "reviewers": [
-      "ron"
+      "rbuckton"
     ],
     "notes": [],
     "state": "review",
@@ -671,7 +658,7 @@
       "name": "Andrew Branch"
     },
     "reviewers": [
-      "andrew-branch"
+      "andrewbranch"
     ],
     "notes": [],
     "state": "review",
@@ -684,7 +671,7 @@
       "name": "Will Frew"
     },
     "reviewers": [
-      "sheetal"
+      "sheetalkamat"
     ],
     "notes": [],
     "state": "review",
@@ -697,8 +684,8 @@
       "name": "Wesley Wigham"
     },
     "reviewers": [
-      "wesley",
-      "anders"
+      "weswigham",
+      "ahejlsberg"
     ],
     "notes": [],
     "state": "review",
@@ -711,7 +698,7 @@
       "name": "Wesley Wigham"
     },
     "reviewers": [
-      "wesley"
+      "weswigham"
     ],
     "notes": [],
     "state": "review",
@@ -724,8 +711,8 @@
       "name": "Tobias Koppers"
     },
     "reviewers": [
-      "wesley",
-      "sheetal"
+      "weswigham",
+      "sheetalkamat"
     ],
     "notes": [],
     "state": "review",
@@ -738,10 +725,10 @@
       "name": "Hamir Mahal"
     },
     "reviewers": [
-      "nathan"
+      "sandersn"
     ],
     "notes": [],
-    "state": "review",
+    "state": "waiting",
     "label": "backlog",
     "id": "57039696"
   },
@@ -751,7 +738,7 @@
       "name": "Ron Buckton"
     },
     "reviewers": [
-      "ron"
+      "rbuckton"
     ],
     "notes": [],
     "state": "review",
@@ -764,7 +751,7 @@
       "name": "Anders Hejlsberg"
     },
     "reviewers": [
-      "anders"
+      "ahejlsberg"
     ],
     "notes": [],
     "state": "waiting",
@@ -777,8 +764,8 @@
       "name": "Wesley Wigham"
     },
     "reviewers": [
-      "wesley",
-      "anders"
+      "weswigham",
+      "ahejlsberg"
     ],
     "notes": [],
     "state": "review",
@@ -791,7 +778,7 @@
       "name": "Leon Choi"
     },
     "reviewers": [
-      "ryan"
+      "RyanCavanaugh"
     ],
     "notes": [],
     "state": "review",
@@ -804,7 +791,7 @@
       "name": "Andrew Casey"
     },
     "reviewers": [
-      "andrew-casey"
+      "amcasey"
     ],
     "notes": [],
     "state": "review",
@@ -817,7 +804,7 @@
       "name": "Igor Novozhilov"
     },
     "reviewers": [
-      "gabriela"
+      "gabritto"
     ],
     "notes": [],
     "state": "waiting",
@@ -830,7 +817,7 @@
       "name": "Wesley Wigham"
     },
     "reviewers": [
-      "wesley"
+      "weswigham"
     ],
     "notes": [],
     "state": "review",
@@ -843,7 +830,7 @@
       "name": "Kevin Tan"
     },
     "reviewers": [
-      "daniel"
+      "DanielRosenwasser"
     ],
     "notes": [],
     "state": "review",
@@ -856,7 +843,7 @@
       "name": "Oleksandr T."
     },
     "reviewers": [
-      "andrew-branch"
+      "andrewbranch"
     ],
     "notes": [],
     "state": "review",
@@ -869,7 +856,7 @@
       "name": "Chris Manghane"
     },
     "reviewers": [
-      "nathan"
+      "sandersn"
     ],
     "notes": [],
     "state": "waiting",
@@ -882,7 +869,7 @@
       "name": "Hyrum Cooper"
     },
     "reviewers": [
-      "ron"
+      "rbuckton"
     ],
     "notes": [],
     "state": "review",
@@ -895,25 +882,12 @@
       "name": "Rafael Sofi-zada"
     },
     "reviewers": [
-      "wesley"
+      "weswigham"
     ],
     "notes": [],
     "state": "review",
     "label": "backlog",
     "id": "69251456"
-  },
-  "45978": {
-    "description": "feat: support error when comparing with object/array literals",
-    "author": {
-      "name": "Jack Works"
-    },
-    "reviewers": [
-      "nathan"
-    ],
-    "notes": [],
-    "state": "review",
-    "label": "uncommitted",
-    "id": "69796733"
   },
   "46033": {
     "description": "Treat Array TypeReference the same as ArrayType in tuple rest type",
@@ -921,7 +895,7 @@
       "name": "Artem Tyurin"
     },
     "reviewers": [
-      "wesley"
+      "weswigham"
     ],
     "notes": [],
     "state": "waiting",
@@ -934,7 +908,7 @@
       "name": "Oscar Lee-Vermeren"
     },
     "reviewers": [
-      "ron"
+      "rbuckton"
     ],
     "notes": [],
     "state": "review",
@@ -947,7 +921,7 @@
       "name": "Oleksandr T."
     },
     "reviewers": [
-      "wesley"
+      "weswigham"
     ],
     "notes": [],
     "state": "review",
@@ -960,7 +934,7 @@
       "name": "Yuya Tanaka"
     },
     "reviewers": [
-      "nathan"
+      "sandersn"
     ],
     "notes": [],
     "state": "waiting",
@@ -973,7 +947,7 @@
       "name": "fireboltofdeath"
     },
     "reviewers": [
-      "nathan"
+      "sandersn"
     ],
     "notes": [],
     "state": "review",
@@ -986,7 +960,7 @@
       "name": "Harsheet Kakar"
     },
     "reviewers": [
-      "daniel"
+      "DanielRosenwasser"
     ],
     "notes": [],
     "state": "review",
@@ -999,7 +973,7 @@
       "name": "Marek Dědič"
     },
     "reviewers": [
-      "wesley"
+      "weswigham"
     ],
     "notes": [],
     "state": "review",
@@ -1012,25 +986,12 @@
       "name": "Sidharth Vinod"
     },
     "reviewers": [
-      "daniel"
+      "DanielRosenwasser"
     ],
     "notes": [],
     "state": "review",
     "label": "backlog",
     "id": "72235042"
-  },
-  "46508": {
-    "description": "fix: update types for RTF.p.formatToParts() result",
-    "author": {
-      "name": "Justin Grant"
-    },
-    "reviewers": [
-      "nathan"
-    ],
-    "notes": [],
-    "state": "review",
-    "label": "milestone",
-    "id": "72234670"
   },
   "46664": {
     "description": "Inline const enum in import equals declaration",
@@ -1038,25 +999,12 @@
       "name": "Jack Bates"
     },
     "reviewers": [
-      "ron"
+      "rbuckton"
     ],
     "notes": [],
     "state": "waiting",
     "label": "uncommitted",
     "id": "73022367"
-  },
-  "46719": {
-    "description": "Add JSDoc's @inheritDoc Support for Static Class Members for TypeScript",
-    "author": {
-      "name": "Zzzen"
-    },
-    "reviewers": [
-      "nathan"
-    ],
-    "notes": [],
-    "state": "merge",
-    "label": "backlog",
-    "id": "73022295"
   },
   "46827": {
     "description": "feat(7481): Operator to ensure an expression is contextually typed by, and satisfies, some type",
@@ -1064,7 +1012,7 @@
       "name": "Oleksandr T."
     },
     "reviewers": [
-      "ryan"
+      "RyanCavanaugh"
     ],
     "notes": [],
     "state": "waiting",
@@ -1077,7 +1025,7 @@
       "name": "Wesley Wigham"
     },
     "reviewers": [
-      "wesley"
+      "weswigham"
     ],
     "notes": [],
     "state": "review",
@@ -1090,7 +1038,7 @@
       "name": "Wesley Wigham"
     },
     "reviewers": [
-      "wesley"
+      "weswigham"
     ],
     "notes": [],
     "state": "review",
@@ -1103,7 +1051,7 @@
       "name": "Ryan Cavanaugh"
     },
     "reviewers": [
-      "ryan"
+      "RyanCavanaugh"
     ],
     "notes": [],
     "state": "review",
@@ -1116,7 +1064,7 @@
       "name": null
     },
     "reviewers": [
-      "wesley"
+      "weswigham"
     ],
     "notes": [],
     "state": "waiting",
@@ -1129,7 +1077,7 @@
       "name": "Nicola Dardanis"
     },
     "reviewers": [
-      "jake"
+      "jakebailey"
     ],
     "notes": [],
     "state": "waiting",
@@ -1142,7 +1090,7 @@
       "name": "Mark Fulton"
     },
     "reviewers": [
-      "gabriela"
+      "gabritto"
     ],
     "notes": [],
     "state": "waiting",
@@ -1155,26 +1103,12 @@
       "name": "Oleksandr T."
     },
     "reviewers": [
-      "wesley"
+      "weswigham"
     ],
     "notes": [],
     "state": "review",
     "label": "backlog",
     "id": "76973745"
-  },
-  "47401": {
-    "description": "TSServer Web Allow Opening in Semantic Mode",
-    "author": {
-      "name": "Orta Therox"
-    },
-    "reviewers": [
-      "nathan",
-      "daniel"
-    ],
-    "notes": [],
-    "state": "review",
-    "label": "uncommitted",
-    "id": "76973784"
   },
   "47461": {
     "description": "fix(25083): check for `ElementAccessExpression` when returning an expression from a `ComputedPropertyName`",
@@ -1182,25 +1116,12 @@
       "name": "Or Ouziel"
     },
     "reviewers": [
-      "nathan"
+      "sandersn"
     ],
     "notes": [],
     "state": "waiting",
     "label": "backlog",
     "id": "76974467"
-  },
-  "47482": {
-    "description": "Fix dropped watches",
-    "author": {
-      "name": "Marc Celani"
-    },
-    "reviewers": [
-      "andrew-branch"
-    ],
-    "notes": [],
-    "state": "waiting",
-    "label": "backlog",
-    "id": "76973035"
   },
   "47503": {
     "description": "Correct and simplify core typed array typings",
@@ -1208,7 +1129,7 @@
       "name": "Claudia Meadows"
     },
     "reviewers": [
-      "nathan"
+      "sandersn"
     ],
     "notes": [],
     "state": "review",
@@ -1221,7 +1142,7 @@
       "name": "Orta Therox"
     },
     "reviewers": [
-      "gabriela"
+      "gabritto"
     ],
     "notes": [],
     "state": "review",
@@ -1234,7 +1155,7 @@
       "name": "fireboltofdeath"
     },
     "reviewers": [
-      "ron"
+      "rbuckton"
     ],
     "notes": [],
     "state": "review",
@@ -1247,7 +1168,7 @@
       "name": "Mateusz Burzyński"
     },
     "reviewers": [
-      "ron"
+      "rbuckton"
     ],
     "notes": [],
     "state": "review",
@@ -1260,10 +1181,10 @@
       "name": "Oleksandr T."
     },
     "reviewers": [
-      "nathan"
+      "sandersn"
     ],
     "notes": [],
-    "state": "review",
+    "state": "waiting",
     "label": "backlog",
     "id": "78225159"
   },
@@ -1273,7 +1194,7 @@
       "name": "Oleksandr T."
     },
     "reviewers": [
-      "andrew-casey"
+      "amcasey"
     ],
     "notes": [],
     "state": "review",
@@ -1286,25 +1207,12 @@
       "name": "Ron Buckton"
     },
     "reviewers": [
-      "ron"
+      "rbuckton"
     ],
     "notes": [],
     "state": "merge",
     "label": "milestone",
     "id": "78220502"
-  },
-  "47925": {
-    "description": "Allow export map entries to remap back to input files for a program",
-    "author": {
-      "name": "Wesley Wigham"
-    },
-    "reviewers": [
-      "wesley"
-    ],
-    "notes": [],
-    "state": "waiting",
-    "label": "milestone",
-    "id": "78276589"
   },
   "47932": {
     "description": "Attach build metadata (commit) to the generated prerelease version",
@@ -1312,25 +1220,12 @@
       "name": "Mateusz Burzyński"
     },
     "reviewers": [
-      "daniel"
+      "DanielRosenwasser"
     ],
     "notes": [],
     "state": "review",
     "label": "housekeeping",
     "id": "78277161"
-  },
-  "47994": {
-    "description": "fix(7410): Support JSX Element as JSX Attribute Value",
-    "author": {
-      "name": "Oleksandr T."
-    },
-    "reviewers": [
-      "ryan"
-    ],
-    "notes": [],
-    "state": "merge",
-    "label": "backlog",
-    "id": "78555824"
   },
   "48030": {
     "description": "Use related spans for \"implement abstract class\" errors",
@@ -1338,7 +1233,7 @@
       "name": "Iván"
     },
     "reviewers": [
-      "gabriela"
+      "gabritto"
     ],
     "notes": [],
     "state": "review",
@@ -1351,7 +1246,7 @@
       "name": "Anders Hejlsberg"
     },
     "reviewers": [
-      "anders"
+      "ahejlsberg"
     ],
     "notes": [],
     "state": "review",
@@ -1364,7 +1259,7 @@
       "name": "Ron Buckton"
     },
     "reviewers": [
-      "ron"
+      "rbuckton"
     ],
     "notes": [],
     "state": "waiting",
@@ -1377,7 +1272,7 @@
       "name": "Wesley Wigham"
     },
     "reviewers": [
-      "wesley"
+      "weswigham"
     ],
     "notes": [],
     "state": "waiting",
@@ -1390,25 +1285,12 @@
       "name": "Jack Bates"
     },
     "reviewers": [
-      "nathan"
+      "sandersn"
     ],
     "notes": [],
     "state": "waiting",
     "label": "uncommitted",
     "id": "79102764"
-  },
-  "48161": {
-    "description": "Inline \"our own\" regular enums",
-    "author": {
-      "name": "Jack Bates"
-    },
-    "reviewers": [
-      "nathan"
-    ],
-    "notes": [],
-    "state": "waiting",
-    "label": "uncommitted",
-    "id": "79160347"
   },
   "48172": {
     "description": "`arguments` should not be allowed in class static block",
@@ -1416,7 +1298,7 @@
       "name": "Zzzen"
     },
     "reviewers": [
-      "ron"
+      "rbuckton"
     ],
     "notes": [],
     "state": "review",
@@ -1429,7 +1311,7 @@
       "name": "Alex Eagle"
     },
     "reviewers": [
-      "ryan"
+      "RyanCavanaugh"
     ],
     "notes": [],
     "state": "waiting",
@@ -1442,7 +1324,7 @@
       "name": "Jack Bates"
     },
     "reviewers": [
-      "ryan"
+      "RyanCavanaugh"
     ],
     "notes": [],
     "state": "review",
@@ -1455,7 +1337,7 @@
       "name": "Wesley Wigham"
     },
     "reviewers": [
-      "wesley"
+      "weswigham"
     ],
     "notes": [],
     "state": "review",
@@ -1468,7 +1350,7 @@
       "name": "Wesley Wigham"
     },
     "reviewers": [
-      "wesley"
+      "weswigham"
     ],
     "notes": [],
     "state": "review",
@@ -1481,7 +1363,7 @@
       "name": "Wesley Wigham"
     },
     "reviewers": [
-      "wesley"
+      "weswigham"
     ],
     "notes": [],
     "state": "review",
@@ -1494,7 +1376,7 @@
       "name": "Michael Arnaldi"
     },
     "reviewers": [
-      "wesley"
+      "weswigham"
     ],
     "notes": [],
     "state": "review",
@@ -1507,7 +1389,7 @@
       "name": "Minh Quy"
     },
     "reviewers": [
-      "ron"
+      "rbuckton"
     ],
     "notes": [],
     "state": "waiting",
@@ -1520,7 +1402,7 @@
       "name": "Nathan Shively-Sanders"
     },
     "reviewers": [
-      "nathan"
+      "sandersn"
     ],
     "notes": [],
     "state": "waiting",
@@ -1533,8 +1415,8 @@
       "name": "Minh Quy"
     },
     "reviewers": [
-      "nathan",
-      "gabriela"
+      "sandersn",
+      "gabritto"
     ],
     "notes": [],
     "state": "waiting",
@@ -1547,7 +1429,7 @@
       "name": "Huy"
     },
     "reviewers": [
-      "gabriela"
+      "gabritto"
     ],
     "notes": [],
     "state": "waiting",
@@ -1560,7 +1442,7 @@
       "name": "Wesley Wigham"
     },
     "reviewers": [
-      "wesley"
+      "weswigham"
     ],
     "notes": [],
     "state": "waiting",
@@ -1573,7 +1455,7 @@
       "name": "Jack Works"
     },
     "reviewers": [
-      "ryan"
+      "RyanCavanaugh"
     ],
     "notes": [],
     "state": "review",
@@ -1586,25 +1468,12 @@
       "name": "Andrew Casey"
     },
     "reviewers": [
-      "andrew-casey"
+      "amcasey"
     ],
     "notes": [],
     "state": "review",
     "label": "uncommitted",
     "id": "80964736"
-  },
-  "48640": {
-    "description": "allow PrivateIdentifier in QualifiedName",
-    "author": {
-      "name": "Oleksandr T."
-    },
-    "reviewers": [
-      "jake"
-    ],
-    "notes": [],
-    "state": "review",
-    "label": "uncommitted",
-    "id": "80964750"
   },
   "48648": {
     "description": "When calculating inferred infer type constraints, replace conditionals…",
@@ -1612,7 +1481,7 @@
       "name": "Wesley Wigham"
     },
     "reviewers": [
-      "wesley"
+      "weswigham"
     ],
     "notes": [],
     "state": "review",
@@ -1625,26 +1494,12 @@
       "name": "Oleksandr T."
     },
     "reviewers": [
-      "gabriela"
+      "gabritto"
     ],
     "notes": [],
     "state": "review",
     "label": "backlog",
     "id": "80964758"
-  },
-  "48668": {
-    "description": "Fixed an issue with contextual type for intersection properties",
-    "author": {
-      "name": "Mateusz Burzyński"
-    },
-    "reviewers": [
-      "wesley",
-      "anders"
-    ],
-    "notes": [],
-    "state": "merge",
-    "label": "backlog",
-    "id": "80964732"
   },
   "48669": {
     "description": "Move legacy decorators into separate transform",
@@ -1652,7 +1507,7 @@
       "name": "Ron Buckton"
     },
     "reviewers": [
-      "ron"
+      "rbuckton"
     ],
     "notes": [],
     "state": "review",
@@ -1665,38 +1520,12 @@
       "name": "Bryan Dela Cruz"
     },
     "reviewers": [
-      "sheetal"
+      "sheetalkamat"
     ],
     "notes": [],
     "state": "review",
     "label": "backlog",
     "id": "81219054"
-  },
-  "48754": {
-    "description": "Add missing source property to Intl formatRangeToParts methods",
-    "author": {
-      "name": "Devon Govett"
-    },
-    "reviewers": [
-      "nathan"
-    ],
-    "notes": [],
-    "state": "merge",
-    "label": "backlog",
-    "id": "81219061"
-  },
-  "48763": {
-    "description": "fix `typeof import(\"path\").Foo.#private`",
-    "author": {
-      "name": "magic-akari"
-    },
-    "reviewers": [
-      "jake"
-    ],
-    "notes": [],
-    "state": "waiting",
-    "label": "backlog",
-    "id": "81219052"
   },
   "48788": {
     "description": "Allow return type in conditional if body is followed by a colon",
@@ -1704,25 +1533,12 @@
       "name": "Jake Bailey"
     },
     "reviewers": [
-      "jake"
+      "jakebailey"
     ],
     "notes": [],
-    "state": "review",
+    "state": "merge",
     "label": "milestone",
     "id": "81484270"
-  },
-  "48813": {
-    "description": "fix(48673): Find all reference doesn't work on access modifier for constructor",
-    "author": {
-      "name": "Oleksandr T."
-    },
-    "reviewers": [
-      "nathan"
-    ],
-    "notes": [],
-    "state": "waiting",
-    "label": "backlog",
-    "id": "81484266"
   },
   "48816": {
     "description": "Support __proto__ in object literal (type-check only)",
@@ -1730,11 +1546,179 @@
       "name": "Jack Works"
     },
     "reviewers": [
-      "daniel"
+      "DanielRosenwasser"
     ],
     "notes": [],
     "state": "waiting",
     "label": "uncommitted",
     "id": "81484264"
+  },
+  "48823": {
+    "description": "Instantiate conditional types when providing conditional types",
+    "author": {
+      "name": "Mateusz Burzyński"
+    },
+    "reviewers": [
+      "weswigham"
+    ],
+    "notes": [],
+    "state": "review",
+    "label": "milestone",
+    "id": "81484262"
+  },
+  "48838": {
+    "description": "Instantiate conditional types within contextual type instantiation",
+    "author": {
+      "name": "Mateusz Burzyński"
+    },
+    "reviewers": [
+      "weswigham"
+    ],
+    "notes": [],
+    "state": "review",
+    "label": "backlog",
+    "id": "81484271"
+  },
+  "48865": {
+    "description": "When building projects in watch mode, only schedule projects that need build or need update to bundle",
+    "author": {
+      "name": "Sheetal Nandi"
+    },
+    "reviewers": [
+      "sheetalkamat"
+    ],
+    "notes": [],
+    "state": "review",
+    "label": "milestone",
+    "id": "81545937"
+  },
+  "48869": {
+    "description": "Add visible alias statements for non-visible binding patterns when emitting declaration",
+    "author": {
+      "name": "Mateusz Burzyński"
+    },
+    "reviewers": [
+      "jakebailey"
+    ],
+    "notes": [],
+    "state": "review",
+    "label": "backlog",
+    "id": "81685474"
+  },
+  "48889": {
+    "description": "Handle package.json watch in tsc, tsc --build and tsserver",
+    "author": {
+      "name": "Sheetal Nandi"
+    },
+    "reviewers": [
+      "sheetalkamat"
+    ],
+    "notes": [],
+    "state": "review",
+    "label": "uncommitted",
+    "id": "81685472"
+  },
+  "48919": {
+    "description": "fix(48918): add description of missing third parameter `value` of `Reflect.set`.",
+    "author": {
+      "name": "那里好脏不可以"
+    },
+    "reviewers": [
+      "andrewbranch"
+    ],
+    "notes": [],
+    "state": "waiting",
+    "label": "uncommitted",
+    "id": "81742585"
+  },
+  "48942": {
+    "description": "Cache file existence in synchronizeHostData",
+    "author": {
+      "name": "Andrew Casey"
+    },
+    "reviewers": [
+      "sheetalkamat",
+      "amcasey"
+    ],
+    "notes": [],
+    "state": "waiting",
+    "label": "uncommitted",
+    "id": "81867676"
+  },
+  "48945": {
+    "description": "Add `fractionalSecond` part type to DateTimeFormat().formatToParts",
+    "author": {
+      "name": null
+    },
+    "reviewers": [
+      "sandersn"
+    ],
+    "notes": [],
+    "state": "review",
+    "label": "milestone",
+    "id": "81867674"
+  },
+  "48958": {
+    "description": "packageJsonWatch, testing package.json and impliedNodeFormat use in transformer",
+    "author": {
+      "name": "Craig P Hicks"
+    },
+    "reviewers": [
+      "sheetalkamat"
+    ],
+    "notes": [],
+    "state": "review",
+    "label": "uncommitted",
+    "id": "81867672"
+  },
+  "48980": {
+    "description": "Use changeCompilerHostLikeToUseCache in synchronizeHostData",
+    "author": {
+      "name": "Andrew Casey"
+    },
+    "reviewers": [
+      "amcasey"
+    ],
+    "notes": [],
+    "state": "not-started",
+    "label": "uncommitted",
+    "id": "82009250"
+  },
+  "48997": {
+    "description": "Always recreate the file watcher when rename event occurs",
+    "author": {
+      "name": "Sheetal Nandi"
+    },
+    "reviewers": [
+      "sheetalkamat"
+    ],
+    "notes": [],
+    "state": "review",
+    "label": "uncommitted",
+    "id": "82009251"
+  },
+  "49004": {
+    "description": "Fix for \"Outlier case in Excess Property detection in Union (a case that is -more- strict than it should be)\" #44856",
+    "author": {
+      "name": "Craig P Hicks"
+    },
+    "reviewers": [],
+    "notes": [],
+    "state": "not-started",
+    "label": "uncommitted",
+    "id": "82009246"
+  },
+  "49008": {
+    "description": "fixes #48630 array binding pattern with only OmittedExpressions does not check RHS of for-of loop",
+    "author": {
+      "name": null
+    },
+    "reviewers": [
+      "andrewbranch"
+    ],
+    "notes": [],
+    "state": "review",
+    "label": "backlog",
+    "id": "82009248"
   }
 }

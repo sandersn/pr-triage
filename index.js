@@ -19,7 +19,7 @@ function updateFromGraphql(board, back) {
     }
   }
   if (back) {
-    const col2 = back.repository.project.columns.nodes[1]
+    const col2 = back.repository.project.columns.nodes[0]
     for (const cardp of col2.cards.nodes) {
       updateCard(cardp.content, cardp.url, noAssignees, pulls, "Waiting on reviewers")
     }
@@ -160,7 +160,7 @@ query
       authorization: "token " + process.env.GH_API_TOKEN
     }
   })
-  const [pulls, noAssignees] = updateFromGraphql(board)
+  const [pulls, noAssignees] = updateFromGraphql(board, boardback)
   if (noAssignees.length) {
     for (const e of noAssignees) {
       if (e.assignees.nodes.length === 1 && e.author.name === e.assignees.nodes[0].name)
