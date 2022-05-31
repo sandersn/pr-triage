@@ -1,69 +1,4 @@
 {
-  "28023": {
-    "description": " Improve error message when comparing non-comparable types",
-    "author": {
-      "name": "Tony Ho"
-    },
-    "reviewers": [
-      "RyanCavanaugh"
-    ],
-    "notes": [],
-    "state": "review",
-    "label": "backlog",
-    "id": "34157794"
-  },
-  "29468": {
-    "description": "Instantiate `this` in non-super property/element access expressions",
-    "author": {
-      "name": "Wesley Wigham"
-    },
-    "reviewers": [
-      "ahejlsberg"
-    ],
-    "notes": [],
-    "state": "review",
-    "label": "milestone",
-    "id": "33152355"
-  },
-  "30161": {
-    "description": "narrow by instanceof: infer type parameters from original type",
-    "author": {
-      "name": "Nathan Fenner"
-    },
-    "reviewers": [
-      "ahejlsberg"
-    ],
-    "notes": [],
-    "state": "review",
-    "label": "backlog",
-    "id": "34309408"
-  },
-  "31345": {
-    "description": "During inference break down unions on the target side before unions on the source side",
-    "author": {
-      "name": "Wesley Wigham"
-    },
-    "reviewers": [
-      "ahejlsberg"
-    ],
-    "notes": [],
-    "state": "review",
-    "label": "backlog",
-    "id": "34309964"
-  },
-  "31633": {
-    "description": "Allow inference to explore multiple instances of the same symbol",
-    "author": {
-      "name": "Wesley Wigham"
-    },
-    "reviewers": [
-      "ahejlsberg"
-    ],
-    "notes": [],
-    "state": "review",
-    "label": "milestone",
-    "id": "34034065"
-  },
   "33074": {
     "description": "Better typings for Promise.resolve(), like #31117",
     "author": {
@@ -73,61 +8,9 @@
       "rbuckton"
     ],
     "notes": [],
-    "state": "review",
+    "state": "waiting",
     "label": "uncommitted",
     "id": "34311572"
-  },
-  "33089": {
-    "description": "Only apply indexed access write simplifications to types that arise from mutation",
-    "author": {
-      "name": "Jack Williams"
-    },
-    "reviewers": [
-      "ahejlsberg"
-    ],
-    "notes": [],
-    "state": "review",
-    "label": "backlog",
-    "id": "34311904"
-  },
-  "33139": {
-    "description": "Higher order this parameter inference, like #31116",
-    "author": {
-      "name": "Jack Bates"
-    },
-    "reviewers": [
-      "ahejlsberg"
-    ],
-    "notes": [],
-    "state": "review",
-    "label": "backlog",
-    "id": "34321195"
-  },
-  "33673": {
-    "description": "Emit comments and newlines only once even with initializers added by the transformer",
-    "author": {
-      "name": "Matts966"
-    },
-    "reviewers": [
-      "rbuckton"
-    ],
-    "notes": [],
-    "state": "review",
-    "label": "backlog",
-    "id": "34324019"
-  },
-  "34518": {
-    "description": "Cache global tagged template objects",
-    "author": {
-      "name": "Daniel Rosenwasser"
-    },
-    "reviewers": [
-      "rbuckton"
-    ],
-    "notes": [],
-    "state": "review",
-    "label": "backlog",
-    "id": "34324992"
   },
   "35608": {
     "description": "feat(lib/es2015): Add typed overloads to `Reflect`",
@@ -151,48 +34,9 @@
       "weswigham"
     ],
     "notes": [],
-    "state": "review",
+    "state": "waiting",
     "label": "milestone",
     "id": "34098920"
-  },
-  "35885": {
-    "description": "Added quick-fix to rewrite index access as call to get/set method.",
-    "author": {
-      "name": "Titian Cernicova-Dragomir"
-    },
-    "reviewers": [
-      "amcasey"
-    ],
-    "notes": [],
-    "state": "review",
-    "label": "backlog",
-    "id": "34326108"
-  },
-  "36408": {
-    "description": "Remove usage of non-standardised `Reflect.decorate`.",
-    "author": {
-      "name": "Jake Champion"
-    },
-    "reviewers": [
-      "rbuckton"
-    ],
-    "notes": [],
-    "state": "review",
-    "label": "backlog",
-    "id": "32544008"
-  },
-  "36723": {
-    "description": "Allow specifying TReturn and TNext for AsyncIterableIterator and AsyncIterable",
-    "author": {
-      "name": "Brian Terlson"
-    },
-    "reviewers": [
-      "rbuckton"
-    ],
-    "notes": [],
-    "state": "review",
-    "label": "milestone",
-    "id": "33097288"
   },
   "37376": {
     "description": "Make importCall and importMeta utils public",
@@ -207,32 +51,6 @@
     "label": "uncommitted",
     "id": "35169985"
   },
-  "37615": {
-    "description": "Add 'T | PromiseLike<T>' inference from awaited types",
-    "author": {
-      "name": "Ron Buckton"
-    },
-    "reviewers": [
-      "ahejlsberg"
-    ],
-    "notes": [],
-    "state": "review",
-    "label": "milestone",
-    "id": "36353151"
-  },
-  "38574": {
-    "description": "Fix return type for JSON.stringify(any) -> string",
-    "author": {
-      "name": "Pieter Raubenheimer"
-    },
-    "reviewers": [
-      "RyanCavanaugh"
-    ],
-    "notes": [],
-    "state": "review",
-    "label": "backlog",
-    "id": "38542022"
-  },
   "38839": {
     "description": "Type guard by deep property",
     "author": {
@@ -245,72 +63,6 @@
     "state": "review",
     "label": "backlog",
     "id": "44909655"
-  },
-  "38878": {
-    "description": "Emit AND instead of ternary for optional chains in expression statements",
-    "author": {
-      "name": "Luke Bennett"
-    },
-    "reviewers": [
-      "rbuckton"
-    ],
-    "notes": [],
-    "state": "review",
-    "label": "backlog",
-    "id": "44909666"
-  },
-  "39016": {
-    "description": "Adjust TypeFact calculation for intersections to omit negative typeof facts when an equivalent positive fact is present",
-    "author": {
-      "name": "Wesley Wigham"
-    },
-    "reviewers": [
-      "RyanCavanaugh"
-    ],
-    "notes": [],
-    "state": "review",
-    "label": "milestone",
-    "id": "44909722"
-  },
-  "39188": {
-    "description": "Reduce rest parameter if not referenced",
-    "author": {
-      "name": "Wenlu Wang"
-    },
-    "reviewers": [
-      "rbuckton"
-    ],
-    "notes": [],
-    "state": "review",
-    "label": "uncommitted",
-    "id": "44909793"
-  },
-  "39217": {
-    "description": "Erase type parameters to a type which behaves as never in a union and unknown in an intersection or any otherwise",
-    "author": {
-      "name": "Wesley Wigham"
-    },
-    "reviewers": [
-      "weswigham",
-      "ahejlsberg"
-    ],
-    "notes": [],
-    "state": "review",
-    "label": "milestone",
-    "id": "44909800"
-  },
-  "39232": {
-    "description": "Use a single relation stack for nested dependent variance calculations",
-    "author": {
-      "name": "Wesley Wigham"
-    },
-    "reviewers": [
-      "ahejlsberg"
-    ],
-    "notes": [],
-    "state": "review",
-    "label": "milestone",
-    "id": "44694653"
   },
   "39390": {
     "description": "#24210: Updated handling of undefined values in Enum types",
@@ -338,19 +90,6 @@
     "label": "backlog",
     "id": "44694369"
   },
-  "39764": {
-    "description": "Hoist import declarations when transforming to commonjs/amd/umd module",
-    "author": {
-      "name": "uhyo"
-    },
-    "reviewers": [
-      "rbuckton"
-    ],
-    "notes": [],
-    "state": "review",
-    "label": "backlog",
-    "id": "44692767"
-  },
   "39808": {
     "description": "Fix 39749: specialize jsx error for missing properties.",
     "author": {
@@ -363,72 +102,6 @@
     "state": "review",
     "label": "milestone",
     "id": "44692748"
-  },
-  "40014": {
-    "description": "QuickInfo of element access expression could shows correct type when it is narrowed.",
-    "author": {
-      "name": "Song Gao"
-    },
-    "reviewers": [
-      "DanielRosenwasser"
-    ],
-    "notes": [],
-    "state": "review",
-    "label": "backlog",
-    "id": "44692648"
-  },
-  "40178": {
-    "description": "Pedantic safe any",
-    "author": {
-      "name": "Wenlu Wang"
-    },
-    "reviewers": [
-      "DanielRosenwasser"
-    ],
-    "notes": [],
-    "state": "review",
-    "label": "uncommitted",
-    "id": "44692389"
-  },
-  "40232": {
-    "description": "Better best effort type alias preservation",
-    "author": {
-      "name": "Wesley Wigham"
-    },
-    "reviewers": [
-      "ahejlsberg"
-    ],
-    "notes": [],
-    "state": "review",
-    "label": "milestone",
-    "id": "44692312"
-  },
-  "40358": {
-    "description": "Mark comparisons of union constituents involving markers as being unreliable sources of variance",
-    "author": {
-      "name": "Wesley Wigham"
-    },
-    "reviewers": [
-      "weswigham",
-      "ahejlsberg"
-    ],
-    "notes": [],
-    "state": "review",
-    "label": "uncommitted",
-    "id": "45267335"
-  },
-  "40708": {
-    "description": "Parse quoted names in qualified names",
-    "author": {
-      "name": "Wesley Wigham"
-    },
-    "reviewers": [
-      "weswigham"
-    ],
-    "notes": [],
-    "state": "review",
-    "label": "uncommitted",
-    "id": "46623206"
   },
   "41042": {
     "description": "Remove `undefined` from source type of renaming destructuring assignment with default",
@@ -456,85 +129,6 @@
     "label": "backlog",
     "id": "47735423"
   },
-  "41478": {
-    "description": "WIP: in narrowing with record types",
-    "author": {
-      "name": "Jack Williams"
-    },
-    "reviewers": [
-      "weswigham"
-    ],
-    "notes": [],
-    "state": "review",
-    "label": "uncommitted",
-    "id": "49933829"
-  },
-  "41510": {
-    "description": "Switches the bundlePackageName error message to be a suggestion, and not a compiler error",
-    "author": {
-      "name": "Orta Therox"
-    },
-    "reviewers": [
-      "weswigham"
-    ],
-    "notes": [],
-    "state": "review",
-    "label": "uncommitted",
-    "id": "49933820"
-  },
-  "41545": {
-    "description": "importHelpers: only import direct dependencies with ESM",
-    "author": {
-      "name": "Daniel Fischer"
-    },
-    "reviewers": [
-      "rbuckton"
-    ],
-    "notes": [],
-    "state": "review",
-    "label": "backlog",
-    "id": "49933789"
-  },
-  "41587": {
-    "description": "Support 'typeof class' types",
-    "author": {
-      "name": "Anders Hejlsberg"
-    },
-    "reviewers": [
-      "DanielRosenwasser",
-      "ahejlsberg"
-    ],
-    "notes": [],
-    "state": "review",
-    "label": "uncommitted",
-    "id": "50344185"
-  },
-  "41948": {
-    "description": "Display correct message for iterrable string for missing downlevel iterator flag",
-    "author": {
-      "name": "Amin Pakseresht"
-    },
-    "reviewers": [
-      "gabritto"
-    ],
-    "notes": [],
-    "state": "review",
-    "label": "backlog",
-    "id": "51992667"
-  },
-  "41983": {
-    "description": "Fix references to generated factory imports in system+react-jsx[dev] emit",
-    "author": {
-      "name": "Wesley Wigham"
-    },
-    "reviewers": [
-      "weswigham"
-    ],
-    "notes": [],
-    "state": "review",
-    "label": "milestone",
-    "id": "51992658"
-  },
   "41994": {
     "description": "Allow accessors to override non-class or abstract properties ",
     "author": {
@@ -561,84 +155,6 @@
     "label": "backlog",
     "id": "52471056"
   },
-  "42111": {
-    "description": "Constraint 'SyntaxKind' to 'TokenSyntaxKind' for generic \"TKind\" in Token<TKind>",
-    "author": {
-      "name": "Song Gao"
-    },
-    "reviewers": [
-      "rbuckton"
-    ],
-    "notes": [],
-    "state": "review",
-    "label": "uncommitted",
-    "id": "52471054"
-  },
-  "42211": {
-    "description": "Fix leaked alias symbol independent type params in printback",
-    "author": {
-      "name": "Wesley Wigham"
-    },
-    "reviewers": [
-      "weswigham"
-    ],
-    "notes": [],
-    "state": "review",
-    "label": "milestone",
-    "id": "53157414"
-  },
-  "42244": {
-    "description": "If a silent never survives through inference, instantiate it away into...",
-    "author": {
-      "name": "Wesley Wigham"
-    },
-    "reviewers": [
-      "weswigham"
-    ],
-    "notes": [],
-    "state": "review",
-    "label": "milestone",
-    "id": "53157403"
-  },
-  "42414": {
-    "description": "Avoid using variance results when relating `any` type arguments for positions originating in intersections",
-    "author": {
-      "name": "Wesley Wigham"
-    },
-    "reviewers": [
-      "weswigham"
-    ],
-    "notes": [],
-    "state": "review",
-    "label": "milestone",
-    "id": "54494676"
-  },
-  "42444": {
-    "description": "Allows detection of an overloaded function call by CallHierarchy.getOutgoingCalls",
-    "author": {
-      "name": "Pavel Grafkin"
-    },
-    "reviewers": [
-      "rbuckton"
-    ],
-    "notes": [],
-    "state": "review",
-    "label": "backlog",
-    "id": "54494653"
-  },
-  "42524": {
-    "description": "Use homomorphic templated type for Omit",
-    "author": {
-      "name": "Wesley Wigham"
-    },
-    "reviewers": [
-      "weswigham"
-    ],
-    "notes": [],
-    "state": "review",
-    "label": "milestone",
-    "id": "54494537"
-  },
   "42566": {
     "description": "Fix definition of `Array.prototype[Symbol.unscopables]`",
     "author": {
@@ -651,59 +167,6 @@
     "state": "review",
     "label": "uncommitted",
     "id": "54494442"
-  },
-  "42634": {
-    "description": "Don’t resolve an index-less module specifier if another file has the same name as the directory",
-    "author": {
-      "name": "Andrew Branch"
-    },
-    "reviewers": [
-      "andrewbranch"
-    ],
-    "notes": [],
-    "state": "review",
-    "label": "experiment",
-    "id": "55062296"
-  },
-  "42658": {
-    "description": "Ensure library name mangling takes place during module resolution in typeRoots",
-    "author": {
-      "name": "Will Frew"
-    },
-    "reviewers": [
-      "sheetalkamat"
-    ],
-    "notes": [],
-    "state": "review",
-    "label": "uncommitted",
-    "id": "55062281"
-  },
-  "42726": {
-    "description": "Add an early bail when structurally comparing similar types",
-    "author": {
-      "name": "Wesley Wigham"
-    },
-    "reviewers": [
-      "weswigham",
-      "ahejlsberg"
-    ],
-    "notes": [],
-    "state": "review",
-    "label": "milestone",
-    "id": "55232442"
-  },
-  "42772": {
-    "description": "When an intersection is going to produce an expression too complex error...",
-    "author": {
-      "name": "Wesley Wigham"
-    },
-    "reviewers": [
-      "weswigham"
-    ],
-    "notes": [],
-    "state": "review",
-    "label": "milestone",
-    "id": "56014989"
   },
   "42960": {
     "description": "Make initial incremental/watch builds as fast normal builds",
@@ -1197,7 +660,7 @@
       "amcasey"
     ],
     "notes": [],
-    "state": "review",
+    "state": "waiting",
     "label": "backlog",
     "id": "78610793"
   },
@@ -1423,19 +886,6 @@
     "label": "uncommitted",
     "id": "80964740"
   },
-  "48529": {
-    "description": "fix(47562): Add option to suppress type hint if variable name matches type name",
-    "author": {
-      "name": "Huy"
-    },
-    "reviewers": [
-      "gabritto"
-    ],
-    "notes": [],
-    "state": "waiting",
-    "label": "backlog",
-    "id": "80964748"
-  },
   "48563": {
     "description": "Allow exports map entries to point at `.ts` source files",
     "author": {
@@ -1461,19 +911,6 @@
     "state": "review",
     "label": "backlog",
     "id": "80964763"
-  },
-  "48619": {
-    "description": "Clean up FAR aggregation",
-    "author": {
-      "name": "Andrew Casey"
-    },
-    "reviewers": [
-      "amcasey"
-    ],
-    "notes": [],
-    "state": "review",
-    "label": "uncommitted",
-    "id": "80964736"
   },
   "48648": {
     "description": "When calculating inferred infer type constraints, replace conditionals…",
@@ -1579,19 +1016,6 @@
     "label": "backlog",
     "id": "81484271"
   },
-  "48865": {
-    "description": "When building projects in watch mode, only schedule projects that need build or need update to bundle",
-    "author": {
-      "name": "Sheetal Nandi"
-    },
-    "reviewers": [
-      "sheetalkamat"
-    ],
-    "notes": [],
-    "state": "review",
-    "label": "milestone",
-    "id": "81545937"
-  },
   "48869": {
     "description": "Add visible alias statements for non-visible binding patterns when emitting declaration",
     "author": {
@@ -1631,20 +1055,6 @@
     "label": "uncommitted",
     "id": "81742585"
   },
-  "48942": {
-    "description": "Cache file existence in synchronizeHostData",
-    "author": {
-      "name": "Andrew Casey"
-    },
-    "reviewers": [
-      "sheetalkamat",
-      "amcasey"
-    ],
-    "notes": [],
-    "state": "waiting",
-    "label": "uncommitted",
-    "id": "81867676"
-  },
   "48945": {
     "description": "Add `fractionalSecond` part type to DateTimeFormat().formatToParts",
     "author": {
@@ -1671,19 +1081,6 @@
     "label": "uncommitted",
     "id": "81867672"
   },
-  "48980": {
-    "description": "Use changeCompilerHostLikeToUseCache in synchronizeHostData",
-    "author": {
-      "name": "Andrew Casey"
-    },
-    "reviewers": [
-      "amcasey"
-    ],
-    "notes": [],
-    "state": "not-started",
-    "label": "uncommitted",
-    "id": "82009250"
-  },
   "48997": {
     "description": "Always recreate the file watcher when rename event occurs",
     "author": {
@@ -1702,10 +1099,12 @@
     "author": {
       "name": "Craig P Hicks"
     },
-    "reviewers": [],
+    "reviewers": [
+      "sandersn"
+    ],
     "notes": [],
-    "state": "not-started",
-    "label": "uncommitted",
+    "state": "review",
+    "label": "backlog",
     "id": "82009246"
   },
   "49008": {
@@ -1717,8 +1116,165 @@
       "andrewbranch"
     ],
     "notes": [],
-    "state": "review",
+    "state": "waiting",
     "label": "backlog",
     "id": "82009248"
+  },
+  "49023": {
+    "description": "Fixed an issue with generic naked T not being allowed as async generator's return",
+    "author": {
+      "name": "Mateusz Burzyński"
+    },
+    "reviewers": [
+      "rbuckton"
+    ],
+    "notes": [],
+    "state": "review",
+    "label": "milestone",
+    "id": "82102707"
+  },
+  "49027": {
+    "description": "Automatically enable `debugMode` when recording with Replay",
+    "author": {
+      "name": "Mateusz Burzyński"
+    },
+    "reviewers": [
+      "rbuckton"
+    ],
+    "notes": [],
+    "state": "review",
+    "label": "housekeeping",
+    "id": "82102709"
+  },
+  "49049": {
+    "description": "Fixed an issue with quickInfo crashing on a function property returned from generic function",
+    "author": {
+      "name": "Mateusz Burzyński"
+    },
+    "reviewers": [
+      "sandersn"
+    ],
+    "notes": [],
+    "state": "waiting",
+    "label": "backlog",
+    "id": "82102705"
+  },
+  "49089": {
+    "description": "Merge 'decorators' into 'modifiers' on various nodes",
+    "author": {
+      "name": "Ron Buckton"
+    },
+    "reviewers": [
+      "rbuckton"
+    ],
+    "notes": [],
+    "state": "waiting",
+    "label": "uncommitted",
+    "id": "82313845"
+  },
+  "49091": {
+    "description": "In typeof x === object, type parameters extending unknown narrow like unknown itself",
+    "author": {
+      "name": "Wesley Wigham"
+    },
+    "reviewers": [
+      "DanielRosenwasser",
+      "weswigham"
+    ],
+    "notes": [],
+    "state": "waiting",
+    "label": "uncommitted",
+    "id": "82313838"
+  },
+  "49100": {
+    "description": "Optimize the transformed output of `JSXSpreadAttribute`s containing an `ObjectLiteralExpression`",
+    "author": {
+      "name": "Mateusz Burzyński"
+    },
+    "reviewers": [
+      "weswigham"
+    ],
+    "notes": [],
+    "state": "review",
+    "label": "uncommitted",
+    "id": "82313843"
+  },
+  "49107": {
+    "description": "Improve computed base constraint for Index type on generic IndexedAccess",
+    "author": {
+      "name": "Mateusz Burzyński"
+    },
+    "reviewers": [
+      "weswigham"
+    ],
+    "notes": [],
+    "state": "review",
+    "label": "uncommitted",
+    "id": "82313836"
+  },
+  "49119": {
+    "description": "Improve intersection reduction and CFA for truthy, equality, and typeof checks",
+    "author": {
+      "name": "Anders Hejlsberg"
+    },
+    "reviewers": [
+      "ahejlsberg"
+    ],
+    "notes": [],
+    "state": "merge",
+    "label": "milestone",
+    "id": "82313835"
+  },
+  "49146": {
+    "description": "Avoid binding readonly properties as special properties on a function symbol",
+    "author": {
+      "name": "Mateusz Burzyński"
+    },
+    "reviewers": [
+      "rbuckton"
+    ],
+    "notes": [],
+    "state": "review",
+    "label": "backlog",
+    "id": "82424375"
+  },
+  "49164": {
+    "description": "Add check for reference-compared literals to JS files",
+    "author": {
+      "name": "Jack Works"
+    },
+    "reviewers": [
+      "sandersn"
+    ],
+    "notes": [],
+    "state": "review",
+    "label": "uncommitted",
+    "id": "82467767"
+  },
+  "49165": {
+    "description": "fix(49151): formatter wrongly indent '>' after type parameters/arguments",
+    "author": {
+      "name": null
+    },
+    "reviewers": [
+      "gabritto"
+    ],
+    "notes": [],
+    "state": "review",
+    "label": "uncommitted",
+    "id": "82467766"
+  },
+  "49168": {
+    "description": "fix(30003): formatter deletes comment after trailing comma (again)",
+    "author": {
+      "name": null
+    },
+    "reviewers": [
+      "andrewbranch"
+    ],
+    "notes": [],
+    "state": "review",
+    "label": "backlog",
+    "id": "82467765"
   }
 }
