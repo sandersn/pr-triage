@@ -23,7 +23,6 @@ function sortt(m) {
 console.log("Name | Need to review | Need to be reviewed")
 console.log("-----|-------------|---")
 for (const [alias,count] of reviewers) {
-  // TODO: print real name of reviewer here
   console.log(team[alias], "|", count, "|", opens.get(alias) ?? 0)
 }
 console.log("Name | Need to get review")

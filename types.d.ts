@@ -1,9 +1,7 @@
-type Reviewer = "ahejlsberg" | "andrewbranch" | "amcasey" | "minestarks" | "orta" | "rbuckton" | "RyanCavanaugh" | "sheetalkamat" | "weswigham" | "sandersn" | "DanielRosenwasser" | "sokra" | "gabritto" | "jakebailey" | "armanio123" | "typescript-bot"
-
 type Pulls = { [s: string]: Pull }
 type Pull = {
   author: string
-  reviewers: Reviewer[]
+  reviewers: string[]
   /** 1-line description */
   description: string
   /**
@@ -16,7 +14,7 @@ type Pull = {
   id: string
   lastCommit: string | undefined
   lastComment: string | undefined
-  lastCommenter: Reviewer | undefined
+  lastCommenter: string | undefined
 }
 
 type Card = {

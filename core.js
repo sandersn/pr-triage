@@ -1,4 +1,4 @@
-/** @type {Record<Reviewer, string>} */
+/** @type {Record<string, string>} */
 export const team = {
   "ahejlsberg": "Anders Hejlsberg",
   "andrewbranch": "Andrew Branch",
