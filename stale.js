@@ -1,5 +1,5 @@
-const fs = require('fs')
-const { team } = require('./core')
+import * as fs from 'fs'
+import { team } from './core.js'
 /** @type {Record<string, Pull>} */
 const prs = JSON.parse(fs.readFileSync('output.json', 'utf8'))
 const staleWaiting = new Map() // two weeks of inactivity, maybe a month

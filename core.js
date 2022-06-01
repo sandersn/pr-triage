@@ -1,5 +1,5 @@
 /** @type {Record<Reviewer, string>} */
-const team = {
+export const team = {
   "ahejlsberg": "Anders Hejlsberg",
   "andrewbranch": "Andrew Branch",
   "amcasey": "Andrew Casey",
@@ -22,10 +22,9 @@ const team = {
  * @param {string | undefined} d2
  * @return {string | undefined}
  */
-function later(d1, d2) {
+export function later(d1, d2) {
   return d1 === undefined ? d2
     : d2 === undefined ? d1
     : new Date(d1) > new Date(d2) ? d1
     : d2
 }
-module.exports = { team, later }

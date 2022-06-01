@@ -1,5 +1,5 @@
-const fs = require('fs')
-const { team } = require('./core')
+import * as fs from 'fs'
+import { team } from './core.js'
 /** @type {Record<string, Pull>} */
 const prs = JSON.parse(fs.readFileSync('output.json', 'utf8'))
 const reviewers = new Map()
@@ -7,15 +7,14 @@ const authors = new Map()
 const opens = new Map()
 for (const pr of Object.values(prs)) {
   if (pr.state === 'done') continue
-  const tsMember =  pr.author in team ? pr.author : undefined
-  if (tsMember && pr.reviewers.some(r => r === tsMember)) {
-    opens.set(tsMember, (opens.get(tsMember) ?? 0) + 1)
+  if (pr.author in team && pr.reviewers.some(r => r === pr.author)) {
+    opens.set(pr.author, (opens.get(pr.author) ?? 0) + 1)
   }
   if (pr.state === "review")
     for (const r of pr.reviewers)
-      if (r !== tsMember)
+      if (r !== pr.author)
         reviewers.set(r, (reviewers.get(r) ?? 0) + 1)
-  if (!tsMember)
+  if (!(pr.author in team))
     authors.set(pr.author, (authors.get(pr.author) ?? 0) + 1)
 }
 function sortt(m) {

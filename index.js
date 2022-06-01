@@ -1,7 +1,7 @@
-const fs = require('fs')
-const { later } = require('./core')
-const { assert } = require('console')
-const { graphql } = require('@octokit/graphql')
+import * as fs from 'fs'
+import { later } from './core.js'
+import { assert } from 'console'
+import { graphql } from '@octokit/graphql'
 
 /**
  * convert graphql output to denormalised output
