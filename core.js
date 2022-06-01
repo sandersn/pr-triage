@@ -1,29 +1,31 @@
-const { assert } = require('console')
+/** @type {Record<Reviewer, string>} */
 const team = {
-  "Anders Hejlsberg": "ahejlsberg",
-  "Andrew Branch": "andrewbranch",
-  "Andrew Casey": "amcasey",
-  "Mine Starks": "minestarks",
-  "Orta Therox": "orta", // TODO: github thinks 47401 is assigned to orta even though it isn't
-  "Ron Buckton": "rbuckton",
-  "Ryan Cavanaugh": "RyanCavanaugh",
-  "Sheetal Nandi": "sheetalkamat",
-  "Wesley Wigham": "weswigham",
-  "Nathan Shively-Sanders": "sandersn",
-  "Daniel Rosenwasser": "DanielRosenwasser",
-  "Tobias Koppers": "sokra", // TODO: Figure out why github thinks 42960 is assigned to tobias
-  "Gabriela Araujo Britto": "gabritto",
-  "Jake Bailey": "jakebailey",
-  "Armando Aguirre": "armanio123",
+  "ahejlsberg": "Anders Hejlsberg",
+  "andrewbranch": "Andrew Branch",
+  "amcasey": "Andrew Casey",
+  "minestarks": "Mine Starks",
+  "orta": "Orta Therox",
+  "rbuckton": "Ron Buckton",
+  "RyanCavanaugh": "Ryan Cavanaugh",
+  "sheetalkamat": "Sheetal Nandi",
+  "weswigham": "Wesley Wigham",
+  "sandersn": "Nathan Shively-Sanders",
+  "DanielRosenwasser": "Daniel Rosenwasser",
+  "sokra": "Tobias Koppers",
+  "gabritto": "Gabriela Araujo Britto",
+  "jakebailey": "Jake Bailey",
+  "armanio123": "Armando Aguirre",
+  "typescript-bot": "Typescript Bot",
 }
 /**
- * @param {{ name: string }} assignee
- * @return {Pull["reviewers"][number]}
+ * @param {string | undefined} d1
+ * @param {string | undefined} d2
+ * @return {string | undefined}
  */
-function fromAssignee(assignee, assertMissing = true, debug = undefined) {
-  const r = team[assignee.name]
-  if (assertMissing)
-    assert(r, "Reviewer not found for assignee named:", assignee.name, debug)
-  return r
+function later(d1, d2) {
+  return d1 === undefined ? d2
+    : d2 === undefined ? d1
+    : new Date(d1) > new Date(d2) ? d1
+    : d2
 }
-module.exports = { team, fromAssignee }
+module.exports = { team, later }

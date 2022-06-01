@@ -1,5 +1,5 @@
 const fs = require('fs')
-const { fromAssignee } = require('./core')
+const { later } = require('./core')
 const { assert } = require('console')
 const { graphql } = require('@octokit/graphql')
 
@@ -12,6 +12,7 @@ const { graphql } = require('@octokit/graphql')
 function updateFromGraphql(board, back) {
   /** @type {Pulls} */
   const pulls = {}
+  /** @type {Card[]} */
   const noAssignees = []
   for (const column of board.repository.project.columns.nodes) {
     for (const cardp of column.cards.nodes) {
@@ -35,10 +36,13 @@ function updateFromGraphql(board, back) {
  * @param {string} name
  */
 function updateCard(card, url, noAssignees, pulls, name) {
-  const reviewers = card.assignees.nodes.map(x => fromAssignee(x, /*assertMissing*/ fromColumn(name) !== 'done'))
+  const lastComment = card.comments.nodes[0]?.publishedAt
+  const lastCommenter = card.comments.nodes[0]?.author.login
+  const lastCommit = card.commits.nodes[0].commit.committedDate
+  const reviewers = card.assignees.nodes.map(x => x.login)
   assert(!reviewers.includes(undefined), "Reviewer not found for", card.number, card.assignees, reviewers)
 
-  if (card.assignees.nodes.length !== 1 && reviewers.filter(r => r !== fromAssignee(card.author, /*assertMissing*/ false, /*debug*/ card.number)).length < 1 && fromColumn(name) !== 'not-started') {
+  if (card.assignees.nodes.length !== 1 && reviewers.filter(r => r !== card.author.login).length < 1 && fromColumn(name) !== 'not-started') {
     console.log("Should only have 1 assignee", card.number, 'but has', reviewers.length, ":", reviewers.join(", "), "::", JSON.stringify(card.assignees.nodes))
     noAssignees.push(card)
   }
@@ -51,18 +55,24 @@ function updateCard(card, url, noAssignees, pulls, name) {
     existing.state = fromColumn(name)
     existing.label = fromLabels(card.labels.nodes)
     if (!existing.author)
-      existing.author = card.author
+      existing.author = card.author.login
     existing.id = fromUrl(url)
+    existing.lastComment = later(lastComment, existing.lastComment)
+    existing.lastCommit = later(lastCommit, existing.lastCommit)
+    existing.lastCommenter = lastCommenter
   }
   else {
     pulls[card.number] = {
       description: card.title,
-      author: card.author,
+      author: card.author.login,
       reviewers,
       notes: [],
       state: fromColumn(name),
       label: fromLabels(card.labels.nodes),
-      id: fromUrl(url)
+      id: fromUrl(url),
+      lastCommit,
+      lastComment,
+      lastCommenter,
     }
   }
 }
@@ -91,13 +101,26 @@ query
                   title
                   assignees(first: 5) {
                     nodes {
-                      name
+                      login
+                    }
+                  }
+                  commits(last: 1) {
+                    nodes {
+                      commit {
+                        committedDate
+                      }
+                    }
+                  }
+                  comments(last: 1) {
+                    nodes {
+                      publishedAt
+                      author {
+                        login
+                      }
                     }
                   }
                   author {
-                    ... on User {
-                      name
-                    }
+                    login
                   }
                 }
               }
@@ -115,52 +138,63 @@ query
       authorization: "token " + process.env.GH_API_TOKEN
     }
   })
-  /** @type {Board} */
-  const boardback = await graphql(`
-query
-{
-  repository(name: "TypeScript", owner: "microsoft") {
-    project(number: 13) {
-      columns(first: 4) {
-        nodes {
-          cards(last: 100) {
-            nodes {
-              content {
-                ... on PullRequest {
-                  number
-                  labels(first: 10) {
-                    nodes {
-                      name
-                    }
-                  }
-                  title
-                  assignees(first: 5) {
-                    nodes {
-                      name
-                    }
-                  }
-                  author {
-                    ... on User {
-                      name
-                    }
-                  }
-                }
-              }
-              url
-            }
-          }
-          name
-        }
-      }
-    }
-  }
-}
-`, {
-    headers: {
-      authorization: "token " + process.env.GH_API_TOKEN
-    }
-  })
-  const [pulls, noAssignees] = updateFromGraphql(board, boardback)
+// /** @type {Board} */
+//   const boardback = await graphql(`
+// query
+// {
+//   repository(name: "TypeScript", owner: "microsoft") {
+//     project(number: 13) {
+//       columns(first: 4) {
+//         nodes {
+//           cards(last: 100) {
+//             nodes {
+//                ... on PullRequest {
+//                  number
+//                  labels(first: 10) {
+//                    nodes {
+//                      name
+//                    }
+//                  }
+//                  title
+//                  assignees(first: 5) {
+//                    nodes {
+//                      login
+//                    }
+//                  }
+//                  commits(last: 1) {
+//                    nodes {
+//                      commit {
+//                        committedDate
+//                      }
+//                    }
+//                  }
+//                  comments(last: 1) {
+//                    nodes {
+//                      publishedAt
+//                      author {
+//                        login
+//                      }
+//                    }
+//                  }
+//                  author {
+//                    login
+//                  }
+//                }
+//              }
+//              url
+//           }
+//           name
+//         }
+//       }
+//     }
+//   }
+// }
+// `, {
+//     headers: {
+//       authorization: "token " + process.env.GH_API_TOKEN
+//     }
+//   })
+  const [pulls, noAssignees] = updateFromGraphql(board) //, boardback)
   if (noAssignees.length) {
     for (const e of noAssignees) {
       if (e.assignees.nodes.length === 1 && e.author.name === e.assignees.nodes[0].name)

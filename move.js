@@ -1,6 +1,5 @@
 const { Octokit } = require('@octokit/rest')
 const fs = require('fs')
-const { fromAssignee } = require('./core')
 
 async function main() {
   if (process.argv.length < 3) {
@@ -30,7 +29,7 @@ async function main() {
       assignees: [targets[0]],
     })
   }
-  const reviewers = targets.filter(r => r !== fromAssignee(pulls[pull].author, /*assertMissing*/ false))
+  const reviewers = targets.filter(r => r !== pulls[pull].author)
   if (reviewers.length) {
     gh.pulls.requestReviewers({
       owner: "microsoft",
