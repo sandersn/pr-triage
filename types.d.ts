@@ -15,6 +15,8 @@ type Pull = {
   lastCommit: string | undefined
   lastComment: string | undefined
   lastCommenter: string | undefined
+  lastReview: string | undefined
+  lastReviewer: string | undefined
 }
 
 type Card = {
@@ -31,6 +33,9 @@ type Card = {
     nodes: Array<{ commit: { committedDate: string } }>
   }
   comments: {
+    nodes: Array<{ publishedAt: string, author: { login: string } }>
+  }
+  reviews: {
     nodes: Array<{ publishedAt: string, author: { login: string } }>
   }
 }

@@ -29,7 +29,7 @@ for (const [n,w] of staleReview) log(n,w)
  */
 function log(number, pull) {
   console.log(number, 'by', pull.author, ':', pull.description)
-  console.log('Last commit:', ago(pull.lastCommit), `/ Last comment(${pull.lastCommenter}):`, ago(pull.lastComment))
+  console.log('Last commit:', ago(pull.lastCommit), `/ Last comment(${pull.lastCommenter}):`, ago(pull.lastComment), `/ Last review(${pull.lastReviewer}):`, ago(pull.lastReview))
   console.log()
 }
 /** @param {string} d */

@@ -38,6 +38,8 @@ function updateFromGraphql(board, back) {
 function updateCard(card, url, noAssignees, pulls, name) {
   const lastComment = card.comments.nodes[0]?.publishedAt
   const lastCommenter = card.comments.nodes[0]?.author.login
+  const lastReview = card.reviews.nodes[0]?.publishedAt
+  const lastReviewer = card.reviews.nodes[0]?.author.login
   const lastCommit = card.commits.nodes[0].commit.committedDate
   const reviewers = card.assignees.nodes.map(x => x.login)
   assert(!reviewers.includes(undefined), "Reviewer not found for", card.number, card.assignees, reviewers)
@@ -60,6 +62,8 @@ function updateCard(card, url, noAssignees, pulls, name) {
     existing.lastComment = later(lastComment, existing.lastComment)
     existing.lastCommit = later(lastCommit, existing.lastCommit)
     existing.lastCommenter = lastCommenter
+    existing.lastReview = lastReview
+    existing.lastReviewer = lastReviewer
   }
   else {
     pulls[card.number] = {
@@ -73,6 +77,8 @@ function updateCard(card, url, noAssignees, pulls, name) {
       lastCommit,
       lastComment,
       lastCommenter,
+      lastReview,
+      lastReviewer,
     }
   }
 }
@@ -108,6 +114,14 @@ query
                     nodes {
                       commit {
                         committedDate
+                      }
+                    }
+                  }
+                  reviews(last: 1) {
+                    nodes {
+                      publishedAt
+                      author {
+                        login
                       }
                     }
                   }
