@@ -1,5 +1,5 @@
 import * as fs from 'fs'
-import { team } from './core.js'
+import { team, sortv } from './core.js'
 /** @type {Record<string, Pull>} */
 const prs = JSON.parse(fs.readFileSync('output.json', 'utf8'))
 const reviewers = new Map()
@@ -17,9 +17,6 @@ for (const pr of Object.values(prs)) {
   if (!(pr.author in team))
     authors.set(pr.author, (authors.get(pr.author) ?? 0) + 1)
 }
-function sortt(m) {
-  return Array.from(m.entries()).sort(([k1,v1], [k2,v2]) => v1 > v2 ? -1 : 1)
-}
 console.log("Name | Need to review | Need to be reviewed")
 console.log("-----|-------------|---")
 for (const [alias,count] of reviewers) {
@@ -27,6 +24,6 @@ for (const [alias,count] of reviewers) {
 }
 console.log("Name | Need to get review")
 console.log("-----|----")
-for (const [name, count] of sortt(authors).slice(0,10)) {
+for (const [name, count] of sortv(authors).slice(0,10)) {
   console.log(name, "|", count, "|")
 }

@@ -1,5 +1,5 @@
-const { Octokit } = require('@octokit/rest')
-const fs = require('fs')
+import { Octokit } from '@octokit/rest'
+import * as fs from 'fs'
 
 // after running this, call `node move.js NNNNN assignee reviewer1`
 //    manual for now, could be automated to move accepted cards, but I'm not sure how to assign them automatically

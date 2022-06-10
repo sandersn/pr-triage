@@ -1,5 +1,5 @@
-const { Octokit } = require('@octokit/rest')
-const fs = require('fs')
+import { Octokit } from '@octokit/rest'
+import * as fs from 'fs'
 
 async function main() {
   if (process.argv.length < 3) {

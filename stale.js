@@ -1,14 +1,15 @@
 import * as fs from 'fs'
-import { team } from './core.js'
+import { team, sortvf, later } from './core.js'
 /** @type {Record<string, Pull>} */
 const prs = JSON.parse(fs.readFileSync('output.json', 'utf8'))
+/** @type {Map<string, Pull>} */
 const staleWaiting = new Map() // two weeks of inactivity, maybe a month
 const staleReview = new Map() // one year of inactivity
 const yearAgo = new Date(Date.now() - 365 * 86400 * 1000)
 const fortnightAgo = new Date(Date.now() - 14 * 86400 * 1000)
 for (const [number, pr] of Object.entries(prs)) {
   if (pr.state === 'waiting' && pr.lastCommit &&
-    (pr.author in team && new Date(pr.lastCommit) < yearAgo || new Date(pr.lastCommit) < fortnightAgo)) {
+    (pr.author in team ? new Date(pr.lastCommit) < yearAgo : new Date(pr.lastCommit) < fortnightAgo)) {
     staleWaiting.set(number, pr)
   }
   else if (pr.state === 'review' && pr.lastComment && new Date(pr.lastComment) < yearAgo) {
@@ -19,7 +20,7 @@ for (const [number, pr] of Object.entries(prs)) {
 // waiting on reviewer: things with a team member comment that is OLDER than the last commit
 // (or maybe *any* comment)
 console.log(`### Stale Waiting on Author (${staleWaiting.size}) ###`)
-for (const [n,w] of staleWaiting) log(n,w)
+for (const [n,w] of sortvf(staleWaiting, (w1, w2) => new Date(w2.lastCommit) > new Date(w1.lastCommit))) log(n,w)
 console.log(`### Stale Waiting on Reviewer (${staleReview.size}) ###`)
 for (const [n,w] of staleReview) log(n,w)
 
@@ -29,7 +30,8 @@ for (const [n,w] of staleReview) log(n,w)
  */
 function log(number, pull) {
   console.log(number, 'by', pull.author, ':', pull.description)
-  console.log('Last commit:', ago(pull.lastCommit), `/ Last comment(${pull.lastCommenter}):`, ago(pull.lastComment), `/ Last review(${pull.lastReviewer}):`, ago(pull.lastReview))
+  const lastActivity = later(pull.lastComment, pull.lastReview)
+  console.log(`Last commit: ${ago(pull.lastCommit)}(${ago(lastActivity)}) | Last comment(${pull.lastCommenter}):`, ago(pull.lastComment), `| Last review(${pull.lastReviewer}):`, ago(pull.lastReview))
   console.log()
 }
 /** @param {string} d */
