@@ -22,6 +22,7 @@ console.log("-----|-------------|---")
 for (const [alias,count] of reviewers) {
   console.log(team[alias], "|", count, "|", opens.get(alias) ?? 0)
 }
+console.log()
 console.log("Name | Need to get review")
 console.log("-----|----")
 for (const [name, count] of sortv(authors).slice(0,10)) {
