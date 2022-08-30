@@ -16,6 +16,7 @@ export const team = {
   "jakebailey": "Jake Bailey",
   "armanio123": "Armando Aguirre",
   "typescript-bot": "Typescript Bot",
+  "navya9singh": "Navya Singh",
 }
 /**
  * @param {string | undefined} d1
