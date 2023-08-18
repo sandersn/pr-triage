@@ -40,16 +40,18 @@ type Card = {
   }
 }
 
+type Column = {
+  name: Pull["state"],
+  cards: {
+    pageInfo: { startCursor: string, endCursor: string, hasNextPage: boolean, },
+    nodes: Array<{ url: string, content: Card }>
+  }
+}
 type Board = {
   repository: {
     project: {
       columns: {
-        nodes: Array<{
-          name: string,
-          cards: {
-            nodes: Array<{ url: string, content: Card }>
-          }
-        }>
+        nodes: Column[]
       }
     }
   }

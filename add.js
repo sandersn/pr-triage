@@ -20,12 +20,21 @@ async function main() {
   const notStarted = 7855130
   console.log(newNumbers)
   for (const pr of newPrs) {
-    gh.projects.createCard({
-      repo: 'microsoft/typescript',
-      column_id: notStarted,
-      content_id: pr,
-      content_type: 'Issue'
-    })
+    try {
+      await gh.projects.createCard({
+        repo: 'microsoft/typescript',
+        column_id: notStarted,
+        content_id: pr,
+        content_type: 'Issue'
+      })
+    } catch (e) {
+      if ('message' in e && typeof e.message === 'string') {
+        console.log(pr, ":", JSON.parse(e.message.slice("Validation Failed: ".length)).message)
+      }
+      else {
+        throw e
+      }
+    }
   }
 }
 

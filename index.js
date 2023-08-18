@@ -5,24 +5,16 @@ import { graphql } from '@octokit/graphql'
 
 /**
  * convert graphql output to denormalised output
- * @param {Board} board
- * @param {Board} [back] - the bottom half of the board
-                           only needed if Waiting on Reviewers has >100 PRs
+ * @param {IterableIterator<Column>} columns
  */
-function updateFromGraphql(board, back) {
+function updateFromGraphql(columns) {
   /** @type {Pulls} */
   const pulls = {}
   /** @type {Card[]} */
   const noAssignees = []
-  for (const column of board.repository.project.columns.nodes) {
+  for (const column of columns) {
     for (const cardp of column.cards.nodes) {
       updateCard(cardp.content, cardp.url, noAssignees, pulls, column.name)
-    }
-  }
-  if (back) {
-    const col2 = back.repository.project.columns.nodes[0]
-    for (const cardp of col2.cards.nodes) {
-      updateCard(cardp.content, cardp.url, noAssignees, pulls, "Waiting on reviewers")
     }
   }
   return /** @type {[Pulls, Card[]]} */([pulls, noAssignees])
@@ -33,9 +25,9 @@ function updateFromGraphql(board, back) {
  * @param {string} url
  * @param {Card[]} noAssignees
  * @param {Pulls} pulls
- * @param {string} name
+ * @param {Pull["state"]} state
  */
-function updateCard(card, url, noAssignees, pulls, name) {
+function updateCard(card, url, noAssignees, pulls, state) {
   const lastComment = card.comments.nodes[0]?.publishedAt
   const lastCommenter = card.comments.nodes[0]?.author.login
   const lastReview = card.reviews.nodes[0]?.publishedAt
@@ -44,7 +36,7 @@ function updateCard(card, url, noAssignees, pulls, name) {
   const reviewers = card.assignees.nodes.map(x => x.login)
   assert(!reviewers.includes(undefined), "Reviewer not found for", card.number, card.assignees, reviewers)
 
-  if (card.assignees.nodes.length !== 1 && reviewers.filter(r => r !== card.author.login).length < 1 && fromColumn(name) !== 'not-started') {
+  if (card.assignees.nodes.length !== 1 && reviewers.filter(r => r !== card.author.login).length < 1 && state !== 'not-started') {
     console.log("Should only have 1 assignee", card.number, 'but has', reviewers.length, ":", reviewers.join(", "), "::", JSON.stringify(card.assignees.nodes))
     noAssignees.push(card)
   }
@@ -54,7 +46,7 @@ function updateCard(card, url, noAssignees, pulls, name) {
     // These might have changed, and it's a good idea for sanity checking to diff the output
     // Don't override the description, though; assume that it might be manually updated
     existing.reviewers = reviewers
-    existing.state = fromColumn(name)
+    existing.state = state
     existing.label = fromLabels(card.labels.nodes)
     if (!existing.author)
       existing.author = card.author.login
@@ -71,7 +63,7 @@ function updateCard(card, url, noAssignees, pulls, name) {
       author: card.author.login,
       reviewers,
       notes: [],
-      state: fromColumn(name),
+      state,
       label: fromLabels(card.labels.nodes),
       id: fromUrl(url),
       lastCommit,
@@ -85,16 +77,37 @@ function updateCard(card, url, noAssignees, pulls, name) {
 
 async function main() {
   // Use the REPL at https://developer.github.com/v4/explorer/ to update this query
-  // TODO: issue a last: 100 and a first: 100 query, then de-dupe (and only for second column)
-  /** @type {Board} */
-  const board = await graphql(`
+  /** @type {Map<Pull["state"], Column>} */
+  const columns = new Map()
+  for (const name of Object.keys(columnNames)) {
+    columns.set(fromColumn(name), {
+      name: fromColumn(name),
+      cards: {
+        pageInfo: {
+          startCursor: "",
+          hasNextPage: false,
+          endCursor: ""
+        },
+        nodes: []
+      }
+    })
+  }
+  let more = ""
+  do {
+    /** @type {Board} */
+    let board = await graphql(`
 query
 {
   repository(name: "TypeScript", owner: "microsoft") {
     project(number: 13) {
       columns(first: 4) {
         nodes {
-          cards(first: 100) {
+          cards(first: 50${more}) {
+            pageInfo {
+              startCursor
+              hasNextPage
+              endCursor
+            }
             nodes {
               content {
                 ... on PullRequest {
@@ -148,67 +161,23 @@ query
   }
 }
 `, {
-    headers: {
-      authorization: "token " + process.env.GH_API_TOKEN
-    }
-  })
-// /** @type {Board} */
-//   const boardback = await graphql(`
-// query
-// {
-//   repository(name: "TypeScript", owner: "microsoft") {
-//     project(number: 13) {
-//       columns(first: 4) {
-//         nodes {
-//           cards(last: 100) {
-//             nodes {
-//                ... on PullRequest {
-//                  number
-//                  labels(first: 10) {
-//                    nodes {
-//                      name
-//                    }
-//                  }
-//                  title
-//                  assignees(first: 5) {
-//                    nodes {
-//                      login
-//                    }
-//                  }
-//                  commits(last: 1) {
-//                    nodes {
-//                      commit {
-//                        committedDate
-//                      }
-//                    }
-//                  }
-//                  comments(last: 1) {
-//                    nodes {
-//                      publishedAt
-//                      author {
-//                        login
-//                      }
-//                    }
-//                  }
-//                  author {
-//                    login
-//                  }
-//                }
-//              }
-//              url
-//           }
-//           name
-//         }
-//       }
-//     }
-//   }
-// }
-// `, {
-//     headers: {
-//       authorization: "token " + process.env.GH_API_TOKEN
-//     }
-//   })
-  const [pulls, noAssignees] = updateFromGraphql(board) //, boardback)
+      headers: {
+        authorization: "token " + process.env.GH_API_TOKEN
+      }
+    })
+    board.repository.project.columns.nodes.forEach((c,i) => {
+      const column = columns.get(fromColumn(c.name))
+      if (!column) {
+        throw new Error(`Column not found: ${fromColumn(c.name)}`)
+      } 
+      assert(column.name, `Column name mismatch: ${fromColumn(c.name)} !== ${column.name}`)
+      column.cards.nodes.push(...c.cards.nodes)
+    })
+    more = board.repository.project.columns.nodes[0].cards.pageInfo.hasNextPage 
+      ? `, after:"${board.repository.project.columns.nodes[0].cards.pageInfo.endCursor}"` 
+      : ""
+  } while (more)
+  const [pulls, noAssignees] = updateFromGraphql(columns.values())
   if (noAssignees.length) {
     for (const e of noAssignees) {
       if (e.assignees.nodes.length === 1 && e.author.name === e.assignees.nodes[0].name)
@@ -222,14 +191,14 @@ query
 }
 
 
-const columns = {
+const columnNames = {
   "Not started": "not-started",
   "Waiting on reviewers": "review",
   "Waiting on author": "waiting",
   "Needs merge": "merge",
   "Done": "done"
 }
-const labels = {
+const labelNames = {
   "For Milestone Bug": "milestone",
   "For Backlog Bug": "backlog",
   "For Uncommitted Bug": "uncommitted",
@@ -242,7 +211,7 @@ const labels = {
  * @return {Pull["state"]}
  */
 function fromColumn(name) {
-  const c = columns[name]
+  const c = columnNames[name]
   assert(c, "State not found for column named:", name)
   return c
 }
@@ -253,7 +222,7 @@ function fromColumn(name) {
 function fromLabels(names) {
   let l
   for (const n of names.map(ns => ns.name)) {
-    l = labels[n]
+    l = labelNames[n]
     if (l && l !== "OTHER") break
   }
   assert(l, `Label not found for labels:'${names.map(ns => ns.name).join(';')}' (${names.length})`)
