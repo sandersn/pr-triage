@@ -18,6 +18,7 @@ async function main() {
   })
   const lastWeek = new Date(Date.now() - (1000 * 86400 * 7)).toISOString().slice(0, 10)
   const q = `repo:microsoft/typescript is:open is:pr -author:"typescript-bot" -is:draft created:<${lastWeek} -label:experiment`
+  /** @type {{ search: { nodes: Array<{ number: number, id: string }> } }} */
   const { search } = await octokit.graphql(`
     query ($q: String!) {
       search(query: $q, type: ISSUE, first: 100) {
@@ -59,7 +60,7 @@ async function main() {
         contentId: pr,
         // contentType: 'PullRequest'
       })
-    } catch (e) {
+    } catch (/** @type {any} */ e) {
       if ('message' in e && typeof e.message === 'string') {
         console.log(pr, ':', e.message)
         // console.log(pr, ":", JSON.parse(e.message.slice("Validation Failed: ".length)).message)
