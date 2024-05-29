@@ -5,6 +5,7 @@
         "checkJs": true,
         "noEmit": true,
         "target": "esnext",
-        "module": "commonjs"
+        "module": "esnext",
+        "moduleResolution": "nodenext",
     }
 }
