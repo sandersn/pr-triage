@@ -50,20 +50,18 @@ async function findCommitsWithMentions(packageName, repoURL) {
 }
 
 // Usage example
-const packageName = "lodash";
+const packageName = process.argv[2];
+const libraryName = process.argv[3] ?? packageName;
 const octokit = new Octokit({
-  auth: process.env.GH_API_TOKEN,
+    auth: process.env.GH_API_TOKEN,
 });
 try {
   console.log(`Repositories that import ${packageName}:`);
   for (const repo of await findReposWithPackage(packageName)) {
     console.log(repo);
     try {
-      console.log(
-        `Commits that mention "${packageName}" and "upgrading to a new version" in ${repo}:`
-      );
-      for (const commit of await findCommitsWithMentions(packageName, repo)) {
-        console.log(commit);
+      for (const commit of await findCommitsWithMentions(libraryName, repo)) {
+        console.log('    ' + commit);
       }
     } catch (error) {
       console.error("Error finding commits:", error);
