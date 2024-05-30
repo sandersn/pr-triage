@@ -42,11 +42,13 @@ async function findCommitsWithMentions(packageName, repoURL) {
 
     // Extract the commit URLs from the response
     /** @type {Array<{url:string, message: string, date: string}>} */
-    const commitURLs = response.data.items.map((item) => ({
-      url: item.html_url,
-      message: item.commit.message,
-      date: item.commit.author.date,
-    }));
+    const commitURLs = response.data.items
+      .filter((item) => new Date(item.commit.author.date) > cutoff)
+      .map((item) => ({
+        url: item.html_url,
+        message: item.commit.message,
+        date: item.commit.author.date,
+      }));
 
     return commitURLs;
   } catch (error) {
