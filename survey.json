@@ -414,5 +414,108 @@
         ]
     },
     "sveltekit": {
+        "homepage": "https://kit.svelte.dev",
+        "documentation": "https://kit.svelte.dev/docs/introduction",
+        "announcements": ["https://svelte.dev/blog/whats-new-in-svelte-january-2024"],
+        "import": "@sveltejs/kit",
+        "repositories": [
+            "https://github.com/poppa/sveltekit-svg",
+            "https://github.com/mainawycliffe/npm-imported-packages-lens",
+            "https://github.com/nilsroehrig/sveltekit-import-problem",
+            "https://github.com/hronro/sveltekit-http-link-importmap-issue",
+            "https://github.com/raphael-devel/raphael-devel-demo-sveltekit-repo-4-vite-plugin-dynamic-import",
+            "https://github.com/digaofs/svelteKitEnvBugReproduction",
+            "https://github.com/lucagoslar/svelte-preprocess-sass-alias-import",
+            "https://github.com/yuanchuan/sveltekit-autoimport",
+            "https://github.com/khromov/sveltekit-import-jar-asset",
+            "https://github.com/brehen/sveltekit-auth-import-bug",
+            "https://github.com/theetrain/sveltekit-dynamic-css-import-issue",
+            "https://github.com/khromov/sveltekit-5-ts-import-repro",
+            "https://github.com/jjjayed/my-sveltekit-app---test-direct-import",
+            "https://github.com/charlie-map/sveltekit-vitest-issue",
+            "https://github.com/wallw-teal/svelte-kit-ol-issue-repro",
+            "https://github.com/korywka/svelte-svg-import",
+            "https://github.com/jarrodldavis/sveltekit-read-asset-from-page",
+            "https://github.com/WillsterJohnson/vite-sveltekit-shared-config-no-adapter",
+            "https://github.com/zewebdev1337/svelte-index-updater",
+            "https://github.com/Rich-Harris/vite-dynamic-import-repro",
+            "https://github.com/WaltzingPenguin/url-import-with-base-path"
+        ],
+        "commits": [
+
+        ]
+
+    },
+    "astro": {
+        "homepage": "https://astro.build",
+        "documentation": "https://docs.astro.build/en/getting-started/",
+        "announcements": ["https://astro.build/blog/astro-490/"],
+        "import": "astro",
+        "configuration": "astro.config.mjs",
+        "repositories": [
+            "https://github.com/jasikpark/astro-svg-loader",
+            "https://github.com/delucis/astro-auto-import",
+            "https://github.com/neokidev/prettier-plugin-astro-organize-imports",
+            "https://github.com/mainawycliffe/npm-imported-packages-lens",
+            "https://github.com/arstnei0/astro-imports",
+            "https://github.com/MatthiesenXYZ/astro-gists",
+            "https://github.com/enteleform-codesandbox/0015--Astro--ESM-Imports",
+            "https://github.com/afonsojramos/astro-microfrontends",
+            "https://github.com/mgielda/assert",
+            "https://github.com/Code-the-Dream-School/getMarkdown",
+            "https://github.com/denisa-iordache/Examen_TW_Spacecrafts_Astronauts"
+        ],
+        "commits": [
+            "https://github.com/jasikpark/astro-svg-loader/commit/96e7b01696e158a000b92c4468abd3a60f4f47d9",
+            "https://github.com/jasikpark/astro-svg-loader/commit/5da9f948c6e78c3a527363d7045222ea0cbeb36f",
+            "https://github.com/jasikpark/astro-svg-loader/commit/94d2430e9add9162b6417cd962cd752ad557e438",
+            "https://github.com/jasikpark/astro-svg-loader/commit/e4c623fc631f765c1c954f233b0cef43dae3da01"
+        ]
+    },
+    "starlight": {
+        "homepage": "https://starlight.astro.build",
+        "documentation": "https://starlight.astro.build/docs",
+        "import": "@astrojs/starlight",
+        "configuration": "astro.config.mjs",
+        "announcements": ["https://github.com/withastro/starlight/releases"],
+        "repositories": [
+
+        ],
+        "commits": [
+
+        ]
+    },
+    "ember": {
+        "announcements": ["https://blog.emberjs.com/ember-released-5-8"],
+        "homepage": "https://emberjs.com",
+        "documentation": "https://guides.emberjs.com/release/",
+        "import": "@ember/*",
+        "repositories": [
+            "https://github.com/embroider-build/ember-auto-import",
+            "https://github.com/flashios09/ember-extract-inline-templates",
+            "https://github.com/camerondubas/ember-concurrency-decorators-codemod",
+            "https://github.com/Polve/ecpair-issue-20",
+            "https://github.com/ember-template-imports/ember-template-imports",
+            "https://github.com/machty/ember-maybe-import-regenerator",
+            "https://github.com/knownasilya/ember-template-imports",
+            "https://github.com/sandydoo/ember-cli-es6-transform",
+            "https://github.com/ClarkSource/ember-auto-import-typescript",
+            "https://github.com/davewasmer/ember-template-styles-import",
+            "https://github.com/candidmetrics/ember-module-snippets",
+            "https://github.com/NullVoxPopuli/demo-ember-dynamic-component-import",
+            "https://github.com/patricklx/ember-hbs-imports",
+            "https://github.com/ember-codemods/ember-cli-htmlbars-inline-precompile-codemod",
+            "https://github.com/pzuraq/ember-totally-not-module-based-services"
+        ],
+        "commits": [
+            "https://github.com/ember-template-imports/ember-template-imports/commit/4eb8db1d0ce15e7414fa4c55370d8529592f5278",
+            "https://github.com/ember-template-imports/ember-template-imports/commit/12b0504128a53555abfd73fb0df3f00603154529",
+            "https://github.com/ember-template-imports/ember-template-imports/commit/b7362953a90ed8e3f2956312c5f2e77d67388e14",
+            "https://github.com/ember-template-imports/ember-template-imports/commit/1bc45e246a81723f5b94b074cd112a16151b2d83",
+            "https://github.com/ember-template-imports/ember-template-imports/commit/142f1d94e990086c2fa4b13fe8f76a5ef509dece",
+            "https://github.com/ember-template-imports/ember-template-imports/commit/76ac82c5327632a9f53e16cb16797a495f984c77",
+            "https://github.com/ClarkSource/ember-auto-import-typescript/commit/6806a0a027e84ca5ee1e3013621b3e6c8e182589"
+        ]
+
     }
 }
