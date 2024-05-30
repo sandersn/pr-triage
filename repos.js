@@ -1,20 +1,22 @@
 import { Octokit } from "@octokit/rest";
-
+let cutoff = new Date("2022-01-01");
+let verbose = true;
 /**
  * find repos that import a certain library
  * @param {string} packageName
+ * @param {string} language
  */
-async function findReposWithPackage(packageName) {
+async function findReposWithPackage(packageName, language) {
   try {
     // Search for repositories that import the specified package
-    const response = await octokit.search.code({
-      q: `import ${packageName} in:file language:javascript`,
+    const response = await octokit.search.repos({
+      q: `import ${packageName} in:file language:${language}`,
     });
     // Extract the repository URLs from the response
-    /** @type {string[]} */
-    const repoURLs = response.data.items.map(
-      (item) => item.repository.html_url
-    );
+    /** @type {Array<{ url: string, pushed_at: string }>} */
+    const repoURLs = response.data.items
+      .filter((item) => new Date(item.pushed_at) > cutoff)
+      .map((item) => ({ url: item.html_url, pushed_at: item.pushed_at }));
 
     return repoURLs;
   } catch (error) {
@@ -39,8 +41,8 @@ async function findCommitsWithMentions(packageName, repoURL) {
     });
 
     // Extract the commit URLs from the response
-    /** @type {string[]} */
-    const commitURLs = response.data.items.map((item) => item.html_url);
+    /** @type {Array<{url:string, message: string, date: string}>} */
+    const commitURLs = response.data.items.map((item) => ({url: item.html_url, message: item.commit.message, date: item.commit.author.date}));
 
     return commitURLs;
   } catch (error) {
@@ -53,18 +55,25 @@ async function findCommitsWithMentions(packageName, repoURL) {
 const packageName = process.argv[2];
 const libraryName = process.argv[3] ?? packageName;
 const octokit = new Octokit({
-    auth: process.env.GH_API_TOKEN,
+  auth: process.env.GH_API_TOKEN,
 });
 try {
-  console.log(`Repositories that import ${packageName}:`);
-  for (const repo of await findReposWithPackage(packageName)) {
-    console.log(repo);
-    try {
-      for (const commit of await findCommitsWithMentions(libraryName, repo)) {
-        console.log('    ' + commit);
+  for (const language of ["javascript", "typescript"]) {
+    console.log(`${language} Repositories that import ${packageName}:`);
+    for (const { url: repo, pushed_at } of await findReposWithPackage(
+      packageName,
+      language
+    )) {
+      if (verbose) console.log(repo, "last pushed_at:", pushed_at);
+      else console.log(repo);
+      try {
+        for (const commit of await findCommitsWithMentions(libraryName, repo)) {
+            if (verbose) console.log(`     ${commit.url} (${commit.date}) ${commit.message}`);
+            else console.log("    " + commit.url);
+        }
+      } catch (error) {
+        console.error("Error finding commits:", error);
       }
-    } catch (error) {
-      console.error("Error finding commits:", error);
     }
   }
 } catch (error) {
