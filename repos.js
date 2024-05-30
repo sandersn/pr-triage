@@ -66,7 +66,7 @@ const octokit = new Octokit({
 const allrepos = [];
 const allcommits = [];
 try {
-  for (const language of ["javascript", "typescript"]) {
+  for (const language of ["typescript", "javascript"]) {
     if (verbose)
       console.log(`${language} Repositories that import ${packageName}:`);
     const repos = await findReposWithPackage(packageName, language);
@@ -80,6 +80,9 @@ try {
     }
     for (const { url } of repos) {
       try {
+        process.stdout.write(".");
+        if (repos.length > 20) await new Promise((resolve) => setTimeout(resolve, 5_000));
+        process.stdout.write("!");
         const commits = await findCommitsWithMentions(libraryName, url);
         if (verbose) {
           for (const commit of commits) {
@@ -101,7 +104,7 @@ try {
 
 if (!verbose) {
   // output json
-  console.log('        "repositories": [');
+  console.log('\n        "repositories": [');
   console.log(allrepos.map((repo) => `            "${repo.url}"`).join(",\n"));
   console.log("        ],");
   console.log('        "commits": [');
