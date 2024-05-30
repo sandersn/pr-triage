@@ -86,7 +86,9 @@
             "https://github.com/gluestack/gluestack-ui/commit/45e0aeb43ae31586f3ae7cb68bfdd2ca58f8388a",
             "https://github.com/gluestack/gluestack-ui/commit/916465e2c4c35b8858616a6fd474e9216b5f015e",
             "https://github.com/gluestack/gluestack-ui/commit/67b41c0ca3c4de2fe8123934c64dce32bd48862b",
-            "https://github.com/gluestack/gluestack-ui/commit/1e21530132f73f6ff069aa919463d2238885ed30"
+            "https://github.com/gluestack/gluestack-ui/commit/1e21530132f73f6ff069aa919463d2238885ed30",
+            "https://github.com/snoh666/react-typescript-template/commit/d8c239b497e206b39f695edc4e33965207956741",
+            "https://github.com/jpwallace22/react-lazify/commit/19e3f7a5b116bf6347f534729e864c1c9ce0a3db"
         ]
     },
     "next.js": {
@@ -149,7 +151,14 @@
             "https://github.com/thesunny/next-starter-kit"
         ],
         "commits": [
-            "https://github.com/sladg/nextjs-lambda/commit/c6402ed05309fc66e728d0ef585afd96bfe62878"
+            "https://github.com/sladg/nextjs-lambda/commit/c6402ed05309fc66e728d0ef585afd96bfe62878",
+            "https://github.com/riipandi/next-start/commit/fb0f30736e03d8a17746bd209944763f0ac5aeef",
+            "https://github.com/riipandi/next-start/commit/9d2d1e55d4b394dbf35dc8ff5cf4c262d4fe72a6",
+            "https://github.com/riipandi/next-start/commit/148d674726f025e04f3f18a9ba5dc2143f786a17",
+            "https://github.com/riipandi/next-start/commit/05e17f16f31da9b0fd67f2b53b3f75a862102877",
+            "https://github.com/riipandi/next-start/commit/d41c457053bb0155903f1e7766d2f11372077ada",
+            "https://github.com/riipandi/next-start/commit/4b25e1f5e3b2e06c893d6bf39697c006895d7323",
+            "https://github.com/joliss/next-import-problem/commit/cccfa809877a2e47d13abe24fbd39af18bd3d68f"
         ]
     },
     "remix": {
@@ -230,5 +239,180 @@
 
         ]
 
+    },
+    "nuxt": {
+        "homepage": "https://nuxt.com",
+        "documentation": "https://nuxt.com/docs/getting-started/introduction",
+        "configuration": "nuxt.config.js",
+        "announcements": ["https://nuxt.com/blog/v3-11"],
+        "repositories": [
+            "https://github.com/nuxt/components",
+            "https://github.com/nuxt-modules/style-resources",
+            "https://github.com/leanera/nuxt-i18n",
+            "https://github.com/antfu/nuxt-eslint-auto-explicit-import",
+            "https://github.com/lewebsimple/nuxt3-svg",
+            "https://github.com/wiidede/arco-design-nuxt-module",
+            "https://github.com/johannschopplich/nuxt-i18n",
+            "https://github.com/phojie/nuxt-content-snippet",
+            "https://github.com/manniL/nuxt-auto-imports-unleash-full-potential",
+            "https://github.com/sergeyshkibust/nuxt-3-goto",
+            "https://github.com/themesberg/flowbite-nuxt-module",
+            "https://github.com/MarcGuiselin/nuxt3-monorepo-import-bug",
+            "https://github.com/samuelreichor/Nuxt3-auto-import-tut",
+            "https://github.com/Fnxxxxo/nuxt-client-import-issue",
+            "https://github.com/leo91000/repro-bug-nuxt3-auto-import",
+            "https://github.com/gijsroge/nuxt3-auto-import-perf-issue",
+            "https://github.com/kiwilan/unplugin-svg-transformer",
+            "https://github.com/Eugene313/nuxt-auth-imports",
+            "https://github.com/tonyketcham/unplugin-obj",
+            "https://github.com/florian-lefebvre/nuxt3-medusa-vite-ssr-import-error",
+            "https://github.com/abdul-alhasany/nuxt-eslint-global-imports",
+            "https://github.com/siamekanto19/nuxt-import-issue-reproduction",
+            "https://github.com/thibaultrey/nuxt-extends-import-bug",
+            "https://github.com/fxioi/nuxt-auto-import-demo",
+            "https://github.com/samydoesit/nuxt-monorepo-import-reproduction",
+            "https://github.com/DawidKopys/nuxt-auto-imports-issue",
+            "https://github.com/rayblair06/nuxt-imports-transform-error",
+            "https://github.com/ennioVisco/nuxt-minimal-auto-imports",
+            "https://github.com/DerZade/nuxt-auto-import-ts",
+            "https://github.com/maicss/nuxt-auto-import-style-control",
+            "https://github.com/WilliamDASILVA/nuxt-stripe-module",
+            "https://github.com/gangsthub/dynamic-imports-example",
+            "https://github.com/dword-design/eslint-plugin-import-alias",
+            "https://github.com/LuckyWindsck/eslint-plugin-nuxt3-auto-import",
+            "https://github.com/maoberlehner/well-composed-frontend",
+            "https://github.com/shubhamslngh/importedproducts",
+            "https://github.com/apss-pohl/nuxt3-eslint-import2",
+            "https://github.com/dword-design/nuxt-sass-importer",
+            "https://github.com/aurelienbottazini/nuxt3-vitest",
+            "https://github.com/ianjamieson/debug-nuxt-import-enums",
+            "https://github.com/katerlouis/nuxt-auto-import-types",
+            "https://github.com/dword-design/demo-nuxt-package-import-specifier-import-is-not-defined",
+            "https://github.com/radames/Youtube-Demonetized-Words-Study",
+            "https://github.com/andreww2012/eslint-plugin-import-with-nuxt-3.6-false-reports",
+            "https://github.com/vitormarcal/whatsapp-archiver",
+            "https://github.com/dogchef-be/i18n-import-export",
+            "https://github.com/andreww2012/eslint-config",
+            "https://github.com/jdkcoder/vue3-electronforge"
+        ],
+        "commits": [
+            "https://github.com/leanera/nuxt-i18n/commit/14fd8b22e8a444d8ce13ccec21ccef541ec15ea7",
+            "https://github.com/leanera/nuxt-i18n/commit/c1ec2395082845048cb077c5d31e13512c22f790",
+            "https://github.com/leanera/nuxt-i18n/commit/695503b128609c5a77c06ec8c65f0c6d2871bfde",
+            "https://github.com/leanera/nuxt-i18n/commit/9a992113ac62ca52717d69d2eb7e9044d7670457",
+            "https://github.com/leanera/nuxt-i18n/commit/eb56cc708030792c5d1f8d210935e2147f6711e9",
+            "https://github.com/leanera/nuxt-i18n/commit/ccc92ccb0c65d29ff1917a568550c0de1b43df40",
+            "https://github.com/leanera/nuxt-i18n/commit/1647125f1033e078b0f7b6829d263b9ed94acd2b",
+            "https://github.com/leanera/nuxt-i18n/commit/151a4229c323efb1116e955bb2f238bd4c7c68dc",
+            "https://github.com/johannschopplich/nuxt-i18n/commit/14fd8b22e8a444d8ce13ccec21ccef541ec15ea7",
+            "https://github.com/johannschopplich/nuxt-i18n/commit/c1ec2395082845048cb077c5d31e13512c22f790",
+            "https://github.com/johannschopplich/nuxt-i18n/commit/695503b128609c5a77c06ec8c65f0c6d2871bfde",
+            "https://github.com/johannschopplich/nuxt-i18n/commit/9a992113ac62ca52717d69d2eb7e9044d7670457",
+            "https://github.com/johannschopplich/nuxt-i18n/commit/eb56cc708030792c5d1f8d210935e2147f6711e9",
+            "https://github.com/johannschopplich/nuxt-i18n/commit/ccc92ccb0c65d29ff1917a568550c0de1b43df40",
+            "https://github.com/johannschopplich/nuxt-i18n/commit/1647125f1033e078b0f7b6829d263b9ed94acd2b",
+            "https://github.com/johannschopplich/nuxt-i18n/commit/151a4229c323efb1116e955bb2f238bd4c7c68dc",
+            "https://github.com/kiwilan/unplugin-svg-transformer/commit/379d8601d29e3caa7f16e591422974e979dce40b"
+        ]
+    },
+    "angular": {
+        "homepage": "https://angular.dev",
+        "announcements": ["https://blog.angular.dev/angular-v18-is-now-available-e79d5ac0affe"],
+        "documentation": "https://angular.dev/overview",
+        "import": "@angular/core",
+        "repositories": [
+            "https://github.com/BuilderIO/figma-html",
+            "https://github.com/scottlepp/fire-drill",
+            "https://github.com/inexio/angular-build-info",
+            "https://github.com/Touwin10/angular-excel",
+            "https://github.com/HyperIoT-Labs/HyperIoT-UI",
+            "https://github.com/ultimateakash/angular-excel-csv",
+            "https://github.com/spieIbug/angelyzer",
+            "https://github.com/flatironsdevelopment/angular-csv-importer",
+            "https://github.com/mainawycliffe/npm-imported-packages-lens",
+            "https://github.com/Pepperi-Addons/Import-Export-ATD---angular-10",
+            "https://github.com/lacolaco/angular-chartjs-dynamic-import",
+            "https://github.com/CrisPassos/import-csv",
+            "https://github.com/codeptivesolutions/import-read-json-files",
+            "https://github.com/marsgis/mars3d-angular-template",
+            "https://github.com/pzps94038/AngularDyamicImportJsEx",
+            "https://github.com/Razza2018/real-time-twig",
+            "https://github.com/jualoppaz/single-spa-login-example-with-npm-packages",
+            "https://github.com/desech/studio-angular",
+            "https://github.com/farhan1386/ImportExcelFileDataAngularJS_Demo",
+            "https://github.com/coreuter/import-sort-style-angular"
+        ],
+        "commits": [
+
+        ]
+    },
+    "analog": {
+        "homepage": "https://analogjs.org",
+        "documentation": "https://analogjs.org/docs",
+        "announcements": ["https://github.com/analogjs/analog/releases"],
+        "import": "@analogjs/*",
+        "repositories": [
+            "https://github.com/mainawycliffe/npm-imported-packages-lens"
+        ],
+        "commits": [
+
+        ]
+    },
+    "svelte": {
+        "homepage": "https://svelte.dev",
+        "documentation": "https://svelte.dev/docs/introduction",
+        "announcements": ["https://svelte.dev/blog/svelte-4", "https://svelte.dev/blog/svelte-5-release-candidate"],
+        "import": "svelte",
+        "repositories": [
+            "https://github.com/svelteness/svelte-jester",
+            "https://github.com/codefeathers/rollup-plugin-svelte-svg",
+            "https://github.com/poppa/sveltekit-svg",
+            "https://github.com/BuilderIO/figma-html",
+            "https://github.com/Mohamed-Kaizen/unplugin-svelte-components",
+            "https://github.com/mainawycliffe/npm-imported-packages-lens",
+            "https://github.com/vekunz/svelte-eslint-import",
+            "https://github.com/Tal500/svelte-magic-import",
+            "https://github.com/nilsroehrig/sveltekit-import-problem",
+            "https://github.com/vekunz/svelte-eslint-import-error",
+            "https://github.com/kasisoft/remark-svelte-auto-import",
+            "https://github.com/digaofs/svelteKitEnvBugReproduction",
+            "https://github.com/lucagoslar/svelte-preprocess-sass-alias-import",
+            "https://github.com/hronro/sveltekit-http-link-importmap-issue",
+            "https://github.com/TimoWilhelm/mre-svelte-worker-wasm-import-path",
+            "https://github.com/arvindkannan/mfe-container-shell",
+            "https://github.com/raphael-devel/raphael-devel-demo-sveltekit-repo-4-vite-plugin-dynamic-import",
+            "https://github.com/dbushell/bumble",
+            "https://github.com/jonshipman/wordpress-class-for-svelte",
+            "https://github.com/yuanchuan/sveltekit-autoimport",
+            "https://github.com/bluwy/svelte-preprocess-import-assets",
+            "https://github.com/repalash/svelte-browser-import",
+            "https://github.com/SyMind/import-svelte",
+            "https://github.com/pupubird/sveltejs-router-template",
+            "https://github.com/hrbigelow/svelte-jupyter-import",
+            "https://github.com/j2l/walk-and-graph-svelte-components",
+            "https://github.com/longrunningprocess/the-way-svelte",
+            "https://github.com/dirv/svelte-test-register",
+            "https://github.com/caqu/import-svelte",
+            "https://github.com/korywka/svelte-svg-import",
+            "https://github.com/oodavid/svelte-import-issue",
+            "https://github.com/duydang2311/svelted-heroicons",
+            "https://github.com/IzKuipers/Svelte-Import-Grapher",
+            "https://github.com/commscheck/svelte-import-error",
+            "https://github.com/HeadMad/svelte-css-import",
+            "https://github.com/datstarkey/svelte-monorepo-import-issue",
+            "https://github.com/rileylyman/svelte-import-css-repro",
+            "https://github.com/stalkerg/eslint-svelte-import-issue",
+            "https://github.com/The-Noah/svelte-organize-imports-loop",
+            "https://github.com/loky-lp/webstorm-svelte-import-issue",
+            "https://github.com/jindrahm/svelte-component-dynamic-import",
+            "https://github.com/aaronbarnardsound/svelte-next-dynamic-import"
+        ],
+        "commits": [
+            "https://github.com/svelteness/svelte-jester/commit/257573c176dbdb6ffd060f8e50ff3cd32ec4d296",
+            "https://github.com/svelteness/svelte-jester/commit/227785e113a96f7da8a1ef47c56c603eb51b814b",
+            "https://github.com/svelteness/svelte-jester/commit/5d4d08c5371463acaa836bbe1761809c66143a53"
+        ]
+    },
+    "sveltekit": {
     }
 }
