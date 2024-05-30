@@ -1,6 +1,6 @@
 import { Octokit } from "@octokit/rest";
 let cutoff = new Date("2022-01-01");
-let verbose = true;
+let verbose = false;
 /**
  * find repos that import a certain library
  * @param {string} packageName
@@ -42,7 +42,11 @@ async function findCommitsWithMentions(packageName, repoURL) {
 
     // Extract the commit URLs from the response
     /** @type {Array<{url:string, message: string, date: string}>} */
-    const commitURLs = response.data.items.map((item) => ({url: item.html_url, message: item.commit.message, date: item.commit.author.date}));
+    const commitURLs = response.data.items.map((item) => ({
+      url: item.html_url,
+      message: item.commit.message,
+      date: item.commit.author.date,
+    }));
 
     return commitURLs;
   } catch (error) {
@@ -57,19 +61,32 @@ const libraryName = process.argv[3] ?? packageName;
 const octokit = new Octokit({
   auth: process.env.GH_API_TOKEN,
 });
+const allrepos = [];
+const allcommits = [];
 try {
   for (const language of ["javascript", "typescript"]) {
-    console.log(`${language} Repositories that import ${packageName}:`);
-    for (const { url: repo, pushed_at } of await findReposWithPackage(
-      packageName,
-      language
-    )) {
-      if (verbose) console.log(repo, "last pushed_at:", pushed_at);
-      else console.log(repo);
+    if (verbose)
+      console.log(`${language} Repositories that import ${packageName}:`);
+    const repos = await findReposWithPackage(packageName, language);
+
+    if (verbose) {
+      for (const { url, pushed_at } of repos) {
+        console.log(url, "last pushed_at:", pushed_at);
+      }
+    } else {
+      allrepos.push(...repos);
+    }
+    for (const { url } of repos) {
       try {
-        for (const commit of await findCommitsWithMentions(libraryName, repo)) {
-            if (verbose) console.log(`     ${commit.url} (${commit.date}) ${commit.message}`);
-            else console.log("    " + commit.url);
+        const commits = await findCommitsWithMentions(libraryName, url);
+        if (verbose) {
+          for (const commit of commits) {
+            console.log(
+              `     ${commit.url} (${commit.date}) ${commit.message}`
+            );
+          }
+        } else {
+          allcommits.push(...commits);
         }
       } catch (error) {
         console.error("Error finding commits:", error);
@@ -78,4 +95,16 @@ try {
   }
 } catch (error) {
   console.error("Error finding repos:", error);
+}
+
+if (!verbose) {
+  // output json
+  console.log('        "repositories": [');
+  console.log(allrepos.map((repo) => `            "${repo.url}"`).join(",\n"));
+  console.log("        ],");
+  console.log('        "commits": [');
+  console.log(
+    allcommits.map((commit) => `            "${commit.url}"`).join(",\n")
+  );
+  console.log("        ]");
 }

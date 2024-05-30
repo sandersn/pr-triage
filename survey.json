@@ -1,0 +1,13 @@
+{
+    "nestjs": {
+        "homepage": "https://nestjs.com",
+        "documentation": "https://docs.nestjs.com",
+        "announcements": ["https://trilon.io/blog/nestjs-10-is-now-available"],
+        "import": "@nestjs/core",
+        "configuration": "nest-cli.json",
+        "repositories": [
+
+        ],
+        "upgrades": []
+    }
+}
