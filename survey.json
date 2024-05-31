@@ -517,5 +517,274 @@
             "https://github.com/ClarkSource/ember-auto-import-typescript/commit/6806a0a027e84ca5ee1e3013621b3e6c8e182589"
         ]
 
+    },
+    "starbeam": {
+        "homepage": "https://starbeamjs.com",
+        "documentation": "https://starbeamjs.com/guides/",
+        "annoucements": [""],
+        "import": "@starbeam/react",
+        "repositories": [
+
+        ],
+        "commits": [
+
+        ]
+    },
+    "lit": {
+        "homepage": "https://lit.dev",
+        "documentation": "https://lit.dev/docs/",
+        "announcements": ["https://lit.dev/blog/2023-10-10-lit-3.0/"],
+        "import": "lit",
+        "repositories": [
+            "https://github.com/ahkohd/FigmaThird",
+            "https://github.com/zandaqo/esbuild-plugin-lit",
+            "https://github.com/unlight/babel-plugin-postcss",
+            "https://github.com/redfox-mx/vite-lit-css",
+            "https://github.com/luixaviles/demo-bit-angular-lit",
+            "https://github.com/kohm/lit-dynamic-imports",
+            "https://github.com/Anteris-Dev/parcel-transformer-lit-css",
+            "https://github.com/noelheesen/LitInlineCss",
+            "https://github.com/simpel/little-lazy-importer",
+            "https://github.com/rna2i/hilla-vite-lit-scss-test",
+            "https://github.com/aelbore/lit-element-transpiler",
+            "https://github.com/zevelijah/diplomacy-helper",
+            "https://github.com/drdreo/lit-scss-loader",
+            "https://github.com/prantlf/rollup-plugin-scss-lit",
+            "https://github.com/prantlf/rollup-plugin-css-lit",
+            "https://github.com/clicksolutions/lit-element-scss-loader",
+            "https://github.com/littlemooon/eslint-config-littlemooon",
+            "https://github.com/taochunyu/rollup-plugin-preact-svg-lite",
+            "https://github.com/KonnorRogers/lit-fast-import-order-bug",
+            "https://github.com/anneb/lit-import-problem",
+            "https://github.com/JulianCataldo/vite-plugin-standard-css-modules",
+            "https://github.com/mikeconley/lit-imported-stylesheet",
+            "https://github.com/newbornfrontender/lit-import-maps",
+            "https://github.com/jonathan-f-silva/litoshow-macro-importer",
+            "https://github.com/mdownes/rollup-plugin-import-lithtml",
+            "https://github.com/ChrisDeFreitas/objectLite"
+        ],
+        "commits": [
+            "https://github.com/prantlf/rollup-plugin-scss-lit/commit/198e70094445e41d0c71ab505a041f62cd00313c",
+            "https://github.com/prantlf/rollup-plugin-scss-lit/commit/647bc6c944ccc9486741ac68c32ca1c149526a02",
+            "https://github.com/prantlf/rollup-plugin-scss-lit/commit/d80db3f2c8c185136981a6f120fdb8e7d89f06cc",
+            "https://github.com/prantlf/rollup-plugin-scss-lit/commit/6c0e858e9ca99cbddaba65075af98f7f82053802",
+            "https://github.com/prantlf/rollup-plugin-scss-lit/commit/f463cf208579e832dfe195c932a716b1defb5203",
+            "https://github.com/prantlf/rollup-plugin-css-lit/commit/0b28d228be2b5948571ce1e2db960f4b207ef8f1",
+            "https://github.com/prantlf/rollup-plugin-css-lit/commit/7fe6aa7c81a093c685df45ec3db0568388b146f5",
+            "https://github.com/prantlf/rollup-plugin-css-lit/commit/6da22a86f21476ce12861c7b5fb9c5098a672669",
+            "https://github.com/prantlf/rollup-plugin-css-lit/commit/78cb442a08a99bb41a72d3d6a0d00b9c1ada6977"
+        ]
+    },
+    "fast": {
+        "homepage": "https://fast.design",
+        "documentation": "https://fast.design/docs/introduction",
+        "announcements": ["https://medium.com/fast-design/whats-new-in-the-microsoft-fluent-ui-library-for-blazor-version-2-0-b3ac0eb5d02c"],
+        "import": "@microsoft/fast-element",
+        "repositories": [
+
+        ],
+        "commits": [
+
+        ]
+    },
+    "preact": {
+        "homepage": "https://preactjs.com",
+        "documentation": "https://preactjs.com/guide/v10/getting-started",
+        "import": "https://esm.sh/preact",
+        "announcements": ["https://github.com/preactjs/preact/releases/tag/10.22.0"],
+        "repositories": [
+            "https://github.com/chandrakumarreddy/vite-ts-preact-tailwind-template",
+            "https://github.com/trufflehq/vite-preact-project",
+            "https://github.com/duckfev3r/gatsby-arweave-preact-typescript-starter",
+            "https://github.com/thepassle/preact-reddit-pwa",
+            "https://github.com/taochunyu/rollup-plugin-preact-svg-lite",
+            "https://github.com/jodoherty/preact-import-map-demo",
+            "https://github.com/bash-archive/babel-plugin-transform-preact-import",
+            "https://github.com/Badestrand/webpack-error-stripping-preact-import"
+        ],
+        "commits": [
+
+        ]
+    },
+    "alpine.js": {
+        "homepage": "https://alpinejs.dev",
+        "documentation": "https://alpinejs.dev/start",
+        "announcements": ["https://github.com/alpinejs/alpine/releases"],
+        "import": "alpinejs",
+        "repositories": [
+
+        ],
+        "commits": [
+
+        ]
+    },
+    "solid": {
+        "homepage": "https://solidjs.com",
+        "documentation": "https://solidjs.com/docs",
+        "announcements": ["https://github.com/solidjs/solid/releases/tag/v1.8.0", "https://github.com/solidjs/solid/releases/tag/v1.7.0"],
+        "import": "solid-js",
+        "repositories": [
+            "https://github.com/jfgodoy/vite-plugin-solid-svg"
+        ],
+        "commits": [
+
+        ]
+    },
+    "qwik": {
+        "homepage": "https://qwik.dev",
+        "documentation": "https://qwik.dev/docs",
+        "announcements": ["https://github.com/QwikDev/qwik/releases/tag/v1.5.5"],
+        "import": "@builder.io/qwik",
+        "repositories": [
+            "https://github.com/DustinJSilk/qwik-issue-react-import",
+            "https://github.com/samijaber/qwik-import-bug-repro",
+            "https://github.com/maiieul/qwik-import-glob-meta",
+            "https://github.com/rharink/qwik-workspace-import-error-example",
+            "https://github.com/stewones/qwik-compiler-bug",
+            "https://github.com/shairez/qwik-ui-headless-import-issue-384"
+        ],
+        "commits": [
+
+        ]
+    },
+    "stencil": {
+        "homepage": "https://stenciljs.com",
+        "documentation": "https://stenciljs.com/docs/introduction",
+        "announcements": ["https://ionic.io/blog/announcing-stencil-v3-4-0"],
+        "import": "@stencil/core",
+        "repositories": [
+            "https://github.com/misterjojo/stencil-import-issue",
+            "https://github.com/sean-perkins/stencil-named-imports",
+            "https://github.com/KyleSmith0905/mre--vite-stencil-dynamic-import",
+            "https://github.com/sean-perkins/stencil-ce-project",
+            "https://github.com/leticiacamposs2/dynamically-import-css",
+            "https://github.com/maldago/stencil-angular-output-target",
+            "https://github.com/francoqueirolo/publishing-example-projects",
+            "https://github.com/celineDev/gatsby__button"
+        ],
+        "commits": [
+
+        ]
+    },
+    "HTMX": {
+        "homepage": "https://htmx.org",
+        "documentation": "https://htmx.org/docs",
+        "announcements": ["https://htmx.org/posts/2023-11-03-htmx-1-9-7-is-released/"],
+        "import": "https://unpkg.com/htmx.org@1.9.12",
+        "repositories": [
+
+        ],
+        "commits": [
+
+        ]
+    },
+    "redwood": {
+        "homepage": "https://redwoodjs.com",
+        "documentation": "https://redwoodjs.com/docs/introduction",
+        "announcements": ["https://redwoodjs.com/blog/rsc-now-in-redwoodjs"],
+        "repositories": [
+            "https://github.com/ChrisLFieldsII/redwood-font-import-storybook-bug",
+            "https://github.com/mcolleague/beatdrive"
+        ],
+        "commits": [
+
+        ],
+        "import": "@redwoodjs/*"
+    },
+    "ionic": {
+        "homepage": "https://ionic.io",
+        "documentation": "https://ionic.io/docs",
+        "announcements": ["https://ionic.io/blog/announcing-ionic-8-1"],
+        "import": "@ionic/*",
+        "repositories": [
+            "https://github.com/ionic-enterprise/tutorials-and-demos-ng",
+            "https://github.com/ionic-enterprise/tutorials-and-demos-react",
+            "https://github.com/ionic-enterprise/tutorials-and-demos-vue",
+            "https://github.com/jogilsang/ionic3-push",
+            "https://github.com/jogilsang/ionic3-fcm",
+            "https://github.com/chawsunyein/MyIonicProject",
+            "https://github.com/StekolschikovV/ionic-import-error",
+            "https://github.com/HaidarVladyslav/ionic-report-glob-import",
+            "https://github.com/RodrigoRomero2308/test-ionic-lazy-import",
+            "https://github.com/theduodecim/ionic_Import_And_Export_CVS",
+            "https://github.com/ashnewport/ionic-starter-blank",
+            "https://github.com/Ctrl-Zee/omelette-du-fromage",
+            "https://github.com/ashkkr/HealtInitialsApp",
+            "https://github.com/runisland/meteor-ionic4"
+        ],
+        "commits": [
+
+        ]
+
+    },
+    "expo": {
+        "homepage": "https://expo.dev",
+        "documentation": "https://docs.expo.dev",
+        "announcements": ["https://expo.dev/blog/expo-orbit-now-available-as-a-preview-for-windows", "https://expo.dev/blog/introducing-expo-atlas"],
+        "import": "expo",
+        "repositories": [
+            "https://github.com/jloosli/node-firestore-import-export",
+            "https://github.com/najadojo/gltf-import-export",
+            "https://github.com/lukeed/resolve.exports",
+            "https://github.com/SoftwareBrothers/adminjs-import-export",
+            "https://github.com/intuit/eslint-plugin-no-explicit-type-exports",
+            "https://github.com/cawa-93/unplugin-auto-expose",
+            "https://github.com/dickwolff/Export-To-Ghostfolio",
+            "https://github.com/A-Shleifman/eslint-plugin-export-scope",
+            "https://github.com/oshosanya/graphql-export",
+            "https://github.com/jsakas/figma-plugin-color-import-export",
+            "https://github.com/walts81/vscode-ext-import-export",
+            "https://github.com/josanr/Bazissoft-Export-parser",
+            "https://github.com/skarab42/rollup-plugin-css-export",
+            "https://github.com/ZeanQin/strava-activities-bulk-exporter-for-garmin-connect",
+            "https://github.com/Pepperi-Addons/Import-Export-ATD---angular-10",
+            "https://github.com/coconilu/vite-plugin-remain-exports",
+            "https://github.com/DevashishSuthar/Import-Export-Excel-Frontend-TS",
+            "https://github.com/ntn-x2/kilt-rewards-importers-exporters",
+            "https://github.com/Geotab/geotabRegistrationConfigExport",
+            "https://github.com/ShivamMangal/importExport",
+            "https://github.com/Pepperi-Addons/ImportExportATD",
+            "https://github.com/learn-co-curriculum/react-hooks-import-export-lab",
+            "https://github.com/Baboo7/strapi-plugin-import-export-entries",
+            "https://github.com/EdisonPeM/strapi-plugin-import-export-content",
+            "https://github.com/lazurey/strapi-plugin-content-export-import",
+            "https://github.com/Polarisation/indexeddb-export-import",
+            "https://github.com/masumsoft/cassandra-exporter",
+            "https://github.com/auth0-extensions/auth0-user-import-export-extension",
+            "https://github.com/Momo707577045/merged-excel-import-export-demo",
+            "https://github.com/jake-figma/variables-import-export",
+            "https://github.com/cstadther/adventure-import-export",
+            "https://github.com/dhis2/import-export-app",
+            "https://github.com/agentmishra/Import-Export-React",
+            "https://github.com/ktty1220/export-cookie-for-puppeteer",
+            "https://github.com/GorillaStack/dynamodb-csv-export-import"
+        ],
+        "commits": [
+
+        ]
+    },
+    "vuepress": {
+        "homepage": "https://vuepress.vuejs.org",
+        "documentation": "https://vuepress.vuejs.org/guide/introduction.html",
+        "import": "@vuepress/*",
+        "announcements": ["https://github.com/vuepress/core/blob/main/CHANGELOG.md"],
+        "repositories": [
+            "https://github.com/getnacelle/vuepress-plugin-github-markdown"
+        ],
+        "commits": [
+
+        ]
+    },
+    "fluent-ui": {
+        "homepage": "https://developer.microsoft.com/fluentui",
+        "documentation": "https://developer.microsoft.com/en-us/fluentui#/get-started",
+        "import": "@fluentui/react",
+        "announcements": ["https://fluent2.microsoft.design/get-started/whatisnew"],
+        "repositories": [
+
+        ],
+        "commits": [
+
+        ]
     }
 }
