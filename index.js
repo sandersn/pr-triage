@@ -14,7 +14,7 @@ function updateFromGraphql(columns) {
   const noAssignees = []
   for (const column of columns) {
     for (const cardp of column.cards.nodes) {
-      updateCard(cardp.content, cardp.url, noAssignees, pulls, column.name)
+      updateCard(cardp, cardp.url, noAssignees, pulls, column.name)
     }
   }
   return /** @type {[Pulls, Card[]]} */([pulls, noAssignees])
@@ -82,79 +82,71 @@ async function main() {
   for (const name of Object.keys(columnNames)) {
     columns.set(fromColumn(name), {
       name: fromColumn(name),
-      cards: {
-        pageInfo: {
-          startCursor: "",
-          hasNextPage: false,
-          endCursor: ""
-        },
-        nodes: []
-      }
+      cards: { nodes: [] }
     })
   }
   let more = ""
+  /** @type {Board} */
+  let board
   do {
-    /** @type {Board} */
-    let board = await graphql(`
+    board = await graphql(`
 query
 {
   repository(name: "TypeScript", owner: "microsoft") {
-    project(number: 13) {
-      columns(first: 4) {
+    projectV2(number: 1252) {
+      items(first: 50${more}) {
+        pageInfo {
+          startCursor
+          hasNextPage
+          endCursor
+        }
         nodes {
-          cards(first: 50${more}) {
-            pageInfo {
-              startCursor
-              hasNextPage
-              endCursor
-            }
-            nodes {
-              content {
-                ... on PullRequest {
-                  number
-                  labels(first: 10) {
-                    nodes {
-                      name
-                    }
+          fieldValueByName(name:"Status") {
+            ... on ProjectV2ItemFieldSingleSelectValue { name }
+          }
+          content {
+            ... on PullRequest {
+              url
+              number
+              labels(first: 10) {
+                nodes {
+                  name
+                }
+              }
+              title
+              assignees(first: 5) {
+                nodes {
+                  login
+                }
+              }
+              commits(last: 1) {
+                nodes {
+                  commit {
+                    committedDate
                   }
-                  title
-                  assignees(first: 5) {
-                    nodes {
-                      login
-                    }
-                  }
-                  commits(last: 1) {
-                    nodes {
-                      commit {
-                        committedDate
-                      }
-                    }
-                  }
-                  reviews(last: 1) {
-                    nodes {
-                      publishedAt
-                      author {
-                        login
-                      }
-                    }
-                  }
-                  comments(last: 1) {
-                    nodes {
-                      publishedAt
-                      author {
-                        login
-                      }
-                    }
-                  }
+                }
+              }
+              reviews(last: 1) {
+                nodes {
+                  publishedAt
                   author {
                     login
                   }
                 }
               }
-              url
+              comments(last: 1) {
+                nodes {
+                  publishedAt
+                  author {
+                    login
+                  }
+                }
+              }
+              author {
+                login
+              }
             }
           }
-          name
         }
       }
     }
@@ -165,24 +157,24 @@ query
         authorization: "token " + process.env.GH_API_TOKEN
       }
     })
-    board.repository.project.columns.nodes.forEach((c,i) => {
-      const column = columns.get(fromColumn(c.name))
+    board.repository.projectV2.items.nodes.forEach(card => {
+      const column = columns.get(fromColumn(card.fieldValueByName.name))
       if (!column) {
-        throw new Error(`Column not found: ${fromColumn(c.name)}`)
+        throw new Error(`Column not found: ${fromColumn(card.fieldValueByName.name)}`)
       } 
-      assert(column.name, `Column name mismatch: ${fromColumn(c.name)} !== ${column.name}`)
-      column.cards.nodes.push(...c.cards.nodes)
+      assert(column.name, `Column name mismatch: ${fromColumn(card.fieldValueByName.name)} !== ${column.name}`)
+      column.cards.nodes.push(card.content)
     })
-    more = board.repository.project.columns.nodes[0].cards.pageInfo.hasNextPage 
-      ? `, after:"${board.repository.project.columns.nodes[0].cards.pageInfo.endCursor}"` 
+    more = board.repository.projectV2.items.pageInfo.hasNextPage 
+      ? `, after:"${board.repository.projectV2.items.pageInfo.endCursor}"` 
       : ""
   } while (more)
   const [pulls, noAssignees] = updateFromGraphql(columns.values())
   if (noAssignees.length) {
     for (const e of noAssignees) {
-      if (e.assignees.nodes.length === 1 && e.author.name === e.assignees.nodes[0].name)
+      if (e.assignees.nodes.length === 1 && e.author.login === e.assignees.nodes[0].login)
         continue
-      console.log('Should have at least 1 assignee:', "https://github.com/microsoft/TypeScript/pull/"+e.number, e.author.name, "|||", e.assignees.nodes.map(n => n.name).join(", "))
+      console.log('Should have at least 1 assignee:', "https://github.com/microsoft/TypeScript/pull/"+e.number, e.author.login, "|||", e.assignees.nodes.map(n => n.login).join(", "))
     }
     console.log('Errors found, not writing output.json')
     return
