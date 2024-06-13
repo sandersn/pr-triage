@@ -19,15 +19,12 @@ export const team = {
   "navya9singh": "Navya Singh",
 }
 /**
- * @param {string | undefined} d1
- * @param {string | undefined} d2
- * @return {string | undefined}
+ * @param {string} d1
+ * @param {string} d2
+ * @return {string}
  */
 export function later(d1, d2) {
-  return d1 === undefined ? d2
-    : d2 === undefined ? d1
-    : new Date(d1) > new Date(d2) ? d1
-    : d2
+  return new Date(d1) > new Date(d2) ? d1 : d2
 }
 /** @param {Map<any,any>} m */
 export function sortv(m) {

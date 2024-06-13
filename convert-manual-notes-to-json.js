@@ -11,7 +11,7 @@ let notes = []
 
 function reset() {
     pull.notes = notes
-    pull = {}
+    pull = /** @type {Pull} */({})
     notes = []
 }
 /** @param {string} line */
@@ -27,7 +27,7 @@ function parseTitle(line) {
 function parseNotes(line) {
     notes.push(line)
 }
-/** @type {Pull['reviewer'][]} */
+/** @type {Pull['reviewers']} */
 const team = ["anders", "andrew-branch", "andrew-casey", "eli", "mine", "orta", "ron", "ryan", "sheetal", "wesley"]
 for (const reviewer of team) {
     for (let line of fs.readFileSync(`notes-manual/${reviewer}.md`, 'utf8').split('\n')) {
@@ -39,7 +39,7 @@ for (const reviewer of team) {
         if (line.startsWith("*")) {
             reset()
             const number = parseTitle(line)
-            pull.reviewer = reviewer
+            pull.reviewers = [reviewer]
             pulls[number] = pull
         }
         else {

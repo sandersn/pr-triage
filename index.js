@@ -34,7 +34,7 @@ function updateCard(card, url, noAssignees, pulls, state) {
   const lastReviewer = card.reviews.nodes[0]?.author.login
   const lastCommit = card.commits.nodes[0].commit.committedDate
   const reviewers = card.assignees.nodes.map(x => x.login)
-  assert(!reviewers.includes(undefined), "Reviewer not found for", card.number, card.assignees, reviewers)
+  assert(!reviewers.includes(/** @type {any} */(undefined)), "Reviewer not found for", card.number, card.assignees, reviewers)
 
   if (card.assignees.nodes.length !== 1 && reviewers.filter(r => r !== card.author.login).length < 1 && state !== 'not-started') {
     console.log("Should only have 1 assignee", card.number, 'but has', reviewers.length, ":", reviewers.join(", "), "::", JSON.stringify(card.assignees.nodes))
@@ -158,11 +158,12 @@ query
       }
     })
     board.repository.projectV2.items.nodes.forEach(card => {
-      const column = columns.get(fromColumn(card.fieldValueByName.name))
+      const name = fromColumn(card.fieldValueByName.name)
+      const column = columns.get(name)
       if (!column) {
-        throw new Error(`Column not found: ${fromColumn(card.fieldValueByName.name)}`)
+        throw new Error(`Column not found: ${name}`)
       } 
-      assert(column.name, `Column name mismatch: ${fromColumn(card.fieldValueByName.name)} !== ${column.name}`)
+      assert(column.name, `Column name mismatch: ${name} !== ${column.name}`)
       column.cards.nodes.push(card.content)
     })
     more = board.repository.projectV2.items.pageInfo.hasNextPage 
@@ -183,27 +184,27 @@ query
 }
 
 
-const columnNames = {
+const columnNames = /** @type {const} */({
   "Not started": "not-started",
   "Waiting on reviewers": "review",
   "Waiting on author": "waiting",
   "Needs merge": "merge",
   "Done": "done"
-}
-const labelNames = {
+})
+const labelNames = /** @type {const} */({
   "For Milestone Bug": "milestone",
   "For Backlog Bug": "backlog",
   "For Uncommitted Bug": "uncommitted",
   "Housekeeping": "housekeeping",
   "Experiment": "experiment",
   "Author: Team": "OTHER"
-}
+})
 /**
  * @param {string} name
  * @return {Pull["state"]}
  */
 function fromColumn(name) {
-  const c = columnNames[name]
+  const c = columnNames[/** @type {keyof typeof columnNames} */(name)]
   assert(c, "State not found for column named:", name)
   return c
 }
@@ -214,10 +215,16 @@ function fromColumn(name) {
 function fromLabels(names) {
   let l
   for (const n of names.map(ns => ns.name)) {
-    l = labelNames[n]
+    l = labelNames[/** @type {keyof typeof labelNames} */(n)]
     if (l && l !== "OTHER") break
   }
-  assert(l, `Label not found for labels:'${names.map(ns => ns.name).join(';')}' (${names.length})`)
+  if(l === undefined) {
+    throw new Error(`Label not found for labels:'${names.map(ns => ns.name).join(';')}' (${names.length})`)
+  }
+  else if(l === 'uncommitted') {
+    // label isn't currently used 
+    return 'OTHER'
+  }
   return l
 }
 

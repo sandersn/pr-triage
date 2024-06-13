@@ -13,10 +13,10 @@ type Pull = {
   state: "not-started" | "review" | "waiting" | "merge" | "done"
   label: "milestone" | "backlog" | "bonus" | "housekeeping" | "experiment" | "OTHER"
   id: string
-  lastCommit: string | undefined
-  lastComment: string | undefined
+  lastCommit: string
+  lastComment: string
   lastCommenter: string | undefined
-  lastReview: string | undefined
+  lastReview: string
   lastReviewer: string | undefined
 }
 

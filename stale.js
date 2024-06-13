@@ -2,7 +2,7 @@ import * as fs from 'fs'
 import { team, sortvf, later } from './core.js'
 /** @type {Record<string, Pull>} */
 const prs = JSON.parse(fs.readFileSync('output.json', 'utf8'))
-/** @type {Map<string, Pull>} */
+/** @type {Map<number, Pull>} */
 const staleWaiting = new Map() // two weeks of inactivity, maybe a month
 const staleReview = new Map() // one year of inactivity
 const yearAgo = new Date(Date.now() - 365 * 86400 * 1000)
@@ -10,7 +10,7 @@ const fortnightAgo = new Date(Date.now() - 14 * 86400 * 1000)
 for (const [number, pr] of Object.entries(prs)) {
   if (pr.state === 'waiting' && pr.lastCommit &&
     (pr.author in team ? new Date(pr.lastCommit) < yearAgo : new Date(pr.lastCommit) < fortnightAgo)) {
-    staleWaiting.set(number, pr)
+    staleWaiting.set(+number, pr)
   }
   else if (pr.state === 'review' && pr.lastComment && new Date(pr.lastComment) < yearAgo) {
     staleReview.set(number, pr)
