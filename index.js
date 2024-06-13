@@ -13,8 +13,8 @@ function updateFromGraphql(columns) {
   /** @type {Card[]} */
   const noAssignees = [];
   for (const column of columns) {
-    for (const cardp of column.cards.nodes) {
-      updateCard(cardp, cardp.url, noAssignees, pulls, column.name);
+    for (const cardp of column.cards) {
+      updateCard(cardp, cardp.id, noAssignees, pulls, column.name);
     }
   }
   return /** @type {[Pulls, Card[]]} */ ([pulls, noAssignees]);
@@ -22,12 +22,12 @@ function updateFromGraphql(columns) {
 
 /**
  * @param {Card} card
- * @param {string} url
+ * @param {string} id
  * @param {Card[]} noAssignees
  * @param {Pulls} pulls
- * @param {Pull["state"]} state
+ * @param {Pull["status"]} state
  */
-function updateCard(card, url, noAssignees, pulls, state) {
+function updateCard(card, id, noAssignees, pulls, state) {
   const lastComment = card.comments.nodes[0]?.publishedAt;
   const lastCommenter = card.comments.nodes[0]?.author.login;
   const lastReview = card.reviews.nodes[0]?.publishedAt;
@@ -63,12 +63,16 @@ function updateCard(card, url, noAssignees, pulls, state) {
   const existing = pulls[card.number];
   if (existing) {
     // These might have changed, and it's a good idea for sanity checking to diff the output
-    // Don't override the description, though; assume that it might be manually updated
+    // Don't override the title, though; assume that it might be manually updated
+    existing.body = card.body
+    existing.bugbodies = card.closingIssuesReferences.nodes.map((n) => n.body);
     existing.reviewers = reviewers;
-    existing.state = state;
+    existing.suggested = card.suggestedReviewers.map((r) => r.reviewer.login);
+    existing.files = card.files.nodes.map((f) => f.path);
+    existing.status = state;
     existing.label = fromLabels(card.labels.nodes);
     if (!existing.author) existing.author = card.author.login;
-    existing.id = fromUrl(url);
+    existing.id = id;
     existing.lastComment = later(lastComment, existing.lastComment);
     existing.lastCommit = later(lastCommit, existing.lastCommit);
     existing.lastCommenter = lastCommenter;
@@ -76,13 +80,17 @@ function updateCard(card, url, noAssignees, pulls, state) {
     existing.lastReviewer = lastReviewer;
   } else {
     pulls[card.number] = {
-      description: card.title,
+      title: card.title,
+      body: card.body,
+      bugbodies: card.closingIssuesReferences.nodes.map((n) => n.body),
       author: card.author.login,
       reviewers,
+      suggested: card.suggestedReviewers.map((r) => r.reviewer.login),
+      files: card.files.nodes.map((f) => f.path),
       notes: [],
-      state,
+      status: state,
       label: fromLabels(card.labels.nodes),
-      id: fromUrl(url),
+      id,
       lastCommit,
       lastComment,
       lastCommenter,
@@ -94,37 +102,38 @@ function updateCard(card, url, noAssignees, pulls, state) {
 
 async function main() {
   // Use the REPL at https://developer.github.com/v4/explorer/ to update this query
-  /** @type {Map<Pull["state"], Column>} */
+  /** @type {Map<Pull["status"], Column>} */
   const columns = new Map();
   for (const name of Object.keys(columnNames)) {
     columns.set(fromColumn(name), {
       name: fromColumn(name),
-      cards: { nodes: [] },
+      cards: [],
     });
   }
   let more = "";
   /** @type {Board} */
   let board;
   do {
+    console.log('.')
     board = await graphql(
       `
 query
 {
   repository(name: "TypeScript", owner: "microsoft") {
     projectV2(number: 1252) {
-      items(first: 50${more}) {
+      items(first: 5${more}) {
         pageInfo {
           startCursor
           hasNextPage
           endCursor
         }
         nodes {
+          id
           fieldValueByName(name:"Status") {
-            ... on ProjectV2ItemFieldSingleSelectValue { name }
+            ... on ProjectV2ItemFieldSingleSelectValue { id, name }
           }
           content {
             ... on PullRequest {
-              url
               number
               labels(first: 10) {
                 nodes {
@@ -132,6 +141,22 @@ query
                 }
               }
               title
+              body
+              suggestedReviewers {
+                reviewer {
+                  login
+                }
+              }
+              closingIssuesReferences(first: 5) {
+                nodes {
+                  body
+                }
+              }
+              files(first:50) {
+                nodes {
+                  path
+                }
+              }
               assignees(first: 5) {
                 nodes {
                   login
@@ -184,7 +209,7 @@ query
         throw new Error(`Column not found: ${name}`);
       }
       assert(column.name, `Column name mismatch: ${name} !== ${column.name}`);
-      column.cards.nodes.push(card.content);
+      column.cards.push({ id: card.id, ...card.content });
     });
     more = board.repository.projectV2.items.pageInfo.hasNextPage
       ? `, after:"${board.repository.projectV2.items.pageInfo.endCursor}"`
@@ -229,7 +254,7 @@ const labelNames = /** @type {const} */ ({
 });
 /**
  * @param {string} name
- * @return {Pull["state"]}
+ * @return {Pull["status"]}
  */
 function fromColumn(name) {
   const c = columnNames[/** @type {keyof typeof columnNames} */ (name)];
@@ -257,11 +282,6 @@ function fromLabels(names) {
     return "OTHER";
   }
   return l;
-}
-
-/** @param {string} url */
-function fromUrl(url) {
-  return url.slice(url.indexOf("-") + 1);
 }
 
 main().catch((e) => {

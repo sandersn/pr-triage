@@ -6,11 +6,11 @@ const reviewers = new Map();
 const authors = new Map();
 const opens = new Map();
 for (const pr of Object.values(prs)) {
-  if (pr.state === "done") continue;
+  if (pr.status === "done") continue;
   if (pr.author in team && pr.reviewers.some((r) => r === pr.author)) {
     opens.set(pr.author, (opens.get(pr.author) ?? 0) + 1);
   }
-  if (pr.state === "review")
+  if (pr.status === "review")
     for (const r of pr.reviewers)
       if (r !== pr.author) reviewers.set(r, (reviewers.get(r) ?? 0) + 1);
   if (!(pr.author in team))

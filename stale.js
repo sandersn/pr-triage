@@ -9,7 +9,7 @@ const yearAgo = new Date(Date.now() - 365 * 86400 * 1000);
 const fortnightAgo = new Date(Date.now() - 14 * 86400 * 1000);
 for (const [number, pr] of Object.entries(prs)) {
   if (
-    pr.state === "waiting" &&
+    pr.status === "waiting" &&
     pr.lastCommit &&
     (pr.author in team
       ? new Date(pr.lastCommit) < yearAgo
@@ -17,7 +17,7 @@ for (const [number, pr] of Object.entries(prs)) {
   ) {
     staleWaiting.set(+number, pr);
   } else if (
-    pr.state === "review" &&
+    pr.status === "review" &&
     pr.lastComment &&
     new Date(pr.lastComment) < yearAgo
   ) {
@@ -41,7 +41,7 @@ for (const [n, w] of staleReview) log(n, w);
  * @param {Pull} pull
  */
 function log(number, pull) {
-  console.log(number, "by", pull.author, ":", pull.description);
+  console.log(number, "by", pull.author, ":", pull.title);
   const lastActivity = later(pull.lastComment, pull.lastReview);
   console.log(
     `Last commit: ${ago(pull.lastCommit)}(${ago(

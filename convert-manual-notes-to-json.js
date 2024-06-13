@@ -20,7 +20,7 @@ function parseTitle(line) {
   const end = line.indexOf(" - ");
   assert(start > -1, "didn't find /pull/");
   assert(end > -1, "didn't find ' - '");
-  pull.description = line.slice(end + 3);
+  pull.title = line.slice(end + 3);
   return line.slice(start + 6, end);
 }
 /** @param {string} line */
