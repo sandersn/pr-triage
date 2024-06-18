@@ -45,7 +45,8 @@ function updateCard(card, id, noAssignees, pulls, state) {
   if (
     card.assignees.nodes.length !== 1 &&
     reviewers.filter((r) => r !== card.author.login).length < 1 &&
-    state !== "not-started"
+    state !== "not-started" &&
+    state !== "done"
   ) {
     console.log(
       "Should only have 1 assignee",
@@ -64,7 +65,7 @@ function updateCard(card, id, noAssignees, pulls, state) {
   if (existing) {
     // These might have changed, and it's a good idea for sanity checking to diff the output
     // Don't override the title, though; assume that it might be manually updated
-    existing.body = card.body
+    existing.body = card.body;
     existing.bugbodies = card.closingIssuesReferences.nodes.map((n) => n.body);
     existing.reviewers = reviewers;
     existing.suggested = card.suggestedReviewers.map((r) => r.reviewer.login);
@@ -114,7 +115,8 @@ async function main() {
   /** @type {Board} */
   let board;
   do {
-    console.log('.')
+    console.log(".");
+    // maybe PR labels would be useful too
     board = await graphql(
       `
 query

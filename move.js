@@ -19,7 +19,7 @@ const fieldId = "PVTSSF_lADOAF3p4s4Ai5bizgbWAs4"
 
 async function main() {
   if (process.argv.length < 3) {
-    console.log("usage: node move.js pr# ");
+    console.log("usage: node move.js pr# column");
     // console.log("usage: node move.js pr# [assignee] [reviewers...]");
     return;
   }

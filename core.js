@@ -42,3 +42,18 @@ export function sortvf(m, gt) {
     gt(v1, v2) ? -1 : 1
   );
 }
+
+/**
+ * Remove HTML comments from a string
+ * @param {string} s
+ */
+export function removeComments(s) {
+  let start = s.indexOf("<!--");
+  let end = s.indexOf("-->", start);
+  while (start !== -1) {
+    s = s.slice(0, start) + s.slice(end + 3);
+    start = s.indexOf("<!--");
+    end = s.indexOf("-->", start);
+  }
+  return s;
+}
