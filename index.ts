@@ -1,33 +1,24 @@
 import * as fs from "fs";
-import { later } from "./core.js";
+import { later } from "./core.ts";
 import { assert } from "console";
 import { graphql } from "@octokit/graphql";
+import { GraphQlResponse } from "@octokit/graphql/dist-types/types.js";
 
 /**
  * convert graphql output to denormalised output
- * @param {IterableIterator<Column>} columns
  */
-function updateFromGraphql(columns) {
-  /** @type {Pulls} */
-  const pulls = {};
-  /** @type {Card[]} */
-  const noAssignees = [];
+function updateFromGraphql(columns: IterableIterator<Column>) {
+  const pulls: Pulls = {};
+  const noAssignees: Card[] = [];
   for (const column of columns) {
     for (const cardp of column.cards) {
       updateCard(cardp, cardp.id, noAssignees, pulls, column.name);
     }
   }
-  return /** @type {[Pulls, Card[]]} */ ([pulls, noAssignees]);
+  return [pulls, noAssignees] as [Pulls, Card[]];
 }
 
-/**
- * @param {Card} card
- * @param {string} id
- * @param {Card[]} noAssignees
- * @param {Pulls} pulls
- * @param {Pull["status"]} state
- */
-function updateCard(card, id, noAssignees, pulls, state) {
+function updateCard(card: Card, id: string, noAssignees: Card[], pulls: Pulls, state: Pull["status"]) {
   const lastComment = card.comments.nodes[0]?.publishedAt;
   const lastCommenter = card.comments.nodes[0]?.author.login;
   const lastReview = card.reviews.nodes[0]?.publishedAt;
@@ -35,7 +26,7 @@ function updateCard(card, id, noAssignees, pulls, state) {
   const lastCommit = card.commits.nodes[0].commit.committedDate;
   const reviewers = card.assignees.nodes.map((x) => x.login);
   assert(
-    !reviewers.includes(/** @type {any} */ (undefined)),
+    !reviewers.includes(undefined as any),
     "Reviewer not found for",
     card.number,
     card.assignees,
@@ -102,9 +93,54 @@ function updateCard(card, id, noAssignees, pulls, state) {
 }
 
 async function main() {
+  let result = [];
+  let hasNextPage = true;
+  let after = null;
+
+  while (hasNextPage) {
+    const queryResult: any = await graphql(
+      `query ($after: String) {
+        repository(name: "TypeScript", owner: "microsoft") {
+          pullRequests(states: OPEN, first: 10, after: $after) {
+            pageInfo {
+              hasNextPage
+              endCursor
+            }
+            nodes {
+              number
+              title
+              author {
+                login
+              }
+              createdAt
+              updatedAt
+              labels(first: 10) {
+                nodes {
+                  name
+                }
+              }
+            }
+          }
+        }
+      }`,
+      {
+        headers: {
+          authorization: "token " + process.env.GH_API_TOKEN,
+        },
+        after,
+      }
+    );
+
+    result.push(...queryResult.repository.pullRequests.nodes);
+    hasNextPage = queryResult.repository.pullRequests.pageInfo.hasNextPage;
+    after = queryResult.repository.pullRequests.pageInfo.endCursor;
+  }
+  console.log(JSON.stringify(result, undefined, 2));
+}
+
+async function oldProjectBoard() {
   // Use the REPL at https://developer.github.com/v4/explorer/ to update this query
-  /** @type {Map<Pull["status"], Column>} */
-  const columns = new Map();
+  const columns: Map<Pull["status"], Column> = new Map();
   for (const name of Object.keys(columnNames)) {
     columns.set(fromColumn(name), {
       name: fromColumn(name),
@@ -112,8 +148,7 @@ async function main() {
     });
   }
   let more = "";
-  /** @type {Board} */
-  let board;
+  let board: Board;
   do {
     console.log(".");
     // maybe PR labels would be useful too
@@ -239,38 +274,30 @@ query
   fs.writeFileSync("output.json", JSON.stringify(pulls, undefined, 2));
 }
 
-const columnNames = /** @type {const} */ ({
+const columnNames = {
   "Not started": "not-started",
   "Waiting on reviewers": "review",
   "Waiting on author": "waiting",
   "Needs merge": "merge",
   Done: "done",
-});
-const labelNames = /** @type {const} */ ({
+} as const;
+const labelNames = {
   "For Milestone Bug": "milestone",
   "For Backlog Bug": "backlog",
   "For Uncommitted Bug": "uncommitted",
   Housekeeping: "housekeeping",
   Experiment: "experiment",
   "Author: Team": "OTHER",
-});
-/**
- * @param {string} name
- * @return {Pull["status"]}
- */
-function fromColumn(name) {
-  const c = columnNames[/** @type {keyof typeof columnNames} */ (name)];
+} as const;
+function fromColumn(name: string): Pull["status"] {
+  const c = columnNames[name as keyof typeof columnNames];
   assert(c, "State not found for column named:", name);
   return c;
 }
-/**
- * @param {Array<{name: string}>} names
- * @return {Pull["label"]}
- */
-function fromLabels(names) {
+function fromLabels(names: Array<{ name: string; }>): Pull["label"] {
   let l;
   for (const n of names.map((ns) => ns.name)) {
-    l = labelNames[/** @type {keyof typeof labelNames} */ (n)];
+    l = labelNames[n as keyof typeof labelNames];
     if (l && l !== "OTHER") break;
   }
   if (l === undefined) {

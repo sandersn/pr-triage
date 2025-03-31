@@ -1,11 +1,12 @@
 {
-    "compilerOptions": {
-        "strict": true,
-        "allowJs": true,
-        "checkJs": true,
-        "noEmit": true,
-        "target": "esnext",
-        "module": "nodenext",
-        "moduleResolution": "nodenext",
-    }
+  "compilerOptions": {
+    "strict": true,
+    "allowJs": true,
+    "checkJs": true,
+    "noEmit": true,
+    "target": "esnext",
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "allowImportingTsExtensions": true
+  }
 }
