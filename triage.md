@@ -20,6 +20,12 @@ I believe this test branch is unused so I'm closing it. Please re-open it if I'm
 ### Already asked to close
 Closing due to lack of activity.
 
+### Maybe, minor fix
+@weswigham This has been open for a couple of years. If this isn't the right solution, should we close it? 
+Is it possible to fix the error that @Andarist mentions some other way?
+
+Either way, this fix is probably minor enough to wait until Corsa has overtaken Strada.
+
 ### Close
 
 ## For Uncommitted Bug
@@ -48,13 +54,12 @@ MariaSolOs : Mark inaccessible codefix parameter types as `any`
 armanio123 : TEST. Ignore this PR.
 ahejlsberg : Cache last computed flow type for identifiers and 'this'
 jakebailey : Export API to provide lib.d.ts listing/mapping
-
 sandersn : JS declaration emit includes identical overrides
 weswigham : Replace errorType return with Debug fail in checkExpressionWorker
 Zzzen : WIP: allow circular project references
 weswigham : Add union and intersection types to unions by type list id
-Andarist : Prevent readonly symbols widening
 yin : Bugfix/union excess property check
+Andarist : Prevent readonly symbols widening
 Andarist : Fixed a symbol display crash on expando members write locations
 Ilanaya : feat: add flip operator refactoring
 DanielRosenwasser : Always perform inode watching unless on Windows.
