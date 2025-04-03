@@ -33,16 +33,10 @@ const raw: RawPull[] = JSON.parse(fs.readFileSync("raw-prs.json", "utf-8"))
 const pulls: Pull[] = convertRawPullsToPulls(raw)
 const YEARS_IN_MS = 365 * 24 * 60 * 60 * 1000
 
-const toInspect = pulls.filter(
-  pull =>
-    pull.labels.includes("For Uncommitted Bug")  // 272
-    // pull.createdAt < new Date(Date.now() - 4 * YEARS_IN_MS) // 5
-    && pull.updatedAt < new Date(Date.now() - 1 * YEARS_IN_MS), // 79
-)
+const toInspect = pulls.sort((a, b) => a.updatedAt.getTime() - b.updatedAt.getTime())
 console.log(toInspect.length)
-console.log(toInspect.map(p => p.author).toSorted())
 for (const pull of toInspect) {
-  console.log(pull.author, ":", pull.title)
+  console.log(pull.number, "--", pull.author, ":", pull.title)
 }
 //
 // const configPath = path.resolve(process.env.HOME || process.env.USERPROFILE || ".", ".cleonrc.json")
