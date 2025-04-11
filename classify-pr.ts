@@ -2,43 +2,26 @@ import type { Pull, RawPull } from "./types.d.ts"
 import * as fs from "fs"
 import * as path from "path"
 
-function convertRawPullsToPulls(rawPulls: RawPull[]): Pull[] {
-  return rawPulls.map(rawPull => ({
-    id: rawPull.id,
-    number: rawPull.number,
-    title: rawPull.title,
-    author: rawPull.author.login,
-    createdAt: new Date(rawPull.createdAt),
-    updatedAt: new Date(rawPull.updatedAt),
-    labels: rawPull.labels.nodes.map(label => label.name),
-    files: rawPull.files.nodes.map(file => file.path),
-    body: rawPull.body,
-    lastComment: rawPull.comments.nodes[0]
-      ? {
-          publishedAt: new Date(rawPull.comments.nodes[0].publishedAt),
-          body: rawPull.comments.nodes[0].body,
-
-          author: rawPull.comments.nodes[0].author.login,
-        }
-      : undefined,
-    reviews: rawPull.reviews.nodes.map(review => ({
-      publishedAt: new Date(review.publishedAt),
-      state: review.state as "APPROVED" | "CHANGES_REQUESTED" | "COMMENTED",
-      author: review.author.login,
-    })),
-  }))
+const pulls: Pull[] = JSON.parse(fs.readFileSync("prs.json", "utf-8"))
+// const toInspect = pulls.sort((a, b) => a.updatedAt.getTime() - b.updatedAt.getTime())
+// console.log(toInspect.length)
+for (const pull of pulls) {
+  console.log(formatPull(pull))
+  break
 }
 
-const raw: RawPull[] = JSON.parse(fs.readFileSync("raw-prs.json", "utf-8"))
-const pulls: Pull[] = convertRawPullsToPulls(raw)
-const YEARS_IN_MS = 365 * 24 * 60 * 60 * 1000
-
-const toInspect = pulls.sort((a, b) => a.updatedAt.getTime() - b.updatedAt.getTime())
-console.log(toInspect.length)
-for (const pull of toInspect) {
-  console.log(pull.number, "--", pull.author, ":", pull.title)
+function formatPull(pull: Pull): string {
+  // TODO: Depending on the context window, I might want a less-obvious order.
+  return `# ${pull.title} (${pull.number})
+${pull.author} (${pull.createdAt.toString()}, last updated ${pull.updatedAt.toString()})
+${pull.labels.join(", ")}
+${pull.body}
+${pull.comments.map(comment => `- ${comment.author}: ${comment.body}`).join("\n")}
+${pull.reviews.map(review => `- ${review.author}: ${review.body}`).join("\n")}
+${pull.files.map(file => `- ${file.path} (${file.additions} additions, ${file.deletions} deletions)`).join("\n")}
+`
 }
-//
+
 // const configPath = path.resolve(process.env.HOME || process.env.USERPROFILE || ".", ".cleonrc.json")
 // const localConfigPath = path.resolve(".", ".cleonrc.json")
 

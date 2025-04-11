@@ -3,24 +3,38 @@ export type RawPull = {
   id: string
   number: number
   title: string
-  body: string
-  // bugbodies: Array<{ body: string }>; // TODO for more info
-  files: { nodes: Array<{ path: string }> } // TODO: not sure how useful this is for first pass
   author: { login: string }
   createdAt: string
   updatedAt: string
   labels: { nodes: Array<{ name: string }> }
-  comments: {
-    nodes: Array<{
-      publishedAt: string
-      body: string
-      author: { login: string }
-    }>
-  }
+  body: string
   reviews: {
     nodes: Array<{
       publishedAt: string
       state: string
+      author: { login: string }
+      body: string
+      comments: {
+        nodes: Array<{
+          publishedAt: string
+          body: string
+        }>
+      }
+    }>
+  }
+  // bugbodies: Array<{ body: string }>; // TODO for more info
+  files: {
+    nodes: Array<{
+      path: string
+      additions: number
+      deletions: number
+      changeType: string
+    }>
+  }
+  comments: {
+    nodes: Array<{
+      publishedAt: string
+      body: string
       author: { login: string }
     }>
   }
@@ -29,22 +43,33 @@ export type Pull = {
   id: string
   number: number
   title: string
-  body: string
-  files: string[]
   author: string
   createdAt: Date
   updatedAt: Date
   labels: string[]
-  lastComment?: {
-    publishedAt: Date
-    body: string
-    author: string
-  }
+  body: string
   reviews: Array<{
     publishedAt: Date
     state: "APPROVED" | "CHANGES_REQUESTED" | "COMMENTED"
     author: string
+    body: string
+    comments: Array<{
+      publishedAt: Date
+      body: string
+    }>
   }>
+  files: Array<{
+    path: string
+    additions: number
+    deletions: number
+    changeType: string
+  }>
+  comments: Array<{
+    publishedAt: Date
+    body: string
+    author: string
+  }>
+  opinion: string | undefined
 }
 
 export type OldPull = {

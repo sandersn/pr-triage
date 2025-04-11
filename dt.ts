@@ -1,36 +1,4 @@
-import * as fs from "fs"
-import { assert } from "console"
-import { graphql } from "@octokit/graphql"
-
-type RawPull = {
-  number: number
-  title: string
-  author: {
-    login: string
-  }
-  createdAt: string
-  labels: {
-    nodes: {
-      name: string
-    }[]
-  }
-  comments: {
-    nodes: {
-      body: string
-      author: {
-        login: string
-      }
-    }[]
-  }
-  files: {
-    nodes: {
-      path: string
-      additions: number
-      deletions: number
-      changeType: string
-    }[]
-  }
-}
+import fs from "fs"
 type Pull = {
   number: number
   title: string
@@ -40,143 +8,42 @@ type Pull = {
   comments: Array<{ body: string; author: string }>
   files: Array<{ path: string; additions: number; deletions: number; changeType: string }>
 }
-
-function cookPull(raw: RawPull): Pull {
-  return {
-    number: raw.number,
-    title: raw.title,
-    author: raw.author.login,
-    createdAt: raw.createdAt,
-    labels: raw.labels.nodes.map(label => label.name),
-    comments: raw.comments.nodes.map(comment => ({ body: comment.body, author: comment.author.login })).filter(comment => comment.author !== "typescript-bot"),
-    files: raw.files.nodes.map(file => ({ path: file.path, additions: file.additions, deletions: file.deletions, changeType: file.changeType })),
+const pulls = JSON.parse(fs.readFileSync("dt-prs.json", "utf-8")) as Pull[]
+let i = 0
+for (const pull of pulls) {
+  if (
+    pull.labels.includes("Abandoned") ||
+    pull.labels.includes("The CI failed") ||
+    pull.labels.includes("Revision needed")
+  ) {
+    continue
   }
-}
-
-async function main() {
-  let result: RawPull[] = []
-  let hasNextPage = true
-  let after = null
-
-  while (hasNextPage) {
-    const queryResult: any = await graphql(
-      `
-        query ($after: String) {
-          repository(name: "DefinitelyTyped", owner: "DefinitelyTyped") {
-            pullRequests(
-              first: 10
-              after: $after
-              states: OPEN
-              labels: [
-                "Critical Package"
-                "Unreviewed"
-                "Edits Infrastructure"
-                "Too Many Owners"
-                "Edits multiple packages"
-                "New Definition"
-                "No Other Owners"
-                "Untested Change"
-              ]
-            ) {
-              nodes {
-                number
-                title
-                author {
-                  login
-                }
-                createdAt
-                labels(first: 10) {
-                  nodes {
-                    name
-                  }
-                }
-                comments(first: 10) {
-                  nodes {
-                    body
-                    author {
-                      login
-                    }
-                    createdAt
-                  }
-                }
-                files(first: 100) {
-                  nodes {
-                    path
-                    additions
-                    deletions
-                    changeType
-                  }
-                }
-              }
-              pageInfo {
-                hasNextPage
-                endCursor
-              }
-            }
-          }
-        }
-      `,
-      {
-        headers: {
-          authorization: "token " + process.env.GH_API_TOKEN,
-        },
-        after,
-      }
+  i++
+  if (pull.labels.includes("Check Config") || pull.labels.includes("Critical package")) {
+    continue
+  }
+  let message
+  // log easily mergable PRs
+  if (
+    pull.author === "hkleungai" &&
+    pull.files.every(
+      f => f.changeType === "DELETED" || (f.changeType === "MODIFIED" && f.path === "notNeededPackages.json")
     )
-
-    result.push(...queryResult.repository.pullRequests.nodes)
-    hasNextPage = queryResult.repository.pullRequests.pageInfo.hasNextPage
-    after = queryResult.repository.pullRequests.pageInfo.endCursor
+  ) {
+    // TODO: Include npm count for the deleted types package and the source package in the message
+    message = "hkleungai"
+  } else if (pull.labels.includes("New Definition")) {
+    message = "New Definition"
+  } else if (pull.labels.includes("Owner Approved")) {
+    message = "Owner Approved"
   }
-  fs.writeFileSync("raw-dt-prs.json", JSON.stringify(result, undefined, 2))
-  fs.writeFileSync("dt-prs.json", JSON.stringify(result.map(cookPull), undefined, 2))
-  // hasNextPage = true
-  // while (hasNextPage) {
-  //   const queryResult: any = await graphql(
-  //     `
-  //     query ($after: String) {
-  //     repository(name: "DefinitelyTyped", owner: "DefinitelyTyped") {
-  //   }
-  //   }`)
-
-  // }
-}
-const columnNames = {
-  "Not started": "not-started",
-  "Waiting on reviewers": "review",
-  "Waiting on author": "waiting",
-  "Needs merge": "merge",
-  Done: "done",
-} as const
-const labelNames = {
-  "For Milestone Bug": "milestone",
-  "For Backlog Bug": "backlog",
-  "For Uncommitted Bug": "uncommitted",
-  Housekeeping: "housekeeping",
-  Experiment: "experiment",
-  "Author: Team": "OTHER",
-} as const
-function fromColumn(name: string): Pull["status"] {
-  const c = columnNames[name as keyof typeof columnNames]
-  assert(c, "State not found for column named:", name)
-  return c
-}
-function fromLabels(names: Array<{ name: string }>): Pull["label"] {
-  let l
-  for (const n of names.map(ns => ns.name)) {
-    l = labelNames[n as keyof typeof labelNames]
-    if (l && l !== "OTHER") break
+  // log easily closeable PRs
+  // 1. if it's over 3 years old
+  if (new Date().getTime() - new Date(pull.createdAt).getTime() > 1000 * 60 * 60 * 24 * 365 * 3) {
+    message = "Over 3 years old"
   }
-  if (l === undefined) {
-    throw new Error(`Label not found for labels:'${names.map(ns => ns.name).join(";")}' (${names.length})`)
-  } else if (l === "uncommitted") {
-    // label isn't currently used
-    return "OTHER"
+  if (message) {
+    console.log(`${message}: ${pull.title} by ${pull.author} (${pull.number})`)
   }
-  return l
 }
-
-main().catch(e => {
-  console.log(e)
-  process.exit(1)
-})
+console.log(`Total: ${i}`)
