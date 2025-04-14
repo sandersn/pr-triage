@@ -30,8 +30,24 @@ for (const pull of pulls) {
       f => f.changeType === "DELETED" || (f.changeType === "MODIFIED" && f.path === "notNeededPackages.json")
     )
   ) {
-    // TODO: Include npm count for the deleted types package and the source package in the message
-    message = "hkleungai"
+    const deletedPackage = pull.files.find(f => f.changeType === "DELETED")
+    let downloads = "N/A"
+    if (deletedPackage) {
+      const packageName = deletedPackage.path.replace("types/", "").replace("/.npmignore", "")
+      const npmApiUrl = `https://api.npmjs.org/downloads/point/last-week/${packageName}`
+      try {
+        const response = await fetch(npmApiUrl)
+        if (response.ok) {
+          const data = await response.json()
+          downloads = data.downloads.toString()
+        } else {
+          console.log(`Failed to fetch download count for package ${packageName}: ${response.statusText}`)
+        }
+      } catch (error) {
+        console.log(`Error fetching download count for package ${packageName}: ${error.message}`)
+      }
+    }
+    message = "hkleungai (downloads: " + downloads + ")"
   } else if (pull.labels.includes("New Definition")) {
     message = "New Definition"
   } else if (pull.labels.includes("Owner Approved")) {

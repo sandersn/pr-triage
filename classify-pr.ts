@@ -97,7 +97,6 @@ async function main() {
       max_completion_tokens: 1000,
     }
     const response = await post(data, model, "chat/completions")
-    console.log(JSON.stringify(response, undefined, 2))
     if (response.kind === "error") {
       console.log(JSON.stringify(response.error))
       return

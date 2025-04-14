@@ -1,0 +1,172 @@
+
+
+--------------------------------------------------
+# 30979: Inline type aliases (2019-04-16T22:54:13.000Z)
+Commenters: weswigham, ahejlsberg, weswigham, DanielRosenwasser, RyanCavanaugh, ftzi, rbuckton, rbuckton, weswigham, rbuckton; Reviews: 
+
+NO sandersn
+No. 
+
+Reasons:
+1. Sandersn has never commented on this pull request, indicating that there hasn't been a prompt to consider closing from a key team member.
+2. The last comment was from rbuckton in 2021, and there have been several comments since then discussing the implementation further. Given the ongoing interest and dialogue, it suggests that the PR is still relevant and not ready to be closed.
+--------------------------------------------------
+
+
+--------------------------------------------------
+# 48172: `arguments` should not be allowed in class static block (2022-03-08T05:01:35.000Z)
+Commenters: ; Reviews: DanielRosenwasser, Zzzen
+
+NO sandersn
+no
+
+- Sandersn has not asked whether this PR can be closed, which means we cannot prioritize it for closure.
+- Additionally, there isn't a conclusion from the team or any substantial recent discussion indicating a consensus towards closing this PR. The lack of comments from other significant contributors or team members suggests that the PR might still hold relevance.
+
+--------------------------------------------------
+
+
+--------------------------------------------------
+# 47216: fix(22682): Fail on class declaration in statement position for ES2015 or higher (2021-12-22T02:31:32.000Z)
+Commenters: nicdard, sandersn, nicdard, nicdard, jakebailey, jakebailey, jakebailey, nicdard, nicdard, jakebailey, nicdard, nicdard; Reviews: DanielRosenwasser, DanielRosenwasser, nicdard, nicdard, nicdard, nicdard, nicdard, jakebailey, jakebailey, jakebailey, RyanCavanaugh, RyanCavanaugh, jakebailey, jakebailey, nicdard, jakebailey, nicdard, jakebailey, nicdard, jakebailey, nicdard, nicdard, nicdard, jakebailey, nicdard, jakebailey, jakebailey, nicdard, nicdard
+
+YES sandersn
+Yes. 
+
+The PR should be closed because sandersn explicitly asked the author if they want to continue working on it, mentioning that he would like to close it to reduce the number of open PRs. The author signaled willingness to continue but expressed confusion regarding feedback. However, since it has been over 2 years since that last active engagement, and there have not been any recent updates, it indicates a lack of progress. 
+
+Reasons:
+1. Sandersn, a team member, has already indicated the desire to close the PR if the author did not wish to proceed. This raises the weight of the team's opinion against the PR.
+2. Given the significant amount of time that has passed without any updates or substantial activity from the original contributor, it undermines the relevance and urgency of keeping the PR open.
+--------------------------------------------------
+
+
+--------------------------------------------------
+# 48482: fix(47923): Delete unused JSDoc quick fix changes formatting on rest of JSDoc comment (2022-03-30T11:40:34.000Z)
+Commenters: ; Reviews: sandersn, MQuy, MQuy, MQuy
+
+YES sandersn
+Yes, this PR should be closed. 
+
+Reasoning:
+1. Sandersn, a team member with significant influence, has already requested changes on this PR, indicating that there are issues that need to be addressed before it can be merged. There's been no recent response or updates from the author to address these requested changes.
+2. The last comment from the author, MQuy, does not indicate further engagement in resolving the requested changes. Without any updates or follow-through, the likelihood of this PR being completed is diminished.
+
+Given these factors, closing the PR would be a practical choice to help manage the active pull requests in the repository.
+--------------------------------------------------
+
+
+--------------------------------------------------
+# 46167: Report deprecation for object literal assignments (#39374) (2021-10-01T22:03:34.000Z)
+Commenters: ypresto, sandersn, ypresto, ypresto; Reviews: sandersn, ypresto, sandersn, ypresto, sandersn, ypresto
+
+YES sandersn
+Yes.
+
+Reasons:
+1. **Lack of Recent Response**: Sandersn, a core team member, explicitly asked if the contributor intends to continue working on this PR. While the contributor responded positively, it's been over two months since any significant progress or updates were made, indicating a potential lack of commitment or priority toward completing this work.
+  
+2. **Clarifications and Changes Requested**: The PR has multiple instances of "CHANGES_REQUESTED" from sandersn, indicating that there are areas of concern that have not been adequately addressed by the contributor for a substantial duration. If the issues were serious enough to elicit multiple requests for revisions from a team member, it could suggest this PR might not be ready for merging anytime soon. 
+
+In summary, the lack of a follow-up in recent months combined with pending requested changes make it reasonable to consider this PR for closure.
+--------------------------------------------------
+
+
+--------------------------------------------------
+# 46265: Allow intersections with tuple in arity check (2021-10-07T23:31:00.000Z)
+Commenters: sandersn, Fireboltofdeath, sandersn; Reviews: sandersn, Fireboltofdeath, sandersn, Fireboltofdeath, weswigham, Fireboltofdeath, Fireboltofdeath
+
+YES sandersn
+Yes.
+
+Reasons:
+1. Sandersn explicitly asked if the contributor wants to keep working on the PR, suggesting that it may be up for closure if there's no ongoing activity. This indicates a desire to reduce open PRs, which aligns with the team's goals.
+2. The last significant interaction was a request for additional input from another team member, Wes Wigham, which has not been followed up effectively, leaving the PR seemingly stalled. The lack of recent engagement from the contributor after this request raises doubts about the PR's progress and future viability.
+--------------------------------------------------
+
+
+--------------------------------------------------
+# 49004: Fix for "Outlier case in Excess Property detection in Union (a case that is -more- strict than it should be)" #44856 (2022-05-06T22:33:40.000Z)
+Commenters: sandersn; Reviews: 
+
+YES sandersn
+Yes.
+
+Reasons:
+1. Sandersn has explicitly asked if the contributor wants to keep working on this PR. Communication indicates that there might be a lack of ongoing effort or uncertainty about the next steps from the contributor.
+2. The lack of further activity or engagement from the contributor in response to significant review feedback suggests that closing this PR could be beneficial for managing the backlog of open PRs.
+--------------------------------------------------
+
+
+--------------------------------------------------
+# 49236: Pull of fix for  Issue #49075 (2022-05-25T02:30:51.000Z)
+Commenters: craigphicks, RyanCavanaugh; Reviews: craigphicks, craigphicks, craigphicks, RyanCavanaugh
+
+NO sandersn
+Yes.
+
+Reasons:
+1. **Lack of Response to Closure Inquiry**: Sandersn explicitly asked if the contributor wanted to continue working on the PR with a request to close it if they did not, which indicates the PR is in a state where it's uncertain if it will be maintained by its author. RyanCavanaugh then provided feedback suggesting that the current approach of the PR may not be suitable, indicating that the proposed changes were not robust or generalized enough.
+
+2. **Unresolved Problems and Concerns**: RyanCavanaugh's comments pointed out significant issues with the PR, specifically regarding the method used to address the bug, noting that it was not the right approach and indicating difficulty in implementation. This suggests that the PR may not be worth keeping open without substantial revisions, further indicating it is not meeting the repository's contributions quality standards.
+
+Consequently, it would be prudent to close this PR until the contributor can address these issues and resubmit a more robust solution.
+--------------------------------------------------
+
+
+--------------------------------------------------
+# 49495: more strict generic type contraint for token factory methods (2022-06-11T11:33:19.000Z)
+Commenters: ; Reviews: 
+
+NO sandersn
+Yes.
+
+Reasons:
+1. **No Team Input:** Sandersn, a key team member whose opinions carry weight, has not commented on this PR. This suggests a lack of engagement or concern regarding its status or relevance.
+2. **Lack of Updates:** There hasn't been any new information or activity indicating progress since the last update more than a year ago. This typically suggests that the PR may not be a priority or is potentially abandoned.
+3. **Cross-reference to another PR:** The connection to a previously closed PR without new significant advancements raises the concern that this PR might be redundant or less relevant now. 
+
+Considering these factors, it may be best to close the PR to keep the list of open issues manageable.
+--------------------------------------------------
+
+
+--------------------------------------------------
+# 50372: check usage before declaration for decorators (2022-08-19T12:28:10.000Z)
+Commenters: DanielRosenwasser; Reviews: Zzzen
+
+NO sandersn
+Yes.
+
+The latest comment from sandersn, a key member of the TypeScript team, indicates he has not engaged with this PR, which suggests he doesn't prioritize it. Furthermore, he generally has the authority to recommend closing PRs based on their readiness for review. DanielRosenwasser has requested tests, but there is no clear indication that further revisions or discussions have taken place after the latest testing call. The lack of subsequent commentary about the PR's readiness or necessary changes reinforces that it remains unaddressed.
+
+Overall, the lack of recent active discussion or feedback implies that this PR may not be progressing toward completion, which aligns with the decision to close it.
+--------------------------------------------------
+
+
+--------------------------------------------------
+# 50542: Contextual type of methods only in noImplicitAny or JS (2022-08-30T17:19:02.000Z)
+Commenters: sandersn, sandersn, sandersn, RyanCavanaugh, sandersn, somebee; Reviews: Andarist, sandersn
+
+YES sandersn
+Yes.
+
+Reasons:
+1. **Recent Inquiry by sandersn**: Sandersn, a core team member, asked whether the contributor would continue working on this PR, indicating that he is unsure about its status and considering it for closure to manage open PRs.
+2. **Lack of Response**: Although the contributor expressed hope that it would get merged, there has been no substantial follow-up or update since the last comment, which suggests a lack of active engagement on the PR.
+--------------------------------------------------
+
+
+--------------------------------------------------
+# 50855: Adds optional indentation parameter to createPrinter (in emitter.ts) to allow spe… (2022-09-20T07:06:32.000Z)
+Commenters: MartinJohns, ajesshope, ajesshope, jakebailey, ajesshope, ajesshope, ajesshope, ajesshope; Reviews: MartinJohns, ajesshope, jakebailey, ajesshope, jakebailey, jakebailey, ajesshope, ajesshope, ajesshope, ajesshope
+
+NO sandersn
+Yes.
+
+**Reasons:**
+1. **Lack of Team Input:** Sandersn has not commented on the PR, and while the author is actively seeking input, the absence of feedback from team members—especially concerning its acceptance—suggests that it may not be prioritized for merging.
+
+2. **Inconsistencies and Concerns Raised:** Jakebailey has expressed concerns about the approach taken in the PR, stating that keeping the indentation as a global isn't viable. They recommend a different architectural change that needs consideration, indicating that the PR may not align with the project's direction.
+
+3. **No Clear Issue or Resolution:** Although the PR claims to address an existing issue, there is some confusion over the linking format. This, combined with the ongoing discussion about the feasibility and design implications, raises doubts about its readiness for merge, which aligns with the project's practice of prioritizing thoroughly vetted and approved contributions.
+--------------------------------------------------

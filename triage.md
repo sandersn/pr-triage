@@ -20,6 +20,16 @@ I believe this test branch is unused so I'm closing it. Please re-open it if I'm
 ### Already asked to close
 Closing due to lack of activity.
 
+This PR is quite old now. I'm going to close it for now and we can re-open it if needed.
+
+### Review failed
+
+- Unfortunately, we never got to reviewing this, even though its bug would be nice to fix.
+
+- Looking back at this PR, I feel like it makes too large and risky a change for the benefit of fixing its bug.
+
+I think it's best to close this since it is now quite old.
+
 ### Maybe, minor fix
 @weswigham This has been open for a couple of years. If this isn't the right solution, should we close it? 
 Is it possible to fix the error that @Andarist mentions some other way?
