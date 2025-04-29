@@ -4,7 +4,7 @@ import * as fs from "fs"
 import path from "path"
 
 const pulls: Pull[] = JSON.parse(fs.readFileSync("prs.json", "utf-8"))
-const preprompt = `You are reviewing pull requests from the TypeScript repository. Today you're looking for ones where sandersn has already asked in the comments whether they can be closed. If sandersn has asked already and it was in the last few comments and if there's no answer, say "yes". If there's an answer, but it's over 2 years old, say "yes". Otherwise say "no". Also give a couple of reasons.
+const prompt = `You are reviewing pull requests from the TypeScript repository. Today you're looking for ones where sandersn has already asked in the comments whether they can be closed. If sandersn has asked already and it was in the last few comments and if there's no answer, say "yes". If there's an answer, but it's over 2 years old, say "yes". Otherwise say "no". Also give a couple of reasons.
 
 Team members:
 - weswigham, rbuckton, navya9singh, iisaduan, sandersn, gabritto, jakebaily, andrewbranch, RyanCavanaugh
@@ -12,7 +12,6 @@ Team members:
 Team opinions on whether to close should be more heavily weighted than other opinions.
 
 `
-const postprompt = ``
 const configPath = path.resolve(process.env.HOME || process.env.USERPROFILE || ".", ".cleonrc.json")
 const localConfigPath = path.resolve(".", ".cleonrc.json")
 
@@ -32,15 +31,8 @@ type Message = {
   role: "system" | "user" | "assistant"
   content: string
 }
-const initialMessage: Message[] = [
-  {
-    role: "system",
-    content: preprompt + postprompt,
-  },
-]
 
 async function main() {
-  let messages = initialMessage.slice()
   console.log(`Classifying ${pulls.length} PRs...`)
   console.log("--------------------------------------------------")
   for (const pull of pulls.sort((a, b) => new Date(a.updatedAt).getTime() - new Date(b.updatedAt).getTime())) {
@@ -51,12 +43,17 @@ async function main() {
         .map(review => review.author)
         .join(", ")}\n`
     )
-    messages.push({
-      role: "user",
-      content: "Should this PR be closed?\n" + formatPull(pull),
-    })
     const data = {
-      messages,
+      messages: [
+        {
+          role: "system",
+          content: prompt,
+        },
+        {
+          role: "user",
+          content: "Should this PR be closed?\n" + formatPull(pull),
+        },
+      ],
       max_completion_tokens: 1000,
     }
     const response = await post(data, model, "chat/completions")
@@ -89,7 +86,7 @@ ${pull.labels.map(label => `- ${label}`).join("\n")}
 ${pull.body}
 
 ## Comments
-${allAuthors(pull).has('sandersn') ? "" : "sandersn has never commented on this PR."}
+${allAuthors(pull).has("sandersn") ? "" : "sandersn has never commented on this PR."}
 ${pull.reviews.map(review => `- ${review.author} (${review.state}): ${review.body}`).join("\n")}
 ${pull.comments.map(comment => `- ${comment.author} (${comment.publishedAt.toString()}): ${comment.body}`).join("\n")}
 
