@@ -33,11 +33,17 @@ type Message = {
 }
 
 async function main() {
+  let i = 0
   console.log(`Classifying ${pulls.length} PRs...`)
   console.log("--------------------------------------------------")
   for (const pull of pulls.sort((a, b) => new Date(a.updatedAt).getTime() - new Date(b.updatedAt).getTime())) {
+    i++
+    if (i > 1) {
+      console.log("Done.")
+      return
+    }
     console.log("\n\n--------------------------------------------------")
-    console.log(`# ${pull.number}: ${pull.title} (${pull.createdAt})`)
+    console.log(`${i}. #${pull.number}: ${pull.title} (${pull.createdAt})`)
     console.log(
       `Commenters: ${pull.comments.map(comment => comment.author).join(", ")}; Reviews: ${pull.reviews
         .map(review => review.author)
@@ -54,6 +60,32 @@ async function main() {
           content: "Should this PR be closed?\n" + formatPull(pull),
         },
       ],
+      response_format: {
+        type: "json_schema",
+        json_schema: {
+          name: "PRCloseResponse",
+          strict: true,
+          schema: {
+            type: "object",
+            properties: {
+              shouldClose: {
+                type: "string",
+                enum: ["yes", "no"],
+                description: "Should this PR be closed?",
+              },
+              reasons: {
+                type: "array",
+                items: {
+                  type: "string",
+                },
+                description: "Reasons for the decision.",
+              },
+            },
+            required: ["shouldClose", "reasons"],
+            additionalProperties: false,
+          },
+        },
+      },
       max_completion_tokens: 1000,
     }
     const response = await post(data, model, "chat/completions")
@@ -61,8 +93,9 @@ async function main() {
       console.log(JSON.stringify(response.error))
       return
     } else {
-      const content = response.result.choices[0].message.content
-      console.log(content)
+      const content = JSON.parse(response.result.choices[0].message.content) as { shouldClose: "yes" | "no"; reasons: string[] }
+      console.log(`Should close? `, content.shouldClose)
+      console.log(`Reasons:\n - `, content.reasons.join("\n - "))
       console.log("--------------------------------------------------")
     }
     await new Promise(resolve => setTimeout(resolve, 1_000))
@@ -70,7 +103,7 @@ async function main() {
 }
 main()
   .then(() => {
-    process.exit(1)
+    process.exit(0)
   })
   .catch(err => {
     console.error(err)
