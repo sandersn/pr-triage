@@ -4,7 +4,7 @@ import type { Pull } from "./types.d.ts"
 // const repo = process.argv[2] || "TypeScript-go"
 // const suffix = repo === "TypeScript-go" ? "-go" : ""
 const data = JSON.parse(fs.readFileSync("prs.json", "utf-8")) as Pull[]
-const judgements = JSON.parse(fs.readFileSync("pr-judgements-o4.json", "utf-8")) as Array<{
+const judgements = JSON.parse(fs.readFileSync("pr-judgements-o1.json", "utf-8")) as Array<{
   shouldClose: "yes" | "no"
   pull: number
   reasons: string[]

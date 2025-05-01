@@ -206,3 +206,15 @@ That won't be everything but it'll be close-ish.
 1
 
 52346 - o4's reasons make a good case that this should be 'good' tbh
+
+### o1
+Recall 19/22 = 86%
+32 errors
+
+21 results
+
+#### bad
+0
+#### good
+21
+#### almost
