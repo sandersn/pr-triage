@@ -1,6 +1,12 @@
 # pr-triage
 
 ## Workflow
+1. Set the environment variable GH_API_TOKEN to a token with public_repo access.
+2. $ node index.ts typescript # or typescript-go
+3. $ node cook-pr.ts typescript # or typescript-go
+3. $ node easy-pr.ts typescript, $ node summary.ts typescript
+
+## OLD
 
 1. Set the environment variable GH_API_TOKEN to a token with public_repo access.
 2. Run index.js
@@ -8,7 +14,7 @@
 3. Run histogram.js, move.js or stale.js
 
 
-### OLD
+### OLD OLD
 
 3. Run index.js.
    - Fix any assertions on github, then re-run.

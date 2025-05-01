@@ -145,3 +145,64 @@ arcanis : Yield Overrides
 craigphicks : packageJsonWatch, testing package.json and impliedNodeFormat use in transformer
 RasmusAndreassen : Modified optional thisArg to capture type
 
+## Results
+
+#### 4o-mini
+47 out of 475. 11/27/9 = 23% / 57% / 19%
+
+So that's precision. To find recall: dump a list of "yes" PRs, then look at all my comments from March 26th onward and see which PRs match
+That won't be everything but it'll be close-ish.
+22 / 22 = 100%
+#### bad
+11
+
+48228 has no chance to survive, but the decision and reasons are both completely wrong.
+58712 has the *author* asking whether there is any interest. Nobody suggests closure.
+58729 I had reviewed but nobody suggested closure.
+48172 I *approved* it and the author (and Jake) did some additional work on it. I guess merging is kind of closure.
+#### good
+27
+
+52034 didn't literally follow the predicate but was in the right category
+#### almost
+9
+
+56666 has comments by *Jake* that are sceptical but don't recommend closure.
+49218 has been sitting with requested changes for a long time.
+26349 is a perfect candidate *except* that had never commented on it before.
+49886 has a comment from Daniel that says it's not going to happen (but doesn't request closure).
+54759 has Gabriela commenting that the PR is stalled.
+39699 Extremely stale, and I asked for clarifications twice with no real answer.
+48838 Author (Andarist) concludes that this needed to start over, but I *never* commented on it.
+53346 I asked to close it and Jake started working on it again (last year)
+56072 I asked to close it and Jake indirectly said, no, it's still worthwhile.
+
+### o3-mini
+
+- 25 out of 475. 1/23/1  = 4% / 92% / 4%
+95% recall by the same metric; probably would have been 100% except for the 17/475 queries that failed to return JSON 5 times in a row.
+
+#### bad
+1
+#### good
+23
+#### almost
+1
+
+53739 I commented asking whether it is *ready*, not whether to *close*
+
+### o4-mini
+
+
+- 27 out of 475. 1/25/1  = 4% / 92% / 4%
+95% recall by the same metric; probably would have been 100% except for the 17/475 queries that failed to return JSON 5 times in a row.
+4 errors
+
+#### bad
+1
+#### good
+25
+#### almost
+1
+
+52346 - o4's reasons make a good case that this should be 'good' tbh

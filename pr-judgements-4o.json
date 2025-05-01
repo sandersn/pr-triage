@@ -1,0 +1,3836 @@
+[
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "There has been ongoing discussion among several team members regarding the implementation and syntax of this feature since 2019, indicating it is not stale or abandoned.",
+      "sandersn has not commented on this PR, which means there has been no explicit indication that it should be closed from a team member."
+    ],
+    "pull": 30979
+  },
+  {
+    "shouldClose": "yes",
+    "reasons": [
+      "sandersn asked if it can be closed and there has been no answer to that comment.",
+      "The last activity on this PR is over two years old, indicating that it may not be active or relevant anymore."
+    ],
+    "pull": 49004
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, therefore he hasn't questioned whether it should be closed.",
+      "The last comment was from DanielRosenwasser asking for tests, indicating active interest in the PR."
+    ],
+    "pull": 50372
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "There are no recent comments from sandersn asking for this PR to be closed.",
+      "The last comment was made by the author themselves, indicating that the PR is still being actively discussed or worked on."
+    ],
+    "pull": 51386
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "There are no comments from sandersn indicating whether the PR can be closed, so we cannot assume closure is appropriate.",
+      "The PR itself appears to be an active discussion with a contributor looking for feedback, suggesting it may still be relevant."
+    ],
+    "pull": 52355
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not asked whether this PR can be closed, indicating potential ongoing interest or value in the PR.",
+      "The last update was recent (January 2023), suggesting that the PR is still relevant and may still be actively worked on."
+    ],
+    "pull": 50046
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not asked whether the PR can be closed in the comments.",
+      "There are recent comments from other team members indicating ongoing activity and reviews on the PR."
+    ],
+    "pull": 52646
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, indicating no prompt to close and no concerns expressed.",
+      "The PR was last updated recently in March 2023, suggesting it is still active."
+    ],
+    "pull": 53040
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, making it unclear whether there is a consensus on closing it.",
+      "The last comment is from the author, and no questions regarding closing the PR have been raised."
+    ],
+    "pull": 52483
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "There is no comment from sandersn indicating whether this PR can be closed.",
+      "The PR has recent updates and doesn't seem to suffer from inactivity issues."
+    ],
+    "pull": 52990
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "There hasn't been a recent comment from sandersn asking to close the PR. They commented on the status of the PR and its dependencies but did not suggest it be closed.",
+      "The last comment from sandersn indicates they are still awaiting further actions on the PR, suggesting ongoing relevance."
+    ],
+    "pull": 52346
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "There has been ongoing discussion regarding performance testing which indicates that the PR is still active and under consideration.",
+      "sandersn has not explicitly asked to close the PR, suggesting that the team is still evaluating the changes."
+    ],
+    "pull": 50775
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "The last comment from sandersn, asking if the PR should be closed, was not in the last few comments and does not indicate explicit intent to close.",
+      "There are ongoing discussions among team members about the implementation details and semantics, suggesting that the topic is still active and under consideration."
+    ],
+    "pull": 51066
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, so there is no indication from them about whether it should be closed.",
+      "The PR is still recent and appears to be undergoing testing, indicating it may still be in review and not ready for closure."
+    ],
+    "pull": 53479
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn did not explicitly ask for the PR to be closed in the comments; he requested changes instead.",
+      "There are no recent comments suggesting the PR is irrelevant or no longer needed.",
+      "The discussion indicates that the PR still has potential value and may require refinement rather than closure."
+    ],
+    "pull": 50494
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR at all, indicating no push for closure.",
+      "The author, weswigham, is actively working on the PR and trying to gather performance data, suggesting ongoing relevance.",
+      "The issue being addressed may still have active development, with the author looking to minimize the reproduction case."
+    ],
+    "pull": 53595
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "There are no comments from sandersn asking whether this PR can be closed.",
+      "The latest comments do not indicate any unresolved issues; they mainly involve back-and-forth discussion without closure inquiries."
+    ],
+    "pull": 52979
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "There are no comments from sandersn questioning whether the PR should be closed.",
+      "The PR is actively being interacted with and tested, indicating ongoing development."
+    ],
+    "pull": 53758
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR at all, so there is no indication of whether it should be closed or not."
+    ],
+    "pull": 54117
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, indicating no explicit concerns or requests for closure from him.",
+      "The PR still has ongoing activity with comments and requests from other team members, suggesting it is still under consideration for merging."
+    ],
+    "pull": 52372
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, so there is no indication from him regarding closure.",
+      "The last interaction was a performance test request by rbuckton, suggesting that the PR is still under consideration."
+    ],
+    "pull": 53700
+  },
+  {
+    "shouldClose": "yes",
+    "reasons": [
+      "sandersn asked if he could close the PR and indicated a lack of interest in continuing it unless further advocacy was presented, suggesting a low priority for the feature.",
+      "The inquiry about closing the PR was made in March 2023, and there has been no substantial response from team members advocating for keeping the PR open.",
+      "The discussions indicate that while there are some perspectives on the value of adding these types, the prevailing sentiment appears to lean towards not pursuing the enhancements, especially given Wes' initial sentiments and the lack of concrete support."
+    ],
+    "pull": 51741
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, which means there are no indications from the specified team member to consider closure.",
+      "The explanation from jakebailey suggests that the change is not acceptable under current practices but does not imply that the PR should be closed outright.",
+      "There is an ongoing discussion regarding the labeling of the associated issue, indicating a potential for resolution rather than closure."
+    ],
+    "pull": 54128
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR at all, which means there are no indications from him that it should be closed.",
+      "The last update was relatively recent (less than 6 months ago), suggesting that the discussion is still ongoing."
+    ],
+    "pull": 53203
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, therefore there is no indication from team members regarding its closure.",
+      "There are recent comments from the author, which could suggest ongoing discussion or potential revisions."
+    ],
+    "pull": 54110
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, indicating they have not expressed any opinion about closing it.",
+      "The discussion is still ongoing with recent comments by jakebailey, suggesting that progress or resolution might still be forthcoming."
+    ],
+    "pull": 54290
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not asked if this PR can be closed.",
+      "There are no recent comments indicating a lack of interest or updates on the PR."
+    ],
+    "pull": 53615
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn's question was seeking clarification, not suggesting the PR be closed.",
+      "The recent activity indicates ongoing discussion related to the bug, implying that the PR is still relevant.",
+      "There is no indication that the PR has been stale or abandoned, given that it was updated relatively recently."
+    ],
+    "pull": 53042
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, indicating there is no concern about closing it from him.",
+      "The PR seems to have ongoing discussions and requests for changes, suggesting that it is still being actively reviewed and worked on."
+    ],
+    "pull": 52737
+  },
+  {
+    "shouldClose": "yes",
+    "reasons": [
+      "sandersn directly asked for a second opinion on the PR from a reviewer, indicating uncertainty about its direction.",
+      "There has been no further response since sandersn's comment, and it's over 6 months without any follow-up, suggesting that the topic could be considered stale."
+    ],
+    "pull": 52034
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, indicating no strong inclination to close it.",
+      "There seems to be ongoing discussion among the original author and other reviewers, suggesting that it may still be under consideration for further work or improvement."
+    ],
+    "pull": 49146
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, indicating no interest in closing it.",
+      "The latest comments show ongoing engagement and updates from the PR author and another team member, suggesting that it is still being worked on."
+    ],
+    "pull": 49107
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, indicating no request for closure from him.",
+      "The comments show ongoing discussion and analysis of the changes, reflecting an active interest in resolving the issues presented."
+    ],
+    "pull": 52495
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR.",
+      "There are no indications or requests for closure from team members."
+    ],
+    "pull": 49064
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "There are no comments from sandersn regarding the closure of this PR.",
+      "The last comment was from gabritto, who is actively testing the changes, indicating ongoing interest in the PR."
+    ],
+    "pull": 54553
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, indicating he does not view it as needing closure.",
+      "There is recent activity from the author and the automated testers, suggesting the PR is still in progress."
+    ],
+    "pull": 54754
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not asked whether this PR can be closed, so it's unclear if there is a reason to consider closure at this time.",
+      "There is recent activity (last updated on 2023-06-26) that suggests this PR hasn't been abandoned."
+    ],
+    "pull": 54475
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on the PR, indicating he hasn't raised concerns about closing it.",
+      "There is an ongoing discussion among other contributors, demonstrating active engagement and consideration of the proposed changes."
+    ],
+    "pull": 52112
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, indicating that there is no concern or inquiry regarding its status from a team member.",
+      "The PR may still be of interest or relevance, and there is no clear reason provided by the team to consider it for closure."
+    ],
+    "pull": 55080
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "There are no comments from sandersn indicating that this PR should be closed.",
+      "The last comment was from gabritto, but there are no indications that this PR is not being considered or does not require further review."
+    ],
+    "pull": 55073
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn never commented on this PR, indicating a lack of oversight on its status.",
+      "A discussion is ongoing among other team members about the implications and feasibility of the changes proposed, suggesting the PR is still under consideration."
+    ],
+    "pull": 54856
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, indicating no concern from team members.",
+      "The question from jakebailey about trailing comments signifies active engagement and consideration, suggesting further discussion is needed."
+    ],
+    "pull": 54750
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, so there is no indication he believes it should be closed.",
+      "There has been ongoing discussion from other team members, indicating that the PR is still being evaluated rather than being dismissed outright."
+    ],
+    "pull": 55004
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, so there is no indication from him that it should be closed.",
+      "The discussion in the comments suggests an ongoing dialogue about the PR's relevance and potential benefits, indicating it may still have merit."
+    ],
+    "pull": 54853
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "There are no recent comments from sandersn asking if this PR can be closed.",
+      "The most recent comment was made by the author Zzzen without any indication of closure."
+    ],
+    "pull": 55117
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not asked whether the PR can be closed; instead, he is providing feedback on performance tests.",
+      "The comments are recent, indicating ongoing engagement with the PR."
+    ],
+    "pull": 55226
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, indicating no concerns were raised about its status.",
+      "There may still be ongoing discussions or reviews by other team members who have not closed or commented on it yet."
+    ],
+    "pull": 55179
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, indicating no concerns about closure from a team perspective.",
+      "The PR is relatively recent and there is active discussion or development happening."
+    ],
+    "pull": 55144
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "There is recent activity in the comments, indicating ongoing discussion and interest in the PR.",
+      "The last comment from Andarist provides insights regarding the issue discussed, which suggests that the PR is still relevant and that the team is actively considering its implications."
+    ],
+    "pull": 55107
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, which means there is no sign of his concern about closing it.",
+      "The discussion is still active, and there are multiple team members engaging with the proposal, indicating ongoing consideration rather than a consensus to close."
+    ],
+    "pull": 55214
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, indicating no intent to close it.",
+      "There is no indication from team members that this PR should be closed based on the comments provided."
+    ],
+    "pull": 55359
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, so there is no indication from him regarding its closure.",
+      "The PR is still actively being discussed, with recent comments from other team members, which suggests ongoing consideration and development."
+    ],
+    "pull": 55291
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, indicating no direct request for closure.",
+      "The last comment was a request for testing and packing, suggesting that the PR is still active and being worked on."
+    ],
+    "pull": 55503
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, so there's no indication from him about closing it.",
+      "The most recent comment is from the author, suggesting ongoing engagement with the PR."
+    ],
+    "pull": 55531
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "The last comment from sandersn is a request for testing, not a question about closing the PR.",
+      "There have been no subsequent comments indicating that the PR should be reconsidered or closed."
+    ],
+    "pull": 50452
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not expressed any opinion on closing this PR, which indicates that the team member with a strong opinion has not weighed in.",
+      "The recent discussions indicate that there is ongoing activity and clarification regarding the direction of the PR, suggesting that it's still relevant."
+    ],
+    "pull": 55512
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, indicating that there is no indication from him to close it.",
+      "There are active comments and changes requested from weswigham, suggesting that the PR is still under consideration for improvement."
+    ],
+    "pull": 55130
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, so there is no direct indication from a team member about whether it should be closed.",
+      "The recent comment from Andarist raises some valid points regarding the functionality, suggesting that the issue might need more exploration rather than closure."
+    ],
+    "pull": 54689
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, indicating he has no immediate concerns about its status.",
+      "There is an ongoing dialogue between Andarist and weswigham regarding the necessary improvements and tests, showing the PR is still active and being worked on."
+    ],
+    "pull": 54866
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, so there is no indication from him about whether he thinks it should be closed.",
+      "There are recent comments from other team members discussing the PR, and it has not been marked stale or inactive."
+    ],
+    "pull": 55588
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, indicating a lack of concern or desire to close it.",
+      "The latest comments discuss the implementation details and request further testing, suggesting an ongoing interest in the PR rather than a desire to abandon it."
+    ],
+    "pull": 55278
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, which indicates no direct call for closure from a team member.",
+      "The last comment by Andarist shows ongoing work and discussion, indicating relevance and activity in the PR."
+    ],
+    "pull": 48433
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not asked for this PR to be closed.",
+      "There have been no comments indicating potential closure by team members."
+    ],
+    "pull": 55835
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, therefore there is no indication from him regarding closure.",
+      "The conversation is ongoing and includes several team members discussing technical details, suggesting that there is still interest and development related to this PR."
+    ],
+    "pull": 55696
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, which means there is no expressed intention from him about whether this PR should be closed or not.",
+      "The recent comments from notable team members such as ahejlsberg indicate ongoing interest and potential modifications, suggesting the PR still holds relevance and merit for discussion."
+    ],
+    "pull": 50329
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, which suggests that there are no concerns about closing it.",
+      "There are recent active discussions and contributions from Andarist and DanielRosenwasser, indicating that the PR is still being worked on."
+    ],
+    "pull": 55349
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, so there is no indication from him about closing it.",
+      "The last significant discussion was about addressing regression and errors, indicating continued interest in resolving the issue rather than closing it."
+    ],
+    "pull": 48092
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, so there is no indication of a desire to close it.",
+      "RyanCavanaugh has requested changes, indicating that there is ongoing work required before the PR can be merged."
+    ],
+    "pull": 56212
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, so there's no indication he believes it should be closed.",
+      "The PR is still under review, with recent comments suggesting ongoing discussion about its implications and potential solutions."
+    ],
+    "pull": 56165
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, indicating he does not believe that it needs to be closed.",
+      "There is ongoing discussion and feedback from other team members, specifically gabritto, suggesting improvements."
+    ],
+    "pull": 56220
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, so there is no indication from him on whether it should be closed.",
+      "The comments provide clarification on the steps needed to make progress on the PR, suggesting that it is still in a state where contributions are encouraged."
+    ],
+    "pull": 55989
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, indicating that there is no indication from him to consider it for closure.",
+      "There are recent active comments from the author and another team member, suggesting work is still ongoing."
+    ],
+    "pull": 56027
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, indicating no inclination to close it from a team member who typically expresses such opinions.",
+      "There is ongoing active discussion and improvement from the author, Andarist, suggesting readiness for further review rather than closure."
+    ],
+    "pull": 54718
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, so there's no indication that they want it closed.",
+      "The discussion is ongoing and has recent activity from other contributors like weswigham and Andarist.",
+      "The last update was just a few days ago, indicating that there is still work and interest in this PR."
+    ],
+    "pull": 54006
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, indicating no direct interest in its closure.",
+      "The comments on this PR include approvals and some discussions about the necessity and implementation of the changes, showing an ongoing interest and active debate among team members.",
+      "There is no clear consensus suggesting that this PR is no longer needed or that it should be closed."
+    ],
+    "pull": 53618
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, indicating he hasn't questioned its status for closure.",
+      "Recent activity shows ongoing discussions and attempts to resolve issues, suggesting the PR is still being actively considered and refined."
+    ],
+    "pull": 56373
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "Sandersn has asked for changes but did not indicate that the PR should be closed.",
+      "The discussion is ongoing with active comments from Andarist, indicating that there is still work being done on the PR.",
+      "The last activity was very recent (within a week), suggesting that the contributors are still engaged."
+    ],
+    "pull": 56637
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never asked if this PR can be closed, indicating it may still be under consideration.",
+      "There are no recent comments indicating that it is unresponsive or abandoned."
+    ],
+    "pull": 56646
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, so there is no indication from a team member with more weight to close it.",
+      "The PR has had recent activity and may still be relevant to the ongoing development process."
+    ],
+    "pull": 56751
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, indicating that there has been no suggestion to close it from a key team member",
+      "The recent activity on the PR, including tests initiated by jakebailey, shows that it is still being worked on and is likely under consideration for the review process."
+    ],
+    "pull": 56875
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, indicating he has not expressed any concerns or suggestions regarding closing it.",
+      "The discussion primarily revolves around implementation details and testing, showing active engagement and consideration by other contributors."
+    ],
+    "pull": 56183
+  },
+  {
+    "shouldClose": "yes",
+    "reasons": [
+      "sandersn has asked if this PR was discussed and pointed out that he doesn't see a link to any meeting regarding its design, indicating uncertainty about its future.",
+      "There is a lack of recent responses to sandersn's inquiries, suggesting that discussions around this PR may not be active or leading toward resolution."
+    ],
+    "pull": 55547
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "There have been no recent comments indicating whether this PR should be closed.",
+      "sandersn requested changes, suggesting that there is still active discussion around this PR."
+    ],
+    "pull": 56713
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn did not directly ask for the PR to be closed; instead, he provided feedback and outlined testing that needs to be done before finalizing the change.",
+      "The latest comments indicate that the review process is ongoing and there are actionable items, suggesting that the PR is still under consideration rather than being ready to close."
+    ],
+    "pull": 56859
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not asked if this PR can be closed, indicating interest in keeping it open for now.",
+      "There are no indications from other team members suggesting a closure, and it appears to be an active PR in response to a bug fix."
+    ],
+    "pull": 56976
+  },
+  {
+    "shouldClose": "yes",
+    "reasons": [
+      "sandersn has asked if this PR should be closed (indirectly, through discussions regarding similarity to another PR)",
+      "The discussion by team members suggests that this PR doesn't add new value compared to an existing one (#52807), indicating redundancy."
+    ],
+    "pull": 56666
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, indicating he has no opinion on its closure.",
+      "The discussion appears to be ongoing, with recent comments indicating potential changes and considerations that may lead to its eventual approval."
+    ],
+    "pull": 55714
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, so there is no indication of any uncertainty about its status.",
+      "There is active engagement from other team members, showing that the PR is still in discussion."
+    ],
+    "pull": 56300
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, which means there is no indication from them to close it.",
+      "The discussion among team members indicates that there are still important considerations and changes being made, particularly regarding behavior changes in the type system."
+    ],
+    "pull": 54698
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "The PR is actively being discussed and has comments indicating a lack of review progress, but it has not been abandoned.",
+      "Recent comments are addressing the status of the PR and seeking updates rather than indicating it can be closed, showing ongoing interest and potential resolution."
+    ],
+    "pull": 54935
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, indicating no current opinion on its closure.",
+      "The comments by Andarist and others indicate active engagement and clarification regarding the changes, suggesting the PR is being worked on."
+    ],
+    "pull": 56911
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, indicating there hasn't been a request for closure from them.",
+      "The recent activity on this PR shows ongoing engagement and exploration, as the author describes it as an experiment and has requested feedback from others.",
+      "The presence of comments from other team members, especially regarding testing, suggests that this PR is still under consideration and development."
+    ],
+    "pull": 56939
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, so there are no indications that it should be closed from him.",
+      "The discussion around the PR is ongoing, with other team members providing feedback that suggests there are valid issues to address before it can be merged."
+    ],
+    "pull": 56878
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, indicating there is no request from him to close it.",
+      "There appears to be ongoing discussion among other team members about the functionality of the PR, suggesting a potential path for improvement rather than dismissal."
+    ],
+    "pull": 57236
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, so there is no indication from him regarding closure.",
+      "The last comment from iisaduan requests changes and expresses interest in proceeding with the PR, suggesting that it is still active."
+    ],
+    "pull": 57314
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, indicating no direct interest in closure from that team member.",
+      "The PR has active discussions and contributions from other team members, suggesting ongoing interest and evaluation of the proposed changes.",
+      "No indication of abandonment or decision to close from those involved in the discussion."
+    ],
+    "pull": 55842
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, indicating no indication from him to close it.",
+      "The discussion around this PR is current, with recent comments suggesting ongoing interest and need for further testing."
+    ],
+    "pull": 55601
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, therefore there is no indication that he believes it should be closed.",
+      "There are recent activities and comments from the author, which usually suggest that the PR is still active and potentially under consideration."
+    ],
+    "pull": 57396
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, indicating a lack of concern or need for closure from that team member.",
+      "The PR is still actively discussed and has received a detailed technical response from weswigham, suggesting that it's being considered for further refinement rather than being dismissed."
+    ],
+    "pull": 56100
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn approved the PR, indicating support for it rather than questioning its validity.",
+      "There is no recent comment suggesting that it should be closed, and it was actively discussed in the context of merging."
+    ],
+    "pull": 57661
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, which means there is no inquiry about whether it can be closed.",
+      "There has been ongoing discussion and active engagement from other team members like weswigham and Andarist, indicating that the PR is still under consideration and is not abandoned."
+    ],
+    "pull": 52866
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, indicating there is no indication from them to close it.",
+      "The PR is still recently updated (last updated on 2024-04-02), suggesting it may be active and in consideration."
+    ],
+    "pull": 57349
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, indicating no concern about closing it.",
+      "Recent comments from RyanCavanaugh and jakebailey show ongoing discussion, suggesting the PR is still active and being evaluated."
+    ],
+    "pull": 58053
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, indicating no push to close from that team member.",
+      "The lack of recent comments or queries about closing suggests ongoing interest or the need for further review."
+    ],
+    "pull": 56652
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on the PR, so there is no indication from them about closing it.",
+      "The PR is still labeled as a work in progress ([WIP]), suggesting that the author is actively working on it."
+    ],
+    "pull": 51913
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR at all, so there is no indication from them about the potential for closure.",
+      "The comments indicate ongoing discussion and some level of engagement from other team members, particularly jakebailey, who has requested changes and is providing feedback."
+    ],
+    "pull": 56429
+  },
+  {
+    "shouldClose": "yes",
+    "reasons": [
+      "sandersn has never commented on this PR, indicating a lack of oversight or interest from a key team member.",
+      "The last meaningful comments were over 2 years ago, suggesting that the issues may no longer be relevant or urgent, further justifying closure."
+    ],
+    "pull": 49218
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, indicating that there is no current concern about its status.",
+      "There are no recent comments suggesting it should be closed, so it appears still active."
+    ],
+    "pull": 57942
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, indicating no strong opinion on its closure from a core member.",
+      "There are ongoing discussions regarding the usefulness of the proposed change, suggesting it is still an active topic among team members."
+    ],
+    "pull": 58290
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, which indicates that there is no indication from the team about closing it.",
+      "The discussion surrounding performance and correctness shows active consideration of the changes, suggesting that the PR is still relevant and being evaluated."
+    ],
+    "pull": 58362
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, indicating that there hasn't been any indication from him regarding its closure.",
+      "The PR is still actively receiving comments and testing requests, which suggests ongoing development and interest in it."
+    ],
+    "pull": 56974
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR at all, so there is no indication from the team that it should be closed.",
+      "The discussion indicates that there is ongoing confusion regarding the necessity of the assert, and the conversation has not reached a decisive conclusion suggesting closure."
+    ],
+    "pull": 55392
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, so there is no indication from them that it should be closed.",
+      "There has been ongoing interaction between other team members, which suggests that the PR is still under consideration and has not been abandoned."
+    ],
+    "pull": 56877
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, indicating no concern about its status.",
+      "The last comments were made by the author, suggesting they are actively working on the PR."
+    ],
+    "pull": 58378
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, indicating no concern or request for closure from him.",
+      "The discussions around the PR are still active, and it appears that the authors are working towards resolving the comments and questions raised about the implementation.",
+      "There are approvals and requests for changes, suggesting that the PR is being reviewed and considered for further action."
+    ],
+    "pull": 57649
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, so there is no indication he wants it closed.",
+      "The last comment by andrewbranch was a change request, showing that there is still active discussion regarding the changes in the PR."
+    ],
+    "pull": 57550
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, so there is no indication from him that it should be closed, negating the criteria you're looking for.",
+      "Although andrewbranch mentioned it might still be worth pursuing, there is an ongoing discussion suggesting the PR could still provide value, indicating an active interest in its potential."
+    ],
+    "pull": 57458
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, so there is no indication from them regarding closure.",
+      "The most recent comments are from Andarist and DanielRosenwasser, suggesting continued activity and interest in the PR's progress."
+    ],
+    "pull": 57537
+  },
+  {
+    "shouldClose": "yes",
+    "reasons": [
+      "sandersn has never commented on this PR, indicating no active engagement from a key team member.",
+      "There is a lack of recent interaction on the PR, suggesting it may not be a priority or relevant any longer."
+    ],
+    "pull": 57428
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, so there is no indication from him that it should be closed.",
+      "The PR addresses a bug and seems to provide a fix, which does not warrant closure without further discussion."
+    ],
+    "pull": 57323
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, so there is no indication from him about whether he thinks it should be closed.",
+      "Also, there is ongoing activity with changes requested by weswigham and further responses from Andarist indicating continued development, which suggests it may still be viable."
+    ],
+    "pull": 54706
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never asked if this PR can be closed, indicating it has not been considered for closure from a team perspective.",
+      "The latest comments show ongoing activity and testing by other team members, suggesting that the PR is still under review and not abandoned."
+    ],
+    "pull": 58482
+  },
+  {
+    "shouldClose": "yes",
+    "reasons": [
+      "sandersn asked whether this PR can be closed, and there has been no response from the authors in the last few comments.",
+      "The last response to sandersn's comment is over 2 years old, indicating inaction and a lack of updates."
+    ],
+    "pull": 50451
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR at all, so there is no indication from them regarding closure.",
+      "The last comment was by a team member asking for an update, suggesting ongoing engagement with the PR."
+    ],
+    "pull": 54739
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "Sandersn has not confirmed any intent to close the PR recently, and there are still ongoing discussions from other team members about its validity.",
+      "The last commented date is within a year, which suggests active engagement and potential for further development.",
+      "The PR addresses a specific bug and includes comments that imply the work may still be relevant and beneficial to the codebase."
+    ],
+    "pull": 54688
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "There is no indication that sandersn has asked for this PR to be closed.",
+      "The PR serves as a draft for logging server commands and is explicitly stated to never be merged, which suggests it has a utility for reference."
+    ],
+    "pull": 43468
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, indicating that there has been no suggestion to close it from a team member.",
+      "The PR is actively being considered with recent activity and a follow-up from the author."
+    ],
+    "pull": 58601
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, so there is no indication from him about closing it.",
+      "The PR is relatively recent and has not been explicitly suggested for closure by any team members."
+    ],
+    "pull": 58411
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, indicating no concern from that team member.",
+      "The discussion is ongoing with recent comments and questions raised by DanielRosenwasser, suggesting the PR is still actively being reviewed."
+    ],
+    "pull": 58655
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, so there is no indication from him regarding its potential closure.",
+      "The last few comments are from the author, which do not suggest that the PR is ready to be closed."
+    ],
+    "pull": 58662
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, indicating no opinion on whether it should be closed.",
+      "The recent comments show that there is ongoing interest and positive feedback from another team member (iisaduan) regarding the PR, suggesting it is still relevant."
+    ],
+    "pull": 54513
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, so there are no indications from this team member about whether it should be closed.",
+      "The last activity on the PR is relatively recent, suggesting ongoing engagement and potential for resolution rather than abandonment."
+    ],
+    "pull": 58028
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, so there is no indication from him about whether it should be closed.",
+      "The PR seems to have ongoing discussions and clarifications that are being explored, which suggests it is still in active consideration."
+    ],
+    "pull": 58700
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR at all, implying there is no explicit request or indication for closure from a team member who usually advocates for closure.",
+      "The recent comments indicate ongoing discussion about the proposal, showing that the PR is still being evaluated rather than seen as stale or unnecessary."
+    ],
+    "pull": 58735
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, indicating no interest in closing it from his perspective.",
+      "The last update was recent (2024-06-06) and indicates active engagement with the PR."
+    ],
+    "pull": 58783
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, indicating he has not expressed a concern about closing it.",
+      "There are no recent questions or comments regarding the status of this PR that would suggest closure is needed."
+    ],
+    "pull": 58798
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR asking whether it can be closed.",
+      "There are only comments from other contributors, but no indication of closure from the team."
+    ],
+    "pull": 58797
+  },
+  {
+    "shouldClose": "yes",
+    "reasons": [
+      "sandersn has asked whether this PR should be closed and mentioned the need to open an issue instead, indicating that the current process does not support these changes.",
+      "There is no more recent response to sandersn's comment, suggesting that the PR cannot be progressed further."
+    ],
+    "pull": 58129
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, indicating no indication from him to close it.",
+      "The discussion indicates ongoing work and analysis to address performance issues raised by other team members, suggesting active engagement and potential for resolution."
+    ],
+    "pull": 58824
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, indicating there is no concern from them regarding closure.",
+      "The PR is still under active discussion and testing, with recent comments from other team members suggesting ongoing interest and analysis."
+    ],
+    "pull": 57895
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, suggesting no indication from him about closing.",
+      "The discussion is still ongoing and there are active comments, which indicates that the PR might still be under consideration."
+    ],
+    "pull": 58190
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not asked whether this PR can be closed, indicating it is still under consideration.",
+      "The comments also do not show any indication of it being inactive or abandoned."
+    ],
+    "pull": 58288
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, indicating that they haven't expressed any opinion regarding its potential closure.",
+      "The comments include ongoing discussions and suggestions for improvement, meaning the PR is still relevant and being actively worked on."
+    ],
+    "pull": 58187
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not asked in the comments whether this PR can be closed.",
+      "The conversation seems active with comments from Andarist indicating ongoing discussion about the PR.",
+      "There is no indication that the PR is abandoned or unresponsive."
+    ],
+    "pull": 58180
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, indicating he does not find it necessary to suggest closing it.",
+      "The PR has ongoing discussions and active participation from team members like weswigham, DanielRosenwasser, and Andarist, which suggests that the PR is still under consideration rather than being abandoned."
+    ],
+    "pull": 54183
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, indicating they did not express any preference for its closure.",
+      "The most recent comments involve discussion and clarifications, suggesting active engagement with the content of the PR."
+    ],
+    "pull": 57912
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, so there is no indication that it should be closed.",
+      "The PR is still being actively worked on, as indicated by the recent comment from the author."
+    ],
+    "pull": 58920
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking whether this PR can be closed, so there's been no indication that this PR is considered unnecessary or outdated."
+    ],
+    "pull": 58904
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, indicating a lack of indication that it should be closed from him or any other team member.",
+      "There are active discussions among other team members, suggesting ongoing interest and consideration for the PR.",
+      "The PR was updated recently (2024-06-22), indicating that the author is still actively working on it."
+    ],
+    "pull": 58875
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, so there is no indication of his opinion on whether it should be closed.",
+      "The discussion seems ongoing with multiple comments from weswigham and jakebailey, suggesting that there are still active considerations regarding the implementation."
+    ],
+    "pull": 59013
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, so there's no indication from him regarding closure.",
+      "The PR is recent and not yet resolved, allowing for further discussion and progress."
+    ],
+    "pull": 59077
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, indicating a lack of concern regarding closure.",
+      "The discussion surrounding the PR is active, with recent comments suggesting ongoing considerations and adjustments that need to be addressed."
+    ],
+    "pull": 58986
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, so there is no indication of wanting to close it.",
+      "The PR is relatively recent, having been updated just a few hours ago."
+    ],
+    "pull": 59099
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, therefore there is no indication from them about whether it should be closed.",
+      "There are active discussions happening in the comments, particularly with gabritto and iisaduan engaging in a constructive dialogue about the approach and implications of the refactor."
+    ],
+    "pull": 59140
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, so there is no indication that they are seeking closure.",
+      "The discussions around the proposed changes seem to be ongoing, with comments addressing concerns and potential improvements to the implementation."
+    ],
+    "pull": 58829
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, indicating a lack of urgency or concern regarding its closure.",
+      "The discussion is ongoing, and there are multiple recent comments suggesting that the team is still actively considering the implications of the changes."
+    ],
+    "pull": 59135
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, which means there has been no indication from him or other involved team members regarding its potential closure.",
+      "The PR appears to be actively monitored by team members, as indicated by the recent comment from jakebailey asking for performance testing."
+    ],
+    "pull": 59190
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, indicating there may not be a strong opinion for closure.",
+      "The PR is still being actively engaged with, as indicated by the more recent comment from jakebailey."
+    ],
+    "pull": 59192
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, indicating that there is no indication from this team member about whether it should be closed.",
+      "The last comment from jakebailey suggests ongoing work, as he requested a performance test, which implies this PR is still active."
+    ],
+    "pull": 59191
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn did not ask for the PR to be closed, just made a comment regarding its relation to another issue.",
+      "The PR is actively being updated, and it is a recent comment that does not indicate closure."
+    ],
+    "pull": 59153
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, indicating there has been no request to close it.",
+      "The ongoing discussions show active engagement, suggesting the PR is still being evaluated and considered for merging."
+    ],
+    "pull": 58154
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, indicating no concerns about its status.",
+      "There are active discussions and testing being performed on the PR, suggesting it is still being worked on."
+    ],
+    "pull": 59233
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, therefore there is no inquiry about closing it.",
+      "The PR is relatively new, having been updated recently in July 2024."
+    ],
+    "pull": 59244
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, so there is no indication of whether it should be closed or not.",
+      "There has been ongoing discussion from other team members, particularly the author, so the PR may still be under consideration."
+    ],
+    "pull": 59106
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on the PR, thus there's no indication from the team about closing it.",
+      "There are ongoing discussions with multiple team members actively commenting, indicating that the PR is still under review and not abandoned."
+    ],
+    "pull": 58084
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "There are no comments from sandersn asking whether the PR can be closed.",
+      "The last update was less than a year ago, so the PR is likely still active."
+    ],
+    "pull": 57113
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, which means there is no indication from them regarding its status.",
+      "The recent activity (last comment was in July 2024) suggests that the PR is still being actively discussed or reviewed."
+    ],
+    "pull": 52850
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR and therefore has not requested if it can be closed.",
+      "The PR is still being actively tested and has recent comments from other team members suggesting ongoing interest."
+    ],
+    "pull": 59274
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, which means there is no indication that it should be closed from a team member perspective.",
+      "There is ongoing discussion about the performance improvements, indicating that there are some affirmations about its value, even if minor. Closing might overlook potential benefits."
+    ],
+    "pull": 58551
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, so there is no indication that it should be closed.",
+      "There are still open questions related to the design of instantiation expressions, suggesting that the PR may still require discussion and further development."
+    ],
+    "pull": 51695
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, so there is no indication they believe it should be closed.",
+      "The PR appears to be actively addressing issues related to the TypeScript codebase and has not been deemed stale."
+    ],
+    "pull": 59326
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, indicating there is no indication from him about wanting it to be closed.",
+      "There are no recent comments suggesting that this PR is inactive or unresolved, and it has been updated relatively recently."
+    ],
+    "pull": 59297
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, so there is no indication from team members that it should be closed.",
+      "The PR is still being actively discussed and tested, indicating ongoing development and interest.",
+      "No members have questioned the relevance or necessity of this PR recently."
+    ],
+    "pull": 59302
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, meaning there has been no inquiry from him regarding its closure.",
+      "The discussion surrounding the PR is ongoing, with relevant contributions from team members and a focus on addressing related issues."
+    ],
+    "pull": 59059
+  },
+  {
+    "shouldClose": "yes",
+    "reasons": [
+      "sandersn has asked if this PR can be closed and has not received a direct response from the author to this inquiry.",
+      "The last comment from sandersn regarding adding test cases is from April 13, 2023, and there has been no update or follow-up since then. The lack of recent engagement suggests the PR may not be actively pursued."
+    ],
+    "pull": 53631
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, therefore their opinion is not available to weigh in the decision.",
+      "The PR is actively being worked on and has recent comments, indicating ongoing activity."
+    ],
+    "pull": 59415
+  },
+  {
+    "shouldClose": "yes",
+    "reasons": [
+      "sandersn has expressed a desire to close this PR in previous comments",
+      "The last response from RyanCavanaugh was over two years ago without further engagement on the topic, indicating a lack of interest in pursuing this PR further."
+    ],
+    "pull": 48228
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, indicating they do not have an opinion on its closure.",
+      "The last update was recent, and the topic appears to be under discussion with recent activity."
+    ],
+    "pull": 59409
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, hence there's no indication from him to close it.",
+      "The discussion around the proposed changes is ongoing, indicating that the PR is still being actively worked on and evaluated."
+    ],
+    "pull": 54927
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, which is an indicator that there isn't consensus for closure from a team member with influence.",
+      "The PR is relatively recent and has not been deemed obsolete or unnecessary as of the last comment."
+    ],
+    "pull": 59424
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, indicating that their evaluation and opinion have not been sought or provided.",
+      "There are no recent comments questioning the status of this PR or suggesting it might be closed."
+    ],
+    "pull": 59290
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, indicating no concern about its status.",
+      "The PR is still under consideration as there are no indications that it is inactive or irrelevant."
+    ],
+    "pull": 59448
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, which means there is no indication from them expressing a desire to close it.",
+      "The PR was recently updated and testing is in progress, suggesting it is still being actively considered."
+    ],
+    "pull": 59459
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "There are active discussions around the nature of the proposed change, indicating that the maintainers are still evaluating its impact.",
+      "sandersn expressed concerns about the lack of consensus and questions whether the fix addresses the original bug, implying that the PR may still need further exploration."
+    ],
+    "pull": 58990
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, so there is no indication that it may need to be closed.",
+      "There are ongoing discussions and potential improvements proposed by the submitter and others, indicating that the issue is still being addressed."
+    ],
+    "pull": 59485
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, indicating no concerns about its status and likely considers it active.",
+      "The PR is relatively new and does not show signs of being abandoned, as there are no recent comments questioning its validity."
+    ],
+    "pull": 59536
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, so there is no indication from them regarding whether it should be closed.",
+      "The PR is ongoing with recent comments from the author, indicating that it is still in discussion or development."
+    ],
+    "pull": 58638
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, so there is no indication from him about whether it should be closed.",
+      "There are ongoing discussions from other team members, suggesting that the issue is still being actively reviewed and developed."
+    ],
+    "pull": 53772
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, so there is no indication from them about whether it should be closed or not.",
+      "The recent comments from other team members indicate ongoing interest and discussion about the changes proposed in the PR."
+    ],
+    "pull": 59559
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, therefore there is no indication that it should be closed.",
+      "The approval from RyanCavanaugh suggests that this PR has merit and does not require closure."
+    ],
+    "pull": 59567
+  },
+  {
+    "shouldClose": "yes",
+    "reasons": [
+      "sandersn has not commented on this PR, which indicates that there is lack of concern from a key team member about its relevance.",
+      "The comments seem to show a lot of back-and-forth from the author but no definitive conclusion has been reached about the PR, suggesting it's stalled or not a priority."
+    ],
+    "pull": 55222
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, so there is no indication of intent to close it from a key team member.",
+      "The recent comment from 'sheetalkamat' has requested changes, which implies that the PR is still being reviewed and may need further work before a decision on closing can be made."
+    ],
+    "pull": 59605
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, so there is no indication that it should be closed.",
+      "There are currently no suggestions or discussions about closing this PR from team members."
+    ],
+    "pull": 59610
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on the PR, so there is no indication that he has expressed a desire for it to be closed.",
+      "The most recent activity on the PR is from RyanCavanaugh, indicating that it is still being considered or reviewed."
+    ],
+    "pull": 59607
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, indicating that there is no indication from him that it should be considered for closure.",
+      "The last comment from weswigham shows that the PR is still being actively worked on, with positive feedback on test suites."
+    ],
+    "pull": 49245
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, indicating that there hasn't been any input from this key team member regarding its closure.",
+      "The last update was recent (2024-08-13), which suggests that the PR may still be relevant and hasn't been abandoned."
+    ],
+    "pull": 48388
+  },
+  {
+    "shouldClose": "yes",
+    "reasons": [
+      "sandersn asked if this PR could be closed and did not receive a response",
+      "sandersn's comment was made over 2 years ago, indicating that the issue may no longer be relevant or actively pursued",
+      "The lack of recent discussion or updates suggests that this PR may not be progressing towards resolution."
+    ],
+    "pull": 48123
+  },
+  {
+    "shouldClose": "yes",
+    "reasons": [
+      "sandersn has not commented on this PR, thus no objections have been raised regarding its closure.",
+      "The last substantial comment that questioned the PR's continuation was made over two years ago and there has been little recent engagement, suggesting discontinued interest or relevance.",
+      "The PR has been inactive for a significant period, and the concerns raised by users have already been resolved in alternative proposals."
+    ],
+    "pull": 26349
+  },
+  {
+    "shouldClose": "yes",
+    "reasons": [
+      "sandersn directly asked if the PR should be closed and there have been no responses since that comment.",
+      "The last interaction from sandersn was recent enough to count as current, and there is no activity to indicate an intention to continue work on the PR."
+    ],
+    "pull": 49274
+  },
+  {
+    "shouldClose": "yes",
+    "reasons": [
+      "sandersn previously asked if the PR could be closed and has not received a response, indicating a lack of interest or progress.",
+      "The last interaction about keeping the PR open was well over 6 months ago, suggesting stagnation and potentially outdated relevance of the PR to the active TypeScript development.",
+      "The concerns raised by ahejlsberg about the changes being undesirable remain unresolved, making it difficult to justify keeping the PR open."
+    ],
+    "pull": 49563
+  },
+  {
+    "shouldClose": "yes",
+    "reasons": [
+      "sandersn has asked whether to pursue this PR further in a recent comment and has received no reply.",
+      "The latest comments indicate uncertainty about the performance implications of the changes, and since there is no follow-up, it may suggest a lack of interest in continuing the discussion."
+    ],
+    "pull": 49730
+  },
+  {
+    "shouldClose": "yes",
+    "reasons": [
+      "sandersn has never commented on this PR, which may suggest a lack of interest in its continuation or relevance.",
+      "The latest comments indicate uncertainty about the feature's future and potential performance issues, dropping its viability for inclusion in upcoming releases."
+    ],
+    "pull": 49886
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, which means there is no inquiry about closing it.",
+      "The comments suggest ongoing testing and discussion, indicating that the PR is still being actively worked on and considered."
+    ],
+    "pull": 50310
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, indicating he has not expressed a need to close it.",
+      "The activity on the PR is recent, with comments from the author in the last couple of years, suggesting it may still be active."
+    ],
+    "pull": 50777
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR at all, so there is no indication of whether he believes it should be closed or not.",
+      "Multiple team members have engaged in discussion about the PR, suggesting that there is ongoing interest and consideration about its contents."
+    ],
+    "pull": 52944
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "The PR is still being actively discussed and tested, indicated by recent comments.",
+      "Sandersn's comment does not suggest closing but rather asks if it's ready to go, showing interest in moving forward."
+    ],
+    "pull": 53739
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, indicating no push to close it.",
+      "There is active discussion around the implementation and its relation to a previous PR (#26349), which indicates ongoing interest and development."
+    ],
+    "pull": 54047
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, so there is no indication from him about wanting it closed.",
+      "The last comments indicate ongoing discussion and development work, suggesting the PR is still relevant and being actively worked on."
+    ],
+    "pull": 55864
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn did not comment on this PR, therefore there is no indication of his position regarding closing it.",
+      "The discussion shows ongoing contributions from other team members, indicating that there are still considerations to address before closure."
+    ],
+    "pull": 58312
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, indicating no indication yet of wanting it closed.",
+      "The PR is newly submitted and may still be undergoing reviews or iterations, which typically would not warrant closing."
+    ],
+    "pull": 59627
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, indicating lack of concerns from one of the team leads about closing it.",
+      "There are ongoing discussions about the code changes which suggest that the PR is still under consideration and may have valid contributions."
+    ],
+    "pull": 59585
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, therefore there is no indication from this key team member that it should be closed.",
+      "The comments from Andarist and weswigham demonstrate ongoing discussion and concern regarding the implementation, suggesting that this PR is still under active consideration and not ready to be closed."
+    ],
+    "pull": 59619
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR at all, so there is no indication it should be closed.",
+      "The PR is actively being discussed with comments about test coverage and potential issues, suggesting it is still under consideration.",
+      "The last comment indicates the author is still engaging with the feedback, which implies work is ongoing."
+    ],
+    "pull": 59501
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, indicating that there hasn't been a question about whether it can be closed.",
+      "The latest comments reflect ongoing discussions and suggestions about the implementation, which usually imply that the PR is still under consideration and not ready to close."
+    ],
+    "pull": 59622
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, so there is no indication from a team member that it should be closed.",
+      "The most recent comments show ongoing engagement and discussion about the implementation, suggesting that the PR is still active and potentially valuable."
+    ],
+    "pull": 59672
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, so there's no indication that they want it closed.",
+      "The comments show that the PR is still being discussed and related changes are happening, meaning it's actively being worked on."
+    ],
+    "pull": 59584
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, therefore there is no indication that it should be closed.",
+      "There are active discussions and comments from the author and other team members, indicating ongoing interest in the PR."
+    ],
+    "pull": 59709
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, indicating there is no query or indication from him about whether it should be closed.",
+      "The PR is relatively new and has not had the opportunity for further discussion; closing should not be based on a lack of comments from a specific team member."
+    ],
+    "pull": 59745
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has asked for opinions on the PR, indicating that it is still under consideration and not ready to be closed.",
+      "The author has shown willingness to develop the PR further, addressing concerns and seeking feedback from team members.",
+      "There are ongoing discussions about potential improvements and inconsistencies, which suggests the PR is still actively being worked on."
+    ],
+    "pull": 57729
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, which means he hasn't questioned its relevance or asked if it can be closed.",
+      "The recent activity from the author indicates ongoing interest and progression on the PR, including requests for testing and packaging."
+    ],
+    "pull": 59759
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "There have been no comments from sandersn asking about the closure of this PR.",
+      "The PR is relatively new, with the last update just a few days ago, indicating ongoing activity."
+    ],
+    "pull": 59719
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, meaning there is no indication from him regarding whether it should be closed.",
+      "The PR has recent approvals and activity, indicating that it is still being considered for development."
+    ],
+    "pull": 59748
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn raised a concern about accepting PRs for bugs that aren't accepted yet, but there has been ongoing discussion regarding the implementation details of `beforeDeclarations`.",
+      "The discussion indicates that the maintainers are considering the proposal seriously, and the last comment from rbuckton even provides directions for further exploration by the contributor."
+    ],
+    "pull": 58879
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "There are no comments from sandersn asking whether this PR should be closed.",
+      "The PR is recent and there is ongoing activity regarding its updates."
+    ],
+    "pull": 59802
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, indicating a lack of explicit concern regarding its status.",
+      "No recent discussions or questions about closing the PR suggest that it is still considered active or relevant."
+    ],
+    "pull": 59794
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not indicated whether this PR can be closed, as he has not commented on it.",
+      "There is still ongoing discussion by the author without feedback from team members."
+    ],
+    "pull": 59816
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, which means there is no question of closing it based on their input.",
+      "The last update was recent (2024-09-01), indicating that the PR is still active and likely under review.",
+      "Since there are no comments suggesting closure, it suggests the stakeholders may still be engaged with the PR."
+    ],
+    "pull": 59817
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not asked whether this PR can be closed.",
+      "The last comment was made by Andarist with no indication of closure, suggesting ongoing development or discussion."
+    ],
+    "pull": 59828
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, indicating no request for closure.",
+      "There has been no indication from other team members or contributors about closing this PR."
+    ],
+    "pull": 59864
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, indicating he does not currently have an opinion on its closure.",
+      "The PR addresses an inconsistency issue, which suggests it may still be relevant and worth discussing further."
+    ],
+    "pull": 59866
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, so there is no indication from him on whether it should be closed.",
+      "The author explicitly stated that they would keep it open as a draft and invited maintainers to close it if necessary, which suggests they are awaiting further input."
+    ],
+    "pull": 58294
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not asked whether the PR can be closed, indicating ongoing interest or relevance.",
+      "There are no concerns raised from team members regarding the status of this PR."
+    ],
+    "pull": 59898
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, so there is no indication that it should be closed.",
+      "The comments provided are from the author of the PR without any inquiry about its status, suggesting it's still under consideration."
+    ],
+    "pull": 59901
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn did not comment on this PR, so his preference regarding closing it is unknown.",
+      "The discussions indicate ongoing work and modifications to improve the PR, suggesting it is still active and being refined.",
+      "There are multiple active participants engaging with the PR, and significant adjustments are being made based on feedback."
+    ],
+    "pull": 58910
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, so there is no indication that it should be closed.",
+      "The PR could still be relevant or may need further discussion."
+    ],
+    "pull": 59903
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, indicating no concerns from him about its status.",
+      "The recent comments show ongoing investigation and potential fixes, suggesting the PR is still active and under consideration."
+    ],
+    "pull": 59886
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, indicating they do not believe it requires closure or has not yet reviewed it.",
+      "The absence of comments from other team members suggests there is still ongoing interest or consideration for this PR."
+    ],
+    "pull": 59921
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR at all, which means there hasn't been a request to close it.",
+      "The PR is in draft status and is actively seeking feedback, indicating it is still in development and not ready for closure."
+    ],
+    "pull": 59945
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, indicating that there is no clear team opinion suggesting it should be closed.",
+      "The author is actively engaged in improving and readying the PR for review, showing ongoing development efforts."
+    ],
+    "pull": 59927
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, so there is no indication from him about wanting to close it.",
+      "The discussion regarding performance improvements and potential future directions indicates ongoing interest and modifications to the PR, suggesting it may still have value.",
+      "Multiple team members have engaged in active discussion regarding the performance impacts, which implies the PR is being taken seriously and may still be developed further."
+    ],
+    "pull": 58928
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, indicating no request or opinion on its closure.",
+      "There are recent comments and activity, suggesting ongoing development or discussion."
+    ],
+    "pull": 59954
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, indicating no indication from them regarding closure.",
+      "There are active comments and a recent request for changes, which suggests ongoing progress on the PR."
+    ],
+    "pull": 59893
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, indicating a lack of concern about its closure.",
+      "There is no indication of whether there are any outstanding issues or discussions that require resolution."
+    ],
+    "pull": 59983
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "There is no indication from sandersn or any other team member suggesting that this PR should be closed.",
+      "The PR seems to be addressing a viable bug and is currently under discussion."
+    ],
+    "pull": 59995
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, so there is no indication that it should be closed.",
+      "The last update was very recent (less than a day ago), which suggests that it may still be under consideration."
+    ],
+    "pull": 60000
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, therefore there's no indication from him about whether it should be closed.",
+      "The last activity on the PR was very recent, suggesting it is still being addressed."
+    ],
+    "pull": 60021
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, which is a key criterion for determining closure.",
+      "The conversation is still ongoing, and there are recent comments that indicate active discussion about the implementation details."
+    ],
+    "pull": 59666
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, indicating a lack of urgency or opinion from him on closing it.",
+      "The discussion among other team members suggests that there may still be unresolved issues that need to be addressed before making a decision about closing."
+    ],
+    "pull": 59736
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR",
+      "The PR is actively being discussed and has had multiple recent comments from the author and other team members, indicating ongoing work and consideration."
+    ],
+    "pull": 59277
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, indicating no concern about closing it.",
+      "There are active discussions happening regarding the changes and implications, which suggest it's still being evaluated."
+    ],
+    "pull": 59646
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, which means there is no indication from him regarding its closure status.",
+      "The recent comments suggest ongoing discussion and examination of the PR's intentions and behavior, indicating that it may not yet be ready to close."
+    ],
+    "pull": 60001
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, indicating a lack of concern about its continuation.",
+      "There is no recent or relevant opinion from team members regarding closing it."
+    ],
+    "pull": 57708
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, so there is no indication of whether it can be closed."
+    ],
+    "pull": 60089
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, indicating no explicit concern from team members about its status.",
+      "The PR appears to address a specific issue and has ongoing discussion that suggests a viable path forward, making closure premature."
+    ],
+    "pull": 60084
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not asked whether this PR can be closed, meaning there is no indication from him that it is unnecessary or outdated.",
+      "The last update was recent (2024-10-01), suggesting that the PR is still active and being worked on."
+    ],
+    "pull": 59132
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, so there is no input from a team member suggesting it should be closed.",
+      "The PR is still marked as a work in progress (WIP), indicating that development is ongoing."
+    ],
+    "pull": 56074
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR at all, so there is no indication to close it based on his opinion.",
+      "The PR is currently being actively discussed and tested, which suggests that it has not yet reached a conclusion regarding its validity."
+    ],
+    "pull": 60120
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, indicating no urgency for closure from this key team member.",
+      "The PR is a work in progress (WIP) and shows active engagement from the author with various performance tests and ongoing improvements, suggesting it still has merit and potential for completion."
+    ],
+    "pull": 59992
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not asked whether this PR can be closed.",
+      "The author has indicated that it is still a work in progress and is actively being worked on."
+    ],
+    "pull": 55968
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, so there is no indication he thinks it should be closed.",
+      "There is ongoing discussion among team members, suggesting that the issue is still being evaluated and has not reached a consensus for closure."
+    ],
+    "pull": 56989
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, indicating that there has been no prompt for closure from him.",
+      "The last comment from iisaduan suggests an ongoing workflow to fix CI, implying the PR is still active."
+    ],
+    "pull": 60171
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, which indicates no team concerns have been raised about closing it.",
+      "The lack of comments from team members suggests there may still be an interest in further discussion or review on this PR."
+    ],
+    "pull": 60178
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on the PR, indicating there is no known sentiment towards closing it from him.",
+      "The last comments by Andarist indicate ongoing activity and fixes related to the issue, suggesting that the PR is still under review and not abandoned."
+    ],
+    "pull": 60121
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "There are no recent comments from sandersn suggesting this PR should be closed.",
+      "This PR has engaged comments indicating that the changes are being discussed and could lead to constructive outcomes."
+    ],
+    "pull": 58495
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, so he hasn't indicated any intention to close it.",
+      "There is an ongoing discussion about the necessity and implications of the changes being proposed, led by another team member.",
+      "The lack of a definitive asking for closure from sandersn suggests the PR might still be under consideration."
+    ],
+    "pull": 60142
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, hence there is no indication from him whether it should be closed or not.",
+      "The last comment by DanielRosenwasser indicates that performance testing is being requested, suggesting that the PR is still under consideration."
+    ],
+    "pull": 60205
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, hence no indication he believes it should be closed.",
+      "The PR appears to provide meaningful improvements to error messages, which may be valuable for users facing similar issues."
+    ],
+    "pull": 60219
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, so there is no indication from him about whether it should be closed.",
+      "The last comment was made by the author of the PR and there are no concerns raised that would lead to closing."
+    ],
+    "pull": 60271
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR at all, indicating there may be no current consensus to close it.",
+      "The last comment from the author, andrewbranch, addresses a concern raised by another team member and indicates ongoing discussion about the proposed changes."
+    ],
+    "pull": 60260
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not asked if it should be closed, indicating that there is no concern from the team about this PR.",
+      "The PR was only recently updated, so there may still be active discussion or development happening."
+    ],
+    "pull": 60349
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, which means there's no indication from a team member that it should be closed.",
+      "There are recent comments from other contributors discussing related issues, so the PR still has active engagement.",
+      "The question of whether this PR will be merged is still being debated, indicating that it might be worth keeping it open for further review."
+    ],
+    "pull": 58571
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, indicating no concern for closure.",
+      "The PR was recently updated, suggesting active development rather than abandonment."
+    ],
+    "pull": 60371
+  },
+  {
+    "shouldClose": "yes",
+    "reasons": [
+      "sandersn has not commented on this PR, so there is no clear indication from him regarding its status.",
+      "gabritto indicated that the PR is stalled, which implies that it may not proceed any further."
+    ],
+    "pull": 54759
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, so there is no basis for closure from him.",
+      "There is active discussion happening with responses from other team members, suggesting that the PR is still in consideration and may proceed."
+    ],
+    "pull": 60324
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not asked if this PR can be closed.",
+      "There is no indication in the comments that it is unaddressed or overlooked."
+    ],
+    "pull": 59682
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, so there is no inquiry about closing it.",
+      "There are active conversations in the comments indicating ongoing work and interest in the PR."
+    ],
+    "pull": 59815
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, indicating he has not expressed any concern about its viability.",
+      "The last comment was made by rbuckton stating that the PR needs more work, suggesting that it is still active and under consideration."
+    ],
+    "pull": 60334
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, which suggests that there's no indication of wanting to close it from a key team member.",
+      "The latest comments indicate ongoing testing and changes requested, which implies that the PR is still under active consideration."
+    ],
+    "pull": 60354
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "There are recent comments indicating ongoing discussion and improvements being made to the PR.",
+      "The last comment from the author is seeking further review, which shows commitment to addressing feedback."
+    ],
+    "pull": 59788
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, indicating no current concern from a key team member about its relevance.",
+      "There has been recent discussion regarding the feature proposed in the PR, and team members are still evaluating its position.",
+      "The PR addresses a feature request, and given that there has been engagement from senior members like RyanCavanaugh, it suggests the idea may still hold merit."
+    ],
+    "pull": 60407
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "There is no input from team member sandersn regarding closing this PR, thus it does not indicate a strong preference for closure."
+    ],
+    "pull": 60436
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, therefore there is no indication from the team that it should be closed.",
+      "The PR is new and has been recently updated (within the same day), indicating ongoing activity and possibly pending feedback."
+    ],
+    "pull": 60458
+  },
+  {
+    "shouldClose": "yes",
+    "reasons": [
+      "sandersn has never commented on this PR, but the question about interest in the PR was asked recently by the original author with no significant response from other team members.",
+      "The context of the conversation indicates there may be confusion or lack of consensus on the direction of the implementation, which could hinder progress."
+    ],
+    "pull": 58712
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR.",
+      "There are ongoing discussions and improvements being made by the author, indicating active development."
+    ],
+    "pull": 60249
+  },
+  {
+    "shouldClose": "yes",
+    "reasons": [
+      "sandersn has asked whether this PR can be closed, indicating they may consider further discussion unnecessary.",
+      "The last comment regarding this inquiry does not provide substantial new direction or argument for the PR's continuation, suggesting lack of current need or momentum."
+    ],
+    "pull": 58729
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, indicating there is no current opinion from this team member about closing it.",
+      "The PR might still require review or input from other team members."
+    ],
+    "pull": 60516
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "There has been no comment from sandersn indicating a preference for closure, which is a key consideration for this decision.",
+      "Recent activity and responses in the comments suggest ongoing discussion and clarification regarding the PR's implications, which implies that the PR may still have merit."
+    ],
+    "pull": 60523
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, indicating no intent for closure from a key team member.",
+      "The PR seems to be well-supported with related issues and ongoing discussions about its merging, suggesting it's still under consideration."
+    ],
+    "pull": 60417
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "There is no indication from sandersn or any other team member that suggests this PR can be closed.",
+      "Since sandersn has not commented on this PR, it is likely still under consideration or requires further input."
+    ],
+    "pull": 60558
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking whether the PR can be closed, which indicates no intention or consensus to close it.",
+      "The PR is still actively being discussed and tested, as indicated by recent comments from jakebailey and Andarist."
+    ],
+    "pull": 60557
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, indicating no indication from them that it should be closed.",
+      "The PR addresses a relevant issue and adds new functionality, suggesting that it is still of interest and should remain open."
+    ],
+    "pull": 60574
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not expressed any opinion on closing this PR.",
+      "There are no recent comments questioning the status of this PR, indicating it is not currently under scrutiny.",
+      "The PR aims to fix a specific bug, which can be important to keep open until resolved."
+    ],
+    "pull": 60584
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, so there is no indication from him regarding closure.",
+      "The PR is actively being tested based on the recent comments, showing engagement and progress."
+    ],
+    "pull": 60528
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not asked whether this PR should be closed, indicating there may be continued interest or value in the changes made.",
+      "The PR is still relatively recent, having been updated less than a day ago."
+    ],
+    "pull": 60631
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, which means there's no team opinion suggesting it should be closed.",
+      "The author has indicated willingness to work on the proposal further, which suggests potential value in keeping the PR open for future development."
+    ],
+    "pull": 60642
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not asked whether this PR can be closed, indicating it's still considered active.",
+      "There are no concerns or requests for closure from team members, suggesting the PR may still be relevant."
+    ],
+    "pull": 60643
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, so there's no indication from him about whether he thinks it should be closed.",
+      "The last comment from Andarist indicates active engagement and updates, suggesting that the PR is still in use rather than abandoned."
+    ],
+    "pull": 60395
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, so there is no indication of his intent to close it.",
+      "There are recent comments from other team members expressing support for the PR, suggesting that it is still under consideration and relevant to ongoing issues."
+    ],
+    "pull": 57838
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "There has not been any inquiry from sandersn about closing this PR, which indicates that there may still be ongoing discussions or considerations regarding it.",
+      "The comments from team members like andrewbranch and Andarist show active engagement and ongoing work to address or refine the issues raised, suggesting that the PR is still relevant."
+    ],
+    "pull": 60039
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented, so there is no indication that he considers this PR for closure.",
+      "The lack of recent comments suggests active engagement with this PR and indicates it may still be under consideration."
+    ],
+    "pull": 60682
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR at all, so there is no indication of whether this should be closed or not.",
+      "The last comment from the author indicates a personal issue that might hinder further progress, but it does not warrant closing the PR immediately."
+    ],
+    "pull": 60269
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, indicating that there is no suggestion from him regarding closure.",
+      "The latest comments demonstrate active discussion and acknowledgment from the PR author regarding new test cases, which suggests the PR is still in progress."
+    ],
+    "pull": 60678
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, indicating no concerns from this specific team member."
+    ],
+    "pull": 60710
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, so there is no indication that they want it to be closed.",
+      "The latest comments indicate there is ongoing discussion about improving the implementation, thus suggesting that the PR is still active."
+    ],
+    "pull": 51806
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, so there is no indication from them regarding its closure.",
+      "The contributions and discussions involve other team members and they might still be valuable to the repository."
+    ],
+    "pull": 60716
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, so there is no indication of whether it should be closed or not.",
+      "The PR appears to still be actively discussed and tested, which may indicate it has ongoing relevance."
+    ],
+    "pull": 60715
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, which means there is no specific interest from a core team member regarding its closure.",
+      "andrewbranch has expressed intentions to fix this PR, indicating ongoing interest and activity that suggests it may not be ready to close."
+    ],
+    "pull": 54096
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, indicating there is no direction to close it from a team member of significant influence.",
+      "There are recent comments from the author and jakebailey, suggesting there is ongoing discussion or activity related to the PR."
+    ],
+    "pull": 60540
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, indicating there is no indication from him about closing it.",
+      "There are recent comments from jakebailey showing interest in reviewing the PR, which suggests it is still under consideration."
+    ],
+    "pull": 53017
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, indicating there has been no official inquiry regarding its closure.",
+      "The comments indicate ongoing discussion and interest in the PR, suggesting it is still under consideration for merging."
+    ],
+    "pull": 60345
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "There has been no inquiry from sandersn regarding closing this PR, which indicates that it's still under consideration.",
+      "The PR has recent activity and hasn't been deemed unnecessary by the team."
+    ],
+    "pull": 60788
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, indicating that there is no team member opinion pushing for closure.",
+      "The PR was recently updated and shows ongoing activity, which suggests it may still be relevant."
+    ],
+    "pull": 60799
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "There has been no inquiry from sandersn about closing this PR, which indicates that it is still under consideration.",
+      "The PR addresses an issue in the backlog, implying that it may still be relevant and useful, despite not being a complete solution."
+    ],
+    "pull": 60809
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR; thus there's no indication from him regarding its closure.",
+      "The last activity was very recent, and there may still be ongoing discussions or modifications being made."
+    ],
+    "pull": 60816
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on the PR, indicating no opinion from a key team member who is likely to have insight on whether it should be closed.",
+      "The PR is still under consideration, as indicated by recent activity and comments."
+    ],
+    "pull": 60830
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, which indicates he has not expressed any concerns about its status.",
+      "The PR is actively discussed with multiple comments reflecting ongoing engagement and exploration of potential improvements, suggesting it is still in consideration for merging."
+    ],
+    "pull": 60718
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, so there is no indication from him about whether it should be closed.",
+      "There are active comments and recent activity, indicating the PR might still be under discussion or review."
+    ],
+    "pull": 59144
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not expressed any opinion on this PR or asked if it can be closed.",
+      "The PR is still relatively new and has not been inactive long enough to warrant closure."
+    ],
+    "pull": 60858
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented, so there is no indication that it should be closed.",
+      "There may be ongoing discussion or further consideration needed since it was just updated recently."
+    ],
+    "pull": 60860
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, so there is no indication that it should be closed from a team member's perspective.",
+      "The comments do not suggest any proposal or indication to close the issue.",
+      "The PR is still in a recent status with ongoing comments, indicating active discussion."
+    ],
+    "pull": 60865
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, so there is no indication that it should be considered for closure.",
+      "There are currently no recent comments suggesting that the PR is not valuable or should not continue in the review process."
+    ],
+    "pull": 60866
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, so no indication to close.",
+      "The discussions indicate some ongoing interest and activity regarding this PR, suggesting it may still be under consideration."
+    ],
+    "pull": 60726
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, so there are no indications about whether it should be closed.",
+      "No recent activity or comments from team members discussing closure."
+    ],
+    "pull": 60869
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, indicating no indication of desire to close it.",
+      "There is no recent activity from team members suggesting this PR should be closed."
+    ],
+    "pull": 60873
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not questioned whether this PR can be closed, indicating support for its current state.",
+      "The last update was very recent, so there may still be ongoing discussions or considerations about the changes made."
+    ],
+    "pull": 60886
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, so there are no indications from team members regarding the closure.",
+      "The comments do not include any suggestions or concerns that would warrant closing this PR."
+    ],
+    "pull": 60889
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, so there is no indication that it should be closed."
+    ],
+    "pull": 60890
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented, so there is no indication that the PR should be closed.",
+      "There is no recent query for closure from team members."
+    ],
+    "pull": 60891
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, therefore we cannot assess if it should be closed based on the request from team members.",
+      "There are no recent comments that indicate a need to revisit or close this PR."
+    ],
+    "pull": 60853
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR at all, so there is no indication from him that it should be closed.",
+      "There are no discussions or outstanding comments that suggest this PR is not needed or should be abandoned."
+    ],
+    "pull": 60901
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, indicating he hasn't raised concerns about it that would support closing it.",
+      "The PR appears to have active engagement with the bot testing, suggesting it is still under consideration for review."
+    ],
+    "pull": 60885
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, which is a key factor in the closing decision.",
+      "The discussion indicates that contributors have different opinions about the auto-fix behavior, and it has not reached a consensus that suggests closing the PR is appropriate."
+    ],
+    "pull": 60897
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, which means there is no indication from this team member about whether it should be closed or not.",
+      "The PR is still under consideration, as indicated by recent comments from RyanCavanaugh and Andarist asking for tests and a preview build, respectively."
+    ],
+    "pull": 60834
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, so there is no indication of whether it should be closed or not.",
+      "The recent comments suggest that the PR is still in the review process and has not been abandoned."
+    ],
+    "pull": 60909
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has made a changes requested comment, indicating the PR is still under review.",
+      "No follow-up comments suggest that the PR is actively being worked on or discussed."
+    ],
+    "pull": 60857
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not asked whether this PR can be closed.",
+      "There are no indications that the PR is inactive or needs to be closed."
+    ],
+    "pull": 60938
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, so there are no indications from team members regarding the status or confidence in the PR.",
+      "The comment from Andarist shows ongoing consideration and exploration of the issues, suggesting the discussion is still relevant."
+    ],
+    "pull": 60876
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, indicating there is no indication from him that it should be closed.",
+      "The most recent comment from colinhacks is positive and expresses interest in the feature, suggesting that the PR has merit and should not be closed."
+    ],
+    "pull": 60895
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, therefore his opinion on it is not accounted for.",
+      "The lack of any comments from team members questioning the validity or relevance of the PR suggests that it may still have merit for review."
+    ],
+    "pull": 54029
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "Sandersn's comment was a request to open a bug for a related feature, not an indication that the PR should be closed. This suggests he is open to the PR continuing based on its relation to the implied feature request.",
+      "The PR has ongoing discussions and requests for further action, such as creating playgrounds for testing. This indicates that work is still being done and the PR has not been abandoned."
+    ],
+    "pull": 52972
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, so there is no indication that it should be closed.",
+      "There are active comments from weswigham requesting changes, indicating that the PR is still under review and discussion."
+    ],
+    "pull": 60796
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "There are no comments from sandersn regarding closing the PR.",
+      "Recent comments from the author and jakebailey indicate that there is ongoing interest and activity related to this PR."
+    ],
+    "pull": 60868
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, which means there is no clear indication from him to close it.",
+      "The discussion is ongoing, with recent comments suggesting that there is still some uncertainty about the implementation and its validity."
+    ],
+    "pull": 60433
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "There are no comments from sandersn on this PR, which means team opinions are not influencing its status.",
+      "The last comment by jakebailey is a request for testing, indicating that this PR is still in active consideration."
+    ],
+    "pull": 58520
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, indicating no interest in closing it.",
+      "There are no recent comments suggesting a consensus to close the PR. It shows active support from another team member, which suggests it might still hold value."
+    ],
+    "pull": 60656
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "Sandersn has not commented on this PR, indicating no explicit concern or suggestion for closure from him.",
+      "The latest comment from Jake Bailey suggests ongoing discussion and a decision to be made regarding the implementation rather than an indication that the PR should be closed."
+    ],
+    "pull": 59437
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, which means he hasn't requested closure or expressed any concerns about it.",
+      "The comments indicate ongoing discussion and potential adjustments, suggesting that the PR is still in the review process and not ready to be closed."
+    ],
+    "pull": 49817
+  },
+  {
+    "shouldClose": "yes",
+    "reasons": [
+      "sandersn has not commented on this PR, and it appears to be a long-standing issue without recent activity from any core TypeScript members.",
+      "The PR has not gained traction for merging despite numerous comments, which suggests diminishing interest from the TypeScript team."
+    ],
+    "pull": 35206
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, so there is no indication from him regarding whether it should be closed.",
+      "The PR seems to address a specific issue related to TypeScript's handling of private properties, making it relevant and possibly valuable."
+    ],
+    "pull": 60263
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on the PR, indicating that there hasn't been any team input about closing it.",
+      "The latest comment shows that there is still interest in the PR, and it has not been inactive long enough to warrant closure."
+    ],
+    "pull": 57042
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, so there is no indication from him regarding closure.",
+      "The PR seems to be actively discussed and revised, particularly with the latest comment suggesting a change in testing strategy, indicating ongoing work."
+    ],
+    "pull": 60994
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not yet commented on this PR, so his opinion is not available.",
+      "The PR includes significant fixes related to identifier scanning, indicating it is still relevant and potentially essential for addressing the issues raised."
+    ],
+    "pull": 61042
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, so there is no indication that it should be closed from their perspective.",
+      "The last comment was from jakebailey asking the bot to test it, suggesting ongoing work on the PR."
+    ],
+    "pull": 61054
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, so there are no indications of concerns about its status.",
+      "The last comment from DanielRosenwasser suggests ongoing interest in the PR, which implies it has not been dismissed."
+    ],
+    "pull": 61032
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, therefore no indication of whether it should be closed or not.",
+      "The discussion around the PR has ongoing activity with relevant comments, suggesting that the issue is not settled and still being evaluated."
+    ],
+    "pull": 57293
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not asked whether this PR can be closed",
+      "There are no recent questions or concerns raised by the team members regarding the PR."
+    ],
+    "pull": 59834
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, therefore there is no indication from him about whether it should be closed.",
+      "The PR is actively being discussed and worked on, suggesting it is still relevant and should remain open."
+    ],
+    "pull": 61077
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, which means there is no indication from a team member who should have a stronger opinion on closure.",
+      "The comments from jakebailey show ongoing evaluation and development of the PR, indicating it is still being actively discussed and worked on."
+    ],
+    "pull": 60729
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, so there is no indication that it should be closed."
+    ],
+    "pull": 61087
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, so there is no indication from the team to consider closing it.",
+      "There may be other members or reviewers who might provide feedback or input on this PR."
+    ],
+    "pull": 61092
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, so there is no indication of a need to close it.",
+      "The latest discussion among team members, particularly Andarist and jakebailey, suggests that the change is being actively evaluated and discussed."
+    ],
+    "pull": 61013
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, indicating no suggestion has been made to close it.",
+      "There are ongoing discussions about performance implications, which may necessitate further analysis and resolution."
+    ],
+    "pull": 61104
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, so there is no inquiry about closing it.",
+      "There are no indications that the PR is stale or unaddressed, as it was just updated recently."
+    ],
+    "pull": 61079
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, indicating no concern from a key team member.",
+      "There are recent comments and activity on the PR, suggesting it is still being discussed and worked on."
+    ],
+    "pull": 61107
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, so there is no indication he believes it should be closed.",
+      "The lack of engagement from other team members over a significant period suggests that this PR is not currently viewed as a priority or in need of closure."
+    ],
+    "pull": 55267
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR.",
+      "There are no requests for closure from team members or indication that this PR should be reviewed or closed."
+    ],
+    "pull": 61147
+  },
+  {
+    "shouldClose": "yes",
+    "reasons": [
+      "sandersn has asked about closing this PR multiple times and has emphasized the need for a design discussion.",
+      "The last comment from sandersn was on May 24, 2022, and there has been no substantial engagement since then, suggesting it may be stagnant."
+    ],
+    "pull": 39699
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, which means there is no indication from him regarding its status.",
+      "The PR is relatively fresh, having been updated recently, and it appears to be an active discussion point."
+    ],
+    "pull": 61174
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, so there's no indication they're seeking closure.",
+      "The PR does not have any significant delays or issues mentioned that warrant closure."
+    ],
+    "pull": 60434
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, indicating no inclination to close it.",
+      "The PR has recent activity and engagement from the author, showing ongoing interest in progress."
+    ],
+    "pull": 61185
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, so there is no indication that this PR should be closed.",
+      "The PR is relatively new and still pending tests, indicating that it is still under consideration."
+    ],
+    "pull": 61224
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "The PR has received approvals from team members, including sandersn.",
+      "The last comment from sandersn shows support for the changes, indicating that it is not intended for closure."
+    ],
+    "pull": 60977
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not asked whether this PR can be closed, indicating that it is still under consideration or review.",
+      "There is no prompt to close this PR, as it lacks engagement from the team member who would influence the decision."
+    ],
+    "pull": 61232
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, so there is no indication from the team that it should be closed.",
+      "The last update to the PR was recent, and the conversation about the changes requested has not been resolved, suggesting it is still under review."
+    ],
+    "pull": 60301
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented or expressed any concerns about closing the PR.",
+      "The activity appears to be ongoing with recent comments from jakebailey, indicating interest in the PR.",
+      "No indication that the PR is abandoned or shouldn't be considered for merging."
+    ],
+    "pull": 60628
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, which means there has been no request for closure from a team member.",
+      "The last comment by jakebailey indicates that the tests may be problematic, suggesting that there is still active discussion or work needed on this PR."
+    ],
+    "pull": 61074
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, indicating that there is no concern about its viability from a key team member.",
+      "The last two comments show support for the PR, suggesting it is being positively received and not seen as needing closure."
+    ],
+    "pull": 61097
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "There has been no comment from sandersn asking whether the PR can be closed.",
+      "The latest comments indicate ongoing activity and interest in the PR, with a recent synchronization with the main branch by the author."
+    ],
+    "pull": 56460
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, so there is no indication from them about closing it.",
+      "The comments show ongoing work and recent updates from the author, which indicates that the PR is still being developed."
+    ],
+    "pull": 61173
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, indicating a lack of potential closure support from a key team member.",
+      "The PR is actively discussing technical aspects and improvements, suggesting ongoing development and interest.",
+      "There are recent comments indicating progress and improvements to the PR, which usually reflects a willingness to keep the PR open for further enhancement and testing."
+    ],
+    "pull": 60757
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "Sandersn has not commented on this PR, so there is no indication from him about whether it should be closed.",
+      "There is no recent discussion indicating that the PR is unnecessary or no longer relevant."
+    ],
+    "pull": 60537
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, so there is no indication they want it closed.",
+      "All recent comments are from contributors without closing requests, indicating ongoing discussion."
+    ],
+    "pull": 61233
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, so there is no indication from him about whether it should be closed.",
+      "The recent activity on the PR suggests that it is still being actively discussed."
+    ],
+    "pull": 61265
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, indicating no consensus to close from him.",
+      "The discussion is ongoing, and sidlamsal is actively seeking guidance on whether to create a new issue, suggesting that there is still an intention to improve or move forward with the PR."
+    ],
+    "pull": 61219
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, so there is no indication of a desire to close it.",
+      "The PR appears to be part of an ongoing experiment related to a feature, indicating active development rather than stagnation."
+    ],
+    "pull": 59623
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, so there is no indication about whether it should be closed based on the team member's opinion.",
+      "The latest comments suggest ongoing discussion and active engagement with the changes, particularly regarding the addition of tests."
+    ],
+    "pull": 61071
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented, so there's no expressed concern from this team member about closing the PR.",
+      "The last comments are still active and suggest ongoing discussion, which indicates that the PR may still be relevant."
+    ],
+    "pull": 61291
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, which means there has been no inquiry about whether it should be closed.",
+      "There are no recent comments indicating a desire to close this PR.",
+      "The last comment was made by another user, not by a team member who has a stronger opinion on whether to close it."
+    ],
+    "pull": 61317
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, which means there is no indication that it should be closed from him.",
+      "There is still active participation from Andarist and jakebailey, suggesting that the PR is still being worked on or discussed."
+    ],
+    "pull": 59972
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, which means there is no indication that it should be closed.",
+      "The most recent comment is from the author discussing a technical issue but does not suggest closing the PR."
+    ],
+    "pull": 61340
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, indicating they do not have an opinion on its status.",
+      "Lack of comments from team members raises uncertainties about the need for closure."
+    ],
+    "pull": 61346
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented, so there is no indication from a team member that this PR should be closed.",
+      "The PR is recent and has not been reviewed by team members, which could mean that it may still be under consideration."
+    ],
+    "pull": 61349
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, so there is no indication from them about closing it.",
+      "The PR has had recent activity, which implies it may still be under consideration."
+    ],
+    "pull": 61350
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not inquired about closing this PR, indicating there might still be relevance or a need for this fix.",
+      "The PR fixes a specific bug, and as such, should remain open until it is adequately addressed or merged."
+    ],
+    "pull": 61352
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "There is no comment from sandersn about whether this PR should be closed, indicating a lack of concern or feedback from the key team member.",
+      "The PR has not been deemed inactive or abandoned as there are no indications of unresolved issues or lack of responses."
+    ],
+    "pull": 61358
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, so there is no indication of a need to close it.",
+      "The lack of activity from sandersn suggests that this PR may still be under consideration or relevant."
+    ],
+    "pull": 61362
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, indicating a lack of opinion from a key team member who typically weighs heavily in such decisions.",
+      "The last comments show engagement from the author and others, suggesting that the PR is still active and being worked on."
+    ],
+    "pull": 61221
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not indicated any desire to close this PR, as he has never commented on it.",
+      "There are no recent comments questioning the validity or necessity of keeping this PR open."
+    ],
+    "pull": 61376
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, which means there is no indication from him about whether it should be closed.",
+      "The comments from other team members, such as jakebailey, suggest that there may still be ongoing discussion or issues to resolve, and it might be premature to close the PR."
+    ],
+    "pull": 60646
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, which means no indication has been given that it can be closed.",
+      "The last update was recent, suggesting that the PR may still be active or under review."
+    ],
+    "pull": 61379
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, so there are no indications that it should be closed.",
+      "The ongoing engagement or approval from team members can influence whether the PR remains open."
+    ],
+    "pull": 61393
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, so there is no request for closure from him.",
+      "The last comment from jakebailey expressed support for the PR, indicating it may still be under consideration.",
+      "No further comments from other team members suggest this PR is still open for discussion."
+    ],
+    "pull": 61061
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, indicating no direct concerns from a core team member regarding closure.",
+      "There is ongoing activity from the author and other contributors, showing an interest in advancing the PR and its integration into the TypeScript codebase."
+    ],
+    "pull": 48198
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, so there is no indication from him regarding closure.",
+      "There is a recent question from Yavanosta seeking clarity on the status of the PR, showing active interest.",
+      "The PR has been approved and is undergoing tests, suggesting it may still be under consideration."
+    ],
+    "pull": 61211
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, indicating an absence of concern from him about its status.",
+      "The discussion around the PR is active with ongoing conversations and clarifications, suggesting it is still in consideration and likely to move towards a resolution."
+    ],
+    "pull": 58296
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, which means there are no indications about his stance on closing it.",
+      "The last comment indicates that there is a need for a linked issue to prioritize this PR, suggesting ongoing discussions are required."
+    ],
+    "pull": 61430
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not asked whether this PR can be closed.",
+      "There is ongoing commentary from the author, indicating that they are actively working on the PR.",
+      "The lack of any indication from team members that this PR should be closed suggests it is still under consideration."
+    ],
+    "pull": 61414
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, indicating that they're not concerned about its progress or potential closure.",
+      "There are ongoing discussions and updates from the author, jakebailey, suggesting that the PR is still being actively worked on and is not abandoned."
+    ],
+    "pull": 58419
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, so there is no indication that he believes it should be closed.",
+      "The discussion around the PR is ongoing, with relevant questions being asked and answered by the author and others.",
+      "The PR is a draft, suggesting that it is still in progress and not ready for closure."
+    ],
+    "pull": 61399
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "There is no comment from sandersn asking if this PR can be closed.",
+      "The last comment is from the author and indicates ongoing work or interest in the PR."
+    ],
+    "pull": 61420
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, so there are no indications of closure preferences.",
+      "The last few comments are from the author, indicating active engagement and ongoing work on the PR."
+    ],
+    "pull": 61359
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR at all, indicating a lack of concern regarding its closure.",
+      "The PR is still a draft and appears to address an ongoing issue that may require further assessment."
+    ],
+    "pull": 61450
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not asked whether the PR can be closed, so there is no indication from him to consider closing it.",
+      "There are recent comments from other team members indicating activity, with RyanCavanaugh approving the PR."
+    ],
+    "pull": 61383
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, so there is no indication he is pressing for closure.",
+      "The PR has relatively recent activity, with updates as recent as December 2024, suggesting it is still being worked on or evaluated."
+    ],
+    "pull": 59770
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR at all, indicating a lack of concern about its progress or validity.",
+      "There are no recent comments suggesting that there is a consensus or reason to close the PR."
+    ],
+    "pull": 61262
+  },
+  {
+    "shouldClose": "yes",
+    "reasons": [
+      "sandersn has asked recently whether this PR can be closed, indicating he believes it's no longer relevant or needed.",
+      "There is no response to sandersn's question, signifying a lack of continued interest or support for the PR."
+    ],
+    "pull": 50437
+  },
+  {
+    "shouldClose": "yes",
+    "reasons": [
+      "sandersn has asked whether this PR is worth working on further, indicating a lack of progress and engagement from the team.",
+      "The last significant comment from sandersn shows he is questioning the relevance of this PR, which implies it may no longer be necessary."
+    ],
+    "pull": 50782
+  },
+  {
+    "shouldClose": "yes",
+    "reasons": [
+      "sandersn has asked whether this PR can be closed and there is no recent response suggesting it should remain open.",
+      "The last comment from sandersn indicates a willingness to close it, emphasizing a desire to reduce the number of open PRs.",
+      "The issue seems to hinge on other code being ported, which may indicate no immediate resolution or changes needed for this PR."
+    ],
+    "pull": 53327
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, indicating no explicit request for closure.",
+      "There is ongoing discussion and interest in the PR, which suggests that it may still be valuable to the community.",
+      "Several team members are involved in the review process, and the last update indicates that there are still considerations being made before a decision on merging.",
+      "The complexity and potential implications of this PR are under active discussion, making closure premature."
+    ],
+    "pull": 49552
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, so there is no indication that it should be closed based on team opinion.",
+      "There is ongoing discussion among other team members about the proposed changes, indicating that the PR is still being actively considered."
+    ],
+    "pull": 54884
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "There are recent comments addressing concerns raised by sandersn, indicating ongoing dialogue and potential for resolution.",
+      "The most recent activity suggests that this PR is being actively worked on and reviewed, with professionals engaged in discussions about its merit."
+    ],
+    "pull": 56182
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn does ask if the PR is safe to merge but it's responded to almost immediately with a clarification on the performance issue, indicating ongoing discussion. Therefore, it doesn't warrant closure.",
+      "There are active discussions among team members addressing the performance concerns raised, showing that the PR is still alive and considered for merging."
+    ],
+    "pull": 57960
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, so there's no indication from the team lead about whether it should be closed.",
+      "The PR is actively being discussed with comments from other team members, which usually suggests that it is still under consideration and not ready to be closed."
+    ],
+    "pull": 60005
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, so there is no indication of his opinion about closing it.",
+      "While DanielRosenwasser has requested changes, there has been a recent and active discussion, suggesting that the PR is still under consideration and further engagement is expected."
+    ],
+    "pull": 52244
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not asked whether this PR can be closed, indicating there is no concern regarding its status.",
+      "The PR provides a fix for an associated issue and aligns TypeScript with JavaScript, suggesting its relevance and necessity."
+    ],
+    "pull": 61495
+  },
+  {
+    "shouldClose": "yes",
+    "reasons": [
+      "sandersn asked whether this PR could be closed, and there hasn't been a response to that question in the last few comments.",
+      "The last relevant comment from sandersn seeking closure of this PR was made over a year ago, showing a lack of current interest or responses from other maintainers."
+    ],
+    "pull": 48838
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, so there is no indication that it should be closed.",
+      "There is ongoing discussion and further developments related to the PR, specifically the introduction of another related PR (#59437) by a team member, indicating that the issue is still being addressed."
+    ],
+    "pull": 59352
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, indicating a lack of concern from a key team member.",
+      "The PR is still under consideration with recent comments from andrewbranch and weswigham suggesting it may need further review, which implies it's still an active discussion."
+    ],
+    "pull": 42104
+  },
+  {
+    "shouldClose": "yes",
+    "reasons": [
+      "sandersn explicitly asked if the PR should be closed and provided a context where the solution might not be viable",
+      "There hasn't been a response to sandersn's comment, indicating a lack of engagement on this PR after a significant amount of time"
+    ],
+    "pull": 48648
+  },
+  {
+    "shouldClose": "yes",
+    "reasons": [
+      "sandersn asked if the PR should be closed due to a question about its relevance given potential changes in type ordering schemes.",
+      "There is no response to sandersn's question, and it's a critical aspect for determining the validity of the PR."
+    ],
+    "pull": 54554
+  },
+  {
+    "shouldClose": "yes",
+    "reasons": [
+      "sandersn asked about closing the PR with no response given in the comments since April 2025",
+      "There seems to be unresolved issues with the experiment that were indicated by breaks in the tests, which may suggest the PR is not viable"
+    ],
+    "pull": 56441
+  },
+  {
+    "shouldClose": "yes",
+    "reasons": [
+      "sandersn explicitly asked if the PR should still be a draft, implying uncertainty on its viability, but there hasn't been any follow-up communication addressing that question since then.",
+      "There hasn't been significant activity regarding performance improvements or updates from the author since sandersn's comment, suggesting a potential lack of direction or intention to proceed."
+    ],
+    "pull": 53346
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has asked whether the PR should be closed but there is no response yet, indicating ongoing consideration.",
+      "The PR discusses performance implications and potential future work, which suggests it is not yet appropriate to close it."
+    ],
+    "pull": 56487
+  },
+  {
+    "shouldClose": "yes",
+    "reasons": [
+      "sandersn asked if the PR can be closed and there has been no response to that question.",
+      "The last comment from sandersn is very recent and highlights the age of the PR, suggesting it is no longer relevant."
+    ],
+    "pull": 56679
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, indicating no indication from him regarding closing it.",
+      "There are no recent queries or concerns raised by any team members about this PR."
+    ],
+    "pull": 61497
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, indicating he hasn't expressed an opinion on its closure.",
+      "The conversation has ongoing discussion and support from team members, which suggests the PR still has merit and could be continued."
+    ],
+    "pull": 60569
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR at all, thus there is no indication that it should be closed.",
+      "There are active comments from other contributors asking for the PR to be merged, indicating ongoing interest and relevance."
+    ],
+    "pull": 59475
+  },
+  {
+    "shouldClose": "yes",
+    "reasons": [
+      "sandersn has asked to close the PR in the last comment",
+      "There are design questions still open and it hasn't received recent attention due to prioritization of other tasks."
+    ],
+    "pull": 41587
+  },
+  {
+    "shouldClose": "yes",
+    "reasons": [
+      "sandersn has asked whether the PR is worth keeping recently and there has been no response to that comment yet.",
+      "The question raised by sandersn pertains to the relevance of the PR given potential changes in future TypeScript versions, suggesting it may no longer be needed."
+    ],
+    "pull": 48386
+  },
+  {
+    "shouldClose": "yes",
+    "reasons": [
+      "sandersn has already asked whether this PR is worth keeping open, indicating that he sees a potential reason to close it.",
+      "There has been no response to this question, indicating uncertainty about the direction of this PR since it is out of date with the main branch."
+    ],
+    "pull": 57395
+  },
+  {
+    "shouldClose": "yes",
+    "reasons": [
+      "sandersn has asked whether the PR should be closed in a recent comment, indicating concerns about its relevance or applicability.",
+      "There has been no response from the author or any other team member regarding sandersn's comment, leaving it unresolved."
+    ],
+    "pull": 50546
+  },
+  {
+    "shouldClose": "yes",
+    "reasons": [
+      "sandersn has asked if the PR is worth keeping in a recent comment (just before the last update).",
+      "The last activity on this PR was over 2 years ago, indicating it may no longer be relevant or maintained."
+    ],
+    "pull": 51307
+  },
+  {
+    "shouldClose": "yes",
+    "reasons": [
+      "sandersn, a team member, has explicitly suggested closing this PR as it seems to not have been beneficial during its time of testing.",
+      "There has been no response from DanielRosenwasser or any other team member since sandersn's comment to either support or dispute the suggestion to close."
+    ],
+    "pull": 52605
+  },
+  {
+    "shouldClose": "yes",
+    "reasons": [
+      "sandersn has already asked if this PR can be closed, indicating there are concerns about its viability.",
+      "There has been no response to sandersn's question, suggesting a lack of support for the PR."
+    ],
+    "pull": 55718
+  },
+  {
+    "shouldClose": "yes",
+    "reasons": [
+      "sandersn has asked whether this PR can be closed, indicating doubt about its relevance.",
+      "The last comment from sandersn was recent and directly questioning the purpose, with no follow-up response, suggesting a lack of interest in further discussion.",
+      "The PR has not shown any notable updates or engagement since sandersn's comment, reinforcing the idea that it may no longer be necessary."
+    ],
+    "pull": 44860
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, so there's no indication that they have any opinion on whether it should be closed.",
+      "There is ongoing activity from the author, jakebailey, indicating that the PR is still being actively developed."
+    ],
+    "pull": 55517
+  },
+  {
+    "shouldClose": "yes",
+    "reasons": [
+      "sandersn has directly asked if the PR can be closed and it was in the latest comment.",
+      "There has been no answer from the author or any other team members since the comment was made, suggesting a lack of ongoing interest or development.",
+      "The PR is based on an experiment that is now two years old, and given the lack of updates, it may no longer be relevant."
+    ],
+    "pull": 53086
+  },
+  {
+    "shouldClose": "yes",
+    "reasons": [
+      "sandersn has directly asked if this PR is worth keeping open, indicating uncertainty about its relevance or progress.",
+      "There is no response to sandersn's question, implying that the conversation has not progressed and the issue may no longer be active."
+    ],
+    "pull": 55880
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, indicating there hasn't been any concern raised from the team member regarding its closure.",
+      "The last updates and comments show an active discussion and ongoing modifications by Andarist, suggesting the PR is still being refined and worked on."
+    ],
+    "pull": 59807
+  },
+  {
+    "shouldClose": "yes",
+    "reasons": [
+      "sandersn has asked if the PR is worth keeping open and didn't receive a clear answer, which suggests a lack of consensus about its continued relevance.",
+      "sandersn's question is quite recent, yet the responses do not adequately address the concern, indicating potential stagnation in the PR's review process."
+    ],
+    "pull": 56072
+  },
+  {
+    "shouldClose": "yes",
+    "reasons": [
+      "sandersn has already asked whether this PR can be closed, indicating concern about its relevance due to age.",
+      "There hasn't been a response to sandersn's question, which suggests a lack of engagement or interest in moving forward with the PR."
+    ],
+    "pull": 46595
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has asked if the PR is ready to be merged, which indicates he is awaiting a response about its status",
+      "Andarist has responded in multiple comments, showing active engagement and progress on resolving the issues with the PR"
+    ],
+    "pull": 55386
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not asked to close this PR, so there is no indication from the team that it should be closed.",
+      "The recent comments indicate that the author is actively working on the PR and making improvements, which suggests it may still be relevant."
+    ],
+    "pull": 61534
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not asked whether this PR can be closed, which means there hasn't been a team member's concern regarding its status.",
+      "The lack of comments from sandersn indicates that it may still require further discussion or review."
+    ],
+    "pull": 61559
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, so there is no inquiry regarding its closure.",
+      "The most recent activity was a comment from the author requesting testing, indicating that the PR is still active."
+    ],
+    "pull": 61560
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, so there is no indication from him that it should be closed.",
+      "The lack of a comment from sandersn means that there is no team consensus on whether to keep or close the PR."
+    ],
+    "pull": 61372
+  },
+  {
+    "shouldClose": "yes",
+    "reasons": [
+      "sandersn has explicitly asked if the PR can be closed, indicating that it may no longer be relevant or actionable.",
+      "The PR has been sitting without active development or response for a significant amount of time, which aligns with the intention to close stale contributions."
+    ],
+    "pull": 51067
+  },
+  {
+    "shouldClose": "yes",
+    "reasons": [
+      "sandersn has already asked if it can be closed, and there has been no response to that question indicating the PR should remain open.",
+      "The comment from sandersn was recent and indicates that there may be uncertainty about the PR's relevancy, which leaves it open to being closed."
+    ],
+    "pull": 48172
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, indicating no strong opinion regarding its closure.",
+      "The most recent comments show ongoing discussions about the code, indicating that the PR is still being reviewed and considered for integration."
+    ],
+    "pull": 61145
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "The PR is recent and has not been inactive for a prolonged period.",
+      "There may still be ongoing discussions or reviews of the changes made, warranting the PR to remain open."
+    ],
+    "pull": 61593
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, indicating no opinion on closure.",
+      "There are recent comments from other team members suggesting ongoing discussions or tests related to the PR."
+    ],
+    "pull": 61590
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, hence there is no indication from him about the desire to close it.",
+      "The discussions between the contributors indicate ongoing work and interest in porting to Go, suggesting that this PR is still relevant and being actively pursued."
+    ],
+    "pull": 60068
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, indicating no inclination to close it.",
+      "There are ongoing discussions and testing related to the PR, showing active engagement and a potential for resolution."
+    ],
+    "pull": 61589
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR",
+      "There are no recent comments questioning the status or relevance of this PR"
+    ],
+    "pull": 61449
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, so there is no indication from him about whether it should be closed.",
+      "The last comments were made by the author, jakebailey, indicating ongoing work rather than a lack of response."
+    ],
+    "pull": 61551
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, indicating he has no concerns about its closure.",
+      "RyanCavanaugh, a core team member, has engaged with this PR, showing it's still under consideration.",
+      "The last comment suggests that the code needs testing before a final decision is made."
+    ],
+    "pull": 61608
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, indicating a lack of explicit concern about its validity or usefulness.",
+      "The last comments suggest active engagement and testing, indicating that the PR may still have ongoing value and contributions from other team members."
+    ],
+    "pull": 61505
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, indicating that there is no indication of a desire to close it from a team member.",
+      "The comments are recent and show active engagement from the PR author requesting reviews, which suggests the PR is still being worked on."
+    ],
+    "pull": 61353
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "There has been no inquiry from sandersn about closing the PR, indicating that it is still under consideration.",
+      "The PR addresses a reported issue, suggesting it may still be relevant and useful for future development."
+    ],
+    "pull": 59957
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, therefore there is no indication from him about whether it should be closed.",
+      "The latest comments from the author suggest continued work and clarifications, implying that the PR is still active and relevant."
+    ],
+    "pull": 61571
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR.",
+      "There are updates being made by dependabot that may still be relevant, indicating ongoing maintenance rather than abandonment."
+    ],
+    "pull": 61625
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, thus there are no indications to close it from a key team member.",
+      "There is recent activity, with the author asking for a merge, indicating that they are still engaged with the process."
+    ],
+    "pull": 61236
+  },
+  {
+    "shouldClose": "yes",
+    "reasons": [
+      "sandersn asked if the PR is worth reviving after 3 years with no new comments, indicating a desire to close it due to inactivity.",
+      "The lack of replies from other team members since the last comment further suggests that there is minimal interest in continuing this PR."
+    ],
+    "pull": 48889
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "There is no comment from sandersn regarding closing the PR.",
+      "The PR has not been reviewed or commented on by other team members, so there is no clear indication on whether it should be closed."
+    ],
+    "pull": 61628
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "There has been recent activity on the PR, with comments from both sandersn and the author.",
+      "The discussion is about the usefulness of the documentation changes, indicating that the PR is still being considered and isn't ready to be closed."
+    ],
+    "pull": 61596
+  }
+]

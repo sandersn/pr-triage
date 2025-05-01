@@ -8,11 +8,12 @@ async function main() {
   let hasNextPage = true
   let after = null
 
+  const repo = process.argv[2] || "TypeScript-go"
   while (hasNextPage) {
     const queryResult: any = await graphql(
       `
         query ($after: String) {
-          repository(name: "TypeScript", owner: "microsoft") {
+          repository(name: "${repo}", owner: "microsoft") {
             pullRequests(states: OPEN, first: 10, after: $after) {
               pageInfo {
                 hasNextPage
@@ -86,7 +87,8 @@ async function main() {
   }
   const endTime = Date.now();
   console.log(`done in ${(endTime - startTime) / 1000} seconds`);
-  fs.writeFileSync("raw-prs.json", JSON.stringify(result, undefined, 2))
+  const suffix = repo === "TypeScript-go" ? "-go" : ""
+  fs.writeFileSync("raw" + suffix + "-prs.json", JSON.stringify(result, undefined, 2))
 }
 
 main().catch(e => {

@@ -1,6 +1,7 @@
 import type { Pull, RawPull } from "./types.d.ts"
 import * as fs from "fs"
 
+const repo = process.argv[2] || "TypeScript-go"
 function convertRawPullsToPulls(rawPulls: RawPull[]): Pull[] {
   return rawPulls.map(rawPull => ({
     id: rawPull.id,
@@ -37,13 +38,14 @@ function convertRawPullsToPulls(rawPulls: RawPull[]): Pull[] {
   }))
 }
 
-const raw: RawPull[] = JSON.parse(fs.readFileSync("raw-prs.json", "utf-8"))
+  const suffix = repo === "TypeScript-go" ? "-go" : ""
+const raw: RawPull[] = JSON.parse(fs.readFileSync("raw" + suffix + "-prs.json", "utf-8"))
 const pulls: Pull[] = convertRawPullsToPulls(raw)
 
 async function main(pulls: Pull[]): Promise<void> {
   const toInspect = pulls.sort((a, b) => a.updatedAt.getTime() - b.updatedAt.getTime())
   console.log(toInspect.length)
-  fs.writeFileSync("prs.json", JSON.stringify(pulls, null, 2))
+  fs.writeFileSync("prs" + suffix + ".json", JSON.stringify(toInspect, null, 2))
 }
 main(pulls).then(() => {
   console.log("done")

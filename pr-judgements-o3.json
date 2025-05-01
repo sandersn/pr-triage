@@ -1,0 +1,3751 @@
+[
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking if the PR can be closed.",
+      "Since there is no clear request or recent closure indication from sandersn, we should leave the PR open for further discussion."
+    ],
+    "pull": 30979
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "There is no comment from sandersn explicitly asking if the PR should be closed.",
+      "The only comment from sandersn is requesting a bot run (dt), not a closure decision."
+    ],
+    "pull": 49004
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR asking for it to be closed",
+      "there are no recent comments indicating a request for closure"
+    ],
+    "pull": 50372
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn never commented about closing this PR in any recent comments",
+      "there has been no request to close from key team members, so no strong reasons for closure"
+    ],
+    "pull": 51386
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking whether this PR can be closed.",
+      "No indication from a team member or closure request has been raised in the recent comments."
+    ],
+    "pull": 52355
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking whether the PR can be closed, so there's no explicit request from them.",
+      "Without guidance from a team member, there's no basis to close the PR based on our closure criteria."
+    ],
+    "pull": 50046
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn did not ask whether the PR can be closed in his comment.",
+      "There was no recent comment from sandersn suggesting closure, so the status remains unchanged."
+    ],
+    "pull": 52646
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented requesting closure on this PR.",
+      "Without sandersn's inquiry or guidance from team members, this PR does not meet the criteria for closure."
+    ],
+    "pull": 53040
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR at all asking whether it should be closed.",
+      "Without a comment from sandersn, the necessary conditions for automatic closing by the guidelines are not met."
+    ],
+    "pull": 52483
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR to ask if it can be closed.",
+      "Without a request from sandersn, the criteria for closure are not met."
+    ],
+    "pull": 52990
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "Sandersn's comment does not ask if the PR can be closed; it merely notes that the PR is blocked due to pending updates in other projects.",
+      "There is no explicit request for closure from sandersn in the recent comments that would justify closing."
+    ],
+    "pull": 52346
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "Sandersn did not ask if the PR should be closed; his comments were focused on performance tests and not on whether to close the PR.",
+      "The discussion remains active (with follow-up performance testing and merging with main), so there is no unresolved closure request from team members."
+    ],
+    "pull": 50775
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn's comment is a technical review comment requesting a semantic decision rather than asking if the PR should be closed.",
+      "There is no explicit request from sandersn to close the PR, and the discussion remains focused on technical aspects."
+    ],
+    "pull": 51066
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented asking if the PR should be closed",
+      "There was no request from sandersn to close the PR in the comments"
+    ],
+    "pull": 53479
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn did not ask to close the PR; his comment was a review request rather than a closure request.",
+      "Key reviewers like weswigham are still engaged in requesting changes, and the conversation indicates further work is planned."
+    ],
+    "pull": 50494
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking if the PR can be closed.",
+      "The recent comments are from others, and there's no closure request from the prioritized team members."
+    ],
+    "pull": 53595
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "SanderSN has not commented on this PR asking if it can be closed.",
+      "There is no relevant sandersn comment to indicate a closure preference."
+    ],
+    "pull": 52979
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented at all asking if the PR can be closed.",
+      "Without a recent closure request from a key team member, no closure criteria are met."
+    ],
+    "pull": 53758
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking for closure on this PR.",
+      "The decision to close should consider sandersn's input, and without it, the conditions for closure are not met."
+    ],
+    "pull": 54117
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn did not comment to request closure",
+      "since there is no closure inquiry from sandersn, no further action is warranted"
+    ],
+    "pull": 52372
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented asking if this PR can be closed",
+      "without a request from sandersn, we do not use other opinions as criteria to close"
+    ],
+    "pull": 53700
+  },
+  {
+    "shouldClose": "ERROR",
+    "reasons": [],
+    "pull": 51741
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn never commented asking if the PR can be closed",
+      "Without sandersn's comment, there's no basis from the key team member to consider closure"
+    ],
+    "pull": 54128
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking for closure in this PR.",
+      "The condition for closing based on sandersn's comment was not met."
+    ],
+    "pull": 53203
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR asking if it can be closed.",
+      "Without sandersn's request and input from team members, there is no closure signal."
+    ],
+    "pull": 54110
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented asking whether the PR can be closed.",
+      "There are no recent comments from sandersn and no response from any team member supporting closure."
+    ],
+    "pull": 54290
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, so there's no request to close from them.",
+      "Since sandersn's request to close is not present, the instructions do not recommend closing the PR."
+    ],
+    "pull": 53615
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn's comment was a clarifying question about the bug description, not a request to close the PR",
+      "a timely response by Andarist addresses the comment, so no pending closure question remains"
+    ],
+    "pull": 53042
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never asked whether the PR can be closed, so we don't have his perspective.",
+      "The decision should be weighted more heavily on sandersn's comment, which is absent here."
+    ],
+    "pull": 52737
+  },
+  {
+    "shouldClose": "ERROR",
+    "reasons": [],
+    "pull": 52034
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on the PR asking if it should be closed.",
+      "Without a direct comment from sandersn, there's no indication that closing is desired."
+    ],
+    "pull": 49146
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented asking for the PR to be closed.",
+      "Without a request from sandersn, the criteria for closure based on their comment is not met."
+    ],
+    "pull": 49107
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented asking if the PR can be closed.",
+      "Without a recent closing request from sandersn, the criteria for closure aren't met."
+    ],
+    "pull": 52495
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "Sandersn has not commented on this PR at all.",
+      "The criteria for closing (i.e., sandersn asking to close in recent comments) are not met."
+    ],
+    "pull": 49064
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, so there is no request from him to close it.",
+      "Since the condition for closure relies on sandersn's specific request and that is absent, there's no prompt to close the PR."
+    ],
+    "pull": 54553
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on whether this PR should be closed",
+      "The decision criteria are only triggered if sandersn asked to close in recent comments or if the answer is over two years old"
+    ],
+    "pull": 54754
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn did not comment asking if the PR can be closed.",
+      "The condition for closure based on sandersn's input does not apply."
+    ],
+    "pull": 54475
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn never commented asking if the PR can be closed",
+      "without sandersn’s explicit request or a closure comment from key team members, there's no basis to close the PR"
+    ],
+    "pull": 52112
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking to close the PR.",
+      "Without a recent comment from sandersn, there's no clear indication that it should be closed."
+    ],
+    "pull": 55080
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR to ask if it can be closed.",
+      "Without sandersn's input, no closure request has been made in the recent comments."
+    ],
+    "pull": 55073
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn never commented asking for closure on this PR.",
+      "Without an explicit closure request from sandersn, the PR does not meet the criteria for closure based on sandersn's review."
+    ],
+    "pull": 54856
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented in this PR asking if it can be closed.",
+      "Without sandersn's input and since team opinions with sandersn's close request are weighted more heavily, the criteria for closing have not been met."
+    ],
+    "pull": 54750
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented asking for the PR to be closed.",
+      "Without sandersn’s explicit request and no other closure prompting his comment, the PR should remain open."
+    ],
+    "pull": 55004
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, so there's no explicit request to close it.",
+      "Since sandersn's input is prioritized and there's no comment from them, there is no team leader reasoning to close the PR."
+    ],
+    "pull": 54853
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on whether the PR can be closed.",
+      "Without his input or a clear indication from team members, we don’t have a basis to close the PR."
+    ],
+    "pull": 55117
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn did not ask if the PR could be closed; his comments were about performance testing.",
+      "There is no explicit request in the recent comments to close this PR."
+    ],
+    "pull": 55226
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented asking whether the PR should be closed.",
+      "Without his input, there's no indication to close according to the criteria."
+    ],
+    "pull": 55179
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR asking whether it can be closed.",
+      "The criteria for closure based on sandersn's request do not apply in this case."
+    ],
+    "pull": 55144
+  },
+  {
+    "shouldClose": "ERROR",
+    "reasons": [],
+    "pull": 55107
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn never commented asking if the PR can be closed.",
+      "There is no explicit request or recent comment from sandersn indicating closure, so team consensus isn't established."
+    ],
+    "pull": 55214
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR regarding closure.",
+      "The decision to close is triggered only when sandersn has asked for closure in recent comments or an old answer; neither condition is met."
+    ],
+    "pull": 55359
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking if the PR should be closed.",
+      "No other team member's opinion indicating it should be closed, so it doesn't meet the criteria."
+    ],
+    "pull": 55291
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented asking if the PR should be closed.",
+      "Without sandersn's input, there's no indication of closure request based on team priorities."
+    ],
+    "pull": 55503
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn never commented on the PR asking if it can be closed",
+      "the decision to close relies on recent input from sandersn, which is absent"
+    ],
+    "pull": 55531
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn’s most recent comment did not request the PR be closed—it only contains test commands.",
+      "There hasn’t been a closure request by sandersn in the recent comments or a recent discussion on closing, so there's no basis to close the PR."
+    ],
+    "pull": 50452
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented requesting that the PR be closed.",
+      "Since the condition centers on sandersn's comment and there isn't one in the last few comments, there's no strong basis to close it."
+    ],
+    "pull": 55512
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR asking for it to be closed.",
+      "Active review comments from other team members suggest the PR is still under discussion."
+    ],
+    "pull": 55130
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR asking if it can be closed",
+      "without input from sandersn, we should not consider closing it based solely on other team members' comments"
+    ],
+    "pull": 54689
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented asking if the PR should be closed.",
+      "Since sandersn's input is absent, the closure criteria based on his comments does not apply."
+    ],
+    "pull": 54866
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn never commented about closing this PR; thus the condition isn't met.",
+      "Other team members are still actively discussing and reviewing the PR (e.g., AndrewBranch and DanielRosenwasser), so it should remain open."
+    ],
+    "pull": 55588
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR asking if it can be closed.",
+      "Without a request from sandersn, there's no basis to consider closing it."
+    ],
+    "pull": 55278
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking if the PR can be closed.",
+      "Without sandersn’s request, there is no explicit indication to close from a prioritized opinion."
+    ],
+    "pull": 48433
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking if the PR should be closed.",
+      "The decision to close is not initiated by sandersn and there is no recent comment from them."
+    ],
+    "pull": 55835
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "There is no comment from sandersn asking if the PR can be closed.",
+      "Without sandersn's request, and no outstanding closure query from them, the PR should remain open."
+    ],
+    "pull": 55696
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking whether the PR should be closed.",
+      "Without a closing request from sandersn, whose opinion is heavily weighted, there's no basis to close this PR."
+    ],
+    "pull": 50329
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented asking to close the PR.",
+      "No criteria for closing based on sandersn's input are met."
+    ],
+    "pull": 55349
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented asking if the PR can be closed",
+      "no team member's decision with sandersn's closure criteria is present"
+    ],
+    "pull": 48092
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on asking for closure.",
+      "There is no pending question from sandersn in the recent comments, so no closure request exists."
+    ],
+    "pull": 56212
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking if the PR can be closed, so there is no sign that they desire its closure.",
+      "Recent activity from other team members indicates ongoing discussion and review."
+    ],
+    "pull": 56165
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking whether the PR should be closed.",
+      "Since there's no closure request or response from key team members, the criteria isn't met."
+    ],
+    "pull": 56220
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn never commented asking if the PR should be closed.",
+      "Without sandersn's closure request or additional recent input, there is no basis to close the PR as per the guidelines."
+    ],
+    "pull": 55989
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented asking if the PR should be closed",
+      "other team members, like weswigham, are still actively involved in the review process"
+    ],
+    "pull": 56027
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented indicating closure intent.",
+      "Without sandersn's comment, the trigger for closure is not met."
+    ],
+    "pull": 54718
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented asking for closure on this PR.",
+      "Since sandersn's query is the trigger for closing and it isn't present, the PR should remain open."
+    ],
+    "pull": 54006
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on whether the PR should be closed.",
+      "Without sandersn's input, especially given that his opinions are weighted more heavily, there's no sufficient reason to close the PR."
+    ],
+    "pull": 53618
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented asking whether the PR can be closed.",
+      "Other team members’ comments are about requested changes and addressing specific issues, not about closing the PR."
+    ],
+    "pull": 56373
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn did not ask whether the PR can be closed; his comments focus on change suggestions.",
+      "The discussion indicates that further work is expected, and there isn’t a request to close the PR."
+    ],
+    "pull": 56637
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented asking for closure on this PR.",
+      "Without sandersn's request or stale closure conditions fulfilled (like an unanswered question from sandersn), it shouldn't be closed."
+    ],
+    "pull": 56646
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented with a request to close this PR, so there’s no triggering signal from his side.",
+      "Without a closing request from a team member, especially sandersn whose opinion is heavily weighted, the PR should remain open."
+    ],
+    "pull": 56751
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on the PR asking if it can be closed",
+      "Since sandersn’s input is missing and no other team member explicitly requested closure in recent comments, the criteria for closing are not met"
+    ],
+    "pull": 56875
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn never commented on this PR asking if it could be closed.",
+      "Without a closure request from the key team member, there's no prompting to close it."
+    ],
+    "pull": 56183
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn did not explicitly ask whether the PR could be closed; his comments focused on design discussion and scheduling rather than closure.",
+      "There is active discussion and recent updates, so the conditions for closure (unstated in his most recent comments) are not met."
+    ],
+    "pull": 55547
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn did not indicate that the PR should be closed; he only requested clarification and additional input from @rbuckton.",
+      "There is no comment from sandersn asking about closure, so the criteria for closing based on his request are not met."
+    ],
+    "pull": 56713
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn did not ask if the PR could be closed; his comments were about reviewing it in a design meeting.",
+      "The most recent comments are discussion notes and testing orders, not a request for closure."
+    ],
+    "pull": 56859
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn never commented asking if it could be closed",
+      "there is no request from sandersn to close this PR"
+    ],
+    "pull": 56976
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking if this PR can be closed.",
+      "The decision to close is usually weighed more by team members like sandersn, and without their input, and with active comments from others, it's not appropriate to close just yet."
+    ],
+    "pull": 56666
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking whether this PR can be closed",
+      "we follow sandersn's inquiry for closure and in this PR there is no such inquiry from them"
+    ],
+    "pull": 55714
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn never commented asking to close the PR.",
+      "There is no indication or follow-up from the team member that closure is desired."
+    ],
+    "pull": 56300
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking if this PR can be closed.",
+      "The discussion includes recent responses and fixes, indicating that the conversation is still active."
+    ],
+    "pull": 54698
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn did not ask whether the PR can be closed; his comment only moved the state back to 'Waiting on Reviewers'.",
+      "There is no explicit request from sandersn for closure in the recent comments."
+    ],
+    "pull": 54935
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn did not ask whether the PR should be closed.",
+      "there's no explicit closure request from sandersn in recent comments, so the conditions are not met."
+    ],
+    "pull": 56911
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not asked whether the PR can be closed.",
+      "The decision criteria based on sandersn's comments does not apply as there is no such comment."
+    ],
+    "pull": 56939
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR asking whether it can be closed.",
+      "Without a request from sandersn to close, we cannot weigh team opinions towards closing."
+    ],
+    "pull": 56878
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented asking if the PR could be closed",
+      "since there's no such request from sandersn, the conditions for recommending closure are not met"
+    ],
+    "pull": 57236
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on whether this PR should be closed.",
+      "There is an active review comment from iisaduan requesting changes, which indicates the PR is still under discussion."
+    ],
+    "pull": 57314
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking if the PR should be closed.",
+      "Without sandersn's explicit recent request and with ongoing discussion, there's no clear indication to close the PR."
+    ],
+    "pull": 55842
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR regarding closure.",
+      "Since sandersn's opinion weighs heavily on the closure decision and is missing here, we lack the necessary input to close the PR."
+    ],
+    "pull": 55601
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking whether the PR should be closed.",
+      "Since the condition specifically requires sandersn's request to close, and it is absent, the PR should not be closed."
+    ],
+    "pull": 57396
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking for the PR to be closed.",
+      "Without sandersn's closure inquiry in the last few comments, there's no basis to assume closure is warranted."
+    ],
+    "pull": 56100
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn did not ask if the PR could be closed; his comment was focused on verifying the ThirdPartyNoticesText update.",
+      "There is no indication in recent comments that the PR should be closed, as his approval suggests it is still in consideration for merging."
+    ],
+    "pull": 57661
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented asking whether this PR can be closed.",
+      "There is no request from the team member in question, so it doesn't meet the criteria for closure."
+    ],
+    "pull": 52866
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR asking whether it can be closed.",
+      "The decision criteria were triggered by sandersn's comment, which is absent here."
+    ],
+    "pull": 57349
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this pull request asking if it can be closed.",
+      "The criteria only applies when sandersn has requested closure, which is not the case here."
+    ],
+    "pull": 58053
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, so there was no request for closure from them.",
+      "Since sandersn has not asked the question, there is no need to close based on their input."
+    ],
+    "pull": 56652
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never raised a question about closing this PR.",
+      "Since sandersn's opinion is crucial and no comment from him asking if it should be closed exists, the criteria for closing are not met."
+    ],
+    "pull": 51913
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking for closure",
+      "the decision to close should be primarily driven by sandersn's input, which is absent"
+    ],
+    "pull": 56429
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never asked whether the PR can be closed.",
+      "Without a closure request from a team member, there's no basis to close it."
+    ],
+    "pull": 49218
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn did not comment on this PR asking if it can be closed.",
+      "Without a closure request from a team member known for close opinions, there is no basis to close it."
+    ],
+    "pull": 57942
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented to ask for closure in this PR.",
+      "Since there is no request from sandersn, the criteria for closing based on their comment were never met."
+    ],
+    "pull": 58290
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented asking if the PR could be closed.",
+      "There is no pending request from a team member to close it, so it remains active."
+    ],
+    "pull": 58362
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking for closure on this PR",
+      "the conversation is ongoing with input from other team members, indicating active development"
+    ],
+    "pull": 56974
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking whether to close this PR.",
+      "Team opinions did not indicate clear closure, and no clear instruction from sandersn was provided."
+    ],
+    "pull": 55392
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented asking if the PR could be closed",
+      "the decision criteria involves sandersn’s request, which is absent"
+    ],
+    "pull": 56877
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR asking whether it can be closed",
+      "the only comments are from Andarist, so the criteria for closure based on sandersn's comment is not met"
+    ],
+    "pull": 58378
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn never commented asking if the PR can be closed",
+      "Without a closure request from a team member considered weighing more heavily, there's no basis to close this PR"
+    ],
+    "pull": 57649
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR regarding closure.",
+      "Since the condition depends on sandersn's comment and there's no comment from them, the PR should not be closed based on these criteria."
+    ],
+    "pull": 57550
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented at all on this PR regarding closure, so the condition is not met.",
+      "Without sandersn's ask, and with active comments from other team members, there's no clear signal to close it."
+    ],
+    "pull": 57458
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on asking if the PR can be closed",
+      "there is no timely closure request from a team member, as required by the criteria"
+    ],
+    "pull": 57537
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn never commented asking if the PR could be closed.",
+      "No indication from team members, including sandersn, suggesting closure is appropriate."
+    ],
+    "pull": 57428
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn never commented on the PR to ask if it could be closed.",
+      "Closure decisions based on sandersn's request cannot apply in this case."
+    ],
+    "pull": 57323
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn never commented asking if the PR can be closed.",
+      "Since there is no such comment from sandersn, the conditions for auto-closing aren’t met."
+    ],
+    "pull": 54706
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not made any comment regarding closing this PR.",
+      "Since the process requires sandersn’s closure comment, there is no basis to close the PR."
+    ],
+    "pull": 58482
+  },
+  {
+    "shouldClose": "ERROR",
+    "reasons": [],
+    "pull": 50451
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR about closing it.",
+      "Since sandersn's inquiry is absent, the criteria for closing based on their request does not apply."
+    ],
+    "pull": 54739
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn's comments are focused on code issues (e.g., noting that the first case should still be an error) and not on asking whether the PR can be closed.",
+      "There is no specific request from sandersn about closing the PR in recent comments, and no team opinion has indicated that the request should be closed."
+    ],
+    "pull": 54688
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking whether to close this PR.",
+      "Since there is no closure request from sandersn and no recent conversation about closing it, the criteria for closure are not met."
+    ],
+    "pull": 43468
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking if this PR can be closed.",
+      "Without a closure request from a team member, there is no basis to close the PR."
+    ],
+    "pull": 58601
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on requesting to close this PR.",
+      "Since the criteria rely on sandersn's comment, without any such comment the PR should not yet be closed."
+    ],
+    "pull": 58411
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn never commented asking if it could be closed",
+      "there are recent comments indicating ongoing review and suggested changes"
+    ],
+    "pull": 58655
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR asking if it should be closed.",
+      "Since the required condition involving sandersn's inquiry is not met, and no alternative closure decisions have been mentioned by the team, it should not be closed based on the given guidance."
+    ],
+    "pull": 58662
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn never commented asking to close the PR, so the trigger condition isn't met.",
+      "The PR is under active review with recent comments, and no valid request to close by sandersn is present."
+    ],
+    "pull": 54513
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not asked whether the PR can be closed in the comments.",
+      "Without sandersn's comment, there is no closure discussion that warrants closing the PR."
+    ],
+    "pull": 58028
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking whether this PR should be closed",
+      "there is no request or comment from the key team members indicating closure, so it should remain active"
+    ],
+    "pull": 58700
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking whether the PR can be closed, so the condition is not met.",
+      "Without sandersn's input, there is no indication from one of the key team members to close the PR."
+    ],
+    "pull": 58735
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking if this PR can be closed.",
+      "Since the criteria rely on sandersn's intervention and there is no such input, it should not be closed automatically."
+    ],
+    "pull": 58783
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on asking for closure.",
+      "Without a closure request or response from sandersn, there's no basis to close the PR."
+    ],
+    "pull": 58798
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented asking whether the PR can be closed",
+      "without sandersn's input, there is no explicit closure request from a team member with higher weight"
+    ],
+    "pull": 58797
+  },
+  {
+    "shouldClose": "yes",
+    "reasons": [
+      "sandersn explicitly recommended closing the PR in a recent comment without receiving a follow-up from @cheezone or another team member.",
+      "there are concerns about tooling to verify these changes, and community translations were suggested as a better approach."
+    ],
+    "pull": 58129
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on the PR asking if it can be closed.",
+      "The ongoing discussion indicates active investigation and feedback from multiple team members."
+    ],
+    "pull": 58824
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking whether this PR should be closed.",
+      "Without a closure request from a key team member, there's no trigger to close this PR."
+    ],
+    "pull": 57895
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR.",
+      "There is no explicit request from sandersn or a team member to close the PR."
+    ],
+    "pull": 58190
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR asking if it can be closed.",
+      "Since sandersn's feedback is not present, there's no indication to close based on their request."
+    ],
+    "pull": 58288
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on closing this PR",
+      "The criteria for closing based on sandersn's comments is not met"
+    ],
+    "pull": 58187
+  },
+  {
+    "shouldClose": "ERROR",
+    "reasons": [],
+    "pull": 58180
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn never asked if the PR should be closed.",
+      "There is active discussion and recent comments from other team members, so there is no clear signal from sandersn to close it."
+    ],
+    "pull": 54183
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn did not comment on the PR asking if it could be closed",
+      "the closure criteria based on sandersn's request have not been met"
+    ],
+    "pull": 57912
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn never commented asking if this PR should be closed.",
+      "Without a closure query from sandersn, no closure considerations apply."
+    ],
+    "pull": 58920
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "There is no indication that sandersn asked in the comments whether the PR could be closed.",
+      "The only comment is from jakebailey, and no recent feedback suggests closure."
+    ],
+    "pull": 58904
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn never commented asking whether the PR should be closed.",
+      "Without sandersn's request in the recent comments, there's no basis to close it regardless of other opinions."
+    ],
+    "pull": 58875
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking if this PR can be closed.",
+      "Without sandersn's inquiry, we lack the specific signal required per our guidelines."
+    ],
+    "pull": 59013
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR requesting closure",
+      "since there has been no inquiry from sandersn, there is no basis to consider closing it"
+    ],
+    "pull": 59077
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking whether the PR should be closed",
+      "the recent discussion does not include any explicit request from sandersn to close the PR"
+    ],
+    "pull": 58986
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on the PR about closing.",
+      "Without sandersn's input, we don't have a valid closure request to consider."
+    ],
+    "pull": 59099
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn did not comment asking if the PR could be closed.",
+      "Since there is no request from sandersn and the review comments are recent and still active, there is no basis to close the PR."
+    ],
+    "pull": 59140
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented or asked for closure on this PR.",
+      "There is no pending closure request by sandersn and the most recent activity is from other team members."
+    ],
+    "pull": 58829
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR asking whether it can be closed",
+      "the closure request criteria only apply if sandersn had indicated to close and either no answer or over 2 years old response"
+    ],
+    "pull": 59135
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn did not comment asking to close this PR.",
+      "Without sandersn's request, none of the conditions for closure are met."
+    ],
+    "pull": 59190
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented asking for closure.",
+      "Without an explicit closing request from a key team member, the PR shouldn't be closed."
+    ],
+    "pull": 59192
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking for closure on this PR.",
+      "Without a request from a team member (especially sandersn), the conditions for auto-closing do not apply."
+    ],
+    "pull": 59191
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn's comment does not ask if the PR can be closed; it merely notes a related issue.",
+      "There is no explicit request or closure indication from sandersn in the recent comments."
+    ],
+    "pull": 59153
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking whether this PR should be closed.",
+      "Without a closure request from sandersn, the conditions for closing are not met."
+    ],
+    "pull": 58154
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on whether the PR should be closed, so there's no directive from the influential team member.",
+      "Since no closure request from sandersn exists, there's no reason to proceed with closing based on team opinions."
+    ],
+    "pull": 59233
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented asking if the PR should be closed.",
+      "Without a comment from sandersn, there's no indication from the key team opinion to close this PR."
+    ],
+    "pull": 59244
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking if the PR can be closed.",
+      "Since there is no closure indication from sandersn, no decision to close is warranted."
+    ],
+    "pull": 59106
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking if this PR can be closed.",
+      "Without sandersn's query or a closure suggestion from a core team member, there's no basis to close it."
+    ],
+    "pull": 58084
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "Sandersn never commented asking if the PR can be closed.",
+      "Since there's no request from Sandersn, the criteria for closure is not met."
+    ],
+    "pull": 57113
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, so there is no request from them regarding closure.",
+      "The recent comments involve a changes request from weswigham rather than a closure inquiry from sandersn."
+    ],
+    "pull": 52850
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR asking whether it can be closed",
+      "without sandersn's closure request or any over-2-year-old answer, the default is not to close"
+    ],
+    "pull": 59274
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking for the PR to be closed.",
+      "There’s no indication from sandersn regarding closure in the recent comments."
+    ],
+    "pull": 58551
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking if the PR should be closed.",
+      "Without sandersn's explicit request or recent closure query, we should not close the PR."
+    ],
+    "pull": 51695
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented at all asking if the PR should be closed.",
+      "Without sandersn's explicit feedback, we don't have a strong basis for closing the PR."
+    ],
+    "pull": 59326
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on the PR asking for closure.",
+      "Without sandersn’s prompt or other team input, we cannot close this PR."
+    ],
+    "pull": 59297
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR regarding closure.",
+      "Since sandersn hasn't raised the question, there's no indication to close the PR."
+    ],
+    "pull": 59302
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR asking if it should be closed.",
+      "Without a recent comment from sandersn initiating closure, there's no indication to close the PR."
+    ],
+    "pull": 59059
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "There is no comment by sandersn asking whether the PR can be closed.",
+      "The recent discussion focuses on implementation details and performance, not on closing the PR."
+    ],
+    "pull": 53631
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR asking if it should be closed",
+      "the weighted team member opinions do not include any closure request by sandersn, so there's no prompt to close it"
+    ],
+    "pull": 59415
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented asking whether to close this PR, so there's no prompt from them to consider closing.",
+      "Without sandersn’s input in recent comments, there’s no indication that the PR should be closed based on their feedback."
+    ],
+    "pull": 48228
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn did not comment or request the PR to be closed.",
+      "Since the team member's closure request is absent, there's no basis to close it."
+    ],
+    "pull": 59409
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking for the PR to be closed.",
+      "Without their closure request, no review action based on their input is warranted."
+    ],
+    "pull": 54927
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on closing the PR.",
+      "Since there was no comment from sandersn, there is no basis to close the PR based on the review guidelines."
+    ],
+    "pull": 59424
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking if the PR should be closed.",
+      "There is no recent closure request from sandersn, which is a key indicator for closure."
+    ],
+    "pull": 59290
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented asking if the PR can be closed",
+      "without sandersn's input, we have no basis to close it based on the specified guidelines"
+    ],
+    "pull": 59448
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on whether the PR can be closed",
+      "Without sandersn's request, there is no indication to close the PR"
+    ],
+    "pull": 59459
+  },
+  {
+    "shouldClose": "ERROR",
+    "reasons": [],
+    "pull": 58990
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking if the PR can be closed.",
+      "Since no closure request was made by sandersn, and recent comments are actively discussing the implementation and potential issues, the PR should stay open."
+    ],
+    "pull": 59485
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking whether the PR can be closed",
+      "there is no closure request from sandersn in the recent comments"
+    ],
+    "pull": 59536
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, so it doesn't meet the criteria for closure based on his input.",
+      "The most recent comments are from andrewbranch, and there's no indication from sandersn that the PR should be closed."
+    ],
+    "pull": 58638
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking if the PR should be closed.",
+      "There is ongoing discussion with recent updates, so we should not close it based solely on other comments."
+    ],
+    "pull": 53772
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking for closure",
+      "the criteria are driven by sandersn’s request, which is absent in this PR"
+    ],
+    "pull": 59559
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR asking if it can be closed.",
+      "Without any request from sandersn, we don't have a trigger based on the specified criteria."
+    ],
+    "pull": 59567
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR to ask if it should be closed.",
+      "Without sandersn's closure request, there is no basis to close the PR."
+    ],
+    "pull": 55222
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking if the PR should be closed.",
+      "Without sandersn's explicit request in recent comments, the PR should remain open."
+    ],
+    "pull": 59605
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented asking for closure.",
+      "without a prompting comment from sandersn, there's no team directive to close the PR."
+    ],
+    "pull": 59610
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn did not comment asking whether the PR should be closed",
+      "only comments from Andarist and RyanCavanaugh are present, with no input from sandersn"
+    ],
+    "pull": 59607
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking if the PR can be closed",
+      "without sandersn's explicit request or an outdated answer, the PR shouldn't be closed"
+    ],
+    "pull": 49245
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented at all on whether the PR should be closed.",
+      "There is no recent request from sandersn to close this PR, so the condition is not met."
+    ],
+    "pull": 48388
+  },
+  {
+    "shouldClose": "yes",
+    "reasons": [
+      "sandersn has indicated his willingness to close the PR if it did not show progress, and his comment is the last one.",
+      "There is no follow-up answer after his request, meeting the criteria for closure."
+    ],
+    "pull": 48123
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn never commented asking if the PR can be closed",
+      "there is no team feedback from sandersn to indicate closure"
+    ],
+    "pull": 26349
+  },
+  {
+    "shouldClose": "yes",
+    "reasons": [
+      "sandersn, a team member, recently asked whether to close the PR without receiving a response from weswigham.",
+      "The question remains unanswered in the last few comments, indicating that it's not being actively progressed."
+    ],
+    "pull": 49274
+  },
+  {
+    "shouldClose": "yes",
+    "reasons": [
+      "sandersn's latest comment (2023-12-04) asking if work should continue has not received a response.",
+      "Since his inquiry remains unanswered in the recent comments, it meets the criteria for closing."
+    ],
+    "pull": 49563
+  },
+  {
+    "shouldClose": "ERROR",
+    "reasons": [],
+    "pull": 49730
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn did not ask whether the PR should be closed.",
+      "Without sandersn's explicit request, we rely on team discussions, and no indication has been provided by key members to close the PR."
+    ],
+    "pull": 49886
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn never asked if the PR should be closed in the comments.",
+      "Since sandersn's input is required for closure decisions and no comment from him exists, the PR should not be closed."
+    ],
+    "pull": 50310
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn did not ask whether this PR can be closed.",
+      "No closure request from sandersn in the recent comments, so there's no basis to close it based on our criteria."
+    ],
+    "pull": 50777
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking whether this PR can be closed.",
+      "There are ongoing discussions and technical feedback in the comments, and no closure intent has been expressed by sandersn."
+    ],
+    "pull": 52944
+  },
+  {
+    "shouldClose": "yes",
+    "reasons": [
+      "sandersn asked in the most recent comment whether the PR was ready to go and did not receive a follow-up response.",
+      "Since the query remains unanswered, it indicates the review process might be stalled, supporting a decision to close."
+    ],
+    "pull": 53739
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking whether this PR can be closed",
+      "the criteria for closure based on sandersn's comment are not met"
+    ],
+    "pull": 54047
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking whether this PR can be closed.",
+      "Without sandersn's request, there's no basis for closing it based on the required criteria."
+    ],
+    "pull": 55864
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented asking if the PR can be closed",
+      "there are no recent closure requests or stale opinions from team members, and the issue is still actively maintained"
+    ],
+    "pull": 58312
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented asking whether the PR should be closed.",
+      "Without sandersn's comment, there's no basis from the review guidelines to close it."
+    ],
+    "pull": 59627
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking whether the PR should be closed.",
+      "Since the condition for a closure vote by sandersn is not met, we do not have a closure request."
+    ],
+    "pull": 59585
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn never commented asking if the PR could be closed",
+      "the PR's recent comments indicate discussion by others and there's no pending unresolved request from sandersn"
+    ],
+    "pull": 59619
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking whether the PR should be closed.",
+      "Since there is no sandersn closure prompt, and active discussion exists from team members, we should not close this PR."
+    ],
+    "pull": 59501
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "Sandersn has not commented on this PR asking whether it should be closed.",
+      "There is no pending request from sandersn for closure, and team feedback remains active."
+    ],
+    "pull": 59622
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "Sandersn never commented on this PR, so there is no indication from him that it can be closed.",
+      "No other team member's closure decision, particularly from sandersn, supports closing the PR."
+    ],
+    "pull": 59672
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, so there is no explicit request to close it.",
+      "Without sandersn's closure request or lack of response from him, the PR should remain open."
+    ],
+    "pull": 59584
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn never commented asking for closure, so the criteria aren't met.",
+      "there's no recent closure request from a key stakeholder."
+    ],
+    "pull": 59709
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking whether this PR should be closed.",
+      "Without an explicit request from sandersn, the PR should remain open."
+    ],
+    "pull": 59745
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn did not ask if the PR should be closed; his comments were focused on reviewing readiness and confirming the approach.",
+      "There is ongoing discussion about the implementation details and its current draft status, indicating the PR is still under active review."
+    ],
+    "pull": 57729
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking whether this PR can be closed.",
+      "Without a closure request or follow-up from a key team member, it doesn't meet the criteria."
+    ],
+    "pull": 59759
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR asking if it can be closed.",
+      "Without sandersn's input, there isn't sufficient reason to close based on the provided instructions."
+    ],
+    "pull": 59719
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking if this can be closed.",
+      "Without sandersn's input and with recent activity from other team members, there's no shutdown consensus."
+    ],
+    "pull": 59748
+  },
+  {
+    "shouldClose": "ERROR",
+    "reasons": [],
+    "pull": 58879
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on closing this PR.",
+      "Without sandersn's inquiry or comment, the criteria for closure aren't met."
+    ],
+    "pull": 59802
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking whether this PR should be closed",
+      "without sandersn's query, there’s no prompt to consider closing the PR, even though other comments exist"
+    ],
+    "pull": 59794
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR asking whether it can be closed",
+      "There is no indication from team members that closure is requested or approved"
+    ],
+    "pull": 59816
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn never commented asking if the PR could be closed",
+      "there's no indication from the team that this should be closed"
+    ],
+    "pull": 59817
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not asked to close this PR.",
+      "Without a comment from sandersn, the criteria for closure do not apply."
+    ],
+    "pull": 59828
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn never commented asking if the PR could be closed",
+      "without sandersn's input, the PR lacks the specific criteria for closure as described in the instructions"
+    ],
+    "pull": 59864
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not asked to close this PR in the comments.",
+      "The guidelines require a closure request from sandersn for a 'yes' response, which is not present."
+    ],
+    "pull": 59866
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking whether this PR can be closed",
+      "the closing criteria based on sandersn's comment does not apply"
+    ],
+    "pull": 58294
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR asking whether it can be closed.",
+      "Without sandersn's recent request or any discussion on closure, we should not close it based solely on the PR being unaddressed."
+    ],
+    "pull": 59898
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn never commented asking whether to close this PR",
+      "Since the determining condition is based on sandersn's comment, it does not qualify for closure"
+    ],
+    "pull": 59901
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn did not comment requesting closure.",
+      "The absence of comments from sandersn outweighs any other opinions on this PR."
+    ],
+    "pull": 58910
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented asking if this PR should be closed, so the condition for closure based on their input is not met.",
+      "Since there's no guidance from a key team member, the default decision should be to leave the PR open."
+    ],
+    "pull": 59903
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR asking whether it can be closed.",
+      "Without input from sandersn, there's no basis to close the PR according to the team guidelines."
+    ],
+    "pull": 59886
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented requesting closure on this PR.",
+      "there is no indication from sandersn that this PR should be closed."
+    ],
+    "pull": 59921
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn never commented asking whether this PR should be closed",
+      "without explicit guidance from sandersn or other close-related team members, there's no prompt to close the PR"
+    ],
+    "pull": 59945
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn did not comment asking if the PR could be closed.",
+      "The latest discussion involves ongoing changes and updates, so there's no closure request from a key team member."
+    ],
+    "pull": 59927
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented asking if the PR can be closed",
+      "no team member with significant weight has indicated that it should be closed"
+    ],
+    "pull": 58928
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented asking if the PR can be closed",
+      "Without a closure request from sandersn, no closure conditions are met"
+    ],
+    "pull": 59954
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented at all in this PR, so there's no indication from him requesting closure.",
+      "Without his input, there's no team-led push (given team weight) to close this PR."
+    ],
+    "pull": 59893
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn never commented asking if the PR should be closed.",
+      "Since there is no explicit request from sandersn, none of the conditions for automatic closure are met."
+    ],
+    "pull": 59983
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking to close the PR.",
+      "Without any input from sandersn, there is no trigger to close this PR."
+    ],
+    "pull": 59995
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking if the PR should be closed.",
+      "There are no recent team member comments prioritizing closure."
+    ],
+    "pull": 60000
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn never asked whether the PR can be closed.",
+      "Since the request criteria from sandersn are not present, there's no basis to close it."
+    ],
+    "pull": 60021
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking if the PR can be closed.",
+      "Without any recent comment from sandersn suggesting closure, there's no basis for closing the PR."
+    ],
+    "pull": 59666
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking if it can be closed.",
+      "There is no request from a team member to close the PR, so no follow-up action based on sandersn's request is necessary."
+    ],
+    "pull": 59736
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR asking if it can be closed.",
+      "Without sandersn's input, there has been no explicit request from a team member to close this PR."
+    ],
+    "pull": 59277
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on whether this PR can be closed.",
+      "Without a closure request from sandersn or a team decision, there's no justification to close it."
+    ],
+    "pull": 59646
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "Sander has not commented on whether this PR should be closed.",
+      "Without a closure request from sandersn as per our criteria, there's no justification to close the PR."
+    ],
+    "pull": 60001
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented asking whether the PR should be closed.",
+      "There is no closure request from a key reviewer; therefore, there's no basis for closing."
+    ],
+    "pull": 57708
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn did not ask whether the PR should be closed in the comments.",
+      "Since there is no request from sandersn, we don't have team backing based on his opinion."
+    ],
+    "pull": 60089
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR asking whether it can be closed.",
+      "Without an explicit request from sandersn, the PR doesn't meet the criteria for closure."
+    ],
+    "pull": 60084
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on asking whether this PR can be closed.",
+      "Since the condition for closure (recent or unanswered comment by sandersn) is not met, the PR should not be closed."
+    ],
+    "pull": 59132
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn never commented asking if the PR could be closed.",
+      "The PR is still marked as work in progress with no closure directive."
+    ],
+    "pull": 56074
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn never commented asking whether the PR should be closed.",
+      "The recent comments indicate the PR is still under active discussion and testing."
+    ],
+    "pull": 60120
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR asking if it can be closed",
+      "there is no closure request from sandersn in the recent comments"
+    ],
+    "pull": 59992
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking if the PR can be closed",
+      "there is no relevant comment from a key team member triggering closure"
+    ],
+    "pull": 55968
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on whether this PR should be closed.",
+      "Without a request from sandersn in the recent comments, there is no team solicitation to close."
+    ],
+    "pull": 56989
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, so the criteria for auto-closing doesn't apply.",
+      "The decision process relies on sandersn's comment for closing, which is missing here."
+    ],
+    "pull": 60171
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "There is no comment from sandersn asking whether the PR can be closed.",
+      "Since the request from sandersn wasn't made at all, there are no considerations to close based on sandersn's input."
+    ],
+    "pull": 60178
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR, so there is no request from them to close it.",
+      "Without sandersn's input, which is a key team member opinion, there is no basis for closure."
+    ],
+    "pull": 60121
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking whether this PR should be closed.",
+      "There's currently active discussion and recent comments without closure requests from key team members."
+    ],
+    "pull": 58495
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking if the PR should be closed.",
+      "without sandersn's request, team opinions on closure are not strongly indicated."
+    ],
+    "pull": 60142
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking whether the PR should be closed.",
+      "Without a closure request from sandersn, there is no team directive to close this PR."
+    ],
+    "pull": 60205
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented asking if the PR could be closed.",
+      "There is no indication from sandersn or any team member to close this PR."
+    ],
+    "pull": 60219
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR regarding closure.",
+      "Without the request from a key team member such as sandersn, there is no basis for closing it."
+    ],
+    "pull": 60271
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking if this PR can be closed.",
+      "The decision should weigh sandersn's comment more heavily, but none exists."
+    ],
+    "pull": 60260
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn did not comment asking for the PR to be closed",
+      "no team opinion from key players indicating a need for closure"
+    ],
+    "pull": 60349
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented to ask if this PR should be closed.",
+      "Without sandersn’s inquiry, there's no team suggestion to close based on closure criteria."
+    ],
+    "pull": 58571
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on the PR, so there's no request from them to close it.",
+      "Without any explicit request from sandersn to close, the PR should remain open."
+    ],
+    "pull": 60371
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking whether to close this PR",
+      "the closure decision criteria don't trigger since his comment is missing"
+    ],
+    "pull": 54759
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking if this PR can be closed.",
+      "Without sandersn's request, there's no indication from key team members that the PR should be closed."
+    ],
+    "pull": 60324
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking whether the PR can be closed.",
+      "The decision process is based on sandersn's comment and no such comment exists."
+    ],
+    "pull": 59682
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn did not ask whether this PR could be closed",
+      "the conversation does not include any request or indication from sandersn regarding closure"
+    ],
+    "pull": 59815
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented asking for closure.",
+      "There is no indication that a closure request was made or left unanswered."
+    ],
+    "pull": 60334
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn did not ask if the PR can be closed.",
+      "The closure condition depends on sandersn's request in recent comments, which is absent here."
+    ],
+    "pull": 60354
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn’s comments were about requesting changes or clarifications on the code, not asking if the PR could be closed.",
+      "There is no recent comment from sandersn indicating that the PR can be closed, and the discussion is still active with responses from other team members."
+    ],
+    "pull": 59788
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking if this PR should be closed.",
+      "There are no indications from the team members that the PR should be closed."
+    ],
+    "pull": 60407
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn hasn't asked to close the PR.",
+      "Without sandersn's comment, there's no indication to close it."
+    ],
+    "pull": 60436
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR asking if it can be closed.",
+      "Without a request from sandersn, we do not have a team indication to close this PR."
+    ],
+    "pull": 60458
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never asked if this PR should be closed.",
+      "Without sandersn's request or indication, the conditions for closure are not met."
+    ],
+    "pull": 58712
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking if the PR should be closed.",
+      "Without his explicit request or consensus from other priority team members, the PR remains under review."
+    ],
+    "pull": 60249
+  },
+  {
+    "shouldClose": "ERROR",
+    "reasons": [],
+    "pull": 58729
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn never commented on asking to close this PR.",
+      "Since sandersn's condition for closure was never met, there's no indication that it should be closed."
+    ],
+    "pull": 60516
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR, so there is no indication from them to close.",
+      "Without sandersn's input in the latest comments, there's no justification for closing the PR at this time."
+    ],
+    "pull": 60523
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn did not comment asking whether the PR can be closed.",
+      "Since the criteria target only PRs with a closure request from sandersn and there is no such comment, it should not be closed."
+    ],
+    "pull": 60417
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn never commented asking for closure.",
+      "There is no indication from sandersn to close the PR based on recent comments."
+    ],
+    "pull": 60558
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking for closure on this PR.",
+      "The decision process depends on sandersn's comment, which isn't present."
+    ],
+    "pull": 60557
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn never commented asking whether the PR can be closed, so the criteria are not met.",
+      "There is no indication or follow-up comment from sandersn supporting closure, meaning it should remain open."
+    ],
+    "pull": 60574
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking for the PR to be closed.",
+      "Without a closure request from sandersn, the PR remains valid and actively maintained."
+    ],
+    "pull": 60584
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn never commented asking if the PR should be closed",
+      "no closure request by sandersn exists in the latest comments"
+    ],
+    "pull": 60528
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn did not ask whether the PR can be closed",
+      "since there is no close request from sandersn, current review prioritizes keeping it open"
+    ],
+    "pull": 60631
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on the PR asking for closure.",
+      "Team opinion for closure from sandersn is absent, so it shouldn't be closed based solely on the current state."
+    ],
+    "pull": 60642
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn never commented asking whether this PR can be closed",
+      "there is no inquiry from a team member regarding closure in the recent comments"
+    ],
+    "pull": 60643
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented to ask if the PR can be closed.",
+      "The absence of sandersn’s request means we don't have basis indicating consensus or team weight towards closing."
+    ],
+    "pull": 60395
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented asking if the PR can be closed.",
+      "The decision to close should be based on sandersn's comment in the last few interactions, and no such comment exists."
+    ],
+    "pull": 57838
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented requesting the PR to be closed",
+      "there is no indication from sandersn in the recent comments or as a response, so it shouldn't be closed based on this criterion"
+    ],
+    "pull": 60039
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR asking if it can be closed.",
+      "Without sandersn's input requesting closure, the criteria are not met."
+    ],
+    "pull": 60682
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "Sellersn hasn't commented asking whether the PR can be closed.",
+      "Since the team member expected to make a closing request hasn't weighed in, there's no directive to close the PR."
+    ],
+    "pull": 60269
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn did not ask whether the PR can be closed.",
+      "There is no team directive from the core team or a closure request by sandersn."
+    ],
+    "pull": 60678
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented asking if the PR can be closed",
+      "Without sandersn's input, there's no trigger to consider closure based on the instructions"
+    ],
+    "pull": 60710
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn never commented asking if this PR can be closed.",
+      "there is no recent comment from sandersn indicating a closure request."
+    ],
+    "pull": 51806
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented asking if the PR can be closed.",
+      "Since the instruction specifies only to close if sandersn has asked and it's unanswered or aged, there's no such indication in this PR."
+    ],
+    "pull": 60716
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking if this PR could be closed.",
+      "There is no indication from team members to close it based on sandersn’s inquiry."
+    ],
+    "pull": 60715
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn never commented asking whether the PR can be closed",
+      "the closure trigger only applies if sandersn requested closing in recent comments without a response, which is not the case here"
+    ],
+    "pull": 54096
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn hasn't commented on closure, so we don't have his closing request for this PR.",
+      "Since sandersn has not asked to close it, we cannot consider closure even if there haven't been any responses on related comments."
+    ],
+    "pull": 60540
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking if the PR can be closed.",
+      "Since the criteria only apply when sandersn has asked and there's no response or an old response, this PR does not meet that condition."
+    ],
+    "pull": 53017
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking if this PR can be closed",
+      "there is no closure discussion from team members warranting closure"
+    ],
+    "pull": 60345
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking for closure on this PR",
+      "the conditions for closure based on sandersn's comment are not met"
+    ],
+    "pull": 60788
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking if the PR can be closed.",
+      "Without sandersn's input, there's no basis for closure based on their opinion."
+    ],
+    "pull": 60799
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not asked whether to close this PR in the comments.",
+      "Without a closure request from sandersn, there's no team member input prioritizing closure."
+    ],
+    "pull": 60809
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking if the PR can be closed.",
+      "Without his closure comment, there is no indication from a key team member that the PR should be considered for closure now."
+    ],
+    "pull": 60816
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR asking if it should be closed.",
+      "Without sandersn's input on closure and no team member weighing in with a close request, the criteria are not met."
+    ],
+    "pull": 60830
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking if this PR can be closed.",
+      "The discussion shows ongoing detailed review with recent comments from others, indicating that closure isn’t at hand."
+    ],
+    "pull": 60718
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR requesting closure.",
+      "Without a clear close-request from sandersn, there is no team opinion to base the closure decision on."
+    ],
+    "pull": 59144
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR about closing it.",
+      "Without his request or team consensus, it doesn't qualify for automatic closure."
+    ],
+    "pull": 60858
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn never commented on the PR, so there is no basis from them asking for closure.",
+      "Since there was no such comment or subsequent response, the criteria for closing is not met."
+    ],
+    "pull": 60860
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking if the PR should be closed.",
+      "Since there is no indication from a key decision-maker, the PR should not be closed based on the current discussion."
+    ],
+    "pull": 60865
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn never commented on the PR asking if it can be closed.",
+      "There is no indication from sandersn, which is the primary criterion for closure."
+    ],
+    "pull": 60866
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking whether to close this PR.",
+      "Since there is no closure request from sandersn, no further team opinion is needed."
+    ],
+    "pull": 60726
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented asking whether the PR can be closed.",
+      "The closing criteria specifically require a comment from sandersn, which is absent."
+    ],
+    "pull": 60869
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR asking if it can be closed",
+      "there is no clear approval or closure signal from key team members over an extended period"
+    ],
+    "pull": 60873
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "Sandersn has not commented asking for closure on this PR.",
+      "Without any input from the influential team member, there's no basis to close based on his criteria."
+    ],
+    "pull": 60886
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "Sandersn did not comment on this PR, so there's no request to close it.",
+      "Since sandersn's input is a key factor and it hasn't been provided, we can't proceed with closing."
+    ],
+    "pull": 60889
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn never commented on whether the PR should be closed.",
+      "There is no indication of closure request from sandersn in recent comments, so no team member suggestion to close is available."
+    ],
+    "pull": 60890
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn did not comment asking to close the PR.",
+      "there is no indication from sandersn or any overruled team member to close it."
+    ],
+    "pull": 60891
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn never commented on whether the PR can be closed",
+      "the criteria require sandersn to request closure in recent comments or a response older than 2 years, which is not the case here"
+    ],
+    "pull": 60853
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented asking to close this PR",
+      "without a request from sandersn, there's no trigger to consider closure based on the team process"
+    ],
+    "pull": 60901
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking if the PR can be closed",
+      "there is no indication from team members, especially from sandersn’s opinion, to justify closure"
+    ],
+    "pull": 60885
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking whether the PR should be closed.",
+      "Without sandersn's request to close, there is no basis under the guidelines to consider closing this PR."
+    ],
+    "pull": 60897
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking if the PR can be closed.",
+      "Without a request directly from sandersn and no subsequent response regarding closure, there's no signal to close it."
+    ],
+    "pull": 60834
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn never commented asking if the PR can be closed",
+      "the necessary condition of sandersn's comment is not met, so no closing recommendation"
+    ],
+    "pull": 60909
+  },
+  {
+    "shouldClose": "ERROR",
+    "reasons": [],
+    "pull": 60857
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn never commented asking if the PR can be closed.",
+      "The decision rules require a sandersn comment to consider closure."
+    ],
+    "pull": 60938
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn hasn't commented or asked about closing this PR.",
+      "There is no unaddressed closure request from sandersn, so there's no indication to close it based on their opinion."
+    ],
+    "pull": 60876
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on whether the PR can be closed.",
+      "The decision rule depends on sandersn's comment, and no such comment is present."
+    ],
+    "pull": 60895
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on whether the PR can be closed.",
+      "Without a closure request from sandersn or other team members, there is insufficient indication to close the PR."
+    ],
+    "pull": 54029
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn did not ask explicitly whether the PR can be closed; he asked to open a bug for the feature request.",
+      "There is an immediate response addressing his comment, and ongoing activity indicates this PR is still under discussion."
+    ],
+    "pull": 52972
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking if the PR can be closed.",
+      "Existing feedback from weswigham indicates that changes are still required."
+    ],
+    "pull": 60796
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking for closure.",
+      "The latest comments are test-related and no team member has indicated that the PR should be closed."
+    ],
+    "pull": 60868
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR asking if it can be closed.",
+      "Without sandersn’s directive, the automatic closure criteria are not met."
+    ],
+    "pull": 60433
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn did not comment at all on this PR regarding closure.",
+      "The decision guideline only applies if sandersn asked for closure in the recent comments."
+    ],
+    "pull": 58520
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn never commented asking if the PR could be closed.",
+      "Without a closure request from sandersn, we cannot weigh closure as per our guidelines."
+    ],
+    "pull": 60656
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on closing this PR at all.",
+      "Without sandersn's input as per our criteria, we should not close the PR."
+    ],
+    "pull": 59437
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking if this PR can be closed.",
+      "Without a close request from a key team member, the default is not to close."
+    ],
+    "pull": 49817
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn never asked whether the PR can be closed",
+      "without sandersn's cue, there's no explicit closure request from a key team member"
+    ],
+    "pull": 35206
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking if the PR can be closed.",
+      "Without sandersn's intervention or request, we do not have a closure request from a highly-weighted team member."
+    ],
+    "pull": 60263
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented to ask about closing this PR.",
+      "Since the trigger is based on sandersn's request and there is none, the closing criteria are not met."
+    ],
+    "pull": 57042
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented asking if this PR can be closed",
+      "since there's no request from sandersn, other feedback from team members does not indicate closure"
+    ],
+    "pull": 60994
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn never commented on whether the PR should be closed.",
+      "Since sandersn’s closing inquiry is absent, there’s no basis to consider closing it."
+    ],
+    "pull": 61042
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR asking if it can be closed",
+      "Without any explicit request from sandersn, we should not consider closing as per the review criteria"
+    ],
+    "pull": 61054
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn did not comment asking if the PR could be closed.",
+      "Since sandersn's opinion is missing, no closure request has been initiated."
+    ],
+    "pull": 61032
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented asking if the PR can be closed.",
+      "Without sandersn's input or a recent directive from a team member prioritizing closure, there is no clear signal to close the PR."
+    ],
+    "pull": 57293
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented asking whether the PR can be closed.",
+      "Closing decisions should be based on sandersn's comments, but they are absent."
+    ],
+    "pull": 59834
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "Sandersn has never commented asking whether the PR should be closed.",
+      "No indication from team members, especially key team members, suggesting closure based on sandersn's input."
+    ],
+    "pull": 61077
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn never commented asking for closure in the discussion.",
+      "The conversation involves recent detailed feedback and active work, with no indication from sandersn to close the PR."
+    ],
+    "pull": 60729
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn never commented asking for closure, so there's no directive from them.",
+      "Without a comment from a key team member endorsing closure, there's insufficient basis to close the PR."
+    ],
+    "pull": 61087
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented asking whether the PR should be closed.",
+      "Without any closure request from the team member, the PR should remain open."
+    ],
+    "pull": 61092
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn never commented asking whether the PR can be closed.",
+      "There are no pending closure requests from team members, and the discussion is active with recent responses."
+    ],
+    "pull": 61013
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR asking whether it can be closed.",
+      "Without a relevant comment from sandersn, we cannot apply the closure criteria."
+    ],
+    "pull": 61104
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented asking if the PR can be closed.",
+      "Without any input from a key team member regarding closure, there's no justification to close it based on our rules."
+    ],
+    "pull": 61079
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking whether the PR should be closed.",
+      "No sealing request has been raised by a team member favoring closure."
+    ],
+    "pull": 61107
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented asking if the PR can be closed",
+      "the comments are only from jakebailey or automated bot commands and do not indicate a closure request from sandersn"
+    ],
+    "pull": 55267
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn did not comment asking if it should be closed",
+      "there is no indication from sandersn to close this PR"
+    ],
+    "pull": 61147
+  },
+  {
+    "shouldClose": "ERROR",
+    "reasons": [],
+    "pull": 39699
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking if the PR could be closed.",
+      "Without a closure request from a key team member like sandersn, there's no explicit indication to close the PR."
+    ],
+    "pull": 61174
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on whether the PR should be closed.",
+      "Since there's no inquiry from sandersn, the guidelines for closure based on his input are not met."
+    ],
+    "pull": 60434
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on closing this PR, so there's no explicit request from them.",
+      "Without sandersn's closure prompt and the absence of other strong indicators from team members, closure isn't justified."
+    ],
+    "pull": 61185
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on whether the PR can be closed.",
+      "Without an explicit request advising closure from sandersn, the guidelines do not trigger automatic closure."
+    ],
+    "pull": 61224
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn did not ask about closing the PR; their comment was an approval, not a close request.",
+      "There are valid approvals from team members, indicating the PR is still being actively endorsed."
+    ],
+    "pull": 60977
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "There is no comment from sandersn asking if the PR should be closed.",
+      "Without sandersn’s request, we don't have a team member-driven reason to close this PR."
+    ],
+    "pull": 61232
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn never commented asking for the PR to be closed.",
+      "Without sandersn's request, there is no team member-driven closure trigger."
+    ],
+    "pull": 60301
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented in this PR asking if it can be closed.",
+      "Without a closure request from sandersn, the indicator for closure is absent."
+    ],
+    "pull": 60628
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn did not comment asking if the PR can be closed, so there's no direct closure request from a team member with a higher weighting.",
+      "Without sandersn's closure request in the recent comments, there's no urgent team signal to close the PR."
+    ],
+    "pull": 61074
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn never commented asking for closure, so there's no explicit closure request.",
+      "Without a closure request from a key team member, the PR should remain open."
+    ],
+    "pull": 61097
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking if the PR should be closed.",
+      "The decision criteria require sandersn's recent comment or unresolved comment, which is absent."
+    ],
+    "pull": 56460
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR regarding closure.",
+      "Without sandersn’s comment, the criteria for closing are not met."
+    ],
+    "pull": 61173
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented asking if the PR can be closed.",
+      "Without a closure request from a team member, there's no prompt to close the PR at this time."
+    ],
+    "pull": 60757
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented about closing this PR.",
+      "Without a comment from sandersn asking to close, there's no team indication to close it."
+    ],
+    "pull": 60537
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented asking if the PR can be closed.",
+      "Since there's no comment from sandersn about closing, none of the closure criteria are met."
+    ],
+    "pull": 61233
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn never commented on this PR asking if it can be closed.",
+      "No closure request or recent response from sandersn meeting the conditions was found."
+    ],
+    "pull": 61265
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR asking if it can be closed.",
+      "Without sandersn's comment, the PR does not meet the criteria for closure based on the instructions."
+    ],
+    "pull": 61219
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented, so there's no clear request for closing.",
+      "The latest comments from other team members do not indicate a consensus to close the PR."
+    ],
+    "pull": 59623
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking whether the PR should be closed",
+      "there are ongoing discussions without a clear closure request from team members"
+    ],
+    "pull": 61071
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn never commented on this PR asking if it could be closed",
+      "without sandersn’s request and no outdated answer, the criteria for closure are not met"
+    ],
+    "pull": 61291
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on the PR to request closure.",
+      "Without sandersn's inquiry or team member agreement, we do not have sufficient indication to close the PR."
+    ],
+    "pull": 61317
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn never commented asking if the PR can be closed.",
+      "Without a closure request from a team member, there is no basis to mark it for closing."
+    ],
+    "pull": 59972
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "Sandersn has not commented to ask for closure.",
+      "No evidence from the relevant team's members indicates that this PR should be closed."
+    ],
+    "pull": 61340
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on the PR asking if it can be closed.",
+      "Since the criteria focuses on sandersn's recent closing query, this PR doesn't meet the auto-closure condition."
+    ],
+    "pull": 61346
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented at all, so there's no indication of whether it should be closed.",
+      "The check only considers if sandersn requested closure and any subsequent discussion, which is absent here."
+    ],
+    "pull": 61349
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking if the PR can be closed.",
+      "There is no indication in the recent comments that sandersn's opinion was solicited or delivered."
+    ],
+    "pull": 61350
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented asking for closure.",
+      "Since sandersn did not raise a closure question, the criteria do not match."
+    ],
+    "pull": 61352
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR about closing it.",
+      "The criteria require a recent comment from sandersn to indicate closure consideration."
+    ],
+    "pull": 61358
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn did not comment asking if this PR can be closed.",
+      "Since there is no comment from sandersn, none of the closing criteria apply."
+    ],
+    "pull": 61362
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented asking if the PR can be closed",
+      "there's active discussion from others, and no closure request from key team members"
+    ],
+    "pull": 61221
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn never commented asking for closure on this PR.",
+      "There is no recent comment from sandersn prompting a closure decision."
+    ],
+    "pull": 61376
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented asking if the PR can be closed.",
+      "The decision rationale based on sandersn's query does not apply since they haven't provided input."
+    ],
+    "pull": 60646
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn never commented on this PR asking about closing.",
+      "Without sandersn's input, there is no guidance from key team members on closure."
+    ],
+    "pull": 61379
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented asking if the PR should be closed",
+      "Without sandersn's explicit input, there's no basis to proceed with closing the PR"
+    ],
+    "pull": 61393
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn did not comment asking if the PR can be closed.",
+      "There is no indication of closure from team members with the priority opinion, so the PR should remain open."
+    ],
+    "pull": 61061
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented asking if the PR can be closed.",
+      "Without a closure request from a key team member, there’s no directive to close it."
+    ],
+    "pull": 48198
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR asking if it can be closed.",
+      "Since there's no record of sandersn's request, no closing action should be taken."
+    ],
+    "pull": 61211
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn did not comment asking if the PR could be closed",
+      "there is no explicit closure request from sandersn in the most recent comments"
+    ],
+    "pull": 58296
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not left any comments asking if the PR can be closed.",
+      "Without input from sandersn, who is a key team member, there's no basis to mark this PR for closure."
+    ],
+    "pull": 61430
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not asked whether the PR can be closed.",
+      "Without sandersn's explicit closure request or team opinion, the PR remains active."
+    ],
+    "pull": 61414
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on asking to close this PR.",
+      "Without sandersn's request or other close triggers, team priorities suggest keeping it open."
+    ],
+    "pull": 58419
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented asking if this PR should be closed.",
+      "Since sandersn's closure request criteria haven't been met, no team opinion weighed as closure exists."
+    ],
+    "pull": 61399
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR asking if it can be closed",
+      "without a closure request or sufficient guidance, the PR should remain open"
+    ],
+    "pull": 61420
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn never commented asking if the PR can be closed.",
+      "Without sandersn's inquiry or discussion, there's no indication that the PR should be closed."
+    ],
+    "pull": 61359
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking if the PR should be closed.",
+      "Without any such request from sandersn, there's no indication to close the PR based on the guidelines."
+    ],
+    "pull": 61450
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn did not comment on this PR at all.",
+      "Without sandersn's comment, the conditions for closure cannot be evaluated."
+    ],
+    "pull": 61383
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking if the PR could be closed.",
+      "There is no signal from any prioritized team member indicating closure, so it shouldn't be closed based on the criteria."
+    ],
+    "pull": 59770
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn did not comment asking if the PR could be closed.",
+      "Without a closure request from sandersn or a recent comment from a team member regarding closure, there's no strong indication to close the PR."
+    ],
+    "pull": 61262
+  },
+  {
+    "shouldClose": "yes",
+    "reasons": [
+      "sandersn, a team member, explicitly asked if the PR can be closed in the recent comments.",
+      "There has been no response to his inquiry, and the PR appears stale with the underlying issue not being significant enough."
+    ],
+    "pull": 50437
+  },
+  {
+    "shouldClose": "yes",
+    "reasons": [
+      "sandersn, a key team member, asked if the PR is worth pursuing in the latest comment.",
+      "There have been no follow-up responses addressing his query, which indicates no recent interest in continuing."
+    ],
+    "pull": 50782
+  },
+  {
+    "shouldClose": "yes",
+    "reasons": [
+      "sandersn asked recently (2025-03-31) whether this PR should be kept open, and no subsequent team member has provided an answer.",
+      "Team opinions, especially from key members like sandersn, are heavily weighted, and without a clear resolution it seems appropriate to close the PR."
+    ],
+    "pull": 53327
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented asking for a closure.",
+      "Ongoing discussion and feedback from other team members indicate that the PR is still under consideration."
+    ],
+    "pull": 49552
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented asking whether the PR can be closed.",
+      "Without a recent or outstanding closure request from sandersn, there's no trigger to close it."
+    ],
+    "pull": 54884
+  },
+  {
+    "shouldClose": "ERROR",
+    "reasons": [],
+    "pull": 56182
+  },
+  {
+    "shouldClose": "ERROR",
+    "reasons": [],
+    "pull": 57960
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn never commented asking if it could be closed",
+      "the criteria focus on sandersn's comments for closure and none exist in the recent comments"
+    ],
+    "pull": 60005
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented asking whether to close this PR.",
+      "Without a comment from sandersn, there is no explicit closure request to trigger weighted closure action."
+    ],
+    "pull": 52244
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking if the PR should be closed.",
+      "Without a prompt from a key team member, there is no indication to close this PR."
+    ],
+    "pull": 61495
+  },
+  {
+    "shouldClose": "ERROR",
+    "reasons": [],
+    "pull": 48838
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking if the PR should be closed.",
+      "Without a closure request from sandersn, there's no explicit indication to close this PR."
+    ],
+    "pull": 59352
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented asking if the PR can be closed",
+      "without a closure prompt from sandersn, the standard criteria for closure are not met"
+    ],
+    "pull": 42104
+  },
+  {
+    "shouldClose": "yes",
+    "reasons": [
+      "sandersn, a core team member, explicitly asked if the PR should be closed in the most recent comment.",
+      "No follow-up answer was provided to his query, indicating consensus towards closing the PR."
+    ],
+    "pull": 48648
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn's question was followed by an answer from jakebailey.",
+      "The reply is recent (from 2025-04-01), so the issue addressed by sandersn has been properly responded to."
+    ],
+    "pull": 54554
+  },
+  {
+    "shouldClose": "yes",
+    "reasons": [
+      "sandersn asked in the latest comment if the experiment worked out and mentioned closing the PR if it wasn't valuable.",
+      "There has been no answer addressing his inquiry, so the suggestion to close stands."
+    ],
+    "pull": 56441
+  },
+  {
+    "shouldClose": "ERROR",
+    "reasons": [],
+    "pull": 53346
+  },
+  {
+    "shouldClose": "yes",
+    "reasons": [
+      "sandersn, a core team member, explicitly asked whether to keep the PR open or close it.",
+      "The comment by sandersn is recent and remains unanswered, so it's a clear signal to close."
+    ],
+    "pull": 56487
+  },
+  {
+    "shouldClose": "yes",
+    "reasons": [
+      "sandersn, a valued team member, has already asked if the PR can be closed in the most recent comment.",
+      "There has been no follow-up response addressing his query, indicating no further action is planned."
+    ],
+    "pull": 56679
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR at all.",
+      "Since there is no indication from sandersn requesting a close, the PR should remain open."
+    ],
+    "pull": 61497
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR requesting closure.",
+      "There is no indication in the recent comments from sandersn that it should be closed, so the PR remains open for discussion."
+    ],
+    "pull": 60569
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking if the PR can be closed, so their input on closure is absent.",
+      "Several maintainers have indicated that the PR should proceed, suggesting it's not appropriate to close it."
+    ],
+    "pull": 59475
+  },
+  {
+    "shouldClose": "yes",
+    "reasons": [
+      "sandersn, a team member, explicitly requested closure in the latest comment with clear reasons.",
+      "There has been no subsequent response to address those concerns, and the PR remains outdated with unresolved design questions."
+    ],
+    "pull": 41587
+  },
+  {
+    "shouldClose": "yes",
+    "reasons": [
+      "sandersn asked in the last comment whether the PR is worth keeping and there hasn't been a follow-up answer.",
+      "Since the request for input remains unanswered, it indicates that team opinions have not been decisively in favor of keeping it."
+    ],
+    "pull": 48386
+  },
+  {
+    "shouldClose": "yes",
+    "reasons": [
+      "sandersn asked in the recent comment whether the PR is worth keeping open while waiting on discussion, implicitly suggesting it might be closed.",
+      "There has been no follow-up response from a team member after sandersn's comment, and the PR is out of date with main."
+    ],
+    "pull": 57395
+  },
+  {
+    "shouldClose": "yes",
+    "reasons": [
+      "sandersn explicitly asked in the recent comment whether this applies to Corsa and suggested closing if not.",
+      "The comment was recent (last few in the thread) and received no follow-up response, aligning with the team's closing criteria."
+    ],
+    "pull": 50546
+  },
+  {
+    "shouldClose": "yes",
+    "reasons": [
+      "sandersn, a team member, asked recently if the draft was worth keeping without receiving any response.",
+      "The comment's timing and the fact that there has been no reply indicate that closing is appropriate."
+    ],
+    "pull": 51307
+  },
+  {
+    "shouldClose": "yes",
+    "reasons": [
+      "sandersn explicitly suggested closing the PR in one of the latest comments.",
+      "There hasn't been any newer response countering his suggestion."
+    ],
+    "pull": 52605
+  },
+  {
+    "shouldClose": "yes",
+    "reasons": [
+      "sandersn has explicitly suggested closing the PR in the most recent comment.",
+      "There has been no subsequent team response, so his recent input is the final stance."
+    ],
+    "pull": 55718
+  },
+  {
+    "shouldClose": "yes",
+    "reasons": [
+      "sandersn explicitly queried whether this PR was still worthwhile and leaned towards closing it.",
+      "No subsequent response was given from designated team members after sandersn's comment."
+    ],
+    "pull": 44860
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented on this PR asking if it can be closed.",
+      "Since there's no closure request by sandersn, the PR doesn't qualify based on the specified criteria."
+    ],
+    "pull": 55517
+  },
+  {
+    "shouldClose": "yes",
+    "reasons": [
+      "sandersn asked in the most recent comment if the PR can be closed",
+      "there hasn't been a follow-up answer confirming that it should remain open, and the PR is over 2 years old"
+    ],
+    "pull": 53086
+  },
+  {
+    "shouldClose": "ERROR",
+    "reasons": [],
+    "pull": 55880
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR asking whether it can be closed",
+      "without a request from sandersn, there is no team-confirmed indication to close the PR"
+    ],
+    "pull": 59807
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn's inquiry about whether to keep the PR open was directly answered by jakebailey less than 2 years ago.",
+      "Since a timely response exists, the criteria for closing (unanswered or over 2 years old) do not apply."
+    ],
+    "pull": 56072
+  },
+  {
+    "shouldClose": "yes",
+    "reasons": [
+      "sandersn asked in the recent comment whether the PR is still applicable, and there hasn't been a follow-up answer.",
+      "It’s been quite a long time and there's no evidence of ongoing activity, supporting the choice to close."
+    ],
+    "pull": 46595
+  },
+  {
+    "shouldClose": "ERROR",
+    "reasons": [],
+    "pull": 55386
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn did not comment asking if this PR could be closed.",
+      "Without his inquiry, the specific criteria for closure based on sandersn's comment are not met."
+    ],
+    "pull": 61534
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented asking whether the PR can be closed.",
+      "The criteria specifically rely on sandersn's request to close; without it, no closure decision is suggested."
+    ],
+    "pull": 61559
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn did not comment regarding closing this PR.",
+      "Without a recent request from sandersn or an older response, there's no trigger to close."
+    ],
+    "pull": 61560
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking if this PR should be closed.",
+      "Without a closure request from a key team member, there's no indication to close this PR."
+    ],
+    "pull": 61372
+  },
+  {
+    "shouldClose": "yes",
+    "reasons": [
+      "sandersn’s comment is one of the very last comments and clearly indicates it should be closed.",
+      "There has been no follow-up action or response by the PR author for over two years, supporting closure."
+    ],
+    "pull": 51067
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn did not ask whether this PR should be closed; their comment was an approval, not a closure request.",
+      "Since there is no explicit request from sandersn to close in the recent comments, we do not follow a closure action."
+    ],
+    "pull": 48172
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented to request closing this PR.",
+      "No recent comment from sandersn asking to close this PR, so there's no basis for closure based on their input."
+    ],
+    "pull": 61145
+  },
+  {
+    "shouldClose": "yes",
+    "reasons": [
+      "sandersn has already asked about closing in the recent comments.",
+      "No team member has provided a response to his query, so his inquiry remains unanswered."
+    ],
+    "pull": 61593
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented asking if the PR can be closed.",
+      "There is no unresolved closure request with no response or an outdated answer from a team member."
+    ],
+    "pull": 61590
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking if the PR can be closed.",
+      "The discussion is active with recent comments, and no closure request from sandersn was due."
+    ],
+    "pull": 60068
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR asking if it can be closed.",
+      "Without sandersn's request or any team opinion to close, there's no qualifying signal to close this PR."
+    ],
+    "pull": 61589
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented on this PR asking if it can be closed.",
+      "The conditions for suggesting a closure based on sandersn's comments are not met."
+    ],
+    "pull": 61449
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn never commented asking if the PR should be closed.",
+      "Without sandersn’s request in the recent comments, the PR should remain open for further input from the team."
+    ],
+    "pull": 61551
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn never commented asking if the PR could be closed",
+      "the PR has recent updates and team reviews, indicating active consideration"
+    ],
+    "pull": 61608
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn never commented asking if it could be closed.",
+      "There is ongoing discussion with recent comments and no closure request from key team members."
+    ],
+    "pull": 61505
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented asking for closing.",
+      "There's been no input from sandersn regarding closing, so the PR should remain open."
+    ],
+    "pull": 61353
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has never commented asking whether the PR should be closed",
+      "without a request from a key team member there is no signal to close it"
+    ],
+    "pull": 59957
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn never commented asking if the PR can be closed.",
+      "Without sandersn's input on closure, there's no basis for closing the PR."
+    ],
+    "pull": 61571
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn did not comment asking if the PR can be closed.",
+      "Without an explicit request from sandersn, we cannot proceed with closure based on the criteria."
+    ],
+    "pull": 61625
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn never asked to close this PR.",
+      "the latest comments indicate that the PR is under active consideration for merging."
+    ],
+    "pull": 61236
+  },
+  {
+    "shouldClose": "yes",
+    "reasons": [
+      "sandersn’s comment from 2025-04-02 clearly asks if the PR should be revived (or closed)",
+      "there has been no subsequent response from team members addressing his query"
+    ],
+    "pull": 48889
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn has not commented about closing this PR.",
+      "Without a closure request from a team member, there's no basis to close the PR."
+    ],
+    "pull": 61628
+  },
+  {
+    "shouldClose": "no",
+    "reasons": [
+      "sandersn did not ask if the PR could be closed; his comment was only a suggestion.",
+      "There is no indication from sandersn to close the PR in the recent comments."
+    ],
+    "pull": 61596
+  }
+]

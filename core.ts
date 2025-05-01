@@ -15,6 +15,8 @@ export const team: Record<string, string> = {
   jakebailey: "Jake Bailey",
   armanio123: "Armando Aguirre",
   "typescript-bot": "Typescript Bot",
+  "dependabot": "Dependabot",
+  "EricCornelson": "Eric Cornelson",
   navya9singh: "Navya Singh",
 }
 export function later(d1: string, d2: string): string {

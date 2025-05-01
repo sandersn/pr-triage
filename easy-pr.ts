@@ -3,7 +3,9 @@ import axios from "axios"
 import * as fs from "fs"
 import path from "path"
 
-const pulls: Pull[] = JSON.parse(fs.readFileSync("prs.json", "utf-8"))
+const repo = process.argv[2] || "TypeScript-go"
+const suffix = repo === "TypeScript-go" ? "-go" : ""
+const pulls: Pull[] = JSON.parse(fs.readFileSync("prs" + suffix + ".json", "utf-8"))
 const prompt = `You are reviewing pull requests from the TypeScript repository. Today you're looking for ones where sandersn has already asked in the comments whether they can be closed. If sandersn has asked already and it was in the last few comments and if there's no answer, say "yes". If there's an answer, but it's over 2 years old, say "yes". Otherwise say "no". Also give a couple of reasons.
 
 Team members:
@@ -34,14 +36,15 @@ type Message = {
 
 async function main() {
   let i = 0
+  const judgements = []
   console.log(`Classifying ${pulls.length} PRs...`)
   console.log("--------------------------------------------------")
   for (const pull of pulls.sort((a, b) => new Date(a.updatedAt).getTime() - new Date(b.updatedAt).getTime())) {
     i++
-    if (i > 1) {
-      console.log("Done.")
-      return
-    }
+    // if (i > 10) {
+    //   console.log("Done.")
+    //   break
+    // }
     console.log("\n\n--------------------------------------------------")
     console.log(`${i}. #${pull.number}: ${pull.title} (${pull.createdAt})`)
     console.log(
@@ -93,13 +96,27 @@ async function main() {
       console.log(JSON.stringify(response.error))
       return
     } else {
-      const content = JSON.parse(response.result.choices[0].message.content) as { shouldClose: "yes" | "no"; reasons: string[] }
+      let content: { shouldClose: "yes" | "no"; reasons: string[] } = { shouldClose: "ERROR" as "yes" | "no", reasons: [] }
+      for (let retry = 0; retry < 5; retry++) {
+        try {
+          content = JSON.parse(response.result.choices[0].message.content) as {
+            shouldClose: "yes" | "no"
+            reasons: string[]
+          }
+          break
+        } catch (e) {
+          console.log(e)
+          console.log("|" + response.result.choices[0].message.content + "|")
+        }
+      }
+      judgements.push({ ...content, pull: pull.number })
       console.log(`Should close? `, content.shouldClose)
       console.log(`Reasons:\n - `, content.reasons.join("\n - "))
       console.log("--------------------------------------------------")
     }
     await new Promise(resolve => setTimeout(resolve, 1_000))
   }
+  fs.writeFileSync("pr-judgements.json", JSON.stringify(judgements, null, 2))
 }
 main()
   .then(() => {
