@@ -1,0 +1,602 @@
+[
+  {
+    "reason": "needs design",
+    "explanation": "This PR proposes a major new syntax and semantic feature (inline type aliases) with far‑reaching parser, binder, and checker changes, but it’s been inactive since 2021 and the team hasn’t settled on a design. It needs a clear, updated design proposal before moving forward.",
+    "pull": 30979
+  },
+  {
+    "reason": "quagmire",
+    "explanation": "This PR changes the compiler’s excess property detection logic for unions, which falls under our quagmire category. Such changes to excess property checking are too complex for non-team contributors to safely implement. The PR is also two years old and likely stale.",
+    "pull": 49004
+  },
+  {
+    "reason": "we didn't review it",
+    "explanation": "This PR targets a backlog bug from 2022 but hasn’t received any review from a core team member since its creation, and it’s likely stale. We haven’t reviewed it since 2023‑05, so it should be closed; please reopen or update with a team review if the fix is still needed.",
+    "pull": 50372
+  },
+  {
+    "reason": "quagmire",
+    "explanation": "This change touches JSDoc parsing logic (utilities.ts) to handle custom link text. Modifying JSDoc link handling is a quagmire area that requires core team design and review, especially since no team member reviewed this backlog PR (and it’s now stale from 2022).",
+    "pull": 51386
+  },
+  {
+    "reason": "we didn't review it",
+    "explanation": "This is a simple one-file change in src/compiler that fixes a backlog bug, but it’s over a year old and hasn’t received any team reviews since its January 2023 submission. We never got the needed feedback or sign‑off and it’s likely stale—closing as “we didn’t review it.”",
+    "pull": 52355
+  },
+  {
+    "reason": "quagmire",
+    "explanation": "This PR makes deep changes to mapped‐type inference in checker.ts (including array/tuple mapping behavior) and adds extensive test updates. Changes to excess property detection or type parameter inference are considered too complex for external contributions. Additionally, the PR is two years old and likely stale, so it needs core team design before proceeding.",
+    "pull": 50046
+  },
+  {
+    "reason": "keep",
+    "explanation": "The PR addresses a milestone bug with a small, focused change (only one compiler file and tests), is authored by and reviewed by team members, and doesn’t introduce breaking changes – it should be kept open.",
+    "pull": 52646
+  },
+  {
+    "reason": "keep",
+    "explanation": "The PR modifies a single file in src/ with under 100 line changes and is authored by a core team member (Daniel Rosenwasser). It’s small and self‑contained, so it’s safe to keep.",
+    "pull": 53040
+  },
+  {
+    "reason": "we didn't review it",
+    "explanation": "This PR addresses a backlog bug (#52439) with a small change surface, but it hasn’t received any team review or approval since before May 2023 and appears to be stale. Without a recent review or updates (especially to address the open ts-ignore question), we should close it as unreviewed.",
+    "pull": 52483
+  },
+  {
+    "reason": "keep",
+    "explanation": "This PR makes a small, focused change (only two src/ files modified under 100 lines each) and adds tests. Even though no team member has yet reviewed it, the change is low-risk and meets the criteria for keeping.",
+    "pull": 52990
+  },
+  {
+    "reason": "keep",
+    "explanation": "This PR is small (only one src file changed with under 100 lines) and has been reviewed and approved by team members (weswigham, sandersn, jakebailey). It includes tests and no major design risks.",
+    "pull": 50775
+  },
+  {
+    "reason": "needs design",
+    "explanation": "This PR introduces new JSDoc binding behavior but core questions around the semantics (as noted by sandersn and weswigham) remain unresolved. It’s an older PR (from late 2022) with no follow‑up since March 2023, so it’s likely stale and still needs design agreement before proceeding.",
+    "pull": 51066
+  },
+  {
+    "reason": "we didn't review it",
+    "explanation": "This PR was opened in March 2023 and hasn’t seen any reviews from the core team (weswigham, rbuckton, navya9singh, iisaduan, sandersn, gabritto, jakebailey, andrewbranch, RyanCavanaugh) since the May 1, 2023 threshold, and it’s now likely stale.",
+    "pull": 53479
+  },
+  {
+    "reason": "too complex",
+    "explanation": "This PR works against the declaration emitter’s handling of parameter properties under strictNullChecks and exactOptionalPropertyTypes and has sparked multiple design questions from core team reviewers (sandersn, weswigham) without resolution. It’s a tricky area touching optional-parameter logic in the emitter and is now nearly two years old, so it’s likely stale and too complex for a non-team member to land cleanly.",
+    "pull": 50494
+  },
+  {
+    "reason": "keep",
+    "explanation": "The PR is by a core team member (weswigham) and makes a small, focused change in one file under the 100‑line threshold. It addresses a performance/recursion issue without large-scale impact, so it should be kept.",
+    "pull": 53595
+  },
+  {
+    "reason": "we didn't review it",
+    "explanation": "This PR addresses a backlog bug and received initial feedback from a team member (gabritto) back in March 2023, but there’s been no activity or review from any of the team since May 1, 2023. It’s now over a year old and likely stale, so we should close it until it’s updated or re-requested.",
+    "pull": 52979
+  },
+  {
+    "reason": "keep",
+    "explanation": "Authored by a TypeScript team member (weswigham), touches only one compiler source file with minimal changes plus tests, and cleanly addresses a milestone bug — this is a good small-scope fix worth keeping.",
+    "pull": 53758
+  },
+  {
+    "reason": "keep",
+    "explanation": "This is a small change (1 file, <100 lines modified) by a team member (weswigham) addressing an uncommitted bug, with follow‑up review by another team member (rbuckton). It’s appropriate to keep.",
+    "pull": 54117
+  },
+  {
+    "reason": "we didn't review it",
+    "explanation": "This PR has outstanding review comments (including from Daniel Rosenwasser) but no formal approval from a core team member (weswigham, sandersn, jakebailey, etc.). It hasn’t seen a team review or update since mid‑2023 and is now likely stale.",
+    "pull": 52372
+  },
+  {
+    "reason": "not needed",
+    "explanation": "A TypeScript team member (rbuckton) noted this change isn’t needed for the test harness (which isn’t shipping code) and the delete would already fail under --frozen-intrinsics, so the PR can be closed.",
+    "pull": 53700
+  },
+  {
+    "reason": "not needed",
+    "explanation": "Diagnostic messages are generated by internal localization tooling, so manual edits to the generated files aren’t accepted. This PR has also been stale since May 2023.",
+    "pull": 54128
+  },
+  {
+    "reason": "keep",
+    "explanation": "This is a small, low‑risk change (2 files, under 100 lines each) addressing a backlog bug without broad semantic impact. It meets the criteria for a keep—minimal surface area and no breaking changes.",
+    "pull": 53203
+  },
+  {
+    "reason": "too complex",
+    "explanation": "This PR targets a backlog bug in the declaration emit path for divergent accessors, a notoriously tricky and high‑risk area touching core checker/EMIT logic. It received CHANGES_REQUESTED three months ago and has not been updated, indicating it’s likely stale or incomplete. Given the complexity and potential for breakage, this approach isn’t worth carrying forward; a cleaner, more considered design for handling divergent accessors in declarations would be preferable.",
+    "pull": 54110
+  },
+  {
+    "reason": "keep",
+    "explanation": "This is a very small, targeted change (1 file, 1 line) that improves performance without altering semantics otherwise. It falls under our threshold of <5 files and <100 lines per file, so per guidelines it can be kept even without a prior team review.",
+    "pull": 54290
+  },
+  {
+    "reason": "we didn't review it",
+    "explanation": "This PR addresses a backlog bug but hasn’t received any team reviews since the May 2023 cutoff. It’s also over a year old and likely stale.",
+    "pull": 53615
+  },
+  {
+    "reason": "quagmire",
+    "explanation": "This PR touches contextual typing and type parameter inference for variadic tuple mapped types—an area deemed too complex for external contributions. The core team (e.g. weswigham) requested changes back in March 2023 and it hasn’t been updated since, so it’s likely stale and better handled by the team.",
+    "pull": 53042
+  },
+  {
+    "reason": "quagmire",
+    "explanation": "This change dives deep into type‐parameter inference for mapped types—a notoriously complex area we reserve for the core team. It’s stalled since April 2023 and risks introducing subtle regressions in excess‐property detection and inference, so we should close it.",
+    "pull": 52737
+  },
+  {
+    "reason": "quagmire",
+    "explanation": "This PR adds yet another special‐case in the binder for Function’s readonly properties. Fixing this properly would involve deeper changes around how we synthesize and resolve apparent properties rather than hard‑coding special behavior in the binder. Because it’s a subtle aspect of our symbol resolution (a “special property assignment”), it’s effectively in the same category as other quagmires (excess‑property checks, JSDoc parsing, inference hacks) that we avoid from contributors. Given its age (opened in 2022, last activity mid‑2023) it’s also likely stale and not ready for adoption as is.",
+    "pull": 49146
+  },
+  {
+    "reason": "quagmire",
+    "explanation": "This PR makes a deep change to how generic indexed‑access constraints are computed—a core part of our type‑parameter inference logic. Such fixes are too complex for an external contribution and require full team design and review. Additionally, the PR hasn’t seen traction or formal approval in over a year and is likely stale.",
+    "pull": 49107
+  },
+  {
+    "reason": "quagmire",
+    "explanation": "This PR modifies generic inference and type parameter inference logic in checker.ts—a known ‘quagmire’ area too complex for community contributions. It’s been dormant since mid‑2023, has outstanding performance concerns, and needs core-team attention rather than a standalone PR.",
+    "pull": 52495
+  },
+  {
+    "reason": "quagmire",
+    "explanation": "This change touches the checker’s handling of mapped types and partial concrete constraints—a form of type parameter inference—and is deep in a notoriously complex area. Non-team fixes in inference land are classified as quagmires, and no team member has reviewed it.",
+    "pull": 49064
+  },
+  {
+    "reason": "keep",
+    "explanation": "This is a small, focused fix (1 src file change, under 100 lines) with appropriate tests added. It’s suitable to remain open for review.",
+    "pull": 54553
+  },
+  {
+    "reason": "keep",
+    "explanation": "This is a small, targeted change by a TypeScript team member (weswigham), modifying only two files with limited additions/deletions. It addresses a milestone bug and meets the criteria for a ‘keep’ PR.",
+    "pull": 54754
+  },
+  {
+    "reason": "keep",
+    "explanation": "This PR makes a focused fix in one compiler file (checker.ts) and adds corresponding tests. It changes fewer than five src/ files and under 100 lines per file. It doesn’t touch complex areas like excess property checks or inference, and it’s already seen review feedback from a team member. It should remain open for the author to address the requested changes and land the change.",
+    "pull": 54475
+  },
+  {
+    "reason": "we didn't review it",
+    "explanation": "This PR fixes a backlog bug but hasn’t received any review from a team member since May 2023. It was last updated in 2023 and is likely stale.",
+    "pull": 52112
+  },
+  {
+    "reason": "we didn't review it",
+    "explanation": "This PR addresses a Backlog bug (fixes #54937) but hasn’t received any reviews from team members since it was opened, and it modifies over 100 lines in src/services/goToDefinition.ts. We require a team review before merging.",
+    "pull": 55080
+  },
+  {
+    "reason": "keep",
+    "explanation": "This is a small, well‐scoped fix authored by a team member with only two src/ files changed (each under ~100 lines), addressing a milestoned bug. It just needs to address the review suggestions, so we should keep it open rather than close it.",
+    "pull": 55073
+  },
+  {
+    "reason": "needs design",
+    "explanation": "This PR proposes a significant semantic change to how the `for-in` loop’s iteration variable is typed (narrowing it to `string` only), and there’s been prolonged debate among team members (including RyanCavanaugh and rbuckton) about the correct trade‑offs and consistency with `Object.keys`. Because it affects core typing behavior and lacks a firm consensus, it requires a formal design decision before moving forward. Additionally, it hasn’t been updated since mid‑2023 and is likely stale.",
+    "pull": 54856
+  },
+  {
+    "reason": "we didn't review it",
+    "explanation": "This PR fixes a backlog bug but hasn’t been approved by the team. Jake Bailey left a question back in July 2023 that remains unaddressed, and there’s been no follow‑up since then. It’s now likely stale—please update and address the review comments if you’d like to proceed.",
+    "pull": 54750
+  },
+  {
+    "reason": "too complex",
+    "explanation": "This change injects ad‑hoc logic into the heart of our fault‑tolerant parser (and potentially impacts incremental parsing), a highly sensitive area that team members have already flagged as brittle. Because it addresses a backlog bug with a piecemeal fix rather than a well‑designed approach—and it’s now over six months old and likely stale—we should close it and explore a more robust solution.",
+    "pull": 55004
+  },
+  {
+    "reason": "too complex",
+    "explanation": "This PR targets a Backlog bug but spans 30+ files, including deep changes in the parser, checker, and transformer, plus a huge wave of baseline updates. Team feedback (rbuckton) questions the value of object destructuring in `for..in` and we don’t normally guarantee emit correctness on error paths. Given the high cost and open design questions, plus the PR’s age (last update August 2023), it’s too complex to land as-is.",
+    "pull": 54853
+  },
+  {
+    "reason": "quagmire",
+    "explanation": "This PR delves into declaration merging with different type parameter arity, effectively touching our type‑parameter inference and merging logic. Such fixes fall under the “quagmire” category—too complex and risky for an external contribution. It also hasn’t seen any team review and is over six months old, so it’s likely stale.",
+    "pull": 55117
+  },
+  {
+    "reason": "keep",
+    "explanation": "This PR makes a minimal change in src/compiler/parser.ts (1 line) plus adds corresponding tests. It’s straightforward, low-risk, and meets our criteria for a small change (<5 files, <100 lines), so it’s safe to keep.",
+    "pull": 55226
+  },
+  {
+    "reason": "keep",
+    "explanation": "This is a straightforward, small fix (only one src file changed with under 100 lines and test additions) addressing a backlog bug. It meets our criteria for merging without extensive review.",
+    "pull": 55179
+  },
+  {
+    "reason": "we didn't review it",
+    "explanation": "This PR addresses a backlog bug but hasn’t received any reviews from the core team since May 2023. We should get a review from a TypeScript team member before proceeding.",
+    "pull": 55144
+  },
+  {
+    "reason": "keep",
+    "explanation": "Small, focused fix touching fewer than five src/ files with minimal changes per file; addresses a specific enum emission bug; reviewed by team members (DanielRosenwasser, sandersn) and uncontroversial. Keeps the codebase consistent.",
+    "pull": 55107
+  },
+  {
+    "reason": "needs design",
+    "explanation": "This is a backlog bug but touches core enum semantics (index‑signature behavior, reverse‑mapping and interaction with preserveConstEnums), and there’s active design discussion from team members (RyanCavanaugh, jakebailey) about how best to handle it. Before merging, the approach needs specification of the desired diagnostic surface and a clear semantic contract. Given the open questions and the PR’s age (open since mid‑2023), it should be deferred for formal design work.",
+    "pull": 55214
+  },
+  {
+    "reason": "we didn't review it",
+    "explanation": "This PR addresses a backlog bug but hasn’t received any review from core team members (weswigham, rbuckton, navya9singh, iisaduan, sandersn, gabritto, jakebailey, andrewbranch, or RyanCavanaugh) since May 2023. We require a team review before merging.",
+    "pull": 55359
+  },
+  {
+    "reason": "needs design",
+    "explanation": "This PR makes non-`strictNullChecks` narrowing changes that raise fundamental questions about the semantics of a legacy code path. There’s active debate (even from team reviewers like @RyanCavanaugh) and no clear design consensus or approval. Because it touches core type‐narrowing behavior in non-strict mode and is from 2023 (likely stale), it needs more design discussion before landing.",
+    "pull": 55291
+  },
+  {
+    "reason": "keep",
+    "explanation": "This is a focused fix touching only 3 src files (all ≤10 lines changed) plus tests, addressing a backlog bug. Team member Daniel Rosenwasser has already reviewed the change. Note that the PR is from August 2023 and may need a fresh rebase, but the change itself is small and suitable to merge.",
+    "pull": 55503
+  },
+  {
+    "reason": "we didn't review it",
+    "explanation": "This PR addresses a backlog bug with a small change to checker.ts (under five files in src/ and under 100 lines), but no TypeScript team member has reviewed it since May 2023 and it hasn’t been updated since September 2023. It’s likely stale and needs team review.",
+    "pull": 55531
+  },
+  {
+    "reason": "we didn't review it",
+    "explanation": "This backlog PR touches multiple lib files and tests but hasn’t received any team reviews since 2023‑05‑01. It’s also now more than a year old and likely stale, so we should close it rather than merge as is.",
+    "pull": 50452
+  },
+  {
+    "reason": "keep",
+    "explanation": "This PR makes a very small, straightforward change in src/compiler/parser.ts (under 10 line additions) and adds matching tests. It fixes a backlog issue and is safe to merge without additional design discussion or major risk.",
+    "pull": 55512
+  },
+  {
+    "reason": "needs design",
+    "explanation": "This PR addresses a backlog bug but involves non‑trivial changes to the type‑relationship machinery (“getSimplifiedType” vs. a new relationship branch) and has stalled since Wes requested a redesign in September 2023. It needs a concrete design before moving forward.",
+    "pull": 55130
+  },
+  {
+    "reason": "needs design",
+    "explanation": "This PR proposes a semantic change to how indexed access types with reducible object types are resolved—a nuanced area already assessed as working as intended by core team members (including @ahejlsberg). There isn’t consensus on the desired semantics, and further design discussion is needed before proceeding.",
+    "pull": 54689
+  },
+  {
+    "reason": "quagmire",
+    "explanation": "This PR makes non‑trivial changes to variance measurement and type parameter inference – a highly delicate area that we classify as ‘quagmire.’ Such fixes tend to introduce subtle regressions and require core-team guidance and design, so we can’t accept it in its current form.",
+    "pull": 54866
+  },
+  {
+    "reason": "needs design",
+    "explanation": "This PR addresses a backlog bug and introduces new reachability‑checking APIs, but there’s an outstanding design question about how/when unreachable code should be reported (see Daniel’s change request about enabling `allowUnreachableCode`). The PR hasn’t been updated since September 2023 and is likely stale. We need to settle the API/flag design before moving forward.",
+    "pull": 55588
+  },
+  {
+    "reason": "keep",
+    "explanation": "This is a small, focused fix touching only two compiler source files with under 100 lines changed each and adding tests. A team member reviewed and provided feedback after 2023-05-01, so it meets our criteria for keeping.",
+    "pull": 55278
+  },
+  {
+    "reason": "quagmire",
+    "explanation": "This PR changes how homomorphic mapped types are instantiated—a deep type‑parameter inference and mapped‑type area that’s too complex and fragile for an external change. It spans multiple core files and hasn’t been finalized by a team member since the last review request, and at this age is likely stale.",
+    "pull": 48433
+  },
+  {
+    "reason": "we didn't review it",
+    "explanation": "This is a large, experimental WIP change touching module resolution and caching spread across more than five files (including a >100‑line change in program.ts), but it hasn’t received any reviews from team members since its September 2023 update. It’s now stale and needs a proper team review before proceeding.",
+    "pull": 55835
+  },
+  {
+    "reason": "needs design",
+    "explanation": "This PR tackles an uncommitted bug with a fair amount of semantic discussion around what should and shouldn’t be evaluated in enum template initializers, how we report unsupported expressions, and how to propagate evaluation errors. The design isn’t settled (we need to define a clear evaluation model and error messaging), so this needs a formal design proposal before landing. Additionally, it has sat unupdated since before 2024 and is likely stale.",
+    "pull": 55696
+  },
+  {
+    "reason": "keep",
+    "explanation": "This is a focused, low‐risk performance optimization by a team member touching only one file with ~35 additions, and it fixes a milestone bug. It’s small enough to merge safely.",
+    "pull": 50329
+  },
+  {
+    "reason": "keep",
+    "explanation": "This PR makes a small, focused change across fewer than five files in src/, with under 100 lines of code per file. It addresses a backlog bug, has received guidance and review from team members (@jakebailey, @DanielRosenwasser), and adds the requested test. (Note: last updated in October 2023, so you may want to rebase or confirm it’s still up to date.)",
+    "pull": 55349
+  },
+  {
+    "reason": "too risky",
+    "explanation": "This PR, while authored by a team member, introduces out‑of‑memory issues on large codebases (e.g. babel__traverse on DefinitelyTyped) and has seen no further review or updates since late 2023. It’s stale and risky to merge without a more robust solution.",
+    "pull": 48092
+  },
+  {
+    "reason": "keep",
+    "explanation": "This PR is authored by a team member, touches only two src files with minimal changes, adds corresponding tests, and addresses a Milestone bug. It meets our criteria for acceptance and should be kept open for final review.",
+    "pull": 56212
+  },
+  {
+    "reason": "quagmire",
+    "explanation": "This PR touches core template literal type reduction logic in checker.ts—a deeply complex area that falls under our “quagmire” category (akin to type parameter inference/jsdoc parsing/excess property detection). The discussion indicates nontrivial design questions around eager vs. lazy reduction and maintaining invariants, but no clear path forward. Additionally, it hasn’t moved since late 2023 and is likely stale.",
+    "pull": 56165
+  },
+  {
+    "reason": "we didn't review it",
+    "explanation": "This is a milestone bug fix but hasn’t received a final approval from a team member since November 2023 and is now several months stale. It should be closed until there’s an active review or update.",
+    "pull": 56220
+  },
+  {
+    "reason": "not needed",
+    "explanation": "The DOM declarations here are autogenerated from the TSJS‑lib‑generator project, so direct edits in lib.dom.d.ts aren’t accepted. Please update the generator definitions instead.",
+    "pull": 55989
+  },
+  {
+    "reason": "quagmire",
+    "explanation": "This PR changes the core `isRelatedTo`/relationship logic in checker.ts to handle mapped-type‐to‐union expansions—a notoriously intricate area of type inference/relationship. A team member (weswigham) requested substantial redesign and the author hasn’t addressed it, so it falls into the “quagmire” category and should be closed until a more thoroughly designed solution is available.",
+    "pull": 56027
+  },
+  {
+    "reason": "keep",
+    "explanation": "This is a small, focused change (one src file, under 100 lines) addressing a backlog bug. It has received feedback from core members (including weswigham) within the last year, and the implementation is straightforward enough to merge once Ryan gives the final 👍.",
+    "pull": 54718
+  },
+  {
+    "reason": "quagmire",
+    "explanation": "This PR tweaks the inference priority logic around `implicitNeverType[]`, which falls squarely in the complex type‐parameter inference domain. Changes here are delicate and require core team design review and sign‑off—a nonstarter for an external contributor fix.",
+    "pull": 54006
+  },
+  {
+    "reason": "keep",
+    "explanation": "This is a small, focused fix (only two files changed, under 100 lines each) adding data URL support to core path utilities. It has been actively reviewed and approved by team members (jakebailey and dsherret) and addresses a real backlog issue, so it should be kept.",
+    "pull": 53618
+  },
+  {
+    "reason": "quagmire",
+    "explanation": "This is a non‐team PR touching deep overload‐resolution and signature inference logic in checker.ts, introducing complex cache invalidation hackery that has already surfaced breakages in DT (semantic-ui) and was flagged by a team member as only a partial and perf-sensitive fix. Changes to overload inference are in the ‘too complex’/‘quagmire’ category and should be handled by the core team’s designers rather than closed as-is.",
+    "pull": 56373
+  },
+  {
+    "reason": "keep",
+    "explanation": "This PR makes a small, well‐contained change in checker.ts (under 5 src files and under 100 lines per file) and adds thorough tests. A team member (sandersn) has reviewed it and requested refinements, so it’s actively maintained and straightforward to land once feedback is addressed.",
+    "pull": 56637
+  },
+  {
+    "reason": "keep",
+    "explanation": "This is a small, focused change (two .d.ts files, only five lines removed each) that cleanly fixes an uncommitted bug. It touches fewer than five files with minimal changes and poses no broad design or complexity issues.",
+    "pull": 56646
+  },
+  {
+    "reason": "we didn't review it",
+    "explanation": "This is a backlog bug fix touching multiple compiler files, but no TypeScript team member has reviewed it since it was opened. It needs a proper team review before merging.",
+    "pull": 56751
+  },
+  {
+    "reason": "quagmire",
+    "explanation": "This change touches complex internal inference logic (binding-pattern inference and contextual typing), which falls under type‑parameter inference—a quagmire area that external contributions shouldn’t attempt to resolve directly.",
+    "pull": 56875
+  },
+  {
+    "reason": "keep",
+    "explanation": "This is a focused fix under 5 files in src/ with small diffs, addressing a backlog bug. A team member (jakebailey) has been actively reviewing it, and it doesn’t involve excessively complex core changes such as altering type parameter inference or excess-property detection internals.",
+    "pull": 56183
+  },
+  {
+    "reason": "quagmire",
+    "explanation": "This PR makes deep changes to type parameter inference around keyof T positions, effectively altering the core semantics of inference and bringing in complex design considerations. Such fixes in excess property detection or type inference are too intricate for non-team-authored work and fall into the ‘quagmire’ category.",
+    "pull": 55547
+  },
+  {
+    "reason": "keep",
+    "explanation": "This PR makes a narrowly scoped, <100‑line change to a single lib file (plus tests) fixing WeakMap constructor overloads. A core team member (sandersn) has already reviewed it and only requested clarification, so it’s not stale or too complex. It should be kept.",
+    "pull": 56713
+  },
+  {
+    "reason": "keep",
+    "explanation": "This is a small, focused fix (8 lines in checker.ts) with corresponding tests and positive feedback from a team member (sandersn) in a design meeting. Changes are under 5 source files and under 100 lines each, so it qualifies to be kept.",
+    "pull": 56859
+  },
+  {
+    "reason": "quagmire",
+    "explanation": "This change involves complex alterations to the type parameter inference logic for variadic tuples in checker.ts. Adjusting inference behavior is a quagmire-level change that requires core team design review and coordination.",
+    "pull": 56976
+  },
+  {
+    "reason": "keep",
+    "explanation": "This PR only modifies two files in src/ (each under 100 lines) and comes with comprehensive tests. A team member (andrewbranch) has already reviewed it and requested changes, and those comments have been addressed. It’s small enough to merge once any remaining review feedback is resolved, so it should remain open rather than be closed.",
+    "pull": 55714
+  },
+  {
+    "reason": "quagmire",
+    "explanation": "This PR makes nontrivial changes to type parameter inference (reverse‑mapped types, inference contexts, non‑fixing mappers and caching), which falls squarely into the category of a quagmire. Such deep inference machinery changes are too complex for an external contributor PR and need a coordinated design within the team.",
+    "pull": 56300
+  },
+  {
+    "reason": "quagmire",
+    "explanation": "This change directly modifies type parameter inference behavior (the CheckMode.Inferential logic), an area classified as too complex (‘quagmire’) for external PRs without deeper team design review.",
+    "pull": 54698
+  },
+  {
+    "reason": "keep",
+    "explanation": "This PR only modifies one file in `src/compiler` with under 100 line changes and updates baselines accordingly. Team members (e.g. weswigham) have already reviewed and the author addressed feedback. It’s a clear bug fix for accessor emission and should remain open.",
+    "pull": 54935
+  },
+  {
+    "reason": "quagmire",
+    "explanation": "This change dives deep into reverse‑mapped type member constraints and type‑parameter inference, a notoriously intricate area. Fixes here require core team design and review, so we should close it as a quagmire.",
+    "pull": 56911
+  },
+  {
+    "reason": "quagmire",
+    "explanation": "This PR touches the core generic signature inference algorithm (adjusting inference priorities in checker.ts) and introduces new tests. Type parameter inference and overlapping signature logic are deep, complex areas that require careful design and review by the team. Such changes are too intricate for non‑team members to land safely without a broader redesign discussion.",
+    "pull": 56939
+  },
+  {
+    "reason": "needs design",
+    "explanation": "The PR introduces a change to how generic arrays are indexable by numeric strings, but there are unresolved design questions around correctly modeling ToIndex semantics (e.g. disallowing ‘001’, ‘+1’, non-integer numeric strings, etc.). Without a clear design for filtering `${number}` to valid array indices and no team review, we should pause and refine the spec before merging.",
+    "pull": 56878
+  },
+  {
+    "reason": "needs design",
+    "explanation": "This change surfaces a deeper design question around whether and how annotated variables should participate in constant evaluation. Core team members have raised semantic concerns (e.g., ahejlsberg pointing out the intended behavior and performance implications), and there isn’t yet alignment on the desired approach. We need to resolve those design issues before merging.",
+    "pull": 57236
+  },
+  {
+    "reason": "keep",
+    "explanation": "This is a minimal formatter fix (one file, <100 lines) addressing a simple formatting issue. A team member has already reviewed it; just needs the requested test addition to land.",
+    "pull": 57314
+  },
+  {
+    "reason": "needs design",
+    "explanation": "This change delves into the core semantics of indexing with “never” (and various internal never variants) and has spawned extensive discussion about what indexing even means in these edge cases. We need a clear design decision on how silentNeverType, unreachableNeverType, and index signature lookup should interact before landing anything.",
+    "pull": 55842
+  },
+  {
+    "reason": "needs design",
+    "explanation": "There are outstanding design questions—Daniel raised concerns about assertion functions and how this interacts with `allowUnreachableCode`, and Jake questioned flag usage. Until those semantic issues are resolved and tests added for assertions, the PR isn’t ready to merge.",
+    "pull": 55601
+  },
+  {
+    "reason": "keep",
+    "explanation": "This PR fixes a regression in symbol alias resolution with a targeted change to a single checker file (46 additions, 4 deletions) and adds only test files. It addresses a milestone bug, is under the 5‑file/100‑line threshold for src/ changes, and has active feedback from the team, so it should be kept and merged.",
+    "pull": 57396
+  },
+  {
+    "reason": "we didn't review it",
+    "explanation": "This PR targets a backlog bug but hasn’t been approved by any core team member – Wes requested changes back in November and there’s been no follow‑up. It’s effectively stale and needs a review cycle before it can move forward.",
+    "pull": 56100
+  },
+  {
+    "reason": "keep",
+    "explanation": "This is a small doc-only update (one file, just a few lines) with an approved review from a core team member (sandersn). It’s low-risk and adds value by improving accuracy, so it should be merged.",
+    "pull": 57661
+  },
+  {
+    "reason": "quagmire",
+    "explanation": "This touches the nested inference and contextual‐type instantiation logic (type parameter inference), which is a high‑risk, complex area that we don’t accept non‑team PRs for. It also hasn’t had a team review since the original feedback, so it should be closed and revisited by the compiler team.",
+    "pull": 52866
+  },
+  {
+    "reason": "we didn't review it",
+    "explanation": "This PR addresses a milestone bug (#55500) but hasn’t been reviewed by any core team member (weswigham, rbuckton, navya9singh, iisaduan, sandersn, gabritto, jakebailey, andrewbranch, or RyanCavanaugh). We should close it until it receives an official team review.",
+    "pull": 57349
+  },
+  {
+    "reason": "needs design",
+    "explanation": "This PR is for an uncommitted bug and involves significant semantic questions about how to treat comparisons involving only undefined (e.g., carve‑outs, rounds of missingType removal, behavior with exactOptionalPropertyTypes off). The back‑and‑forth on alternative strategies indicates a need for further design discussion before merging.",
+    "pull": 58053
+  },
+  {
+    "reason": "keep",
+    "explanation": "This is a small, well-contained change (two src files, under 100 lines each) authored by a team member to address an uncommitted bug. It adds tests and defers normalization of `keyof (T & U)` appropriately, so we should keep it.",
+    "pull": 56652
+  },
+  {
+    "reason": "needs design",
+    "explanation": "This is a massive, WIP refactoring of the compiler’s object‐allocator/factory model that spans dozens of files and has unresolved memory‐overhead and deprecation‐attachment issues. There’s ongoing design discussion (e.g. how to handle prototype patches, where to place new helpers, overall API shape), so we should pause and nail down the design before proceeding.",
+    "pull": 51913
+  },
+  {
+    "reason": "we didn't review it",
+    "explanation": "This PR makes a nontrivial change to the checker’s circularity handling and updates dozens of baselines, but despite ongoing comments (primarily from Jake Bailey) it has never received an approval from a team member. Until a full team review and sign‑off is completed, we should close it.",
+    "pull": 56429
+  },
+  {
+    "reason": "needs design",
+    "explanation": "This is a draft by a team member for an uncommitted bug that introduces a large, multi‑file incremental verification feature in tsserver. There’s no linked issue or design discussion yet, so we need to flesh out the design and scope before proceeding.",
+    "pull": 57942
+  },
+  {
+    "reason": "keep",
+    "explanation": "Small change by a team member that enhances diagnostics output without breaking compatibility. It touches a single file with minimal edits and adds useful information for benchmarking scenarios.",
+    "pull": 58290
+  },
+  {
+    "reason": "too risky",
+    "explanation": "This PR adds runtime bounds‐checking to the scanner—a hot path in the compiler—and initial measurements suggest a slight parse‐time regression. Because scanning performance is critical and the change touches >100 lines in scanner.ts (and adds a new lint rule), we need more thorough benchmarking and potentially a staged rollout before merging.",
+    "pull": 58362
+  },
+  {
+    "reason": "keep",
+    "explanation": "This is a small, focused change (one src file with under 100 lines changed) addressing a backlog bug. A core team member (gabritto) has signaled that the change is acceptable, and it’s straightforward to review and land once the requested tweaks are made.",
+    "pull": 56974
+  },
+  {
+    "reason": "we didn't review it",
+    "explanation": "This small change removing a Debug.assert hasn’t received an official team review since Jake’s comments in August 2023. It’s been dormant and likely stale, so we’ll close it until it’s revisited with consensus or a clear bug repro.",
+    "pull": 55392
+  },
+  {
+    "reason": "keep",
+    "explanation": "This is a small, focused fix (modifying one compiler file and adding a few tests) with an active review by a team member (gabritto) as of 2024‑04‑30. It’s under active review, so we should keep it open.",
+    "pull": 56877
+  },
+  {
+    "reason": "we didn't review it",
+    "explanation": "This PR addresses an uncommitted bug but hasn’t been reviewed by any core team members since May 1, 2023, so we can’t keep it without official team review.",
+    "pull": 58378
+  },
+  {
+    "reason": "keep",
+    "explanation": "This is a small, focussed change (only two src/ files with minimal edits and three new tests), addresses a backlog bug, and has been approved by a team member (Gabriela). It’s ready to merge once the final requested tweak is made.",
+    "pull": 57649
+  },
+  {
+    "reason": "keep",
+    "explanation": "This is a small, targeted change (one src file and added tests) under 100 lines per file, addressing a clear backlog bug. It doesn’t touch complex areas like excess property checks or JSDoc, and the only feedback is an implementation detail from a team reviewer. It’s worth keeping open for final review and revision rather than closing.",
+    "pull": 57550
+  },
+  {
+    "reason": "we didn't review it",
+    "explanation": "This is a small fix (under 5 files in src/ and under 100 lines per file) addressing a milestone bug, but while there was initial feedback from a team member (andrewbranch) back in March, no TypeScript team member has re‑reviewed or approved the updates since May 1. It still needs a reviewed test case and sign‑off before merging.",
+    "pull": 57458
+  },
+  {
+    "reason": "needs design",
+    "explanation": "This PR makes deep changes to how element‑wise elaborations pick the “best” union member for error reporting, and while it fixes some spans it introduces regressions in discriminant-based messages. Team feedback (e.g. from Daniel Rosenwasser) indicates that the new diagnostics can lose important context and that the overall UX may be worse in places. Because it touches core union‑elaboration logic and involves design‑sensitive messaging semantics rather than a trivial bug fix, it needs further design discussion and iteration before merging.",
+    "pull": 57537
+  },
+  {
+    "reason": "keep",
+    "explanation": "This is a targeted bug‐fix affecting only one src file (and related tests) with under 100 lines of logic change. It meets the criteria for keep even without a team member review.",
+    "pull": 57428
+  },
+  {
+    "reason": "quagmire",
+    "explanation": "This PR touches deep semantic logic around replacing type parameters when constructing prototype property types (a form of type parameter inference). It affects many tests and changes complex compiler behavior. Changes in this area require core team design and review, so it’s too complex for an outside PR.",
+    "pull": 57323
+  },
+  {
+    "reason": "quagmire",
+    "explanation": "This change digs deep into template‐literal computed property semantics, union lifting, index signatures, and the generic‐computed‐name design – areas we’ve deemed a quagmire for non‐team contributors. It not only introduces a breaking change but also raises unresolved questions around generics in computed names, union behavior, and index signature preservation. These semantics need core‑team design work rather than a standalone PR, so we’re closing it as too complex for now.",
+    "pull": 54706
+  },
+  {
+    "reason": "quagmire",
+    "explanation": "This PR changes core signature inference logic (`getSingleSignature`), affecting how unions combine single-call signatures. Inference-related changes are a quagmire for non-team contributors and require deeper TypeScript design discussion and review by the compiler team.",
+    "pull": 58482
+  },
+  {
+    "reason": "too complex",
+    "explanation": "This PR is very large (dozens of lib and test files, hundreds of lines changed), touches core object method typings, and has unresolved correctness debates around overload resolution. It’s been open since August 2022 with no team sign‑off, making it effectively stale. A narrower, simpler fix (or a design‑vetted proposal) would be a better path forward.",
+    "pull": 50451
+  },
+  {
+    "reason": "quagmire",
+    "explanation": "This PR tackles JSX component support with conditional types by changing how we instantiate and infer element types—a deeply complex area of type parameter inference in the checker. Wes requested changes back in September 2023, but there’s been no further team review or follow‑up. Given the stale state and the intricate inference work involved, it’s too complex for an external contribution and should be closed as a quagmire.",
+    "pull": 54739
+  },
+  {
+    "reason": "keep",
+    "explanation": "This is a straightforward bugfix for a backlog issue that only modifies one file in src/ (parser.ts) with under 100 lines changed and adds tests. A team member (sandersn) reviewed it after 2023‑05‑01, so it’s a small, self‑contained PR ready to keep.",
+    "pull": 54688
+  }
+]

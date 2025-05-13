@@ -55,11 +55,42 @@ If neither are true, I'd like to close this PR.
 
 @weswigham did the results indicate that this is worth pursuing? It is worth keeping open?
 
-### Close
+## classify-pr Results
+o4-mini to start
+
+- 30979 + needs design
+  - This PR is primarily driving language‐design discussion (syntax, precedence, recursive forms) rather than small, self‑contained fixes. It hasn’t seen significant movement since 2021 and would benefit from a fresh design review to nail down syntax and semantics before implementation can proceed.
+- 49004 + quagmire
+- 50372 ~ we didn't review it -> good?
+- 51386 ~ quagmire/we didn't review it (mostly right, although not technically jsdoc parsing, it's still quagmirey)
+- 52355 ~ we didn't review it/needs design -> too breaky
+- 52990 + we didn't review it
+
+### needs design
+This is quite old now. I think the correct next step is to agree on a design, so I'm going to close this PR for housekeeping purposes.
+However, since this has been open for 6 years with no discussion for 4, that indicates that we may not need or want it anyway.
+
+Unfortunately, we haven't had time to review this PR and there's no issue showing an intent to add it to Typescript. I think it makes most sense to close this PR and re-open it if something changes.
+
+Unfortunately, we haven't had time to work on the design of one-sided predicates and this PR is quite old now. I think it makes most sense to close this PR and re-open it if something changes.
+
+#### quagmire
+Unfortunately, I didn't have time to review this, so I'm going to close the PR even though it's likely a correct fix. Excess property detection is extremely fragile; we've revisited the rules multiple times over the years. That means that the cost of almost any fix -- reviewing, testing, fixing regressions months later -- outweighs the benefit of the fix.
+
+#### too complex
+Unfortunately, I didn't have time to review this, so I'm going to close the PR even though it's likely a correct fix. Excess property detection is extremely fragile; we've revisited the rules multiple times over the years. That means that the cost of almost any fix -- reviewing, testing, fixing regressions months later -- outweighs the benefit of the fix.
+
+#### keep
+This has been sitting for a couple of years. @Tobias-Scholz unless you want to start working on it again, I'd like to close it for housekeeping.
+
+#### we didn't review it
+This experiment is a couple of years old and didn't make a performance difference, so I'm going to close it.
 
 ## For Uncommitted Bug
 
 Not updated in the last year. Close "no" with a message "we don't have the ability to review this for Strada. Please port to typescript-go so we can review there.". Close "later" with "this feature should wait until the Corsa port is done. Please port to typescript-go so we can review there."
+
+### Close
 
 ### Later
 ahejlsberg : Support 'typeof class' types
@@ -145,7 +176,7 @@ arcanis : Yield Overrides
 craigphicks : packageJsonWatch, testing package.json and impliedNodeFormat use in transformer
 RasmusAndreassen : Modified optional thisArg to capture type
 
-## Results
+## easy-pr Results
 
 #### 4o-mini
 47 out of 475. 11/27/9 = 23% / 57% / 19%

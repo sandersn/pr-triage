@@ -2,14 +2,32 @@ import type { Pull, RawPull } from "./types.d.ts"
 import axios from "axios"
 import * as fs from "fs"
 import path from "path"
+const reasons = ["keep", "too complex", "we didn't review it", "not needed", "too risky", "needs design", "quagmire"] as const
+type Reason = typeof reasons[number]
 
 const repo = process.argv[2] || "TypeScript-go"
 const suffix = repo === "TypeScript-go" ? "-go" : ""
+
 const pulls: Pull[] = JSON.parse(fs.readFileSync("prs" + suffix + ".json", "utf-8"))
-const prompt = `You are reviewing pull requests from the TypeScript repository. Today you're looking for ones where sandersn has already asked in the comments whether they can be closed. If sandersn has asked already and it was in the last few comments and if there's no answer, say "yes". If there's an answer, but it's over 2 years old, say "yes". Otherwise say "no". Also give a couple of reasons.
+// notes: we didn't review/keep are fairly ambiguous, more so as PRs get newer
+// too complex should maybe apply to team PRs too, with a higher bar
+const prompt = `You are reviewing pull requests from the TypeScript repository.
+Classify each pull request using the following Typescript type:
+{ reason: ${reasons.map(r => JSON.stringify(r)).join(" | ")}; explanation: string }
+
+- "not needed": The PR fixes a backlog bug or uncommitted bug or unlabelled bug, and a team member has said that the bug is not needed or that the PR is not needed.
+- "too complex": The PR fixes a milestone or backlog bug, but the fix is too complex to be worth it. The PR should be closed and the bug should be fixed in a different way if possible.
+- "quagmire": This is a special case of "too complex" where the fix changes excess property detection, jsdoc parsing, or type parameter inference. All fixes in these areas are too complex for non-team members to make.
+- "needs design": There is a lot of discussion about semantics or other design questions, not about the code itself. Especially common for backlog and uncommitted bugs.
+- "too breaky": The PR fixes a milestone or backlog bug, but the fix breaks too much. The proposed design of the bug should be revisited.
+- "we didn't review it": The PR fixes a milestone or backlog bug, but no members of the team reviewed it since 2023-05-01, or they stopped reviewing before 2023-05-01.
+- "keep": A good PR that changes less than five files in src/, and changes less than 100 lines of code per file, even if no team member has reviewed it since 2023-05-01.
+
+Give reasons for closing based on the previous reasons, with added explanations for these extra reasons:
+- If the PR is older than 2024, mention that it is likely to be stale.
 
 Team members:
-- weswigham, rbuckton, navya9singh, iisaduan, sandersn, gabritto, jakebaily, andrewbranch, RyanCavanaugh
+- weswigham, rbuckton, navya9singh, iisaduan, sandersn, gabritto, jakebailey, andrewbranch, RyanCavanaugh
 
 Team opinions on whether to close should be more heavily weighted than other opinions.
 
@@ -36,15 +54,15 @@ type Message = {
 
 async function main() {
   let i = 0
-  const judgements = []
+  const judgements: { reason: Reason; explanation: string; pull: number }[] = []
   console.log(`Classifying ${pulls.length} PRs...`)
   console.log("--------------------------------------------------")
   for (const pull of pulls.sort((a, b) => new Date(a.updatedAt).getTime() - new Date(b.updatedAt).getTime())) {
     i++
-    // if (i > 10) {
-    //   console.log("Done.")
-    //   break
-    // }
+    if (i > 120) {
+      console.log("Done.")
+      break
+    }
     console.log("\n\n--------------------------------------------------")
     console.log(`${i}. #${pull.number}: ${pull.title} (${pull.createdAt})`)
     console.log(
@@ -60,7 +78,7 @@ async function main() {
         },
         {
           role: "user",
-          content: "Should this PR be closed?\n" + formatPull(pull),
+          content: JSON.stringify(pull),
         },
       ],
       response_format: {
@@ -71,20 +89,17 @@ async function main() {
           schema: {
             type: "object",
             properties: {
-              shouldClose: {
+              reason: {
                 type: "string",
-                enum: ["yes", "no"],
-                description: "Should this PR be closed?",
+                enum: reasons,
+                description: "Reason why the PR should be closed (or 'keep' if it should not be closed).",
               },
-              reasons: {
-                type: "array",
-                items: {
-                  type: "string",
-                },
-                description: "Reasons for the decision.",
+              explanation: {
+                type: "string",
+                description: "Customised explanation for the decision.",
               },
             },
-            required: ["shouldClose", "reasons"],
+            required: ["reason", "explanation"],
             additionalProperties: false,
           },
         },
@@ -95,15 +110,15 @@ async function main() {
       console.log(JSON.stringify(response.error))
       return
     } else {
-      let content: { shouldClose: "yes" | "no"; reasons: string[] } = {
-        shouldClose: "ERROR" as "yes" | "no",
-        reasons: [],
+      let content: { reason: Reason; explanation: string } = {
+        reason: "ERROR" as Reason,
+        explanation: "ERROR",
       }
       for (let retry = 0; retry < 5; retry++) {
         try {
           content = JSON.parse(response.result.choices[0].message.content) as {
-            shouldClose: "yes" | "no"
-            reasons: string[]
+            reason: Reason
+            explanation: string
           }
           break
         } catch (e) {
@@ -111,9 +126,9 @@ async function main() {
           console.log("|" + response.result.choices[0].message.content + "|")
         }
       }
-      judgements.push({ ...content, pull: pull.number })
-      console.log(`Should close? `, content.shouldClose)
-      console.log(`Reasons:\n - `, content.reasons.join("\n - "))
+      judgements.push({ reason: content.reason, explanation: content.explanation, pull: pull.number })
+      console.log(`Reason:`, content.reason)
+      console.log(`Explanation:\n - `, content.explanation)
       console.log("--------------------------------------------------")
     }
     await new Promise(resolve => setTimeout(resolve, 1_000))

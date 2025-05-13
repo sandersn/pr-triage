@@ -1,0 +1,25 @@
+// 1. run index.ts, cook-pr.ts to generate prs.json
+// 2. run close-pr.ts to generate pr-judgements.json
+// 3. run rate-close.ts to compare pr-judgements.json with close-gold.json
+// To expand close-gold.json, look at pr-judgements.json (and Github for full details) and add entries to close-gold.json.
+import fs from "fs"
+const gold = JSON.parse(fs.readFileSync("close-gold.json", "utf-8")) as Array<{ pull: number; reason: string }>
+const js = JSON.parse(fs.readFileSync("pr-judgements.json", "utf-8")) as Array<{ pull: number; reason: string }>
+const judgements = new Map(js.map(j => [j.pull, j]))
+
+let pass = 0
+let total = 0
+for (const { pull, reason } of gold) {
+  if (reason === "UNKNOWN") continue
+  const judgement = judgements.get(pull)
+  if (judgement) {
+    total++
+    if (judgement.reason !== reason) {
+      console.log(`${pull}: ${judgement.reason} ===> ${reason}`)
+    } else {
+      pass++
+    }
+  }
+}
+
+console.log(`Pass rate: ${(pass / total) * 100}%`)
