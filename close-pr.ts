@@ -20,8 +20,8 @@ Classify each pull request using the following Typescript type:
 - "quagmire": This is a special case of "too complex" where the fix changes excess property detection, jsdoc parsing, or type parameter inference. All fixes in these areas are too complex for non-team members to make.
 - "needs design": There is a lot of discussion about semantics or other design questions, not about the code itself. Especially common for backlog and uncommitted bugs.
 - "too breaky": The PR fixes a milestone or backlog bug, but the fix breaks too much. The proposed design of the bug should be revisited.
-- "we didn't review it": The PR fixes a milestone or backlog bug, but no members of the team reviewed it since 2023-05-01, or they stopped reviewing before 2023-05-01.
-- "keep": A good PR that changes less than five files in src/, and changes less than 100 lines of code per file, even if no team member has reviewed it since 2023-05-01.
+- "we didn't review it": The PR fixes a milestone or backlog bug, but no members of the team reviewed it since 2023-05-01, or they stopped reviewing before 2023-05-01. This applies even if the PR was initially reviewed, but has changes at the end of the history that are not reviewed.
+- "keep": A good PR that changes less than five files in src/, and changes less than 100 lines of code per file, even if no team member has reviewed it since 2023-05-01. PRs from team members are more likely to be kept.
 
 Give reasons for closing based on the previous reasons, with added explanations for these extra reasons:
 - If the PR is older than 2024, mention that it is likely to be stale.
