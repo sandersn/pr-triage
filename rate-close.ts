@@ -9,8 +9,14 @@ const judgements = new Map(js.map(j => [j.pull, j]))
 
 let pass = 0
 let total = 0
-for (const { pull, reason } of gold) {
+let histogram = new Map<string, number>()
+for (const { pull, reason } of gold.slice(46, 66)) {
+  if (total >= 46) break
+  histogram.set(reason, (histogram.get(reason) ?? 0) + 1)
   if (reason === "UNKNOWN") continue
+  // if (reason !== "keep" && reason !== "close" && reason !== "unreviewed" && reason !== "dropped") {
+  //   continue
+  // }
   const judgement = judgements.get(pull)
   if (judgement) {
     total++
@@ -23,3 +29,8 @@ for (const { pull, reason } of gold) {
 }
 
 console.log(`Pass rate: ${(pass / total) * 100}%`)
+console.log(`Total: ${total}`)
+console.log(`Histogram:`)
+for (const [key, value] of histogram.entries()) {
+  console.log(` - ${key}: ${value}`)
+}

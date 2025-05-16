@@ -44,17 +44,17 @@ export type Pull = {
   number: number
   title: string
   author: string
-  createdAt: Date
-  updatedAt: Date
+  createdAt: string // Date
+  updatedAt: string // Date
   labels: string[]
   body: string
   reviews: Array<{
-    publishedAt: Date
+    publishedAt: string // Date
     state: "APPROVED" | "CHANGES_REQUESTED" | "COMMENTED"
     author: string
     body: string
     comments: Array<{
-      publishedAt: Date
+      publishedAt: string // Date
       body: string
     }>
   }>
@@ -65,7 +65,7 @@ export type Pull = {
     changeType: string
   }>
   comments: Array<{
-    publishedAt: Date
+    publishedAt: string // Date
     body: string
     author: string
   }>

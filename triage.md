@@ -58,6 +58,13 @@ If neither are true, I'd like to close this PR.
 ## classify-pr Results
 o4-mini to start
 
+- run 1: 43.47%
+- run 2: 45.65%
+- run 2: 50%
+
+change=12.5%
+naive=36%
+
 - 30979 + needs design
   - This PR is primarily driving language‐design discussion (syntax, precedence, recursive forms) rather than small, self‑contained fixes. It hasn’t seen significant movement since 2021 and would benefit from a fresh design review to nail down syntax and semantics before implementation can proceed.
 - 49004 + quagmire

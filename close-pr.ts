@@ -2,32 +2,61 @@ import type { Pull, RawPull } from "./types.d.ts"
 import axios from "axios"
 import * as fs from "fs"
 import path from "path"
-const reasons = ["keep", "too complex", "we didn't review it", "not needed", "too risky", "needs design", "quagmire"] as const
-type Reason = typeof reasons[number]
+const reasons = [
+  "keep",
+  "large",
+  "dropped",
+  "unreviewed",
+  /**/ "none",
+  "unneeded",
+  "breaky",
+  "design",
+  "complex",
+] as const
+type Reason = (typeof reasons)[number]
+const team: Set<string> = new Set([
+  "weswigham",
+  "rbuckton",
+  "navya9singh",
+  "iisaduan",
+  "sandersn",
+  "gabritto",
+  "jakebailey",
+  "andrewbranch",
+  "RyanCavanaugh",
+  "DanielRosenwasser",
+])
 
 const repo = process.argv[2] || "TypeScript-go"
 const suffix = repo === "TypeScript-go" ? "-go" : ""
 
-const pulls: Pull[] = JSON.parse(fs.readFileSync("prs" + suffix + ".json", "utf-8"))
 // notes: we didn't review/keep are fairly ambiguous, more so as PRs get newer
 // too complex should maybe apply to team PRs too, with a higher bar
+/*
+- "keep": A PR that changes less than five files in src/, and changes less than 100 lines of code per file, even if no team member has reviewed it since 2023-05-01. PRs from team members are more likely to be "keep".
+- "large": The PR fixes a milestone or backlog bug, but the fix changes more than five files in src/ or more than 100 lines of code per file. The PR should be closed and the bug should be fixed in a different way if possible.
+- "dropped": Team members reviewed this PR, but have not reviewed it since the most recent changes.
+- "unreviewed": The PR fixes a milestone or backlog bug, but no members of the team reviewed it since 2023-05-01. Requesting tests from typescript-bot does not count as a review.
+*/
 const prompt = `You are reviewing pull requests from the TypeScript repository.
 Classify each pull request using the following Typescript type:
-{ reason: ${reasons.map(r => JSON.stringify(r)).join(" | ")}; explanation: string }
+{ reason: ${reasons
+  .slice(4)
+  .map(r => JSON.stringify(r))
+  .join(" | ")}; explanation: string }
 
-- "not needed": The PR fixes a backlog bug or uncommitted bug or unlabelled bug, and a team member has said that the bug is not needed or that the PR is not needed.
-- "too complex": The PR fixes a milestone or backlog bug, but the fix is too complex to be worth it. The PR should be closed and the bug should be fixed in a different way if possible.
-- "quagmire": This is a special case of "too complex" where the fix changes excess property detection, jsdoc parsing, or type parameter inference. All fixes in these areas are too complex for non-team members to make.
-- "needs design": There is a lot of discussion about semantics or other design questions, not about the code itself. Especially common for backlog and uncommitted bugs.
-- "too breaky": The PR fixes a milestone or backlog bug, but the fix breaks too much. The proposed design of the bug should be revisited.
-- "we didn't review it": The PR fixes a milestone or backlog bug, but no members of the team reviewed it since 2023-05-01, or they stopped reviewing before 2023-05-01. This applies even if the PR was initially reviewed, but has changes at the end of the history that are not reviewed.
-- "keep": A good PR that changes less than five files in src/, and changes less than 100 lines of code per file, even if no team member has reviewed it since 2023-05-01. PRs from team members are more likely to be kept.
+Focus on the comments, titles and reviews. Filenames of test files might help too.
 
-Give reasons for closing based on the previous reasons, with added explanations for these extra reasons:
-- If the PR is older than 2024, mention that it is likely to be stale.
+- "unneeded": A team member has said that the fix is not needed or unsuitable. Do not use comments from a review, since those refer to specific lines of code. Experiments by team members that are 
+- "complex": The PR is not from a team member, and changes standard library types, control-flow analysis, excess property checking, type instantiation, generic type parameter inference, incremental parsing or jsdoc parsing. All fixes in these areas are too complex for non-team members to make.
+- "design": There is a lot of discussion about semantics or design questions, not about the code itself. Especially common for backlog and uncommitted bugs.
+- "breaky": The PR breaks existing programs or hurts performance. Any mention of breaks means this applies.
+- "none": None of these apply, especially when there are no reviews.
+
+- "unneeded", "design" and "breaky" are related to specific comments or reviews. Prefer those over "complex" or "none" when both could apply.
 
 Team members:
-- weswigham, rbuckton, navya9singh, iisaduan, sandersn, gabritto, jakebailey, andrewbranch, RyanCavanaugh
+- ${Array.from(team).join(", ")}j
 
 Team opinions on whether to close should be more heavily weighted than other opinions.
 
@@ -52,24 +81,24 @@ type Message = {
   content: string
 }
 
-async function main() {
+async function main(pulls: Pull[]) {
   let i = 0
   const judgements: { reason: Reason; explanation: string; pull: number }[] = []
   console.log(`Classifying ${pulls.length} PRs...`)
   console.log("--------------------------------------------------")
   for (const pull of pulls.sort((a, b) => new Date(a.updatedAt).getTime() - new Date(b.updatedAt).getTime())) {
     i++
-    if (i > 120) {
+    if (i > 500) {
       console.log("Done.")
       break
     }
-    console.log("\n\n--------------------------------------------------")
-    console.log(`${i}. #${pull.number}: ${pull.title} (${pull.createdAt})`)
-    console.log(
-      `Commenters: ${pull.comments.map(comment => comment.author).join(", ")}; Reviews: ${pull.reviews
-        .map(review => review.author)
-        .join(", ")}\n`
-    )
+    // console.log("\n\n--------------------------------------------------")
+    // console.log(`${i}. #${pull.number}: ${pull.title} (${pull.createdAt})`)
+    // console.log(
+    //   `Commenters: ${pull.comments.map(comment => comment.author).join(", ")}; Reviews: ${pull.reviews
+    //     .map(review => review.author)
+    //     .join(", ")}\n`
+    // )
     const data = {
       messages: [
         {
@@ -91,7 +120,7 @@ async function main() {
             properties: {
               reason: {
                 type: "string",
-                enum: reasons,
+                enum: reasons.slice(4),
                 description: "Reason why the PR should be closed (or 'keep' if it should not be closed).",
               },
               explanation: {
@@ -120,22 +149,56 @@ async function main() {
             reason: Reason
             explanation: string
           }
+          if (content != null) {
+            judgements.push({
+              reason: reviewCategory(content.reason, pull),
+              explanation: content.explanation,
+              pull: pull.number,
+            })
+            console.log(pull.number, `Reason:`, content.reason)
+          } else {
+            console.log("No content in response:", response.result.choices[0].message.content)
+          }
           break
         } catch (e) {
           console.log(e)
           console.log("|" + response.result.choices[0].message.content + "|")
         }
       }
-      judgements.push({ reason: content.reason, explanation: content.explanation, pull: pull.number })
-      console.log(`Reason:`, content.reason)
-      console.log(`Explanation:\n - `, content.explanation)
-      console.log("--------------------------------------------------")
+      // console.log(`Explanation:\n - `, content.explanation)
+      // console.log("--------------------------------------------------")
     }
     await new Promise(resolve => setTimeout(resolve, 1_000))
   }
   fs.writeFileSync("pr-judgements.json", JSON.stringify(judgements, null, 2))
 }
-main()
+function reviewCategory(reason: Reason, pull: Pull): Reason {
+  if (reason === "none") {
+    const reviews = pull.reviews.filter(review => team.has(review.author) && pull.author !== review.author)
+    const comments = pull.comments.filter(comment => team.has(comment.author) && pull.author !== comment.author)
+    if (reviews.length === 0 && comments.length == 0) {
+      return "unreviewed"
+    }
+    const lastComment = comments.at(-1)
+    const lastReview = reviews.at(-1)
+    if (
+      (lastComment && sameHour(lastComment.publishedAt, pull.updatedAt) && team.has(lastComment.author)) ||
+      (lastReview && sameHour(lastReview.publishedAt, pull.updatedAt))
+    ) {
+      const src = pull.files.filter(file => file.path.startsWith("src/"))
+      return src.length < 5 && src.every(file => file.additions < 100) ? "keep" : "large"
+    } else {
+      return "dropped"
+    }
+  }
+  return reason
+}
+function sameHour(date1: string, date2: string): boolean {
+  const d2 = new Date(date2)
+  const diffHours = Math.abs(new Date(date1).getTime() - d2.getTime()) / (1000 * 60 * 60)
+  return diffHours < 1
+}
+main(JSON.parse(fs.readFileSync("prs" + suffix + ".json", "utf-8")))
   .then(() => {
     process.exit(0)
   })

@@ -1,602 +1,2277 @@
 [
   {
-    "reason": "needs design",
-    "explanation": "This PR proposes a major new syntax and semantic feature (inline type aliases) with far‑reaching parser, binder, and checker changes, but it’s been inactive since 2021 and the team hasn’t settled on a design. It needs a clear, updated design proposal before moving forward.",
+    "reason": "design",
+    "explanation": "This PR is a design proposal for new inline type alias syntax with ongoing high-level discussions about syntax, priorities, and semantics rather than a focused implementation or bug fix.",
     "pull": 30979
   },
   {
-    "reason": "quagmire",
-    "explanation": "This PR changes the compiler’s excess property detection logic for unions, which falls under our quagmire category. Such changes to excess property checking are too complex for non-team contributors to safely implement. The PR is also two years old and likely stale.",
+    "reason": "complex",
+    "explanation": "This PR is from an external contributor and modifies the checker’s excess property detection logic for union types, which falls squarely in the complex type-system/control-flow analysis area requiring deep team review.",
     "pull": 49004
   },
   {
-    "reason": "we didn't review it",
-    "explanation": "This PR targets a backlog bug from 2022 but hasn’t received any review from a core team member since its creation, and it’s likely stale. We haven’t reviewed it since 2023‑05, so it should be closed; please reopen or update with a team review if the fix is still needed.",
+    "reason": "complex",
+    "explanation": "This PR, authored by a non-team member, changes control-flow analysis logic for decorators (check usage before declaration). Modifications to control-flow analysis are considered too intricate for external contributors, so the PR should be closed.",
     "pull": 50372
   },
   {
-    "reason": "quagmire",
-    "explanation": "This change touches JSDoc parsing logic (utilities.ts) to handle custom link text. Modifying JSDoc link handling is a quagmire area that requires core team design and review, especially since no team member reviewed this backlog PR (and it’s now stale from 2022).",
+    "reason": "complex",
+    "explanation": "This PR, submitted by a non-team member, modifies JSDoc link parsing logic—a complex area of the codebase that is typically reserved for TypeScript team members to ensure consistency and avoid regressions.",
     "pull": 51386
   },
   {
-    "reason": "we didn't review it",
-    "explanation": "This is a simple one-file change in src/compiler that fixes a backlog bug, but it’s over a year old and hasn’t received any team reviews since its January 2023 submission. We never got the needed feedback or sign‑off and it’s likely stale—closing as “we didn’t review it.”",
+    "reason": "unreviewed",
+    "explanation": "This is a straightforward fix for source map generation with no team review objections or design concerns; no reason to close.",
     "pull": 52355
   },
   {
-    "reason": "quagmire",
-    "explanation": "This PR makes deep changes to mapped‐type inference in checker.ts (including array/tuple mapping behavior) and adds extensive test updates. Changes to excess property detection or type parameter inference are considered too complex for external contributions. Additionally, the PR is two years old and likely stale, so it needs core team design before proceeding.",
+    "reason": "complex",
+    "explanation": "This PR introduces deep changes to the checker’s mapped‐type inference logic and modifies standard library definitions and numerous baselines. Since it’s a non-team contribution touching complex type inference behavior, it’s outside the scope safe for external authors and should be closed.",
     "pull": 50046
   },
   {
     "reason": "keep",
-    "explanation": "The PR addresses a milestone bug with a small, focused change (only one compiler file and tests), is authored by and reviewed by team members, and doesn’t introduce breaking changes – it should be kept open.",
+    "explanation": "This is a straightforward bug fix from a team member with only minor stylistic reviews; it should be kept.",
     "pull": 52646
   },
   {
-    "reason": "keep",
-    "explanation": "The PR modifies a single file in src/ with under 100 line changes and is authored by a core team member (Daniel Rosenwasser). It’s small and self‑contained, so it’s safe to keep.",
+    "reason": "unreviewed",
+    "explanation": "This PR is authored by a team member and there are no reviews or comments indicating issues. The change is a minor optimization in `getSymbolIfSameReference`, so there’s no reason to close it.",
     "pull": 53040
   },
   {
-    "reason": "we didn't review it",
-    "explanation": "This PR addresses a backlog bug (#52439) with a small change surface, but it hasn’t received any team review or approval since before May 2023 and appears to be stale. Without a recent review or updates (especially to address the open ts-ignore question), we should close it as unreviewed.",
+    "reason": "complex",
+    "explanation": "This PR, authored by an external contributor, modifies control-flow analysis/non-null assertion logic in the checker—core compiler behavior. Such deep changes are reserved for team members to author or fully vet.",
     "pull": 52483
   },
   {
-    "reason": "keep",
-    "explanation": "This PR makes a small, focused change (only two src/ files modified under 100 lines each) and adds tests. Even though no team member has yet reviewed it, the change is low-risk and meets the criteria for keeping.",
+    "reason": "unreviewed",
+    "explanation": "No team member has flagged this as unnecessary or breaking, and it does not affect core type-system logic or raise design concerns. The PR cleanly adds refactoring support for re-exports with accompanying tests.",
     "pull": 52990
   },
   {
     "reason": "keep",
-    "explanation": "This PR is small (only one src file changed with under 100 lines) and has been reviewed and approved by team members (weswigham, sandersn, jakebailey). It includes tests and no major design risks.",
+    "explanation": "This PR addresses a Backlog bug, adds tests, and has been approved after performance adjustments. There are no outstanding design concerns or objections suggesting it should be closed.",
     "pull": 50775
   },
   {
-    "reason": "needs design",
-    "explanation": "This PR introduces new JSDoc binding behavior but core questions around the semantics (as noted by sandersn and weswigham) remain unresolved. It’s an older PR (from late 2022) with no follow‑up since March 2023, so it’s likely stale and still needs design agreement before proceeding.",
+    "reason": "design",
+    "explanation": "This PR involves ongoing design discussions about JSDoc binding semantics (e.g., when and how to bind type literals in TS vs JS files, lazy vs eager binding). The team has not settled on the approach yet, so it’s primarily a design conversation rather than a straightforward fix.",
     "pull": 51066
   },
   {
-    "reason": "we didn't review it",
-    "explanation": "This PR was opened in March 2023 and hasn’t seen any reviews from the core team (weswigham, rbuckton, navya9singh, iisaduan, sandersn, gabritto, jakebailey, andrewbranch, RyanCavanaugh) since the May 1, 2023 threshold, and it’s now likely stale.",
+    "reason": "unreviewed",
+    "explanation": "This is a small, internally authored change with no review comments or indications it’s undesired or problematic. None of the specified closure reasons apply.",
     "pull": 53479
   },
   {
-    "reason": "too complex",
-    "explanation": "This PR works against the declaration emitter’s handling of parameter properties under strictNullChecks and exactOptionalPropertyTypes and has sparked multiple design questions from core team reviewers (sandersn, weswigham) without resolution. It’s a tricky area touching optional-parameter logic in the emitter and is now nearly two years old, so it’s likely stale and too complex for a non-team member to land cleanly.",
+    "reason": "design",
+    "explanation": "This PR has generated prolonged discussion around the runtime semantics of strictNullChecks, exactOptionalPropertyTypes, and declaration emit behavior. It’s currently stuck in design/semantics review rather than moving forward with an implementable change.",
     "pull": 50494
   },
   {
-    "reason": "keep",
-    "explanation": "The PR is by a core team member (weswigham) and makes a small, focused change in one file under the 100‑line threshold. It addresses a performance/recursion issue without large-scale impact, so it should be kept.",
+    "reason": "unreviewed",
+    "explanation": "This is a team-authored bug fix addressing infinite recursion in reverse mapped types. There are no objections or design debates, and it’s a focused change to prevent stack overflows and improve perf.",
     "pull": 53595
   },
   {
-    "reason": "we didn't review it",
-    "explanation": "This PR addresses a backlog bug and received initial feedback from a team member (gabritto) back in March 2023, but there’s been no activity or review from any of the team since May 1, 2023. It’s now over a year old and likely stale, so we should close it until it’s updated or re-requested.",
+    "reason": "dropped",
+    "explanation": "This is a user-contributed refactor enhancement with ongoing implementation discussion and no team consensus to close; it doesn’t fall into unneeded, breaky, design, or complex constraints.",
     "pull": 52979
   },
   {
-    "reason": "keep",
-    "explanation": "Authored by a TypeScript team member (weswigham), touches only one compiler source file with minimal changes plus tests, and cleanly addresses a milestone bug — this is a good small-scope fix worth keeping.",
+    "reason": "unreviewed",
+    "explanation": "This is a straightforward bug fix authored by a core team member with no objections or design debates; it should be retained.",
     "pull": 53758
   },
   {
     "reason": "keep",
-    "explanation": "This is a small change (1 file, <100 lines modified) by a team member (weswigham) addressing an uncommitted bug, with follow‑up review by another team member (rbuckton). It’s appropriate to keep.",
+    "explanation": "This is a team member’s PR addressing an uncommitted bug with minor internal modifications; reviews discuss implementation details, not viability, so it should remain open.",
     "pull": 54117
   },
   {
-    "reason": "we didn't review it",
-    "explanation": "This PR has outstanding review comments (including from Daniel Rosenwasser) but no formal approval from a core team member (weswigham, sandersn, jakebailey, etc.). It hasn’t seen a team review or update since mid‑2023 and is now likely stale.",
+    "reason": "unneeded",
+    "explanation": "Core contributor Daniel Rosenwasser reviewed this change and indicated the proposed parsing skips are incorrect and would lead to downstream errors, suggesting a different, simpler fix. Until the requested adjustments are addressed, this PR should be closed.",
     "pull": 52372
   },
   {
-    "reason": "not needed",
-    "explanation": "A TypeScript team member (rbuckton) noted this change isn’t needed for the test harness (which isn’t shipping code) and the delete would already fail under --frozen-intrinsics, so the PR can be closed.",
+    "reason": "unneeded",
+    "explanation": "Team member rbuckton requested changes and noted the change isn’t needed (the test harness isn’t shipping code and the delete would fail under --frozen-intrinsics anyway).",
     "pull": 53700
   },
   {
-    "reason": "not needed",
-    "explanation": "Diagnostic messages are generated by internal localization tooling, so manual edits to the generated files aren’t accepted. This PR has also been stale since May 2023.",
+    "reason": "unneeded",
+    "explanation": "Localization files are generated internally and shouldn’t be modified by hand. The change can’t be accepted without using the official tooling and translation process.",
     "pull": 54128
   },
   {
-    "reason": "keep",
-    "explanation": "This is a small, low‑risk change (2 files, under 100 lines each) addressing a backlog bug without broad semantic impact. It meets the criteria for a keep—minimal surface area and no breaking changes.",
+    "reason": "dropped",
+    "explanation": "This PR addresses a backlog bug by preserving newlines when moving nodes to a new file, includes tests, and has no team objections or breakage concerns.",
     "pull": 53203
   },
   {
-    "reason": "too complex",
-    "explanation": "This PR targets a backlog bug in the declaration emit path for divergent accessors, a notoriously tricky and high‑risk area touching core checker/EMIT logic. It received CHANGES_REQUESTED three months ago and has not been updated, indicating it’s likely stale or incomplete. Given the complexity and potential for breakage, this approach isn’t worth carrying forward; a cleaner, more considered design for handling divergent accessors in declarations would be preferable.",
+    "reason": "complex",
+    "explanation": "This PR is from a non-team member and makes changes to complex type serialization logic in the checker/emitter, which is beyond the scope of what external contributors should tackle without deeper core-team guidance.",
     "pull": 54110
   },
   {
-    "reason": "keep",
-    "explanation": "This is a very small, targeted change (1 file, 1 line) that improves performance without altering semantics otherwise. It falls under our threshold of <5 files and <100 lines per file, so per guidelines it can be kept even without a prior team review.",
+    "reason": "complex",
+    "explanation": "This contribution comes from a non-team member and modifies core type‐instantiation and variance‐checking logic (`getVariancesWorker` bypass). Changes in this area (type instantiation, variance analysis, generic inference) are considered too complex for external PRs and require deeper team review.",
     "pull": 54290
   },
   {
-    "reason": "we didn't review it",
-    "explanation": "This PR addresses a backlog bug but hasn’t received any team reviews since the May 2023 cutoff. It’s also over a year old and likely stale.",
+    "reason": "complex",
+    "explanation": "This contribution comes from a non-team member and modifies the checker’s handling of spreading generic tuple types into calls, affecting type instantiation and inference. Changes in this area are too complex to merge without deeper team review.",
     "pull": 53615
   },
   {
-    "reason": "quagmire",
-    "explanation": "This PR touches contextual typing and type parameter inference for variadic tuple mapped types—an area deemed too complex for external contributions. The core team (e.g. weswigham) requested changes back in March 2023 and it hasn’t been updated since, so it’s likely stale and better handled by the team.",
+    "reason": "complex",
+    "explanation": "The PR originates from a non-team member and touches highly intricate areas of the type system (generic tuple mapped types and contextual typing). There are unresolved design and correctness concerns raised by a core team reviewer, so it’s too complex to accept in its current form.",
     "pull": 53042
   },
   {
-    "reason": "quagmire",
-    "explanation": "This change dives deep into type‐parameter inference for mapped types—a notoriously complex area we reserve for the core team. It’s stalled since April 2023 and risks introducing subtle regressions in excess‐property detection and inference, so we should close it.",
+    "reason": "complex",
+    "explanation": "This PR is from a non-team member and makes substantial changes to the checker’s type‐instantiation and generic‐parameter inference for mapped types. Modifications of that complexity in core inference are reserved for team members.",
     "pull": 52737
   },
   {
-    "reason": "quagmire",
-    "explanation": "This PR adds yet another special‐case in the binder for Function’s readonly properties. Fixing this properly would involve deeper changes around how we synthesize and resolve apparent properties rather than hard‑coding special behavior in the binder. Because it’s a subtle aspect of our symbol resolution (a “special property assignment”), it’s effectively in the same category as other quagmires (excess‑property checks, JSDoc parsing, inference hacks) that we avoid from contributors. Given its age (opened in 2022, last activity mid‑2023) it’s also likely stale and not ready for adoption as is.",
+    "reason": "design",
+    "explanation": "This PR introduces a special‐case change in the binder for readonly Function properties and members of the team have raised broader design concerns about adding special‐case logic here versus a more systematic approach in resolution or the checker. The discussion is focused on the correct semantics and long‐term design, so it should remain open until consensus is reached on the design.",
     "pull": 49146
   },
   {
-    "reason": "quagmire",
-    "explanation": "This PR makes a deep change to how generic indexed‑access constraints are computed—a core part of our type‑parameter inference logic. Such fixes are too complex for an external contribution and require full team design and review. Additionally, the PR hasn’t seen traction or formal approval in over a year and is likely stale.",
+    "reason": "complex",
+    "explanation": "This PR is from a non-team member and makes changes to the compiler’s core constraint computation for generic indexed accesses—an area (generic type parameter inference/constraint evaluation) considered too complex for external contributions without full team oversight.",
     "pull": 49107
   },
   {
-    "reason": "quagmire",
-    "explanation": "This PR modifies generic inference and type parameter inference logic in checker.ts—a known ‘quagmire’ area too complex for community contributions. It’s been dormant since mid‑2023, has outstanding performance concerns, and needs core-team attention rather than a standalone PR.",
+    "reason": "complex",
+    "explanation": "This PR makes non-trivial changes to generic type inference (type instantiation logic) in checker.ts by a non-team member, an area we reserve for core team contributions due to its complexity and potential for subtle breakage.",
     "pull": 52495
   },
   {
-    "reason": "quagmire",
-    "explanation": "This change touches the checker’s handling of mapped types and partial concrete constraints—a form of type parameter inference—and is deep in a notoriously complex area. Non-team fixes in inference land are classified as quagmires, and no team member has reviewed it.",
+    "reason": "complex",
+    "explanation": "This PR, authored by a non-team member, makes changes to the compiler’s mapped‐type inference and checker logic (a core part of type instantiation and generic inference). Such deep, complex changes to the checker aren’t suitable without core team oversight.",
     "pull": 49064
   },
   {
-    "reason": "keep",
-    "explanation": "This is a small, focused fix (1 src file change, under 100 lines) with appropriate tests added. It’s suitable to remain open for review.",
+    "reason": "complex",
+    "explanation": "The PR touches core type-checking behavior (contextual typing for logical or and nullish coalescing), an area considered too complex for non-team contributors to implement safely.",
     "pull": 54553
   },
   {
-    "reason": "keep",
-    "explanation": "This is a small, targeted change by a TypeScript team member (weswigham), modifying only two files with limited additions/deletions. It addresses a milestone bug and meets the criteria for a ‘keep’ PR.",
+    "reason": "unreviewed",
+    "explanation": "This is a team-authored PR by weswigham improving performance in variance comparisons with no objections or design concerns raised; it should be kept open.",
     "pull": 54754
   },
   {
-    "reason": "keep",
-    "explanation": "This PR makes a focused fix in one compiler file (checker.ts) and adds corresponding tests. It changes fewer than five src/ files and under 100 lines per file. It doesn’t touch complex areas like excess property checks or inference, and it’s already seen review feedback from a team member. It should remain open for the author to address the requested changes and land the change.",
+    "reason": "complex",
+    "explanation": "This PR comes from a non-team member and makes non-trivial changes to the compiler’s class-field super call emission and error checking logic. Changes in this area are too complex without core team review.",
     "pull": 54475
   },
   {
-    "reason": "we didn't review it",
-    "explanation": "This PR fixes a backlog bug but hasn’t received any review from a team member since May 2023. It was last updated in 2023 and is likely stale.",
+    "reason": "complex",
+    "explanation": "This PR comes from a non-team member and makes changes to the core template literal mapping logic in the checker (a complex, sensitive area of the type system). Such changes are considered too complex to accept without a team member driving them.",
     "pull": 52112
   },
   {
-    "reason": "we didn't review it",
-    "explanation": "This PR addresses a Backlog bug (fixes #54937) but hasn’t received any reviews from team members since it was opened, and it modifies over 100 lines in src/services/goToDefinition.ts. We require a team review before merging.",
+    "reason": "unreviewed",
+    "explanation": "No team feedback or reviews indicating this should be closed, and no breakage or design issues have been raised.",
     "pull": 55080
   },
   {
-    "reason": "keep",
-    "explanation": "This is a small, well‐scoped fix authored by a team member with only two src/ files changed (each under ~100 lines), addressing a milestoned bug. It just needs to address the review suggestions, so we should keep it open rather than close it.",
+    "reason": "dropped",
+    "explanation": "This is a team-authored bugfix for the move-to-file refactor, with ongoing review feedback. There’s no indication it should be closed.",
     "pull": 55073
   },
   {
-    "reason": "needs design",
-    "explanation": "This PR proposes a significant semantic change to how the `for-in` loop’s iteration variable is typed (narrowing it to `string` only), and there’s been prolonged debate among team members (including RyanCavanaugh and rbuckton) about the correct trade‑offs and consistency with `Object.keys`. Because it affects core typing behavior and lacks a firm consensus, it requires a formal design decision before moving forward. Additionally, it hasn’t been updated since mid‑2023 and is likely stale.",
+    "reason": "design",
+    "explanation": "This PR fundamentally changes the semantics of `for...in` iteration, which has prompted extensive team discussion about soundness trade-offs, existing idioms, and alignment with `Object.keys`. It’s a design/semantic issue that requires deeper consensus rather than a straightforward code fix.",
     "pull": 54856
   },
   {
-    "reason": "we didn't review it",
-    "explanation": "This PR fixes a backlog bug but hasn’t been approved by the team. Jake Bailey left a question back in July 2023 that remains unaddressed, and there’s been no follow‑up since then. It’s now likely stale—please update and address the review comments if you’d like to proceed.",
+    "reason": "keep",
+    "explanation": "This is a straightforward bug fix for duplicated synthetic comments in the decorator transformer with no team objections or design concerns; it should be kept open.",
     "pull": 54750
   },
   {
-    "reason": "too complex",
-    "explanation": "This change injects ad‑hoc logic into the heart of our fault‑tolerant parser (and potentially impacts incremental parsing), a highly sensitive area that team members have already flagged as brittle. Because it addresses a backlog bug with a piecemeal fix rather than a well‑designed approach—and it’s now over six months old and likely stale—we should close it and explore a more robust solution.",
+    "reason": "design",
+    "explanation": "The change touches the core fault-tolerant parser logic and team members have raised concerns about ad-hoc handling and its impact on incremental parsing. There’s an open design discussion on where and how to best incorporate this behavior rather than a ready-to-ship fix.",
     "pull": 55004
   },
   {
-    "reason": "too complex",
-    "explanation": "This PR targets a Backlog bug but spans 30+ files, including deep changes in the parser, checker, and transformer, plus a huge wave of baseline updates. Team feedback (rbuckton) questions the value of object destructuring in `for..in` and we don’t normally guarantee emit correctness on error paths. Given the high cost and open design questions, plus the PR’s age (last update August 2023), it’s too complex to land as-is.",
+    "reason": "design",
+    "explanation": "The PR sparks discussion around the semantics and consistency of allowing destructuring in for-in loops rather than focusing on implementation details. Team members are questioning the design motivation and necessity of the feature.",
     "pull": 54853
   },
   {
-    "reason": "quagmire",
-    "explanation": "This PR delves into declaration merging with different type parameter arity, effectively touching our type‑parameter inference and merging logic. Such fixes fall under the “quagmire” category—too complex and risky for an external contribution. It also hasn’t seen any team review and is over six months old, so it’s likely stale.",
+    "reason": "complex",
+    "explanation": "This PR from a non-team member alters TypeScript’s core declaration merging and generic inference logic—an advanced, sensitive area that is considered too complex for external contributors and should be handled by team members.",
     "pull": 55117
   },
   {
-    "reason": "keep",
-    "explanation": "This PR makes a minimal change in src/compiler/parser.ts (1 line) plus adds corresponding tests. It’s straightforward, low-risk, and meets our criteria for a small change (<5 files, <100 lines), so it’s safe to keep.",
+    "reason": "complex",
+    "explanation": "This PR modifies the parser to allow escape characters in constructors—parsing changes are considered complex, and such areas are reserved for team members to adjust.",
     "pull": 55226
   },
   {
-    "reason": "keep",
-    "explanation": "This is a straightforward, small fix (only one src file changed with under 100 lines and test additions) addressing a backlog bug. It meets our criteria for merging without extensive review.",
+    "reason": "complex",
+    "explanation": "This PR, authored by a non-team member, modifies core type-checking logic for super expressions in methods with a this-parameter. Changes to the checker are complex and must be driven by the TypeScript team to ensure correctness and avoid unintended regressions.",
     "pull": 55179
   },
   {
-    "reason": "we didn't review it",
-    "explanation": "This PR addresses a backlog bug but hasn’t received any reviews from the core team since May 2023. We should get a review from a TypeScript team member before proceeding.",
+    "reason": "complex",
+    "explanation": "This PR is from a non-team member and alters the core JSX attribute type–checking logic in checker.ts, which falls under the complex areas of the type system (type instantiation/inference and control-flow). Such changes are considered too complex for external contributors.",
     "pull": 55144
   },
   {
-    "reason": "keep",
-    "explanation": "Small, focused fix touching fewer than five src/ files with minimal changes per file; addresses a specific enum emission bug; reviewed by team members (DanielRosenwasser, sandersn) and uncontroversial. Keeps the codebase consistent.",
+    "reason": "complex",
+    "explanation": "This PR, authored by an external contributor, modifies core compiler behavior around constant evaluation and enum emission (handling `Infinity`/`NaN`), which is a complex area touching the emitter and resolver. Changes in these areas require deeper team review and involvement than general changes, so it should be closed and let the TypeScript team address it.",
     "pull": 55107
   },
   {
-    "reason": "needs design",
-    "explanation": "This is a backlog bug but touches core enum semantics (index‑signature behavior, reverse‑mapping and interaction with preserveConstEnums), and there’s active design discussion from team members (RyanCavanaugh, jakebailey) about how best to handle it. Before merging, the approach needs specification of the desired diagnostic surface and a clear semantic contract. Given the open questions and the PR’s age (open since mid‑2023), it should be deferred for formal design work.",
+    "reason": "design",
+    "explanation": "There’s active discussion between core team members about the intended semantics for const enums (indexing, preserveConstEnums behavior, banning vs. diagnostics), so this PR is still in the design phase rather than being ready to close or merge.",
     "pull": 55214
   },
   {
-    "reason": "we didn't review it",
-    "explanation": "This PR addresses a backlog bug but hasn’t received any review from core team members (weswigham, rbuckton, navya9singh, iisaduan, sandersn, gabritto, jakebailey, andrewbranch, or RyanCavanaugh) since May 2023. We require a team review before merging.",
+    "reason": "complex",
+    "explanation": "This PR, authored by a non-team member, changes type checker logic related to unique symbol declarations—a complex area of the compiler. Such changes should be handled by a team member.",
     "pull": 55359
   },
   {
-    "reason": "needs design",
-    "explanation": "This PR makes non-`strictNullChecks` narrowing changes that raise fundamental questions about the semantics of a legacy code path. There’s active debate (even from team reviewers like @RyanCavanaugh) and no clear design consensus or approval. Because it touches core type‐narrowing behavior in non-strict mode and is from 2023 (likely stale), it needs more design discussion before landing.",
+    "reason": "design",
+    "explanation": "The PR sparks extensive discussion about the intended semantics of narrowing with strictNullChecks:false rather than addressing a clear implementation bug. It’s more of a high-level design debate than a straightforward fix.",
     "pull": 55291
   },
   {
-    "reason": "keep",
-    "explanation": "This is a focused fix touching only 3 src files (all ≤10 lines changed) plus tests, addressing a backlog bug. Team member Daniel Rosenwasser has already reviewed the change. Note that the PR is from August 2023 and may need a fresh rebase, but the change itself is small and suitable to merge.",
+    "reason": "dropped",
+    "explanation": "This is a straightforward bug fix for await-as-identifier in modules with no team objections or design debates; it should be kept open.",
     "pull": 55503
   },
   {
-    "reason": "we didn't review it",
-    "explanation": "This PR addresses a backlog bug with a small change to checker.ts (under five files in src/ and under 100 lines), but no TypeScript team member has reviewed it since May 2023 and it hasn’t been updated since September 2023. It’s likely stale and needs team review.",
+    "reason": "complex",
+    "explanation": "This PR changes core type-checking logic for `exactOptionalPropertyTypes`, a complex area of control-flow/assignment semantics, and isn’t from a team member. Non-team contributions in these areas should be closed.",
     "pull": 55531
   },
   {
-    "reason": "we didn't review it",
-    "explanation": "This backlog PR touches multiple lib files and tests but hasn’t received any team reviews since 2023‑05‑01. It’s also now more than a year old and likely stale, so we should close it rather than merge as is.",
+    "reason": "complex",
+    "explanation": "This PR, authored by a non-team member, makes changes to the standard library type definitions (lib files) for String.replaceAll and related APIs. Modifications to the standard library are considered too complex for contributions from non-team members and should be closed.",
     "pull": 50452
   },
   {
-    "reason": "keep",
-    "explanation": "This PR makes a very small, straightforward change in src/compiler/parser.ts (under 10 line additions) and adds matching tests. It fixes a backlog issue and is safe to merge without additional design discussion or major risk.",
+    "reason": "complex",
+    "explanation": "This PR, authored by a non-team member, makes changes to the parser implementation (parsing module declarations). Parser modifications fall under complex changes that require core team oversight.",
     "pull": 55512
   },
   {
-    "reason": "needs design",
-    "explanation": "This PR addresses a backlog bug but involves non‑trivial changes to the type‑relationship machinery (“getSimplifiedType” vs. a new relationship branch) and has stalled since Wes requested a redesign in September 2023. It needs a concrete design before moving forward.",
+    "reason": "complex",
+    "explanation": "This PR, authored by a non-team member, makes changes to the core type‐relationship and normalization logic (mapped types, indexed access, and inference). Those areas are too complex for external contributors and generally handled only by the core team.",
     "pull": 55130
   },
   {
-    "reason": "needs design",
-    "explanation": "This PR proposes a semantic change to how indexed access types with reducible object types are resolved—a nuanced area already assessed as working as intended by core team members (including @ahejlsberg). There isn’t consensus on the desired semantics, and further design discussion is needed before proceeding.",
+    "reason": "unneeded",
+    "explanation": "Key team members (including @ahejlsberg) have assessed the current behavior as working as intended, and the author themselves now suggests closing this PR rather than merging its changes.",
     "pull": 54689
   },
   {
-    "reason": "quagmire",
-    "explanation": "This PR makes non‑trivial changes to variance measurement and type parameter inference – a highly delicate area that we classify as ‘quagmire.’ Such fixes tend to introduce subtle regressions and require core-team guidance and design, so we can’t accept it in its current form.",
+    "reason": "complex",
+    "explanation": "This is an experimental change by a non-team member touching TypeScript’s variance measurement logic for generic functions—a core part of the checker’s inference machinery—which falls under our ‘complex’ category.",
     "pull": 54866
   },
   {
-    "reason": "needs design",
-    "explanation": "This PR addresses a backlog bug and introduces new reachability‑checking APIs, but there’s an outstanding design question about how/when unreachable code should be reported (see Daniel’s change request about enabling `allowUnreachableCode`). The PR hasn’t been updated since September 2023 and is likely stale. We need to settle the API/flag design before moving forward.",
+    "reason": "keep",
+    "explanation": "Reviewers are discussing required changes but haven’t indicated the PR is unnecessary or problematic; proceed with requested updates rather than closing.",
     "pull": 55588
   },
   {
-    "reason": "keep",
-    "explanation": "This is a small, focused fix touching only two compiler source files with under 100 lines changed each and adding tests. A team member reviewed and provided feedback after 2023-05-01, so it meets our criteria for keeping.",
+    "reason": "complex",
+    "explanation": "This PR is from a non-team member and makes changes to control-flow analysis, an area deemed too complex for external contributors; such fixes should be handled by core team members.",
     "pull": 55278
   },
   {
-    "reason": "quagmire",
-    "explanation": "This PR changes how homomorphic mapped types are instantiated—a deep type‑parameter inference and mapped‑type area that’s too complex and fragile for an external change. It spans multiple core files and hasn’t been finalized by a team member since the last review request, and at this age is likely stale.",
+    "reason": "complex",
+    "explanation": "This PR comes from a non-team member and makes deep changes to the mapped-type instantiation and checker logic—a core, complex area of the compiler that we reserve for the TypeScript team.",
     "pull": 48433
   },
   {
-    "reason": "we didn't review it",
-    "explanation": "This is a large, experimental WIP change touching module resolution and caching spread across more than five files (including a >100‑line change in program.ts), but it hasn’t received any reviews from team members since its September 2023 update. It’s now stale and needs a proper team review before proceeding.",
+    "reason": "complex",
+    "explanation": "The PR makes significant changes to the module resolution cache and related compiler internals. As a non-team member contribution touching a complex area of the compiler, it’s best handled by the team rather than merged in its current form.",
     "pull": 55835
   },
   {
-    "reason": "needs design",
-    "explanation": "This PR tackles an uncommitted bug with a fair amount of semantic discussion around what should and shouldn’t be evaluated in enum template initializers, how we report unsupported expressions, and how to propagate evaluation errors. The design isn’t settled (we need to define a clear evaluation model and error messaging), so this needs a formal design proposal before landing. Additionally, it has sat unupdated since before 2024 and is likely stale.",
+    "reason": "design",
+    "explanation": "This PR is primarily driving a semantic/design discussion around what kinds of template‐literal expressions should be evaluated in enum initializers and what error messages to produce. Team members are debating the desired behaviour rather than pinning down a straightforward implementation, so it’s a design‐level issue.",
     "pull": 55696
   },
   {
-    "reason": "keep",
-    "explanation": "This is a focused, low‐risk performance optimization by a team member touching only one file with ~35 additions, and it fixes a milestone bug. It’s small enough to merge safely.",
+    "reason": "dropped",
+    "explanation": "This is a performance optimization authored by a core team member with no objections or requests to close; it addresses a specific compile-time performance regression and is appropriate to keep.",
     "pull": 50329
   },
   {
-    "reason": "keep",
-    "explanation": "This PR makes a small, focused change across fewer than five files in src/, with under 100 lines of code per file. It addresses a backlog bug, has received guidance and review from team members (@jakebailey, @DanielRosenwasser), and adds the requested test. (Note: last updated in October 2023, so you may want to rebase or confirm it’s still up to date.)",
+    "reason": "dropped",
+    "explanation": "This PR implements a new editor refactoring (extract-to-constant for blockless arrow functions) with added tests and no team objections. It’s a valid enhancement and ready for further review.",
     "pull": 55349
   },
   {
-    "reason": "too risky",
-    "explanation": "This PR, while authored by a team member, introduces out‑of‑memory issues on large codebases (e.g. babel__traverse on DefinitelyTyped) and has seen no further review or updates since late 2023. It’s stale and risky to merge without a more robust solution.",
+    "reason": "breaky",
+    "explanation": "Team feedback (from ahejlsberg) indicates that this change causes an OOM on large codebases (Definitely Typed) and produces other inscrutable errors, suggesting it hurts performance and breaks existing code.",
     "pull": 48092
   },
   {
-    "reason": "keep",
-    "explanation": "This PR is authored by a team member, touches only two src files with minimal changes, adds corresponding tests, and addresses a Milestone bug. It meets our criteria for acceptance and should be kept open for final review.",
+    "reason": "dropped",
+    "explanation": "This is a team-authored bug fix for overload imports with a requested change to deduplicate code. No indication that the PR should be closed or is unneeded, breaky, or design-level.",
     "pull": 56212
   },
   {
-    "reason": "quagmire",
-    "explanation": "This PR touches core template literal type reduction logic in checker.ts—a deeply complex area that falls under our “quagmire” category (akin to type parameter inference/jsdoc parsing/excess property detection). The discussion indicates nontrivial design questions around eager vs. lazy reduction and maintaining invariants, but no clear path forward. Additionally, it hasn’t moved since late 2023 and is likely stale.",
+    "reason": "unneeded",
+    "explanation": "A core team member (Jake Bailey) has indicated that this change isn’t a valid solution—template literal reduction was introduced intentionally, so this PR as submitted is unsuitable.",
     "pull": 56165
   },
   {
-    "reason": "we didn't review it",
-    "explanation": "This is a milestone bug fix but hasn’t received a final approval from a team member since November 2023 and is now several months stale. It should be closed until there’s an active review or update.",
+    "reason": "large",
+    "explanation": "This PR implements a straightforward improvement to the completion service with no objections from team members, no breaking changes or design debates flagged, and isn’t touching particularly sensitive compiler subsystems that would require a team member to author.",
     "pull": 56220
   },
   {
-    "reason": "not needed",
-    "explanation": "The DOM declarations here are autogenerated from the TSJS‑lib‑generator project, so direct edits in lib.dom.d.ts aren’t accepted. Please update the generator definitions instead.",
+    "reason": "complex",
+    "explanation": "This PR comes from a non–team member and modifies the standard library definitions in lib.dom.d.ts. Changes to DOM libs must be made through the TSJS-lib-generator and involve deeper infra considerations, so it’s too complex to accept as-is.",
     "pull": 55989
   },
   {
-    "reason": "quagmire",
-    "explanation": "This PR changes the core `isRelatedTo`/relationship logic in checker.ts to handle mapped-type‐to‐union expansions—a notoriously intricate area of type inference/relationship. A team member (weswigham) requested substantial redesign and the author hasn’t addressed it, so it falls into the “quagmire” category and should be closed until a more thoroughly designed solution is available.",
+    "reason": "complex",
+    "explanation": "This is a non-team-member PR making deep changes in the core type checker (relationship checks, apparent types, unions/intersections). Such logic is too complex without team guidance and ownership.",
     "pull": 56027
   },
   {
-    "reason": "keep",
-    "explanation": "This is a small, focused change (one src file, under 100 lines) addressing a backlog bug. It has received feedback from core members (including weswigham) within the last year, and the implementation is straightforward enough to merge once Ryan gives the final 👍.",
+    "reason": "complex",
+    "explanation": "This PR makes non-trivial changes to the compiler’s internal type-instantiation logic (handling of missing types in tuple type arguments under `exactOptionalPropertyTypes`). Since it’s authored by a non-team member and touches deep, sensitive parts of the checker, it falls under ‘complex’ and should be closed pending a team-led implementation.",
     "pull": 54718
   },
   {
-    "reason": "quagmire",
-    "explanation": "This PR tweaks the inference priority logic around `implicitNeverType[]`, which falls squarely in the complex type‐parameter inference domain. Changes here are delicate and require core team design review and sign‑off—a nonstarter for an external contributor fix.",
+    "reason": "complex",
+    "explanation": "This PR is from a non-team member and makes changes to the generic type inference logic (inference priorities), which falls into a complex area of the compiler that only team members should modify.",
     "pull": 54006
   },
   {
     "reason": "keep",
-    "explanation": "This is a small, focused fix (only two files changed, under 100 lines each) adding data URL support to core path utilities. It has been actively reviewed and approved by team members (jakebailey and dsherret) and addresses a real backlog issue, so it should be kept.",
+    "explanation": "This PR has been thoroughly reviewed and approved by core team members without any objections or breakage concerns. It’s a small, well-contained enhancement to path utilities and should be kept open.",
     "pull": 53618
   },
   {
-    "reason": "quagmire",
-    "explanation": "This is a non‐team PR touching deep overload‐resolution and signature inference logic in checker.ts, introducing complex cache invalidation hackery that has already surfaced breakages in DT (semantic-ui) and was flagged by a team member as only a partial and perf-sensitive fix. Changes to overload inference are in the ‘too complex’/‘quagmire’ category and should be handled by the core team’s designers rather than closed as-is.",
+    "reason": "complex",
+    "explanation": "This PR, from a non-team member, touches core overload resolution logic in checker.ts. Changes to control-flow analysis and overload resolution are too intricate for external contributions without deep team coordination.",
     "pull": 56373
   },
   {
-    "reason": "keep",
-    "explanation": "This PR makes a small, well‐contained change in checker.ts (under 5 src files and under 100 lines per file) and adds thorough tests. A team member (sandersn) has reviewed it and requested refinements, so it’s actively maintained and straightforward to land once feedback is addressed.",
+    "reason": "complex",
+    "explanation": "This is a non-team-member PR that changes JSDoc type tag handling in the checker, which falls under the complex areas (JSDoc parsing) reserved for core team members.",
     "pull": 56637
   },
   {
-    "reason": "keep",
-    "explanation": "This is a small, focused change (two .d.ts files, only five lines removed each) that cleanly fixes an uncommitted bug. It touches fewer than five files with minimal changes and poses no broad design or complexity issues.",
+    "reason": "complex",
+    "explanation": "This PR, from a non–team member, modifies standard library type definitions (removing `new` signatures on GeneratorFunction and AsyncGeneratorFunction), which is considered too complex for external contributors to safely implement.",
     "pull": 56646
   },
   {
-    "reason": "we didn't review it",
-    "explanation": "This is a backlog bug fix touching multiple compiler files, but no TypeScript team member has reviewed it since it was opened. It needs a proper team review before merging.",
+    "reason": "complex",
+    "explanation": "The PR is authored by a non-team member and makes intricate changes to the compiler’s intersection‐type and symbol linking logic. Modifications in core type‐checking are too complex for external contributions and require deeper team oversight.",
     "pull": 56751
   },
   {
-    "reason": "quagmire",
-    "explanation": "This change touches complex internal inference logic (binding-pattern inference and contextual typing), which falls under type‑parameter inference—a quagmire area that external contributions shouldn’t attempt to resolve directly.",
+    "reason": "complex",
+    "explanation": "This PR is from a non–team member and makes deep changes to TypeScript’s core inference and contextual-typing algorithms (binding-pattern inference, constraint handling, intersections with unknown, tuple inference, etc.). Changes in these areas are too complex to be handled by non-team contributors.",
     "pull": 56875
   },
   {
     "reason": "keep",
-    "explanation": "This is a focused fix under 5 files in src/ with small diffs, addressing a backlog bug. A team member (jakebailey) has been actively reviewing it, and it doesn’t involve excessively complex core changes such as altering type parameter inference or excess-property detection internals.",
+    "explanation": "This appears to be a valid backlog bug fix addressing contextual typing for object literals with private members. There are no team-member objections, and the PR has received thoughtful review feedback and adjustments. It does not need to be closed.",
     "pull": 56183
   },
   {
-    "reason": "quagmire",
-    "explanation": "This PR makes deep changes to type parameter inference around keyof T positions, effectively altering the core semantics of inference and bringing in complex design considerations. Such fixes in excess property detection or type inference are too intricate for non-team-authored work and fall into the ‘quagmire’ category.",
+    "reason": "design",
+    "explanation": "This PR proposes a core inference change (switching from `any` to `unknown` for objects inferred from `keyof T`) and has generated extensive discussion about semantic trade-offs, downstream breaks (e.g. Vue), and design meeting follow-up. It’s primarily a design-level debate rather than a straightforward bug fix.",
     "pull": 55547
   },
   {
-    "reason": "keep",
-    "explanation": "This PR makes a narrowly scoped, <100‑line change to a single lib file (plus tests) fixing WeakMap constructor overloads. A core team member (sandersn) has already reviewed it and only requested clarification, so it’s not stale or too complex. It should be kept.",
+    "reason": "complex",
+    "explanation": "This PR is from a non–team member and makes changes to the standard library type definitions (WeakMap constructor overloads and type parameter defaults), which falls under ‘complex’ changes requiring core-team oversight.",
     "pull": 56713
   },
   {
-    "reason": "keep",
-    "explanation": "This is a small, focused fix (8 lines in checker.ts) with corresponding tests and positive feedback from a team member (sandersn) in a design meeting. Changes are under 5 source files and under 100 lines each, so it qualifies to be kept.",
+    "reason": "design",
+    "explanation": "A team member requested a review at a design meeting and there’s ongoing discussion about proper placement and semantics of the change.",
     "pull": 56859
   },
   {
-    "reason": "quagmire",
-    "explanation": "This change involves complex alterations to the type parameter inference logic for variadic tuples in checker.ts. Adjusting inference behavior is a quagmire-level change that requires core team design review and coordination.",
+    "reason": "complex",
+    "explanation": "This PR is from a non-team member and modifies tuple inference logic (a subset of type instantiation and generic inference), which is a particularly complex area of the checker that requires core team oversight.",
     "pull": 56976
   },
   {
-    "reason": "keep",
-    "explanation": "This PR only modifies two files in src/ (each under 100 lines) and comes with comprehensive tests. A team member (andrewbranch) has already reviewed it and requested changes, and those comments have been addressed. It’s small enough to merge once any remaining review feedback is resolved, so it should remain open rather than be closed.",
+    "reason": "design",
+    "explanation": "This change touches the core semantics of our builtin conditional type helpers and has generated extensive discussion around inference, instantiation and assignability behavior. It’s primarily a design-level debate rather than a straightforward implementation, so this belongs in our design backlog rather than as a ready-to-merge PR.",
     "pull": 55714
   },
   {
-    "reason": "quagmire",
-    "explanation": "This PR makes nontrivial changes to type parameter inference (reverse‑mapped types, inference contexts, non‑fixing mappers and caching), which falls squarely into the category of a quagmire. Such deep inference machinery changes are too complex for an external contributor PR and need a coordinated design within the team.",
+    "reason": "complex",
+    "explanation": "This PR, authored by a non-team member, delves into modifying the core generic type parameter inference and reverse-mapped type instantiation logic—areas deemed too intricate for contributions outside the TypeScript team.",
     "pull": 56300
   },
   {
-    "reason": "quagmire",
-    "explanation": "This change directly modifies type parameter inference behavior (the CheckMode.Inferential logic), an area classified as too complex (‘quagmire’) for external PRs without deeper team design review.",
+    "reason": "breaky",
+    "explanation": "A core team member (Anders Hejlsberg) has pointed out that the change causes a regression in the Ramda tests in DefinitelyTyped and that “we definitely don’t want this new behavior.” Because it breaks existing code, the PR should be closed.",
     "pull": 54698
   },
   {
-    "reason": "keep",
-    "explanation": "This PR only modifies one file in `src/compiler` with under 100 line changes and updates baselines accordingly. Team members (e.g. weswigham) have already reviewed and the author addressed feedback. It’s a clear bug fix for accessor emission and should remain open.",
+    "reason": "complex",
+    "explanation": "This PR is from a non-team member and makes deep changes to the type checker’s object-literal property handling and accessor emission, touching critical checker logic and requiring extensive baseline updates; it’s too complex for external contributions without team guidance.",
     "pull": 54935
   },
   {
-    "reason": "quagmire",
-    "explanation": "This change dives deep into reverse‑mapped type member constraints and type‑parameter inference, a notoriously intricate area. Fixes here require core team design and review, so we should close it as a quagmire.",
+    "reason": "complex",
+    "explanation": "This PR, authored by a non–core team member, makes deep changes in the checker’s reverse‐mapped type constraint logic and type instantiation code. Changes to type inference and control‐flow analysis in core compiler code are too complex to accept from community contributions without core team ownership.",
     "pull": 56911
   },
   {
-    "reason": "quagmire",
-    "explanation": "This PR touches the core generic signature inference algorithm (adjusting inference priorities in checker.ts) and introduces new tests. Type parameter inference and overlapping signature logic are deep, complex areas that require careful design and review by the team. Such changes are too intricate for non‑team members to land safely without a broader redesign discussion.",
+    "reason": "complex",
+    "explanation": "This PR, authored by a non-team member, makes changes to the compiler’s generic type parameter inference logic—a highly complex area of the codebase. Such inference changes are considered too intricate for external contributors and should be closed.",
     "pull": 56939
   },
   {
-    "reason": "needs design",
-    "explanation": "The PR introduces a change to how generic arrays are indexable by numeric strings, but there are unresolved design questions around correctly modeling ToIndex semantics (e.g. disallowing ‘001’, ‘+1’, non-integer numeric strings, etc.). Without a clear design for filtering `${number}` to valid array indices and no team review, we should pause and refine the spec before merging.",
+    "reason": "design",
+    "explanation": "The only feedback so far is a semantic/design concern (overly permissive numeric-string indexing and needing a ToIndex check), indicating this requires design discussion rather than a simple fix.",
     "pull": 56878
   },
   {
-    "reason": "needs design",
-    "explanation": "This change surfaces a deeper design question around whether and how annotated variables should participate in constant evaluation. Core team members have raised semantic concerns (e.g., ahejlsberg pointing out the intended behavior and performance implications), and there isn’t yet alignment on the desired approach. We need to resolve those design issues before merging.",
+    "reason": "design",
+    "explanation": "This PR is still in the realm of semantic/design discussion rather than a straight bug fix. The team is debating whether annotated types should participate in constant evaluation, and there’s no consensus yet. The work here raises fundamental design questions about TypeScript’s constant evaluation rules, so it should remain in design until those are resolved.",
     "pull": 57236
   },
   {
     "reason": "keep",
-    "explanation": "This is a minimal formatter fix (one file, <100 lines) addressing a simple formatting issue. A team member has already reviewed it; just needs the requested test addition to land.",
+    "explanation": "A team member requested changes to add a test and adjust the formatting rule. This is a valid work-in-progress and shouldn’t be closed.",
     "pull": 57314
   },
   {
-    "reason": "needs design",
-    "explanation": "This change delves into the core semantics of indexing with “never” (and various internal never variants) and has spawned extensive discussion about what indexing even means in these edge cases. We need a clear design decision on how silentNeverType, unreachableNeverType, and index signature lookup should interact before landing anything.",
+    "reason": "design",
+    "explanation": "The discussion centers on the fundamental semantics of indexing with `never` (e.g. how it should interact with index signatures, special internal never types, and whether `{ a: 42 }[never]` should be valid). There’s significant debate about the intended design rather than simply fixing a code bug or handling a clear break. This is a design-level question that needs team consensus on the type system’s behavior.",
     "pull": 55842
   },
   {
-    "reason": "needs design",
-    "explanation": "There are outstanding design questions—Daniel raised concerns about assertion functions and how this interacts with `allowUnreachableCode`, and Jake questioned flag usage. Until those semantic issues are resolved and tests added for assertions, the PR isn’t ready to merge.",
+    "reason": "design",
+    "explanation": "This PR proposes a change to core type-inference semantics around unreachable return/yield statements and has sparked open-ended design discussion (e.g. interaction with `allowUnreachableCode`, assertion functions) rather than a clear fix. The semantics are still under debate, so it falls into the design category.",
     "pull": 55601
   },
   {
-    "reason": "keep",
-    "explanation": "This PR fixes a regression in symbol alias resolution with a targeted change to a single checker file (46 additions, 4 deletions) and adds only test files. It addresses a milestone bug, is under the 5‑file/100‑line threshold for src/ changes, and has active feedback from the team, so it should be kept and merged.",
+    "reason": "complex",
+    "explanation": "This PR is from a non-team member and makes deep changes to the type checker’s alias resolution and error‐reporting logic—areas flagged as too complex for external contributions without core team guidance.",
     "pull": 57396
   },
   {
-    "reason": "we didn't review it",
-    "explanation": "This PR targets a backlog bug but hasn’t been approved by any core team member – Wes requested changes back in November and there’s been no follow‑up. It’s effectively stale and needs a review cycle before it can move forward.",
+    "reason": "complex",
+    "explanation": "This PR makes non-trivial changes to the compiler’s declaration emit internals—specifically alias chain resolution—which is a core, performance-sensitive area. Such fixes are considered too complex for non-team contributors to implement directly without deeper compiler support and dedicated perf work.",
     "pull": 56100
   },
   {
     "reason": "keep",
-    "explanation": "This is a small doc-only update (one file, just a few lines) with an approved review from a core team member (sandersn). It’s low-risk and adds value by improving accuracy, so it should be merged.",
+    "explanation": "This PR is a straightforward documentation update for Map.clear and Set.clear jsdoc, has been approved by a TypeScript team member with only a minor additional notice update requested. It does not introduce breaking changes or design complexity and should be merged rather than closed.",
     "pull": 57661
   },
   {
-    "reason": "quagmire",
-    "explanation": "This touches the nested inference and contextual‐type instantiation logic (type parameter inference), which is a high‑risk, complex area that we don’t accept non‑team PRs for. It also hasn’t had a team review since the original feedback, so it should be closed and revisited by the compiler team.",
+    "reason": "complex",
+    "explanation": "This PR comes from a non-team member and makes deep changes to type instantiation and generic inference (nested inferences), which are areas deemed too complex for external contributions. Such foundational inference logic requires core team coordination and review before acceptance.",
     "pull": 52866
   },
   {
-    "reason": "we didn't review it",
-    "explanation": "This PR addresses a milestone bug (#55500) but hasn’t been reviewed by any core team member (weswigham, rbuckton, navya9singh, iisaduan, sandersn, gabritto, jakebailey, andrewbranch, or RyanCavanaugh). We should close it until it receives an official team review.",
+    "reason": "unreviewed",
+    "explanation": "This PR is a straightforward bug fix with one minor review suggestion to improve test coverage; there’s no indication it’s unneeded, breaky, or a broader design/complexity issue.",
     "pull": 57349
   },
   {
-    "reason": "needs design",
-    "explanation": "This PR is for an uncommitted bug and involves significant semantic questions about how to treat comparisons involving only undefined (e.g., carve‑outs, rounds of missingType removal, behavior with exactOptionalPropertyTypes off). The back‑and‑forth on alternative strategies indicates a need for further design discussion before merging.",
+    "reason": "design",
+    "explanation": "This PR is an experimental proposal changing comparison semantics for undefined-only types and is generating design-level discussion about approach and error messaging rather than a straight implementation or bug fix.",
     "pull": 58053
   },
   {
-    "reason": "keep",
-    "explanation": "This is a small, well-contained change (two src files, under 100 lines each) authored by a team member to address an uncommitted bug. It adds tests and defers normalization of `keyof (T & U)` appropriately, so we should keep it.",
+    "reason": "unreviewed",
+    "explanation": "This is a team-authored fix for an uncommitted bug with no reviews requesting closure. There’s no indication it should be closed.",
     "pull": 56652
   },
   {
-    "reason": "needs design",
-    "explanation": "This is a massive, WIP refactoring of the compiler’s object‐allocator/factory model that spans dozens of files and has unresolved memory‐overhead and deprecation‐attachment issues. There’s ongoing design discussion (e.g. how to handle prototype patches, where to place new helpers, overall API shape), so we should pause and nail down the design before proceeding.",
+    "reason": "large",
+    "explanation": "This is an ongoing refactor by a TypeScript team member addressing the removal of the `objectAllocator` concept. Reviews are active, there’s no request to close it, and although there are design and performance considerations being discussed, none amount to a reason to close the PR at this time.",
     "pull": 51913
   },
   {
-    "reason": "we didn't review it",
-    "explanation": "This PR makes a nontrivial change to the checker’s circularity handling and updates dozens of baselines, but despite ongoing comments (primarily from Jake Bailey) it has never received an approval from a team member. Until a full team review and sign‑off is completed, we should close it.",
+    "reason": "keep",
+    "explanation": "A core team reviewer (jakebailey) has signed off on the changes and no blocking concerns remain, so there’s no need to close this PR.",
     "pull": 56429
   },
   {
-    "reason": "needs design",
-    "explanation": "This is a draft by a team member for an uncommitted bug that introduces a large, multi‑file incremental verification feature in tsserver. There’s no linked issue or design discussion yet, so we need to flesh out the design and scope before proceeding.",
+    "reason": "unreviewed",
+    "explanation": "This is a draft PR from a team member with no review feedback indicating it should be closed.",
     "pull": 57942
   },
   {
-    "reason": "keep",
-    "explanation": "Small change by a team member that enhances diagnostics output without breaking compatibility. It touches a single file with minimal edits and adds useful information for benchmarking scenarios.",
+    "reason": "design",
+    "explanation": "This PR is centered on a design discussion about whether `--diagnostics` should include relation cache sizes (balancing added info versus breaking existing tooling and performance concerns), rather than a straightforward code fix.",
     "pull": 58290
   },
   {
-    "reason": "too risky",
-    "explanation": "This PR adds runtime bounds‐checking to the scanner—a hot path in the compiler—and initial measurements suggest a slight parse‐time regression. Because scanning performance is critical and the change touches >100 lines in scanner.ts (and adds a new lint rule), we need more thorough benchmarking and potentially a staged rollout before merging.",
+    "reason": "large",
+    "explanation": "This is a team-authored PR extending bounds checking in the scanner and adding a lint rule. The discussion centers on performance implications, not on closing the PR. There’s no indication it should be closed or marked unneeded, breaky, design, or complex beyond normal review.",
     "pull": 58362
   },
   {
-    "reason": "keep",
-    "explanation": "This is a small, focused change (one src file with under 100 lines changed) addressing a backlog bug. A core team member (gabritto) has signaled that the change is acceptable, and it’s straightforward to review and land once the requested tweaks are made.",
+    "reason": "breaky",
+    "explanation": "Team member gabritto observed that this change causes many breaks in real-world repo tests, changing existing type reduction semantics in a way that breaks compatibility.",
     "pull": 56974
   },
   {
-    "reason": "we didn't review it",
-    "explanation": "This small change removing a Debug.assert hasn’t received an official team review since Jake’s comments in August 2023. It’s been dormant and likely stale, so we’ll close it until it’s revisited with consensus or a clear bug repro.",
+    "reason": "design",
+    "explanation": "The PR is primarily a semantic/design discussion about whether to remove or relocate a debug assertion rather than a straightforward fix. There’s no consensus on the invariant or placement of the assert, so it belongs in a design discussion rather than an uncommitted bug fix.",
     "pull": 55392
   },
   {
-    "reason": "keep",
-    "explanation": "This is a small, focused fix (modifying one compiler file and adding a few tests) with an active review by a team member (gabritto) as of 2024‑04‑30. It’s under active review, so we should keep it open.",
+    "reason": "complex",
+    "explanation": "This PR, authored by a non-team member, directly modifies the compiler’s switch exhaustiveness logic (control-flow analysis via type facts), which is a core complex area. Such changes typically require deeper team involvement rather than an external contribution.",
     "pull": 56877
   },
   {
-    "reason": "we didn't review it",
-    "explanation": "This PR addresses an uncommitted bug but hasn’t been reviewed by any core team members since May 1, 2023, so we can’t keep it without official team review.",
+    "reason": "complex",
+    "explanation": "The PR is from an external contributor and modifies advanced compiler internals (caching contextual function types, resetting NodeCheckFlags in checker.ts). Changes in these areas require deep expertise and core team approval, so it’s too complex to merge directly.",
     "pull": 58378
   },
   {
-    "reason": "keep",
-    "explanation": "This is a small, focussed change (only two src/ files with minimal edits and three new tests), addresses a backlog bug, and has been approved by a team member (Gabriela). It’s ready to merge once the final requested tweak is made.",
+    "reason": "design",
+    "explanation": "There’s active discussion about the semantics of what counts as “used” in class static blocks (e.g. whether internal references should mark symbols as used), so this is primarily a design/semantics question rather than a straightforward bugfix.",
     "pull": 57649
   },
   {
-    "reason": "keep",
-    "explanation": "This is a small, targeted change (one src file and added tests) under 100 lines per file, addressing a clear backlog bug. It doesn’t touch complex areas like excess property checks or JSDoc, and the only feedback is an implementation detail from a team reviewer. It’s worth keeping open for final review and revision rather than closing.",
+    "reason": "dropped",
+    "explanation": "This PR addresses a valid bug (unicode in module specifiers) and only has a review request for API refinement, not a closure request. It should be kept open.",
     "pull": 57550
   },
   {
-    "reason": "we didn't review it",
-    "explanation": "This is a small fix (under 5 files in src/ and under 100 lines per file) addressing a milestone bug, but while there was initial feedback from a team member (andrewbranch) back in March, no TypeScript team member has re‑reviewed or approved the updates since May 1. It still needs a reviewed test case and sign‑off before merging.",
+    "reason": "complex",
+    "explanation": "This PR is from a non–team-member and touches the compiler’s core checker logic (JS synthetic rest parameters, type assignment and call hierarchies), an area we consider too complex for external contributions without deeper design alignment and review.",
     "pull": 57458
   },
   {
-    "reason": "needs design",
-    "explanation": "This PR makes deep changes to how element‑wise elaborations pick the “best” union member for error reporting, and while it fixes some spans it introduces regressions in discriminant-based messages. Team feedback (e.g. from Daniel Rosenwasser) indicates that the new diagnostics can lose important context and that the overall UX may be worse in places. Because it touches core union‑elaboration logic and involves design‑sensitive messaging semantics rather than a trivial bug fix, it needs further design discussion and iteration before merging.",
+    "reason": "complex",
+    "explanation": "This PR makes deep changes to TypeScript’s elementwise error elaboration and best-match type selection in the checker – a complex area of control‐flow and type‐matching logic. As it touches non-trivial inference and union discrimination behavior and is authored by a non-team member, it falls under our ‘complex’ category and should be closed.",
     "pull": 57537
   },
   {
-    "reason": "keep",
-    "explanation": "This is a targeted bug‐fix affecting only one src file (and related tests) with under 100 lines of logic change. It meets the criteria for keep even without a team member review.",
+    "reason": "design",
+    "explanation": "This PR involves nuanced semantic/design discussion around private constructor assignability (essentially altering the type-checker's assignability rules). There’s an ongoing debate about whether private members should affect constructor assignability and no clear team consensus or decision. It’s better treated as a design issue rather than a simple bugfix.",
     "pull": 57428
   },
   {
-    "reason": "quagmire",
-    "explanation": "This PR touches deep semantic logic around replacing type parameters when constructing prototype property types (a form of type parameter inference). It affects many tests and changes complex compiler behavior. Changes in this area require core team design and review, so it’s too complex for an outside PR.",
+    "reason": "complex",
+    "explanation": "This PR is from a non-team member and makes changes to the checker’s handling of generic type parameter instantiation when creating prototype property types. Changes in this area (type instantiation and class declaration emit) are complex and require core team oversight.",
     "pull": 57323
   },
   {
-    "reason": "quagmire",
-    "explanation": "This change digs deep into template‐literal computed property semantics, union lifting, index signatures, and the generic‐computed‐name design – areas we’ve deemed a quagmire for non‐team contributors. It not only introduces a breaking change but also raises unresolved questions around generics in computed names, union behavior, and index signature preservation. These semantics need core‑team design work rather than a standalone PR, so we’re closing it as too complex for now.",
+    "reason": "complex",
+    "explanation": "This PR is from a non-team member and makes deep changes to the type-checker’s handling of computed properties with template literal types, an area (type instantiation/control-flow analysis) that we consider too complex to accept outside core team contributions.",
     "pull": 54706
   },
   {
-    "reason": "quagmire",
-    "explanation": "This PR changes core signature inference logic (`getSingleSignature`), affecting how unions combine single-call signatures. Inference-related changes are a quagmire for non-team contributors and require deeper TypeScript design discussion and review by the compiler team.",
+    "reason": "complex",
+    "explanation": "This PR is from a non-team member and modifies core type inference logic (combining single signatures from unions in checker.ts). Changes to signature inference are considered too complex for external contributors without team guidance.",
     "pull": 58482
   },
   {
-    "reason": "too complex",
-    "explanation": "This PR is very large (dozens of lib and test files, hundreds of lines changed), touches core object method typings, and has unresolved correctness debates around overload resolution. It’s been open since August 2022 with no team sign‑off, making it effectively stale. A narrower, simpler fix (or a design‑vetted proposal) would be a better path forward.",
+    "reason": "complex",
+    "explanation": "This PR is from a non–team member and makes extensive changes to standard library type definitions for Object methods, which falls under complex domain changes not suitable without core team guidance.",
     "pull": 50451
   },
   {
-    "reason": "quagmire",
-    "explanation": "This PR tackles JSX component support with conditional types by changing how we instantiate and infer element types—a deeply complex area of type parameter inference in the checker. Wes requested changes back in September 2023, but there’s been no further team review or follow‑up. Given the stale state and the intricate inference work involved, it’s too complex for an external contribution and should be closed as a quagmire.",
+    "reason": "complex",
+    "explanation": "This PR modifies core compiler logic for JSX element type resolution and instantiates conditional types, a complex area involving type instantiation and generic inference. Because it’s from a non-team member and touches intricate compiler behavior, it’s too complex to merge as is.",
     "pull": 54739
   },
   {
-    "reason": "keep",
-    "explanation": "This is a straightforward bugfix for a backlog issue that only modifies one file in src/ (parser.ts) with under 100 lines changed and adds tests. A team member (sandersn) reviewed it after 2023‑05‑01, so it’s a small, self‑contained PR ready to keep.",
+    "reason": "design",
+    "explanation": "The conversation centers on the semantics and grammar design of parsing `extends` in conditional types (e.g., whether to treat it like a ternary operator, how newlines affect it), rather than addressing a straightforward code fix or bug. This is a design‐level discussion.",
     "pull": 54688
+  },
+  {
+    "reason": "unneeded",
+    "explanation": "This draft PR is explicitly marked “never to be merged” and exists only for discoverability. It isn’t intended for merging and should be closed.",
+    "pull": 43468
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR is from an external contributor and makes substantial changes to the compiler’s parsing and scanning logic (JS files, comments, jsdoc parsing). Changes in these areas are considered too complex for non-team members and risk subtle breakage without team review.",
+    "pull": 58601
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR is from a non-team member and modifies control-flow analysis (computing flow types for function declarations), which is too complex for external contributions without core team oversight.",
+    "pull": 58411
+  },
+  {
+    "reason": "dropped",
+    "explanation": "No team member has requested closure and the change addresses a specific bug without breaking existing functionality or involving a large design debate.",
+    "pull": 58655
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR from a non-team member touches JSDoc parsing and overload handling, which is a complex area we require team ownership for. It should be closed and refiled by a collaborator if still desired.",
+    "pull": 58662
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR makes changes to the compiler’s core type‐narrowing and nested object destructuring logic, which is part of control-flow analysis and too complex for non-team contributors to maintain.",
+    "pull": 54513
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR is from a non–team member and makes extensive changes to the checker’s generic type inference and control‐flow analysis (introducing a new strictInstanceOfTypeParameters option, updating inference on instanceof, etc.), which is too complex an area for external contributions without deeper team guidance.",
+    "pull": 58028
+  },
+  {
+    "reason": "design",
+    "explanation": "The PR is primarily proposing a change to module‐resolution semantics (prioritizing explicit .d.ts imports) and has generated high‐level discussion about explicit vs. implicit resolution behaviors. It’s thus a design/semantics proposal rather than a straightforward bug fix or feature implementation.",
+    "pull": 58700
+  },
+  {
+    "reason": "design",
+    "explanation": "The PR centers on choosing canonical letter-casing for tsconfig option values—a semantic/design discussion with no definitive team consensus yet and questions about whether this should be maintained here or in the VS Code repo.",
+    "pull": 58735
+  },
+  {
+    "reason": "unneeded",
+    "explanation": "A team member (jakebailey) noted that this change is unnecessary since esbuild already hoists those methods, so there’s no need to introduce top-level vars.",
+    "pull": 58783
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR touches compiler semantics by adding a private field check in for-in expressions, involving control-flow analysis—an area considered too complex for non-team members to submit safely.",
+    "pull": 58798
+  },
+  {
+    "reason": "design",
+    "explanation": "There’s an active debate around the exact semantics of the error spans (parameter span vs. name span) and how these use-before-declaration errors should be reported. The PR needs to settle that design before proceeding.",
+    "pull": 58797
+  },
+  {
+    "reason": "design",
+    "explanation": "This PR is driving an uncommitted bug fix but has sparked a deeper discussion about the semantics of `resolutionStart` and the resolution stack – specifically Anders’s concern that it may re-introduce unpredictable ghost errors. The debate is about design/semantics rather than a straightforward code fix.",
+    "pull": 58824
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR, authored by a non–team member, modifies core generic type inference logic in `inferFromObjectTypes`. Changes to type instantiation and inference are inherently complex and should be handled by the core team.",
+    "pull": 57895
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR is from a non-team member and modifies excess property checking logic in the checker, which is considered a complex area unsuitable for external contributions.",
+    "pull": 58190
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR, authored by a non-team member, changes contextual typing behavior for array elements using index signatures – a nuanced area of type inference and contextual typing that is too complex for external contributions without team guidance.",
+    "pull": 58288
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR touches JSDoc stripping in declaration emit and the downstream dts bundler, a nuanced area of comment parsing and emit about private/internal symbols. Changes here are too intricate for a non-team member contribution and require deeper TypeScript compiler expertise.",
+    "pull": 58187
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR is from a non–team member and touches the internal type‐checker’s propagation of object flags when spreading, a complex area (control‐flow analysis/flag propagation) that the team handles.",
+    "pull": 58180
+  },
+  {
+    "reason": "dropped",
+    "explanation": "This is a real bug‐fix in the inference engine that team members have reviewed positively and no one has asked to close it. It isn’t marked as unneeded, breaky, or pure design discussion, so it should stay open.",
+    "pull": 54183
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR is from a non-team member and modifies TypeScript’s control-flow and return type checking semantics by allowing implicit undefined returns when the contextual return type is a union including undefined. Changes in this area are considered too complex for community contributions without core-team guidance.",
+    "pull": 57912
+  },
+  {
+    "reason": "unreviewed",
+    "explanation": "Team member follow-up improving performance; no indications it’s unneeded, breaky, or design-questionable.",
+    "pull": 58920
+  },
+  {
+    "reason": "keep",
+    "explanation": "This is a team-authored bug fix for JSDoc @implements parsing with appropriate tests and minimal API impact. No objections or breakage concerns have been raised.",
+    "pull": 58904
+  },
+  {
+    "reason": "breaky",
+    "explanation": "This change defers processing of generic functions returning intersected function types, which has been shown to break existing code (e.g. the reselect example). Because it introduces a breaking change in inference behavior, it should be closed.",
+    "pull": 58875
+  },
+  {
+    "reason": "design",
+    "explanation": "This change is centered on design-level decisions about enabling build provenance in CI—choosing between npm flags, custom actions, and handling Node/NPM versions—rather than a straightforward implementation or a fix that can be closed as unneeded.",
+    "pull": 59013
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR touches the compiler’s discriminated union and control-flow analysis logic (typeRelatedToDiscriminatedType) and is authored by a non-team member, making it too complex for external contributions under current policy.",
+    "pull": 59077
+  },
+  {
+    "reason": "dropped",
+    "explanation": "This is an external bug-fix for organizeImports with active feedback from a core team member (iisaduan). There’s no indication it’s unneeded or that it breaks existing behavior beyond the intended fix, and it’s not a prolonged design discussion locking it down. It should remain open while the requested change is resolved.",
+    "pull": 58986
+  },
+  {
+    "reason": "unreviewed",
+    "explanation": "This is a straightforward fix by a team member for an uncommitted bug, with no review feedback indicating issues; no need to close.",
+    "pull": 59099
+  },
+  {
+    "reason": "keep",
+    "explanation": "This PR is from a team member and addresses a bugfix in the refactor service with appropriate tests and reviews. No indications it should be closed.",
+    "pull": 59140
+  },
+  {
+    "reason": "design",
+    "explanation": "The PR introduces a new `satisfies keyof` assertion syntax and there’s ongoing discussion around the semantic overload of `satisfies`, potential alternative syntax (e.g. a `deferred` operator), and whether it should apply more broadly. These are higher-level design questions that need resolution before proceeding.",
+    "pull": 58829
+  },
+  {
+    "reason": "design",
+    "explanation": "Team members have raised concerns about the semantics of `createNodeArray` and whether we should be splitting it into separate create/update operations rather than wholesale replacement. The scope of changes is driven by design discussions rather than a self‐contained fix.",
+    "pull": 59135
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR is from a non-team member and makes sweeping changes to AST node structures (monomorphism), touching core compiler internals with no team review. Such changes are too complex for an external PR.",
+    "pull": 59190
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR is from a non-team member and modifies core compiler utilities around signatures, a complex area related to type instantiation/inference that is best handled by the team.",
+    "pull": 59192
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR from a non-team member makes extensive changes to core compiler logic (checker and utilities) around monomorphism of types, which is a complex area typically handled by the TypeScript team rather than external contributors.",
+    "pull": 59191
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR is from a non-team member and modifies control-flow analysis (narrowing for aliased optional chains), which is too intricate for external contributions.",
+    "pull": 59153
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR, authored by a non-team member, makes non-trivial changes to control-flow analysis (type predicate inference) in checker.ts. Changes in this area are too complex for external contributions without team ownership.",
+    "pull": 58154
+  },
+  {
+    "reason": "dropped",
+    "explanation": "This is an internal experiment by a team member addressing literal type inference, with no substantive objections or design blockers—keep it open for further iteration.",
+    "pull": 59233
+  },
+  {
+    "reason": "unreviewed",
+    "explanation": "This is a team-authored PR addressing an uncommitted bug, with no negative feedback or design issues raised—no basis for closing.",
+    "pull": 59244
+  },
+  {
+    "reason": "dropped",
+    "explanation": "This is a team-authored performance optimization PR with active discussions on implementation details, and no indication that it should be closed.",
+    "pull": 59106
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR comes from a non–team member and makes sweeping changes to the built-in Intl library definitions in lib.d.ts, including type renames, removals, and refactors. Changes to standard library typing are too complex to accept as a community PR without TypeScript team guidance.",
+    "pull": 58084
+  },
+  {
+    "reason": "dropped",
+    "explanation": "This PR implements a fix for two open issues by unwrapping substitution types early in getPropertyTypeForIndexType, has positive feedback from team members (weswigham and ahejlsberg), and the requested changes have been applied. It’s not unneeded, breaky, or purely design-level, so it should remain open for merging.",
+    "pull": 57113
+  },
+  {
+    "reason": "complex",
+    "explanation": "This external PR makes nontrivial changes to the checker’s spread element-wise elaboration and error reporting logic — a core, complex area of control-flow analysis. Such fixes require deeper team ownership and design alignment to land safely.",
+    "pull": 52850
+  },
+  {
+    "reason": "complex",
+    "explanation": "This change touches core type resolution logic (avoiding circularity in static property contextual typing) and was submitted by a non-team member. Such control-flow/type-instantiation fixes are too complex to accept without a team-led design discussion.",
+    "pull": 59274
+  },
+  {
+    "reason": "unneeded",
+    "explanation": "Core contributors have measured no meaningful performance improvement—this change isn’t providing a measurable benefit and isn’t needed.",
+    "pull": 58551
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR, authored by a non-team member, modifies the compiler’s type instantiation and overload-selection logic—areas considered too complex for external contributions without core team guidance.",
+    "pull": 51695
+  },
+  {
+    "reason": "design",
+    "explanation": "The PR raises design questions about the switch from readonly properties to methods (as pointed out by DanielRosenwasser), indicating the need for a deeper discussion of the intended semantics rather than a simple code change.",
+    "pull": 59326
+  },
+  {
+    "reason": "complex",
+    "explanation": "The PR is from a non-team member and makes changes to the type checker’s handling of missing type arguments and error-type instantiation/printing—a highly complex area not appropriate for external contributions without team coordination.",
+    "pull": 59297
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR, authored by a non-team member, modifies the compiler’s type-checking logic (accessibility checks for protected properties on union types), which falls under our control-flow/type-checking domain. Such changes are considered too complex for external contributors and require deeper team review.",
+    "pull": 59302
+  },
+  {
+    "reason": "dropped",
+    "explanation": "This is a bug‐fix PR by a team member addressing strictNullChecks inconsistencies in control‐flow on unconstrained type parameters. There’s active discussion but no objections to the fix or indications it’s unneeded, breaky, or purely design work. It should remain open.",
+    "pull": 59059
+  },
+  {
+    "reason": "unreviewed",
+    "explanation": "This is a bug fix from a team member (Anders Hejlsberg) for an uncommitted control-flow generic types issue. There are no objections or indications it should be closed.",
+    "pull": 59415
+  },
+  {
+    "reason": "complex",
+    "explanation": "This is a non–team‐member PR that modifies lib declarations and control‐flow/type‐narrowing semantics for Array.isArray. Changes to standard library types and core narrowing behavior are too complex for an external contributor to land without a deeper design and implementation review by the team.",
+    "pull": 48228
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR is from an external contributor and makes non-trivial changes to type instantiation and canonical signature logic in checker.ts, which falls under the complex areas reserved for team members.",
+    "pull": 59409
+  },
+  {
+    "reason": "design",
+    "explanation": "The PR centers on the semantics and design of diagnostic messages for out-of-scope labels (how to phrase the error, where to point related information, etc.), and it has been repeatedly restructured and discussed rather than moving forward with a concrete implementation.",
+    "pull": 54927
+  },
+  {
+    "reason": "unreviewed",
+    "explanation": "This is a straightforward bug fix by a community member updating the completions service and adding tests. There are no comments or design concerns, and it does not touch the areas marked as too complex for non-team contributors.",
+    "pull": 59424
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR is from a non-team member and involves deep changes to the checker’s overload selection and contextual return‐type inference logic in async generics—a complex area unsuitable for external contributions without core design approval.",
+    "pull": 59290
+  },
+  {
+    "reason": "complex",
+    "explanation": "This change affects the compiler’s union subtype reduction logic (control-flow/type-checker internals) and comes from a non-team member, making it too intricate for external contributions.",
+    "pull": 59448
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR, authored by a non-team member, modifies control-flow analysis logic for switch-true case-true narrowing. Changes in this area are complex and typically require deeper review from the TypeScript team.",
+    "pull": 59459
+  },
+  {
+    "reason": "unneeded",
+    "explanation": "A core team member (andrewbranch) has reviewed this and concluded that the proposed change isn’t worth the complexity it adds, and even suggests that it may introduce breakages when down-leveling to ES5. There’s no consensus on accepting this fix as-is.",
+    "pull": 58990
+  },
+  {
+    "reason": "breaky",
+    "explanation": "A team member (DanielRosenwasser) points out that this change would be a breaking change for code that uses JSX elements named like generic type names (e.g. `<Formatted>() => …</Formatted>`). The discussion also raises potential exponential‐time parsing issues, so this PR introduces breaking behavior and performance concerns.",
+    "pull": 59485
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR is from a non-team member and makes changes to the standard library (es5.d.ts), which is considered too complex for external contributions under our policy.",
+    "pull": 59536
+  },
+  {
+    "reason": "breaky",
+    "explanation": "This change alters package.json exports resolution in type reference directives and is explicitly marked as a Breaking Change. The author even notes it may be “too breaky as-is,” indicating it will break existing code.",
+    "pull": 58638
+  },
+  {
+    "reason": "keep",
+    "explanation": "A team member has requested changes to use `nodeOrChildIsDecorated` and update from main. The PR is awaiting those updates, so it should be kept open rather than closed.",
+    "pull": 53772
+  },
+  {
+    "reason": "breaky",
+    "explanation": "This change removes the existing special‐case for nullable types when checking `===` compatibility and has already been shown to introduce a large number of breaking errors across real‐world codebases. Such a behavior‐changing refactor would require an opt‐in flag or a broader design discussion before it can land safely.",
+    "pull": 59559
+  },
+  {
+    "reason": "keep",
+    "explanation": "This PR addresses a backlog bug, is approved by a team member (RyanCavanaugh), and makes a straightforward library change with updated tests. It should be kept open.",
+    "pull": 59567
+  },
+  {
+    "reason": "dropped",
+    "explanation": "This is an experimental change authored by a team member with no reviewers indicating it should be closed. It addresses variance consistency and has ongoing discussion but no consensus to abandon it.",
+    "pull": 55222
+  },
+  {
+    "reason": "unneeded",
+    "explanation": "A TypeScript team member (sheetalkamat) requested changes, stating that the change is incorrect and that this API cannot be used to parse build mode, indicating the fix is unsuitable.",
+    "pull": 59605
+  },
+  {
+    "reason": "unreviewed",
+    "explanation": "There are no team reviews objecting or design discussions indicating this should be closed. The change is a minor optimization with no breaking effects or outstanding design issues.",
+    "pull": 59610
+  },
+  {
+    "reason": "unneeded",
+    "explanation": "The issue this PR attempts to address was already fixed in PR #53549; this only adds an extra test case and isn’t needed to resolve the variance check problem again.",
+    "pull": 59607
+  },
+  {
+    "reason": "unreviewed",
+    "explanation": "This is a team-authored PR addressing an uncommitted bug with appropriate tests and no objections; it should remain open.",
+    "pull": 49245
+  },
+  {
+    "reason": "unreviewed",
+    "explanation": "This is a team-member authored performance improvement PR with pending change requests but no indication it should be closed or is otherwise unneeded, breaky, or off-design.",
+    "pull": 48388
+  },
+  {
+    "reason": "dropped",
+    "explanation": "This is an experimental, team-authored workaround for a known uncommitted bug (crash due to the 2**24 element limit). No one has suggested it’s unnecessary or broken, and it’s still under active discussion and review rather than ready for closure.",
+    "pull": 50310
+  },
+  {
+    "reason": "unreviewed",
+    "explanation": "This is a bug‐fix PR authored by a TypeScript team member (weswigham) with no negative feedback or design concerns. It addresses a specific issue and adds appropriate tests, so there’s no reason to close it.",
+    "pull": 50777
+  },
+  {
+    "reason": "dropped",
+    "explanation": "This is a substantial, team-authored overhaul of overload and generic inference that addresses uncommitted bug work. There are productive code‐review comments but no maintainers calling it unneeded, breaky, or design–only, and the ‘complex’ category only applies to external PRs changing core inference. It should remain open for continued iteration.",
+    "pull": 52944
+  },
+  {
+    "reason": "unreviewed",
+    "explanation": "This is an experimental PR by a team member with no reviews indicating it should be closed; it can remain open for further evaluation.",
+    "pull": 54047
+  },
+  {
+    "reason": "dropped",
+    "explanation": "This is a team-authored fix addressing an uncommitted variance‐calculation bug. It’s deliberate and necessary despite being a break change, so it should be kept.",
+    "pull": 55864
+  },
+  {
+    "reason": "dropped",
+    "explanation": "This is a team-authored PR introducing a new lint rule to keep CompilerOptions and commandLineParser in sync. It doesn’t break existing behavior, and there’s no call to close or deem it unneeded.",
+    "pull": 58312
+  },
+  {
+    "reason": "complex",
+    "explanation": "This is an experimental implementation by a non-team member that alters standard library generator types and spread tuple inference in the checker, which falls into complex changes reserved for the core team.",
+    "pull": 59627
+  },
+  {
+    "reason": "design",
+    "explanation": "The PR touches a broad semantic area around how undefined checks are detected and raises questions about the intended behavior of the type system rather than fixing a clear implementation bug. The discussion is focused on design and user expectations of nullable checking, so it should continue in issue/design discussions rather than be merged as-is.",
+    "pull": 59585
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR is from a non-team member and involves complex compiler checker logic around node reuse and diagnostic context, which falls under changes too intricate for external contributions.",
+    "pull": 59619
+  },
+  {
+    "reason": "complex",
+    "explanation": "The PR is authored by a non-team member and makes significant changes to type inference and the checker/emitter for destructured parameters in type predicates, a complex area of control-flow analysis and declaration emit. Such changes require deeper team involvement.",
+    "pull": 59501
+  },
+  {
+    "reason": "keep",
+    "explanation": "The PR is authored by a team member and addresses a clear ESM/CJS interop issue with .d.ts files. There’s no indication it should be closed – it’s a valid change under discussion.",
+    "pull": 59622
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR is from a non-team member and makes changes to contextual signature inference (a complex area involving control-flow/type instantiation). Such fixes are too intricate for external contributions and should be handled by the core team.",
+    "pull": 59672
+  },
+  {
+    "reason": "breaky",
+    "explanation": "This change corrects missing JSX.Element errors but introduces new errors in existing code (e.g. Stencil), requiring downstream patches. The ‘breaks’ noted in comments indicate it breaks existing programs.",
+    "pull": 59584
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR, authored by a non-team member, modifies core type inference logic (covariance vs. contravariance) in checker.ts—a complex area reserved for team contributions.",
+    "pull": 59709
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR, authored by a non-team member, makes changes to control-flow analysis and type narrowing for destructured variables—a highly complex area reserved for core team approval.",
+    "pull": 59745
+  },
+  {
+    "reason": "design",
+    "explanation": "This PR is a proof-of-concept that introduces origin tracking for string literals in go-to-definition, and there’s extensive discussion around inconsistent behaviors, missing cases, and trade-offs in semantics and performance. It’s primarily a design discussion that needs team consensus before proceeding.",
+    "pull": 57729
+  },
+  {
+    "reason": "dropped",
+    "explanation": "This is a team‐authored performance optimization with no objections or blockers raised. It doesn’t introduce breakage or major design questions, so the PR should be kept open.",
+    "pull": 59759
+  },
+  {
+    "reason": "keep",
+    "explanation": "This is a straightforward team-authored bug fix with only minor style suggestions from reviewers and no indications of being unneeded, breaky, or requiring broader design discussion.",
+    "pull": 59719
+  },
+  {
+    "reason": "keep",
+    "explanation": "This PR fixes a legitimate parser bug (nested ‘in’ in a for initializer) and has been approved by team member Daniel Rosenwasser. It should be kept.",
+    "pull": 59748
+  },
+  {
+    "reason": "design",
+    "explanation": "There’s substantial discussion about the semantics and design of integrating a new `beforeDeclarations` transformer. The current declaration transformer assumes original AST node provenance (e.g. reliable `.parent` pointers), so the PR would require broader design changes and additional resilience and tests rather than a straightforward implementation.",
+    "pull": 58879
+  },
+  {
+    "reason": "unreviewed",
+    "explanation": "This PR implements a targeted fix for string literal completions in switch-case clauses with `as const`. There are no indications of breakage, design debates, or objections, and no team member has flagged it as unnecessary. It can remain open for review and merge.",
+    "pull": 59802
+  },
+  {
+    "reason": "unreviewed",
+    "explanation": "This PR implements a valid editor feature (template-literal completions) with tests and passes reviews; there’s no indication it’s unneeded, breaky, or purely a high-level design discussion, so it should be kept open.",
+    "pull": 59794
+  },
+  {
+    "reason": "design",
+    "explanation": "This PR is addressing a semantic/design question about which JSDoc tags should or shouldn’t be returned in quick info, and the author even suggests deferring it to a broader issue (57819). It’s not a clear-cut bugfix but a design discussion for backlog work.",
+    "pull": 59816
+  },
+  {
+    "reason": "unreviewed",
+    "explanation": "This PR is a straightforward bug fix for JSDoc flow node binding with no team objections or design concerns raised. It adds appropriate tests and aligns with the backlog bug label.",
+    "pull": 59817
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR alters the core symbol lookup logic and binder/checker behavior for expando properties in nested blocks—a sophisticated change to the compiler’s control-flow and symbol resolution. As it’s from an external author and touches complex compiler internals, it should be closed.",
+    "pull": 59828
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR is from an external contributor and makes changes to the compiler’s core type‐checking logic for distributing mapped types over intersections with array/tuple members—a complex area of the type system that only a TypeScript team member should tackle.",
+    "pull": 59864
+  },
+  {
+    "reason": "complex",
+    "explanation": "The PR, authored by a non-team member, modifies core type-checker logic for variadic tuple normalization and handling of reduced never types. Changes to tuple instantiation and normalization are too complex for community contributions without deeper team involvement.",
+    "pull": 59866
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR is from a non-team member and implements a new Stage 1 language feature (the `call-this` operator), touching parser, checker, emitter, services, and standard library types. Changes of this magnitude in core language semantics and libraries are too complex for an external contribution and require deeper internal design and consensus.",
+    "pull": 58294
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR, from an external contributor, modifies contextual typing and boolean literal inference logic in checker.ts and related tests—a complex area of the type system and control-flow analysis. Such deep changes are reserved for team members.",
+    "pull": 59898
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR modifies excess property checking behavior in the compiler’s type checker for generic mapped types, which is a complex area of control-flow analysis and type instantiation. Such changes from non-team members are discouraged due to the high risk of unintended breakages.",
+    "pull": 59901
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR is from a non–team member and modifies core type inference logic (filtering contextual return type inferences), an area too complex for external contributions without direct team oversight.",
+    "pull": 58910
+  },
+  {
+    "reason": "unreviewed",
+    "explanation": "This PR only adds tests for JSDoc parsing and does not change compiler logic, introduce breaking changes, or raise design concerns.",
+    "pull": 59903
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR from a non-team member makes deep changes to the checker’s conditional‐type instantiation logic (nested conditional types, circularity detection, extraTypes tracking), a core and complex area of the compiler internals that we don’t accept unvetted contributions against.",
+    "pull": 59886
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR modifies the core type checker’s behavior for generic mapped type optionality—a complex type-system change made by a non-team member.",
+    "pull": 59921
+  },
+  {
+    "reason": "complex",
+    "explanation": "This draft PR is from a non-team member and makes significant changes to the parser and AST types to support import.meta.resolve – it touches incremental parsing/type syntax, which is considered too complex for an external contribution without core-team guidance.",
+    "pull": 59945
+  },
+  {
+    "reason": "design",
+    "explanation": "This PR makes changes to the standard-library Iterator.from signature and the author is deeply questioning the intended semantics (whether propagating the wrapped iterator’s return value is an implementation side-effect or by design). There’s no team consensus yet on the design intent, so this is a design discussion rather than a straightforward bug fix.",
+    "pull": 59927
+  },
+  {
+    "reason": "complex",
+    "explanation": "This is a non‐team member’s large experiment that restructures core compiler data structures (AST node shapes, type/signature internals) to optimize monomorphism. Changes at this level are too deep and interleaved with JS engine–specific performance assumptions—only core team members can safely drive such fundamental internal redesigns.",
+    "pull": 58928
+  },
+  {
+    "reason": "dropped",
+    "explanation": "This is an internal optimization PR by a TypeScript team member with only implementation-level feedback; there’s no indication it should be closed.",
+    "pull": 59954
+  },
+  {
+    "reason": "design",
+    "explanation": "Core team members have raised semantic/design concerns—specifically around eliding destructuring and its effects on proxies/getters—and there’s no consensus on the intended behavior. This is a design question that needs resolution before merging.",
+    "pull": 59893
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR is from a non-team member and makes changes to JSDoc parsing semantics (`@template` with `@overload`), which falls under our complex areas reserved for core team contributors.",
+    "pull": 59983
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR is from a non-team member and modifies core type‐checker logic for mapped type parameter constraints, which is too complex for external contributions.",
+    "pull": 59995
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR, authored by a non-team member, makes changes to the checker’s handling of abstract constructor assignability and instantiation, affecting core type relation and overload resolution logic. Such work is too intricate for external contributors and requires deep knowledge of the compiler’s type system internals.",
+    "pull": 60000
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR, authored by a non-team member, makes substantive changes to the compiler’s core type-checking (simplification of indexed access over intersections). Such deep changes to type inference and control-flow analysis are too complex to accept without deeper team involvement.",
+    "pull": 60021
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR implements a new JSDoc tag and modifies the parser, checker, and services around JSDoc parsing—a core, complex subsystem. As a non-team member contribution in this area, it’s too complex to merge without a team-led design and review.",
+    "pull": 59666
+  },
+  {
+    "reason": "design",
+    "explanation": "The change raises open questions about the desired formatting semantics for semicolons on new lines (including test coverage and how it interacts with the `semicolons` option). There’s ongoing discussion but no settled design decision, so this should be held until the formatting behavior is clearly specified.",
+    "pull": 59736
+  },
+  {
+    "reason": "unreviewed",
+    "explanation": "This is a team-authored PR addressing an uncommitted bug (excess property checks for inline spreads). There are no closure requests or blocking design/compatibility concerns noted, so it should be kept open.",
+    "pull": 59277
+  },
+  {
+    "reason": "unreviewed",
+    "explanation": "This is a team-member PR addressing an uncommitted bug with no reviews suggesting closure. It should remain open.",
+    "pull": 59646
+  },
+  {
+    "reason": "design",
+    "explanation": "This PR entails a semantic change to how protected member accessibility is handled within classes, and there’s active discussion about the design and expected behavior. It needs further design review rather than a straightforward code fix.",
+    "pull": 60001
+  },
+  {
+    "reason": "complex",
+    "explanation": "The PR modifies the compiler’s type inference logic for annotated parameters with initializers, which falls under generic type parameter inference—an area too complex for non-team contributions without core team guidance.",
+    "pull": 57708
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR is from a non-team member and makes broad changes to the type system—introducing generics in type parameters touches parsing, checker logic, factory code, and inference. Such changes are too complex to merge without extensive design review and team ownership.",
+    "pull": 60089
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR is from an external contributor and makes non-trivial changes to the type checker’s handling of mapped types with array/tuple intersection constraints – a core, complex area of the type system. Such deep generic and constraint logic changes are reserved for team members to maintain safety and consistency.",
+    "pull": 60084
+  },
+  {
+    "reason": "keep",
+    "explanation": "This PR fixes a specific issue in the moveToFile refactoring and has only routine change requests (test location, naming, merge with main). It’s not unneeded, doesn’t introduce breaking changes, and isn’t touching deep compiler or typing logic, so it shouldn’t be closed.",
+    "pull": 59132
+  },
+  {
+    "reason": "complex",
+    "explanation": "This large WIP PR from a non-team member makes extensive changes to type acquisition and module resolution in the compiler and tsserver—areas that are considered too complex for external contributors to modify without core team involvement.",
+    "pull": 56074
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR, authored by a non-team member, makes changes to the compiler’s control‐flow analysis (narrowing of optional chains). Such core control‐flow fixes are considered too complex for non-team members.",
+    "pull": 60120
+  },
+  {
+    "reason": "unreviewed",
+    "explanation": "This is an experimental, in-progress API redesign by a core team member to test a new slim AST approach. There are no indications it should be closed at this stage.",
+    "pull": 59992
+  },
+  {
+    "reason": "unreviewed",
+    "explanation": "This is an active work-in-progress from a TypeScript team member with no indication it should be closed; it’s still under development and testing.",
+    "pull": 55968
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR from a non-team member dives into JSX excess property checking in the checker, a core type-checking path. Changes to control-flow/excess-property logic are complex and generally reserved for TypeScript team members.",
+    "pull": 56989
+  },
+  {
+    "reason": "keep",
+    "explanation": "This is a small bug fix touching quick-info binding-pattern behavior with no reported objections or design debates; it should be kept open.",
+    "pull": 60171
+  },
+  {
+    "reason": "unreviewed",
+    "explanation": "This PR is a straightforward feature addition for tsserver that includes explicit extra file extensions. There’s no team objection, no design debate, and it doesn’t introduce breaking changes or touch deeply complex type‐system logic. It can be left open for further review and merging.",
+    "pull": 60178
+  },
+  {
+    "reason": "unreviewed",
+    "explanation": "This PR is a bug fix addressing destructured nullables with added tests and no team members have requested closure; it should remain open for review.",
+    "pull": 60121
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR is from a non–team member and makes intricate changes to control-flow analysis and type predicate inference (assertion predicates). Per team policy, such deep changes in inference and checker logic are too complex to accept from external contributors.",
+    "pull": 58495
+  },
+  {
+    "reason": "breaky",
+    "explanation": "A team member (rbuckton) pointed out that adding well-known symbols for ReadonlyMap/ReadonlySet isn’t aligned with ECMAScript and will break existing code (e.g. DeoptExplorer), so this change is too breaky to accept.",
+    "pull": 60142
+  },
+  {
+    "reason": "unreviewed",
+    "explanation": "This PR is a straightforward refactor that introduces reusable helper functions without changing behavior or raising design/performance concerns.",
+    "pull": 60205
+  },
+  {
+    "reason": "unreviewed",
+    "explanation": "This PR only refines diagnostic text for unsupported future ES versions and does not introduce design debates, break existing behavior, or touch complex type system areas. No team member objections are present.",
+    "pull": 60219
+  },
+  {
+    "reason": "complex",
+    "explanation": "This change comes from a non-team member and modifies core type-system behavior (unwrapping NoInfer in the checker and completion logic), which is a complex area (type instantiation and inference) not suited for external contributors without deeper coordination.",
+    "pull": 60271
+  },
+  {
+    "reason": "dropped",
+    "explanation": "This is a bug‐fix pull request authored and reviewed by team members, addressing auto‐import of aliased exports. It’s been approved with no indication it should be closed or is unneeded, breaky, or purely design-level.",
+    "pull": 60260
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR, authored by a non-team member, makes changes to the core type-checking logic for JSX spreads in checker.ts (part of our excess property and attribute override checking). Changes in these areas are complex and reserved for team members.",
+    "pull": 60349
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR comes from a non-team member and makes complex changes to internal checker logic and completions (contextual typing/discrimination of tuple unions). Such deep changes to the type‐checking/completions engine require core team involvement to ensure correctness and maintainability.",
+    "pull": 58571
+  },
+  {
+    "reason": "unreviewed",
+    "explanation": "This is a small optimization authored by a team member with no outstanding design concerns, breakages, or review feedback indicating it should be closed.",
+    "pull": 60371
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR, authored by a non–TypeScript team member, makes changes to predicate semantics (always-truthy checks for BigInt and numeric unary expressions), which falls under control-flow analysis. Such changes are considered too complex for external contributors and are reserved for core team members.",
+    "pull": 60324
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR from a non–team member changes how NoInfer’d tuple types are handled in rest/spread positions, touching core type-inference logic. Per our policy, fixes in inference/instantiation are too complex for external contributions and should be closed.",
+    "pull": 59682
+  },
+  {
+    "reason": "keep",
+    "explanation": "This PR addresses an uncommitted bug by adding string literal completions for flow properties, has no objections from team members, doesn’t introduce breaking changes, and resolves merge conflicts. It should be kept open.",
+    "pull": 59815
+  },
+  {
+    "reason": "unreviewed",
+    "explanation": "This is a team-authored bug fix for promise inference, currently in draft with ongoing review comments. It’s a valid change and should remain open.",
+    "pull": 60334
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR, authored by a non-team member, makes changes to core checker logic for using declarations in for–of statements, affecting control-flow and type-checking behavior. Changes in these areas are considered too complex for non-team contributions and should be handled by the core team.",
+    "pull": 60354
+  },
+  {
+    "reason": "dropped",
+    "explanation": "This PR fixes a backlog bug in the parser’s top-level await handling, adds appropriate tests, and has been reviewed and approved by team members. It should be kept.",
+    "pull": 59788
+  },
+  {
+    "reason": "unneeded",
+    "explanation": "A TypeScript team member has already indicated they’re not in favor of adding a new \"clean\" mode for --init (new modes don’t help here), so this change is unsuitable as proposed.",
+    "pull": 60407
+  },
+  {
+    "reason": "unreviewed",
+    "explanation": "This is a small, team-authored fix for an uncommitted bug using existing utilities. No objections or design issues have been raised.",
+    "pull": 60436
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR, submitted by a non-team member, adjusts union call signature resolution—a core aspect of the type system (callable unions, signature intersection)—which is too complex for external contributions. Such changes require internal design review and deeper familiarity with TS’s checker logic.",
+    "pull": 60458
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR involves non-team-member changes to the core parser’s look-ahead logic (handling `type` in `as`/`satisfies` assertions), which falls under the policy’s complex parsing category and should be closed for a team member to address.",
+    "pull": 58712
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR comes from a non–TypeScript team member and makes sweeping, complex changes to standard library types (introducing generic RegExp types), checker logic, scanner logic, and hundreds of tests. Changes of this magnitude around type instantiation and library typings are too intricate for an external contributor and should be closed until a core team member authors or sponsors a refined design.",
+    "pull": 60249
+  },
+  {
+    "reason": "design",
+    "explanation": "This change involves extensive discussion around the semantics of callback analysis (immediate vs deferred execution), flags, modifiers, defaults, and performance trade-offs. The thread is focused on design decisions rather than a straightforward bug fix or API tweak.",
+    "pull": 58729
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR is from a non-team member and modifies standard library type definitions (changing the return type of RegExp.prototype[Symbol.matchAll]), which falls into changes that are too complex to approve without core team review.",
+    "pull": 60516
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR is from a non-team member and modifies control-flow analysis in the compiler’s type checker (removing getNonNullableType in checkIdentifier), which is a complex subsystem that requires core team oversight.",
+    "pull": 60523
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR, authored by a non–team member, makes nontrivial changes to the compiler’s core type‐normalization logic for enums and union types (enum literal identity), an area that’s considered too complex to safely accept without deeper team involvement.",
+    "pull": 60417
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR comes from a non-team member and makes substantial changes to the compiler’s declaration-emit logic (extracting tuple types from array literals within isolated modules). Changes to core compiler behaviour and emit logic are too complex to accept without significant team review.",
+    "pull": 60558
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR, authored by a non-team member, modifies core type‐instantiation logic in checker.ts (contextual signature instantiation and `nonFixingMapper`). Changes to the compiler’s inference and instantiation algorithm are too complex to accept without a team-driven design process.",
+    "pull": 60557
+  },
+  {
+    "reason": "unreviewed",
+    "explanation": "This is a straightforward bug-fix PR from an external contributor with no reviews indicating it’s unneeded, breaky, or requiring deeper design discussion. It doesn’t touch the specific complex areas reserved for team members, so no special classification applies.",
+    "pull": 60574
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR is from a non-team member and introduces significant changes to core type-checking logic (tuple element extraction and circular reference handling). Changes to the compiler’s internal type system are considered too complex for non-team member contributions.",
+    "pull": 60584
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR is from a non-team member and makes changes to the compiler’s type-checking logic (index type deferral on generic mapped types with name types), which is a complex area (involving type instantiation and control-flow analysis) typically reserved for core team contributors.",
+    "pull": 60528
+  },
+  {
+    "reason": "unreviewed",
+    "explanation": "This PR fixes a specific crash in goToDefinition for computed-name members with override modifiers and adds corresponding tests. There are no indications it’s unneeded, breaks existing behavior, or involves complex type-system changes requiring core team review.",
+    "pull": 60631
+  },
+  {
+    "reason": "unreviewed",
+    "explanation": "This is a draft codefix proposal with no team-member feedback indicating it’s unneeded, breaky, or a design problem. It can remain open for review and completion.",
+    "pull": 60642
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR, authored by a non-team member, alters core checker logic for type parameter inference and handling of substitution/template literal types—areas considered too complex for external contributions without deep team oversight.",
+    "pull": 60643
+  },
+  {
+    "reason": "complex",
+    "explanation": "This is a non-team-member PR that makes deep changes to contextual typing and inference logic for class fields, which is considered too complex for external contributions without team guidance.",
+    "pull": 60395
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR, authored by a non-team member, modifies core checker logic in TypeScript (mapped type key extraction in checker.ts), touching intricate areas of type instantiation and control-flow analysis. Changes in these subsystems are considered too complex for external contributions.",
+    "pull": 57838
+  },
+  {
+    "reason": "dropped",
+    "explanation": "This is an active team-authored bugfix with ongoing design discussion and no indications that it should be closed.",
+    "pull": 60039
+  },
+  {
+    "reason": "unreviewed",
+    "explanation": "This is a team-member fix for an uncommitted bug—restoring a necessary workflow dispatch—so it should be kept open.",
+    "pull": 60682
+  },
+  {
+    "reason": "complex",
+    "explanation": "This large feature PR by a non-team member makes extensive changes to JSDoc parsing, compiler internals, services, and the TS API. These areas are complex and require core team review and design alignment before acceptance.",
+    "pull": 60269
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR makes non-trivial changes to the checker’s indexed access relation logic (a core part of type instantiation and mapped type handling) and comes from a non-team member. Such deep changes to the type system are deemed too complex to accept as-is without full team stewardship.",
+    "pull": 60678
+  },
+  {
+    "reason": "complex",
+    "explanation": "The PR makes deep changes to control-flow generic types, type instantiation, and satisfy semantics—areas that are marked as too complex for non-team members' contributions without prior design approval.",
+    "pull": 60710
+  },
+  {
+    "reason": "unreviewed",
+    "explanation": "This is a spec-compliance tweak by a team member to freeze template objects and improve reliability; there’s no objection or breakage concern in reviews that warrants closing.",
+    "pull": 51806
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR makes changes to the compiler’s type-checking logic (`hasExcessProperties`) under `exactOptionalPropertyTypes`, a core, complex area of control-flow and type inference, and is authored by a non-team member. Such changes require deeper team review.",
+    "pull": 60716
+  },
+  {
+    "reason": "breaky",
+    "explanation": "This change alters control-flow for computed property accesses in for-loops, causing previously un-narrowed ‘any’ (e.g. c[i] where c is any) to be narrowed and thus no longer assignable in existing code, as noted in the author’s break example.",
+    "pull": 60715
+  },
+  {
+    "reason": "design",
+    "explanation": "This PR is primarily a test case for the as-yet uncommitted bug #50762 and includes extensive discussion about the intended resolution semantics for `\"types\": null`. There’s no clear decision to close or merge yet, and the thread is centered on design and semantic questions rather than an implementation fix.",
+    "pull": 54096
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR is from a non–TypeScript team member and makes broad changes to core compiler behavior for object literal type extraction, touching type instantiation and declaration emit logic. Those areas are too complex for external contributors without prior design alignment.",
+    "pull": 60540
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR is from a non-team member and makes substantial changes to the compiler’s type inference system (indexed access inference, reverse‐mapped types, inference aggregation). Such core inference work is too complex for external contributions and risks subtle breakages and design inconsistencies.",
+    "pull": 53017
+  },
+  {
+    "reason": "complex",
+    "explanation": "The PR alters core compiler logic for type parameter inference and constraint handling—changes in this complex area are typically deferred to TypeScript team members.",
+    "pull": 60345
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR, authored by an external contributor, modifies internal compiler diagnostics and error-span logic in the type checker/utilities – a complex area reserved for core team members.",
+    "pull": 60799
+  },
+  {
+    "reason": "unreviewed",
+    "explanation": "This is a straightforward community fix for a Backlog bug that narrows the error span for arrow functions. It adds tests, has no review objections, and doesn’t touch any high-risk compiler subsystems.",
+    "pull": 60809
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR makes changes to the core narrowing logic for generic types constrained to `unknown`, touching complex parts of the type-checker (control-flow analysis, conditional type resolution). Such changes from a non-team member are too intricate without deeper internal review.",
+    "pull": 60816
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR, authored by an external contributor, modifies core control-flow predicate semantics to handle comma expressions. Changes to compiler analysis logic in this area are complex and require team review before merging.",
+    "pull": 60830
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR (from an external contributor) makes deep changes to discriminated-union logic and control-flow analysis in the checker (isDiscriminantProperty, union property reduction, new CheckFlags, etc.). Per project policy, these areas are considered too complex for non-team members to author without a formal design RFC or core-team sponsorship.",
+    "pull": 60718
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR is from a non-team member and makes changes in the control-flow analysis logic for optional chaining, which is a complex area of the checker. Such changes should be driven by TypeScript team members to ensure correctness and consistency.",
+    "pull": 59144
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR, submitted by a non-team member, makes changes deep in the checker for homomorphic mapped types and readonly inference—an area of the type system that’s too complex for external contributions without prior design alignment.",
+    "pull": 60858
+  },
+  {
+    "reason": "unreviewed",
+    "explanation": "This fixes a specific JSX namespace substitution bug with new tests, and there are no team objections or design concerns; it can proceed.",
+    "pull": 60860
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR, authored by a non-team member, modifies the compiler’s control-flow analysis for boolean expressions, which is a core and complex area of the TypeScript compiler. Such changes are reserved for team members to ensure correctness and maintainability.",
+    "pull": 60865
+  },
+  {
+    "reason": "complex",
+    "explanation": "This change touches subtle type-checker behavior (silentNeverType propagation in unions) and is from a non-team member, so it falls under ‘complex’. Non-team contributors shouldn’t make changes to core control-flow/type-system logic without team coordination.",
+    "pull": 60866
+  },
+  {
+    "reason": "breaky",
+    "explanation": "The PR changes the semantics of type identity comparisons (`isTypeIdenticalTo`), causing existing DefinitelyTyped tests (e.g. hasura, zod) to fail and requiring downstream library updates, so it breaks existing programs.",
+    "pull": 60726
+  },
+  {
+    "reason": "complex",
+    "explanation": "The PR makes changes to the checker’s excess/common property checking logic with multiple index signatures—a complex part of control-flow/type checking. Since it’s from a non-team member and touches deep type-system behavior, it should be closed for now.",
+    "pull": 60869
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR, authored by a non-team member, modifies JSDoc lookup behavior in the compiler (checker.ts/services.ts), which falls under jsdoc parsing. Per policy, these areas are too complex for external contributions.",
+    "pull": 60873
+  },
+  {
+    "reason": "unreviewed",
+    "explanation": "This PR applies a focused compiler transform fix with accompanying tests, has no reviews indicating issues, and doesn’t introduce breaking changes or design/complexity debates.",
+    "pull": 60886
+  },
+  {
+    "reason": "complex",
+    "explanation": "This change adjusts core checker logic for classifying weak types in intersections—a complex aspect of the type system that falls under control-flow/type-instantiation rules. Since it’s not from a core team member and touches the standard type-checking behavior, it should be closed.",
+    "pull": 60889
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR, authored by a non-team member, makes complex changes to the compiler’s type-checking logic for mapped types under exactOptionalPropertyTypes. Changes in these critical areas of control-flow analysis and type instantiation require deep expertise and team oversight.",
+    "pull": 60890
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR is from a non-team member and makes significant changes to the compiler’s contextual `this` typing logic in checker.ts, an area of type-analysis that is too intricate for external contributions without team oversight.",
+    "pull": 60891
+  },
+  {
+    "reason": "unreviewed",
+    "explanation": "This PR adds a focused emit fix with accompanying tests and no team objections or breakage concerns. It doesn’t fall into the unneeded, design, or breaky categories, so it should remain open.",
+    "pull": 60853
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR (from a non-team member) makes non-trivial changes to the type checker’s handling of contextual typing and reverse-mapped tuples, which involves complex type inference and control-flow analysis and is outside the scope of contributions we can accept without extensive internal review.",
+    "pull": 60901
+  },
+  {
+    "reason": "unreviewed",
+    "explanation": "This PR provides a targeted bug fix for private field errors in exported class expressions with no opposing team feedback; it can proceed as is.",
+    "pull": 60885
+  },
+  {
+    "reason": "design",
+    "explanation": "This PR is essentially a proposal around default editor behaviour rather than a code fix. The discussion centers on VS Code code-action semantics and whether autofixes on save should be applied by default. That’s a high‐level design policy question, not a change that can be merged as‐is.",
+    "pull": 60897
+  },
+  {
+    "reason": "breaky",
+    "explanation": "The changes alter type inference for predicate returns, causing some .filter calls to be inferred as a rejecting type predicate (always false), which will break existing code unless callers add explicit boolean annotations or adjust index signatures.",
+    "pull": 60834
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR is from an external contributor and makes changes to TypeScript’s generic type parameter inference and context-sensitive return inference—areas considered too complex for non-team members to modify without extensive design review.",
+    "pull": 60909
+  },
+  {
+    "reason": "dropped",
+    "explanation": "This PR fixes a Backlog bug, has received guidance from team reviewers (including using the dedicated setValueDeclaration helper), and isn’t flagged as unneeded or breaky. It’s a valid compiler change that should be kept open for final review and merge.",
+    "pull": 60857
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR, authored by a non-team member, modifies generic signature type parameter inference in checker.ts — a complex, core area of the compiler. Such changes should come from or be reviewed by the core team.",
+    "pull": 60938
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR, from a non-team member, modifies core type-checker logic for handling `silentNever` in intersections. Changes to intersection behavior and control-flow analysis are considered too complex for external contributors.",
+    "pull": 60876
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR, authored by a non-team member, introduces new JSDoc @ignore support which touches parser logic and completion filtering—essentially adding new JSDoc parsing semantics. Changes affecting JSDoc parsing and completion behavior are too complex for external contributors.",
+    "pull": 60895
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR is from a non-team member and makes deep changes to TypeScript’s type-inference algorithm (intra-expression inference for reverse mapped types), which falls into the ‘complex’ category and should be handled by core maintainers.",
+    "pull": 54029
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR (from a non-team member) makes nontrivial changes to the compiler’s type inference for mapped types (reverse mapping for filtering mapped types). Because it touches core generic inference and control‐flow logic, it’s too complex for an external contribution and should be closed.",
+    "pull": 52972
+  },
+  {
+    "reason": "unneeded",
+    "explanation": "A team member (weswigham) requested changes, calling this approach wrong and unsuitable—indicating the current fix should be reworked rather than merged as is.",
+    "pull": 60796
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR updates core type identity comparison logic in the checker—an area of the compiler’s type system that is too complex for an external contribution without deeper team review.",
+    "pull": 60868
+  },
+  {
+    "reason": "unreviewed",
+    "explanation": "This is a team-authored PR fixing an uncommitted bug, and no core member has called it unsuitable or requested it be closed. It addresses a valid type-checker enhancement and should remain open.",
+    "pull": 60433
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR, authored by a non-team member, makes changes to the checker’s type guard and control-flow logic (narrowing weak types via intersection). Modifying core type-narrowing behavior is sufficiently complex that it should come from a team member or be shepherded by the team.",
+    "pull": 58520
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR, authored by a non-team member, modifies standard library types (Intl.LocaleInfo definitions), which falls under the complex category; such changes require internal design consensus and are too intricate for an external contributor to merge directly.",
+    "pull": 60656
+  },
+  {
+    "reason": "design",
+    "explanation": "This PR proposes a semantic change to how generic types participate in nullability checks and comparison operations—a design-level change that requires consensus on whether intended behavior (and resulting breakages) are acceptable. Discussion has stalled pending a decision on the new semantics.",
+    "pull": 59437
+  },
+  {
+    "reason": "unreviewed",
+    "explanation": "This is a team-member authored, reviewed, and approved PR addressing an uncommitted bug with planned scheduling and no blockers; it should remain open.",
+    "pull": 49817
+  },
+  {
+    "reason": "design",
+    "explanation": "This PR introduces a one-off module-resolution mechanism rather than fitting into TypeScript’s core design or a generic plugin model. The core team has repeatedly raised design concerns (not code bugs) about arbitrarily invoking JavaScript during resolution and prefers a more flexible, architecture-level plugin API. Merging it requires a high-level design decision rather than a simple bug-fix.",
+    "pull": 35206
+  },
+  {
+    "reason": "unreviewed",
+    "explanation": "This is a straightforward parser/grammar fix to allow private identifiers in optional chains, with accompanying tests. There are no reviews indicating it’s unneeded or breaky, and it doesn’t touch the complex areas reserved for team members.",
+    "pull": 60263
+  },
+  {
+    "reason": "unreviewed",
+    "explanation": "This is a team-authored PR implementing a new JSDoc tag with no negative feedback or design concerns raised; it’s simply pending review and doesn’t fit unneeded, breaky, design, or complex classifications.",
+    "pull": 57042
+  },
+  {
+    "reason": "keep",
+    "explanation": "This PR addresses a backlog bug and has received constructive feedback from a team member on refining the test setup. It isn’t marked as unneeded or breaky, nor is it stalled on a major design discussion. Once the author updates the tests as suggested, it can move forward.",
+    "pull": 60994
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR, authored by a non-team member, makes extensive changes to the scanner and parsing of Unicode escapes in identifiers and regex group names, which falls under core parsing logic and is too complex to merge without deep team review.",
+    "pull": 61042
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR, authored by a non-team member, makes changes to the compiler’s type instantiation logic (checker.ts and related test baselines), which is a complex area reserved for team members.",
+    "pull": 61054
+  },
+  {
+    "reason": "dropped",
+    "explanation": "This is a team-authored bug fix for an uncommitted issue, adds necessary tests, and has been reviewed without objections. It should remain open.",
+    "pull": 61032
+  },
+  {
+    "reason": "dropped",
+    "explanation": "This is an active team-authored PR addressing a longstanding uncommitted bug and adding new circular-reference support. There’s no review recommending it be closed, and it’s still under consideration by the team.",
+    "pull": 57293
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR modifies the compiler’s generic type inference/substitution flow for `NoInfer` types—an advanced area of type instantiation and inference. Changes in this domain from non-core contributors should be handled by the core team.",
+    "pull": 59834
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR modifies core conditional type distribution logic (type instantiation/inference) in checker.ts, an area too complex for non-team members to safely author without deeper design review.",
+    "pull": 61077
+  },
+  {
+    "reason": "design",
+    "explanation": "This PR is primarily driving a design discussion around how and where string delimiters should be preserved (declaration files vs diagnostics), how to layer printing logic in symbolToExpression vs symbolToNode, and what the correct default behavior is. The core of the work is still about settling on the right printing semantics rather than fixing implementation bugs.",
+    "pull": 60729
+  },
+  {
+    "reason": "unreviewed",
+    "explanation": "This PR is a non-team-member fix for a Backlog bug with updated tests and no team objections or design debates; it appears reasonable to keep open for review.",
+    "pull": 61087
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR is from an external contributor and makes changes to the type inference logic (handling of NoInfer and intersections in the checker). Changes to generic type parameter inference are too complex for non-team members to land without core team review.",
+    "pull": 61092
+  },
+  {
+    "reason": "complex",
+    "explanation": "The PR is from a non-team member and makes changes to generic type parameter inference in JSDoc/JS files (handling type parameter hosts), which falls under complex areas not suitable for external contributions.",
+    "pull": 61013
+  },
+  {
+    "reason": "unreviewed",
+    "explanation": "No team member has indicated this fix is unnecessary or breaks existing behavior, and there’s no broad design debate—just a performance tweak under evaluation. It should remain open for further review and testing.",
+    "pull": 61104
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR modifies the standard library’s type definitions (RegExpIndicesArray). Changes to lib definitions are considered too complex for non–team members and require core team review.",
+    "pull": 61079
+  },
+  {
+    "reason": "unneeded",
+    "explanation": "Team reviewer @andrewbranch has indicated that the current approach (using `valueDeclaration`) is incorrect and the change should instead use `symbol.declarations`. Until this is addressed, the PR as written isn’t suitable.",
+    "pull": 61107
+  },
+  {
+    "reason": "unneeded",
+    "explanation": "This PR is just a test for build infrastructure with no substantive changes; it can be closed.",
+    "pull": 55267
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR makes a non-trivial change to the compiler’s type-checker logic—allowing intersections of literal and symbol types as property names is a core type-system adjustment. Such changes are too complex for non-team member contributions and should be closed for now.",
+    "pull": 61147
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR touches the template literal assignability logic in the checker (a core, complex part of the type system) and comes from a non-team member. Changes to these deep parts of the type system are considered too complex for outside contributions and should be handled internally.",
+    "pull": 61174
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR is from a non-team contributor and makes non-trivial changes to TypeScript’s contextual type inference (tuple/union discrimination), which is a complex area of the checker. Such changes require deep expertise and team oversight rather than community-driven fixes.",
+    "pull": 60434
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR is from a non-team member and makes changes to TypeScript’s contextual typing/instantiation logic, which falls under the complex areas (type instantiation and contextual signature handling) typically reserved for core team contributors.",
+    "pull": 61185
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR, authored by a non-team member, makes changes to the checker’s mapped-type logic (a core type-system area) and updates numerous test baselines. Changes to mapped types and constraint handling are complex and should be made by the TypeScript team.",
+    "pull": 61224
+  },
+  {
+    "reason": "keep",
+    "explanation": "This is a team-authored, approved fix addressing an uncommitted bug. Two core team members have approved, so it should be kept open.",
+    "pull": 60977
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR comes from a non-team member and makes changes to the compiler’s type-checking logic (contextual typing of late-bound expando members), an area considered too complex for external contributors.",
+    "pull": 61232
+  },
+  {
+    "reason": "design",
+    "explanation": "A team reviewer requested changes focused on the generality and semantics of the codefix (special-case handling, comment preservation, overlaps with existing logic), indicating unresolved design concerns rather than a straightforward bug fix.",
+    "pull": 60301
+  },
+  {
+    "reason": "dropped",
+    "explanation": "This is a straightforward pull request adding a parsing restriction to avoid confusing `! in` and `! instanceof` sequences. Reviews provided minor scanner helper feedback, but no team member flagged the change as unnecessary, breaky, or requiring design discussion. It can proceed as-is.",
+    "pull": 60628
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR, authored by a non-team member, makes changes to standard library type definitions for Object.entries/Object.fromEntries. Standard lib edits are considered too complex for external contributors and should be closed.",
+    "pull": 61074
+  },
+  {
+    "reason": "complex",
+    "explanation": "This is a non-team-member PR making significant changes to the checker’s contextual typing and discriminant logic (control-flow/type-analysis internals), which is too complex for external contributions and should be closed.",
+    "pull": 61097
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR, authored by an external contributor, makes deep changes to TypeScript’s core type inference logic (the first inference pass for context-sensitive functions). Modifying inference algorithms is considered too complex for non-team contributions and should be driven by the TypeScript core team.",
+    "pull": 56460
+  },
+  {
+    "reason": "dropped",
+    "explanation": "This PR cleanly implements the requested fix and incorporates the team member’s suggested helper. There are no objections or outstanding design issues, so it should be kept open.",
+    "pull": 61173
+  },
+  {
+    "reason": "dropped",
+    "explanation": "This PR addresses a real crash in the emitter when printing empty parameter modifiers. It’s a straightforward bug fix with team-member feedback and no indications it’s unneeded, breaky, or purely design discussion.",
+    "pull": 60537
+  },
+  {
+    "reason": "complex",
+    "explanation": "This is a non-team-member PR modifying core type-checker behavior (index types under noUncheckedIndexedAccess), which is too complex and risky for external contributions without deeper team review.",
+    "pull": 61233
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR is from a non-team member and modifies the compiler’s control-flow analysis (reachability cache logic), an area considered too complex for external contributions without team guidance.",
+    "pull": 61265
+  },
+  {
+    "reason": "design",
+    "explanation": "The discussion centers on whether this PR actually fixes the intended rename behavior or just provides a band-aid suggestion. There’s no agreement on scope or semantics, so it’s a design-level question rather than a straightforward fix.",
+    "pull": 61219
+  },
+  {
+    "reason": "unreviewed",
+    "explanation": "This is an experimental PR by a team member for an uncommitted bug. There are no objections or requests to close it, just a note about a missing change. It should remain open.",
+    "pull": 59623
+  },
+  {
+    "reason": "unneeded",
+    "explanation": "The PR addresses an issue closed as “not a defect” and a core team member explicitly indicated it’s not necessary; the change would surprise users in corner cases without real-world benefit.",
+    "pull": 61071
+  },
+  {
+    "reason": "dropped",
+    "explanation": "This PR is authored by a team member and fixes a concrete bug without causing breaking changes or ongoing design debates. No reviewers have suggested it’s unneeded or problematic.",
+    "pull": 61291
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR, authored by a non-team member, modifies the compiler’s type-checking behavior (handling of silentNeverType in iteration functions and related control-flow), which falls under complex areas (control-flow analysis and type instantiation) that are reserved for core team contributions.",
+    "pull": 61317
+  },
+  {
+    "reason": "unreviewed",
+    "explanation": "This is a team-authored dependency bump with no objections or design concerns; it should remain open.",
+    "pull": 61340
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR from a non-team member modifies core intersection-type readonly checking logic in checker.ts—part of the compiler’s internal type-checking semantics—so it’s too complex for an external contribution.",
+    "pull": 61346
+  },
+  {
+    "reason": "unreviewed",
+    "explanation": "This is a straightforward bug fix with no team reviews or objections; it can remain open.",
+    "pull": 61349
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR, authored by a non-team member, alters core control-flow/discriminated union logic in checker.ts. Changes to union discriminant analysis are too complex for non-team contributions and should be handled by the core team.",
+    "pull": 61350
+  },
+  {
+    "reason": "unreviewed",
+    "explanation": "This PR adds a straightforward crash fix and new tests for `hasVisibleDeclarations` without any negative feedback or design concerns; it should be kept open.",
+    "pull": 61352
+  },
+  {
+    "reason": "unreviewed",
+    "explanation": "This PR addresses a specific backlog bug with accompanying tests and changes to diagnostics. There are no comments indicating it’s unnecessary, breaky, or a design discussion, so it should be kept.",
+    "pull": 61358
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR touches core type-checker logic for union origin preservation in filtering/unonizing binary expressions—a complex area of control-flow analysis that only team members should modify.",
+    "pull": 61362
+  },
+  {
+    "reason": "dropped",
+    "explanation": "This PR addresses a backlog bug and updates lib declarations and tests accordingly. While there’s feedback about cleaning up unnecessary tests, no team member has deemed the fix unneeded or requested closure, and there are no design or breakage concerns. Keep the PR open.",
+    "pull": 61221
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR, authored by a non-team member, modifies compiler/checker.ts to adjust control-flow analysis for for-in/of loops. Changes to control-flow analysis are considered too complex for contributors outside the core team.",
+    "pull": 61376
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR, authored by a non-team member, adds and modifies built-in lib declaration files (Intl.DurationFormat). Changes to standard library types are too complex to accept from external contributors.",
+    "pull": 60646
+  },
+  {
+    "reason": "complex",
+    "explanation": "This community-submitted PR modifies core reference-search logic (dynamic import handling in findAllReferences), a control-flow feature too complex for non-team contributions.",
+    "pull": 61379
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR is from a non-team member and makes changes to control-flow analysis and type narrowing logic under `noUncheckedIndexedAccess`. Changes in this area are considered too complex without team oversight.",
+    "pull": 61393
+  },
+  {
+    "reason": "design",
+    "explanation": "There’s an open design discussion about reaching into symbol.links and no consensus or approved helper approach yet. The implementation needs a clearer semantic design before merging.",
+    "pull": 61061
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR implements new intrinsic types and substantial changes to the type system (adding type-level math operations) by a non-team member. Changes to standard library types and intrinsic behaviors are too complex for an external contribution at this stage.",
+    "pull": 48198
+  },
+  {
+    "reason": "dropped",
+    "explanation": "This change is small, well-reviewed, and approved by a TypeScript team member (jakebailey). There are no objections or unresolved design questions, so it should be kept open.",
+    "pull": 61211
+  },
+  {
+    "reason": "design",
+    "explanation": "This PR centers on deep semantic and design discussions—flag naming, interactions with existing `readonly` behavior, method exclusions, and long-term roadmap—rather than a simple implementation fix. It’s a design exploration of an uncommitted feature.",
+    "pull": 58296
+  },
+  {
+    "reason": "unreviewed",
+    "explanation": "This PR is a straightforward formatting fix for ternary indentation with accompanying tests, and there’s no team feedback indicating it’s unneeded, breaky, or awaiting design discussion. It doesn’t touch complex type logic, so it can proceed as is.",
+    "pull": 61430
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR introduces a new language feature (erasable enum annotations) with extensive changes across the parser, checker, emitter, and standard library types. As a non-team member contribution modifying core compiler semantics and public API, it’s too complex to merge without deeper design oversight from the TypeScript team.",
+    "pull": 61414
+  },
+  {
+    "reason": "design",
+    "explanation": "This PR is a high-level proposal to make the TypeScript compiler ESM-only (an uncommitted bug/design discussion) with open questions and TODOs about API shape, module loading, and interoperability rather than a focused implementation or bug fix.",
+    "pull": 58419
+  },
+  {
+    "reason": "design",
+    "explanation": "This is a core semantic change to how unions are sorted (not just a small bugfix), and it has broad implications on baselines, performance, and downstream behavior. It needs a design/semantics review rather than being merged or closed as-is.",
+    "pull": 61399
+  },
+  {
+    "reason": "unreviewed",
+    "explanation": "This is a team-authored change addressing an uncommitted bug with no review objections or design debates. It only adjusts symbol ordering and test baselines, so there’s no reason to close it.",
+    "pull": 61420
+  },
+  {
+    "reason": "unreviewed",
+    "explanation": "This is a team-authored fix for an uncommitted bug with no objections or design discussions; it should be kept open.",
+    "pull": 61359
+  },
+  {
+    "reason": "design",
+    "explanation": "This is a draft PR by a team member exploring the design change (banning non-ambient namespaces using the `module` keyword) for an uncommitted bug, with no finalized implementation or review; it’s part of a semantics discussion rather than a ready fix.",
+    "pull": 61450
+  },
+  {
+    "reason": "keep",
+    "explanation": "This PR makes a focused refinement to the services algorithm for contextual nullable types, adds appropriate tests, and has been approved by a team member. There’s no indication it’s unneeded, breaky, or a design discussion – it should be kept.",
+    "pull": 61383
+  },
+  {
+    "reason": "unreviewed",
+    "explanation": "This is a non-team contribution fixing a Backlog Bug in completion snippets with new tests. There’s no feedback requesting closure, no broad design debate, and it doesn’t touch core type‐system logic, so no special closure reason applies.",
+    "pull": 59770
+  },
+  {
+    "reason": "design",
+    "explanation": "This PR is a design-level experiment by a team member to disallow enum declaration merging. It’s exploring a change in language semantics rather than fixing a bug or adding a small feature, so it belongs in design discussion before moving forward.",
+    "pull": 61262
+  },
+  {
+    "reason": "unneeded",
+    "explanation": "This is an old, untriaged bugfix PR by a team member that hasn’t progressed in years and has been flagged as likely not worth further work.",
+    "pull": 50782
+  },
+  {
+    "reason": "design",
+    "explanation": "This is an experimental, uncommitted feature with ongoing design and performance trade-off discussions rather than implementation issues. It’s on hold pending broader architectural and performance improvements, so it remains a design-level conversation.",
+    "pull": 49552
+  },
+  {
+    "reason": "dropped",
+    "explanation": "This is an external contribution to improve test baselines with helpful headers, and team members (e.g. @jakebailey) are actively providing feedback. There’s no indication it’s unneeded, breaky, or too complex, and the discussion is focused on implementation details rather than blocking design issues. Leave it open.",
+    "pull": 54884
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR is from a non-team member and modifies the checker’s contextual typing and string literal completion logic, which involves generic inference and type instantiation. Such changes are considered too complex for community submissions.",
+    "pull": 56182
+  },
+  {
+    "reason": "design",
+    "explanation": "The PR introduces a new semantic behavior around `@internal` in JSDoc and the team is still debating whether that design is desired (even planning a design meeting to decide). Until the overall design is settled, the change shouldn’t be merged.",
+    "pull": 57960
+  },
+  {
+    "reason": "dropped",
+    "explanation": "This is an active compiler fix with detailed feedback from multiple team reviewers but no objections on necessity or breaking changes. There’s no request to close or mark as unneeded, so it should remain open.",
+    "pull": 60005
+  },
+  {
+    "reason": "design",
+    "explanation": "There’s active design discussion on whether we should always use the export symbol (and how generic parameters and module-qualified names should be displayed). The PR’s approach also breaks existing four-slash tests, indicating a broader semantic decision is needed before merging.",
+    "pull": 52244
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR is from a non-team member and modifies core parser logic (supporting trailing commas in typeof import()), which is considered too complex for non-team contributors per policy.",
+    "pull": 61495
+  },
+  {
+    "reason": "unneeded",
+    "explanation": "A team member (ahejlsberg) has posted #59437 containing the correct and comprehensive fix for #50603 and related unconstrained‐type inconsistencies. This PR is superseded and no longer needed.",
+    "pull": 59352
+  },
+  {
+    "reason": "design",
+    "explanation": "This PR is stalled on a broader design discussion about the semantics of unused private well-known symbol members (and how they should interact with unique symbol types), and is blocked on issue #53276. It needs consensus on the language design before proceeding.",
+    "pull": 42104
+  },
+  {
+    "reason": "dropped",
+    "explanation": "This is an actively maintained performance‐optimization PR authored by a team member. It’s under ongoing evaluation (draft status, benchmark investigations) and has shown positive results, so there’s no reason to close it.",
+    "pull": 53346
+  },
+  {
+    "reason": "unneeded",
+    "explanation": "A team member (sandersn) noted the experiment is over a year old and asked if it can be closed, indicating it’s no longer needed.",
+    "pull": 56679
+  },
+  {
+    "reason": "unreviewed",
+    "explanation": "This is a straightforward bug fix for the codefix that prevents duplicate comments on isolated declarations. There are no reviews indicating it’s unneeded or breaky, no design debates, and it doesn’t touch complex compiler areas. Keeping open for a team review.",
+    "pull": 61497
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR is from a community contributor and touches the built-in lib files (standard library declarations), which falls under too-complex changes for non-team members to make without coordinated design/ownership.",
+    "pull": 60569
+  },
+  {
+    "reason": "unreviewed",
+    "explanation": "This PR is from a core team member addressing an uncommitted bug in constant expression support. There are no team objections or design breakages, so it should remain open.",
+    "pull": 59475
+  },
+  {
+    "reason": "unreviewed",
+    "explanation": "This is an internal team PR by a TypeScript member to clean up lint issues using eslint-plugin-unicorn. It’s purely stylistic code changes under discussion (dependency size concerns, API choices like padStart vs repeat) with no semantic or breakage implications, so there’s no reason to close it.",
+    "pull": 55517
+  },
+  {
+    "reason": "unneeded",
+    "explanation": "This two-year-old experimental PR has seen no activity and a team member asked if it can be closed. It’s obsolete and safe to close.",
+    "pull": 53086
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR, authored by a non-team member, makes changes to the compiler’s control-flow analysis for auto types—a deep and intricate area of the checker. Such core CFA adjustments are too complex for external contributors and should be closed.",
+    "pull": 59807
+  },
+  {
+    "reason": "dropped",
+    "explanation": "This is a team-member–authored performance optimization for narrowing literal unions. There’s no indication it breaks existing behavior or that it’s unneeded, and discussion remains focused on implementation details rather than high-level design or semantics.",
+    "pull": 56072
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR is from a non–team member and makes intricate changes to TypeScript’s control-flow analysis and mapped-type constraints—areas that are too complex for external contributors without further core-team guidance.",
+    "pull": 55386
+  },
+  {
+    "reason": "unreviewed",
+    "explanation": "This PR is a straightforward bug fix for correct source locations in the JSX transformer. There are no team objections, design debates, or breakage concerns, so it can remain open.",
+    "pull": 61534
+  },
+  {
+    "reason": "unreviewed",
+    "explanation": "This PR adds a missing-properties codefix and accompanying tests without any objections or design concerns. It doesn’t introduce breaking changes or address an already-deemed unneeded area, so it can be kept open.",
+    "pull": 61559
+  },
+  {
+    "reason": "unreviewed",
+    "explanation": "This is a valid bug fix by a team member for an uncommitted bug, with no reviews indicating issues or unneeded changes.",
+    "pull": 61560
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR, from a non–team member, changes operator precedence handling and printer behavior for the nullish coalescing operator—a core parsing/semantics area that’s generally considered too complex for external contributions.",
+    "pull": 61372
+  },
+  {
+    "reason": "design",
+    "explanation": "Reviewers are debating the semantics and clarity of the new diagnostic message rather than the implementation itself, indicating design-level discussion about error wording and UX.",
+    "pull": 61145
+  },
+  {
+    "reason": "unreviewed",
+    "explanation": "This is a straightforward bug fix by a core team member addressing issue #61583, with no objections or design debates. It should be merged rather than closed.",
+    "pull": 61593
+  },
+  {
+    "reason": "unreviewed",
+    "explanation": "This PR addresses a genuine bug in private field declaration emission and includes tests; there are no indications from the team that it’s unneeded, breaky, or design-specific. No existing reviews suggest closing it.",
+    "pull": 61590
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR comes from an external contributor and modifies core control-flow analysis (falsiness checking in prefix unary expressions). Changes in this area are too complex to take from non-team members; we should wait until after the Go port stabilizes and revisit it then.",
+    "pull": 60068
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR modifies core type narrowing logic (`getNarrowedTypeWorker`) and union-candidate handling––areas of control-flow analysis that are considered too intricate for external contributions. Since the author isn’t a team member and the changes touch deeply complex checker behavior, the PR should be closed as 'complex'.",
+    "pull": 61589
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR, authored by a non-team member, modifies the standard library type definitions (adding well-known symbol overloads for String). Changes to lib files are considered too complex for non-team members and should be handled by the core team.",
+    "pull": 61449
+  },
+  {
+    "reason": "dropped",
+    "explanation": "This is a team-authored improvement to the release pipeline; it’s been approved by a team reviewer and the author is iterating on fixes. It should remain open and continue through the normal review process.",
+    "pull": 61551
+  },
+  {
+    "reason": "unreviewed",
+    "explanation": "This is a team-authored fix for a backlog bug with no objections from core reviewers and no indication it breaks existing behavior. It can be merged.",
+    "pull": 61608
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR by a non-team member makes deep changes to the type instantiation caching logic in checker.ts, touching complex areas of the compiler’s type instantiation mechanism. Such core changes to type instantiation are considered too complex for external contributors and should be closed until proposed by an official team member.",
+    "pull": 61505
+  },
+  {
+    "reason": "dropped",
+    "explanation": "This PR adds a targeted fix for renaming string-literal declarations and accompanying tests; reviewers have provided feedback that the author addressed, and there’s no indication it’s unneeded, breaky, or under design dispute.",
+    "pull": 61353
+  },
+  {
+    "reason": "unreviewed",
+    "explanation": "This PR implements a straightforward bug fix in the checker for displaying `| undefined` on mapped properties and adds relevant tests. There are no team objections or design concerns, so it should be kept.",
+    "pull": 59957
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR is from a non-team member and modifies the core type-checker logic for arithmetic on generic type parameters constrained by bigint, touching complex inference and control-flow behavior. Changes in this area are too intricate without deep team expertise.",
+    "pull": 61571
+  },
+  {
+    "reason": "unreviewed",
+    "explanation": "This is a routine dependabot version bump for a GitHub Action with no reported issues or team feedback indicating it’s unneeded or problematic.",
+    "pull": 61625
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR, submitted by a non-team member, modifies standard library type definitions (Intl.Segments#containing). Changes to lib .d.ts files are considered complex and require core team review.",
+    "pull": 61236
+  },
+  {
+    "reason": "design",
+    "explanation": "This PR surfaces deep questions about tsc --build’s up-to-date checks, file watching, and package.json handling that go beyond straightforward implementation. There’s extensive semantic and UX discussion (including multiple design proposals and experiments), so it should be closed for now and revisited once a clear design direction is chosen.",
+    "pull": 48889
+  },
+  {
+    "reason": "complex",
+    "explanation": "This change modifies a standard library declaration (Intl.NumberFormat.format) and comes from a non-team member. Per guidelines, updates to lib types are too complex to accept without core team involvement.",
+    "pull": 61628
+  },
+  {
+    "reason": "dropped",
+    "explanation": "This is a simple JSDoc documentation update with team feedback incorporated and no blockers; it can remain open.",
+    "pull": 61596
+  },
+  {
+    "reason": "design",
+    "explanation": "The PR primarily involves substantive design discussions around comparison semantics (recursion into types vs. new check function, handling of valueOf, relation to #52807) without agreement on the approach. It remains a design-level conversation rather than a narrow bug fix.",
+    "pull": 56666
+  },
+  {
+    "reason": "complex",
+    "explanation": "This external‐contributor PR makes deep, nontrivial changes to the compiler’s core signature-assignability and tuple/rest handling logic in checker.ts. It touches complex type-checking machinery and still has open change requests from team reviewers, so it’s better closed and revisited by a team member.",
+    "pull": 49218
+  },
+  {
+    "reason": "design",
+    "explanation": "This PR is part of a broader discussion on how JSDoc indentation should work (including whether to drop offside‐style indentation rules entirely). That’s a design-level question for the backlog rather than a straightforward bug fix.",
+    "pull": 53631
+  },
+  {
+    "reason": "dropped",
+    "explanation": "This is a team-authored experimental feature under active design discussion (slated for TS 5.2), so it should remain open.",
+    "pull": 26349
+  },
+  {
+    "reason": "design",
+    "explanation": "This PR is an experimental exploration of per-file pragmas that raises significant semantic and performance questions (as noted by A. Hejlsberg and D. Rosenwasser) and remains in design discussion with no concrete plan to merge.",
+    "pull": 49886
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR, authored by a non-team member, makes intricate changes to the compiler’s handling of mapped types and the type‐emission pipeline (including type instantiation and name-scoping logic). Changes in these areas are too complex for external contributors, and the PR has stalled with no resolution on the remaining design details, so it should be closed.",
+    "pull": 54759
+  },
+  {
+    "reason": "breaky",
+    "explanation": "This PR, while approved in principle, currently breaks a large number of existing tests and has unresolved issues around indexed-access instantiation. The author has acknowledged the breakage and intends to revisit the approach, so in its present form it’s too breaky to merge.",
+    "pull": 48838
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR is from a non-team member and modifies generic type parameter inference in the checker (specifically how optional type variables are handled). Changes to type instantiation and inference logic are deemed too complex for outside contributions and should be handled by the team.",
+    "pull": 61635
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR makes changes to type instantiation and caching logic for conditional types and single‐signature types—a core, intricate area of the checker (generic instantiation, mapper caching, etc.). As a non‐team member contribution in a highly complex part of the compiler, it’s beyond the scope for external authors to land safely without deeper design oversight and testing by the TypeScript team.",
+    "pull": 59972
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR is from a non-team member and makes changes to the compiler’s binder logic, which is a complex area of the codebase and generally reserved for team members.",
+    "pull": 61636
+  },
+  {
+    "reason": "unreviewed",
+    "explanation": "This is a straightforward bugfix improving an error message, with associated tests and no discussion of design changes, breakages, or objections. No closure needed.",
+    "pull": 61637
+  },
+  {
+    "reason": "design",
+    "explanation": "This PR is mostly about how the new `import defer` syntax fits into the existing AST and public API surface (enum vs SyntaxKind, modifier positioning, grammar recovery, deprecation helpers), with extensive back-and-forth on semantics and node shape rather than straightforward bug fixes or feature additions. It remains on the uncommitted-bug backlog pending design decisions.",
+    "pull": 60757
+  },
+  {
+    "reason": "dropped",
+    "explanation": "This PR addresses a clear bug, has been reviewed and approved by a team member (sandersn), and only makes straightforward changes to checker logic and tests. No reasons to close.",
+    "pull": 48172
+  },
+  {
+    "reason": "keep",
+    "explanation": "This PR is authored by a team member and has been approved with no objections about it being unneeded, breaky, or a design issue. There’s no review indicating it should be closed, so it should remain open.",
+    "pull": 53739
+  },
+  {
+    "reason": "breaky",
+    "explanation": "Maintainers noted that removing these long‐deprecated tsserver commands would break numerous editor plugins and clients, and the PR has been blocked for years without updates to those projects; newer workflows are moving to LSP instead.",
+    "pull": 52346
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR is from a non-team member and modifies core type‐checker behavior (stricter spread checking), an area we consider too intricate for external contributions without deeper design alignment.",
+    "pull": 61641
+  },
+  {
+    "reason": "complex",
+    "explanation": "This PR isn’t from a TypeScript team member and makes changes to the ESNext standard library definitions (adding `Error.isError`), which falls under complex standard library/type changes that only team members should author.",
+    "pull": 60788
+  },
+  {
+    "reason": "unreviewed",
+    "explanation": "This is a draft scaffold for a new codefix with no team feedback requesting closure. It’s a work in progress and can remain open for further development and review.",
+    "pull": 61643
   }
 ]
